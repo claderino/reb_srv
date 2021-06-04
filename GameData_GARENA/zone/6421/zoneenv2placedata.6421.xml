@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\6421\zoneenv2placedata.6421.xml-->
+	<record alias="e_Airdash_6421_01_a_place" duration="4400" end-pos="13722,-3144,148" region-point-1="7097,-5487,-393" region-point-2="7097,-5439,-393" region-point-3="7145,-5439,-393" region-point-4="7145,-5487,-393" summon-end-pos="13722,-3144,148" tool-zone-1="6421" tool-zone-2="6424" type="airdash" />
+	<record alias="e_Airdash_6421_02_a_place" duration="5100" end-pos="7121,-5598,-377" region-point-1="13698,-3115,138" region-point-2="13698,-3067,138" region-point-3="13746,-3067,138" region-point-4="13746,-3115,138" summon-end-pos="7121,-5598,-377" tool-zone-1="6421" tool-zone-2="6424" type="airdash" />
+	<record action-point="13522,-3118,166" action-radius="62" alias="e_gate_6421_03_a_Place" manipulation-height-lower="62" manipulation-height-upper="62" manipulation-point="13522,-3118,154" manipulation-radius="62" tool-zone-1="6424" tool-zone-2="6421" type="gate" use-manipulation-point="n" />
+	<record action-point="13522,-3183,166" action-radius="62" alias="e_gate_6421_03_b_Place" manipulation-height-lower="62" manipulation-height-upper="62" manipulation-point="13522,-3183,153" manipulation-radius="62" tool-zone-1="6424" tool-zone-2="6421" type="gate" use-manipulation-point="n" />
+	<record action-point="11862,-3150,277" action-radius="25" alias="e_button_6424yongmak_Place" manipulation-height-lower="25" manipulation-height-upper="25" manipulation-point="11862,-3150,277" manipulation-radius="25" region-point-1="11860,-3152,229" region-point-2="11860,-3148,229" region-point-3="11864,-3148,229" region-point-4="11864,-3152,229" tool-zone-1="6421" tool-zone-2="6424" type="portal" use-manipulation-point="n" />
+	<record action-point="6014,-5452,-347" alias="6421_portal_6420_place" region-point-1="6001,-5661,-278" region-point-2="6001,-5242,-278" region-point-3="6028,-5242,2644" region-point-4="6028,-5661,2644" tool-zone-1="6421" tool-zone-2="6424" type="portal" />
+	<record action-point="14040,-3132,234" alias="6421_portal_6422_place" region-point-1="14026,-3341,2644" region-point-2="14026,-2922,2644" region-point-3="14053,-2922,2644" region-point-4="14053,-3341,2644" tool-zone-1="6421" tool-zone-2="6424" type="portal" />
+</table>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata_id_sulokgung_event.xml-->
+
+  
+  
+  
+
+
+  
+  <combat-sequence alias="ME_WA_SnowmanA_0001_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SnowmanA_EventID_IceBall" skill3="ME_SnowmanA_EventID_IceBall" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_SnowmanA_EventID_IceBall" skill3="ME_SnowmanA_EventID_IceBall" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Yetty_0001_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEB_N1_SnowManB_None_PeltSnowball_damage1" skill3="ME_BEB_N1_SnowManB_None_PeltSnowball_damage1" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_BEB_N1_SnowManB_None_PeltSnowball_damage1" skill3="ME_BEB_N1_SnowManB_None_PeltSnowball_damage1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_BabaTotem_0003_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_ID2_Snow_Totem_Area360Heal" skill3="ME_ID2_Snow_Totem_Area360Heal" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_ID2_Snow_Totem_Area360Heal" skill3="ME_ID2_Snow_Totem_Area360Heal" type="use-skill" />
+    </normal>    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_BabaTotem_0002_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_ID2_Snow_Totem_speedup" skill3="ME_ID2_Snow_Totem_speedup" type="use-skill" />      
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_ID2_Snow_Totem_speedup" skill3="ME_ID2_Snow_Totem_speedup" type="use-skill" />      
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Dummy_0052_cs" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" target="zonenpcspawn:a_5930_18_1" type="use-skill" />
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" target="zonenpcspawn:a_5930_18_2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Dummy_0053_cs" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" target="zonenpcspawn:a_5930_17_1" type="use-skill" />
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" target="zonenpcspawn:a_5930_17_2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+
+  
+  <combat-sequence alias="ME_WA_YettyCaveBoss_0002_CS">
+    <normal combat-distance="1" id="1">
+      <action duration="1000" type="stay" />   
+    </normal>
+    <special combat-distance="7" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" type="use-skill" />
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+    <special combat-distance="7" id="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave2" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave2" type="use-skill" />
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+    <special combat-distance="7" id="3">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave2" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" type="use-skill" />
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+    <special combat-distance="7" id="4">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave2" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_ColdWave2" skill3="ME_BEB_B1_SnowManBoss_EventID_ColdWave2" type="use-skill" />
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_WA_YettyCaveBoss_0001_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_Pratfall" skill3="ME_BEB_B1_SnowManBoss_EventID_Pratfall" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_combatstart_01" type="do-social" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_EventID_BossDash" skill3="ME_BEB_B1_SnowManBoss_EventID_BossDash" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_combatstart_01" type="do-social" />
+    </normal>
+  </combat-sequence>
+  
+  
+</table>

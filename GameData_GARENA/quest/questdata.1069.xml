@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1069.xml-->
+  <quest alias="q_sub_1069" broadcast-category="field" category="normal" id="1069" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_1119" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_SA_GuakChill_0004" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case drop-gadget="y" gadget="Q_WaterPot_0004" gadget-required="not-a" object2="zoneenv2:e_chest_muilbucket_03_1" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="Q_WaterPot_0004" gadget-required="carry" object2-1="npc:ME_SA_PigBaby_0011" object2-2="npc:ME_SA_PigBaby_0012" object2-3="npc:ME_SA_PigBaby_0013" object2-4="npc:ME_SA_PigBaby_0014" object2-5="npc:ME_SA_PigBaby_0015" party-broadcast="n" progress-mission="reaction-only" skill="Gadget_Q_WaterPot_0004" skill3="Gadget_Q_WaterPot_0004" type="skill" />
+        <case drop-gadget="y" gadget="Q_Basket_0002" gadget-required="not-a" object2="zoneenv2:e_chest_muilseedsbasket_01_1" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Q_Basket_0002" gadget-required="not-a" object2="zoneenv2:e_chest_muilseedsbasket_02_1" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="Q_Basket_0002" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_fodderbox_01_1" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_Basket_0002" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_fodderbox_02_1" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="empty" object="npc:ME_SA_PigBaby_0011" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case gadget-required="empty" object="npc:ME_SA_PigBaby_0012" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case gadget-required="empty" object="npc:ME_SA_PigBaby_0013" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case gadget-required="empty" object="npc:ME_SA_PigBaby_0014" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case gadget-required="empty" object="npc:ME_SA_PigBaby_0015" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case gadget="Q_Basket_0002" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_fodderbox_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1069_final_set1" reward-2="1069_final_set2">
+        <case object="npc:CH_SA_GuakChill_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

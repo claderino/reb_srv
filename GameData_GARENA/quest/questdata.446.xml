@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.446.xml-->
+  <quest alias="q_sub_446" broadcast-category="field" category="normal" district-1="jeryoungrim" id="446" max-repeat="1" save-type="all">
+    <acquisition level="15" preceding-quest-1="q_epic_496" preceding-quest-2="q_sub_447" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_shaman_030" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="2">
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_01" object2="zoneenv2:e_onoff_jangsung_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_02" object2="zoneenv2:e_onoff_jangsung_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_03" object2="zoneenv2:e_onoff_jangsung_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_04" object2="zoneenv2:e_onoff_jangsung_04" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_05" object2="zoneenv2:e_onoff_jangsung_05" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_07" object2="zoneenv2:e_onoff_jangsung_07" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_08" object2="zoneenv2:e_onoff_jangsung_08" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_09" object2="zoneenv2:e_onoff_jangsung_09" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_10" object2="zoneenv2:e_onoff_jangsung_10" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1" reward-1="446_final_set1">
+        <case object="npc:ch_shaman_030" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

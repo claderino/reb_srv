@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.353.xml-->
+  <quest alias="q_sub_353" broadcast-category="field" category="normal" district-1="jeryoungrim" id="353" max-repeat="1" save-type="all">
+    <acquisition level="4" preceding-quest-1="q_epic_306" preceding-quest-check="and">
+      <case acquire-quest="y" drop-gadget="n" object="npc:ctzn_jinm_jakyungdan_sobung_001" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case drop-gadget="n" object="npc:ch_shaman_021" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:mob_hmn_mlnd_soul_pdungn_zombie_q_001" object2="npc:mob_hmn_mlnd_soul_pdungn_zombie_q_001" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:mob_hmn_mlnd_soul_zombie_001" object2="npc:mob_hmn_mlnd_soul_zombie_001" party-broadcast="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="353_final_set1">
+        <case object="npc:ch_jakyungdan_0010" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

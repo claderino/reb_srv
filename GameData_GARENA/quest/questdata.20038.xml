@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.20038.xml-->
+  <quest alias="q_sub_20038" broadcast-category="field" category="normal" id="20038" max-repeat="-1" save-type="except-completion">
+    <acquisition level="45">
+      <case acquire-quest="y" grocery="Quest_Scroll_LegendMaterial_0002" item="Quest_Scroll_LegendMaterial_0002" party-broadcast="n" required-item-1="Quest_Scroll_LegendMaterial_0002" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case grocery="Quest_Grocery_LegendMaterial_0012" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0012" required-item-depot="bag" required-item-loss="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case grocery="Quest_Grocery_LegendMaterial_0009" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0009" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case grocery="Quest_Grocery_LegendMaterial_0010" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0010" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1" reward-1="20038_middle_set1">
+        <case grocery="Quest_Grocery_LegendMaterial_0011" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0011" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1" reward-1="20038_final_set1">
+        <case grocery="Quest_Grocery_LegendMaterial_0014" object="npc:ch_legendary_0001" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0014" required-item-2="quest_grocery_legendmaterial_0013" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <completion-loss item-1="quest_grocery_legendmaterial_0013" item-count-1="1" />
+      </mission>
+    </mission-step>
+    <giveup-loss item-1="Quest_Grocery_LegendMaterial_0012" item-2="Quest_Grocery_LegendMaterial_0013" item-count-1="0" item-count-2="0" />
+  </quest>
+</table>

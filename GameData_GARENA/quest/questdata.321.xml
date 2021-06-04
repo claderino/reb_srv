@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.321.xml-->
+  <quest alias="q_sub_321" broadcast-category="field" category="normal" district-1="jeryoungrim" id="321" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="2" preceding-quest-1="q_epic_304" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" object="npc:ctzn_jinf_cheongryeongctzn_ryubekeon_001" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="5">
+      <mission id="5" required-register-value="1" reward-1="321_final_set1">
+        <case object="npc:Ctzn_JinM_JaKyungDan_HoEom_001" progress-mission="y" type="talk" />
+        <case object="npc:ctzn_jinf_cheongryeongctzn_ryubekeon_001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="1" retired="y">
+      <mission id="1" required-register-value="1">
+        <tutorial-case progress-mission="y" type="enlarge-mini-map" zone="zone_ChRyoungCHN" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <tutorial-case progress-mission="y" type="quest-tracking-position" zone="zone_ChRyoungCHN" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" retired="y">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ctzn_jinf_cheongryeongctzn_ryubekeon_001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" retired="y">
+      <mission id="2" required-register-value="1">
+        <tutorial-case progress-mission="y" type="transparent-mini-map" zone="zone_ChRyoungCHN" />
+        <case object="npc:ctzn_jinf_cheongryeongctzn_ryubekeon_001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.party.xml-->
+  
+  
+  <script alias="squad_move_leader_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter leader="y" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-party" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="Group-Move spawn" type="debug-trace" />
+        <reaction group-1="event:npc-spawn:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter leader="y" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Group-Move  leader act_2 finish" type="debug-trace" />
+        
+        <reaction group-1="event:act-finished:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+        
+        <reaction seq-idx="1" target="event:act-finished:npc" type="set-npc-indexed-act" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter leader="n" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Group-Move private act_2 finish" type="debug-trace" />
+        
+        <reaction seq-idx="1" target="event:act-finished:npc" type="set-npc-indexed-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="kinggoat killed" type="debug-trace" />
+        
+        <reaction despawn-force="n" group-1="event:killed:defender:npc-party" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="leader_die_private_despawn" hanger="object">
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="리더 죽었다" type="debug-trace" />
+        
+        <reaction target-1="event:killed:defender:npc-party:2" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="leader_die_private_flee" hanger="object">
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="flee" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="leader_Hp50_provocation" hanger="object">
+    <decision event="attacked">
+      <filter-set>
+        <filter leader="y" subject="event:attacked:defender" subject2="event:attacked:defender" type="npc-party" />
+        <filter field="hp" op="lt" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="50" />
+        <filter op="eq" subject="event:attacked:defender" subject2="event:attacked:defender" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="provocation" type="debug-trace" />
+        <reaction amount="1" reg="4" target="event:attacked:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="leader_combat_private_spawn" hanger="object">
+    <decision event="attacked">
+      <filter-set>
+        <filter leader="y" subject="event:attacked:defender" subject2="event:attacked:defender" type="npc-party" />
+        <filter op="eq" subject="event:attacked:defender:npc-party:reg-4" subject2="event:attacked:defender:npc-party:reg-4" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="private spawn" type="debug-trace" />
+        <reaction amount="1" reg="4" target="event:attacked:defender:npc-party" type="diff-party-number" />
+        <reaction index-1="2" party="event:attacked:defender:npc-party" target="event:attacked:attacker" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="리더 죽었다" type="debug-trace" />
+        
+        <reaction target-1="event:killed:defender:npc-party:2" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="leader_Hp50_private_spawn" hanger="object">
+    <decision event="attacked">
+      <filter-set>
+        <filter leader="y" subject="event:attacked:defender" subject2="event:attacked:defender" type="npc-party" />
+        <filter field="hp" op="lt" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="50" />
+        <filter op="eq" subject="event:attacked:defender:npc-party:reg-4" subject2="event:attacked:defender:npc-party:reg-4" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="leader Hp 50%" type="debug-trace" />
+        <reaction amount="1" reg="4" target="event:attacked:defender:npc-party" type="diff-party-number" />
+        <reaction index-1="2" party="event:attacked:defender:npc-party" target="event:attacked:attacker" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="리더 죽었다" type="debug-trace" />
+        <reaction target-1="event:killed:defender:npc-party:2" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="private_die_private_spawn" hanger="object">
+    <decision event="killed">
+      <filter-set>
+        <filter leader="n" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="private die private spawn" type="debug-trace" />
+        <reaction index-1="2" party="event:killed:defender:npc-party" target="event:killed:attacker" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="squad_move_leader_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter leader="y" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-party" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:npc-spawn:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter leader="y" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:act-finished:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+        <reaction seq="act_index_1_pathway" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:2" target-2="event:killed:defender:npc-party:3" target-3="event:killed:defender:npc-party:4" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:5" target-2="event:killed:defender:npc-party:6" target-3="event:killed:defender:npc-party:7" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:8" target-2="event:killed:defender:npc-party:9" target-3="event:killed:defender:npc-party:10" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_JunoLeader_0001_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_ORakDang_0008_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_Wolf_0011_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_Wolf_0003_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_BokGonPae_0002_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_BoneMask_0005_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_BoneMaskBigA_001_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  <script alias="MH_TreasureHunter_0003_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="CE_HoeRangJok_0011_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_BokGonPe_0008_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_BokGonPe_0042_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PotAxPartyC_0002_ai" parent="squad_move_leader_decision">
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+      </filter-set>
+      <reaction-set probability="50">
+        <reaction from="event:npc-bleeding:npc" social="ME_PotAxPartyC_0002_Battle_01_soc" type="play-social" />
+        <reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+      <reaction-set probability="50">
+        <reaction from="event:npc-bleeding:npc" social="ME_PotAxPartyC_0002_Battle_02_soc" type="play-social" />
+        <reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_DarkCrazyTribe_003_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_DarkCrazyTribe_0006_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_DarkCrazyTribe_0039_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_BokGonPe_014_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_BigulBogul_0003_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_Prog_0002_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_BokGonPae_0007_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_BokGonPe_016_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PotAxParty_0004_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PotAxParty_0005_ai" parent="squad_move_leader_decision">
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="musypa special 2" type="debug-trace" />
+        <reaction from="event:npc-special:npc" social="ME_PotAxParty_0005_battle_03_soc" type="play-social" />
+        <reaction effect="Common_Gadget_Drop" target="event:npc-special:npc" type="invoke-effect" />
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction special-id="1" target="event:npc-special:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-special:npc" social="ME_PotAxParty_0005_battle_04_soc" type="play-social" />
+        <reaction text="musypa special 1" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill" value="Gadget_Q_BombG" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3" value="Gadget_Q_BombG" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="musypa attacked" type="debug-trace" />
+        <reaction from="event:attacked:defender" social="ME_PotAxParty_0005_battle_05_soc" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="MH_JeGukGun_0025_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="CH_PigFarm_0034_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_ChungGak_0226_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_ChungGak_0193_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_ChungGak_0194_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PigTribeA_0001_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PigTribeA_0002_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PigTribeA_0003_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PigTribeA_0004_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PigTribeA_0005_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PigTribeA_0006_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_PigTribeA_0007_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_ChungGak_0190_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_ChungGak_0192_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  <script alias="MH_JeGukGun_0320_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished">
+      <filter-set>
+        <filter leader="y" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:act-finished:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+        <reaction seq="MH_JeGukGun_0320_soc_act_index_pathway" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction text="MH_JeGukGun_0320_ai efork" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_FishmanB_0003_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_CrocodileSharkTribeA_0006_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_KingFrog_0010_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0032_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_EoInJok_0001_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  
+  <script alias="MH_GeongChunMaeng_0026_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0009_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0362_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0366_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0364_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0058_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0059_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0361_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0360_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="MH_JeGukGun_0282_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="CH_WolChon_0008_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0324_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0325_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_AngSi_0048_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_AngSi_0049_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_StrangeMonkeyTribeA_0006_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_StrangeMonkeyTribeA_0007_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_StrangeMonkeyTribeB_0007_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_StrangeMonkeyTribeB_0008_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_StrangeMonkeyTribeA_0011_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="MH_Samagyo_0049_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_Samagyo_0051_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  <script alias="ME_CrocodileSharkTribeDSorcerer_0002_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  
+  <script alias="MH_JeGukGun_0020_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0017_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0264_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_JeGukGun_0318_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_CT_ChuAngKa_0003_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_CT_BaBaJok_0018_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_CT_Tiger_0030_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_CT_RuneMechaB_0007_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="CE_CT_PungMid_0002_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="squad_move_leader_despawn">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter leader="y" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-party" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:npc-spawn:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter leader="y" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_index_1_pathway" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="n" group-1="event:act-finished:npc:npc-party" respawn-after-despawn="y" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:2" target-2="event:killed:defender:npc-party:3" target-3="event:killed:defender:npc-party:4" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:5" target-2="event:killed:defender:npc-party:6" target-3="event:killed:defender:npc-party:7" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:8" target-2="event:killed:defender:npc-party:9" target-3="event:killed:defender:npc-party:10" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+</table>

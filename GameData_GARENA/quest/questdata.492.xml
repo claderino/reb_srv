@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.492.xml-->
+  <quest alias="q_epic_492" category="epic" completed-list="y" district-1="jeryoungrim" id="492" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="npc:ME_JR_bear_0002" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:CE_JR_DokChoGeoSa_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_JR_Citizen_0003" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1" reward-1="492_final_set1">
+        <case object="npc:CE_JR_DokChoGeoSa_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_313" />
+    </completion>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_JR_Citizen_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CE_JR_DokChoGeoSa_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

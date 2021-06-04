@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.25037.xml-->
+  <quest alias="q_sub_25037" broadcast-category="field" category="dungeon" dungeon="Dungeon_SnakeScalesVally" id="25037" max-repeat="1" progress-difficulty-type-1="n" progress-difficulty-type-3="n" reset-type="none" retired="y" save-type="nothing">
+    <acquisition level="1" mastery-level="0" preceding-quest-1="q_epic_293" preceding-quest-2="q_epic_1429" preceding-quest-check="or">
+      <case acquire-quest="y" object2="zoneenv2:5295_portal_5297" party-broadcast="n" type="enter-portal" />
+      <case acquire-quest="y" object2="zoneenv2:928_potal_5296" party-broadcast="n" type="enter-portal" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_CT_RewardBox_0034" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_ResurrectionAltar_Default">
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

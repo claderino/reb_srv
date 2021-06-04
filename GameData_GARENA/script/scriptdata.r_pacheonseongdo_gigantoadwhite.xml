@@ -1,0 +1,1223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.r_pacheonseongdo_gigantoadwhite.xml-->
+
+  
+  
+  
+  
+
+  
+  
+  
+
+  <script alias="MH_WC_GiganToad_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="MH_WC_GiganToad_0001_peace" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 전투 시작 - skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-start:npc:npc-party" type="set-party-number" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="boss-bleeding">
+      <filter-set>
+        <filter subject="event:boss-bleeding:boss" subject2="event:boss-bleeding:boss" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:boss-bleeding:boss:npc-party:reg-1" subject2="event:boss-bleeding:boss:npc-party:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:boss-bleeding:boss" subject2="event:boss-bleeding:boss" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:boss-bleeding:boss:npc-party:reg-1" subject2="event:boss-bleeding:boss:npc-party:reg-1" type="number" value="3" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:boss-bleeding:boss" subject2="event:boss-bleeding:boss" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:boss-bleeding:boss:npc-party:reg-1" subject2="event:boss-bleeding:boss:npc-party:reg-1" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 탁기폭발 스페셜 (skin/4446)" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:boss-bleeding:boss:npc-party" type="diff-party-number" />
+        
+        <reaction effect="ME_Common_None_Block_Immune" target="event:boss-bleeding:boss" type="invoke-effect" />
+        <reaction effect="Common_Abnormal_Immune_Blockmove" target="event:boss-bleeding:boss" type="invoke-effect" />
+        <reaction effect="Common_Freezing_dispelattribute" target="event:boss-bleeding:boss" type="invoke-effect" />
+        <reaction effect="Common_Abnormal_Immune_BlockSpeeddown" target="event:boss-bleeding:boss" type="invoke-effect" />
+        <reaction effect="Common_SpeedDown_dispelattribute" target="event:boss-bleeding:boss" type="invoke-effect" />
+        <reaction effect="ME_Common_None_Unlink" target="event:boss-bleeding:boss" type="invoke-effect" />
+        <reaction special-id="2" target="event:boss-bleeding:boss" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="boss-bleeding">
+      <filter-set>
+        <filter subject="event:boss-bleeding:boss" subject2="event:boss-bleeding:boss" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:boss-bleeding:boss:npc-party:reg-1" subject2="event:boss-bleeding:boss:npc-party:reg-1" type="number" value="1" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:boss-bleeding:boss" subject2="event:boss-bleeding:boss" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:boss-bleeding:boss:npc-party:reg-1" subject2="event:boss-bleeding:boss:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:boss-bleeding:boss" subject2="event:boss-bleeding:boss" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:boss-bleeding:boss:npc-party:reg-1" subject2="event:boss-bleeding:boss:npc-party:reg-1" type="number" value="4" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:boss-bleeding:boss" subject2="event:boss-bleeding:boss" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:boss-bleeding:boss:npc-party:reg-1" subject2="event:boss-bleeding:boss:npc-party:reg-1" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:boss-bleeding:boss:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="11" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="파천성도 백와룡 독뿜뿜 시작 -skin/4446" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:npc" spawn-1="a_4446_158_1" type="spawn-npc" />
+        
+        <reaction effect="ME_RD_B2_GiganToad_None_shield" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_159" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_160" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_161" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_162" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_163" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_164" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_165" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_178" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_179" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_180" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_181" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_198" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_199" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_200" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_201" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_218" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_219" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_220" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_221" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_247" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_248" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_258" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_259" type="set-npc-act" />
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="zonenpcspawn:a_4446_260" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="이동불가 면역 (skin/4446)" type="debug-trace" />
+        <reaction effect="Common_Abnormal_Immune_Blockmove" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction effect="ME_RD_B2_GiganToad_None_Explosion_none_target" target="event:npc-special:npc" type="invoke-effect" />
+        <reaction effect="ME_RD_B2_GiganToad_None_Explosion_immune_damage" target="event:npc-special:npc" type="invoke-effect" />
+        <reaction text="백와룡 탁기술사x3 스폰 (skin/4446)" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:npc" spawn-1="a_4446_275" spawn-2="a_4446_276" spawn-3="a_4446_277" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="99" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 전투 종료 (skin/4446)" type="debug-trace" />
+        <reaction target="event:npc-special:npc" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="ME_RD_B2_GiganToad_None_Explosion_Q3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 탁기술사 모두 합격 성공 -&gt;역효과(8초) (skin/4446)" type="debug-trace" />
+        
+        <reaction effect="ME_RD_B2_GiganToad_None_Explosion_Falldown_8sec" target="event:invoked-effect:npc" type="invoke-effect" />
+        <reaction effect="ME_RD_B2_GiganToad_None_Explosion_none_target_dispel" target="event:invoked-effect:npc" type="invoke-effect" />
+        <reaction effect="ME_RD_B2_GiganToad_None_Explosion_immune_dispel" target="event:invoked-effect:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_BEK_B1_GiganToad_None_Explosion" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 스페셜 전멸기 성공 (skin/4446)" type="debug-trace" />
+        <reaction target="event:attack:attacker" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 전투종료 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc:npc-party" type="set-party-number" />
+        
+        <reaction effect="ME_RD_B2_GiganToad_None_shield_dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+        
+        <reaction effect="ME_RD_B2_GiganToad_None_Explosion_none_target_dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+        <reaction effect="ME_RD_B2_GiganToad_None_Explosion_immune_dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+        
+        <reaction flag="n" target="zonenpcspawn:a_4446_159" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_160" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_161" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_162" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_163" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_164" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_165" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_178" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_179" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_180" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_181" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_198" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_199" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_200" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_201" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_218" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_219" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_220" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_221" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_247" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_248" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_258" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_259" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_260" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_159" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_160" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_161" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_162" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_163" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_164" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_165" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_178" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_179" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_180" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_181" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_198" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_199" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_200" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_201" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_218" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_219" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_220" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_221" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_247" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_248" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_258" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_259" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_260" type="set-npc-attackable" />
+        <reaction target="zonenpcspawn:a_4446_159" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_160" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_161" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_162" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_163" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_164" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_165" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_178" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_179" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_180" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_181" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_198" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_199" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_200" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_201" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_218" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_219" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_220" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_221" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_247" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_248" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_258" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_259" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_260" type="reset-npc-all-hate" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_159" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_160" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_161" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_162" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_163" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_164" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_165" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_178" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_179" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_180" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_181" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_198" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_199" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_200" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_201" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_218" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_219" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_220" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_221" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_247" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_248" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_258" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_259" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_260" type="set-npc-act" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_4446_158_1" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 사망 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction enable="y" target="zoneenv:e_Button_4446_LeaveYongmak_01" target2="zoneenv2spawn:e_Button_4446_LeaveYongmak_01_spawn" type="set-env-enable" />
+        
+        <reaction flag="n" target="zonenpcspawn:a_4446_159" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_160" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_161" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_162" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_163" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_164" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_165" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_178" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_179" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_180" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_181" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_198" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_199" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_200" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_201" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_218" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_219" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_220" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_221" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_247" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_248" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_258" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_259" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_260" type="set-npc-hate-on" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_159" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_160" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_161" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_162" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_163" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_164" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_165" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_178" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_179" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_180" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_181" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_198" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_199" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_200" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_201" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_218" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_219" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_220" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_221" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_247" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_248" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_258" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_259" type="set-npc-attackable" />
+        <reaction flag="n" target="zonenpcspawn:a_4446_260" type="set-npc-attackable" />
+        <reaction target="zonenpcspawn:a_4446_159" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_160" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_161" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_162" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_163" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_164" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_165" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_178" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_179" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_180" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_181" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_198" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_199" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_200" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_201" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_218" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_219" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_220" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_221" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_247" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_248" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_258" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_259" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_4446_260" type="reset-npc-all-hate" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_159" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_160" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_161" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_162" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_163" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_164" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_165" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_178" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_179" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_180" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_181" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_198" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_199" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_200" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_201" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_218" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_219" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_220" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_221" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_247" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_248" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_258" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_259" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_4446_260" type="set-npc-act" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_4446_158_1" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="ME_WC_Rick_0003_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        
+        
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+        
+        <filter subject="event:attack:defender" subject2="event:attack:defender" type="job" value-1="소환사" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+        
+        <filter subject="event:attack:defender" subject2="event:attack:defender" type="job" value-1="주술사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="파천성도 백와룡 이독치독 소환수 적용 -skin/4446" type="debug-trace" />
+        
+        <reaction effect="ME_RD_B2_Dummy_PoisonBomb_DoublePoison_Dispel" target="event:attack:defender:my-summoned" type="invoke-effect" />
+        <reaction effect="ME_RD_B2_Dummy_PoisonBomb_DoublePoison_Heal" target="event:attack:defender:my-summoned" type="invoke-effect" />
+        <reaction effect="ME_RD_B1_ME_WC_Rick_0002_DoublePoison" target="event:attack:defender:my-summoned" type="invoke-effect" />
+        <reaction effect="ME_RD_B1_ME_WC_Rick_0002_DoublePoison_DamageUp" target="event:attack:defender:my-summoned" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 혈독충 피격 -skin/4446" type="debug-trace" />
+        
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 혈독충 독액덩이 -skin/4446" type="debug-trace" />
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="99" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 혈독충 리셋 -skin/4446" type="debug-trace" />
+        <reaction flag="n" target="event:npc-special:npc" type="set-npc-hate-on" />
+        <reaction flag="n" target="event:npc-special:npc" type="set-npc-attackable" />
+        <reaction target="event:npc-special:npc" type="reset-npc-all-hate" />
+        
+        <reaction seq="4446_ACT_Rick_BurrowOut" target="event:npc-special:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="4446_ACT_Rick_BurrowOut" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 혈독충 버로우아웃 -skin/4446" type="debug-trace" />
+        <reaction flag="y" target="event:act-finished:npc" type="set-npc-hate-on" />
+        <reaction flag="y" target="event:act-finished:npc" type="set-npc-attackable" />
+        <reaction seq="peace_fix_xdetect_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="ME_WC_Dummy_0172_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 독장판더미 전투시작 - skin" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_4446_158" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="100" opponent="zonenpcspawn:a_4446_158" target="event:attack:attacker" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 독장판더미 전투종료 - skin" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_4446_158" target="event:npc-combat-end:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_WC_Dummy_0162_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        
+        <reaction despawn-force="y" target-1="event:npc-spawn:npc" type="despawn-npc" />
+        <reaction text="백와룡 스폰메시지 디스폰 -skin/4446" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  <script alias="ME_WC_PileBunkerEmpire_0009_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction effect="ME_RD_B2_GiganToad_None_Explosion_none_target" target="event:npc-spawn:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction effect="ME_RD_B2_GiganToad_None_Explosion_none_target_dispel" target="event:npc-combat-start:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 탁기술사 디스폰 (skin/4446)" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="백와룡 탁기술사 합격 성공 -&gt;디스폰 (skin/4446)" type="debug-trace" />
+        
+        <reaction effect="ME_BEK_B1_GiganToad_None_Explosion_3" target="zonenpcspawn:a_4446_158" type="invoke-effect" />
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+         
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  
+  <script alias="ME_WC_RaidArea2_0003_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="팔독모 스폰 -skin/4446" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="팔독모 전투 시작 헤이트 공유 - skin/4446" type="debug-trace" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_226" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_227" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_228" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_229" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_230" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_231" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_232" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_233" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_234" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="eq" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="1" />
+        
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-2" subject2="zonenpcsquad:s_4446_141:reg-2" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-3" subject2="zonenpcsquad:s_4446_141:reg-3" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-4" subject2="zonenpcsquad:s_4446_141:reg-4" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="네임드 4종 HP=1 -skin/4446" type="debug-trace" />
+        
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_141" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_142" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_144" type="set-undying" undying="n" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="event:attacked:defender" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_141" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_142" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_144" type="invoke-effect" />
+        
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_141" target2="zonenpcspawn:a_4446_141" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_142" target2="zonenpcspawn:a_4446_142" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_144" target2="zonenpcspawn:a_4446_144" type="kill" />
+        
+        <reaction seq="MH_WC_GiganToad_0001_combat_start" target="zonenpcspawn:a_4446_158" type="set-npc-act" />
+        
+        <reaction spawn-1="a_4446_273" spawn-2="a_4446_158_2" type="spawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_02_a" target2="zoneenv2spawn:e_AirDash_4446_02_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_03_a" target2="zoneenv2spawn:e_AirDash_4446_03_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_04_a" target2="zoneenv2spawn:e_AirDash_4446_04_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_05_a" target2="zoneenv2spawn:e_AirDash_4446_05_a_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_4446_302" spawn-2="a_4446_303" spawn-3="a_4446_304" spawn-4="a_4446_305" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="eq" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-1" subject2="zonenpcsquad:s_4446_141:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="팔독모 HP=1 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction from="event:attacked:defender" social="ME_WC_RaidArea2_0003_Combat_01" type="play-social" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="팔독모 전투종료 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="팔독모 사망 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+
+  
+  
+  
+
+  <script alias="MH_WC_SnakeSoldierBoss_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="사갈만 스폰 -skin/4446" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="사갈만 전투 시작 헤이트 공유 - skin/4446" type="debug-trace" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_146" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_147" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_148" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_149" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_150" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_151" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_152" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_153" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_154" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_155" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_156" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_157" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="eq" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="1" />
+        
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-1" subject2="zonenpcsquad:s_4446_141:reg-1" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-3" subject2="zonenpcsquad:s_4446_141:reg-3" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-4" subject2="zonenpcsquad:s_4446_141:reg-4" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="네임드 4종 HP=1 -skin/4446" type="debug-trace" />
+        
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_143" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_142" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_144" type="set-undying" undying="n" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="event:attacked:defender" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_143" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_142" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_144" type="invoke-effect" />
+        
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_143" target2="zonenpcspawn:a_4446_143" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_142" target2="zonenpcspawn:a_4446_142" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_144" target2="zonenpcspawn:a_4446_144" type="kill" />
+        
+        <reaction seq="MH_WC_GiganToad_0001_combat_start" target="zonenpcspawn:a_4446_158" type="set-npc-act" />
+        
+        <reaction spawn-1="a_4446_273" spawn-2="a_4446_158_2" type="spawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_02_a" target2="zoneenv2spawn:e_AirDash_4446_02_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_03_a" target2="zoneenv2spawn:e_AirDash_4446_03_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_04_a" target2="zoneenv2spawn:e_AirDash_4446_04_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_05_a" target2="zoneenv2spawn:e_AirDash_4446_05_a_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_4446_302" spawn-2="a_4446_303" spawn-3="a_4446_304" spawn-4="a_4446_305" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="eq" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-2" subject2="zonenpcsquad:s_4446_141:reg-2" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="사갈만 HP=1 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction from="event:attacked:defender" social="MH_WC_SnakeSoldierBoss_0001_Combat_01" type="play-social" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="사갈만 전투종료 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="사갈만 사망 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  
+
+  <script alias="MH_WC_KuJiKan_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="쿠지칸 스폰 -skin/4446" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="쿠지칸 전투 시작 헤이트 공유 - skin/4446" type="debug-trace" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_186" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_187" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_188" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_189" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_190" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_191" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_192" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_193" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_194" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_195" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_196" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_197" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="eq" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="1" />
+        
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-1" subject2="zonenpcsquad:s_4446_141:reg-1" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-2" subject2="zonenpcsquad:s_4446_141:reg-2" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-4" subject2="zonenpcsquad:s_4446_141:reg-4" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="네임드 4종 HP=1 -skin/4446" type="debug-trace" />
+        
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_143" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_141" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_144" type="set-undying" undying="n" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="event:attacked:defender" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_143" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_141" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_144" type="invoke-effect" />
+        
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_143" target2="zonenpcspawn:a_4446_143" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_141" target2="zonenpcspawn:a_4446_141" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_144" target2="zonenpcspawn:a_4446_144" type="kill" />
+        
+        <reaction seq="MH_WC_GiganToad_0001_combat_start" target="zonenpcspawn:a_4446_158" type="set-npc-act" />
+        
+        <reaction spawn-1="a_4446_273" spawn-2="a_4446_158_2" type="spawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_02_a" target2="zoneenv2spawn:e_AirDash_4446_02_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_03_a" target2="zoneenv2spawn:e_AirDash_4446_03_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_04_a" target2="zoneenv2spawn:e_AirDash_4446_04_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_05_a" target2="zoneenv2spawn:e_AirDash_4446_05_a_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_4446_302" spawn-2="a_4446_303" spawn-3="a_4446_304" spawn-4="a_4446_305" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="eq" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-3" subject2="zonenpcsquad:s_4446_141:reg-3" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="쿠지칸 HP=1 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="1" reg="3" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction from="event:attacked:defender" social="MH_WC_KuJiKan_0001_Combat_01" type="play-social" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="쿠지칸 전투종료 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="3" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="쿠지칸 사망 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="3" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  
+  
+
+  <script alias="ME_WC_RaidArea2_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="흑마대성 스폰 -skin/4446" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="흑마대성 전투 시작 헤이트 공유 - skin/4446" type="debug-trace" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_206" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_207" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_208" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_209" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_210" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_211" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_212" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_213" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_214" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_215" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_216" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_4446_217" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="eq" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="1" />
+        
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-1" subject2="zonenpcsquad:s_4446_141:reg-1" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-2" subject2="zonenpcsquad:s_4446_141:reg-2" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-3" subject2="zonenpcsquad:s_4446_141:reg-3" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="네임드 4종 HP=1 -skin/4446" type="debug-trace" />
+        
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_143" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_141" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_4446_142" type="set-undying" undying="n" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="event:attacked:defender" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_143" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_141" type="invoke-effect" />
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="zonenpcspawn:a_4446_142" type="invoke-effect" />
+        
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_143" target2="zonenpcspawn:a_4446_143" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_141" target2="zonenpcspawn:a_4446_141" type="kill" />
+        <reaction target="zonenpcspawn:a_4446_142" target2="zonenpcspawn:a_4446_142" type="kill" />
+        
+        <reaction seq="MH_WC_GiganToad_0001_combat_start" target="zonenpcspawn:a_4446_158" type="set-npc-act" />
+        
+        <reaction spawn-1="a_4446_273" spawn-2="a_4446_158_2" type="spawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_02_a" target2="zoneenv2spawn:e_AirDash_4446_02_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_03_a" target2="zoneenv2spawn:e_AirDash_4446_03_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_04_a" target2="zoneenv2spawn:e_AirDash_4446_04_a_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_05_a" target2="zoneenv2spawn:e_AirDash_4446_05_a_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_4446_302" spawn-2="a_4446_303" spawn-3="a_4446_304" spawn-4="a_4446_305" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="eq" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4446_141:reg-4" subject2="zonenpcsquad:s_4446_141:reg-4" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="흑마대성 HP=1 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="1" reg="4" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction from="event:attacked:defender" social="ME_WC_RaidArea2_0001_Combat_01" type="play-social" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="흑마대성 전투종료 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="4" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+        
+        <reaction effect="ME_RD_B3_Valak_invincible_dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="흑마대성 사망 -skin/4446" type="debug-trace" />
+        
+        <reaction amount="0" reg="4" target="zonenpcsquad:s_4446_141" type="set-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+
+  
+  
+  
+
+  
+  <script alias="MH_WC_RaidArea2Field_0003_ai">
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction spawn-1="a_4446_141" spawn-2="a_4446_142" spawn-3="a_4446_143" spawn-4="a_4446_144" spawn-5="a_4446_274" type="spawn-npc" />
+        <reaction text="네임드 스폰 -skin/4446" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_AirDash_4446_01_a" target2="zoneenv2spawn:e_AirDash_4446_01_a_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_4446_301" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_WC_Dummy_0163_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        
+        <reaction despawn-force="y" target-1="event:npc-spawn:npc" type="despawn-npc" />
+        <reaction text="네임드 스폰메시지 디스폰 -skin/4446" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_WC_Dummy_0188_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="용맥 활성화 -skin/4446" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_WC_Dummy_0193_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="용맥 활성화 -skin/4446" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+
+</table>

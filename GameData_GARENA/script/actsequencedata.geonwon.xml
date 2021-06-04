@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.geonwon.xml-->
+
+  
+  
+  
+    
+  
+  
+  <act-sequence alias="peace_move1_social3_TropicalMonkey" indexed-detect="1" type="peace">
+    <action area="1" max-idle-sec="3" max-move-count="1" min-idle-sec="2" min-move-count="1" type="indexed-movearound" />
+    <action enter_prob="100" type="select">
+      <action prob="40" type="loop">
+        <action social="1" type="indexed-social" />
+        <action duration="5000" type="stay" />
+      </action>
+      <action prob="10" type="loop">
+        <action social="2" type="indexed-social" />
+        <action duration="5000" type="stay" />
+      </action>
+      <action prob="50" type="loop">
+        <action social="3" type="indexed-social" />
+        <action duration="5000" type="stay" />
+      </action>
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_ElephantTotem_0004_01_act" type="act">
+    <action duration="3000" type="stay" />
+  </act-sequence>
+    
+  
+  
+  
+  
+
+  
+  
+     
+  
+  <act-sequence alias="CE_SB_SuWaJok_0002_01_act" type="act">
+    <action pathway="6100_P17_1" type="pathway" />
+    <action social="CE_SB_SuWaJok_0002_soc_01" type="social" />
+    <action social="CE_SB_SuWaJok_0002_soc_02" type="social" />
+    <action social="CE_SB_SuWaJok_0002_soc_03" type="social" />
+    <action pathway="6100_P17_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CE_SB_SuWaJok_0002_02_act" type="act">  
+    <action duration="1000" type="stay" />
+    <action social="CE_SB_SuWaJok_0002_soc_05" type="social" />
+    <action pathway="6100_P17_3" type="pathway" />
+    <action social="CE_SB_SuWaJok_0002_soc_06" type="social" />
+  </act-sequence>
+
+  
+  
+  
+  
+  
+
+  
+  <act-sequence alias="CH_SB_GeonWon_0248_01_act" type="act">
+    <action pathway="6170_P131_1" type="pathway" />
+    <action social="CH_SB_GeonWon_0248_soc_01" type="social" />
+    <action social="CH_SB_GeonWon_0248_soc_02" type="social" />
+    <action pathway="6170_P131_2" type="pathway" />
+    <action social="CH_SB_GeonWon_0248_soc_03" type="social" />
+    <action pathway="6170_P131_3" type="pathway" />
+    <action social="CH_SB_GeonWon_0248_soc_04" type="social" />
+    <action social="CH_SB_GeonWon_0248_soc_05" type="social" />
+    <action pathway="6170_P131_4" type="pathway" />
+    <action social="CH_SB_GeonWon_0248_soc_06" type="social" />
+    <action pathway="6170_P131_5" type="pathway" />
+    <action social="CH_SB_GeonWon_0248_soc_07" type="social" />
+  </act-sequence>  
+  
+  
+  
+  
+  
+  
+
+  
+  <act-sequence alias="ME_SB_FishmanA_0005_01_act" type="act">
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_FishmanA_0004_01_act" type="act">
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  
+</table>

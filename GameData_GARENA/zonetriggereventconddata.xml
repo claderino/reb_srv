@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="ZoneTriggerEventCond" version="0.11">
+  <!--zonetriggereventconddata.xml-->
+	<record alias="5510_Invade_Stage_Start" event-day-of-week="entire-week" event-hour-1="0" event-hour-2="18" event-hour-3="21" event-minute-1="0" event-minute-2="0" event-minute-3="0" type="weekly-event" />
+	<record alias="5510_Invade_Stage_Start_test" event-day-of-week="entire-week" event-hour-1="10" event-hour-2="11" event-hour-3="12" event-hour-4="13" event-hour-5="14" event-hour-6="15" event-hour-7="16" event-hour-8="17" event-minute-1="0" event-minute-2="0" event-minute-3="0" event-minute-4="0" event-minute-5="0" event-minute-6="0" event-minute-7="0" event-minute-8="0" type="weekly-event" />
+	<record alias="5510_Invade_Stage_Failure_Killed_01" kill-count="1" target-npc-1="ME_SA_JeGukGun_0112" target-npc-2="ME_SA_JeGukGun_0113" target-npc-3="ME_SA_JeGukGun_0114" type="npc-killed-event" />
+	<record alias="5510_Invade_Stage_Failure_Killed_02" kill-count="1" target-npc-1="ME_SA_JeGukGun_0112" target-npc-2="ME_SA_JeGukGun_0113" target-npc-3="ME_SA_JeGukGun_0114" type="npc-killed-event" />
+	<record alias="5510_Invade_Stage_01_Clear" kill-count="1" target-npc-1="ME_SA_NokLimDo_0035" target-npc-2="ME_SA_NokLimDo_0036" target-npc-3="ME_SA_NokLimDo_0037" type="npc-killed-event" />
+	<record alias="5510_Invade_Stage_Success" kill-count="1" target-npc-1="ME_SA_InsectTribeStagBeetle_0001" type="npc-killed-event" />
+	<record alias="BattleGuild_Surado_thu-fri_open" event-day-of-week="thu-fri" event-hour-1="20" event-minute-1="0" type="weekly-event" />
+	<record alias="BattleGuild_Surado_weekend_open" event-day-of-week="weekend" event-hour-1="14" event-minute-1="0" type="weekly-event" />
+	<record alias="BattleGuild_Surado_entire-week_open_test" event-day-of-week="entire-week" event-hour-1="10" event-hour-2="11" event-hour-3="13" event-hour-4="14" event-hour-5="15" event-hour-6="16" event-hour-7="17" event-hour-8="18" event-minute-1="0" event-minute-2="0" event-minute-3="0" event-minute-4="0" event-minute-5="0" event-minute-6="0" event-minute-7="0" event-minute-8="0" type="weekly-event" />
+	<record alias="BloodWind_StandBy_Ncond" type="timeout-event" />
+	<record alias="BloodWind_Stage_01_NCond_MainFaction1" kill-count="1" target-npc-1="MH_SA_BFF_HonCheonMiner_0003" type="npc-killed-event" />
+	<record alias="BloodWind_Stage_01_NCond_MainFaction2" kill-count="1" target-npc-1="MH_SA_BFF_MurimMiner_0003" type="npc-killed-event" />
+	<record alias="BloodWind_Stage_01_FCond_BothFaction" type="timeout-event" />
+	<record alias="BloodWind_Stage_02_NCond_MainFaction1" type="timeout-event" />
+	<record alias="BloodWind_Stage_02_NCond_MainFaction2" type="timeout-event" />
+	<record acquisition-score="1" acquisition-score-type="main-faction1" alias="BloodWind_Stage_03_NCond_MainFaction1_01" goal-score="1" goal-score-type="all" op="ge" survived-count="1" target-npc-spawn-1="a_5500_139" target-npc-spawn-2="a_5500_166" type="npc-survived-score-decision-timeout-event" win-score-type="main-faction1" />
+	<record acquisition-score="1" acquisition-score-type="main-faction2" alias="BloodWind_Stage_03_NCond_MainFaction1_02" goal-score="1" goal-score-type="all" op="ge" survived-count="0" target-npc-spawn-1="a_5500_139" target-npc-spawn-2="a_5500_166" type="npc-survived-score-decision-timeout-event" win-score-type="main-faction2" />
+	<record acquisition-score="1" acquisition-score-type="main-faction2" alias="BloodWind_Stage_03_NCond_MainFaction2_01" goal-score="1" goal-score-type="all" op="ge" survived-count="1" target-npc-spawn-1="a_5500_126" target-npc-spawn-2="a_5500_132" type="npc-survived-score-decision-timeout-event" win-score-type="main-faction2" />
+	<record acquisition-score="1" acquisition-score-type="main-faction1" alias="BloodWind_Stage_03_NCond_MainFaction2_02" goal-score="1" goal-score-type="all" op="ge" survived-count="0" target-npc-spawn-1="a_5500_126" target-npc-spawn-2="a_5500_132" type="npc-survived-score-decision-timeout-event" win-score-type="main-faction1" />
+	<record alias="BloodWind_Stage_03_FCond_MainFaction1" kill-count="1" target-npc-1="MH_SA_BFF_MurimMiner_0001" target-npc-2="MH_SA_BFF_MurimMiner_0002" type="npc-killed-event" />
+	<record alias="BloodWind_Stage_03_FCond_MainFaction2" kill-count="1" target-npc-1="MH_SA_BFF_HonCheonMiner_0001" target-npc-2="MH_SA_BFF_HonCheonMiner_0002" type="npc-killed-event" />
+	<record alias="BloodWind_Stage_04_FCond_MainFaction1_01" kill-count="1" target-npc-1="ME_SA_BFF_MuRimChainKnuckleBandit_0001" target-npc-2="ME_SA_BFF_MuRimChainKnuckleBandit_0003" type="npc-killed-event2" />
+	<record alias="BloodWind_Stage_04_FCond_MainFaction2_01" kill-count="1" target-npc-1="ME_SA_BFF_HoncheonChainKnuckleBandit_0001" target-npc-2="ME_SA_BFF_HoncheonChainKnuckleBandit_0003" type="npc-killed-event2" />
+	<record alias="BloodWind_Stage_04_FCond_MainFaction1_02" type="timeout-event" />
+	<record alias="BloodWind_Stage_04_FCond_MainFaction2_02" type="timeout-event" />
+	<record alias="5505-cond-stand-by" type="boss-challenge-timeout-event" />
+	<record alias="5505-cond-stage1" type="boss-challenge-round-score-event" />
+	<record alias="5505-cond-stage2" type="boss-challenge-boss-npc-killed-event" />
+</table>

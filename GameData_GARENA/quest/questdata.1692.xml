@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1692.xml-->
+  <quest alias="q_sub_1692" category="normal" id="1692" max-repeat="1" save-type="all">
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:me_wa_whanmadan_a2_boss_0001" party-broadcast="y" progress-mission="y" team-broadcast="n" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" retired="n">
+      <mission id="2" required-register-value="1">
+        <case object2="npc:me_wb_firegorilla_0002" party-broadcast="y" progress-mission="y" team-broadcast="n" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" retired="n">
+      <mission id="3" required-register-value="1">
+        <case object2="npc:me_wc_demonempire_0003" party-broadcast="y" progress-mission="y" team-broadcast="n" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" retired="y">
+      <mission id="4" required-register-value="1">
+        <case object2="npc:mh_wc_gigantoad_0001" party-broadcast="n" progress-mission="y" team-broadcast="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1" reward-1="1692_final_set1">
+        <case party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+    <acquisition level="55" preceding-quest-1="q_epic_1657" preceding-quest-check="and">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+  </quest>
+</table>

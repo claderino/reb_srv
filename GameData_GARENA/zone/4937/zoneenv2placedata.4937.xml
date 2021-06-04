@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\4937\zoneenv2placedata.4937.xml-->
+	<record action-point="-11882,2208,7289" action-radius="25" alias="e_gate_ver1_musintower7_door_01_place" tool-zone-1="4937" type="gate" />
+	<record action-point="-11880,2810,7302" action-radius="25" alias="e_gate_ver1_musintower7_door_02_place" tool-zone-1="4937" type="gate" />
+	<record action-point="-11708,2510,7301" action-radius="25" alias="e_button_4937yongmak_place" tool-zone-1="4937" tool-zone-2="4947" type="button" />
+	<record action-point="-11882,2855,6979" alias="4937_4946_Potal_place" region-point-1="-11935,2847,6917" region-point-2="-11935,2862,6924" region-point-3="-11829,2862,6924" region-point-4="-11829,2847,6917" tool-zone-1="4937" tool-zone-2="4947" type="portal" />
+	<record action-point="-11875,2335,7369" action-radius="0" alias="4937_Foot_1_place" region-point-1="-12040,2275,7268" region-point-2="-12040,2395,7269" region-point-3="-11711,2395,7269" region-point-4="-11711,2275,8713" tool-zone-1="4937" type="foot-switch" />
+	<record action-point="-11883,2107,7390" action-radius="0" alias="4937_Foot_2_place" region-point-1="-11998,2018,8713" region-point-2="-11998,2197,8713" region-point-3="-11768,2197,8713" region-point-4="-11768,2018,8713" tool-zone-1="4937" type="foot-switch" />
+</table>

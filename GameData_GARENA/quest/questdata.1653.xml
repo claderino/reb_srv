@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1653.xml-->
+  <quest alias="q_epic_1653" category="epic" completed-list="y" id="1653" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_sb_jisoo_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="zone:zone_SecretPlace_D" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="none">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_sb_threefriend_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_sb_threefriend_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" rollback="none">
+      <mission id="5" required-register-value="1">
+        <case object2="zoneenv2:e_chest_6553_HitDummy_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+        <case object="zone:zone_secretplace_d" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1653_50" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" rollback="leave-zone">
+      <mission id="6" required-register-value="1">
+        <case object2="zoneenv2:6553_foot_2" party-broadcast="n" progress-mission="y" quest-decision="qd_1653_1" type="env-entered" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" zone-1="zone_SecretPlace_D" />
+    </mission-step>
+    <mission-step id="6" rollback="leave-zone">
+      <mission id="7" required-register-value="1">
+        <case object="npc:me_sb_yeojin_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1653_2" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" zone-1="zone_SecretPlace_D" />
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone">
+      <mission id="8" required-register-value="1">
+        <case idx="1" object="npc:me_sb_yeojin_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1653_3" type="npc-bleeding-occured" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" zone-1="zone_SecretPlace_D" />
+    </mission-step>
+    <mission-step id="8" rollback="none">
+      <mission id="9" required-register-value="1">
+        <case object="npc:me_sb_yeojin_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1653_6" type="talk" />
+        <case object="zone:zone_secretplace_d" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1653_51" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="9" rollback="none">
+      <mission id="10" required-register-value="1">
+        <case object="npc:ch_sb_jeyeon_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_1653_4" type="talk" />
+        <case object="zone:zone_secretplace_d" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1653_52" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="11" required-register-value="1">
+        <case object="zone:zone_SuchunTemple_Epic8_3" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="11" rollback="none">
+      <mission id="12" required-register-value="1">
+        <case object="npc:ch_sb_jisoo_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="12" rollback="none">
+      <mission id="13" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object="npc:ch_sb_jeyeon_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_1653_5" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="13">
+      <mission id="14" required-register-value="1">
+        <case object="zone:zone_MokInJok_PatriarchHouse_Epic8_1" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="14" rollback="none">
+      <mission id="15" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1653_final_set1">
+        <case object="npc:ch_sb_jeyeon_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_sb_jeyeon_0004" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1654" />
+    </completion>
+    <transit id="1" zone="zone_SuchunTemple_D">
+      <destination mission-step-id="14" zone-index="3" />
+      <destination mission-step-id="13" zone-index="3" />
+      <destination mission-step-id="12" zone-index="3" />
+      <destination mission-step-id="11" zone-index="3" />
+      <destination mission-step-id="10" zone-index="3" />
+      <destination mission-step-id="9" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+    </transit>
+    <transit id="2" zone="zone_SuchunVillage">
+      <destination mission-step-id="14" zone-index="3" />
+      <destination mission-step-id="13" zone-index="3" />
+      <destination mission-step-id="12" zone-index="3" />
+      <destination mission-step-id="11" zone-index="3" />
+      <destination mission-step-id="10" zone-index="3" />
+      <destination mission-step-id="9" zone-index="3" />
+      <destination mission-step-id="8" zone-index="3" />
+      <destination mission-step-id="7" zone-index="3" />
+      <destination mission-step-id="6" zone-index="3" />
+      <destination mission-step-id="5" zone-index="3" />
+      <destination mission-step-id="4" zone-index="3" />
+      <destination mission-step-id="3" zone-index="3" />
+      <destination mission-step-id="2" zone-index="3" />
+      <destination mission-step-id="1" zone-index="3" />
+    </transit>
+    <transit id="3" zone="zone_MokInJok_PatriarchHouse_D">
+      <destination mission-step-id="14" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+    </transit>
+    <transit id="4" zone="zone_chunguntree_d">
+      <destination mission-step-id="14" zone-index="6" />
+      <destination mission-step-id="13" zone-index="6" />
+      <destination mission-step-id="12" zone-index="6" />
+      <destination mission-step-id="11" zone-index="6" />
+      <destination mission-step-id="10" zone-index="6" />
+      <destination mission-step-id="9" zone-index="6" />
+      <destination mission-step-id="8" zone-index="6" />
+      <destination mission-step-id="7" zone-index="6" />
+      <destination mission-step-id="6" zone-index="6" />
+      <destination mission-step-id="5" zone-index="6" />
+      <destination mission-step-id="4" zone-index="6" />
+      <destination mission-step-id="3" zone-index="6" />
+      <destination mission-step-id="2" zone-index="6" />
+      <destination mission-step-id="1" zone-index="6" />
+    </transit>
+  </quest>
+</table>

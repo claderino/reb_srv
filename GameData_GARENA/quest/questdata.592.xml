@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.592.xml-->
+  <quest alias="q_sub_592" broadcast-category="field" category="normal" id="592" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="3" preceding-quest-1="q_epic_305" preceding-quest-check="and" />
+    <mission-step id="1" retired="y">
+      <mission id="1" required-register-value="1" />
+    </mission-step>
+    <mission-step id="2" retired="y">
+      <mission id="2" required-register-value="1" />
+    </mission-step>
+    <mission-step id="3" retired="y">
+      <mission id="3" required-register-value="1" />
+    </mission-step>
+    <mission-step id="4" retired="y">
+      <mission id="4" required-register-value="1" />
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1" />
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1" />
+    </mission-step>
+  </quest>
+</table>

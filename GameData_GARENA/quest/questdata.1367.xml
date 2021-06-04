@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1367.xml-->
+  <quest alias="q_sub_1367" broadcast-category="field" category="normal" id="1367" max-repeat="1" reset-type="daily" retired="y" save-type="all">
+    <acquisition check-tencent-vitality="n" level="16">
+      <case acquire-quest="y" object="npc:ctzn_jinm_seavillctzn_wangbuja_001" party-broadcast="n" progress-mission="y" type="talk" />
+      <case acquire-quest="y" object="npc:CH_WB_SeaVillCtzn_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      <case acquire-quest="y" object="npc:CH_WB_WangBuJa_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      <case acquire-quest="y" object="npc:CH_WB_SeaVillCtzn_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      <case acquire-quest="y" object="npc:CH_WB_SeaVillCtzn_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      <case acquire-quest="y" object="npc:CH_WB_SeaVillCtzn_0004" party-broadcast="n" progress-mission="y" type="talk" />
+    </acquisition>
+    <mission-step completion-type="or" id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_WB_CrocodileSharkTribeC2_0001" party-broadcast="n" progress-mission="y" type="loot" />
+      </mission>
+      <mission id="2" required-register-value="100">
+        <case object2="npc:ME_WB_SoraCrab_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_KingFrog_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_FishmanA_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_FishmanA_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_wb_fishmanc_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_SoraCrab_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_SoraCrab_0005" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_CrocodileSharkTribeA_0003" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="3" required-register-value="1" reward-1="1367_final_set1" reward-2="1367_final_set2">
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+        <case object="npc:ctzn_jinm_seavillctzn_wangbuja_001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WB_WangBuJa_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

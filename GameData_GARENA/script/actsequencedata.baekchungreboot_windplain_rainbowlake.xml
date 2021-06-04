@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.baekchungreboot_windplain_rainbowlake.xml-->
+
+  
+  
+  
+  
+
+
+  
+  
+
+  
+  <act-sequence alias="ME_SA_BelliedFrog_0008_peace" type="act">
+    <action social="ME_SA_BelliedFrog_0008_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="ME_SA_BelliedFrog_0008_soc_03" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="ME_SA_BelliedFrog_0008_soc_02" type="social" />
+    <action social="ME_SA_BelliedFrog_0008_soc_02" type="social" />
+    <action social="ME_SA_BelliedFrog_0008_soc_02" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SA_SA_Dummy_0001_act" type="act">
+    <action duration="28000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SA_SA_Dummy_0006_check_act" type="act">
+    
+    <action duration="10000" type="stay" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="ME_SA_SA_Dummy_0007_5m_act" type="act">
+    <action duration="300000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="ME_SA_SA_Dummy_0008_5m_act" type="act">
+    <action duration="300000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_SA_SA_Dummy_0009_5m_act" type="act">
+    <action duration="300000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SA_SA_Dummy_0007_25m_act" type="act">
+    <action duration="1500000" type="stay" />
+    
+  </act-sequence>
+
+  <act-sequence alias="ME_SA_SA_Dummy_0008_25m_act" type="act">
+    <action duration="1500000" type="stay" />
+    
+  </act-sequence>
+
+  <act-sequence alias="ME_SA_SA_Dummy_0009_25m_act" type="act">
+    <action duration="1500000" type="stay" />
+    
+  </act-sequence>
+  
+  <act-sequence alias="ME_SA_CrocodileSharkTrabeA_0003_1s_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SA_Juno_0005_peace_movearound" indexed-detect="1" type="peace">
+    <action hide="y" type="hide" />
+    <action area="1" max-idle-sec="2" max-move-count="10" min-idle-sec="1" min-move-count="3" type="indexed-movearound" />
+  </act-sequence>
+</table>

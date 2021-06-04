@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.epic08th_03.xml-->
+  
+  
+  
+
+  
+  <act-sequence alias="CH_SB_JiSoo_0001_path_01" detect="both-360" type="act">
+    <action pathway="6538_P4" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JiSoo_0001_path_02" detect="both-360" type="act">
+    <action social="CH_SB_Jisoo_0001_soc_01" type="social" />
+    <action pathway="6538_P4_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JiSoo_0001_act_02" detect="both-360" type="act">
+    <action social="CH_SB_Jisoo_0001_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SB_JeYeon_0001_con_start_act" type="act">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0001_path_01" detect="both-360" type="act">
+    <action pathway="6538_P2_1" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0001_act_01" type="act">
+    <action social="CH_SB_JeYeon_0001_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0001_path_02" detect="both-360" type="act">
+    <action social="CH_SB_JeYeon_0001_soc_02" type="social" />
+    <action pathway="6538_P2_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0001_act_02" type="act">
+    <action social="CH_SB_JeYeon_0001_soc_03" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0001_path_03" detect="both-360" type="act">
+    <action social="CH_SB_JeYeon_0001_soc_04" type="social" />
+    <action pathway="6538_P2_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0001_peace_03" type="peace">
+    <action social="CH_SB_JeYeon_0001_soc_07" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0001_act_04" type="act">
+    <action social="CH_SB_JeYeon_0001_soc_07" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0001_path_04" detect="both-360" type="act">
+    <action pathway="6538_P2_4" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0001_con_arrived_act" type="act">
+    <action social="CH_SB_JeYeon_0001_soc_06" type="social" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_SB_Yeojin_0001_path_01" detect="both-360" type="act">
+    <action pathway="6538_P3_1" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_Yeojin_0001_path_02" detect="both-360" type="act">
+    <action pathway="6538_P3_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_Yeojin_0001_path_03" detect="both-360" type="act">
+    <action pathway="6538_P3_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_Yeojin_0001_path_04" detect="both-360" type="act">
+    <action social="CH_SB_Yeojin_0001_soc_04" type="social" />
+    <action pathway="6538_P3_4" type="pathway" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="a_6538_16_path_02" detect="both-360" type="act">
+    <action pathway="6538_P16_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_17_path_02" detect="both-360" type="act">
+    <action pathway="6538_P17_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_18_path_02" detect="both-360" type="act">
+    <action pathway="6538_P18_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_19_path_02" detect="both-360" type="act">
+    <action pathway="6538_P19_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_20_path_02" detect="both-360" type="act">
+    <action pathway="6538_P20_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_21_path_02" detect="both-360" type="act">
+    <action pathway="6538_P21_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_22_path_02" detect="both-360" type="act">
+    <action pathway="6538_P22_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_23_path_02" detect="both-360" type="act">
+    <action pathway="6538_P23_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_24_path_02" detect="both-360" type="act">
+    <action pathway="6538_P24_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_25_path_02" detect="both-360" type="act">
+    <action pathway="6538_P25_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_26_path_02" detect="both-360" type="act">
+    <action pathway="6538_P26_2" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="a_6538_16_path_03" detect="both-360" type="act">
+    <action social="CH_SB_SeoCheon_0001_soc_01" type="social" />
+    <action pathway="6538_P16_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_17_path_03" detect="both-360" type="act">
+    <action social="CH_SB_SeoCheon_0002_soc_01" type="social" />
+    <action pathway="6538_P17_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_18_path_03" detect="both-360" type="act">
+    <action pathway="6538_P18_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_19_path_03" detect="both-360" type="act">
+    <action pathway="6538_P19_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_20_path_03" detect="both-360" type="act">
+    <action social="CH_SB_SeoCheon_0006_soc_01" type="social" />
+    <action pathway="6538_P20_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_21_path_03" detect="both-360" type="act">
+    <action social="CH_SB_SeoCheon_0004_soc_01" type="social" />
+    <action pathway="6538_P21_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_22_path_03" detect="both-360" type="act">
+    <action pathway="6538_P22_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_23_path_03" detect="both-360" type="act">
+    <action social="CH_SB_SeoCheon_0008_soc_01" type="social" />
+    <action pathway="6538_P23_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_24_path_03" detect="both-360" type="act">
+    <action social="CH_SB_SeoCheon_0005_soc_01" type="social" />
+    <action pathway="6538_P24_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_25_path_03" detect="both-360" type="act">
+    <action pathway="6538_P25_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="a_6538_26_path_03" detect="both-360" type="act">
+    <action pathway="6538_P26_3" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SB_JeYeon_0002_act_01" type="act">
+    <action social="CH_SB_JeYeon_0002_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0002_act_02" type="act">
+    <action social="CH_SB_JeYeon_0002_soc_02" type="social" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_SB_JeYeon_0002_path_01" type="act">
+    <action social="CH_SB_JeYeon_0002_soc_03" type="social" />
+    <action pathway="6553_P2_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_SB_JeYeon_0002_despawn" type="act">
+    <action pathway="6553_P2" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_Yeojin_0001_act_01" type="act">
+    <action social="ME_SB_Yeojin_0001_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="ME_SB_Yeojin_0001_despawn" type="act">
+    <action social="ME_SB_Yeojin_0001_soc_02" type="social" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SB_JeYeon_0005_path_01" detect="both-360" type="act">
+    <action pathway="6557_P2_1" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0005_con_start_act" detect="both-360" type="act">
+    <action pathway="6557_P2_2" type="pathway" />
+    <action social="CH_SB_JeYeon_0005_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0005_path_03" detect="both-360" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_SB_JeYeon_0005_soc_02" type="social" />
+    <action pathway="6557_P2_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0005_con_arrived_act" detect="both-360" type="act">
+    <action pathway="6557_P2_4" type="pathway" />
+    <action social="CH_SB_JeYeon_0005_soc_03" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_SB_JeYeon_0005_despawn" type="act">
+    <action pathway="6557_P2_5" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SB_JeYeon_0007_path_02" detect="both-360" type="act">
+    <action pathway="6558_P2_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0007_path_05" detect="both-360" type="act">
+    <action pathway="6558_P2_5" type="pathway" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_SB_WoodFighter_0001_path_01" detect="both-360" type="act">
+    <action pathway="6558_P11" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_WoodFighter_0001_path_02" detect="both-360" type="act">
+    <action pathway="6558_P11_1" type="pathway" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_SB_JeYeon_0008_path_01" detect="both-360" type="act">
+    <action pathway="6558_P2_3" type="pathway" />
+    <action social="CH_SB_JeYeon_0005_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0008_path_02" detect="both-360" type="act">
+    <action pathway="6558_P2_4" type="pathway" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CE_SB_Dummy_0002_act_01" type="act">
+    <action duration="4000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CE_SB_Dummy_0002_act_02" type="act">
+    <action duration="4000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CE_SB_Dummy_0002_act_03" type="act">
+    <action duration="4000" type="stay" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_SB_JeYeon_0009_path_06" detect="both-360" type="act">
+    <action pathway="6560_P2_6" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0009_path_01" detect="both-360" type="act">
+    <action pathway="6560_P2_1" type="pathway" />
+    <action social="CH_SB_JeYeon_0009_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0009_path_07" detect="both-360" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="6560_P2_7" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0009_path_02" detect="both-360" type="act">
+    <action pathway="6560_P2_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0009_path_03" detect="both-360" type="act">
+    <action pathway="6560_P2_3" type="pathway" />
+    <action social="CH_SB_JeYeon_0009_soc_02" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0009_path_04" detect="both-360" type="act">
+    <action pathway="6560_P2_4" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0009_path_08" detect="both-360" type="act">
+    <action pathway="6560_P2_8" type="pathway" />
+    <action social="CH_SB_JeYeon_0009_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0009_path_05" detect="both-360" type="act">
+    <action pathway="6560_P2_5" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_SB_JeYeon_0009_act_03" detect="both-360" type="act">
+    <action social="CH_SB_JeYeon_0009_soc_03" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0009_act_04" detect="both-360" type="act">
+    <action social="CH_SB_JeYeon_0009_soc_04" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_JeYeon_0009_despawn" detect="both-360" type="act">
+    <action duration="2000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_SB_Yeojin_0002_act_01" detect="both-360" type="act">
+    <action social="CH_SB_Yeojin_0002_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_Yeojin_0002_path_01" detect="both-360" type="act">
+    <action pathway="6560_P3_1" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_Yeojin_0002_path_02" detect="both-360" type="act">
+    <action pathway="6560_P3_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_Yeojin_0002_path_04" detect="both-360" type="act">
+    <action pathway="6560_P3_4" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_Yeojin_0002_path_03" detect="both-360" type="act">
+    <action pathway="6560_P3_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_Yeojin_0002_despawn" detect="both-360" type="act">
+    <action duration="2000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_SB_SeoCheon_0020_act_01" type="act">
+    <action social="CH_SB_SeoCheon_0020_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_SeoCheon_0015_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_SB_SeoCheon_0015_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_SeoCheon_0017_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_SB_SeoCheon_0017_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_SeoCheon_0019_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_SB_SeoCheon_0019_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_SeoCheon_0021_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_SB_SeoCheon_0021_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_SeoCheon_0018_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_SB_SeoCheon_0018_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_SeoCheon_0016_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_SB_SeoCheon_0016_soc_01" type="social" />
+  </act-sequence>
+  
+
+  
+  <act-sequence alias="CH_SB_JiSoo_0004_act_01" type="act">
+    <action social="CH_SB_JiSoo_0004_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SB_BunYang_0024_path_01" type="act">
+    <action pathway="6549_P6" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_BunYang_0024_act_01" type="act">
+    <action social="CH_SB_BunYang_0024_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SB_BunA_0022_path_01" type="act">
+    <action pathway="6549_P7" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_BunA_0022_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_SB_BunA_0022_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SB_ChinChin_0023_path_01" type="act">
+    <action pathway="6549_P8" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SB_ChinChin_0023_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_SB_ChinChin_0023_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SB_SeoYeon_0006_act_01" type="act">
+    <action duration="2000" type="stay" />
+    <action social="CH_SB_SeoYeon_0005_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WB_SnowbanditA_0001_TestAct" indexed-detect="1" type="peace">
+	<action enter-prob="100" type="select">
+		<action prob="50" social="ps_RandomSocial" type="social" />
+		<action prob="50" social="ps_RandomSocial_1" type="social" />
+	</action>
+</act-sequence>
+  
+</table>

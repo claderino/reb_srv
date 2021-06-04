@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.553.xml-->
+  <quest alias="q_sub_553" category="normal" district-1="deasamak" id="553" max-repeat="1" save-type="all">
+    <acquisition level="19" preceding-quest-1="q_epic_501" preceding-quest-check="and">
+      <case loot-item="quest_553" object2="npc:mh_bandit_0014" party-broadcast="n" type="loot" />
+      <case acquire-quest="y" item="quest_553" party-broadcast="n" type="talk-to-item" />
+      <case loot-item="quest_553" object2="npc:mh_bandit_0015" party-broadcast="n" type="loot" />
+      <case loot-item="quest_553" object2="npc:mh_bandit_0016" party-broadcast="n" type="loot" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="553_final_set1">
+        <case grocery="quest_553" object="npc:ch_gunwonsungdo_0003" party-broadcast="n" progress-mission="y" required-item-1="quest_553" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <completion-loss item-1="quest_553" />
+      </mission>
+    </mission-step>
+    <giveup-loss item-1="quest_553" />
+  </quest>
+</table>

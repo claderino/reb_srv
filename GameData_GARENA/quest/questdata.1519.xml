@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1519.xml-->
+  <quest alias="q_epic_1519" category="epic" completed-list="y" id="1519" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <completion>
+      <next-quest quest="q_epic_1520" />
+    </completion>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SB_CheolMuGoe_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_12" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_26" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="zoneenv2:6190_foot_2" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_18" type="env-entered" />
+        <case object="npc:CH_SB_CheolMuGoe_0003" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_8" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+        <case object2="zoneenv2:6190_foot_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_2" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1519_5" rollback="leave-zone" zone-1="zone_GeonWon_OngSeong_1">
+      <mission id="3" required-register-value="4">
+        <case idx="1" object="npc:ME_SB_HoWolRyung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_20" type="npc-bleeding-occured" />
+        <case idx="1" object="npc:ME_SB_EnAnk_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_19" type="npc-bleeding-occured" />
+        <case idx="1" object="npc:ME_SB_NamGung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_4" type="npc-bleeding-occured" />
+        <case idx="1" object="npc:ME_SB_Taekwang_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_3" type="npc-bleeding-occured" />
+        <case object="npc:CH_SB_CheolMuGoe_0003" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_8" type="talk" />
+        <case object="zone:zone_GeonWon_OngSeong_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_21" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+        <case object2="zoneenv2:6190_foot_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_28" type="env-entered" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="zone_GeonWon_OngSeong_1" />
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_SB_GunHyang_0009" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_9" type="talk" />
+        <case object="npc:CH_SB_CheolMuGoe_0003" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_8" type="talk" />
+        <case object="zone:zone_GeonWon_OngSeong_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_22" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object2="zoneenv2:6190_foot_3" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_10" type="env-entered" />
+        <case object="npc:CH_SB_CheolMuGoe_0003" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_8" type="talk" />
+        <case object="zone:zone_GeonWon_OngSeong_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_29" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object2="npc:ME_SB_SnowmanCBig_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_25" type="killed" />
+        <case object="npc:CH_SB_CheolMuGoe_0003" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_8" type="talk" />
+        <case object="zone:zone_GeonWon_OngSeong_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_30" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_SB_ChinChin_0013" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_1" type="talk" />
+        <case object="npc:CH_SB_CheolMuGoe_0003" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_8" type="talk" />
+        <case object="zone:zone_GeonWon_OngSeong_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_32" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+        <case object="npc:CH_SB_BunYang_0019" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object2="zoneenv2:6191_foot_2" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="npc:CH_SB_CheolMuGoe_0003" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_8" type="talk" />
+        <case object="zone:zone_GeonWon_OngSeong_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_23" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object2="npc:ME_SB_JinTaePyeong_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_7" type="killed" />
+        <case object="npc:CH_SB_CheolMuGoe_0003" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_8" type="talk" />
+        <case object="zone:zone_GeonWon_OngSeong_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_23" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+        <case object="zone:zone_GeonWon_OngSeong_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_31" type="enter-zone" />
+        <case object2="zoneenv2:6191_foot_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_6" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case object="npc:CH_SB_ChinChin_0014" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+        <case object="npc:CH_SB_BunA_0015" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_SB_DongJinA_0007" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_SB_BunYang_0016" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_SB_ChinChin_0014" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1">
+        <case object="npc:CH_SB_JinSeoYeon_0008" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="12">
+      <mission id="12" required-register-value="1">
+        <case object="npc:CH_SB_TaeGwang_0005" party-broadcast="n" progress-mission="y" required-item-depot="none" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+        <case object="npc:CH_SB_NamGung_0005" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_geonwon_buyuhamdae">
+      <destination mission-step-id="9" zone-index="3" />
+      <destination mission-step-id="8" zone-index="3" />
+      <destination mission-step-id="7" zone-index="3" />
+      <destination mission-step-id="6" zone-index="3" />
+      <destination mission-step-id="5" zone-index="3" />
+      <destination mission-step-id="4" zone-index="3" />
+      <destination mission-step-id="3" zone-index="3" />
+      <destination mission-step-id="2" zone-index="3" />
+      <destination mission-step-id="1" zone-index="3" />
+    </transit>
+    <transit id="2" zone="zone_GeonWon_OngSeong">
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+    </transit>
+    <mission-step id="13">
+      <mission id="13" required-register-value="1">
+        <case object="npc:CH_SB_GunHyang_0010" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_16" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="14">
+      <mission id="14" required-register-value="1">
+        <case object="npc:CH_SB_CheolMuGoe_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_4" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_24" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="15">
+      <mission id="15" required-register-value="1" reward-1="1519_final_set1">
+        <case object="npc:CH_SB_BunYang_0016" party-broadcast="n" progress-mission="y" quest-decision="qd_1519_17" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_4" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_24" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="3" zone="zone_GeonWon_BuYuHamDae_4_D">
+      <destination mission-step-id="15" zone-index="1" />
+      <destination mission-step-id="14" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+    </transit>
+  </quest>
+</table>

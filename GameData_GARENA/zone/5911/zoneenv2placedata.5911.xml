@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5911\zoneenv2placedata.5911.xml-->
+	<record action-point="-11988,6142,3950" action-radius="0" alias="e_5911_Cimematic_place" region-point-1="-12021,6050,3964" region-point-2="-12021,6234,3899" region-point-3="-11956,6234,4204" region-point-4="-11956,6050,3941" tool-zone-1="5911" tool-zone-2="5921" type="foot-switch" />
+	<record action-point="-13294,5018,3539" action-radius="0" alias="e_5911footswitch_01_place" region-point-1="-13327,4883,3621" region-point-2="-13327,5153,3621" region-point-3="-13260,5153,3621" region-point-4="-13260,4883,3621" tool-zone-1="5911" type="foot-switch" />
+	<record action-point="-12585,6172,3632" action-radius="25" alias="e_button_5911yongmak_place" region-point-1="-12587,6170,3612" region-point-2="-12587,6174,3612" region-point-3="-12583,6174,3612" region-point-4="-12583,6170,3612" tool-zone-1="5911" tool-zone-2="5920" tool-zone-3="5921" type="button" />
+	<record action-point="-14262,6490,3520" action-radius="62" alias="e_gate_5911door_01_place" tool-zone-1="5911" tool-zone-2="5921" type="gate" />
+	<record action-point="-12305,7338,3803" action-radius="62" alias="e_gate_5911door_02_place" tool-zone-1="5911" tool-zone-2="5921" type="gate" />
+	<record action-point="-13932,5515,3671" action-radius="0" alias="e_5911footswitch_01_end_place" region-point-1="-14060,5450,3807" region-point-2="-13855,5635,3807" region-point-3="-13805,5581,3807" region-point-4="-14010,5395,3807" tool-zone-1="5911" type="foot-switch" />
+	<record action-point="-14251,6545,3564" action-radius="0" alias="e_5911footswitch_02_place" region-point-1="-14419,6512,3678" region-point-2="-14419,6577,3671" region-point-3="-14083,6577,4171" region-point-4="-14083,6512,4171" tool-zone-1="5911" type="foot-switch" />
+	<record action-point="-13762,7180,3691" action-radius="0" alias="e_5911footswitch_02_end_place" region-point-1="-13866,7237,3818" region-point-2="-13822,7282,3818" region-point-3="-13658,7123,4060" region-point-4="-13701,7078,4060" tool-zone-1="5911" type="foot-switch" />
+	<record action-point="-12245,7335,3858" action-radius="0" alias="e_5911footswitch_03_place" region-point-1="-12292,7232,3931" region-point-2="-12244,7447,4060" region-point-3="-12199,7437,3955" region-point-4="-12247,7222,3955" tool-zone-1="5911" type="foot-switch" />
+	<record action-point="-11621,6845,3977" action-radius="0" alias="e_5911footswitch_03_end_place" region-point-1="-11741,6798,4095" region-point-2="-11547,6951,4095" region-point-3="-11501,6892,4095" region-point-4="-11695,6739,4095" tool-zone-1="5911" type="foot-switch" />
+	<record action-point="-12186,6136,3623" action-radius="20" alias="e_Chest_5911hartA_01_1_place" tool-zone-1="5910" tool-zone-2="5911" type="chest" />
+	<record alias="AirDash_5911yongmak_2_a_place" duration="5100" end-pos="-12120,6141,3903" region-point-1="-13168,4603,3465" region-point-2="-13168,4651,4060" region-point-3="-13120,4651,3464" region-point-4="-13120,4603,3465" summon-end-pos="-12120,6141,3903" tool-zone-1="5911" type="airdash" />
+	<record action-point="-13070,4442,3507" alias="5911_SulinDongGul_Lobby_5919_place" region-point-1="-13132,4433,4060" region-point-2="-13132,4451,4060" region-point-3="-13008,4451,4060" region-point-4="-13008,4433,4060" tool-zone-1="5910" tool-zone-2="5911" tool-zone-3="5920" tool-zone-4="5921" type="portal" />
+</table>

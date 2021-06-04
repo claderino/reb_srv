@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.839.xml-->
+  <quest alias="q_sub_839" broadcast-category="field" category="normal" id="839" max-repeat="1" save-type="all">
+    <acquisition level="45" preceding-quest-1="q_epic_1443" preceding-quest-2="q_sub_833" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_CT_Flower_0008" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1">
+        <case object="zone:zone_SnowHide" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_839_1" type="enter-zone" />
+        <case object="npc:CH_CT_Blizzard_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_839_2" type="npc-manipulate" />
+        <case object="npc:CH_CT_Flower_0009" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="4" required-register-value="1" reward-1="839_final_set1">
+        <case object="npc:CH_CT_Flower_0009" party-broadcast="n" progress-mission="y" quest-decision="qd_839_4" type="talk" />
+        <case object="zone:zone_SnowHide" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_839_3" type="enter-zone" />
+        <case object="npc:CH_CT_Blizzard_0003" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_SnowHide_Default">
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+    </transit>
+    <mission-step id="1">
+      <mission id="1" required-register-value="6">
+        <case object2="npc:ME_CT_Golem_0083" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="100" type="loot" />
+      </mission>
+      <mission id="2" required-register-value="2">
+        <case object2="npc:ME_CT_MuSinTower2_GeumGangYukSa_0002" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

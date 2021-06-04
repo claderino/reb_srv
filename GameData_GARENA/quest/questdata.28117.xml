@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.28117.xml-->
+	<quest alias="sq_28117" category="tendency-simple" id="28117" max-repeat="-1" save-type="except-completion-and-logout-save">
+		<mission-step id="1">
+			<mission id="1" required-attraction="tendency-field:CheonSangBunJi" tendency-id="3" variation-required-field-play-point-1="0" variation-required-register-value-1="3" variation-reward-field-play-point-1="51" variation-reward-tendency-score-1="51">
+				<case multi-object-1="npc:ME_WC_RuneMechaYacha_0003" multi-object-2="npc:ME_WC_RuneMechaYacha2_0003" multi-object-3="npc:ME_WC_RuneMechaYacha3_0003" party-broadcast="y" progress-mission="y" type="loot" />
+			</mission>
+		</mission-step>
+	</quest>
+</table>

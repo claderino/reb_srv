@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.baekchung_takmagul.xml-->
+
+  
+  
+  
+
+  
+  <act-sequence alias="CH_CT_Scholar_0008_01_act" type="act">
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_01" type="social" />
+    <action duration="4000" type="stay" />    
+    <action step="1" type="pause" />
+    <action duration="2000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Scholar_0008_01_peace" type="peace">
+    <action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" />
+    <action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" />
+    
+    
+    <action social="ME_SA_TakMaGul_0001_soc_03" target="zonenpcspawn:a_5097_2" type="social" />
+    
+    <action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" />
+    <action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" /><action duration="1000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Scholar_0008_02_act" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_02" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="2" type="pause" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_16" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Scholar_0008_03_act" type="act">
+    <action duration="8000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_04" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="3" type="pause" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_05" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="2000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="MH_CT_Mokujin_0071_01_act" indexed-detect="1" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_29" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_30" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+    <action pathway="wp5097_area2_3" type="pathway" />
+    <action step="1" type="pause" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_31" target="zonenpcspawn:a_5097_130" type="social" />
+    <action step="2" type="pause" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_32" target="zonenpcspawn:a_5097_130" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_Mokujin_0071_02_act" indexed-detect="1" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_34" target="zonenpcspawn:a_5097_130" type="social" />
+    <action duration="4000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_35" type="social" />
+    <action duration="4000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_36" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_Mokujin_0071_03_act" indexed-detect="1" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_38" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_Mokujin_0071_04_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5097_area2_4" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="MH_CT_Mokujin_0071_04_act" indexed-detect="1" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_47" target="zonenpcspawn:a_5097_12" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_Mokujin_0071_05_act" indexed-detect="1" type="act">
+    
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_CT_Mokujin_0071_06_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="3" type="indexed-pathway" />
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_45" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="4000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_46" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_CuteVoice_0009_01_act" indexed-detect="1" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_54" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+
+  <act-sequence alias="CH_CT_Scholar_0007_01_act" type="act">
+    <action social="ME_SA_TakMaGul_0001_soc_17" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Scholar_0007_02_act" type="act">
+    <action duration="3000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_06" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="1" type="pause" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_07" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Scholar_0008_04_act" type="act">
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_09" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Scholar_0008_05_act" type="act">
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_15" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="4000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  
+  
+  
+
+  
+  <act-sequence alias="CH_CT_Scholar_0009_01_act" type="act">
+    <action duration="4000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_18" type="social" />
+    <action step="1" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Scholar_0009_02_act" type="act">
+    <action duration="7000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_19" type="social" />
+    <action step="2" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Scholar_0009_03_act" type="act">
+    <action duration="7000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_20" type="social" />
+    <action step="3" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Scholar_0009_04_act" type="act">
+    <action duration="7000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_21" type="social" />
+    <action step="4" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Scholar_0009_05_act" type="act">
+    <action duration="7000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_22" type="social" />
+    <action step="5" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Scholar_0009_06_act" type="act">
+    <action duration="7000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_23" type="social" />
+    <action step="6" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Scholar_0009_07_act" type="act">
+    <action duration="7000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_24" type="social" />
+    <action step="7" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Scholar_0009_08_act" type="act">
+    <action duration="7000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_25" type="social" />
+    <action step="8" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Scholar_0009_09_act" type="act">
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_CT_Dummy_0317_act" type="act">
+    <action duration="6000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_28" type="social" />
+    <action duration="60000" type="stay" />
+    <action step="1" type="pause" />
+    
+    <action duration="2000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="2000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+
+  
+  
+  
+
+  
+  <act-sequence alias="CH_BC_Scholar_0002_01_act" type="act">
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="2000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_BC_Scholar_0002_01_peace" type="peace">
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+
+    
+    <action social="ME_SA_TakMaGul_0001_soc_03" target="zonenpcspawn:a_5094_2" type="social" />
+
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_BC_Scholar_0002_02_act" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_02" target="zonenpcspawn:a_5094_2" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="2" type="pause" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_16" target="zonenpcspawn:a_5094_2" type="social" />
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_BC_Scholar_0002_03_act" type="act">
+    <action duration="8000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_04" target="zonenpcspawn:a_5094_2" type="social" />
+    <action pathway="wp5094_area130_1" type="pathway" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_10" target="zonenpcspawn:a_5094_2" type="social" />
+    <action duration="2000" type="stay" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_BC_Mokujin_0001_01_act" indexed-detect="1" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_29" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_30" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+    <action pathway="wp5094_area2_3" type="pathway" />
+    <action step="1" type="pause" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_31" target="zonenpcspawn:a_5094_130" type="social" />
+    <action step="2" type="pause" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_32" target="zonenpcspawn:a_5094_130" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_BC_Mokujin_0001_02_act" indexed-detect="1" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_34" target="zonenpcspawn:a_5094_130" type="social" />
+    <action duration="4000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_35" type="social" />
+    <action duration="4000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_36" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_BC_Mokujin_0001_03_act" indexed-detect="1" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_38" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_BC_Mokujin_0001_04_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5094_area2_4" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="MH_BC_Mokujin_0001_04_act" indexed-detect="1" type="act">
+    
+    <action social="ME_SA_TakMaGul_0001_soc_47" target="zonenpcspawn:a_5094_12" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_BC_Mokujin_0001_05_act" indexed-detect="1" type="act">
+    
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_BC_Mokujin_0001_06_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="3" type="indexed-pathway" />
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_45" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="4000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_46" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+
+  <act-sequence alias="CH_BC_Scholar_0001_01_act" type="act">
+    <action social="ME_SA_TakMaGul_0001_soc_17" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_BC_Scholar_0001_02_act" type="act">
+    <action duration="3000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_06" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="1" type="pause" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_07" target="zonenpcspawn:a_5097_2" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_BC_Scholar_0002_04_act" type="act">
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_09" target="zonenpcspawn:a_5094_2" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_BC_Scholar_0002_05_act" type="act">
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SA_TakMaGul_0001_soc_15" target="zonenpcspawn:a_5094_2" type="social" />
+    <action duration="4000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  
+
+
+  
+  <act-sequence alias="ME_BC_Dummy_0003_act" type="act">
+    <action duration="6000" type="stay" />
+    <action social="ME_SA_TakMaGul_0001_soc_28" type="social" />
+    <action duration="60000" type="stay" />
+    <action step="1" type="pause" />
+    
+    <action duration="2000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="2000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+</table>

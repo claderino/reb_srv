@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.527.xml-->
+  <quest alias="q_epic_527" category="epic" completed-list="y" district-1="deasamak" id="527" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_muun_0015" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_527_3" rollback="none" zone-1="zone_GoDeaMuDeom">
+      <mission id="2" required-register-value="1">
+        <case object="npc:mh_bokgonpe_0024" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_GoDeaMuDeom" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_527_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_muun_0015" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" zone-1="zone_togulmudom">
+      <mission id="4" required-register-value="1">
+        <case gadget="Q_Aboil_PotA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_gustatue_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_boilpot_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ce_paper_0001" party-broadcast="n" progress-mission="y" type="npc-manipulate" visible-object="n" />
+        <fixed-reward slot-1="item:quest_527" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case item="Quest_527" party-broadcast="n" progress-mission="y" type="talk-to-item" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1" reward-1="527_final_set1">
+        <case grocery="Quest_527" object="npc:ch_muun_0015" party-broadcast="n" progress-mission="y" quest-decision="qd_527_7" required-item-1="Quest_527" required-item-depot="bag" required-item-loss="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_528" />
+    </completion>
+  </quest>
+</table>

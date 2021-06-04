@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.25109.xml-->
+  <quest alias="q_sub_25109" broadcast-category="sextet" category="dungeon" dungeon="Dungeon_HeukRyong_Epic6" id="25109" max-repeat="1" progress-difficulty-type-1="y" progress-difficulty-type-2="n" progress-difficulty-type-3="n" save-type="nothing">
+    <acquisition level="50" preceding-quest-1="q_epic_1449" preceding-quest-2="q_epic_293" preceding-quest-check="or" preceding-quest-mission-step-1="0">
+      <case acquire-quest="y" object2="zoneenv2:4430_portal_4431" party-broadcast="n" type="enter-portal" />
+      <case acquire-quest="y" object2="zoneenv2:934_portal_4432" party-broadcast="n" type="enter-portal" />
+      <case object2="zoneenv2:4430_portal_4431_1" party-broadcast="n" type="enter-portal" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_WB_SnakeSoldier_0002" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_HeukRyong_Epic6_Default">
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

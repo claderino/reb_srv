@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.260.xml-->
+  <quest alias="q_epic_260" broadcast-category="field" category="epic" completed-list="n" id="260" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_CT_YuRan_0009" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_260_1" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0324" party-broadcast="y" progress-mission="y" type="approach" />
+        <case object="npc:CH_CT_Gambler_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Gambler_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0336" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0269" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0268" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0267" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="none">
+      <mission id="3" required-register-value="5">
+        <case object="npc:CH_CT_JeGukGun_0324" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0336" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0269" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0268" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0267" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object2="npc:CH_CT_Citizen_0488" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0489" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0490" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0491" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0492" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0493" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0494" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0495" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0087" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0088" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0089" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0090" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0091" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0092" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0093" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0094" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:CH_CT_Gambler_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Gambler_0005" party-broadcast="n" type="approach" />
+        <case object2="npc:CH_CT_Citizen_0645" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0716" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0717" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0093" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0094" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:CH_CT_Citizen_0488" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" rollback="none">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0336" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0269" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0268" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0267" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0324" party-broadcast="y" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="Zone_PNTower">
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_261" />
+    </completion>
+    <mission-step id="5" rollback="none">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0336" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0269" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0268" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0267" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_Gambler_0003" party-broadcast="y" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0336" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0269" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0268" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0267" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object2="npc:MH_CT_BokUnHoe_0056" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0267" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_Citizen_0858" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0336" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0269" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0268" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_CT_PungEmpire_0057" party-broadcast="y" progress-mission="y" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0336" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0269" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0268" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0267" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CH_CT_PungEmpire_0057" party-broadcast="n" type="approach" />
+        <case object2="npc:MH_CT_BokUnHoe_0032" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:CH_CT_JeGukGun_0336" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0269" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0268" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0267" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="10" quest-decision="qd_260_4" zone-1="zone_pntower_epic">
+      <mission id="10" required-register-value="1">
+        <case drop-gadget="y" gadget="Q_Torchlight_0006" gadget-required="empty" object2="zoneenv2:e_Chest_bonfire_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Q_Torchlight_0006" gadget-required="empty" object2="zoneenv2:e_Chest_bonfire_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="Q_Torchlight_0006" gadget-required="carry-and-remove" object2="zoneenv2:e_Chest_beacon_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0336" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0269" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0268" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0267" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1" reward-1="260_final_set1">
+        <case object="npc:CH_CT_JeGukGun_0307" party-broadcast="n" progress-mission="y" quest-decision="qd_260_3" type="talk" />
+        <case object="zone:Zone_PNTower_General" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_260_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_CT_YuRan_0009" party-broadcast="n" progress-mission="y" quest-decision="qd_260_1" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

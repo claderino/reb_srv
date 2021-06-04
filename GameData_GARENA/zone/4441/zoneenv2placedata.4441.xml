@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\4441\zoneenv2placedata.4441.xml-->
+	<record alias="e_AirDash_4441_01_a_place" duration="5000" end-pos="-20009,-18184,598" region-point-1="-19913,-18229,349" region-point-2="-19913,-18181,348" region-point-3="-19865,-18181,349" region-point-4="-19865,-18229,349" summon-end-pos="-20009,-18184,598" tool-zone-1="4443" tool-zone-2="4441" type="airdash" />
+	<record action-point="-19526,-18409,413" action-radius="20" alias="e_Chest_4443hartA_01_1_Place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="-19526,-18409,413" manipulation-radius="20" tool-zone-1="4443" tool-zone-2="4441" type="chest" use-manipulation-point="n" />
+	<record alias="e_AirDash_4443_02_1_a_place" duration="5000" end-pos="-18897,-20379,378" region-point-1="-22124,-21446,631" region-point-2="-22124,-21398,631" region-point-3="-22076,-21398,631" region-point-4="-22076,-21446,631" summon-end-pos="-18897,-20379,378" tool-zone-1="4443" tool-zone-2="4441" type="airdash" />
+	<record alias="e_AirDash_4443_03_1_a_place" duration="5000" end-pos="-22115,-21315,640" region-point-1="-18959,-20453,370" region-point-2="-18959,-20405,370" region-point-3="-18911,-20405,370" region-point-4="-18911,-20453,370" summon-end-pos="-22115,-21315,640" tool-zone-1="4443" tool-zone-2="4441" type="airdash" />
+	<record action-point="-22140,-21813,704" alias="4441_Portal_4440_place" region-point-1="-22270,-21826,741" region-point-2="-22270,-21800,736" region-point-3="-22010,-21800,718" region-point-4="-22010,-21826,723" tool-zone-1="4441" tool-zone-2="4443" type="portal" />
+	<record action-point="-20367,-18182,698" alias="4441_Portal_4442_place" region-point-1="-20354,-18439,591" region-point-2="-20381,-18439,591" region-point-3="-20381,-17926,650" region-point-4="-20354,-17926,650" tool-zone-1="4441" tool-zone-2="4443" type="portal" />
+</table>

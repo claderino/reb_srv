@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1520.xml-->
+  <quest alias="q_epic_1520" category="epic" completed-list="y" id="1520" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_sb_jinseoyeon_0008" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_1" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_4" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_24" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="zoneenv2:e_chest_6163_Letter_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_4" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_51" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_sb_cheolmugoe_0004" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_2" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_4" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_51" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1519_27" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="zone:zone_GeonWon_BuYuHamDae_4" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_52" type="enter-zone" />
+        <case object="npc:CH_SB_ChinChin_0014" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="zone:zone_geonwon_buyuhamdae_2" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_3" type="enter-zone" />
+        <case object="npc:ch_sb_buna_0015" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:ch_sb_bunyang_0016" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_4" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_52" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_GeonWon_BuYuHamDae_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_53" type="enter-zone" />
+        <case object="npc:ch_sb_cheolmugoe_0007" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object2="zoneenv2:6161_foot_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_4" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="zone:zone_GeonWon_BuYuHamDae_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_53" type="enter-zone" />
+        <case object="npc:ce_sb_jintaepyeong_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_5" type="npc-manipulate" />
+        <case object="npc:ch_sb_beona_0003" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:ch_sb_beonyang_0003" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:ch_sb_beonyang_0005" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_7" type="talk" />
+        <case acquire-quest="n" object="npc:ch_sb_beonyang_0005" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object="zone:Zone_Gekjanre_epic7_P2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_54" type="enter-zone" />
+        <case object="npc:mh_sb_jeonghado_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case object="zone:Zone_Gekjanre_epic7_P2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_54" type="enter-zone" />
+        <case object="npc:ch_sb_beonyang_0005" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_8" type="talk" />
+        <case object2="zoneenv2:5627_foot_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_7" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="11" rollback="leave-zone">
+      <mission id="11" required-register-value="1">
+        <case object="zone:Zone_Gekjanre_epic7_P2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_55" type="enter-zone" />
+        <case object="npc:mh_sb_jeonghado_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_15" type="talk" />
+        <case idx="1" object="npc:mh_sb_blackdragon_0113" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_14" type="npc-bleeding-occured" />
+      </mission>
+      <mission-step-fail rollback-step-id="10" zone-1="Zone_Gekjanre_epic7_P2" />
+    </mission-step>
+    <mission-step id="12">
+      <mission id="12" required-register-value="1">
+        <case object="npc:ch_sb_gunmahye_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_9" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="13">
+      <mission id="13" required-register-value="1">
+        <case object="zone:Zone_Sinre_epic7_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_56" type="enter-zone" />
+        <case object="npc:ch_sb_pungempire_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_11" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="14">
+      <mission id="14" required-register-value="1">
+        <case object="zone:Zone_Sinre_epic7_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_56" type="enter-zone" />
+        <case object="npc:ch_sb_chinchin_0020" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="15">
+      <mission id="15" required-register-value="1">
+        <case object="zone:Zone_Sinre_epic7_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_56" type="enter-zone" />
+        <case object="npc:ch_sb_pungempire_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1520_13" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="16">
+      <mission id="16" required-register-value="1" reward-1="1520_final_set1">
+        <case object="zone:Zone_Sinre_epic7_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1520_57" type="enter-zone" />
+        <case object="npc:ch_sb_jeonghado_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_GeonWon_BuYuHamDae_4_D">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+    </transit>
+    <transit id="2" zone="zone_GeonWon_BuYuHamDae">
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+    </transit>
+    <transit id="3" zone="Zone_Gekjanre">
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="9" zone-index="2" />
+      <destination mission-step-id="10" zone-index="2" />
+      <destination mission-step-id="11" zone-index="2" />
+    </transit>
+    <transit id="4" zone="Zone_Sinre">
+      <destination mission-step-id="12" zone-index="2" />
+      <destination mission-step-id="13" zone-index="2" />
+      <destination mission-step-id="14" zone-index="2" />
+      <destination mission-step-id="15" zone-index="2" />
+      <destination mission-step-id="16" zone-index="2" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_1611" />
+    </completion>
+  </quest>
+</table>

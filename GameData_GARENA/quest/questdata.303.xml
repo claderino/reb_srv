@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.303.xml-->
+  <quest alias="q_epic_303" broadcast-category="field" category="epic" completed-list="y" district-1="jeryoungrim" id="303" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_gosuljun_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_NamSoYu_0001" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="npc:mh_chunggak_0005" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="100" type="loot" />
+        <case object2="npc:mh_chunggak_0006" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="100" type="loot" />
+        <case object2="npc:mh_chunggak_0007" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="100" type="loot" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_gobong_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_303_4" type="talk" />
+        <case object2="zoneenv2:2020_footswitch_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_303_9" type="env-entered">
+          <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+          <filter-set>
+            <filter op="eq" subject2="zonenpcspawn:a_2020_2:reg-1" type="number" value="0" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="4" quest-decision="qd_303_28" zone-1="zone_chryounghwa">
+      <mission id="4" required-register-value="2">
+        <case object2="npc:mh_chunggak_011" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_012" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="6">
+      <mission id="6" required-register-value="1">
+        <case gadget-required="dont-care" object2="zoneenv2:e_destroy_2020jaildoor_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object="zone:zone_chryounghwa" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_303_22" type="enter-zone" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ctzn_jinm_nokmyeonctzn_dodanha_002" party-broadcast="n" progress-mission="y" quest-decision="qd_303_23" type="talk" />
+        <case object="zone:zone_chryounghwa" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_303_24" type="enter-zone" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="8" quest-decision="qd_303_30" zone-1="zone_chryounghwa">
+      <mission id="8" required-register-value="1">
+        <case gadget-required="dont-care" object2="zoneenv2:e_destroy_landingboat_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object="npc:ctzn_jinm_nokmyeonctzn_dodanha_002" party-broadcast="n" type="approach" />
+        <case object="zone:zone_chryounghwa" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_303_25" type="enter-zone" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="9">
+      <mission id="9" required-register-value="1" reward-1="303_middle_set1">
+        <case object="npc:ctzn_jinm_nokmyeonctzn_dodanha_002" party-broadcast="n" progress-mission="y" quest-decision="qd_303_34" type="talk" />
+        <case object="zone:zone_chryounghwa" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_303_26" type="enter-zone" />
+        <case object2="zoneenv2:2020_footswitch_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_303_27" type="env-entered" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="10">
+      <mission id="10" required-register-value="1">
+        <case object="zone:zone_chryounghwa" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_303_32" type="enter-zone" />
+        <tutorial-case progress-mission="y" type="teleport" />
+        <case object="npc:ctzn_jinm_nokmyeonctzn_dodanha_002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_497" />
+    </completion>
+    <transit id="1" zone="zone_ChRyoungHwA_SP">
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+    </transit>
+    <transit id="2" zone="zone_ChRyoungCHN_DoChunPung_1_sp">
+      <destination mission-step-id="12" zone-index="3" />
+    </transit>
+    <mission-step completion-type="and" id="5" quest-decision="qd_303_21" zone-1="zone_chryounghwa">
+      <mission id="5" required-register-value="1">
+        <case object2="npc:mh_chunggak_018" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="zone:zone_chryounghwa" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_303_29" type="enter-zone" />
+        <case object="npc:ch_gobong_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="12">
+      <mission id="12" required-register-value="1" reward-1="303_final_set1">
+        <case object="npc:ch_dochunpung_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_303_31" type="talk" />
+        <case object="npc:CH_JaKyoungDan_0028" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="3" zone="zone_ChRyoungCHN_Doctor_start">
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1">
+        <case object="npc:CH_JaKyoungDan_0028" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

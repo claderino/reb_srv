@@ -1,0 +1,1234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.classic.encroachedheukchang.xml-->
+
+  
+
+  
+  <combat-sequence alias="ME_WB_Valak_0003_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_Valak_None_Smash_HuekChang" skill3="ME_Valak_None_Smash_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_Valak_None_MultiSmash_HuekChang" skill3="ME_Valak_None_MultiSmash_HuekChang" type="use-skill" />
+      <action type="select">
+        <action prob="10" social="ME_WB_Valak_0003_battle_01" type="do-social" />
+        <action prob="10" social="ME_WB_Valak_0003_battle_02" type="do-social" />
+        <action duration="100" prob="80" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_IcePrison_HuekChang" skill3="ME_Valak_None_IcePrison_HuekChang" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_Blow_HuekChang" skill3="ME_Valak_None_Blow_HuekChang" type="use-skill" />
+      <action type="select">
+        <action prob="10" social="ME_WB_Valak_0003_battle_03" type="do-social" />
+        <action prob="10" social="ME_WB_Valak_0003_battle_04" type="do-social" />
+        <action duration="100" prob="80" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_Inhalation_HuekChang" skill3="ME_Valak_None_Inhalation_HuekChang" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_Valak_None_IceThrow_HuekChang" skill3="ME_Valak_None_IceThrow_HuekChang" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="3" skill="ME_Valak_None_Jump_HuekChang" skill3="ME_Valak_None_Jump_HuekChang" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="60000">
+      <action duration="100" immune-breaker-disable="y" target="event:npc-combat-action:target" type="stay" />
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_Jump_HuekChang" skill3="ME_Valak_None_Jump_HuekChang" target-area="6000_378" type="use-ground-skill" />
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_IcePrison_HuekChang" skill3="ME_Valak_None_IcePrison_HuekChang" type="use-skill" />
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_IcePrison_HuekChang" skill3="ME_Valak_None_IcePrison_HuekChang" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_Inhalation_HuekChang" skill3="ME_Valak_None_Inhalation_HuekChang" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Valak_0003_BossNPC_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WB_Valak_0003_battle_08" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_Jump_HuekChang" skill3="ME_Valak_None_Jump_HuekChang" target-area="6000_378" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_Valak_0003_battle_09" type="do-social" />
+      <action event-step="12" immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_Warcry" skill3="ME_Valak_None_Warcry" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_WB_Dummy_0065_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="1" repeat="1" skill="ME_Dummy_None_Meteofall_sim1" skill3="ME_Dummy_None_Meteofall_sim1" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="ME_WB_SkullB_0004_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_SkullB_0005_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_SkullB_0008_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="CE_WB_DarkCrazyTribe_0004_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_DarkCrazyTribeC_None_NAtk1_HuekChang" skill3="ME_DarkCrazyTribeC_None_NAtk1_HuekChang" type="use-skill" />
+      
+      <action type="select">
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0004_battle_01" type="do-social" />
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0004_battle_02" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" skill3="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" type="use-skill" />
+      
+      <action type="select">
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0004_battle_03" type="do-social" />
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0004_battle_04" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Range_HuekChang" skill3="ME_DarkCrazyTribeC_None_Range_HuekChang" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CE_WB_DarkCrazyTribe_0003_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      
+      <action type="select">
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0003_battle_01" type="do-social" />
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0003_battle_02" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserLong" skill3="ME_DarkCrazyTribeBigA_None_LaserLong" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserShort" skill3="ME_DarkCrazyTribeBigA_None_LaserShort" type="use-skill" />
+      
+      <action type="select">
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0003_battle_03" type="do-social" />
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0003_battle_04" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Rush_HuekChang" skill3="ME_DarkCrazyTribeBigA_None_Rush_HuekChang" type="use-skill" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="0" min-delay="12000" start-delay="15000">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Area360" skill3="ME_DarkCrazyTribeBigA_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CE_WB_AkGyoJok_0014_CS">
+    
+    <normal combat-distance="1" id="1">
+      
+      <action type="select">
+        <action prob="15" social="CE_WB_AkGyoJok_0014_battle_01" type="do-social" />
+        <action prob="15" social="CE_WB_AkGyoJok_0014_battle_02" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Jab" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Area360" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Area360" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_NAtk1" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_NAtk1" type="use-skill" />
+      
+      <action type="select">
+        <action prob="15" social="CE_WB_AkGyoJok_0014_battle_03" type="do-social" />
+        <action prob="15" social="CE_WB_AkGyoJok_0014_battle_04" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_NAtk2" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Area180" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Area180" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Dash" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="ME_WB_SpiderQueen_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="Quest_SpiderQueen_None_SpinAttack" skill3="Quest_SpiderQueen_None_SpinAttack" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_SpiderQueen_None_RushSmash" skill3="ME_SpiderQueen_None_RushSmash" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_SpiderQueen_None_Smash" skill3="ME_SpiderQueen_None_Smash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_SpiderQueen_None_SpiderCapture" skill3="ME_SpiderQueen_None_SpiderCapture" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_SpiderQueen_None_SpiderCapture" skill3="ME_SpiderQueen_None_SpiderCapture" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_SpiderQueen_None_QueenBloodyThrow" skill3="ME_SpiderQueen_None_QueenBloodyThrow" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SpiderQueen_None_SpiderWeb" skill3="ME_SpiderQueen_None_SpiderWeb" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SpiderQueen_None_QueenBloodyCapture" skill3="ME_SpiderQueen_None_QueenBloodyCapture" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="60000">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SpiderQueen_None_QueenHowl" skill3="ME_SpiderQueen_None_QueenHowl" target="event:npc-combat-action:npc" type="use-skill" />
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="far" type="gather-targets" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SpiderQueen_None_JumpDash" skill3="ME_SpiderQueen_None_JumpDash" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SpiderQueen_None_JumpDash" skill3="ME_SpiderQueen_None_JumpDash" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SpiderQueen_None_JumpDash" skill3="ME_SpiderQueen_None_JumpDash" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SpiderQueen_None_SpiderWeb_Lv2" skill3="ME_SpiderQueen_None_SpiderWeb_Lv2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="Quest_SpiderQueen_None_SpinAttack" skill3="Quest_SpiderQueen_None_SpinAttack" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0" min-delay="30000" start-delay="30000">
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="rotate" type="gather-targets" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SpiderQueen_None_RushSmash" skill3="ME_SpiderQueen_None_RushSmash" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SpiderQueen_None_RushSmash" skill3="ME_SpiderQueen_None_RushSmash" target="event:npc-combat-action:special-target:2" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_SpiderQueen_0001_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B6_SpiderQueen_SpiderWeb_Berserk" skill3="ME_BEF_B6_SpiderQueen_SpiderWeb_Berserk" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0001_msg_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B6_SpiderQueen_SpiderWeb_Berserk" skill3="ME_BEF_B6_SpiderQueen_SpiderWeb_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="CE_WB_AkGyoJok_0009_CS">
+    
+    <normal combat-distance="1" id="1">
+      
+      <action type="select">
+        <action prob="10" social="CE_WB_AkGyoJok_0009_battle_01" type="do-social" />
+        <action prob="10" social="CE_WB_AkGyoJok_0009_battle_02" type="do-social" />
+        <action prob="10" social="CE_WB_AkGyoJok_0009_battle_03" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Jab" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Area360" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Area360" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_NAtk1" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_NAtk1" type="use-skill" />
+      
+      <action type="select">
+        <action prob="10" social="CE_WB_AkGyoJok_0009_battle_01" type="do-social" />
+        <action prob="10" social="CE_WB_AkGyoJok_0009_battle_02" type="do-social" />
+        <action prob="10" social="CE_WB_AkGyoJok_0009_battle_03" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_NAtk2" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Area180" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Area180" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Dash" skill3="ME_BEC_N5_CrocodileSharkTribeBLeader_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  
+  
+  <combat-sequence alias="ME_WB_SnakeSoldier_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeSoldier_None_RearDash" skill3="ME_SnakeSoldier_None_RearDash" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeSoldier_None_HeavySmash" skill3="ME_SnakeSoldier_None_HeavySmash" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeSoldier_None_Defence" skill3="ME_SnakeSoldier_None_Defence" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1">
+      <action duration="20000" repeat="1" skill="Quest_SnakeSoldier_None_PoisonBomb" skill3="Quest_SnakeSoldier_None_PoisonBomb" type="boss-simultaneous-ground-attack" />
+      <action repeat="1" skill="Quest_SnakeSoldier_None_Dash_HuekChang" skill3="Quest_SnakeSoldier_None_Dash_HuekChang" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+      <action immune-breaker-disable="y" repeat="1" skill="Quest_SnakeSoldier_None_Dash_HuekChang" skill3="Quest_SnakeSoldier_None_Dash_HuekChang" target-area="6000_424" type="use-ground-skill" />
+      
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_SnakeSoldier_MultiGround_EventB" skill3="ME_SnakeSoldier_MultiGround_EventB" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_MultiGround_EventB" skill3="ME_SnakeSoldier_MultiGround_EventB" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_MultiGround_EventB" skill3="ME_SnakeSoldier_MultiGround_EventB" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_SnakeSoldier_MultiGround_EventB" skill3="ME_SnakeSoldier_MultiGround_EventB" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_MultiGround_EventB" skill3="ME_SnakeSoldier_MultiGround_EventB" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_MultiGround_EventB" skill3="ME_SnakeSoldier_MultiGround_EventB" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_SnakeSoldier_MultiGround_EventB" skill3="ME_SnakeSoldier_MultiGround_EventB" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_MultiGround_EventB" skill3="ME_SnakeSoldier_MultiGround_EventB" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_MultiGround_EventB" skill3="ME_SnakeSoldier_MultiGround_EventB" type="boss-multiground-attack" />
+      </action>
+    </special>
+  </combat-sequence>
+
+  
+  
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0029_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DemonShadowCBig_None_NAtk2_epic5" skill3="ME_DemonShadowCBig_None_NAtk2_epic5" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DemonShadowCBig_None_NAtk3_epic5" skill3="ME_DemonShadowCBig_None_NAtk3_epic5" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile2" skill3="ME_DemonShadowCBig_None_Missile2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DemonShadowCBig_None_NAtk2_epic5" skill3="ME_DemonShadowCBig_None_NAtk2_epic5" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DemonShadowCBig_None_Natk3_epic5" skill3="ME_DemonShadowCBig_None_Natk3_epic5" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Rush" skill3="ME_DemonShadowCBig_None_Rush" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile2" skill3="ME_DemonShadowCBig_None_Missile2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk1_epic5" skill3="ME_DemonShadowCBig_None_NAtk1_epic5" type="use-skill" />
+      
+      <action type="select">
+        <action prob="10" social="ME_WB_DemonShadow_0029_battle_02" type="do-social" />
+        <action prob="10" social="ME_WB_DemonShadow_0029_battle_03" type="do-social" />
+        <action duration="100" prob="80" target="event:npc-combat-action:target" type="stay" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile2" skill3="ME_DemonShadowCBig_None_Missile2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Capture2_Short" skill3="ME_DemonShadowCBig_None_Capture2_Short" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+      <action event-step="1" repeat="1" skill="ME_DemonShadowCBig_None_Summon_epic5" skill3="ME_DemonShadowCBig_None_Summon_epic5" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="MH_WB_Def_DemonShadow_0023_CS">
+    
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Destruction_LowRagingWind" skill3="MH_SUA_R0_Destroyer_Destruction_LowRagingWind" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_KneelKick_Kneel_1500ms" skill3="MH_Destroyer_Protection_KneelKick_Kneel_1500ms" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Destruction_Raging_Wind_Lv1" skill3="MH_Destroyer_Destruction_Raging_Wind_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Hardwall_IronCannon" skill3="MH_SUA_R0_Destroyer_Hardwall_IronCannon" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="1" condition-1="hp-30" id="1" max-count="1">
+      <action repeat="1" skill="MH_Destroyer_Protection_RageChange_Named" skill3="MH_Destroyer_Protection_RageChange_Named" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_Def_DemonShadow_0024_CS">
+    
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Triplekick_Lv1" skill3="MH_KungfuMaster_Attack_Triplekick_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Heavypunch_Lv1" skill3="MH_KungfuMaster_Attack_Heavypunch_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerAttack_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="1" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="10000">
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_KungfuMaster_Attack_burstblow_Lv1" skill3="MH_KungfuMaster_Attack_burstblow_Lv1" type="use-skill" />
+        <action prob="50" repeat="1" skill="MH_KungfuMaster_Attack_Trampledown_Lv1" skill3="MH_KungfuMaster_Attack_Trampledown_Lv1" type="use-skill" />
+      </action>
+    </special>
+    
+    <special combat-distance="1" condition-1="kneel" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="10000">
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Uppercut_Lv1" skill3="MH_KungfuMaster_Attack_Uppercut_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_Def_DemonShadow_0026_CS">
+    
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="MH_ForceMaster_Deal_cold_blast_Lv1" skill3="MH_ForceMaster_Deal_cold_blast_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_breakaway" skill3="MH_SUB_R0_ForceMaster_Deal_breakaway" type="use-skill" />
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_ForceMaster_Deal_cold_missile_Lv2" skill3="MH_ForceMaster_Deal_cold_missile_Lv2" type="use-skill" />
+      <action repeat="3" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="10000">
+      <action repeat="1" skill="MH_ForceMaster_Deal_frost_explosion_Lv1" skill3="MH_ForceMaster_Deal_frost_explosion_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_Def_DemonShadow_0025_CS">
+    
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_BladeMaster_Sword_full_moon_slash_LV1" skill3="MH_BladeMaster_Sword_full_moon_slash_LV1" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_WindyMoonSlash" skill3="MH_SUA_R0_BladeMaster_Sword_WindyMoonSlash" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" skill3="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_BladeMaster_Sword_flying_swallow_sword_LV1" skill3="MH_BladeMaster_Sword_flying_swallow_sword_LV1" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_rush_LV1" skill3="MH_BladeMaster_Sword_rush_LV1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="1" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="10000">
+      <action repeat="1" skill="MH_BladeMaster_Sword_turning_strike_LV1" skill3="MH_BladeMaster_Sword_turning_strike_LV1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="1" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="10000">
+      <action repeat="1" skill="MH_BladeMaster_Sword_take_wing_LV1" skill3="MH_BladeMaster_Sword_take_wing_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WB_Wolf_0002_CS">
+    <normal combat-distance="4" id="1" special-1="1">
+      <action duration="100" target="event:npc-combat-action:target" type="stay" />
+    </normal>
+    <normal combat-distance="4" id="2" special-1="1">
+      <action duration="100" target="event:npc-combat-action:target" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="15000">
+      <action duration="3000" type="stay" />
+      <action event-step="1" repeat="1" skill="ME_JEA_R0_Wolf_None_Bark" skill3="ME_JEA_R0_Wolf_None_Bark" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_WB_DemonShadowD_0006_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Counter" skill3="ME_DemonShadowD_None_Counter" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_WB_DemonShadowB_0002_CS">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Blaze" skill3="ME_BEC_N2_DemonShadowB_None_Blaze" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Fire" skill3="ME_BEC_N2_DemonShadowB_None_Fire" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Blaze" skill3="ME_BEC_N2_DemonShadowB_None_Blaze" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_WN_DemonShadowB_0003_CS">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Blaze" skill3="ME_BEC_N2_DemonShadowB_None_Blaze" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Fire" skill3="ME_BEC_N2_DemonShadowB_None_Fire" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Smash" skill3="ME_BEC_N2_DemonShadowB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_N2_DemonShadowB_None_Blaze" skill3="ME_BEC_N2_DemonShadowB_None_Blaze" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_WB_DarkCrazyTribeC_0012_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_DarkCrazyTribeC_None_Range_HuekChang" skill3="ME_DarkCrazyTribeC_None_Range_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" skill3="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Range_HuekChang" skill3="ME_DarkCrazyTribeC_None_Range_HuekChang" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_DarkCrazyTribeC_0007_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_DarkCrazyTribeC_None_Range_HuekChang" skill3="ME_DarkCrazyTribeC_None_Range_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" skill3="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Range_HuekChang" skill3="ME_DarkCrazyTribeC_None_Range_HuekChang" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DarkCrazyTribeCLeader_0006_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="2" skill="ME_DarkCrazyTribeC_None_NAtk1_HuekChang" skill3="ME_DarkCrazyTribeC_None_NAtk1_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" skill3="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Range_HuekChang" skill3="ME_DarkCrazyTribeC_None_Range_HuekChang" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="20000">
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Area360Heal_HuekChang" skill3="ME_DarkCrazyTribeC_None_Area360Heal_HuekChang" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CE_WB_DarkCrazyTribe_0002_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_DarkCrazyTribeC_None_NAtk1_HuekChang" skill3="ME_DarkCrazyTribeC_None_NAtk1_HuekChang" type="use-skill" />
+      
+      <action type="select">
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0002_battle_02" type="do-social" />
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0002_battle_03" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" skill3="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Range_HuekChang" skill3="ME_DarkCrazyTribeC_None_Range_HuekChang" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CE_WB_DarkCrazyTribe_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      
+      <action type="select">
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0001_battle_02" type="do-social" />
+        <action prob="15" social="CE_WB_DarkCrazyTribe_0001_battle_03" type="do-social" />
+        <action duration="100" prob="70" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserLong" skill3="ME_DarkCrazyTribeBigA_None_LaserLong" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserShort" skill3="ME_DarkCrazyTribeBigA_None_LaserShort" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Rush_HuekChang" skill3="ME_DarkCrazyTribeBigA_None_Rush_HuekChang" type="use-skill" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="0" min-delay="12000" start-delay="15000">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Area360" skill3="ME_DarkCrazyTribeBigA_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0020_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N1_DemonShadowCBig_None_NAtk2" skill3="ME_BEC_N1_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Explosion" skill3="ME_DemonShadowCBig_None_Explosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+      <action repeat="1" skill="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" skill3="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0031_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N1_DemonShadowCBig_None_NAtk2" skill3="ME_BEC_N1_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Explosion" skill3="ME_DemonShadowCBig_None_Explosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+      <action repeat="1" skill="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" skill3="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0032_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N1_DemonShadowCBig_None_NAtk2" skill3="ME_BEC_N1_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Explosion" skill3="ME_DemonShadowCBig_None_Explosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+      <action repeat="1" skill="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" skill3="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0033_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N1_DemonShadowCBig_None_NAtk2" skill3="ME_BEC_N1_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Explosion" skill3="ME_DemonShadowCBig_None_Explosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+      <action repeat="1" skill="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" skill3="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0034_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N1_DemonShadowCBig_None_NAtk2" skill3="ME_BEC_N1_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Explosion" skill3="ME_DemonShadowCBig_None_Explosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+      <action repeat="1" skill="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" skill3="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0035_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N1_DemonShadowCBig_None_NAtk2" skill3="ME_BEC_N1_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Explosion" skill3="ME_DemonShadowCBig_None_Explosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+      <action repeat="1" skill="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" skill3="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0036_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N1_DemonShadowCBig_None_NAtk2" skill3="ME_BEC_N1_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Explosion" skill3="ME_DemonShadowCBig_None_Explosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+      <action repeat="1" skill="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" skill3="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0037_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_N1_DemonShadowCBig_None_NAtk2" skill3="ME_BEC_N1_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Explosion" skill3="ME_DemonShadowCBig_None_Explosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+      <action repeat="1" skill="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" skill3="ME_BEE_N1_DemonShadowCBig_None_Capture1_360" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="ME_WB_DemonShadowD_0001_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Counter" skill3="ME_DemonShadowD_None_Counter" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Dash" skill3="ME_DemonShadowD_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DemonShadowD_0005_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Counter" skill3="ME_DemonShadowD_None_Counter" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Dash" skill3="ME_DemonShadowD_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="ME_WB_WN_ZombieA_0004_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="5">
+      
+      <action event-step="1" repeat="1" skill="ME_JEA_R0_Zombie_None_Explosion" skill3="ME_JEA_R0_Zombie_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="ME_WB_Def_DemonShadow_0013_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DemonShadowE_None_Smash" skill3="ME_DemonShadowE_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowE_None_Smash" skill3="ME_DemonShadowE_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowE_None_Smash" skill3="ME_DemonShadowE_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowE_None_BackStep" skill3="ME_DemonShadowE_None_BackStep" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DemonShadowE_None_Shot" skill3="ME_DemonShadowE_None_Shot" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowE_None_Dash" skill3="ME_DemonShadowE_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="DarkCrazyTribeA_1_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_DarkCrazyTribeA_None_Fire_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Fire_Poison_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_Poison_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Reload" skill3="ME_DarkCrazyTribeA_None_Reload" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="2" skill="ME_DarkCrazyTribeA_None_Fire_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Fire_Poison_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_Poison_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Reload" skill3="ME_DarkCrazyTribeA_None_Reload" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="DarkCrazyTribeA_2_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Fire_Poison_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_Poison_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Fire_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Reload" skill3="ME_DarkCrazyTribeA_None_Reload" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Fire_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_HuekChang" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Fire_Poison_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_Poison_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Fire_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Reload" skill3="ME_DarkCrazyTribeA_None_Reload" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Fire_HuekChang" skill3="ME_DarkCrazyTribeA_None_Fire_HuekChang" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="DarkCrazyTribeB_1_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_NAtk1_HuekChang" skill3="ME_DarkCrazyTribeB_None_NAtk1_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_NAtk2_HuekChang" skill3="ME_DarkCrazyTribeB_None_NAtk2_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_MultiHit_HuekChang" skill3="ME_DarkCrazyTribeB_None_MultiHit_HuekChang" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_Dash_HuekChang" skill3="ME_DarkCrazyTribeB_None_Dash_HuekChang" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="10000">
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_Range1_HuekChang" skill3="ME_DarkCrazyTribeB_None_Range1_HuekChang" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="DarkCrazyTribeB_2_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_MultiHit_HuekChang" skill3="ME_DarkCrazyTribeB_None_MultiHit_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_NAtk1_HuekChang" skill3="ME_DarkCrazyTribeB_None_NAtk1_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_NAtk2_HuekChang" skill3="ME_DarkCrazyTribeB_None_NAtk2_HuekChang" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_Dash_HuekChang" skill3="ME_DarkCrazyTribeB_None_Dash_HuekChang" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="10000">
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_Range1_HuekChang" skill3="ME_DarkCrazyTribeB_None_Range1_HuekChang" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="DarkCrazyTribeD_1_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_DarkCrazyTribeD_None_NAtk2_HuekChang" skill3="ME_DarkCrazyTribeD_None_NAtk2_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeD_None_Knockback_HuekChang" skill3="ME_DarkCrazyTribeD_None_Knockback_HuekChang" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="DarkCrazyTribeD_2_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeD_None_Knockback_HuekChang" skill3="ME_DarkCrazyTribeD_None_Knockback_HuekChang" type="use-skill" />
+      <action repeat="2" skill="ME_DarkCrazyTribeD_None_NAtk2_HuekChang" skill3="ME_DarkCrazyTribeD_None_NAtk2_HuekChang" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="DarkCrazyTribeCLeader_1_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="2" skill="ME_DarkCrazyTribeC_None_NAtk1_HuekChang" skill3="ME_DarkCrazyTribeC_None_NAtk1_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" skill3="ME_DarkCrazyTribeC_None_Area360Poison_HuekChang" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Range_HuekChang" skill3="ME_DarkCrazyTribeC_None_Range_HuekChang" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="12000">
+      <action event-step="1" repeat="1" skill="ME_DarkCrazyTribeC_None_Resurrection" skill3="ME_DarkCrazyTribeC_None_Resurrection" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0" min-delay="15000" start-delay="15000">
+      <action repeat="1" skill="ME_DarkCrazyTribeC_None_Area360Heal_HuekChang" skill3="ME_DarkCrazyTribeC_None_Area360Heal_HuekChang" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_WB_Dummy_0067_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="1" repeat="1" skill="ME_Dummy_None_Ground_Poison_HuekChang" skill3="ME_Dummy_None_Ground_Poison_HuekChang" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="DarkCrazyTribeBigA_1_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserLong_HuekChang" skill3="ME_DarkCrazyTribeBigA_None_LaserLong_HuekChang" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserShort" skill3="ME_DarkCrazyTribeBigA_None_LaserShort" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Pull" skill3="ME_DarkCrazyTribeBigA_None_Pull" type="use-skill" />
+    </normal>
+    <special combat-distance="4" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="10000">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Rush_HuekChang" skill3="ME_DarkCrazyTribeBigA_None_Rush_HuekChang" type="use-skill" />
+    </special>
+    <special combat-distance="3" id="2" max-count="0" min-delay="12000" start-delay="15000">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Area360" skill3="ME_DarkCrazyTribeBigA_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_WB_HolyMushroom_0001_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk1" skill3="ME_HolyMushroom_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk2" skill3="ME_HolyMushroom_None_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action duration="4000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="ME_BEB_R0_HolyMushroom_None_Capture" skill3="ME_BEB_R0_HolyMushroom_None_Capture" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_WB_DarkCrazyTribeA_0012_CS1" transit-cond-1="manual">
+    <normal combat-distance="4" id="1" special-1="1">
+      <action duration="1000" target="event:npc-combat-action:target" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_459" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_460" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_461" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_462" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_463" type="use-ground-skill" />
+      <action type="select">
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_08" type="do-social" />
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_09" type="do-social" />
+      </action>
+      <action duration="2000" target="event:npc-combat-action:target" type="stay" />
+      <action duration="1000" event-step="99" target="event:npc-combat-action:target" type="stay" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_DarkCrazyTribeA_0012_CS2" transit-cond-1="manual">
+    <normal combat-distance="4" id="1" special-1="1">
+      <action duration="1000" target="event:npc-combat-action:target" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_465" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_466" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_468" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_469" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_470" type="use-ground-skill" />
+      <action type="select">
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_08" type="do-social" />
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_09" type="do-social" />
+      </action>
+      <action duration="2000" target="event:npc-combat-action:target" type="stay" />
+      <action duration="1000" event-step="99" target="event:npc-combat-action:target" type="stay" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_DarkCrazyTribeA_0012_CS3" transit-cond-1="manual">
+    <normal combat-distance="4" id="1" special-1="1">
+      <action duration="1000" target="event:npc-combat-action:target" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_472" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_473" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_474" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_475" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_476" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_477" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_478" type="use-ground-skill" />
+      <action type="select">
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_08" type="do-social" />
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_09" type="do-social" />
+      </action>
+      <action duration="2000" target="event:npc-combat-action:target" type="stay" />
+      <action duration="1000" event-step="99" target="event:npc-combat-action:target" type="stay" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_DarkCrazyTribeA_0012_CS4" transit-cond-1="manual">
+    <normal combat-distance="4" id="1" special-1="1">
+      <action duration="1000" target="event:npc-combat-action:target" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_480" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_481" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_482" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_483" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_484" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_485" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_486" type="use-ground-skill" />
+      <action type="select">
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_08" type="do-social" />
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_09" type="do-social" />
+      </action>
+      <action duration="2000" target="event:npc-combat-action:target" type="stay" />
+      <action duration="1000" event-step="99" target="event:npc-combat-action:target" type="stay" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_DarkCrazyTribeA_0012_CS5" transit-cond-1="manual">
+    <normal combat-distance="4" id="1" special-1="1">
+      <action duration="1000" target="event:npc-combat-action:target" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_488" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_489" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_490" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_491" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_492" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_493" type="use-ground-skill" />
+      <action type="select">
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_03" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_04" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_05" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_06" type="do-social" />
+        <action prob="17" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_07" type="do-social" />
+        <action duration="100" prob="15" target="event:npc-combat-action:target" type="stay" />
+      </action>
+      <action duration="3000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="Event_DarkCrazyTribeA_run" skill3="Event_DarkCrazyTribeA_run" target-area="6000_494" type="use-ground-skill" />
+      <action type="select">
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_08" type="do-social" />
+        <action prob="50" social="ME_WB_DarkCrazyTribeA_0012_combat_soc_09" type="do-social" />
+      </action>
+      <action duration="2000" target="event:npc-combat-action:target" type="stay" />
+      <action duration="1000" event-step="99" target="event:npc-combat-action:target" type="stay" />
+    </special>
+  </combat-sequence>
+
+</table>

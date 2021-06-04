@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.552.xml-->
+  <quest alias="q_sub_552" broadcast-category="field" category="normal" district-1="deasamak" id="552" max-repeat="1" save-type="all">
+    <acquisition level="19" preceding-quest-1="q_epic_501" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_unguksoldier_013" party-broadcast="n" progress-mission="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="552_final_set1">
+        <case drop-gadget="n" object="npc:ch_woodcutter_001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

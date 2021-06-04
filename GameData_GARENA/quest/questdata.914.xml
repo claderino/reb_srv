@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.914.xml-->
+  <quest alias="q_epic_914" category="epic" completed-list="y" district-1="suwal" id="914" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_daeeobang_0040" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="zone:zone_ackyobattle" party-broadcast="n" progress-mission="y" quest-decision="qd_914_11" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_914_1" rollback="none" zone-1="zone_ackyobattle">
+      <mission id="5" required-register-value="1">
+        <case drop-gadget="n" object="npc:CE_AkGyoJok_0013" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_ackyobattle" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_914_12" type="enter-zone" />
+        <case object="npc:CE_CrocodileSharkTribeB_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CE_CrocodileSharkTribeB_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_914_2" rollback="none" zone-1="zone_ackyobattle">
+      <mission id="6" required-register-value="1">
+        <case drop-gadget="n" object2="npc:ME_CrocodileSharkTribeD_0011" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:zone_ackyobattle" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_914_13" type="enter-zone" />
+        <case object2="npc:ME_CrocodileSharkTribeD_0006" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_914_3" rollback="none" zone-1="zone_ackyobattle">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CE_AkGyoJok_0013" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_ackyobattle" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_914_14" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_914_4" zone-1="zone_ackyobattle">
+      <mission id="8" required-register-value="1">
+        <case object="zone:zone_ackyobattle" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_914_15" type="enter-zone" />
+        <case object2="npc:me_crocodilesharktribeb_0011" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CrocodileSharkTribeB_0014" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_915" />
+    </completion>
+    <mission-step id="9" quest-decision="qd_914_5" zone-1="zone_ackyobattle">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CE_AkGyoJok_0013" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_ackyobattle" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_914_16" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10" quest-decision="qd_914_6" zone-1="zone_ackyobattle">
+      <mission id="10" required-register-value="1">
+        <case idx="1" object="npc:me_crocodilesharktribec_0005" party-broadcast="n" progress-mission="y" type="npc-bleeding-occured" />
+        <case object="zone:zone_ackyobattle" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_914_17" type="enter-zone" />
+        <case idx="1" object="npc:ME_CrocodileSharkTribeC_0009" party-broadcast="n" progress-mission="y" type="npc-bleeding-occured" />
+      </mission>
+    </mission-step>
+    <mission-step id="11" quest-decision="qd_914_7" zone-1="zone_ackyobattle">
+      <mission id="11" required-register-value="1" reset-teleport-recycle-time="y" reward-1="914_middle_set1">
+        <case object="npc:me_crocodilesharktribec_0005" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ME_CrocodileSharkTribeC_0009" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_ackyobattle" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_914_18" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="12">
+      <mission id="12" required-register-value="1" reward-1="914_final_set1">
+        <case object="npc:ch_daeeobang_0040" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CE_AkGyoJok_0013" party-broadcast="n" type="approach" />
+        <case object="npc:CE_CrocodileSharkTribeB_0003" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="npc:ME_CrocodileSharkTribeC_0001" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_CrocodileSharkTribeA_0006" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_daeeobang_0040" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

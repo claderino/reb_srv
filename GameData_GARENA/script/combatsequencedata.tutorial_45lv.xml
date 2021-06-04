@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.tutorial_45lv.xml-->
+
+  
+  
+  
+
+  
+  
+  <combat-sequence alias="CE_WC_HongDon_0001_CS1" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action skill3="Quest_Tutorial_PigTribeC_None_HeavySmash" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="CE_WC_HongDon_0001_CS2" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action skill3="Quest_Tutorial_PigTribeC_None_HeavySmash" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="CE_WC_HongDon_0001_CS3">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action skill3="Quest_Tutorial_PigTribeC_None_HeavySmash" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      
+      <action social="CE_WC_HongDon_0001_combat_soc_02" type="do-social" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_HeavySpin" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_SmashDown" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_HeavySmash" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      
+      <action social="CE_WC_HongDon_0001_combat_soc_03" type="do-social" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_HeavySpin" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_SmashDown" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Jab" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action skill3="Quest_Tutorial_PigTribeC_None_BombThrow" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_BombThrow" type="use-skill" />
+      <action skill3="Quest_Tutorial_PigTribeC_None_Rush" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action social="CE_WC_HongDon_0001_combat_soc_01" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="CH_WC_RangSisters_0001_CS_01" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1">
+      <action skill3="Quest_Tutorial_KungfuMaster_Defend_Crushground" type="use-skill" />
+      <action type="select">
+        <action prob="50" skill3="Quest_Tutorial_KungfuMaster_Attack_Commandskill_left" type="use-skill" />
+        <action prob="50" skill3="Quest_Tutorial_KungfuMaster_Attack_Commandskill_right" type="use-skill" />
+      </action>
+      <action skill3="Quest_Tutorial_KungfuMaster_Attack_Heavypunch" type="use-skill" />
+      <action skill3="Quest_Tutorial_KungfuMaster_Defend_Heavyattack" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WC_RangSisters_0001_CS_02" transit-cond-1="manual">
+    
+    <normal combat-distance="3" id="1" special-1="1" special-2="2">
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_energy_cyclone" type="use-skill" />
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_energy_cyclone" type="use-skill" />
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="4" id="2" special-1="1" special-2="2">
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_energy_cyclone" type="use-skill" />
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_energy_cyclone" type="use-skill" />
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action skill3="CH_WC_RangSisters_0001_combat_soc_03" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="15000" start-delay="10000">
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_icecap" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WC_RangSisters_0001_CS_03">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action skill3="Quest_Tutorial_KungfuMaster_Defend_Crushground" type="use-skill" />
+      <action type="select">
+        <action prob="50" skill3="Quest_Tutorial_KungfuMaster_Attack_Commandskill_left" type="use-skill" />
+        <action prob="50" skill3="Quest_Tutorial_KungfuMaster_Attack_Commandskill_right" type="use-skill" />
+      </action>
+      <action skill3="Quest_Tutorial_KungfuMaster_Attack_Heavypunch" type="use-skill" />
+      <action skill3="Quest_Tutorial_KungfuMaster_Defend_Heavyattack" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_breakaway_UP" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action social="ME_ChungGakBBoss_0004_battle" type="do-social" />
+      <action skill3="Quest_Tutorial_KungfuMaster_RageChange" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="CH_WC_RangSisters_0002_CS_01" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="1" id="1" max-count="0">
+      <action event-step="21" skill3="Quest_Tutorial_KungfuMaster_Attack_Heavypunch" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WC_RangSisters_0002_CS_02" transit-cond-1="manual">
+    <normal combat-distance="1" id="1">
+      
+      <action skill3="Quest_Tutorial_KungfuMaster_Attack_BurstAbdomen" type="use-skill" />
+      <action type="select">
+        <action prob="50" skill3="Quest_Tutorial_KungfuMaster_Attack_Commandskill_left" type="use-skill" />
+        <action prob="50" skill3="Quest_Tutorial_KungfuMaster_Attack_Commandskill_right" type="use-skill" />
+      </action>
+      <action skill3="Quest_Tutorial_KungfuMaster_Attack_Heavypunch" type="use-skill" />
+      <action skill3="Quest_Tutorial_KungfuMaster_Attack_PowerfulAttack" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_breakaway_UP" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WC_RangSisters_0002_CS_03">
+    
+    <normal combat-distance="3" id="1" special-1="1">
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_fire_ball" type="use-skill" />
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_fire_ball" type="use-skill" />
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_fire_ball_instant" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="4" id="2" special-1="1">
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_fire_ball" type="use-skill" />
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_fire_ball" type="use-skill" />
+      <action skill3="Quest_Tutorial_ForceMaster_Deal_fire_ball_instant" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action social="ME_ChungGakBBoss_0005_battle" type="do-social" />
+      <action skill3="Quest_Tutorial_KungfuMaster_RageChange" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WC_YuRan_0002_CS_01">
+    <normal combat-distance="1" id="1">
+      
+      <action skill3="MH_Assassin_Disturb_MistSlash_cool_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_DewSlash_cool_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_MoonlightSlash_cool_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_HeartStab_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_SideStep_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_ShadowPenetration_Lv2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action skill3="MH_Assassin_Disturb_Shunpo3_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action event-step="1" skill3="Quest_Tutorial_Assassin_BackStep" target-area="4955_490" type="use-ground-skill" />
+    </special>
+  </combat-sequence>  
+  
+  
+  <combat-sequence alias="CH_WC_YuRan_0003_CS_01" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action skill3="MH_Assassin_Disturb_MistSlash_cool_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_DewSlash_cool_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_MoonlightSlash_cool_Lv1" type="use-skill" />
+	  <action duration="1500" event-step="1" type="stay" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+	  
+      <action skill3="MH_SUB_R0_Assassin_Disturb_Shuriken" type="use-skill" />      
+    </normal>
+	<special combat-distance="7" id="1" max-count="1" min-delay="1000" start-delay="6000">
+      
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WC_YuRan_0003_CS_02" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill3="MH_SUB_R0_Assassin_Disturb_Shuriken" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action repeat="1" skill3="MH_SUB_R0_Assassin_Disturb_Shuriken" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill3="MH_Assassin_Disturb_BackStep_Lv1_Q" type="use-skill" />
+    </special>
+	<special combat-distance="7" id="2" max-count="1" min-delay="1000" start-delay="6000">
+      
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WC_YuRan_0003_CS_03" transit-cond-1="manual">    	
+	<normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill3="MH_SUB_R0_Assassin_Disturb_Shuriken" type="use-skill" />
+    </normal>    
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="CH_WC_CheonJinGwon4F_0001_CS_01">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_DoubleHit" type="use-skill" />
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_dash" type="use-skill" />
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_HeavyPunch" type="use-skill" />
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_dash" type="use-skill" />
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_ForceAttack_Lv1" type="use-skill" />
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_Attack" type="use-skill" />
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_MartialDance" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="3">
+      <action repeat="1" skill3="ME_MuSin_None_Traning_Stay_1000ms" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_Jump" type="use-skill" />
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_AirInfinityEnergyMissile" type="use-skill" />
+    </special>
+    <special combat-distance="7" condition-1="kneel" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action repeat="1" skill3="ME_MuSin_None_Traning_CatchToAir" type="use-skill" />
+      <action repeat="1" skill3="ME_MuSin_None_Traning_AirMartialDance" type="use-skill" />
+      <action repeat="1" skill3="ME_MuSin_None_Traning_RisingUppercut" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action repeat="1" skill3="Quest_Tutorial_MuSin_None_dash" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WC_CheonJinGwon4F_0001_CS_02">
+  </combat-sequence>
+</table>

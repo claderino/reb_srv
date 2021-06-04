@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.949.xml-->
+  <quest alias="q_epic_949" broadcast-category="field" category="epic" completed-list="y" id="949" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_Yugachon_Act6" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CH_WB_Ryu_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_SeoYeon_0007" party-broadcast="n" type="approach" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_18" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="15">
+        <case object="npc:CH_WB_YuGaChon_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0005" party-broadcast="n" type="approach" />
+        <case object2="npc:ME_WB_DarkCrazyTribeB_0001" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_DarkCrazyTribeC_0001" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_DarkCrazyTribeB_0012" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_DarkCrazyTribeD_0009" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_DarkCrazyTribeBigB_0009" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_DarkCrazyTribeA_0015" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_DarkCrazyTribeCLeader_0004" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WB_DarkCrazyTribeBigB_0008" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_WB_YuGaChon_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_949_2" type="talk" />
+        <case object="zone:zone_Yugachon_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_6" type="enter-zone" />
+        <case object2="zoneenv2:3114_foot_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_10" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_949_13" zone-1="zone_Yugachon_Act6">
+      <mission id="5" required-register-value="6">
+        <case object2="npc:ME_WB_DarkCrazyTribeCLeader_0004" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:zone_Yugachon_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_GeoAm_Act6" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="zone:zone_Yugachon_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="zone:zone_Yugachon_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_1" type="enter-zone" />
+        <case convoy="epic_949_con_1" object="npc:CH_WB_ChungGak_0012" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object2="zoneenv2:2732_Foot_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_16" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object2="npc:ME_WB_DarkCrazyTribeBigA_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_949_17" type="killed" />
+        <case object="zone:zone_Yugachon_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_1" type="enter-zone" />
+        <case object="npc:CH_WB_YuGaChon_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0009" party-broadcast="n" type="approach" />
+        <case object="zone:zone_GeoAm_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1" reward-1="949_final_set1">
+        <case object="zone:zone_GeoAm_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_9" type="enter-zone" />
+        <case object="npc:CH_WB_BaekWoon_0001" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0015" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BaekWoon_0001" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0042" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0032" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0016" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0018" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0021" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0023" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_YuGaChon_0041" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BaekWoon_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BaekWoon_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_949_3" type="talk" />
+        <case object="zone:zone_Yugachon_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_YuGaCHN_1">
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="9" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="10" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+    </transit>
+    <transit id="2" zone="zone_SongAmDo_Dun_4_sp">
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_950" />
+    </completion>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_WB_YuGaChon_0005" party-broadcast="n" progress-mission="y" quest-decision="qd_949_11" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="3" zone="StartZone_Default">
+      <destination mission-step-id="1" zone-index="5" />
+      <destination mission-step-id="2" zone-index="5" />
+      <destination mission-step-id="3" zone-index="5" />
+      <destination mission-step-id="4" zone-index="5" />
+      <destination mission-step-id="5" zone-index="5" />
+      <destination mission-step-id="6" zone-index="5" />
+      <destination mission-step-id="7" zone-index="5" />
+      <destination mission-step-id="8" zone-index="5" />
+      <destination mission-step-id="9" zone-index="5" />
+      <destination mission-step-id="10" zone-index="5" />
+    </transit>
+    <mission-step id="8" rollback="leave-zone" zone-1="zone_GeoAm_Act6">
+      <mission id="8" required-register-value="1">
+        <case convoy="epic_949_con_1" object="zone:zone_GeoAm_Act6" party-broadcast="n" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail quest-decision="qd_949_5" rollback-step-id="7" zone-1="zone_GeoAm_Act6">
+        <case convoy="epic_949_con_1" object="npc:CH_WB_ChungGak_0012" party-broadcast="n" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <transit id="5" zone="zone_ChRyoungCHN_Doctor_SP">
+      <destination mission-step-id="1" zone-index="5" />
+    </transit>
+  </quest>
+</table>

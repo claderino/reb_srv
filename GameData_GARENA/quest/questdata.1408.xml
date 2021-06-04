@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1408.xml-->
+  <quest activated-faction="factionmain1" alias="q_sub_1408" category="normal" id="1408" main-faction="factionmain1" max-repeat="1" reset-type="daily">
+    <acquisition faction="factionmain1" level="45" preceding-quest-check="and">
+      <case acquire-quest="y" grocery="Quest_Scroll_BackChung_0070" item="Quest_Scroll_BackChung_0070" required-item-1="Quest_Scroll_BackChung_0070" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+      <case loot-item="Quest_Scroll_BackChung_0070" object2="npc:mh_sa_bff_honcheonbuntaju_0001" party-broadcast="n" type="loot" />
+      <acquisition-loss item-1="Quest_Scroll_BackChung_0070" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="1408_final_set1" reward-2="1408_final_set2">
+        <case object="npc:ch_sa_bff_murimmedic_0001_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

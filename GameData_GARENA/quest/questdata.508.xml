@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.508.xml-->
+  <quest alias="q_epic_508" broadcast-category="field" category="epic" completed-list="y" district-1="deasamak" id="508" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case approach-social="q_508_m2_app_1" object="npc:mh_inspector_0003" party-broadcast="y" progress-mission="y" type="approach" />
+        <case object="zone:zone_HealSpring" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_508_1" type="enter-zone" />
+        <case object="zone:zone_HwanYoungCho" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_508_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_508_3" zone-1="zone_HwanYoungCho">
+      <mission id="2" required-register-value="1">
+        <case convoy="epic_508_con" object="npc:mh_inspector_0003" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_HwanYoungCho" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_508_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone">
+      <mission id="3" required-register-value="1">
+        <case convoy="epic_508_con" object="zone:zone_HwanYoungCho" party-broadcast="n" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" zone-1="zone_hwanyoungcho">
+        <case convoy="epic_508_con" object="zone:zone_HwanYoungCho" party-broadcast="n" progress-mission="reaction-only" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_508_5" zone-1="zone_HwanYoungCho">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ce_tradebook_0001" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="zone:zone_HwanYoungCho" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_508_6" type="enter-zone" />
+        <case object="zoneenv:3062_ChoiJinASight" object2="zoneenv2:3062_ChoiJinASight" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_508_7" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_508_8" zone-1="zone_HwanYoungCho">
+      <mission id="5" required-register-value="1" reward-1="508_final_set1">
+        <case object="npc:mh_inspector_0003" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_HwanYoungCho" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_508_9" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_509" />
+    </completion>
+    <transit id="1" zone="zone_HwanYoung_Nonepic">
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

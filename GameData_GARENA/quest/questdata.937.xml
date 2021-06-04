@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.937.xml-->
+  <quest alias="q_epic_937" category="epic" completed-list="y" id="937" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SA_InJeolMi_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Inbugyeom_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JungHaDo_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0081" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_YuCheon_0024" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_DoChunPung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_937_1" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_SA_DoChunPung_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_JinSeoYeon_0001" party-broadcast="n" type="approach" />
+        <fixed-reward slot-1="item:Quest_Scroll_BackChung_0053" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reset-teleport-recycle-time="y">
+        <case grocery="Quest_Scroll_BackChung_0053" item="Quest_Scroll_BackChung_0053" party-broadcast="n" progress-mission="y" required-item-1="Quest_Scroll_BackChung_0053" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+        <case object="npc:CH_SA_JinSeoYeon_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_DoChunPung_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="5">
+        <case object2="zoneenv2:e_chest_hongmunboard_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object="npc:CH_SA_JinSeoYeon_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_DoChunPung_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BeonA_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BeonYang_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0037" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0036" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0035" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0034" party-broadcast="n" type="approach" />
+        <case object2="zoneenv2:e_chest_hongmunboard_05" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_hongmunboard_04" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_hongmunboard_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_hongmunboard_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_937_2" zone-1="Zone_Hasire">
+      <mission id="5" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object="npc:CH_SA_BeonYang_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_BeonA_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0037" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0036" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0035" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0034" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_BaekRimSa_Phase_Epic5" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CH_SA_Citizen_0037" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0036" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0035" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0034" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_937_3" zone-1="zone_BaekRimSa_Phase_Epic5">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_SA_DoChunPung_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_Ryu_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JinSeoYeon_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_937_4" zone-1="zone_BaekRimSa_Phase_Epic5">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_SA_DoChunPung_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_TaeGwang_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BaekRimSa_Phase_Epic5" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_937_5" type="enter-zone" />
+        <case object="npc:CH_SA_DoChunPung_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_NamGung_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_HoWolRyung_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_EnAnk_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9" quest-decision="qd_937_6" rollback="leave-zone" zone-1="zone_BaekRimSa_Phase_Epic5">
+      <mission id="9" required-register-value="4" reset-teleport-recycle-time="n">
+        <case idx="3" object="npc:CH_SA_TaeGwang_0004" party-broadcast="n" progress-mission="y" quest-decision="qd_937_9" type="npc-bleeding-occured">
+          <filter-set>
+            <filter op="eq" subject2="case:npc-bleeding-occured:npc:reg-1" type="number" value="1" />
+          </filter-set>
+        </case>
+        <case object="zone:zone_BaekRimSa_Phase_Epic5" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_937_7" type="enter-zone" />
+        <case idx="3" object="npc:CH_SA_NamGung_0006" party-broadcast="n" progress-mission="y" quest-decision="qd_937_10" type="npc-bleeding-occured" />
+        <case idx="3" object="npc:CH_SA_HoWolRyung_0005" party-broadcast="n" progress-mission="y" quest-decision="qd_937_11" type="npc-bleeding-occured" />
+        <case idx="3" object="npc:CH_SA_EnAnk_0005" party-broadcast="n" progress-mission="y" quest-decision="qd_937_12" type="npc-bleeding-occured" />
+      </mission>
+      <mission-step-fail rollback-step-id="8" zone-1="zone_BaekRimSa_Phase_Epic5" />
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1" reward-1="937_final_set1">
+        <case object="npc:CH_SA_ChinChin_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case gadget-required="dont-care" object="zone:StartZone_Epic5thCurtain" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_937_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_BaekRimSa">
+      <destination mission-step-id="9" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+    </transit>
+    <transit id="2" zone="StartZone_Default">
+      <destination mission-step-id="10" zone-index="3" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_938" />
+    </completion>
+  </quest>
+</table>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\6565\zoneenv2placedata.6565.xml-->
+	<record action-point="9281,10831,-896" action-radius="20" alias="e_chest_6548_InTree_01_1_Place" manipulation-height-lower="12" manipulation-height-upper="12" manipulation-point="9281,10831,-896" manipulation-radius="20" tool-zone-1="6548" tool-zone-2="6565" tool-zone-3="6546" tool-zone-4="6547" tool-zone-5="6549" tool-zone-6="6576" type="chest" use-manipulation-point="n" />
+	<record action-point="9179,10730,-850" action-radius="20" alias="e_chest_6548_PPV_01_1_Place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="9179,10730,-850" manipulation-radius="20" tool-zone-1="6548" tool-zone-2="6565" tool-zone-3="6546" tool-zone-4="6547" tool-zone-5="6549" tool-zone-6="6576" type="chest" use-manipulation-point="n" />
+	<record action-point="9201,10563,-994" action-radius="25" alias="e_button_6537_yongmak_01_Place" manipulation-height-lower="25" manipulation-height-upper="25" manipulation-point="9201,10563,-994" manipulation-radius="25" region-point-1="9202,10560,-1014" region-point-2="9198,10561,-1014" region-point-3="9199,10565,-1014" region-point-4="9203,10564,-1014" tool-zone-1="6565" type="portal" use-manipulation-point="n" />
+	<record action-point="9478,10955,-867" action-radius="22" alias="e_chest_6565_Queen_01_Place" manipulation-height-lower="22" manipulation-height-upper="22" manipulation-point="9478,10955,-857" manipulation-radius="22" tool-zone-1="6565" tool-zone-2="6546" tool-zone-3="6548" tool-zone-4="6549" type="chest" use-manipulation-point="n" />
+	<record action-point="9104,10254,-730" alias="6565_Portal_6536_place" region-point-1="8835,10388,-103" region-point-2="8845,10406,-351" region-point-3="9372,10119,-74" region-point-4="9363,10102,-774" tool-zone-1="6546" tool-zone-2="6547" tool-zone-3="6548" tool-zone-4="6549" tool-zone-5="6565" tool-zone-6="6576" type="portal" />
+	<record alias="zone6565.falldeath_place" height="0" type="fall-death" />
+</table>

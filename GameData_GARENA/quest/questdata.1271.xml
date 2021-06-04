@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1271.xml-->
+  <quest alias="q_sub_1271" broadcast-category="field" category="normal" district-1="suwal" id="1271" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="43" preceding-quest-check="and">
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:CH_KyeongChunMaeng_0030" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CE_Board_0006" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CH_KyeongChunMaeng_0030" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1" rollback="none">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_RuneMechaFireGorillaA_0002" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object2="npc:ME_RuneMechaFireGorillaA_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1" reward-1="1271_final_set1" reward-2="1271_final_set2">
+        <case completion-count="1" completion-count-op="lt" object="npc:CH_KyeongChunMaeng_0030" party-broadcast="n" progress-mission="y" type="talk" />
+        <case acquire-quest="n" completion-count="0" fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+        <case completion-count="1" object="npc:CH_KyeongChunMaeng_0030" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

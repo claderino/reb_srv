@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1382.xml-->
+  <quest alias="q_sub_1382" broadcast-category="field" category="normal" district-1="suwal" id="1382" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_1381" preceding-quest-check="and" preceding-quest-mission-step-1="3">
+      <case acquire-quest="y" object="npc:ch_musintower_chungwoon_0003" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1" rollback="none">
+      <mission id="1" required-register-value="2">
+        <case object2="npc:mh_musintower1_damacha_0001" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_musintower1_heuksaman_0001" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_musintower1_seolye_0001" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_musintower1_danggoonmyung_0001" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_musintower1_taehoran_0001" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_musintower1_suksamja_0001" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="npc:me_musintower2_geumgangyuksa_0001" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object2="npc:MH_SuReonJa_0001" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object2="npc:me_musintower4_chunryungangsi_0001" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1" reward-1="1382_final_set1" reward-2="1382_final_set2">
+        <case object="npc:ch_musintower_chungwoon_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

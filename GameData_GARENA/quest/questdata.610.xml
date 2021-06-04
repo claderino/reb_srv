@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.610.xml-->
+  <quest activated-faction="factionmain2" alias="q_sub_610" broadcast-category="field" category="normal" district-1="deasamak" id="610" main-faction="factionmain2" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" faction="factionmain2" level="24" preceding-quest-1="q_sub_602" preceding-quest-2="q_sub_603" preceding-quest-check="or">
+      <case acquire-quest="y" object="npc:ch_honchenogyo_0003" party-broadcast="n" type="talk">
+        <filter-set>
+          <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+        </filter-set>
+      </case>
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case gadget="Q_PrisonerB" gadget-required="carry-and-remove" object="npc:ch_honchenogyo_0001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case gadget="Q_PrisonerD" gadget-required="carry-and-remove" object="npc:ch_honchenogyo_0001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case drop-gadget="y" gadget-required="empty" object="npc:ch_prisoner_0003" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate">
+          <filter-set>
+            <filter subject2="case:npc-manipulate:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="610_final_set1" reward-2="610_final_set2">
+        <case object="npc:ch_honchenogyo_0003" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+  </quest>
+</table>

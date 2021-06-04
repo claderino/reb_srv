@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.324.xml-->
+  <quest alias="q_sub_324" broadcast-category="field" category="normal" id="324" max-repeat="1" save-type="all">
+    <acquisition level="16">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step completion-type="or" id="1" retired="y">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CE_CT_Board_0018" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object="npc:CE_CT_Board_0019" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object="npc:CE_CT_Board_0020" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission id="4" required-register-value="1">
+        <case object="npc:CE_CT_Board_0038" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission id="5" required-register-value="1">
+        <case object="npc:CE_CT_Board_0021" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="2">
+      <mission id="6" required-register-value="1" reward-1="324_final_set1">
+        <case object="npc:CE_CT_Board_0019" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission id="7" required-register-value="1" reward-1="324_final_set1">
+        <case object="npc:CE_CT_Board_0020" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission id="8" required-register-value="1" reward-1="324_final_set1">
+        <case object="npc:CE_CT_Board_0038" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission id="9" required-register-value="1" reward-1="324_final_set1">
+        <case object="npc:CE_CT_Board_0021" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+
+    </mission-step>
+  </quest>
+</table>

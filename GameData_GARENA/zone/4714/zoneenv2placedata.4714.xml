@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\4714\zoneenv2placedata.4714.xml-->
+	<record action-point="2818,8600,188" alias="4714_DongHea_Chungkakdan_4711_place" region-point-1="2683,8588,5653" region-point-2="2683,8612,5653" region-point-3="2953,8612,5600" region-point-4="2953,8588,5600" tool-zone-1="4710" tool-zone-2="4714" type="portal" />
+	<record action-point="2492,7107,209" alias="4714_DongHea_Chungkakdan_4709_place" region-point-1="2399,7095,6385" region-point-2="2399,7118,6385" region-point-3="2586,7118,6385" region-point-4="2586,7095,6385" tool-zone-1="4710" tool-zone-2="4714" type="portal" />
+	<record action-point="2916,7910,153" action-radius="20" alias="e_Chest_4714hartA_01_place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="2916,7910,153" manipulation-radius="20" tool-zone-1="4714" tool-zone-2="4710" type="chest" use-manipulation-point="n" />
+	<record action-point="2819,8483,153" action-radius="62" alias="e_gate_chungtwindoor_01_place" manipulation-height-lower="62" manipulation-height-upper="62" manipulation-point="2819,8483,153" manipulation-radius="62" tool-zone-1="4714" tool-zone-2="4710" type="gate" use-manipulation-point="n" />
+	<record alias="4714_DMZ01_place" height="0" region-point-1="2868,7648,6385" region-point-2="2868,7877,4211" region-point-3="3078,7877,142" region-point-4="3078,7648,6385" tool-zone-1="4714" type="effect-region" />
+	<record action-point="3343,7328,300" action-radius="0" alias="4714_Cinematic_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="3343,7328,300" manipulation-radius="0" region-point-1="3188,7238,6385" region-point-2="3188,7419,6385" region-point-3="3498,7419,6385" region-point-4="3498,7238,6385" tool-zone-1="4714" type="foot-switch" use-manipulation-point="n" />
+	<record alias="4714_DMZ02_place" height="0" region-point-1="2767,8203,4211" region-point-2="2663,8328,4211" region-point-3="2919,8542,5600" region-point-4="3023,8417,6385" tool-zone-1="4714" type="effect-region" />
+	<record alias="4714_DMZ03_place" height="0" region-point-1="3198,7671,6385" region-point-2="3198,7844,6385" region-point-3="3358,7844,6385" region-point-4="3358,7671,6385" tool-zone-1="4714" type="effect-region" />
+	<record action-point="3139,7765,300" action-radius="0" alias="4714_reset_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="3139,7765,300" manipulation-radius="0" region-point-1="3086,7649,6385" region-point-2="3086,7880,142" region-point-3="3191,7880,6385" region-point-4="3191,7649,6385" tool-zone-1="4714" type="foot-switch" use-manipulation-point="n" />
+</table>

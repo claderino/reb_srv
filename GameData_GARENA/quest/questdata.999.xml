@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.999.xml-->
+  <quest alias="q_epic_999" broadcast-category="field" category="epic" completed-list="y" id="999" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="2" quest-decision="qd_999_16" zone-1="zone_YoungRinBong_Act6">
+      <mission id="2" required-register-value="3">
+        <case object="zone:zone_YoungRinBong_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_999_1" type="enter-zone" />
+        <case object2="npc:ME_WB_DarkAura_0002" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="npc:CE_WB_AkGyoJok_0012" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3" rollback="none">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WB_ChungGak_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_999_14" type="talk" />
+        <case object="zone:zone_YoungRinBong_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_999_15" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_999_17" rollback="leave-zone" zone-1="zone_YoungRinBong_Act6">
+      <mission id="4" required-register-value="2">
+        <case object2="zoneenv2:e_chest_4429heakchun_01" party-broadcast="n" progress-mission="y" quest-decision="qd_999_2" type="manipulate" />
+        <case object2="zoneenv2:e_chest_4429heakchun_02" party-broadcast="n" progress-mission="y" quest-decision="qd_999_4" type="manipulate" />
+        <case object="npc:CH_WB_ChungGak_0002" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_999_6" rollback-step-id="3" zone-1="zone_YoungRinBong_Act6" />
+    </mission-step>
+    <mission-step completion-type="and" id="5" rollback="none">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_WB_ChungGak_0002" party-broadcast="n" type="approach" />
+        <case object="zone:zone_YoungRinBong_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_999_8" type="enter-zone" />
+        <case idx="3" object="npc:ME_WB_DemonShadowBoss_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_999_7" type="npc-bleeding-occured" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" rollback="none">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CE_WB_ChungGak_0051" party-broadcast="n" progress-mission="y" quest-decision="qd_999_9" type="talk" />
+        <case object="zone:zone_YoungRinBong_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_999_10" type="enter-zone" />
+        <case object2="zoneenv2:4429_footswitch_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_999_20" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case idx="3" object="npc:CE_WB_ChungGak_0051" party-broadcast="n" progress-mission="y" quest-decision="qd_999_19" type="npc-bleeding-occured" />
+        <case object="zone:zone_YoungRinBong_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_999_11" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="zone:zone_YoungRinBong_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_999_12" type="enter-zone" />
+        <case object="npc:CE_WB_ChungGak_0052" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1" reward-1="999_final_set1">
+        <case object="npc:CE_WB_ChungGak_0052" party-broadcast="n" progress-mission="y" quest-decision="qd_999_13" type="talk" />
+        <case object="zone:zone_YoungRinBong_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_999_18" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_993" />
+    </completion>
+    <transit id="1" zone="zone_YoungRinBong_6">
+      <destination mission-step-id="9" zone-index="7" />
+      <destination mission-step-id="2" zone-index="7" />
+      <destination mission-step-id="3" zone-index="7" />
+      <destination mission-step-id="4" zone-index="7" />
+      <destination mission-step-id="5" zone-index="7" />
+      <destination mission-step-id="6" zone-index="7" />
+      <destination mission-step-id="7" zone-index="7" />
+      <destination mission-step-id="8" zone-index="7" />
+    </transit>
+    <transit id="2" zone="StartZone_Default">
+      <destination mission-step-id="1" zone-index="5" />
+      <destination mission-step-id="2" zone-index="5" />
+      <destination mission-step-id="3" zone-index="5" />
+      <destination mission-step-id="4" zone-index="5" />
+      <destination mission-step-id="5" zone-index="5" />
+      <destination mission-step-id="6" zone-index="5" />
+      <destination mission-step-id="7" zone-index="5" />
+      <destination mission-step-id="8" zone-index="5" />
+      <destination mission-step-id="9" zone-index="5" />
+    </transit>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CE_WB_Dummy_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_999_3" type="npc-manipulate" />
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_999_5" type="enter-zone" />
+        <case object="npc:CE_WB_AkGyoJok_0012" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
+  <!--skillcastcondition3data_npc2_cheonsangbunji.xml-->
+	<record alias="ME_WC_Dummy_0200_CannonAtk" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_Dummy_0201_LightningAtk" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_GaneSha_0001_Swing" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_GaneSha_0001_GiantSwing" gather-range="PVE_Caster_Laser_CMax3000_Width200_Dis1952" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_GaneSha_0001_Jump" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax800" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_GaneSha_0001_CrossStrike" gather-range="TF_ME_WC_GaneSha_0001_CrossStrike" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_GaneSha_0001_Whirlwind" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax1000_H3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_GaneSha_0001_ShockWave" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax1600_H3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_GaneSha_0001_LightningAttack" gather-range="PVE_Target_T360_CMax3000_RMin0_RMax304_H3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_GaneSha_0001_Inhalation" gather-range="TF_ME_WC_GaneSha_0001_Inhalation" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroCrocodileA_0001_Throw" gather-range="PVE_Ground_T360_CMax3000_RMin0_RMax400" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantA_0003_Attack" gather-range="PVE_Target_T_CMax696_FMax704_EMax704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantA_0003_Doubleattack" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantA_0003_Strike" gather-range="PVE_Caster_Laser_CMax3000_Width152_Dis528" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantA_0003_Dash" gather-range="PVE_Target_T_CMax2000_FMax2000_EMax304" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantA_0003_Smashdown" gather-range="ID_Bagic_Laser_W1M50_F6M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantB_0001_Smash1" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax600" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantB_0001_Spin" gather-range="TF_ME_WC_AnthroElephantB_0001_Spin" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantB_0001_ShieldSmite" gather-range="ID_Bagic_Laser_W2M_F6M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantB_0001_ShockWave" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax504" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantB_0001_Stamp" gather-range="PVE_Target_T_CMax2000_FMax2000_EMax504" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantB_0001_Heal" gather-range="PVE_Caster_T_CMax3000_FMax3000_EMax3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantC_0001_Smash" gather-range="PVE_Target_T_CMax496_FMax504_EMax504" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantC_0001_Swing" gather-range="PVE_Target_T_CMax3000_FMax3000_EMax3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantC_0001_Strike" gather-range="PVE_Target_T_CMax3000_FMax3000_EMax3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantC_0001_Totem" gather-range="PVE_Caster_T_CMax3000_FMax3000_EMax3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_AnthroElephantC_0001_Burn" gather-range="PVE_Target_T_CMax3000_FMax3000_EMax3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+</table>

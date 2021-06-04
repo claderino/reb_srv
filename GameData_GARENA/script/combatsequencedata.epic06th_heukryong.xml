@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.epic06th_heukryong.xml-->
+
+  
+  
+  
+
+  
+
+  
+  <combat-sequence alias="ME_WB_GolemLeader_0001_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_GolemLeader_None_Jab" skill3="ME_GolemLeader_None_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_GolemLeader_None_Smash" skill3="ME_GolemLeader_None_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_GolemLeader_None_GolemBounce" skill3="ME_GolemLeader_None_GolemBounce" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_GolemLeader_None_GolemBlow" skill3="ME_GolemLeader_None_GolemBlow" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="7" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_GolemLeader_None_RockAttack" skill3="ME_GolemLeader_None_RockAttack" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_GolemLeader_None_Inhalation" skill3="ME_GolemLeader_None_Inhalation" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="20000">
+      <action duration="100" event-step="3" immune-breaker-disable="y" type="stay" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_GolemLeader_None_Summon" skill3="ME_GolemLeader_None_Summon" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_GolemLeader_None_GolemBounce" skill3="ME_GolemLeader_None_GolemBounce" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Golem_0001_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_Golem_None_Jab" skill3="ME_Golem_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_Golem_None_HeavyStrike" skill3="ME_Golem_None_HeavyStrike" type="use-skill" />
+      <action repeat="1" skill="ME_Golem_None_Smash" skill3="ME_Golem_None_Smash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_Golem_None_Dash" skill3="ME_Golem_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Golem_0002_CS">
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WB_SnakeSoldier_0002_CS1" transit-action-1="None" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_HeavySmash" skill3="ME_SnakeSoldier_None_HeavySmash" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Defence" skill3="ME_SnakeSoldier_None_Defence" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_ShockWave" skill3="ME_SnakeSoldier_None_ShockWave" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Dash" skill3="ME_SnakeSoldier_None_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="1" start-delay="10000">
+      <action duration="100" event-step="2" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_SnakeSoldier_0002_CS2" transit-action-1="None" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_HeavySmash" skill3="ME_SnakeSoldier_None_HeavySmash" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Defence" skill3="ME_SnakeSoldier_None_Defence" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_ShockWave" skill3="ME_SnakeSoldier_None_ShockWave" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Dash" skill3="ME_SnakeSoldier_None_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="0" min-delay="80000" start-delay="5000">
+      
+      <action immune-breaker-disable="y" social="ME_WB_SnakeSoldier_0002_battle_01" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" skill="ME_SnakeSoldier_None_PoisonBomb_Q" skill3="ME_SnakeSoldier_None_PoisonBomb_Q" target="zonenpcspawn:a_4432_72" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" id="4" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_SnakeSoldier_0002_battle_01" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" skill="ME_SnakeSoldier_None_PoisonBomb_Q" skill3="ME_SnakeSoldier_None_PoisonBomb_Q" target="zonenpcspawn:a_4432_72" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_SnakeSoldier_0002_CS3">
+    
+    <normal combat-distance="1" id="1">
+      <action skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_HeavySmash" skill3="ME_SnakeSoldier_None_HeavySmash" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Defence" skill3="ME_SnakeSoldier_None_Defence" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_ShockWave" skill3="ME_SnakeSoldier_None_ShockWave" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Dash" skill3="ME_SnakeSoldier_None_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" id="5" max-count="1">
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WB_SnakeSoldier_0002_battle_05" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_SnakeSoldier_0002_battle_02" type="do-social" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" repeat="99" skill="Whanma_SnakeSoldier_None_Dash" skill3="Whanma_SnakeSoldier_None_Dash" target-area="4432_23" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_SnakeSoldier_0002_CS4">
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_SnakeSoldier_0002_CS5">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_SnakeSoldier_0003_CS">
+    
+    <normal combat-distance="1" id="1">
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_SnakeSoldier_0004_CS">
+    
+    <normal combat-distance="1" id="1">
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action skill="ME_SnakeSoldier_None_Dash" skill3="ME_SnakeSoldier_None_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="1">
+      <action arrived-effect="ME_SnakeSoldier_None_HeavyDash_Finish" blocked-effect="ME_SnakeSoldier_None_HeavyDash_ParryCancel" pass-through="n" skill="ME_SnakeSoldier_None_HeavyDash" skill3="ME_SnakeSoldier_None_HeavyDash" speed="96" target="zonenpcspawn:a_4432_60" type="boss-rush-attack" />
+    </special>
+    
+    <special combat-distance="3" id="2" max-count="1">
+      <action arrived-effect="ME_SnakeSoldier_None_HeavyDash_Finish" blocked-effect="ME_SnakeSoldier_None_HeavyDash_ParryCancel" pass-through="n" skill="ME_SnakeSoldier_None_HeavyDash" skill3="ME_SnakeSoldier_None_HeavyDash" speed="96" target="zonenpcspawn:a_4432_61" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_ChungGak_0038_CS">
+    
+    <normal combat-distance="3" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill="Whanma_GatlingGunWoman_None_GunFire1" skill3="Whanma_GatlingGunWoman_None_GunFire1" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Whanma_GatlingGunWoman_None_Gun1" skill3="Whanma_GatlingGunWoman_None_Gun1" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      <action immune-breaker-disable="y" skill="Whanma_GatlingGunWoman_None_GunAirFire1" skill3="Whanma_GatlingGunWoman_None_GunAirFire1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" id="2" max-count="1">
+      <action duration="3000" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_GatlingGunWoman_0001_soc_01" type="do-social" />
+      <action duration="3000" immune-breaker-disable="y" type="stay" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WB_GatlingGunWoman_0001_soc_02" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_GatlingGunWoman_0001_CS1" transit-action-1="None" transit-cond-1="manual">
+    
+    <normal combat-distance="3" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill="Whanma_GatlingGunWoman_None_GunFire1" skill3="Whanma_GatlingGunWoman_None_GunFire1" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Whanma_GatlingGunWoman_None_Gun1" skill3="Whanma_GatlingGunWoman_None_Gun1" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action duration="20000" event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1_Q" target="zonenpcspawn:a_4432_20" type="boss-simultaneous-ground-attack" />
+    </special>
+    
+    <special combat-distance="3" id="2" max-count="0">
+      <action type="select">
+        <action event-step="2" immune-breaker-disable="y" prob="25" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4432_24" type="use-ground-skill" />
+        <action event-step="2" immune-breaker-disable="y" prob="25" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4432_25" type="use-ground-skill" />
+        <action event-step="2" immune-breaker-disable="y" prob="25" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4432_26" type="use-ground-skill" />
+        <action event-step="2" immune-breaker-disable="y" prob="25" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4432_27" type="use-ground-skill" />
+      </action>
+    </special>
+    
+    <special combat-distance="3" id="3" max-count="0">
+      <action event-step="2" immune-breaker-disable="y" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4432_23" type="use-ground-skill" />
+      <action event-step="2" immune-breaker-disable="y" skill="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Q" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_GatlingGunWoman_0001_CS2">
+    <normal combat-distance="3" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="1">
+      <action duration="100" event-step="3" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WB_GatlingGunWoman_0001_CS3">
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_GatlingGunWoman_0001_CS4">
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_GatlingGunWoman_0001_CS5">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Dummy_0141_CS">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action duration="100" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="35000" immune-breaker-disable="y" skill="ME_SnakeSoldier_None_PoisonBomb_Sim" skill3="ME_SnakeSoldier_None_PoisonBomb_Sim" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1" start-delay="34000">
+      <action duration="1000" event-step="1" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Dummy_0142_CS" hide-seq-start="y">
+    <normal combat-distance="3" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="0">
+      <action skill="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide1_Q" type="use-skill" />
+      <action skill="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide2_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide2_Q" type="use-skill" />
+      <action skill="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide3_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide3_Q" type="use-skill" />
+      <action skill="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide4_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide4_Q" type="use-skill" />
+      <action duration="100" immune-breaker-disable="y" type="stay" />
+      <action skill="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide4_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide4_Q" type="use-skill" />
+      <action skill="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide3_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide3_Q" type="use-skill" />
+      <action skill="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide2_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide2_Q" type="use-skill" />
+      <action skill="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_MagazineBomb_Hide1_Q" type="use-skill" />
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_BlackDragon_0077_CS">
+    
+    <normal combat-distance="3" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="0">
+      <action event-step="1" skill="MH_SUA_R0_ForceMaster_Deal_fire_ball" skill3="MH_SUA_R0_ForceMaster_Deal_fire_ball" type="use-skill" />
+      <action event-step="1" repeat="2" skill="MH_SUA_R0_ForceMaster_Deal_fire_ball_instant" skill3="MH_SUA_R0_ForceMaster_Deal_fire_ball_instant" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="MH_WB_BlackDragon_0077_CS2">
+  </combat-sequence>
+
+  
+  
+  
+
+  
+
+  
+  
+  <combat-sequence alias="ME_WC_SnakeSoldier_0005_CS">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_HeavySmash" skill3="ME_SnakeSoldier_None_HeavySmash" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Defence" skill3="ME_SnakeSoldier_None_Defence" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_ShockWave" skill3="ME_SnakeSoldier_None_ShockWave" type="use-skill" />
+      <action skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Dash" skill3="ME_SnakeSoldier_None_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="1" start-delay="10000">
+      <action duration="100" event-step="2" immune-breaker-disable="y" type="stay" />
+    </special>
+
+    
+    <special combat-distance="3" id="2" max-count="1">
+      <action immune-breaker-disable="y" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WB_SnakeSoldier_0002_battle_05" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_SnakeSoldier_0002_battle_02" type="do-social" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" repeat="99" skill="Whanma_SnakeSoldier_None_Dash" skill3="Whanma_SnakeSoldier_None_Dash" target-area="4437_2" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_GatlingGunWoman_0001_CS1" transit-action-1="None" transit-cond-1="manual">
+    
+    <normal combat-distance="3" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill="Whanma_GatlingGunWoman_None_GunFire1" skill3="Whanma_GatlingGunWoman_None_GunFire1" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Whanma_GatlingGunWoman_None_Gun1" skill3="Whanma_GatlingGunWoman_None_Gun1" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action duration="20000" event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1_Q" target="zonenpcspawn:a_4437_2" type="boss-simultaneous-ground-attack" />
+    </special>
+    
+    <special combat-distance="3" id="2" max-count="0">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4437_6" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4437_7" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4437_8" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4437_9" type="use-ground-skill" />
+      </action>
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_GatlingGunWoman_0001_CS2">
+    <normal combat-distance="3" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="3" id="1" max-count="1">
+      <action duration="100" event-step="3" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+</table>

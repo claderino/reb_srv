@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5262\zoneenv2placedata.5262.xml-->
+	<record action-point="5394,-12240,1671" action-radius="50" alias="e_Wall_UnRimWon_01_place" tool-zone-1="5262" tool-zone-2="5263" tool-zone-3="5252" type="gate" />
+	<record action-point="5522,-12318,1671" action-radius="50" alias="e_Wall_UnRimWon_02_place" tool-zone-1="5262" tool-zone-2="5263" type="gate" />
+	<record action-point="5720,-12318,1671" action-radius="50" alias="e_Wall_UnRimWon_03_place" tool-zone-1="5262" tool-zone-2="5263" type="gate" />
+	<record action-point="5848,-12240,1671" action-radius="50" alias="e_Wall_UnRimWon_04_place" tool-zone-1="5262" tool-zone-2="5263" tool-zone-3="5252" type="gate" />
+	<record action-point="5298,-12151,1720" alias="5262_Portal_UnRim_place" region-point-1="5293,-12272,2292" region-point-2="5293,-12031,2292" region-point-3="5304,-12031,2299" region-point-4="5304,-12272,2299" tool-zone-1="5262" type="portal" />
+	<record alias="5262_dmz_1_place" height="0" region-point-1="5516,-12227,2489" region-point-2="5516,-12072,1660" region-point-3="5738,-12072,1660" region-point-4="5738,-12227,2599" tool-zone-1="5262" tool-zone-2="5263" type="effect-region" />
+	<record alias="zone5262.falldeath_place" height="0" type="fall-death" />
+</table>

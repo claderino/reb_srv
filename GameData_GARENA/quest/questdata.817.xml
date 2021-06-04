@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.817.xml-->
+  <quest alias="q_sub_817" broadcast-category="field" category="normal" id="817" max-repeat="1" save-type="all">
+    <acquisition level="45" preceding-quest-1="q_epic_1439" preceding-quest-2="q_sub_818" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" object="npc:CH_CT_CuteVoice_0002" party-broadcast="n" progress-mission="n" type="talk" />
+      <case object="npc:CE_CT_Lion_0001" party-broadcast="n" type="approach" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CE_CT_Lion_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_CuteVoice_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_817_5" rollback="leave-zone" zone-1="zone_BorderOffice">
+      <mission id="3" required-register-value="1">
+        <case object2="npc:CE_CT_Lion_0002" party-broadcast="n" progress-mission="y" type="pc-social" />
+        <case object="zone:zone_BorderOffice" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_817_6" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" rollback="leave-zone">
+      <mission id="4" required-register-value="1">
+        <case object2="npc:ME_CT_BukBang_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_817_2" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="zone_BorderOffice" />
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CE_CT_Lion_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_817_3" type="talk" />
+        <case object="zone:zone_BorderOffice" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_817_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1" reward-1="817_final_set1">
+        <case object="npc:CH_CT_CuteVoice_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="zone:zone_BorderOffice" party-broadcast="n" progress-mission="y" quest-decision="qd_817_1" type="enter-zone" />
+        <case object="npc:CH_CT_CuteVoice_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CE_CT_Lion_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

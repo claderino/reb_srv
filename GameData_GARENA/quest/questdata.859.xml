@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.859.xml-->
+  <quest alias="q_sub_859" category="normal" district-1="deasamak" id="859" max-repeat="1" save-type="all">
+    <acquisition level="33" preceding-quest-1="q_epic_532" preceding-quest-check="and">
+      <case acquire-quest="y" item="quest_859" party-broadcast="n" type="talk-to-item" />
+      <case loot-item="Quest_859" object2="npc:mh_jukryongchae_0006" party-broadcast="n" type="loot" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="859_final_set1">
+        <case grocery="Quest_859" object="npc:ch_blackmarket_0001" party-broadcast="n" progress-mission="y" required-item-1="Quest_859" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ch_blackmarket_0005" party-broadcast="n" type="approach" />
+        <case object="npc:ch_smuggler_0003" party-broadcast="n" type="approach" />
+        <completion-loss item-1="Quest_859" />
+      </mission>
+    </mission-step>
+    <giveup-loss item-1="quest_859" item-count-1="0" />
+  </quest>
+</table>

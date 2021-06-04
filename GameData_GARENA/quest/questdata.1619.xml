@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1619.xml-->
+  <quest alias="q_sub_1619" broadcast-category="field" category="normal" completed-list="n" id="1619" max-repeat="1" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_sub_1618" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_sb_juria_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      <case acquire-quest="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_sb_jinseoyeon_0010" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_sb_juria_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_1" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_sb_gonryun_0016" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_51" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_sb_gonryun_0016" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_10" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_51" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1619_12" rollback="leave-zone" zone-1="zone_gw_gonlyunjeolbyeok_juria_sub3_1">
+      <mission id="5" required-register-value="3">
+        <case object2="zoneenv2:e_chest_6181_herb_01" party-broadcast="n" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6181_herb_02" party-broadcast="n" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6181_herb_03" party-broadcast="n" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6181_herb_04" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_21" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6181_herb_05" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_13" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6181_herb_06" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_14" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6181_herb_07" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_15" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6181_herb_08" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_16" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6181_herb_09" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_17" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6181_herb_10" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_18" type="manipulate" />
+        <case object2="zoneenv2:6181_foot_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_11" type="env-entered" />
+        <case object="npc:ch_sb_gonryun_0045" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:ch_sb_juria_0002" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_52" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" zone-1="zone_GW_GonLyunJeolByeok_Juria_sub3_1" />
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:ch_sb_gonryun_0016" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_2" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_53" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ch_sb_jinseoyeon_0012" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_54" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:ch_sb_juria_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_8" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_54" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object2="zoneenv2:6181_foot_2" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_7" type="env-entered" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_55" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case object2="npc:me_sb_spider_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_19" type="killed" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_56" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1">
+        <case object="npc:CH_SB_GonRyun_0020" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_20" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_57" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="12">
+      <mission id="12" required-register-value="1">
+        <case object="npc:ch_sb_juria_0009" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_3" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_98" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="13">
+      <mission id="13" required-register-value="1">
+        <case object2="npc:ME_SB_SaintWildBoar_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_4" type="killed" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_58" type="enter-zone" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_98" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="14">
+      <mission id="14" required-register-value="1">
+        <case object="npc:ch_sb_songwon_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_5" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_59" type="enter-zone" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_98" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="15">
+      <mission id="15" required-register-value="1">
+        <case object="npc:ch_sb_juria_0004" party-broadcast="n" progress-mission="y" quest-decision="qd_1619_6" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_60" type="enter-zone" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_98" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="16">
+      <mission id="16" required-register-value="1" reward-1="1619_final_set1">
+        <case object="npc:ch_sb_jinseoyeon_0014" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_sb_songwon_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_99" type="talk" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_61" type="enter-zone" />
+        <case object="zone:zone_GW_GonLyunJeolByeok_Juria_sub3_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1619_98" type="enter-zone" />
+        <case object="zone:zone_gw_bimildonggul_juria_sub2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1618_55" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_GW_GonLyunJeolByeok_D">
+      <destination mission-step-id="16" zone-index="1" />
+      <destination mission-step-id="15" zone-index="1" />
+      <destination mission-step-id="14" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <transit id="2" zone="zone_GW_GonLyunJeolByeok_D2">
+      <destination mission-step-id="16" zone-index="1" />
+      <destination mission-step-id="15" zone-index="1" />
+      <destination mission-step-id="14" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+    </transit>
+    <transit id="3" zone="zone_gw_bimildonggul_d">
+      <destination mission-step-id="16" zone-index="1" />
+      <destination mission-step-id="15" zone-index="1" />
+      <destination mission-step-id="14" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

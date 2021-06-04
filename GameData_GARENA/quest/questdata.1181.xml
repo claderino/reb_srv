@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1181.xml-->
+  <quest alias="q_sub_1181" broadcast-category="field" category="normal" district-1="suwal" id="1181" max-repeat="1" save-type="all">
+    <acquisition level="39" preceding-quest-1="q_epic_915" preceding-quest-check="and" preceding-quest-mission-step-1="5">
+      <case acquire-quest="y" object="npc:ce_hoerangjok_0014" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ce_crocodilesharktribe_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ce_hoerangjok_0014" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="3">
+        <case gadget-required="dont-care" object="zoneenv:e_chest_charmtree_08" object2="zoneenv2:e_chest_charmtree_08" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_chest_charmtree_07" object2="zoneenv2:e_chest_charmtree_07" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_chest_charmtree_06" object2="zoneenv2:e_chest_charmtree_06" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_chest_charmtree_05" object2="zoneenv2:e_chest_charmtree_05" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_chest_charmtree_04" object2="zoneenv2:e_chest_charmtree_04" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_chest_charmtree_03" object2="zoneenv2:e_chest_charmtree_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_chest_charmtree_02" object2="zoneenv2:e_chest_charmtree_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_chest_charmtree_01" object2="zoneenv2:e_chest_charmtree_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+      <mission id="4" required-register-value="10">
+        <case object="npc:me_skullb_0003" object2="npc:me_skullb_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_skullb_0002" object2="npc:me_skullb_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_zombiebunguk_0003" object2="npc:me_zombiebunguk_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_zombiebunguk_0002" object2="npc:me_zombiebunguk_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_zombiebunguk_0001" object2="npc:me_zombiebunguk_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="5" required-register-value="1" reward-1="1181_final_set1">
+        <case object="npc:ce_hoerangjok_0014" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

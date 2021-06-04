@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.25126.xml-->
+  <quest alias="q_sub_25126" attraction-1="cave2:Cave_none_0226" attraction-2="cave2:Cave_none_0227" attraction-3="field-zone:Richtown" broadcast-category="field" category="attraction" id="25126" max-repeat="-1" save-type="nothing">
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_SA_InsectTribeStagBeetle_0001" party-broadcast="n" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <acquisition level="45" preceding-quest-check="and" />
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="25126_final_set1">
+        <case fee="n" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_sub_25126" />
+    </completion>
+  </quest>
+</table>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.510.xml-->
+  <quest alias="q_epic_510" category="epic" completed-list="y" district-1="deasamak" id="510" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_baekun_0001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject2="case:talked:pc" type="prop" value="24" />
+          </filter-set>
+        </case>
+        <case approach-social="q_510_m1_app_1" object="npc:ch_chinchin_0001" party-broadcast="n" type="approach" />
+        <case object="zone:zone_YuGaCHN_BaekUn_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_510_1" type="enter-zone" />
+        <case object="npc:ch_chungun_0003" party-broadcast="n" type="approach" visible-object="y" />
+        <case object="npc:CH_HanSiRang_0007" party-broadcast="n" type="approach" visible-object="y" />
+        <case object="npc:ch_baekun_0001" party-broadcast="n" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="23" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object2="zoneenv2:e_onoff_kuzuvine_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_kuzuvine_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_kuzuvine_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_kuzuvine_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_kuzuvine_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_kuzuvine_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_kuzuvine_07" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_kuzuvine_08" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zone:zone_YuGaCHN_BaekUn_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_510_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="510_middle_set1">
+        <case object="npc:ch_chinchin_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_YuGaCHN_BaekUn_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_510_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1" reward-1="510_final_set1">
+        <case object="npc:ch_baekun_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_YuGaCHN_BaekUn_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_510_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_YuGaCHN_BaekUn_1">
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_511" />
+    </completion>
+  </quest>
+</table>

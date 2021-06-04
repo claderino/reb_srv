@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1542.xml-->
+  <quest alias="q_epic_1542" broadcast-category="field" category="epic" completed-list="y" id="1542" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="1" />
+    <mission-step id="1" quest-decision="qd_1542_1" zone-1="zone_YoungRinBong_tutorial_45lv">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_WC_CheonJinGwon_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_CheonJinGwon_0001" party-broadcast="n" type="approach" />
+        <case object="zone:zone_YoungRinBong_tutorial_45lv" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1542_12" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="leave-zone">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_WC_CheonJinGwon_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="zone_YoungRinBong_tutorial_45lv" />
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1542_2" zone-1="zone_YoungRinBong_tutorial_45lv">
+      <mission id="3" required-register-value="1">
+        <case object2="npc:CH_WC_CheonJinGwon_0001" party-broadcast="n" progress-mission="y" type="pc-social" />
+        <case object="zone:zone_YoungRinBong_tutorial_45lv" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1542_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_1542_3" zone-1="Zone_MusinTower_tutorial_45lv_01">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_WC_CheonJinGwon1F_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_YuRan1F_0001" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_WC_CheonJinGwon1F_0001" party-broadcast="n" type="approach" />
+        <case object="zone:Zone_MusinTower_tutorial_45lv_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1542_13" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1542_4" rollback="leave-zone" zone-1="Zone_MusinTower_tutorial_45lv_01">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_WC_YuRan1F_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" />
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1542_5" zone-1="Zone_MusinTower_tutorial_45lv_01">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_WC_Manager1F_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_MusinTower_tutorial_45lv_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1542_9" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="7" quest-decision="qd_1542_6" zone-1="Zone_MusinTower_tutorial_45lv_01">
+      <mission id="7" required-register-value="1">
+        <case faction="factionmain1" object="npc:CH_WC_HongSam1F_0001" party-broadcast="n" progress-mission="y" type="join-faction" />
+        <case faction="factionmain1" object="npc:CH_WC_SuSam1F_0001" party-broadcast="n" progress-mission="y" type="join-faction" />
+        <fixed-reward job-1="job-none" slot-1="item:quest_costum_dress_1027" />
+        <case object="npc:CH_WC_Manager1F_0001" party-broadcast="n" type="approach" />
+        <case object="zone:Zone_MusinTower_tutorial_45lv_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1542_10" type="enter-zone" />
+      </mission>
+      <mission id="8" required-register-value="1">
+        <case faction="factionmain2" object="npc:CH_WC_SuSam1F_0001" party-broadcast="n" progress-mission="y" type="join-faction" />
+        <case faction="factionmain2" object="npc:CH_WC_HongSam1F_0001" party-broadcast="n" progress-mission="y" type="join-faction" />
+        <fixed-reward job-1="job-none" slot-1="item:quest_costum_dress_1018" />
+        <case object="npc:CH_WC_Manager1F_0001" party-broadcast="n" type="approach" />
+        <case object="zone:Zone_MusinTower_tutorial_45lv_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1542_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_1542_7" zone-1="Zone_MusinTower_tutorial_45lv_01">
+      <mission id="9" required-register-value="1" reward-1="1542_final_set1">
+        <case object="npc:CH_WC_Manager1F_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_MusinTower_tutorial_45lv_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1542_11" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest job-1="기권사" quest="q_epic_1543" />
+    </completion>
+  </quest>
+</table>

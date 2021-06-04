@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.677.xml-->
+  <quest alias="q_sub_677" broadcast-category="field" category="normal" id="677" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="1" preceding-quest-1="q_sub_386" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_faction_0002" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <tutorial-case progress-mission="y" type="equip-item" />
+        <case object="npc:ch_faction_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JaKyeongDan_0011" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case idx="1" object="npc:CH_CT_JaKyeongDan_0011" party-broadcast="n" progress-mission="y" quest-decision="qd_677_1" type="npc-bleeding-occured" />
+        <case object="npc:ch_faction_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="677_final_set1">
+        <case object="npc:ch_faction_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_ChungGakFaction" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_677_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_ChungGakFaction_Default">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <not-acquire zone-index="1" />
+    </transit>
+  </quest>
+</table>

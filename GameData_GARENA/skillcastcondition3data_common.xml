@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
+  <!--skillcastcondition3data_common.xml-->
+	<record alias="Common_Bounce_skill3" gather-range="Common_Act_T_CMax10000_FMax10000_EMax10000" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="free" target-type="all" />
+	<record alias="Common_Act_Sprint_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_AirDash_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_Glide_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_Drift_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_Dive_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_Boost_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_WallRun_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_EventJump_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_RocketStart_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_HyperMove_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_HyperMove_Lv2_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_HyperMove_Lv3_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_HyperMove_Lv4_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Act_SideStep_Lv1" fail-caster-effect-attribute-1="이동불가" gather-range="Common_Caster_Tumbling" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" unnecessary-acquired="n" />
+	<record alias="Common_Env_Airdash_lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Env_Airdash_lv2_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Passive_Defence_Mastery_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Passive_Defence_Mastery_Lv2_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Passive_Vital_Mastery_Lv1_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Passive_Vital_Mastery_Lv2_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_Resurrection_Action_skill3" gather-range="Common_Target_T_CMax500_FMax500_EMax600" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="whole-block" success-target-dead-state="dead" target-type="all" unnecessary-acquired="y" />
+	<record alias="Common_context_RockHiddenSkill_skill3" gather-range="Common_Target_T_CMax500_FMax500_EMax600" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="whole-block" target-type="all" unnecessary-acquired="n" />
+	<record alias="Common_act_WallJump_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_act_WaterSprint_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_act_SecondJump_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Common_act_Dropping_skill3" gather-range="Common_Act_T_CMax0_FMax0_EMax0" target-type="all" />
+	<record alias="Tutorial_ShipCannon_skill3" gather-range="Common_Caster_CMax20000_RMin0_RMax500" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="free" target-type="all" />
+	<record alias="Common_Act_CampFire_skill3" gather-range="Common_Etc_T_CMax184_FMax5000_EMax5000" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="free" target-type="all" />
+	<record alias="summoned_Tanker_lv1_test_skill3" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="free" target-type="all" />
+	<record alias="GM_Move_skill3" gather-range="Common_Caster_CMax1000_FMax0_EMax10000" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="free" target-type="all" unnecessary-acquired="y" />
+	<record alias="Destroyer_Catch_Lv1_gu_skill3" link-state="not-link" link-type="none" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="Destroyer_Catch_Throw_Lv1_gu_skill3" link-stage="stage-1" link-state="link" link-type="catch" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="Destroyer_Catch_HeadButt_Lv1_gu_skill3" link-stage="stage-1" link-state="link" link-type="catch" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="Common_Act_Dispel_fast_freezing_skill3" fail-caster-effect-attribute-1="클래스-2" gather-range="Common_Caster_Circle_R304" immune-caster-block-skill="y" success-caster-effect-attribute-1="NPC-1" success-caster-effect-attribute-op="or" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" unnecessary-acquired="y" />
+	<record alias="Common_Duel_Tag" gather-range="Common_Caster_Tumbling" move-type="free" target-type="all" unnecessary-acquired="y" />
+	<record alias="Common_Duel_Interference" gather-range="Common_Caster_Tumbling" immune-caster-block-skill="y" move-type="free" target-type="all" unnecessary-acquired="y" />
+</table>

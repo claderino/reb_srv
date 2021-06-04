@@ -1,0 +1,2901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata_id_chimmuk_haejuksun.xml-->
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS1" seq-start-social="1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyArea360" skill3="ME_BEF_B4_DemonChungGak_MurkyArea360" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_CatchThrow" skill3="ME_BEF_B4_DemonChungGak_CatchThrow" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Punish" skill3="ME_BEF_B4_DemonChungGak_Punish" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_02" type="do-social" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_13" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_14" type="use-ground-skill" />
+      </action>
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Combat_Start" skill3="ME_BEF_B4_DemonChungGak_Combat_Start" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS2" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyArea360" skill3="ME_BEF_B4_DemonChungGak_MurkyArea360" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_CatchThrow" skill3="ME_BEF_B4_DemonChungGak_CatchThrow" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Punish" skill3="ME_BEF_B4_DemonChungGak_Punish" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action event-step="44" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ArmorGen" skill3="ME_BEF_B4_DemonChungGak_ArmorGen" type="use-skill" />
+      <action event-step="55" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_02" type="do-social" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="1">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_12" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="12" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target-area="4752_14" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action arrived-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Finish" blocked-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_ArmorThornRush" skill3="ME_BEF_B4_DemonChungGak_ArmorThornRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_03" type="do-social" />
+      <action repeat="1" skill="ME_BEF_B4_DemonChungGak_SelfHeal" skill3="ME_BEF_B4_DemonChungGak_SelfHeal" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ThornExplosion" skill3="ME_BEF_B4_DemonChungGak_ThornExplosion" type="use-skill" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_02" type="do-social" />
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_14" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_15" type="use-ground-skill" />
+      </action>
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="1">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_15" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="15" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target-area="4752_13" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action arrived-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Finish" blocked-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_ArmorThornRush" skill3="ME_BEF_B4_DemonChungGak_ArmorThornRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_03" type="do-social" />
+      <action repeat="1" skill="ME_BEF_B4_DemonChungGak_SelfHeal" skill3="ME_BEF_B4_DemonChungGak_SelfHeal" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ThornExplosion" skill3="ME_BEF_B4_DemonChungGak_ThornExplosion" type="use-skill" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_02" type="do-social" />
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_14" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_15" type="use-ground-skill" />
+      </action>
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS3" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyArea360" skill3="ME_BEF_B4_DemonChungGak_MurkyArea360" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_CatchThrow" skill3="ME_BEF_B4_DemonChungGak_CatchThrow" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Punish" skill3="ME_BEF_B4_DemonChungGak_Punish" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action event-step="44" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ArmorGen" skill3="ME_BEF_B4_DemonChungGak_ArmorGen" type="use-skill" />
+      <action event-step="55" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_02" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_12" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="12" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target-area="4752_14" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action arrived-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Finish" blocked-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_ArmorThornRush" skill3="ME_BEF_B4_DemonChungGak_ArmorThornRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_03" type="do-social" />
+      <action repeat="1" skill="ME_BEF_B4_DemonChungGak_SelfHeal" skill3="ME_BEF_B4_DemonChungGak_SelfHeal" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ThornExplosion" skill3="ME_BEF_B4_DemonChungGak_ThornExplosion" type="use-skill" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_02" type="do-social" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_15" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_12" type="use-ground-skill" />
+      </action>
+    </special>
+    <special combat-distance="7" id="3" max-count="1">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_13" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target-area="4752_15" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action arrived-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Finish" blocked-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_ArmorThornRush" skill3="ME_BEF_B4_DemonChungGak_ArmorThornRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_03" type="do-social" />
+      <action repeat="1" skill="ME_BEF_B4_DemonChungGak_SelfHeal" skill3="ME_BEF_B4_DemonChungGak_SelfHeal" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ThornExplosion" skill3="ME_BEF_B4_DemonChungGak_ThornExplosion" type="use-skill" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_02" type="do-social" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_15" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_12" type="use-ground-skill" />
+      </action>
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS4" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyArea360" skill3="ME_BEF_B4_DemonChungGak_MurkyArea360" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_CatchThrow" skill3="ME_BEF_B4_DemonChungGak_CatchThrow" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Punish" skill3="ME_BEF_B4_DemonChungGak_Punish" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ArmorGen" skill3="ME_BEF_B4_DemonChungGak_ArmorGen" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="2" max-count="0" start-delay="5000">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="44" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_12" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="12" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target-area="4752_14" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action arrived-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Finish" blocked-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_ArmorThornRush" skill3="ME_BEF_B4_DemonChungGak_ArmorThornRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_03" type="do-social" />
+      <action event-step="10" repeat="1" skill="ME_BEF_B4_DemonChungGak_SelfHeal" skill3="ME_BEF_B4_DemonChungGak_SelfHeal" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="3" max-count="0" start-delay="5000">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="44" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_15" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="15" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target-area="4752_13" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action arrived-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Finish" blocked-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_ArmorThornRush" skill3="ME_BEF_B4_DemonChungGak_ArmorThornRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_03" type="do-social" />
+      <action repeat="1" skill="ME_BEF_B4_DemonChungGak_SelfHeal" skill3="ME_BEF_B4_DemonChungGak_SelfHeal" type="use-skill" />
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="4" max-count="0" start-delay="5000">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="44" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_07" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_13" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target-area="4752_15" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action arrived-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Finish" blocked-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_ArmorThornRush" skill3="ME_BEF_B4_DemonChungGak_ArmorThornRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_03" type="do-social" />
+      <action repeat="1" skill="ME_BEF_B4_DemonChungGak_SelfHeal" skill3="ME_BEF_B4_DemonChungGak_SelfHeal" type="use-skill" />
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="5" max-count="0" start-delay="5000">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="44" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_07" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow" target-area="4752_14" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="14" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL" target-area="4752_12" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action arrived-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Finish" blocked-effect="ME_BEF_B4_DemonChungGak_ArmorThornRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_ArmorThornRush" skill3="ME_BEF_B4_DemonChungGak_ArmorThornRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_03" type="do-social" />
+      <action event-step="10" repeat="1" skill="ME_BEF_B4_DemonChungGak_SelfHeal" skill3="ME_BEF_B4_DemonChungGak_SelfHeal" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS5" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action event-step="100" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Combat_Start" skill3="ME_BEF_B4_DemonChungGak_Combat_Start" type="use-skill" />
+      
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS6" transit-cond-1="manual" />
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS7" transit-cond-1="manual" />
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS8" transit-cond-1="manual" />
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS9" transit-cond-1="manual" />
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_CS10" transit-cond-1="manual" />
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0001_Berserk_CS" seq-start-social="1">
+    <normal combat-distance="3" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_Explosion_Berserk" skill3="ME_BEF_B4_DemonChungGak_Explosion_Berserk" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="100" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Combat_Start" skill3="ME_BEF_B4_DemonChungGak_Combat_Start" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_05" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_Explosion_Berserk" skill3="ME_BEF_B4_DemonChungGak_Explosion_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Dummy_0001_CS1" hide-seq-start="y" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="2">
+      
+      <action repeat="1" skill="ME_BEF_B4_Dummy_Murky_DefenceBlock" skill3="ME_BEF_B4_Dummy_Murky_DefenceBlock" target="zonenpcspawn:a_4752_8" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="1000" type="stay" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1" start-delay="29000">
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Heajuk_A2_Dummy_0001_CS2" hide-seq-start="y" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="2">
+      
+      <action repeat="1" skill="ME_BEF_B4_Dummy_Murky_DefenceBlock" skill3="ME_BEF_B4_Dummy_Murky_DefenceBlock" target="zonenpcspawn:a_4752_8" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="1000" type="stay" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1" start-delay="33000">
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Dummy_0014_CS1" hide-seq-start="y" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="2">
+      
+      <action repeat="1" skill="ME_BEF_B4_Dummy_Murky_DefenceBlock_6P" skill3="ME_BEF_B4_Dummy_Murky_DefenceBlock_6P" target="zonenpcspawn:a_4752_8" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="1000" type="stay" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1" start-delay="29000">
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Dummy_0013_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action repeat="1" skill="ME_BEF_B4_Dummy_MurkyCheck" skill3="ME_BEF_B4_Dummy_MurkyCheck" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action repeat="1" skill="ME_BEF_B4_Dummy_Murky" skill3="ME_BEF_B4_Dummy_Murky" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B4_Dummy_MurkyCheck" skill3="ME_BEF_B4_Dummy_MurkyCheck" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Dummy_0006_CS">
+    <normal combat-distance="1" id="1">
+      <action duration="100" immune-breaker-disable="y" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="7" skill="ME_BEF_B4_Dummy_MurkyVaporization" skill3="ME_BEF_B4_Dummy_MurkyVaporization" type="use-skill" />
+      <action event-step="1" repeat="1" skill="ME_BEF_B4_Dummy_MurkyVaporization" skill3="ME_BEF_B4_Dummy_MurkyVaporization" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Dummy_0002_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="ME_BEF_B4_BonePrison_JailFist_Start" skill3="ME_BEF_B4_BonePrison_JailFist_Start" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B4_BonePrison_JailFist_Stay" skill3="ME_BEF_B4_BonePrison_JailFist_Stay" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B4_BonePrison_JailFist_Stay" skill3="ME_BEF_B4_BonePrison_JailFist_Stay" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B4_BonePrison_JailFist_Stay" skill3="ME_BEF_B4_BonePrison_JailFist_Stay" type="use-skill" />
+      <action event-step="2" repeat="1" skill="ME_BEF_B4_BonePrison_JailFist_End" skill3="ME_BEF_B4_BonePrison_JailFist_End" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Dummy_0003_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action duration="1000" type="stay" />
+      
+      <action repeat="1" skill="MH_BEC_R0_Common_HateUp" skill3="MH_BEC_R0_Common_HateUp" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_0025_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_BEF_B4_DemonChungGak_Hammering1" skill3="ME_BEF_B4_DemonChungGak_Hammering1" type="use-skill" />
+      <action repeat="1" skill="ME_SUB_B2_DongCheonGak_None_Hammering2" skill3="ME_SUB_B2_DongCheonGak_None_Hammering2" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action skill="ME_SUB_B2_DongCheonGak_None_Powerbomb" skill3="ME_SUB_B2_DongCheonGak_None_Powerbomb" type="use-skill" />
+      <action repeat="1" skill="ME_SUB_B2_DongCheonGak_None_SpotChange" skill3="ME_SUB_B2_DongCheonGak_None_SpotChange" target-pos="7735,8826,-665" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_0026_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyArea360" skill3="ME_BEF_B4_DemonChungGak_MurkyArea360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_0024_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action social="ME_WA_Heajuk_A2_0024_battle_05" type="do-social" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump1" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump1" type="use-skill" />
+      <action combo="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump2" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BackDash" skill3="ME_SUA_B4_GatlingGunWoman_None_BackDash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunLowFire" skill3="ME_SUA_B4_GatlingGunWoman_None_GunLowFire" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action social="ME_WA_Heajuk_A2_0024_battle_04" type="do-social" />
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_GunFire1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BackDash" skill3="ME_SUA_B4_GatlingGunWoman_None_BackDash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunLowFire" skill3="ME_SUA_B4_GatlingGunWoman_None_GunLowFire" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_GunFire1" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="3" condition-1="midair-1" id="1" max-count="0">
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunDivingFire" skill3="ME_SUA_B4_GatlingGunWoman_None_GunDivingFire" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" condition-1="down" condition-2="kneel" id="2" max-count="0">
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_AirDash" skill3="ME_SUA_B4_GatlingGunWoman_None_AirDash" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS1" seq-start-social="1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyArea360" skill3="ME_BEF_B4_DemonChungGak_MurkyArea360" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_CatchThrow" skill3="ME_BEF_B4_DemonChungGak_CatchThrow" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Punish" skill3="ME_BEF_B4_DemonChungGak_Punish" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Combat_Start" skill3="ME_BEF_B4_DemonChungGak_Combat_Start" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS2" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyArea360" skill3="ME_BEF_B4_DemonChungGak_MurkyArea360" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_CatchThrow" skill3="ME_BEF_B4_DemonChungGak_CatchThrow" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Punish" skill3="ME_BEF_B4_DemonChungGak_Punish" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action event-step="44" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ArmorGen" skill3="ME_BEF_B4_DemonChungGak_ArmorGen" type="use-skill" />
+      <action event-step="55" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_02" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" target-area="4752_14" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_6P" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="14" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target-area="4752_12" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action blocked-effect="ME_BEF_B4_DemonChungGak_SpeedRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_SpeedRush" skill3="ME_BEF_B4_DemonChungGak_SpeedRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ThornExplosion" skill3="ME_BEF_B4_DemonChungGak_ThornExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" target-area="4752_15" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_6P" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="15" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target-area="4752_13" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action blocked-effect="ME_BEF_B4_DemonChungGak_SpeedRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_SpeedRush" skill3="ME_BEF_B4_DemonChungGak_SpeedRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ThornExplosion" skill3="ME_BEF_B4_DemonChungGak_ThornExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS3" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyArea360" skill3="ME_BEF_B4_DemonChungGak_MurkyArea360" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_CatchThrow" skill3="ME_BEF_B4_DemonChungGak_CatchThrow" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Punish" skill3="ME_BEF_B4_DemonChungGak_Punish" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action event-step="44" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ArmorGen" skill3="ME_BEF_B4_DemonChungGak_ArmorGen" type="use-skill" />
+      <action event-step="55" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_02" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" target-area="4752_12" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_6P" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="12" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target-area="4752_14" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action blocked-effect="ME_BEF_B4_DemonChungGak_SpeedRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_SpeedRush" skill3="ME_BEF_B4_DemonChungGak_SpeedRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ThornExplosion" skill3="ME_BEF_B4_DemonChungGak_ThornExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" target-area="4752_13" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_6P" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target-area="4752_15" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action blocked-effect="ME_BEF_B4_DemonChungGak_SpeedRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_SpeedRush" skill3="ME_BEF_B4_DemonChungGak_SpeedRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ThornExplosion" skill3="ME_BEF_B4_DemonChungGak_ThornExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS4" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyArea360" skill3="ME_BEF_B4_DemonChungGak_MurkyArea360" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk1" skill3="ME_BEF_B4_DemonChungGak_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_NAtk2" skill3="ME_BEF_B4_DemonChungGak_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_CatchThrow" skill3="ME_BEF_B4_DemonChungGak_CatchThrow" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyJet" skill3="ME_BEF_B4_DemonChungGak_MurkyJet" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Punish" skill3="ME_BEF_B4_DemonChungGak_Punish" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_ArmorGen" skill3="ME_BEF_B4_DemonChungGak_ArmorGen" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="2" max-count="0" start-delay="5000">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="44" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" target-area="4752_12" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_6P" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="12" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target-area="4752_14" type="use-ground-skill" />
+
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+
+      
+      <action blocked-effect="ME_BEF_B4_DemonChungGak_SpeedRush_Parry" event-step="10" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_SpeedRush" skill3="ME_BEF_B4_DemonChungGak_SpeedRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+
+    
+    <special combat-distance="7" id="3" max-count="0" start-delay="5000">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="44" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" target-area="4752_13" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_6P" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target-area="4752_15" type="use-ground-skill" />
+
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+
+      
+      <action blocked-effect="ME_BEF_B4_DemonChungGak_SpeedRush_Parry" event-step="10" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_SpeedRush" skill3="ME_BEF_B4_DemonChungGak_SpeedRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+
+    
+    <special combat-distance="7" id="4" max-count="0" start-delay="5000">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="44" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_07" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" target-area="4752_14" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_6P" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="14" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target-area="4752_12" type="use-ground-skill" />
+      
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+
+      
+      <action blocked-effect="ME_BEF_B4_DemonChungGak_SpeedRush_Parry" event-step="10" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_SpeedRush" skill3="ME_BEF_B4_DemonChungGak_SpeedRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+
+    
+    <special combat-distance="7" id="5" max-count="0" start-delay="5000">
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="44" immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Boss_0001_battle_07" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" skill3="ME_BEF_B4_DemonChungGak_MurkyThrow_6P" target-area="4752_15" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_6P" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action event-step="15" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target="event:npc-combat-action:special-target:3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" skill3="ME_BEF_B4_DemonChungGak_Jump_EPL_6P" target-area="4752_13" type="use-ground-skill" />
+
+      
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_DemonChungGak_ArmorExplosion" skill3="ME_BEF_B4_DemonChungGak_ArmorExplosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+
+      
+      <action blocked-effect="ME_BEF_B4_DemonChungGak_SpeedRush_Parry" event-step="10" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B4_DemonChungGak_SpeedRush" skill3="ME_BEF_B4_DemonChungGak_SpeedRush" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS5" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Jump" skill3="ME_BEF_B4_DemonChungGak_Jump" target-area="4752_2" type="use-ground-skill" />
+      
+      <action event-step="100" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_DemonChungGak_Combat_Start" skill3="ME_BEF_B4_DemonChungGak_Combat_Start" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS6" transit-cond-1="manual" />
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS7" transit-cond-1="manual" />
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS8" transit-cond-1="manual" />
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS9" transit-cond-1="manual" />
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Boss_0002_CS10" transit-cond-1="manual" />
+
+
+
+
+  
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_Nmd_0016_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="3">
+      
+      <action repeat="1" skill="MH_SUA_B2_Destroyer_Protection_Raging_Wind" skill3="MH_SUA_B2_Destroyer_Protection_Raging_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Protection_ChargeDash" skill3="MH_SUA_R0_Destroyer_Protection_ChargeDash" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Destruction_LowRagingWind" skill3="MH_SUA_R0_Destroyer_Destruction_LowRagingWind" type="use-skill" />
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_Swing_Strike" skill3="MH_SUA_R0_Destroyer_Protection_Swing_Strike" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="2">
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_Earthquake" skill3="MH_SUA_R0_Destroyer_Protection_Earthquake" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="1" condition-1="frostbite" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Protection_ChargeDash" skill3="MH_SUA_R0_Destroyer_Protection_ChargeDash" type="use-skill" />
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_DestructionCircle" skill3="MH_SUA_R0_Destroyer_Protection_DestructionCircle" type="use-skill" />
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_Swing_Strike" skill3="MH_SUA_R0_Destroyer_Protection_Swing_Strike" type="use-skill" />
+    </special>
+    
+    <special combat-distance="2" condition-1="frostbite" id="2" max-count="0">
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_Earthquake" skill3="MH_SUA_R0_Destroyer_Protection_Earthquake" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" condition-1="hp-50" id="3" max-count="1">
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_DestructionCircle" skill3="MH_SUA_R0_Destroyer_Protection_DestructionCircle" type="use-skill" />
+      
+      
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_Swing_Strike" skill3="MH_SUA_R0_Destroyer_Protection_Swing_Strike" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_Nmd_0017_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Justicepunch" skill3="MH_SUA_R0_KungfuMaster_Attack_Justicepunch" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Strongpunch" skill3="MH_SUA_R0_KungfuMaster_Attack_Strongpunch" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Counterenemy" skill3="MH_SUA_R0_KungfuMaster_Attack_Counterenemy" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Heavypunch" skill3="MH_SUA_R0_KungfuMaster_Attack_Heavypunch" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Jumppunch" skill3="MH_SUA_R0_KungfuMaster_Attack_Jumppunch" type="use-skill" />
+    </normal>
+    <special combat-distance="1" condition-1="down" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Trampledown_Lv1" skill3="MH_KungfuMaster_Attack_Trampledown_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_Nmd_0018_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_full_moon_slash" skill3="MH_SUA_R0_BladeMaster_Sword_full_moon_slash" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_full_moon_slash_Fast2" skill3="MH_SUA_R0_BladeMaster_Sword_full_moon_slash_Fast2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blood_wind" skill3="MH_SUA_R0_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_storm_wind" skill3="MH_SUA_R0_BladeMaster_Sword_storm_wind" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rush" skill3="MH_SUA_R0_BladeMaster_Sword_Rush" type="use-skill" />
+    </normal>
+    <special combat-distance="1" condition-1="down" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stamp_LV1" skill3="MH_BladeMaster_Sword_stamp_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_Nmd_0019_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fire_ball_instant" skill3="MH_SUA_R0_ForceMaster_Deal_fire_ball_instant" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fire_bomb" skill3="MH_SUA_R0_ForceMaster_Deal_fire_bomb" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fire_ball" skill3="MH_SUA_R0_ForceMaster_Deal_fire_ball" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_0028_CS">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="2" skill="MH_SUB_R0_ForceMaster_Deal_cold_blast" skill3="MH_SUB_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_0029_CS">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="2" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_0031_CS">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="2" skill="MH_SUB_R0_ForceMaster_Deal_cold_blast" skill3="MH_SUB_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0007_CS">
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnakeWoman_None_Jab" skill3="ME_SnakeWoman_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeWoman_None_PoisonBlow" skill3="ME_SnakeWoman_None_PoisonBlow" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeWoman_None_HeavySpin" skill3="ME_SnakeWoman_None_HeavySpin" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_SnakeWoman_None_ParalyzeBlow" skill3="ME_SnakeWoman_None_ParalyzeBlow" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeWoman_None_Dash" skill3="ME_SnakeWoman_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0013_CS1" hide-seq-start="n" transit-action-1="burrow" transit-cond-1="alarm-1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Jab" skill3="ME_SUA_B1_FishmanC_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Smash" skill3="ME_SUA_B1_FishmanC_None_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_MultiSmash" skill3="ME_SUA_B1_FishmanC_None_MultiSmash" type="use-skill" />
+    </normal>
+    
+    
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0013_CS2" hide-seq-start="y" transit-action-1="unburrow" transit-action-2="unburrow" transit-cond-1="manual" transit-cond-2="manual">
+    <normal combat-distance="3" id="1" special-1="1">
+    </normal>
+    <special combat-distance="3" id="1" max-count="1">
+      
+      <action event-step="1" social="ME_ChungGakABoss_0001_battle_02" type="do-social" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump1" skill3="ME_SUA_B1_FishmanC_None_Jump1" type="use-skill" />
+      <action skill="ME_SUA_B1_FishmanC_None_Torpedo" skill3="ME_SUA_B1_FishmanC_None_Torpedo" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action social="ME_ChungGakABoss_0001_battle" type="do-social" />
+      <action social="ME_ChungGakABoss_0001_battle_01" type="do-social" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_BoilingWater1" skill3="ME_SUA_B1_FishmanC_None_BoilingWater1" type="use-skill" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump2" skill3="ME_SUA_B1_FishmanC_None_Jump2" type="use-skill" />
+      <action arrived-effect="ME_CH_FishmanC_None_Rush_Arrived" blocked-effect="ME_CH_FishmanC_None_Rush_Flag" pass-through="y" skill="ME_SUA_B1_FishmanC_None_Rush" skill3="ME_SUA_B1_FishmanC_None_Rush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump2" skill3="ME_SUA_B1_FishmanC_None_Jump2" type="use-skill" />
+      <action arrived-effect="ME_CH_FishmanC_None_Rush_Arrived" blocked-effect="ME_CH_FishmanC_None_Rush_Flag" pass-through="y" skill="ME_SUA_B1_FishmanC_None_Rush" skill3="ME_SUA_B1_FishmanC_None_Rush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump2" skill3="ME_SUA_B1_FishmanC_None_Jump2" type="use-skill" />
+      <action arrived-effect="ME_CH_FishmanC_None_Rush_BurrowOut" blocked-effect="ME_CH_FishmanC_None_Rush_Flag" event-step="2" pass-through="y" skill="ME_SUA_B1_FishmanC_None_Rush" skill3="ME_SUA_B1_FishmanC_None_Rush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0013_CS3" hide-seq-start="n" transit-action-1="burrow" transit-cond-1="alarm-2">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Jab" skill3="ME_SUA_B1_FishmanC_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Smash" skill3="ME_SUA_B1_FishmanC_None_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_MultiSmash" skill3="ME_SUA_B1_FishmanC_None_MultiSmash" type="use-skill" />
+    </normal>
+    
+    
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0013_CS4" hide-seq-start="y" transit-action-1="unburrow" transit-action-2="unburrow" transit-cond-1="manual" transit-cond-2="manual">
+    <normal combat-distance="3" id="1" special-1="1">
+    </normal>
+    <special combat-distance="3" id="1" max-count="1">
+      
+      <action event-step="1" social="ME_ChungGakABoss_0001_battle_02" type="do-social" />
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump1" skill3="ME_SUA_B1_FishmanC_None_Jump1" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SUA_B1_FishmanC_None_Torpedo" skill3="ME_SUA_B1_FishmanC_None_Torpedo" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action social="ME_ChungGakABoss_0001_battle" type="do-social" />
+      <action social="ME_ChungGakABoss_0001_battle_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_BoilingWater1" skill3="ME_SUA_B1_FishmanC_None_BoilingWater1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump2" skill3="ME_SUA_B1_FishmanC_None_Jump2" type="use-skill" />
+      <action arrived-effect="ME_CH_FishmanC_None_Rush_Arrived" blocked-effect="ME_CH_FishmanC_None_Rush_Flag" immune-breaker-disable="y" pass-through="y" skill="ME_SUA_B1_FishmanC_None_Rush" skill3="ME_SUA_B1_FishmanC_None_Rush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump2" skill3="ME_SUA_B1_FishmanC_None_Jump2" type="use-skill" />
+      <action arrived-effect="ME_CH_FishmanC_None_Rush_Arrived" blocked-effect="ME_CH_FishmanC_None_Rush_Flag" immune-breaker-disable="y" pass-through="y" skill="ME_SUA_B1_FishmanC_None_Rush" skill3="ME_SUA_B1_FishmanC_None_Rush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump2" skill3="ME_SUA_B1_FishmanC_None_Jump2" type="use-skill" />
+      <action arrived-effect="ME_CH_FishmanC_None_Rush_BurrowOut" blocked-effect="ME_CH_FishmanC_None_Rush_Flag" event-step="4" immune-breaker-disable="y" pass-through="y" skill="ME_SUA_B1_FishmanC_None_Rush" skill3="ME_SUA_B1_FishmanC_None_Rush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0013_CS5" hide-seq-start="n" transit-action-1="burrow" transit-cond-1="alarm-3">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Jab" skill3="ME_SUA_B1_FishmanC_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Smash" skill3="ME_SUA_B1_FishmanC_None_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_MultiSmash" skill3="ME_SUA_B1_FishmanC_None_MultiSmash" type="use-skill" />
+    </normal>
+    
+    
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0013_CS6" hide-seq-start="y" transit-action-1="unburrow" transit-action-2="unburrow" transit-cond-1="manual" transit-cond-2="manual">
+    <normal combat-distance="3" id="1" special-1="1">
+    </normal>
+    <special combat-distance="3" id="1" max-count="1">
+      
+      <action event-step="1" social="ME_ChungGakABoss_0001_battle_02" type="do-social" />
+      <action event-step="5" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump1" skill3="ME_SUA_B1_FishmanC_None_Jump1" type="use-skill" />
+      <action immune-breaker-disable="y" skill="ME_SUA_B1_FishmanC_None_Torpedo" skill3="ME_SUA_B1_FishmanC_None_Torpedo" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action social="ME_ChungGakABoss_0001_battle" type="do-social" />
+      <action social="ME_ChungGakABoss_0001_battle_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_BoilingWater1" skill3="ME_SUA_B1_FishmanC_None_BoilingWater1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump2" skill3="ME_SUA_B1_FishmanC_None_Jump2" type="use-skill" />
+      <action arrived-effect="ME_CH_FishmanC_None_Rush_Arrived" blocked-effect="ME_CH_FishmanC_None_Rush_Flag" immune-breaker-disable="y" pass-through="y" skill="ME_SUA_B1_FishmanC_None_Rush" skill3="ME_SUA_B1_FishmanC_None_Rush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump2" skill3="ME_SUA_B1_FishmanC_None_Jump2" type="use-skill" />
+      <action arrived-effect="ME_CH_FishmanC_None_Rush_Arrived" blocked-effect="ME_CH_FishmanC_None_Rush_Flag" immune-breaker-disable="y" pass-through="y" skill="ME_SUA_B1_FishmanC_None_Rush" skill3="ME_SUA_B1_FishmanC_None_Rush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump2" skill3="ME_SUA_B1_FishmanC_None_Jump2" type="use-skill" />
+      <action arrived-effect="ME_CH_FishmanC_None_Rush_BurrowOut" blocked-effect="ME_CH_FishmanC_None_Rush_Flag" event-step="6" immune-breaker-disable="y" pass-through="y" skill="ME_SUA_B1_FishmanC_None_Rush" skill3="ME_SUA_B1_FishmanC_None_Rush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0013_CS7" hide-seq-start="n" transit-action-1="burrow" transit-cond-1="alarm-4">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Jab" skill3="ME_SUA_B1_FishmanC_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_Smash" skill3="ME_SUA_B1_FishmanC_None_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_MultiSmash" skill3="ME_SUA_B1_FishmanC_None_MultiSmash" type="use-skill" />
+    </normal>
+    
+    
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0013_CS8" hide-seq-start="y">
+    <normal combat-distance="3" id="1" special-1="1">
+    </normal>
+    <special combat-distance="3" id="1" max-count="0">
+      
+      <action event-step="1" social="ME_ChungGakABoss_0001_battle_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B1_FishmanC_None_Jump1" skill3="ME_SUA_B1_FishmanC_None_Jump1" type="use-skill" />
+      
+      <action social="ME_ChungGakABoss_0001_battle_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="99" skill="ME_SUA_B1_FishmanC_None_BoilingWater1" skill3="ME_SUA_B1_FishmanC_None_BoilingWater1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0014_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="3" skill="ME_SUA_B1_FishmanC_None_LightningFire" skill3="ME_SUA_B1_FishmanC_None_LightningFire" type="use-skill" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_LightningExplosion" skill3="ME_SUA_B1_FishmanC_None_LightningExplosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_LightningFire" skill3="ME_SUA_B1_FishmanC_None_LightningFire" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0015_CS" hide-seq-start="n">
+    <normal combat-distance="1" id="1">
+      <action repeat="3" skill="ME_SUA_B1_FishmanC_None_LightningFire" skill3="ME_SUA_B1_FishmanC_None_LightningFire" type="use-skill" />
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_LightningExplosion" skill3="ME_SUA_B1_FishmanC_None_LightningExplosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_SUA_B1_FishmanC_None_LightningFire" skill3="ME_SUA_B1_FishmanC_None_LightningFire" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_0007_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="1" id="1" max-count="1">
+      <action event-step="1" repeat="1" skill="ME_JEA_R0_Zombie_None_Explosion" skill3="ME_JEA_R0_Zombie_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>a
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_Nmd_0012_CS">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_cold_blast" skill3="MH_DEA_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+      <action repeat="2" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone3" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone3" type="use-skill" />
+      <action repeat="3" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_0027_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Protection_Raging_Wind" skill3="MH_SUA_R0_Destroyer_Protection_Raging_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Protection_Judgement" skill3="MH_SUA_R0_Destroyer_Protection_Judgement" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Protection_Destruction" skill3="MH_SUA_R0_Destroyer_Protection_Destruction" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Protection_AnkleCutOff" skill3="MH_SUA_R0_Destroyer_Protection_AnkleCutOff" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_Earthquake" skill3="MH_SUA_R0_Destroyer_Protection_Earthquake" type="use-skill" />
+    </normal>
+    <special combat-distance="1" condition-1="down" id="1" max-count="0">
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Protection_Axe_Chop" skill3="MH_SUA_R0_Destroyer_Protection_Axe_Chop" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0020_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_HeavySmash" skill3="ME_SnakeSoldier_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Defence" skill3="ME_SnakeSoldier_None_Defence" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action duration="20000" repeat="1" skill="ME_SnakeSoldier_None_PoisonBomb" skill3="ME_SnakeSoldier_None_PoisonBomb" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnakeSoldier_None_Dash" skill3="ME_SnakeSoldier_None_Dash" type="use-skill" />
+      
+      
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_DeadSwordManBig_None_NAtk1" skill3="ME_DeadSwordManBig_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DeadSwordManBig_None_NAtk2" skill3="ME_DeadSwordManBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DeadSwordManBig_None_FireWave" skill3="ME_DeadSwordManBig_None_FireWave" type="use-skill" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="2" min-delay="20000">
+      <action event-step="1" repeat="1" skill="ME_DeadSwordManBig_None_FireWave" skill3="ME_DeadSwordManBig_None_FireWave" type="use-skill" />
+    </special>
+    <special combat-distance="3" id="2" max-count="1">
+      <action event-step="2" repeat="1" skill="ME_DeadSwordManBig_None_Explosion" skill3="ME_DeadSwordManBig_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0005_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_UnbalanceZombie_None_Cut" skill3="ME_UnbalanceZombie_None_Cut" type="use-skill" />
+      
+      <action repeat="1" skill="ME_UnbalanceZombie_None_Cut2" skill3="ME_UnbalanceZombie_None_Cut2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_JEA_B2_GuGuBung2_Destruction_Wind" skill3="ME_JEA_B2_GuGuBung2_Destruction_Wind" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_DarkFire" skill3="ME_BEF_B4_UnbalanceZombieB_DarkFire" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_UnbalanceZombie_None_Fury" skill3="ME_UnbalanceZombie_None_Fury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_Dash2" skill3="ME_BEF_B4_UnbalanceZombie_Dash2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_Dash2" skill3="ME_BEF_B4_UnbalanceZombie_Dash2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_Dash2" skill3="ME_BEF_B4_UnbalanceZombie_Dash2" target-area="4748_30" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0022_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_UnbalanceZombie_None_Cut" skill3="ME_UnbalanceZombie_None_Cut" type="use-skill" />
+      
+      <action repeat="1" skill="ME_UnbalanceZombie_None_Cut2" skill3="ME_UnbalanceZombie_None_Cut2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_JEA_B2_GuGuBung2_Destruction_Wind" skill3="ME_JEA_B2_GuGuBung2_Destruction_Wind" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_DarkFire" skill3="ME_BEF_B4_UnbalanceZombieB_DarkFire" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_UnbalanceZombie_None_Fury" skill3="ME_UnbalanceZombie_None_Fury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_Dash2" skill3="ME_BEF_B4_UnbalanceZombie_Dash2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_Dash2" skill3="ME_BEF_B4_UnbalanceZombie_Dash2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_Dash2" skill3="ME_BEF_B4_UnbalanceZombie_Dash2" target-area="4748_30" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0005_Berserk_CS" seq-start-social="1">
+    <normal combat-distance="3" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Nmd_0005_battle_msg_03" type="do-social" />
+      <action immune-breaker-disable="y" skill="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" skill3="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_0004_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+      
+      
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" start-delay="20000">
+      
+      <action event-step="1" repeat="1" skill="ME_JEA_R0_Zombie_None_Explosion" skill3="ME_JEA_R0_Zombie_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_0003_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="2" skill="ME_DemonShadowE_None_Smash" skill3="ME_DemonShadowE_None_Smash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_DemonShadowE_None_Shot" skill3="ME_DemonShadowE_None_Shot" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0006_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="3">
+      
+      <action repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Cut" skill3="ME_BEF_B4_UnbalanceZombie_S_Cut" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Cut2" skill3="ME_BEF_B4_UnbalanceZombie_S_Cut2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Wind" skill3="ME_BEF_B4_UnbalanceZombie_S_Wind" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Capture" skill3="ME_BEF_B4_UnbalanceZombieB_Capture" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="25000">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Nmd_0006_battle_msg_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_UnbalanceZombie_None_Fury" skill3="ME_UnbalanceZombie_None_Fury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" target="event:npc-combat-action:target" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" skill3="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1" start-delay="180000">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Nmd_0005_battle_msg_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" skill3="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0023_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Wind" skill3="ME_BEF_B4_UnbalanceZombie_S_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Cut" skill3="ME_BEF_B4_UnbalanceZombie_S_Cut" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Cut2" skill3="ME_BEF_B4_UnbalanceZombie_S_Cut2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Capture" skill3="ME_BEF_B4_UnbalanceZombieB_Capture" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Nmd_0023_battle_msg_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_UnbalanceZombie_None_Fury" skill3="ME_UnbalanceZombie_None_Fury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" target="event:npc-combat-action:target" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" skill3="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1" start-delay="180000">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Nmd_0005_battle_msg_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" skill3="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0024_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="3">
+      
+      <action repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Cut" skill3="ME_BEF_B4_UnbalanceZombie_S_Cut" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Cut2" skill3="ME_BEF_B4_UnbalanceZombie_S_Cut2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Wind" skill3="ME_BEF_B4_UnbalanceZombie_S_Wind" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Capture" skill3="ME_BEF_B4_UnbalanceZombieB_Capture" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="25000">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Nmd_0006_battle_msg_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_UnbalanceZombie_None_Fury" skill3="ME_UnbalanceZombie_None_Fury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" target="event:npc-combat-action:target" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" skill3="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1" start-delay="180000">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Nmd_0005_battle_msg_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" skill3="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_Nmd_0025_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Wind" skill3="ME_BEF_B4_UnbalanceZombie_S_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Cut" skill3="ME_BEF_B4_UnbalanceZombie_S_Cut" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B4_UnbalanceZombie_S_Cut2" skill3="ME_BEF_B4_UnbalanceZombie_S_Cut2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Capture" skill3="ME_BEF_B4_UnbalanceZombieB_Capture" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Nmd_0023_battle_msg_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_UnbalanceZombie_None_Fury" skill3="ME_UnbalanceZombie_None_Fury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_UnbalanceZombie_Dash" skill3="ME_BEF_B5_UnbalanceZombie_Dash" target="event:npc-combat-action:target" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" skill3="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1" start-delay="180000">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A2_Nmd_0005_battle_msg_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" skill3="ME_BEF_B4_UnbalanceZombieB_Fury_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_0032_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_SUA_B2_Destroyer_Protection_Raging_Wind" skill3="MH_SUA_B2_Destroyer_Protection_Raging_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Protection_ChargeDash" skill3="MH_SUA_R0_Destroyer_Protection_ChargeDash" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Destruction_LowRagingWind" skill3="MH_SUA_R0_Destroyer_Destruction_LowRagingWind" type="use-skill" />
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_Swing_Strike" skill3="MH_SUA_R0_Destroyer_Protection_Swing_Strike" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action skill="MH_SUA_R0_Destroyer_Protection_Earthquake" skill3="MH_SUA_R0_Destroyer_Protection_Earthquake" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_0033_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Justicepunch" skill3="MH_SUA_R0_KungfuMaster_Attack_Justicepunch" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Strongpunch" skill3="MH_SUA_R0_KungfuMaster_Attack_Strongpunch" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Counterenemy" skill3="MH_SUA_R0_KungfuMaster_Attack_Counterenemy" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Heavypunch" skill3="MH_SUA_R0_KungfuMaster_Attack_Heavypunch" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Jumppunch" skill3="MH_SUA_R0_KungfuMaster_Attack_Jumppunch" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_0034_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_full_moon_slash" skill3="MH_SUA_R0_BladeMaster_Sword_full_moon_slash" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_full_moon_slash_Fast2" skill3="MH_SUA_R0_BladeMaster_Sword_full_moon_slash_Fast2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blood_wind" skill3="MH_SUA_R0_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_storm_wind" skill3="MH_SUA_R0_BladeMaster_Sword_storm_wind" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rush" skill3="MH_SUA_R0_BladeMaster_Sword_Rush" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A2_0035_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fire_ball_instant" skill3="MH_SUA_R0_ForceMaster_Deal_fire_ball_instant" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fire_bomb" skill3="MH_SUA_R0_ForceMaster_Deal_fire_bomb" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fire_ball" skill3="MH_SUA_R0_ForceMaster_Deal_fire_ball" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A2_0005_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Counter" skill3="ME_DemonShadowD_None_Counter" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="1" id="1" max-count="1">
+      
+      <action event-step="1" repeat="1" skill="ME_JEA_R0_Zombie_None_Explosion" skill3="ME_JEA_R0_Zombie_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0005_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="ME_SUB_R0_SoldierSwordShield_None_HardSmash" skill3="ME_SUB_R0_SoldierSwordShield_None_HardSmash" type="use-skill" />
+      <action repeat="1" skill="ME_SUB_R0_SoldierSwordShield_None_HardStab" skill3="ME_SUB_R0_SoldierSwordShield_None_HardStab" type="use-skill" />
+      <action repeat="1" skill="ME_SUB_R0_SoldierSwordShield_None_CounterState_Parry" skill3="ME_SUB_R0_SoldierSwordShield_None_CounterState_Parry" type="use-skill" />
+      <action repeat="1" skill="ME_SUB_R0_SoldierSwordShield_None_ShieldPush" skill3="ME_SUB_R0_SoldierSwordShield_None_ShieldPush" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action repeat="1" skill="ME_SUB_R0_SoldierSwordShield_None_GrenadeBomb" skill3="ME_SUB_R0_SoldierSwordShield_None_GrenadeBomb" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action event-step="1" immune-breaker-disable="y" skill="MH_Destroyer_Protection_Ground_G" skill3="MH_Destroyer_Protection_Ground_G" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="5000">
+      <action event-step="1" skill="ME_SoldierSwordShield_None_BackStep" skill3="ME_SoldierSwordShield_None_BackStep" type="use-skill" />
+      <action repeat="3" skill="ME_SUB_R0_SoldierSwordShield_None_GrenadeBomb" skill3="ME_SUB_R0_SoldierSwordShield_None_GrenadeBomb" target="event:npc-combat-action:npc:last-target" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0006_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="2" skill="MH_SUB_R0_ForceMaster_Deal_fire_blast" skill3="MH_SUB_R0_ForceMaster_Deal_fire_blast" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_heat_wave" skill3="MH_SUB_R0_ForceMaster_Deal_heat_wave" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_magnetic_energy" skill3="MH_SUB_R0_ForceMaster_Deal_magnetic_energy" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_magnetic_spread_link" skill3="MH_SUB_R0_ForceMaster_Deal_magnetic_spread_link" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUB_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_fire_ball" skill3="MH_SUB_R0_ForceMaster_Deal_fire_ball" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action event-step="1" immune-breaker-disable="y" skill="MH_ForceMaster_Deal_Ground_G" skill3="MH_ForceMaster_Deal_Ground_G" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_0029_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_SUB_R0_FishmanBStaff_None_Jab" skill3="ME_SUB_R0_FishmanBStaff_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_SUB_R0_FishmanBStaff_None_Smash" skill3="ME_SUB_R0_FishmanBStaff_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_SUB_R0_FishmanBStaff_None_SmashDown" skill3="ME_SUB_R0_FishmanBStaff_None_SmashDown" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0007_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_BladeMaster_Sword_stab" skill3="MH_SUB_R0_BladeMaster_Sword_stab" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_BladeMaster_Sword_full_moon_slash" skill3="MH_SUB_R0_BladeMaster_Sword_full_moon_slash" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_BladeMaster_Sword_Upper_ShoulderCharge" skill3="MH_SUB_R0_BladeMaster_Sword_Upper_ShoulderCharge" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUP2_R0_BladeMaster_Sword_flying_swallow_sword" skill3="MH_SUP2_R0_BladeMaster_Sword_flying_swallow_sword" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_BladeMaster_Sword_Rush" skill3="MH_SUB_R0_BladeMaster_Sword_Rush" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action event-step="1" immune-breaker-disable="y" skill="MH_BladeMaster_Sword_Ground_G" skill3="MH_BladeMaster_Sword_Ground_G" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0008_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_BladeMaster_Sword_full_moon_slash" skill3="MH_SUB_R0_BladeMaster_Sword_full_moon_slash" type="use-skill" />
+      <action duration="0" stance="2" type="change-set" />
+      <action repeat="2" skill="MH_SUB_R0_BladeMaster_Batto_batto" skill3="MH_SUB_R0_BladeMaster_Batto_batto" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_BladeMaster_Batto_Pierce" skill3="MH_SUB_R0_BladeMaster_Batto_Pierce" type="use-skill" />
+      <action duration="0" stance="1" type="change-set" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_BladeMaster_Batto_six_combo_slash" skill3="MH_SUB_R0_BladeMaster_Batto_six_combo_slash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action event-step="1" immune-breaker-disable="y" skill="MH_BladeMaster_Sword_Ground_G" skill3="MH_BladeMaster_Sword_Ground_G" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0009_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_PoisonBreath" skill3="MH_SUB_R0_Assassin_Disturb_PoisonBreath" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_MistSlash" skill3="MH_SUB_R0_Assassin_Disturb_MistSlash" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_DewSlash" skill3="MH_SUB_R0_Assassin_Disturb_DewSlash" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_WoodBlock" skill3="MH_SUB_R0_Assassin_Disturb_WoodBlock" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_SUB_R0_Assassin_Hide_SpineStab" skill3="MH_SUB_R0_Assassin_Hide_SpineStab" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="2" skill="MH_SUB_R0_Assassin_Disturb_Shuriken" skill3="MH_SUB_R0_Assassin_Disturb_Shuriken" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_Dash" skill3="MH_SUB_R0_Assassin_Disturb_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="MH_Assassin_Disturb_Ground_G" skill3="MH_Assassin_Disturb_Ground_G" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0010_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_chain_cold_storm" skill3="MH_SUB_R0_ForceMaster_Deal_chain_cold_storm" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_cold_blast" skill3="MH_SUB_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUB_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+      <action repeat="2" skill="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_breakaway" skill3="MH_SUB_R0_ForceMaster_Deal_breakaway" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="2" skill="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_breakaway" skill3="MH_SUB_R0_ForceMaster_Deal_breakaway" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action event-step="1" skill="MH_ForceMaster_Deal_Ground_G" skill3="MH_ForceMaster_Deal_Ground_G" target="event:npc-combat-action:target" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_0028_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_SUB_R0_FishmanA_None_BladeWave" skill3="ME_SUB_R0_FishmanA_None_BladeWave" type="use-skill" />
+      <action repeat="1" skill="ME_SUB_R0_FishmanA_None_BladeWind" skill3="ME_SUB_R0_FishmanA_None_BladeWind" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0011_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_HeartStab" skill3="MH_SUB_R0_Assassin_Disturb_HeartStab" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_WoodBlock" skill3="MH_SUB_R0_Assassin_Disturb_WoodBlock" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_SUB_R0_Assassin_Hide_SpineStab" skill3="MH_SUB_R0_Assassin_Hide_SpineStab" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_SUB_R0_Assassin_Assassinate_Decapitation" skill3="MH_SUB_R0_Assassin_Assassinate_Decapitation" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_HeartStab" skill3="MH_SUB_R0_Assassin_Disturb_HeartStab" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_SideStep" skill3="MH_SUB_R0_Assassin_Disturb_SideStep" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Hide_LowKick" skill3="MH_SUB_R0_Assassin_Hide_LowKick" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="2" skill="MH_SUB_R0_Assassin_Disturb_Shuriken" skill3="MH_SUB_R0_Assassin_Disturb_Shuriken" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Assassin_Disturb_Dash" skill3="MH_SUB_R0_Assassin_Disturb_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="MH_Assassin_Disturb_Ground_G" skill3="MH_Assassin_Disturb_Ground_G" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0030_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_fire_ball" skill3="MH_SUB_R0_ForceMaster_Deal_fire_ball" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_breakaway" skill3="MH_SUB_R0_ForceMaster_Deal_breakaway" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0031_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_SUB_R0_BladeMaster_Sword_stab" skill3="MH_SUB_R0_BladeMaster_Sword_stab" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0032_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_SUB_R0_KungfuMaster_Attack_Pre_PowerfulAttack" skill3="MH_SUB_R0_KungfuMaster_Attack_Pre_PowerfulAttack" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Dummy_0003_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" target="event:npc-combat-action:npc" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="1" repeat="1" skill="ME_Dummy_None_Ground_Fire" skill3="ME_Dummy_None_Ground_Fire" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Dummy_0004_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" target="event:npc-combat-action:npc" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" repeat="1" skill="ME_Dummy_None_Ground_Ice" skill3="ME_Dummy_None_Ground_Ice" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Dummy_0005_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" target="event:npc-combat-action:npc" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" repeat="1" skill="ME_SUB_Dummy_None_Ground_Poison" skill3="ME_SUB_Dummy_None_Ground_Poison" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0016_CS" seq-start-social="1">
+    
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0017_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="2" skill="MH_SUB_R0_ForceMaster_Deal_cold_blast" skill3="MH_SUB_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0019_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="2" skill="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_chain_cold_storm" skill3="MH_SUB_R0_ForceMaster_Deal_chain_cold_storm" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUB_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0018_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="2" skill="MH_SUB_R0_ForceMaster_Deal_fire_blast" skill3="MH_SUB_R0_ForceMaster_Deal_fire_blast" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_heat_wave" skill3="MH_SUB_R0_ForceMaster_Deal_heat_wave" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_ForceMaster_Deal_fire_ball" skill3="MH_SUB_R0_ForceMaster_Deal_fire_ball" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="5000">
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0020_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="2" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Nmd_0002_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="1000" target="event:npc-combat-action:target" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Nmd_0002_soc_01" type="do-social" />
+      <action immune-breaker-disable="y" skill="ME_SUA_B4_GatlingGunWoman_None_Jump" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump" target-area="4746_24" type="use-ground-skill" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_GatlingGunWoman_None_GunFire" skill3="ME_BEF_B3_GatlingGunWoman_None_GunFire" type="use-skill" />
+      
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Dummy_0002_CS" seq-start-social="1">
+    <normal combat-distance="7" id="1">
+      <action duration="1000" type="stay" />
+    </normal>
+  </combat-sequence>
+
+
+
+
+  
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0001_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_BladeMaster_Sword_full_moon_slash_LV1" skill3="MH_BladeMaster_Sword_full_moon_slash_LV1" type="use-skill" />
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rushing_Wind" skill3="MH_SUA_R0_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blood_wind" skill3="MH_SUA_R0_BladeMaster_Sword_blood_wind" type="use-skill" />
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blocking" skill3="MH_SUA_R0_BladeMaster_Sword_blocking" type="use-skill" />
+        <action prob="50" repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_stab" skill3="MH_SUA_R0_BladeMaster_Sword_stab" type="use-skill" />
+      </action>
+      <action repeat="1" skill="MH_BladeMaster_Sword_turning_strike_LV1" skill3="MH_BladeMaster_Sword_turning_strike_LV1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        <action prob="60" repeat="1" skill="MH_BladeMaster_Sword_rush_LV1" skill3="MH_BladeMaster_Sword_rush_LV1" type="use-skill" />
+        <action prob="40" repeat="1" skill="MH_BladeMaster_Sword_flying_swallow_sword_LV1" skill3="MH_BladeMaster_Sword_flying_swallow_sword_LV1" type="use-skill" />
+      </action>
+    </normal>
+    
+    <special combat-distance="3" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      <action repeat="1" skill="MH_BladeMaster_Sword_crippling_cut_LV1" skill3="MH_BladeMaster_Sword_crippling_cut_LV1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="1" id="2" max-count="0" min-delay="20000" start-delay="5000">
+      <action repeat="1" skill="MH_BladeMaster_Batto_full_moon_slash_LV1" skill3="MH_BladeMaster_Batto_full_moon_slash_LV1" type="use-skill" />
+      <action duration="0" stance="2" type="change-set" />
+      <action repeat="1" skill="MH_BladeMaster_Batto_mach_slash" skill3="MH_BladeMaster_Batto_mach_slash" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Batto_Crescent_Slash_LV1" skill3="MH_BladeMaster_Batto_Crescent_Slash_LV1" type="use-skill" />
+      <action duration="0" stance="1" type="change-set" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0002_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_BladeMaster_Sword_turning_strike_LV1" skill3="MH_BladeMaster_Sword_turning_strike_LV1" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_full_moon_slash_LV1" skill3="MH_BladeMaster_Sword_full_moon_slash_LV1" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rush" skill3="MH_SUA_R0_BladeMaster_Sword_Rush" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      <action repeat="1" skill="MH_BladeMaster_Sword_crippling_cut_LV1" skill3="MH_BladeMaster_Sword_crippling_cut_LV1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="5000">
+      <action repeat="1" skill="MH_BladeMaster_Batto_full_moon_slash_LV1" skill3="MH_BladeMaster_Batto_full_moon_slash_LV1" type="use-skill" />
+      <action duration="0" stance="2" type="change-set" />
+      <action repeat="1" skill="MH_BladeMaster_Batto_Pierce_Short_LV1" skill3="MH_BladeMaster_Batto_Pierce_Short_LV1" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Batto_Crescent_Slash_LV1" skill3="MH_BladeMaster_Batto_Crescent_Slash_LV1" type="use-skill" />
+      <action duration="0" stance="1" type="change-set" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0003_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="2" skill="MH_Destroyer_Destruction_Raging_Wind_Lv1" skill3="MH_Destroyer_Destruction_Raging_Wind_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Lv1" skill3="MH_Destroyer_Protection_Axe_Chop_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Destruction_Finish" skill3="MH_Destroyer_Protection_Destruction_Finish" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_Destroyer_Protection_Earthquake_Lv1" skill3="MH_Destroyer_Protection_Earthquake_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" skill3="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" type="use-skill" />
+    </special>
+    
+    <special combat-distance="1" id="2" max-count="0" min-delay="20000" start-delay="5000">
+      <action repeat="1" skill="MH_Destroyer_Destruction_LowRagingWind_Lv1" skill3="MH_Destroyer_Destruction_LowRagingWind_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_CounterUppercut_Lv1" skill3="MH_Destroyer_Protection_CounterUppercut_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0004_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="2" skill="MH_Destroyer_Protection_DestructionCircle_Lv1" skill3="MH_Destroyer_Protection_DestructionCircle_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_KickKnockback_Lv1" skill3="MH_Destroyer_Protection_KickKnockback_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Swing_Strike_Lv1" skill3="MH_Destroyer_Protection_Swing_Strike_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_Destroyer_Protection_Earthquake_Lv1" skill3="MH_Destroyer_Protection_Earthquake_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" skill3="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" type="use-skill" />
+    </special>
+    
+    <special combat-distance="1" id="2" max-count="0" min-delay="20000" start-delay="5000">
+      <action repeat="1" skill="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" skill3="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" type="use-skill" />
+      <action repeat="2" skill="MH_Destroyer_Protection_Axe_Chop_Short_Named" skill3="MH_Destroyer_Protection_Axe_Chop_Short_Named" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0003_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Martialdance_Lv1" skill3="MH_KungfuMaster_Attack_Martialdance_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Counterenemy_Lv1" skill3="MH_KungfuMaster_Attack_Counterenemy_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Finalattack_Lv1_hidden" skill3="MH_KungfuMaster_Attack_Finalattack_Lv1_hidden" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Commandskill_left_Lv1" skill3="MH_KungfuMaster_Attack_Commandskill_left_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Triplekick_Lv1" skill3="MH_KungfuMaster_Attack_Triplekick_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Heavypunch_Lv1" skill3="MH_KungfuMaster_Attack_Heavypunch_Lv1" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_KungfuMaster_Attack_Heavypunch_Lv1_hid" skill3="MH_KungfuMaster_Attack_Heavypunch_Lv1_hid" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        <action prob="60" repeat="1" skill="MH_SUB_R0_KungfuMaster_Attack_Jumppunch" skill3="MH_SUB_R0_KungfuMaster_Attack_Jumppunch" type="use-skill" />
+        <action prob="40" repeat="1" skill="MH_SUB_B4_KungfuMaster_Defend_LeftCounter_dash" skill3="MH_SUB_B4_KungfuMaster_Defend_LeftCounter_dash" type="use-skill" />
+      </action>
+    </normal>
+    
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="5000" start-delay="0">
+      <action repeat="1" skill="MH_SUB_B3_KungfuMaster_Attack_FlyTakedown" skill3="MH_SUB_B3_KungfuMaster_Attack_FlyTakedown" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_KungfuMaster_Attack_Pounding_First_Lv1" skill3="MH_KungfuMaster_Attack_Pounding_First_Lv1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="5000" start-delay="0">
+      <action repeat="1" skill="MH_KungfuMaster_Attack_burstblow_Lv1" skill3="MH_KungfuMaster_Attack_burstblow_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+
+  
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0012_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" repeat="2" skill="MH_SUB_N0_Destroyer_Destruction_Raging_Wind_Bounce" skill3="MH_SUB_N0_Destroyer_Destruction_Raging_Wind_Bounce" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Destroyer_Destruction_LowRagingWind" skill3="MH_SUB_R0_Destroyer_Destruction_LowRagingWind" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Destroyer_Protection_KickKnockback" skill3="MH_SUB_R0_Destroyer_Protection_KickKnockback" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Destroyer_Protection_Axe_Chop" skill3="MH_SUB_R0_Destroyer_Protection_Axe_Chop" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUB_N0_Destroyer_Protection_Earthquake" skill3="MH_SUB_N0_Destroyer_Protection_Earthquake" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="15000">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUB_R0_Destroyer_Hardwall_IronCannon" skill3="MH_SUB_R0_Destroyer_Hardwall_IronCannon" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0013_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_SUB_R0_Destroyer_Protection_Judgement" skill3="MH_SUB_R0_Destroyer_Protection_Judgement" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Destroyer_Protection_Destruction" skill3="MH_SUB_R0_Destroyer_Protection_Destruction" type="use-skill" />
+      <action repeat="1" skill="MH_SUB_R0_Destroyer_Protection_AnkleCutOff" skill3="MH_SUB_R0_Destroyer_Protection_AnkleCutOff" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="2" skill="MH_SUB_N0_Destroyer_Destruction_Raging_Wind_Bounce" skill3="MH_SUB_N0_Destroyer_Destruction_Raging_Wind_Bounce" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_SUB_R0_Destroyer_Protection_ChargeDash" skill3="MH_SUB_R0_Destroyer_Protection_ChargeDash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="15000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUB_R0_Destroyer_Hardwall_IronCannon" skill3="MH_SUB_R0_Destroyer_Hardwall_IronCannon" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0015_CS1" seq-start-social="1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_freeze_splinter" skill3="MH_SUA_R0_ForceMaster_Deal_freeze_splinter" type="use-skill" />
+        <action prob="50" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_cold_blast" skill3="MH_SUA_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      </action>
+      <action repeat="2" skill="MH_SUA_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUA_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_chain_cold_storm" skill3="MH_SUA_R0_ForceMaster_Deal_chain_cold_storm" type="use-skill" />
+      <action repeat="2" skill="MH_SUA_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUA_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_breakaway" skill3="MH_SUA_R0_ForceMaster_Deal_breakaway" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <special combat-distance="7" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      <action immune-breaker-disable="y" skill="MH_SUA_R0_ForceMaster_Deal_frost_explosion" skill3="MH_SUA_R0_ForceMaster_Deal_frost_explosion" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="25000" start-delay="10000">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUC_B5_ForceMaster_Deal_breakaway" skill3="MH_SUC_B5_ForceMaster_Deal_breakaway" target-area="4746_60" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="MH_WA_Heajuk_A1_Nmd_0015_battle_03" type="do-social" />
+      <action duration="1500" target="event:npc-combat-action:target" type="stay" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BED_N2_ForceMaster_Repeat_cold_missile" skill3="ME_BED_N2_ForceMaster_Repeat_cold_missile" type="boss-repeater-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BED_N2_ForceMaster_Repeat_cold_missile" skill3="ME_BED_N2_ForceMaster_Repeat_cold_missile" type="boss-repeater-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_breakaway" skill3="MH_SUA_R0_ForceMaster_Deal_breakaway" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0038_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+      <action repeat="1" skill="MH_BEC_N14_BladeMaster_Sword_stab" skill3="MH_BEC_N14_BladeMaster_Sword_stab" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" skill3="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Batto_mach_slash" skill3="MH_BladeMaster_Batto_mach_slash" type="use-skill" />
+      <action repeat="1" skill="MH_BladeMaster_Sword_full_moon_slash_LV1" skill3="MH_BladeMaster_Sword_full_moon_slash_LV1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_BladeMaster_Sword_rush_LV1" skill3="MH_BladeMaster_Sword_rush_LV1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="5000">
+      <action repeat="1" skill="MH_BEC_N14_BladeMaster_Sword_air_six_combo_slash" skill3="MH_BEC_N14_BladeMaster_Sword_air_six_combo_slash" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_BEC_N14_BladeMaster_Sword_crash" skill3="MH_BEC_N14_BladeMaster_Sword_crash" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" id="2" max-count="0" min-delay="20000" start-delay="5000">
+      <action repeat="1" skill="MH_BEC_N14_BladeMaster_Sword_turning_strike" skill3="MH_BEC_N14_BladeMaster_Sword_turning_strike" type="use-skill" />
+      <action duration="0" stance="2" type="change-set" />
+      <action repeat="2" skill="MH_BladeMaster_Batto_Pierce_Short_LV1" skill3="MH_BladeMaster_Batto_Pierce_Short_LV1" type="use-skill" />
+      <action duration="0" stance="1" type="change-set" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0039_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_Destroyer_Destruction_Raging_Wind_Lv1" skill3="MH_Destroyer_Destruction_Raging_Wind_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Lv1" skill3="MH_Destroyer_Protection_Axe_Chop_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Destruction_Finish" skill3="MH_Destroyer_Protection_Destruction_Finish" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_DestructionCircle_Lv1" skill3="MH_Destroyer_Protection_DestructionCircle_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_Destroyer_Protection_Earthquake_Lv1" skill3="MH_Destroyer_Protection_Earthquake_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" skill3="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" type="use-skill" />
+    </special>
+    
+    <special combat-distance="1" id="2" max-count="0" min-delay="20000" start-delay="15000">
+      <action repeat="1" skill="MH_Destroyer_Destruction_LowRagingWind_Lv1" skill3="MH_Destroyer_Destruction_LowRagingWind_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_CounterUppercut_Lv1" skill3="MH_Destroyer_Protection_CounterUppercut_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0040_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Trampledown_Lv1" skill3="MH_KungfuMaster_Attack_Trampledown_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerAttack_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Defend_Crushground_Lv1" skill3="MH_KungfuMaster_Defend_Crushground_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="5000">
+      <action repeat="1" skill="MH_BEC_N13_KungfuMaster_Attack_burstblow" skill3="MH_BEC_N13_KungfuMaster_Attack_burstblow" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" id="2" max-count="0" min-delay="20000" start-delay="5000">
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Heavypunch_Lv1" skill3="MH_KungfuMaster_Attack_Heavypunch_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Defend_Crushground_Lv1_hid" skill3="MH_KungfuMaster_Defend_Crushground_Lv1_hid" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Takedown_Lv1" skill3="MH_KungfuMaster_Attack_Takedown_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Pounding_First_Lv1" skill3="MH_KungfuMaster_Attack_Pounding_First_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+
+  
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_Nmd_0001_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_full_moon_slash" skill3="MH_SUA_R0_BladeMaster_Sword_full_moon_slash" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blood_wind" skill3="MH_SUA_R0_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_storm_wind" skill3="MH_SUA_R0_BladeMaster_Sword_storm_wind" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_full_moon_slash_Fast2" skill3="MH_SUA_R0_BladeMaster_Sword_full_moon_slash_Fast2" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_BladeMaster_Sword_turning_strike_LV1" skill3="MH_BladeMaster_Sword_turning_strike_LV1" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-2="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rush" skill3="MH_SUA_R0_BladeMaster_Sword_Rush" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="down" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_rush_LV1" skill3="MH_BladeMaster_Sword_rush_LV1" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action duration="0" stance="2" type="change-set" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0033_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_DoubleAxe_None_Wind" skill3="ME_DoubleAxe_None_Wind" type="use-skill" />
+      <action repeat="1" skill="ME_DoubleAxe_None_Smash" skill3="ME_DoubleAxe_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_DoubleAxe_None_HeavySmash" skill3="ME_DoubleAxe_None_HeavySmash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="2" skill="ME_DoubleAxe_None_Throw" skill3="ME_DoubleAxe_None_Throw" type="use-skill" />
+      <action repeat="1" skill="ME_DoubleAxe_None_Dash" skill3="ME_DoubleAxe_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Heajuk_A1_0034_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_DoubleAxe_None_MultiSmash" skill3="ME_DoubleAxe_None_MultiSmash" type="use-skill" />
+      <action repeat="1" skill="ME_DoubleAxe_None_HeavySmash" skill3="ME_DoubleAxe_None_HeavySmash" type="use-skill" />
+      <action repeat="1" skill="ME_DoubleAxe_None_BodyCheck" skill3="ME_DoubleAxe_None_BodyCheck" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DoubleAxe_None_Dash" skill3="ME_DoubleAxe_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+
+
+
+  
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Dummy_0020_CS" hide-seq-start="y">
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Bluebuff_6P" skill3="ME_BEF_B3_DemonSnake_Bluebuff_6P" target="event:npc-combat-action:npc" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_Dummy_Ready_Show" skill3="ME_BEF_B3_Dummy_Ready_Show" target="zonenpcsquad:s_4746_117:1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Dummy_0021_CS" hide-seq-start="y">
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Redbuff_6P" skill3="ME_BEF_B3_DemonSnake_Redbuff_6P" target="event:npc-combat-action:npc" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_Dummy_Ready_Show2" skill3="ME_BEF_B3_Dummy_Ready_Show2" target="zonenpcsquad:s_4746_118:1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Boss_0003_CS1" seq-start-social="1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_TailSmash" skill3="ME_BEF_B3_DemonSnake_TailSmash" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Smash" skill3="ME_BEF_B3_DemonSnake_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Spin" skill3="ME_BEF_B3_DemonSnake_Spin" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Stone" skill3="ME_BEF_B3_DemonSnake_Stone" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_TailSmash" skill3="ME_BEF_B3_DemonSnake_TailSmash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceExplosion" skill3="ME_BEF_B3_DemonSnake_IceExplosion" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_PowerBomb" skill3="ME_BEF_B3_DemonSnake_PowerBomb" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_PowerBomb" skill3="ME_BEF_B3_DemonSnake_PowerBomb" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash" skill3="ME_BEF_B3_DemonSnake_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0001_msg_02" type="do-social" />
+      <action event-step="20" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Summoned_Hatedown" skill3="ME_BEF_B3_DemonSnake_Summoned_Hatedown" type="use-skill" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0001_battle_02" type="do-social" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action event-step="33" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash" skill3="ME_BEF_B3_DemonSnake_Dash" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0001_msg_02" type="do-social" />
+      <action event-step="21" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Summoned_Hatedown" skill3="ME_BEF_B3_DemonSnake_Summoned_Hatedown" type="use-skill" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0001_battle_02" type="do-social" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action event-step="33" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash" skill3="ME_BEF_B3_DemonSnake_Dash" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Boss_0004_CS1" seq-start-social="1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_FireBlow" skill3="ME_BEF_B3_DemonSnake_FireBlow" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Smash2" skill3="ME_BEF_B3_DemonSnake_Smash2" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_TailSmash2" skill3="ME_BEF_B3_DemonSnake_TailSmash2" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_HardSmash" skill3="ME_BEF_B3_DemonSnake_HardSmash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Spin2" skill3="ME_BEF_B3_DemonSnake_Spin2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Heavypunch" skill3="ME_BEF_B3_DemonSnake_Heavypunch" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash2" skill3="ME_BEF_B3_DemonSnake_Dash2" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0002_msg_02" type="do-social" />
+      <action event-step="20" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action event-step="30" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Summoned_Hatedown" skill3="ME_BEF_B3_DemonSnake_Summoned_Hatedown" type="use-skill" />
+
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0002_battle_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_PowerAttack" skill3="ME_BEF_B3_DemonSnake_PowerAttack" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Leftmove" skill3="ME_BEF_B3_DemonSnake_Leftmove" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Heavypunch" skill3="ME_BEF_B3_DemonSnake_Heavypunch" type="use-skill" />
+
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action event-step="33" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash2" skill3="ME_BEF_B3_DemonSnake_Dash2" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0002_msg_02" type="do-social" />
+      <action event-step="21" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action event-step="30" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Summoned_Hatedown" skill3="ME_BEF_B3_DemonSnake_Summoned_Hatedown" type="use-skill" />
+
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0002_battle_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_PowerAttack" skill3="ME_BEF_B3_DemonSnake_PowerAttack" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Leftmove" skill3="ME_BEF_B3_DemonSnake_Leftmove" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Heavypunch" skill3="ME_BEF_B3_DemonSnake_Heavypunch" type="use-skill" />
+
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action event-step="33" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash2" skill3="ME_BEF_B3_DemonSnake_Dash2" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Dummy_0006_CS" hide-seq-start="y">
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Bluebuff" skill3="ME_BEF_B3_DemonSnake_Bluebuff" target="event:npc-combat-action:npc" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_Dummy_Ready_Show" skill3="ME_BEF_B3_Dummy_Ready_Show" target="zonenpcsquad:s_4746_91:1" type="use-skill" />
+      
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Dummy_0007_CS" hide-seq-start="y">
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Redbuff" skill3="ME_BEF_B3_DemonSnake_Redbuff" target="event:npc-combat-action:npc" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_Dummy_Ready_Show2" skill3="ME_BEF_B3_Dummy_Ready_Show2" target="zonenpcsquad:s_4746_92:1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Boss_0001_CS1" seq-start-social="1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_TailSmash" skill3="ME_BEF_B3_DemonSnake_TailSmash" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Smash" skill3="ME_BEF_B3_DemonSnake_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Spin" skill3="ME_BEF_B3_DemonSnake_Spin" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Stone" skill3="ME_BEF_B3_DemonSnake_Stone" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_TailSmash" skill3="ME_BEF_B3_DemonSnake_TailSmash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceExplosion" skill3="ME_BEF_B3_DemonSnake_IceExplosion" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_PowerBomb" skill3="ME_BEF_B3_DemonSnake_PowerBomb" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_PowerBomb" skill3="ME_BEF_B3_DemonSnake_PowerBomb" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash" skill3="ME_BEF_B3_DemonSnake_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0001_msg_02" type="do-social" />
+      <action event-step="20" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Summoned_Hatedown" skill3="ME_BEF_B3_DemonSnake_Summoned_Hatedown" type="use-skill" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0001_battle_02" type="do-social" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action event-step="33" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash" skill3="ME_BEF_B3_DemonSnake_Dash" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0001_msg_02" type="do-social" />
+      <action event-step="21" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Summoned_Hatedown" skill3="ME_BEF_B3_DemonSnake_Summoned_Hatedown" type="use-skill" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0001_battle_02" type="do-social" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action event-step="33" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash" skill3="ME_BEF_B3_DemonSnake_Dash" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Boss_0001_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Rage_Berserk" skill3="ME_BEF_B3_DemonSnake_Rage_Berserk" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_beserk_01" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0001_battle_03" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Rage_Berserk" skill3="ME_BEF_B3_DemonSnake_Rage_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Boss_0002_CS1" seq-start-social="1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_FireBlow" skill3="ME_BEF_B3_DemonSnake_FireBlow" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Smash2" skill3="ME_BEF_B3_DemonSnake_Smash2" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_TailSmash2" skill3="ME_BEF_B3_DemonSnake_TailSmash2" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_HardSmash" skill3="ME_BEF_B3_DemonSnake_HardSmash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Spin2" skill3="ME_BEF_B3_DemonSnake_Spin2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Heavypunch" skill3="ME_BEF_B3_DemonSnake_Heavypunch" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash2" skill3="ME_BEF_B3_DemonSnake_Dash2" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0002_msg_02" type="do-social" />
+      <action event-step="20" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action event-step="30" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Summoned_Hatedown" skill3="ME_BEF_B3_DemonSnake_Summoned_Hatedown" type="use-skill" />
+
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0002_battle_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_PowerAttack" skill3="ME_BEF_B3_DemonSnake_PowerAttack" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Leftmove" skill3="ME_BEF_B3_DemonSnake_Leftmove" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Heavypunch" skill3="ME_BEF_B3_DemonSnake_Heavypunch" type="use-skill" />
+
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action event-step="33" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash2" skill3="ME_BEF_B3_DemonSnake_Dash2" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0002_msg_02" type="do-social" />
+      <action event-step="21" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action event-step="30" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Summoned_Hatedown" skill3="ME_BEF_B3_DemonSnake_Summoned_Hatedown" type="use-skill" />
+
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0002_battle_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_PowerAttack" skill3="ME_BEF_B3_DemonSnake_PowerAttack" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Leftmove" skill3="ME_BEF_B3_DemonSnake_Leftmove" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Heavypunch" skill3="ME_BEF_B3_DemonSnake_Heavypunch" type="use-skill" />
+
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action event-step="33" immune-breaker-disable="y" repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Dash2" skill3="ME_BEF_B3_DemonSnake_Dash2" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Boss_0002_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Rage_Berserk" skill3="ME_BEF_B3_DemonSnake_Rage_Berserk" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_beserk_02" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Boss_0002_battle_03" type="do-social" />
+      <action event-step="88" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B3_DemonSnake_Rage_Berserk" skill3="ME_BEF_B3_DemonSnake_Rage_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Nmd_0003_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    
+    <special combat-distance="4" id="1" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_Jump" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump" target-pos="4414,10466,-412" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_AirDash" skill3="ME_SUA_B4_GatlingGunWoman_None_AirDash" target="event:npc-combat-action:target" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Nmd_0002_soc_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunLowFire" skill3="ME_SUA_B4_GatlingGunWoman_None_GunLowFire" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunDash" skill3="ME_SUA_B4_GatlingGunWoman_None_GunDash" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BackDash" skill3="ME_SUA_B4_GatlingGunWoman_None_BackDash" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Nmd_0003_soc_02" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_Jump" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump" target-pos="4355,10405,-240" type="use-ground-skill" />
+      
+    </special>
+    
+    <special combat-distance="4" id="2" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_Jump" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump" target-pos="4414,10466,-412" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_AirDash" skill3="ME_SUA_B4_GatlingGunWoman_None_AirDash" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Nmd_0002_battle_01" type="do-social" />
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="MH_Common_Blank_Q" skill3="MH_Common_Blank_Q" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_IceMineInstall" skill3="ME_SUA_B4_GatlingGunWoman_None_IceMineInstall" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BackDash" skill3="ME_SUA_B4_GatlingGunWoman_None_BackDash" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Nmd_0003_soc_02" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_Jump" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump" target-pos="4355,10405,-240" type="use-ground-skill" />
+    </special>
+    
+    <special combat-distance="4" id="3" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_Jump" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump" target-pos="4414,10466,-412" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_AirDash" skill3="ME_SUA_B4_GatlingGunWoman_None_AirDash" target="event:npc-combat-action:target" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Nmd_0002_battle_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunDash" skill3="ME_SUA_B4_GatlingGunWoman_None_GunDash" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1" type="use-skill" />
+      
+      
+      <action social="ME_ChungGakABoss_0005_battle" type="do-social" />
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_GunFire1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BackDash" skill3="ME_SUA_B4_GatlingGunWoman_None_BackDash" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Nmd_0003_soc_02" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_Jump" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump" target-pos="4355,10405,-240" type="use-ground-skill" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BackDash" skill3="ME_SUA_B4_GatlingGunWoman_None_BackDash" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Heajuk_A1_Nmd_0003_soc_02" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_Jump" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump" target-pos="4355,10405,-240" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_Dummy_0018_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="1" skill="ME_BEF_B3_GatlingGunWoman_IceBomb" skill3="ME_BEF_B3_GatlingGunWoman_IceBomb" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_check_0001_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Smash" skill3="ME_BEF_B3_DemonSnake_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Spin" skill3="ME_BEF_B3_DemonSnake_Spin" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_IceExplosion" skill3="ME_BEF_B3_DemonSnake_IceExplosion" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Stone" skill3="ME_BEF_B3_DemonSnake_Stone" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Rage" skill3="ME_BEF_B3_DemonSnake_Rage" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Amplification" skill3="ME_BEF_B3_DemonSnake_Amplification" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Gaze" skill3="ME_BEF_B3_DemonSnake_Gaze" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Leftmove" skill3="ME_BEF_B3_DemonSnake_Leftmove" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Absorption" skill3="ME_BEF_B3_DemonSnake_Absorption" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Link" skill3="ME_BEF_B3_DemonSnake_Link" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_PowerBomb" skill3="ME_BEF_B3_DemonSnake_PowerBomb" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_IceBomb" skill3="ME_BEF_B3_DemonSnake_IceBomb" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Dash" skill3="ME_BEF_B3_DemonSnake_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Heajuk_A1_check_0002_CS" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Smash2" skill3="ME_BEF_B3_DemonSnake_Smash2" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_TailSmash2" skill3="ME_BEF_B3_DemonSnake_TailSmash2" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_HardSmash" skill3="ME_BEF_B3_DemonSnake_HardSmash" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Spin2" skill3="ME_BEF_B3_DemonSnake_Spin2" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_FireBlow" skill3="ME_BEF_B3_DemonSnake_FireBlow" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Rage" skill3="ME_BEF_B3_DemonSnake_Rage" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Amplification2" skill3="ME_BEF_B3_DemonSnake_Amplification2" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Gaze" skill3="ME_BEF_B3_DemonSnake_Gaze" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Heavypunch" skill3="ME_BEF_B3_DemonSnake_Heavypunch" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_PowerAttack" skill3="ME_BEF_B3_DemonSnake_PowerAttack" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Absorption" skill3="ME_BEF_B3_DemonSnake_Absorption" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Leftmove" skill3="ME_BEF_B3_DemonSnake_Leftmove" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_BEF_B3_DemonSnake_Dash2" skill3="ME_BEF_B3_DemonSnake_Dash2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>

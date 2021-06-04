@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.baekchung_nokrimdocamp.xml-->
+
+  
+
+  
+  <script alias="ME_SA_NokLimDo_0022_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+  </script>
+
+  
+  <script alias="ME_SA_NokLimDo_0098_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+  </script>
+
+</table>

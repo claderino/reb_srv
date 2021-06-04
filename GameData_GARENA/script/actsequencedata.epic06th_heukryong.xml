@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.epic06th_heukryong.xml-->
+  
+  
+  
+
+  
+
+  
+  <act-sequence alias="act_pathway1_xdetect_ME_WB_Golem_0002" type="act">
+    <action duration="100" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+  <act-sequence alias="act_pathway2_xdetect_ME_WB_Golem_0002" type="act">
+    <action duration="100" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WB_GolemLeader_0001_act_01" detect="none" type="act">
+    
+    <action social="ME_WB_GolemLeader_0001_soc_01" type="social" />
+    <action pathway="4432_14_act_P" type="pathway" />
+    
+    <action social="ME_WB_GolemLeader_0001_soc_02" type="social" />
+  </act-sequence>
+  <act-sequence alias="ME_WB_GolemLeader_0001_act_02" detect="none" type="act">
+    
+    <action social="ME_WB_GolemLeader_0001_soc_03" type="social" />
+    <action hide="y" type="hide" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WB_BlackDragon_0032_peace" indexed-detect="1" type="peace">
+    <action duration="1000" type="stay" />
+    
+    <action social="MH_WB_BlackDragon_0032_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    
+    <action social="MH_WB_BlackDragon_0032_soc_02" type="social" />
+    <action duration="1000" type="stay" />
+    
+    <action social="MH_WB_BlackDragon_0032_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+    
+    <action social="MH_WB_BlackDragon_0032_soc_04" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_WB_BlackDragon_0032_act_01" detect="none" type="act">
+    
+    <action social="MH_WB_BlackDragon_0032_soc_05" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_WB_BlackDragon_0032_act_02" detect="none" type="act">
+    
+    <action social="MH_WB_BlackDragon_0032_soc_06" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WB_ChungGak_0038_path_01" indexed-detect="1" type="act">
+    <action social="CH_WB_ChungGak_0038_soc_01" type="social" />
+    <action pathway="4432_34_act_P_1" type="pathway" />
+    
+    <action social="CH_WB_ChungGak_0038_soc_03" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_WB_ChungGak_0038_path_02" indexed-detect="1" type="act">
+    <action pathway="4432_34_act_P_2" type="pathway" />
+    
+    <action social="CH_WB_ChungGak_0038_soc_04" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WB_GatlingGunWoman_0001_act_01" detect="none" type="act">
+    <action duration="1000" type="stay" />
+    
+    <action social="ME_WB_GatlingGunWoman_0001_soc_04" type="social" />
+    <action duration="1000" type="stay" />
+    
+    <action social="ME_WB_GatlingGunWoman_0001_soc_05" type="social" />
+    <action duration="1000" type="stay" />
+    
+    <action social="ME_WB_GatlingGunWoman_0001_soc_06" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WB_GatlingGunWoman_0001_act_02" detect="none" type="act">
+    
+    <action social="ME_WB_GatlingGunWoman_0001_battle_05" type="social" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WB_GatlingGunWoman_0002_Peace" detect="none" type="peace">
+    <action duration="1000" type="stay" />
+    
+    <action social="ME_WB_GatlingGunWoman_0002_soc_01" type="social" />
+    <action duration="10000" type="stay" />
+    
+    <action social="ME_WB_GatlingGunWoman_0002_soc_02" type="social" />
+    <action duration="9000" type="stay" />
+  </act-sequence>
+</table>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.994.xml-->
+  <quest alias="q_epic_994" broadcast-category="field" category="epic" completed-list="y" id="994" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object="npc:CH_WB_JaKyoungDan_0012" party-broadcast="n" progress-mission="y" quest-decision="qd_994_1" type="talk" />
+        <case object="zone:zone_ChRyoungCHN_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_16" type="enter-zone" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="zone:zone_ChRyoungCHN_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_5" type="enter-zone" />
+        <case idx="3" object="npc:CH_WB_ChungGak_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_994_4" type="npc-bleeding-occured" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WB_ChungGak_0009" party-broadcast="n" progress-mission="y" quest-decision="qd_994_6" type="talk" />
+        <case object="zone:zone_ChRyoungCHN_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_7" type="enter-zone" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_WB_KwakJun_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WB_Ryu_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_ChinChin_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonYang_0010" party-broadcast="n" type="approach" />
+        <case object="zone:zone_ChRyoungCHN_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_12" type="enter-zone" />
+        <case object="npc:CH_WB_DoDanHa_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_SunJun_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_JaKyoungDan_0060" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_JaKyoungDan_0061" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_Uhun_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_JaKyoungDan_0058" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_JaKyoungDan_0059" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1" reward-1="994_final_set1">
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_13" type="enter-zone" />
+        <case object="npc:CH_WB_ChungGak_0023" party-broadcast="n" progress-mission="y" quest-decision="qd_994_11" type="talk" />
+        <case object="npc:CH_WB_BeonYang_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_Ryu_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_SeoYeon_0007" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_CheongRyeongCtzn_GwanCheolSu_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_AnDuMae_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_MerchantCostume_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_Ohaengsang_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0004" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_CheongRyeongCtzn_YeomGu_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinF_CheongRyeongCtzn_NaYeRin_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinF_CheongRyeongCtzn_RyuBekEon_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_SunJun_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_GoBong_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_Uhun_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_DoDanHa_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_ChRyoungCHN">
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+    </transit>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CH_WB_DoDanHa_0004" party-broadcast="n" progress-mission="y" quest-decision="qd_994_9" type="talk" />
+        <case object="npc:CH_WB_ChinChin_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_SeoYeon_0007" party-broadcast="n" type="approach" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_10" type="enter-zone" />
+        <case object="npc:Ctzn_JinM_CheongRyeongCtzn_GwanCheolSu_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_AnDuMae_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_MerchantCostume_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_Ohaengsang_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0004" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_CheongRyeongCtzn_YeomGu_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinF_CheongRyeongCtzn_NaYeRin_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinF_CheongRyeongCtzn_RyuBekEon_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_GoBong_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="3" zone="StartZone_Default">
+      <destination mission-step-id="8" zone-index="5" />
+      <destination mission-step-id="7" zone-index="5" />
+      <destination mission-step-id="6" zone-index="5" />
+      <destination mission-step-id="5" zone-index="5" />
+      <destination mission-step-id="4" zone-index="5" />
+      <destination mission-step-id="3" zone-index="5" />
+      <destination mission-step-id="2" zone-index="5" />
+      <destination mission-step-id="1" zone-index="5" />
+      <destination mission-step-id="9" zone-index="5" />
+      <destination mission-step-id="10" zone-index="5" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_949" />
+    </completion>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_WB_SeoYeon_0007" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_WB_BeonYang_0010" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_CheongRyeongCtzn_GwanCheolSu_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_AnDuMae_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_MerchantCostume_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_Ohaengsang_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0004" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_CheongRyeongCtzn_YeomGu_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinF_CheongRyeongCtzn_NaYeRin_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinF_CheongRyeongCtzn_RyuBekEon_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_DoDanHa_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_GoBong_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1" reward-1="994_middle_set1">
+        <case object="npc:CH_WB_SeoYeon_0007" party-broadcast="n" progress-mission="y" quest-decision="qd_994_8" type="talk" />
+        <case object="npc:CH_WB_BeonYang_0010" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_CheongRyeongCtzn_GwanCheolSu_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_AnDuMae_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_MerchantCostume_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_Ohaengsang_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_FactionA_Guard_0004" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinM_CheongRyeongCtzn_YeomGu_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinF_CheongRyeongCtzn_NaYeRin_001" party-broadcast="n" type="approach" />
+        <case object="npc:Ctzn_JinF_CheongRyeongCtzn_RyuBekEon_001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_DoDanHa_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_GoBong_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="2" zone="zone_ChRyoungCHN_Doctor_SP">
+      <destination mission-step-id="1" zone-index="4" />
+      <destination mission-step-id="2" zone-index="4" />
+      <destination mission-step-id="3" zone-index="4" />
+      <destination mission-step-id="4" zone-index="4" />
+      <destination mission-step-id="5" zone-index="4" />
+      <destination mission-step-id="6" zone-index="5" />
+      <destination mission-step-id="7" zone-index="5" />
+      <destination mission-step-id="8" zone-index="5" />
+      <destination mission-step-id="9" zone-index="5" />
+      <destination mission-step-id="10" zone-index="5" />
+    </transit>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_WB_ChungGak_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_994_14" type="talk" />
+        <case object="zone:zone_ChRyoungCHN_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_17" type="enter-zone" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="zoneenv2:2073_foot_01" party-broadcast="n" progress-mission="y" quest-decision="qd_994_15" type="env-entered" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_3" type="enter-zone" />
+        <case object="zone:zone_ChRyoungCHN_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_994_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

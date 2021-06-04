@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.524.xml-->
+  <quest alias="q_epic_524" category="epic" completed-list="y" district-1="deasamak" id="524" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_jukun_0001" party-broadcast="n" progress-mission="y" type="talk" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ce_yeongahcho_0001" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_requiem_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="Q_RedMarbleA" gadget-required="carry-and-remove" object2-1="npc:me_moran_004" party-broadcast="n" progress-mission="reaction-only" skill="Gadget_Q_RedMarbleA" skill3="Gadget_Q_RedMarbleA" type="skill" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="524_final_set1">
+        <case object="npc:ch_pottery_011" party-broadcast="n" progress-mission="y" quest-decision="qd_524_1" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_525" />
+    </completion>
+  </quest>
+</table>

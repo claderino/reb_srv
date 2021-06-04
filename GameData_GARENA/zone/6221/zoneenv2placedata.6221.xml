@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\6221\zoneenv2placedata.6221.xml-->
+	<record action-point="-823,8237,2888" action-radius="25" alias="e_button_6221_yongmak_01_place" manipulation-height-lower="25" manipulation-height-upper="25" manipulation-point="-823,8237,2888" manipulation-radius="25" region-point-1="-825,8235,2868" region-point-2="-825,8239,2868" region-point-3="-821,8239,2868" region-point-4="-821,8235,2868" tool-zone-1="6221" tool-zone-2="6223" type="portal" use-manipulation-point="n" />
+	<record alias="e_airdash_6221_MokIn_City_01_a_place" duration="4600" end-pos="-2333,7625,2956" region-point-1="-3889,6617,2368" region-point-2="-3889,6665,2368" region-point-3="-3841,6665,2368" region-point-4="-3841,6617,3307" summon-end-pos="-2333,7625,2956" tool-zone-1="6221" tool-zone-2="6223" type="airdash" />
+	<record action-point="-4103,6424,2360" alias="6221_Portal_6224_place" region-point-1="-4073,6395,2292" region-point-2="-4142,6435,2292" region-point-3="-4132,6453,2334" region-point-4="-4063,6413,2338" tool-zone-1="6221" tool-zone-2="6223" type="portal" />
+	<record alias="zone6221.falldeath_place" height="2000" type="fall-death" />
+</table>

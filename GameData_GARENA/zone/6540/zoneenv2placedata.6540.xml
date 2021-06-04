@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\6540\zoneenv2placedata.6540.xml-->
+	<record action-point="9717,5446,-1157" action-radius="37" alias="e_Chest_6540_garden_01_Place" manipulation-height-lower="37" manipulation-height-upper="37" manipulation-point="9717,5446,-1157" manipulation-radius="37" tool-zone-1="6540" tool-zone-2="6539" type="chest" use-manipulation-point="n" />
+	<record action-point="9584,6208,-1122" alias="6540_Portal_6536_place" region-point-1="9485,6196,3435" region-point-2="9484,6216,3435" region-point-3="9684,6221,3435" region-point-4="9684,6201,3435" tool-zone-1="6539" tool-zone-2="6540" type="portal" />
+	<record action-point="9711,5500,-1164" action-radius="0" alias="6540_foot_1_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="9711,5500,-1164" manipulation-radius="0" region-point-1="9660,5450,-1182" region-point-2="9645,5528,-1188" region-point-3="9762,5551,-1188" region-point-4="9778,5473,-1181" tool-zone-1="6540" type="foot-switch" use-manipulation-point="n" />
+	<record alias="zone6540.falldeath_place" height="0" type="fall-death" />
+</table>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.265.xml-->
+  <quest alias="q_epic_265" broadcast-category="field" category="epic" completed-list="n" id="265" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:Zone_YukByung" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0319" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_ORakDang_0032" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0122" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0121" party-broadcast="y" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_265_1" zone-1="Zone_YukByung">
+      <mission id="3" required-register-value="1">
+        <case drop-gadget="n" gadget-required="empty" object="npc:CE_CT_Bubgi_0003" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0122" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0121" party-broadcast="y" type="approach" />
+        <case object="npc:CH_CT_ORakDang_0032" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="2">
+        <case drop-gadget="y" gadget="Q_Torchlight_0005" gadget-required="empty" object2="zoneenv2:e_Chest_JeGukbrazier_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Q_Torchlight_0005" gadget-required="empty" object2="zoneenv2:e_Chest_JeGukbrazier_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="Q_Torchlight_0005" gadget-required="carry-and-remove" object2-1="zoneenv2:e_pot_straw_01" object2-2="zoneenv2:e_pot_straw_02" party-broadcast="y" progress-mission="y" skill="Gadget_Q_Torchlight_0005" skill3="Gadget_Q_Torchlight_0005" type="skill" />
+        <case object="npc:CH_CT_JeGukGun_0122" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0121" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0319" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0319" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0122" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0122" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1" reward-1="265_final_set1">
+        <case object="npc:CH_CT_JeGukGun_0124" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_ORakDang_0019" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0320" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_266" />
+    </completion>
+    <transit id="1" zone="zone_yumsek_zekuk_na">
+      <destination mission-step-id="6" zone-index="1" />
+    </transit>
+  </quest>
+</table>

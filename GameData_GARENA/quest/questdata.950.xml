@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.950.xml-->
+  <quest alias="q_epic_950" category="epic" completed-list="y" id="950" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="2" rollback="leave-zone" zone-1="zone_YoungRinBong_Act6">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CE_WB_AkGyoJok_0011" party-broadcast="n" progress-mission="y" quest-decision="qd_950_1" type="talk" />
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_950_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="y" quest-decision="qd_950_3" type="enter-zone" />
+        <case object="zone:zone_GeoAm_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_14" type="enter-zone" />
+        <case object="zone:zone_Yugachon_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_949_1" type="enter-zone" />
+        <case object="npc:CH_WB_BaekWoon_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_950_2" type="enter-zone" />
+        <case object2="zoneenv2:e_button_6000heakchun_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_950_2" type="enter-zone" />
+        <case object="npc:CH_WB_Citizen_0094" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_WB_Citizen_0095" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_950_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_999" />
+    </completion>
+    <transit id="1" zone="StartZone_Default">
+      <destination mission-step-id="1" zone-index="5" />
+      <destination mission-step-id="2" zone-index="5" />
+      <destination mission-step-id="3" zone-index="5" />
+      <destination mission-step-id="4" zone-index="5" />
+      <destination mission-step-id="5" zone-index="5" />
+      <destination mission-step-id="6" zone-index="5" />
+    </transit>
+    <mission-step id="8">
+      <mission id="9" required-register-value="1" reward-1="950_final_set1">
+        <case object="npc:CE_WB_AkGyoJok_0012" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_950_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object2="zoneenv2:e_button_6000heakchun_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_950_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="7">
+      <mission id="7" required-register-value="1">
+        <case object2="npc:ME_WB_Valak_0003" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_950_2" type="enter-zone" />
+        <case object="npc:CE_WB_AkGyoJok_0012" party-broadcast="n" type="approach" />
+      </mission>
+      <mission id="8" required-register-value="9">
+        <case object="npc:CE_WB_AkGyoJok_0012" party-broadcast="n" type="approach" />
+        <case object="zone:zone_HukChang_Classic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_950_2" type="enter-zone" />
+        <case object2="npc:ME_WB_DarkCrazyTribeA_0017" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeA_0016" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeA_0004" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeA_0003" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeD_0004" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeD_0003" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeCLeader_0005" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeCLeader_0002" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeC_0012" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeC_0007" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeB_0014" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeB_0013" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeB_0005" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeB_0004" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeBigA_0002" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeD_0010" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WB_DarkCrazyTribeBigA_0004" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <transit id="2" zone="zone_SongAmDo_Dun_4_sp">
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <transit id="3" zone="zone_YuGaCHN_1">
+      <destination mission-step-id="1" zone-index="2" />
+    </transit>
+  </quest>
+</table>

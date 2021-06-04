@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5543\zoneenv2placedata.5543.xml-->
+	<record action-point="-13178,-11269,-2055" action-radius="50" alias="e_Chest_barmhaobanggate_02_2_place" manipulation-height-lower="50" manipulation-height-upper="50" manipulation-point="-13178,-11269,-2055" manipulation-radius="50" tool-zone-1="5541" tool-zone-2="5540" tool-zone-3="5543" type="gate" use-manipulation-point="n" />
+	<record action-point="-11971,-11386,-2095" action-radius="50" alias="e_Chest_barmhaobanggate_01_2_place" manipulation-height-lower="50" manipulation-height-upper="50" manipulation-point="-11971,-11386,-2095" manipulation-radius="50" tool-zone-1="5541" tool-zone-2="5540" tool-zone-3="5543" type="gate" use-manipulation-point="n" />
+	<record action-point="-13234,-11143,-2016" action-radius="0" alias="5543_foot_1_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="-13234,-11143,-2016" manipulation-radius="0" region-point-1="-13321,-11272,-1405" region-point-2="-13362,-11055,-1409" region-point-3="-13146,-11014,-1419" region-point-4="-13105,-11230,-2067" tool-zone-1="5543" type="foot-switch" use-manipulation-point="n" />
+	<record action-point="-13113,-11377,-2048" action-radius="0" alias="5543_foot_2_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="-13113,-11377,-2048" manipulation-radius="0" region-point-1="-13201,-11506,-2068" region-point-2="-13242,-11290,-1409" region-point-3="-13026,-11248,-1439" region-point-4="-12985,-11464,10897" tool-zone-1="5543" type="foot-switch" use-manipulation-point="n" />
+	<record action-point="-14230,-11333,-1725" alias="5543_portal_5500_place" region-point-1="-14235,-11415,10911" region-point-2="-14264,-11258,-1625" region-point-3="-14225,-11250,-1553" region-point-4="-14196,-11408,10911" tool-zone-1="5541" tool-zone-2="5540" tool-zone-3="5543" type="portal" />
+	<record alias="zone5543.falldeath_place" height="0" type="fall-death" />
+</table>

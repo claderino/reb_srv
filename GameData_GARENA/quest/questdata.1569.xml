@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1569.xml-->
+  <quest alias="q_sub_1569" broadcast-category="field" category="normal" id="1569" max-repeat="1" reset-by-acquire-time="daily" reset-type="daily" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_epic_1514" preceding-quest-check="and">
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:ch_sb_geonwon_0167" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:ch_sb_geonwon_0167" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="8">
+        <case object2="zoneenv2:e_chest_6170_cornel_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6170_cornel_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6170_cornel_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6170_cornel_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6170_cornel_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6170_cornel_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6170_cornel_07" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6170_cornel_08" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6170_cornel_09" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_chest_6170_cornel_10" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1569_final_set1" reward-2="1569_final_set2">
+        <case completion-count="1" completion-count-op="lt" object="npc:ch_sb_geonwon_0167" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+        <case completion-count="1" object="npc:ch_sb_geonwon_0167" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

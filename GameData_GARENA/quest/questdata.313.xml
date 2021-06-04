@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.313.xml-->
+  <quest alias="q_epic_313" broadcast-category="field" category="epic" completed-list="y" district-1="jeryoungrim" id="313" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_suryendonggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_313_1" type="enter-zone" />
+        <case object="npc:ch_hongsam_0001" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="npc:CE_JR_DokChoGeoSa_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2" quest-decision="qd_313_2" zone-1="zone_suryendonggul">
+      <mission id="2" required-register-value="1">
+        <case convoy="epic_313_con_1" object="npc:ch_hongsam_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_313_8" type="talk" />
+        <case object="zone:zone_suryendonggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_313_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3" rollback="leave-world">
+      <mission id="3" required-register-value="1">
+        <case convoy="epic_313_con_1" object="zone:zone_suryendonggul" party-broadcast="n" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail quest-decision="qd_313_1" rollback-step-id="2" zone-1="zone_suryendonggul">
+        <case convoy="epic_313_con_1" object="zone:zone_suryendonggul" party-broadcast="n" progress-mission="reaction-only" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step completion-type="and" id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_hongsam_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_suryendonggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_313_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="5">
+      <mission id="5" required-register-value="1">
+        <case object="zoneenv:e_footswitch_309_1_finish" object2="zoneenv2:e_footswitch_309_1_finish" party-broadcast="n" progress-mission="y" quest-decision="qd_313_4" type="env-entered" />
+        <case object="zone:zone_suryendonggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_313_6" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="6">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_suryengol" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CH_DokChoGeoSa_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_494" />
+    </completion>
+    <mission-step completion-type="and" id="7">
+      <mission id="7" required-register-value="1" reward-1="313_middle_set1">
+        <case object="npc:CH_DokChoGeoSa_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_beonyang_0003" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <tutorial-case object="zoneenv:airdash_giyeon_03_a" object2="zoneenv2:airdash_giyeon_03_a" progress-mission="y" type="airdash" />
+        <case object="zoneenv:2300_footswitch_313_16" object2="zoneenv2:2300_footswitch_313_16" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_15" object2="zoneenv2:2300_footswitch_313_15" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_14" object2="zoneenv2:2300_footswitch_313_14" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_13" object2="zoneenv2:2300_footswitch_313_13" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="npc:CH_DokChoGeoSa_0001" party-broadcast="n" type="approach" />
+        <case object="npc:ch_beonyang_0003" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <tutorial-case object="zoneenv:airdash_giyeon_08_a" object2="zoneenv2:airdash_giyeon_08_a" progress-mission="y" type="airdash" />
+        <case object="zoneenv:2300_footswitch_313_1" object2="zoneenv2:2300_footswitch_313_1" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_2" object2="zoneenv2:2300_footswitch_313_2" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_3" object2="zoneenv2:2300_footswitch_313_3" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_4" object2="zoneenv2:2300_footswitch_313_4" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="npc:ch_beonyang_0003" party-broadcast="n" type="approach" />
+        <case object="npc:ch_beonyang_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_DokChoGeoSa_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <tutorial-case object="zoneenv:airdash_giyeon_09_a" object2="zoneenv2:airdash_giyeon_09_a" progress-mission="y" type="airdash" />
+        <case object="zoneenv:2300_footswitch_313_5" object2="zoneenv2:2300_footswitch_313_5" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_6" object2="zoneenv2:2300_footswitch_313_6" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_7" object2="zoneenv2:2300_footswitch_313_7" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_8" object2="zoneenv2:2300_footswitch_313_8" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="npc:ch_beonyang_0004" party-broadcast="n" type="approach" />
+        <case object="npc:ch_beonyang_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_BeonA_0004" party-broadcast="n" type="approach" />
+        <case object="npc:ch_beonyang_0003" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1" reward-1="313_final_set1">
+        <case object="npc:CH_BeonA_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zoneenv:2300_footswitch_313_9" object2="zoneenv2:2300_footswitch_313_9" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_10" object2="zoneenv2:2300_footswitch_313_10" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_11" object2="zoneenv2:2300_footswitch_313_11" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="zoneenv:2300_footswitch_313_12" object2="zoneenv2:2300_footswitch_313_12" party-broadcast="n" progress-mission="n" type="env-entered" />
+        <case object="npc:ch_beonyang_0005" party-broadcast="n" type="approach" />
+        <case object="npc:ch_beonyang_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

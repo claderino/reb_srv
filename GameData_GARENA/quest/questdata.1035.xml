@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1035.xml-->
+  <quest alias="q_sub_1035" category="normal" district-1="suwal" id="1035" max-repeat="1" save-type="all">
+    <acquisition level="43" preceding-quest-1="q_epic_912" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1" retired="y">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:me_hyeolpung_0004" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object2="npc:me_runemechafiregorillaa_0001" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object2="npc:me_runemechafiregorillaa_0002" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="4" required-register-value="1">
+        <case object2="npc:me_nakwondaesung_0002" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="5" required-register-value="1">
+        <case object2="npc:me_spiderqueen_0001" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="6" required-register-value="1" reward-1="1035_final_set1">
+        <case object="npc:ch_donghae_a_0001" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_donghae_chungkak_a_01_d">
+      <complete zone-index="1" />
+    </transit>
+  </quest>
+</table>

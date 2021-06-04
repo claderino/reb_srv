@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.825.xml-->
+  <quest alias="q_sub_825" broadcast-category="field" category="normal" id="825" max-repeat="1" save-type="all">
+    <acquisition level="45" preceding-quest-1="q_sub_814" preceding-quest-2="q_sub_814" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" object="npc:CH_CT_Monk_0006" party-broadcast="n" type="talk" />
+      <case object="npc:CE_CT_SaOhJang_0004" party-broadcast="n" type="approach" />
+    </acquisition>
+    <mission-step id="1" rollback="none">
+      <mission id="1" required-register-value="1" reward-1="825_final_set1">
+        <case drop-gadget="y" gadget-required="empty" object2="npc:ME_CT_DarkCrazyTribeB_0008" party-broadcast="n" prob="100" progress-mission="reaction-only" type="killed" />
+        <case gadget="Q_Club_0001" gadget-required="carry-and-remove" object="npc:CE_CT_SaOhJang_0004" party-broadcast="n" prob="100" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_Monk_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

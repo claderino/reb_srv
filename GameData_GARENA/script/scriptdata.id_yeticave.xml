@@ -1,0 +1,1727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.id_yeticave.xml-->
+  
+  
+  
+  
+  <script alias="ME_C3_YettyCaveBoss_0002_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 스폰" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 전투시작" type="debug-trace" />
+        
+        <reaction reset-stage="ME_C3_YettyCaveBoss_0002_RS_CombatStart" target="event:npc-combat-start:npc" type="reset-stage" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="zonenpcsquad:s_5911_20:1" type="invoke-effect" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="zonenpcsquad:s_5911_20:2" type="invoke-effect" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="zonenpcsquad:s_5911_20:3" type="invoke-effect" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="zonenpcsquad:s_5911_20:4" type="invoke-effect" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="zonenpcsquad:s_5911_20:5" type="invoke-effect" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="zonenpcsquad:s_5911_20:6" type="invoke-effect" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="zonenpcsquad:s_5911_20:7" type="invoke-effect" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="zonenpcsquad:s_5911_20:8" type="invoke-effect" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="zonenpcsquad:s_5911_20:9" type="invoke-effect" />
+        
+        <reaction enable="n" target="zoneenv:AirDash_5911yongmak_2_a" target2="zoneenv2spawn:AirDash_5911yongmak_2_a_spawn" type="set-env-enable" />
+        
+        <reaction from="event:npc-combat-start:npc" social="ME_C3_YettyCaveBoss_0002_combatstart" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter op="le" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="1" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter op="le" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="2" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter op="le" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="3" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+        <filter op="le" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="4" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="5" />
+        <filter op="le" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="5" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+        <filter op="le" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="6" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+        <filter op="le" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="7" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+        <filter op="le" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="8" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기파동 그만" type="debug-trace" />
+        
+        <reaction effect="MH_common_CasterSkillBlock" target="event:npc-special:npc" type="invoke-effect" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_Dispel_modify-ability-71" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 고드름 낙하" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_off" type="play-surround-social" />
+        
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5911_20" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5911_21" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5911_22" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5911_23" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5911_24" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5911_25" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5911_26" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5911_27" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5911_28" type="set-npc-brain" />
+        <reaction effect-type="burrow" target="zonenpcspawn:a_5911_20" type="dispel-by-type" />
+        <reaction effect-type="burrow" target="zonenpcspawn:a_5911_21" type="dispel-by-type" />
+        <reaction effect-type="burrow" target="zonenpcspawn:a_5911_22" type="dispel-by-type" />
+        <reaction effect-type="burrow" target="zonenpcspawn:a_5911_23" type="dispel-by-type" />
+        <reaction effect-type="burrow" target="zonenpcspawn:a_5911_24" type="dispel-by-type" />
+        <reaction effect-type="burrow" target="zonenpcspawn:a_5911_25" type="dispel-by-type" />
+        <reaction effect-type="burrow" target="zonenpcspawn:a_5911_26" type="dispel-by-type" />
+        <reaction effect-type="burrow" target="zonenpcspawn:a_5911_27" type="dispel-by-type" />
+        <reaction effect-type="burrow" target="zonenpcspawn:a_5911_28" type="dispel-by-type" />
+        <reaction effect-type="fast-freezing" target="zonenpcspawn:a_5911_20" type="dispel-by-type" />
+        <reaction effect-type="fast-freezing" target="zonenpcspawn:a_5911_21" type="dispel-by-type" />
+        <reaction effect-type="fast-freezing" target="zonenpcspawn:a_5911_22" type="dispel-by-type" />
+        <reaction effect-type="fast-freezing" target="zonenpcspawn:a_5911_23" type="dispel-by-type" />
+        <reaction effect-type="fast-freezing" target="zonenpcspawn:a_5911_24" type="dispel-by-type" />
+        <reaction effect-type="fast-freezing" target="zonenpcspawn:a_5911_25" type="dispel-by-type" />
+        <reaction effect-type="fast-freezing" target="zonenpcspawn:a_5911_26" type="dispel-by-type" />
+        <reaction effect-type="fast-freezing" target="zonenpcspawn:a_5911_27" type="dispel-by-type" />
+        <reaction effect-type="fast-freezing" target="zonenpcspawn:a_5911_28" type="dispel-by-type" />
+        
+        <reaction attack-target="event:npc-special:npc:last-target" end="9" group="zonenpcsquad:s_5911_19" max="1" min="1" spawn-delay="0" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:npc:last-target" end="9" group="zonenpcsquad:s_5911_19" max="1" min="1" spawn-delay="300" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:npc:last-target" end="9" group="zonenpcsquad:s_5911_19" max="1" min="1" spawn-delay="600" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:npc:last-target" end="9" group="zonenpcsquad:s_5911_19" max="1" min="1" spawn-delay="900" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:npc:last-target" end="9" group="zonenpcsquad:s_5911_19" max="1" min="1" spawn-delay="1200" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:npc:last-target" end="9" group="zonenpcsquad:s_5911_19" max="1" min="1" spawn-delay="1500" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:npc:last-target" end="9" group="zonenpcsquad:s_5911_19" max="1" min="1" spawn-delay="1800" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:npc:last-target" end="9" group="zonenpcsquad:s_5911_19" max="1" min="1" spawn-delay="2000" spawn-radius="0" start="2" type="spawn-random-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_5911_19" type="set-party-number" />
+        
+        <reaction effect="ME_BEB_B1_SnowManBoss_Dispel_modify-ability-71" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="11" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 고드름 흡수" type="debug-trace" />
+        
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_5911_30" type="invoke-effect" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_5911_31" type="invoke-effect" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_5911_32" type="invoke-effect" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_5911_33" type="invoke-effect" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_5911_34" type="invoke-effect" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_5911_35" type="invoke-effect" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_5911_36" type="invoke-effect" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_5911_37" type="invoke-effect" />
+        <reaction special-id="2" target="zonenpcspawn:a_5911_30" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_5911_31" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_5911_32" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_5911_33" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_5911_34" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_5911_35" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_5911_36" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_5911_37" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="12" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 동파지진 간헐천 스폰" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:npc:nearest-target" spawn-1="a_5911_29" spawn-delay="4000" spawn-radius="0" spawn-target="event:npc-special:npc" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction end="9" group="zonenpcsquad:s_5911_20" max="8" min="8" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction end="9" group="zonenpcsquad:s_5911_20" max="7" min="7" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction end="9" group="zonenpcsquad:s_5911_20" max="6" min="6" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction end="9" group="zonenpcsquad:s_5911_20" max="5" min="5" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction end="9" group="zonenpcsquad:s_5911_20" max="4" min="4" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction end="9" group="zonenpcsquad:s_5911_20" max="3" min="3" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="7" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction end="9" group="zonenpcsquad:s_5911_20" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="8" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction end="9" group="zonenpcsquad:s_5911_20" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="13" />
+        <filter op="ge" subject="zonenpcsquad:s_5911_19:reg-2" subject2="zonenpcsquad:s_5911_19:reg-2" type="number" value="9" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_on" type="play-surround-social" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="14" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기 1개 흡수" type="debug-trace" />
+        
+        <reaction from="event:npc-special:npc" social="ME_C3_YettyCaveBoss_0002_battle_03" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="14" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기 2개 흡수" type="debug-trace" />
+        
+        <reaction from="event:npc-special:npc" social="ME_C3_YettyCaveBoss_0002_battle_04" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="14" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기 3개 흡수" type="debug-trace" />
+        
+        <reaction from="event:npc-special:npc" social="ME_C3_YettyCaveBoss_0002_battle_05" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="14" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기 4개 흡수" type="debug-trace" />
+        
+        <reaction from="event:npc-special:npc" social="ME_C3_YettyCaveBoss_0002_battle_06" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="14" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기 5개 흡수" type="debug-trace" />
+        
+        <reaction from="event:npc-special:npc" social="ME_C3_YettyCaveBoss_0002_battle_07" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="14" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기 6개 흡수" type="debug-trace" />
+        
+        <reaction from="event:npc-special:npc" social="ME_C3_YettyCaveBoss_0002_battle_08" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="14" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="7" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기 7개 흡수" type="debug-trace" />
+        
+        <reaction from="event:npc-special:npc" social="ME_C3_YettyCaveBoss_0002_battle_09" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="14" />
+        <filter op="eq" subject="zonenpcsquad:s_5911_19:reg-1" subject2="zonenpcsquad:s_5911_19:reg-1" type="number" value="8" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 냉기 8개 흡수" type="debug-trace" />
+        
+        <reaction from="event:npc-special:npc" social="ME_C3_YettyCaveBoss_0002_battle_10" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="15" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 열기흡수 키즈멧 on" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_heat_on" type="play-surround-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="16" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 열기흡수 키즈멧 off" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_heat_off" type="play-surround-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="20" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 1페이즈 완료" type="debug-trace" />
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 90% 스페셜 attacked" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="70" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 70% 스페셜 attacked" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="necostar 초롱설인 전투 종료 초기화" type="debug-trace" />
+        
+        <reaction reset-stage="ME_C3_YettyCaveBoss_0002_RS_CombatEnd" target="event:npc-combat-end:npc" type="reset-stage" />
+        <reaction target="event:npc-combat-end:npc" target2="event:npc-combat-end:npc" type="heal-max" />
+        <reaction target="event:npc-combat-end:npc" type="reset-npc-all-hate" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_Dispel_modify-ability-71" target="event:npc-combat-end:npc" type="invoke-effect" />
+        
+        <reaction enable="y" target="zoneenv:AirDash_5911yongmak_2_a" target2="zoneenv2spawn:AirDash_5911yongmak_2_a_spawn" type="set-env-enable" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5911_29" type="despawn-npc" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_off" type="play-surround-social" />
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_heat_off" type="play-surround-social" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      
+      <reaction-set probability="95">
+        
+        <reaction reset-stage="ME_C3_YettyCaveBoss_0002_RS_Killed" target="event:killed:defender" type="reset-stage" />
+        
+        <reaction enable="y" target="zoneenv:AirDash_5911yongmak_2_a" target2="zoneenv2spawn:AirDash_5911yongmak_2_a_spawn" type="set-env-enable" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5911_29" type="despawn-npc" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_off" type="play-surround-social" />
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_heat_off" type="play-surround-social" />
+        
+        <reaction enable="y" target="zoneenv:e_button_5911yongmak" target2="zoneenv2spawn:e_button_5911yongmak_spawn" type="set-env-enable" />
+      </reaction-set>
+      
+      <reaction-set probability="5">
+        
+        <reaction reset-stage="ME_C3_YettyCaveBoss_0002_RS_Killed" target="event:killed:defender" type="reset-stage" />
+        
+        <reaction enable="y" target="zoneenv:AirDash_5911yongmak_2_a" target2="zoneenv2spawn:AirDash_5911yongmak_2_a_spawn" type="set-env-enable" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5911_29" type="despawn-npc" />
+        
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_Chilly_off" type="play-surround-social" />
+        <reaction from="zonenpcspawn:a_5911_19" social="Absorb_heat_off" type="play-surround-social" />
+        
+        <reaction spawn-1="a_5911_258" spawn-delay="5000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="ME_BEB_R0_Dummy_None_AbsorbedCold_Stack" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인이 고드름 흡수했다" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_5911_19" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_C3_Dummy_0144_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 고드름 스폰" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction special-id="1" target="event:npc-spawn:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 고드름 낙하 끝 장판show 붙이자" type="debug-trace" />
+        
+        <reaction caster="event:npc-special:npc" effect="ME_BEB_B1_SnowManBoss_Dispel_modify-ability-71" target="event:npc-special:npc" type="invoke-effect" />
+        <reaction caster="event:npc-special:npc" effect="ME_BEB_R0_Dummy_None_IceSmog_Flag" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 고드름 냉기흡수 끝" type="debug-trace" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Gadget_RedBall_In01_damage" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 고드름 NPC 가젯에 맞았다" type="debug-trace" />
+        <reaction effect="MH_common_CasterSkillBlock" target="event:invoked-effect:npc" type="invoke-effect" />
+        <reaction caster="event:invoked-effect:npc" effect="ME_BEB_B1_SnowManBoss_Dispel_modify-ability-71" target="event:invoked-effect:npc" type="invoke-effect" />
+        <reaction despawn-force="y" despawn-social-1="ME_C3_Dummy_0144_despawn" respawn-after-despawn="n" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+        <filter subject="event:attack:defender" subject2="event:attack:defender" type="pc" />
+        <filter field="hp" op="ge" subject="event:attack:defender" subject2="event:attack:defender" type="prop" value="1" />
+        
+        <filter flag="y" flagtype="npc-state-3" subject="event:attack:defender" subject2="event:attack:defender" type="effect-flag" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 고드름 PC를 공격했다." type="debug-trace" />
+        <reaction effect="MH_common_CasterSkillBlock" target="event:attack:attacker" type="invoke-effect" />
+        <reaction caster="event:attack:attacker" effect="ME_BEB_B1_SnowManBoss_Dispel_modify-ability-71" target="event:attack:attacker" type="invoke-effect" />
+        <reaction despawn-force="y" despawn-social-1="ME_C3_Dummy_0144_despawn" respawn-after-despawn="n" target-1="event:attack:attacker" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_C3_Dummy_0145_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 간헐천 스폰" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction special-id="1" target="event:npc-spawn:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 간헐천 증기 끝" type="debug-trace" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_C3_Yetty_0001_ai">
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="10">
+        <reaction from="event:npc-combat-start:npc" social="ME_C3_Yetty_0001_battle" type="play-social" />
+      </reaction-set>
+      <reaction-set probability="10">
+        <reaction from="event:npc-combat-start:npc" social="ME_C3_Yetty_0001_combatstart" type="play-social" />
+      </reaction-set>
+      <reaction-set probability="10">
+        <reaction from="event:npc-combat-start:npc" social="ME_C3_Yetty_0001_soc" type="play-social" />
+      </reaction-set>
+      <reaction-set probability="70">
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter index="0" party="zonenpcsquad:s_5911_39" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter index="0" party="zonenpcsquad:s_5911_44" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 미풍설인 우다다 배회시작" type="debug-trace" />
+        
+        <reaction seq="ME_C3_NPC2_Movearound_peace" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_C3_Bear_0001_ai">
+  </script>
+  
+  <script alias="ME_C3_SilverSabelTiger_0002_ai">
+  </script>
+  
+  <script alias="ME_C3_GolemB_0001_ai">
+  </script>
+  
+  <script alias="ME_C3_MudSoldierBoss_0003_ai">
+  </script>
+  
+  <script alias="ME_C3_Haetae_0003_ai">
+  </script>
+  
+  <script alias="ME_C3_Yetty_0002_ai">
+  </script>
+  
+  <script alias="ME_C3_Yetty_0003_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 추바로 스폰" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 힘쎈 추바로 전투시작 첫번째 공격자에게 어그로 많이" type="debug-trace" />
+        
+        <reaction from="event:npc-combat-start:npc" social="ME_C3_Yetty_0003_soc" type="play-social" />
+        <reaction amount="10000" opponent="event:npc-combat-start:target" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_5911_148" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        
+        <reaction despawn-force="n" group-1="zonenpcsquad:s_5911_78" group-2="zonenpcsquad:s_5911_83" group-3="zonenpcsquad:s_5911_88" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction attack-target="event:npc-combat-start:target" end="1" group="zonenpcsquad:s_5911_69" max="1" min="1" spawn-delay="0" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-combat-start:target" end="2" group="zonenpcsquad:s_5911_69" max="1" min="1" spawn-delay="400" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-combat-start:target" end="3" group="zonenpcsquad:s_5911_69" max="1" min="1" spawn-delay="800" spawn-radius="0" start="3" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-combat-start:target" end="4" group="zonenpcsquad:s_5911_69" max="1" min="1" spawn-delay="1200" spawn-radius="0" start="4" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-combat-start:target" end="5" group="zonenpcsquad:s_5911_69" max="1" min="1" spawn-delay="1600" spawn-radius="0" start="5" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-combat-start:target" end="6" group="zonenpcsquad:s_5911_69" max="1" min="1" spawn-delay="2000" spawn-radius="0" start="6" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Gadget_SnowBall_In_01_Damage" />
+        <filter op="lt" subject="event:invoked-effect:npc:reg-1" subject2="event:invoked-effect:npc:reg-1" type="number" value="10" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 추바로 맞았다" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:invoked-effect:npc" type="diff-npc-number" />
+        <reaction amount="2" opponent="event:invoked-effect:invoker" target="event:invoked-effect:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Gadget_SnowBall_In_01_Damage" />
+        <filter op="eq" subject="event:invoked-effect:npc:reg-1" subject2="event:invoked-effect:npc:reg-1" type="number" value="10" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 추바로 추락한다" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:invoked-effect:npc" type="diff-npc-number" />
+        <reaction caster="event:invoked-effect:npc" effect="ME_BEB_N1_SnowManB_NPC_knockbackD" target="event:invoked-effect:npc" type="invoke-effect" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_69" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction from="event:invoked-effect:npc" social="ME_C3_Yetty_0003_battle" type="play-social" />
+        
+        <reaction opponent="zonenpcspawn:a_5911_148" target="zonenpcspawn:a_3072_2" type="reset-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="necostar 추바로 전투 종료 초기화" type="debug-trace" />
+        <reaction target="event:npc-combat-end:npc" target2="event:npc-combat-end:npc" type="heal-max" />
+        <reaction target="event:npc-combat-end:npc" type="reset-npc-all-hate" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_69" respawn-after-despawn="n" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 추바로 사망" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="event:killed:defender" type="set-npc-number" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_3" group-2="zonenpcsquad:s_5911_9" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction state="open" state2="open" target="zoneenv:e_gate_5911door_01" target2="zoneenv2spawn:e_gate_5911door_01_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_5911_93" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_98" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_103" spawn-delay="0" type="spawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_69" respawn-after-despawn="n" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_C3_KangSiFat_0003_ai">
+  </script>
+  
+  <script alias="ME_C3_GolemLeaderIce_0001_ai">
+  </script>
+  
+  <script alias="MH_C3_YettyCaveBoss_0001_ai">
+  </script>
+  
+  <script alias="ME_C3_HolyMushroom_0001_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 뱀버섯 스폰" type="debug-trace" />
+        <reaction effect="ME_BEB_R0_Common_Burrow" target="event:npc-spawn:npc" type="invoke-effect" />
+        
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction effect="ME_BEB_B1_SnowManBoss_None_Roar_fastfreezing" target="event:npc-spawn:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_C3_BabaA_0001_ai">
+  </script>
+  
+  <script alias="ME_C3_BabaB_0001_ai">
+  </script>
+  
+  <script alias="ME_C3_BabaB2_0001_ai">
+  </script>
+  
+  <script alias="ME_C3_BabaC_0001_ai">
+  </script>
+  
+  <script alias="ME_C3_BabaLeader_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 설인동굴 2넴드 스폰" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 설인동굴 2넴드 전투시작" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_123" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_124" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_125" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_127" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_128" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_129" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_130" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_131" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_132" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_133" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_134" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_135" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_137" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_138" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_139" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_140" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_141" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_142" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_143" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_144" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_5911_145" type="diff-npc-hate" />
+        
+        <reaction despawn-force="n" group-1="zonenpcsquad:s_5911_93" group-2="zonenpcsquad:s_5911_98" group-3="zonenpcsquad:s_5911_103" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction from="event:npc-combat-start:npc" social="ME_C3_Yetty_0002_combatstart" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 설인동굴 2넴드 hp 90% 우르르 스폰" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction spawn-1="a_5911_39" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_40" spawn-delay="300" type="spawn-npc" />
+        <reaction spawn-1="a_5911_41" spawn-delay="500" type="spawn-npc" />
+        <reaction spawn-1="a_5911_42" spawn-delay="800" type="spawn-npc" />
+        <reaction spawn-1="a_5911_43" spawn-delay="1000" type="spawn-npc" />
+        <reaction spawn-1="a_5911_44" spawn-delay="1300" type="spawn-npc" />
+        <reaction spawn-1="a_5911_45" spawn-delay="1500" type="spawn-npc" />
+        <reaction spawn-1="a_5911_46" spawn-delay="1800" type="spawn-npc" />
+        <reaction spawn-1="a_5911_47" spawn-delay="2000" type="spawn-npc" />
+        <reaction spawn-1="a_5911_48" spawn-delay="2300" type="spawn-npc" />
+        <reaction spawn-1="a_5911_54" spawn-delay="2500" type="spawn-npc" />
+        <reaction spawn-1="a_5911_55" spawn-delay="2800" type="spawn-npc" />
+        <reaction spawn-1="a_5911_56" spawn-delay="3000" type="spawn-npc" />
+        <reaction spawn-1="a_5911_57" spawn-delay="3300" type="spawn-npc" />
+        <reaction spawn-1="a_5911_58" spawn-delay="3500" type="spawn-npc" />
+        <reaction spawn-1="a_5911_59" spawn-delay="3800" type="spawn-npc" />
+        <reaction spawn-1="a_5911_60" spawn-delay="4000" type="spawn-npc" />
+        <reaction spawn-1="a_5911_61" spawn-delay="4300" type="spawn-npc" />
+        <reaction spawn-1="a_5911_62" spawn-delay="4500" type="spawn-npc" />
+        <reaction spawn-1="a_5911_63" spawn-delay="4800" type="spawn-npc" />
+        <reaction spawn-1="a_5911_64" spawn-delay="5000" type="spawn-npc" />
+        <reaction spawn-1="a_5911_65" spawn-delay="5300" type="spawn-npc" />
+        <reaction spawn-1="a_5911_66" spawn-delay="5500" type="spawn-npc" />
+        <reaction spawn-1="a_5911_67" spawn-delay="5800" type="spawn-npc" />
+        <reaction spawn-1="a_5911_68" spawn-delay="6000" type="spawn-npc" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_123" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_124" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_125" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_127" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_128" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_129" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_130" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_131" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_132" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_133" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_134" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_135" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_137" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_138" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_139" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_140" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_141" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_142" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_143" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_144" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_145" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="70" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="50" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="2" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="30" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 부하들 hate 공유" type="debug-trace" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_123" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_124" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_125" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_127" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_128" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_129" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_130" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_131" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_132" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_133" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_134" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_135" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_137" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_138" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_139" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_140" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_141" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_142" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_143" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_144" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="zonenpcspawn:a_5911_145" type="diff-npc-hate" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 설인동굴 2넴드 사망" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="event:killed:defender" type="set-npc-number" />
+        
+        <reaction state="open" state2="open" target="zoneenv:e_gate_5911door_02" target2="zoneenv2spawn:e_gate_5911door_02_spawn" type="set-env-state" />
+        
+        
+        
+        <reaction spawn-1="a_5911_108" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_113" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_118" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_C3_Icewing_0001_ai">
+  </script>
+  
+  <script alias="ME_C3_SnowBall_0003_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 큰 눈덩이 나타났다" type="debug-trace" />
+        <reaction amount="10000" opponent="event:npc-spawn:npc:npc-party:1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="ME_BEA_R0_Snow_None_Rush_Arrived" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 눈덩이 벽 끝까지 도착" type="debug-trace" />
+        <reaction despawn-force="y" despawn-social-1="ME_C3_SnowBall_0001_despawn" respawn-after-despawn="n" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_C3_SnowBall_0004_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 작은 눈덩이 나타났다" type="debug-trace" />
+        <reaction amount="10000" opponent="event:npc-spawn:npc:npc-party:1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="ME_BEA_R0_Snow_None_Rush_Arrived" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 눈덩이 벽 끝까지 도착" type="debug-trace" />
+        <reaction despawn-force="y" despawn-social-1="ME_C3_SnowBall_0001_despawn" respawn-after-despawn="n" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_C3_Dummy_0146_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_5911_78" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 눈덩이구르기용 1통로 투명NPC 스폰" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attack-target="zonenpcspawn:a_5911_78" end="5" group="zonenpcsquad:s_5911_78" max="1" min="1" spawn-delay="4000" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_83" end="5" group="zonenpcsquad:s_5911_83" max="1" min="1" spawn-delay="0" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_88" end="5" group="zonenpcsquad:s_5911_88" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="2" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_5911_93" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 눈덩이구르기용 2통로 투명NPC 스폰" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attack-target="zonenpcspawn:a_5911_93" end="5" group="zonenpcsquad:s_5911_93" max="1" min="1" spawn-delay="4000" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_98" end="5" group="zonenpcsquad:s_5911_98" max="1" min="1" spawn-delay="0" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_103" end="5" group="zonenpcsquad:s_5911_103" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="2" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_5911_108" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 눈덩이구르기용 3통로 투명NPC 스폰" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attack-target="zonenpcspawn:a_5911_108" end="5" group="zonenpcsquad:s_5911_108" max="1" min="1" spawn-delay="4000" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_113" end="5" group="zonenpcsquad:s_5911_113" max="1" min="1" spawn-delay="0" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_118" end="5" group="zonenpcsquad:s_5911_118" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="2" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 눈덩이구르기용 나머지 투명Npc 스폰 무적화" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_5911_78" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 1번통로 중앙 눈덩이 제어용 투명NPC act-paused" type="debug-trace" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction attack-target="zonenpcspawn:a_5911_78" end="5" group="zonenpcsquad:s_5911_78" max="1" min="1" spawn-delay="4000" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_83" end="5" group="zonenpcsquad:s_5911_83" max="1" min="1" spawn-delay="0" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_88" end="5" group="zonenpcsquad:s_5911_88" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="2" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_5911_93" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 2번통로 중앙 눈덩이 제어용 투명NPC act-paused" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_5911_93" end="5" group="zonenpcsquad:s_5911_93" max="1" min="1" spawn-delay="4000" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_98" end="5" group="zonenpcsquad:s_5911_98" max="1" min="1" spawn-delay="0" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_103" end="5" group="zonenpcsquad:s_5911_103" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_5911_108" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 3번통로 중앙 눈덩이 제어용 투명NPC act-paused" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_5911_108" end="5" group="zonenpcsquad:s_5911_108" max="1" min="1" spawn-delay="4000" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_113" end="5" group="zonenpcsquad:s_5911_113" max="1" min="1" spawn-delay="0" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction attack-target="zonenpcspawn:a_5911_118" end="5" group="zonenpcsquad:s_5911_118" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="2" type="spawn-random-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_C3_Dummy_0146_act" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction text="neco 눈덩이 act-finished" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_5911footswitch_01_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 1통로 눈덩이 구르기 시작" type="debug-trace" />
+        <reaction enable="n" target="zoneenv:e_5911footswitch_01" target2="zoneenv2spawn:e_5911footswitch_01_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_5911_78" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_83" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_88" spawn-delay="0" type="spawn-npc" />
+        
+        <reaction end="5" group="zonenpcsquad:s_5911_154" max="1" min="1" spawn-delay="0" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_154" max="1" min="1" spawn-delay="2000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_154" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_154" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_154" max="1" min="1" spawn-delay="11000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_159" max="1" min="1" spawn-delay="13000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_159" max="1" min="1" spawn-delay="16000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_159" max="1" min="1" spawn-delay="19000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_159" max="1" min="1" spawn-delay="22000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_159" max="1" min="1" spawn-delay="25000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_164" max="1" min="1" spawn-delay="1000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_164" max="1" min="1" spawn-delay="3000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_164" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_164" max="1" min="1" spawn-delay="9000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_164" max="1" min="1" spawn-delay="1400" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_169" max="1" min="1" spawn-delay="17000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_169" max="1" min="1" spawn-delay="21000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_169" max="1" min="1" spawn-delay="25000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_169" max="1" min="1" spawn-delay="29000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_169" max="1" min="1" spawn-delay="34000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_174" max="1" min="1" spawn-delay="3000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_174" max="1" min="1" spawn-delay="4000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_174" max="1" min="1" spawn-delay="6000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_174" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_174" max="1" min="1" spawn-delay="10000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_179" max="1" min="1" spawn-delay="12000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_179" max="1" min="1" spawn-delay="14000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_179" max="1" min="1" spawn-delay="16000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_179" max="1" min="1" spawn-delay="18000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_179" max="1" min="1" spawn-delay="20000" spawn-radius="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_5911footswitch_02_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 2통로 눈덩이 구르기 시작" type="debug-trace" />
+        <reaction enable="n" target="zoneenv:e_5911footswitch_02" target2="zoneenv2spawn:e_5911footswitch_02_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_5911_93" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_98" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_103" spawn-delay="0" type="spawn-npc" />
+        
+        <reaction end="5" group="zonenpcsquad:s_5911_184" max="1" min="1" spawn-delay="0" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_184" max="1" min="1" spawn-delay="2000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_184" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_184" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_184" max="1" min="1" spawn-delay="11000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_189" max="1" min="1" spawn-delay="13000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_189" max="1" min="1" spawn-delay="16000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_189" max="1" min="1" spawn-delay="19000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_189" max="1" min="1" spawn-delay="22000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_189" max="1" min="1" spawn-delay="25000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_194" max="1" min="1" spawn-delay="1000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_194" max="1" min="1" spawn-delay="3000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_194" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_194" max="1" min="1" spawn-delay="9000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_194" max="1" min="1" spawn-delay="1400" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_199" max="1" min="1" spawn-delay="17000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_199" max="1" min="1" spawn-delay="21000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_199" max="1" min="1" spawn-delay="25000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_199" max="1" min="1" spawn-delay="29000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_199" max="1" min="1" spawn-delay="34000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_204" max="1" min="1" spawn-delay="3000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_204" max="1" min="1" spawn-delay="4000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_204" max="1" min="1" spawn-delay="6000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_204" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_204" max="1" min="1" spawn-delay="10000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_209" max="1" min="1" spawn-delay="12000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_209" max="1" min="1" spawn-delay="14000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_209" max="1" min="1" spawn-delay="16000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_209" max="1" min="1" spawn-delay="18000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_209" max="1" min="1" spawn-delay="20000" spawn-radius="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_5911footswitch_03_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 3통로 눈덩이 구르기 시작" type="debug-trace" />
+        <reaction enable="n" target="zoneenv:e_5911footswitch_03" target2="zoneenv2spawn:e_5911footswitch_03_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_5911_108" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_113" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_5911_118" spawn-delay="0" type="spawn-npc" />
+        
+        <reaction end="5" group="zonenpcsquad:s_5911_214" max="1" min="1" spawn-delay="0" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_214" max="1" min="1" spawn-delay="2000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_214" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_214" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_214" max="1" min="1" spawn-delay="11000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_219" max="1" min="1" spawn-delay="13000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_219" max="1" min="1" spawn-delay="16000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_219" max="1" min="1" spawn-delay="19000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_219" max="1" min="1" spawn-delay="22000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_219" max="1" min="1" spawn-delay="25000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_224" max="1" min="1" spawn-delay="1000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_224" max="1" min="1" spawn-delay="3000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_224" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_224" max="1" min="1" spawn-delay="9000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_224" max="1" min="1" spawn-delay="1400" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_229" max="1" min="1" spawn-delay="17000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_229" max="1" min="1" spawn-delay="21000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_229" max="1" min="1" spawn-delay="25000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_229" max="1" min="1" spawn-delay="29000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_229" max="1" min="1" spawn-delay="34000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_234" max="1" min="1" spawn-delay="3000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_234" max="1" min="1" spawn-delay="4000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_234" max="1" min="1" spawn-delay="6000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_234" max="1" min="1" spawn-delay="8000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_234" max="1" min="1" spawn-delay="10000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_239" max="1" min="1" spawn-delay="12000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_239" max="1" min="1" spawn-delay="14000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_239" max="1" min="1" spawn-delay="16000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_239" max="1" min="1" spawn-delay="18000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction end="5" group="zonenpcsquad:s_5911_239" max="1" min="1" spawn-delay="20000" spawn-radius="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_5911footswitch_01_end_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 1통로 눈덩이 구르기 끝" type="debug-trace" />
+        <reaction enable="n" target="zoneenv:e_5911footswitch_01_end" target2="zoneenv2spawn:e_5911footswitch_01_end_spawn" type="set-env-enable" />
+        
+        
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_5911footswitch_02_end_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 2통로 눈덩이 구르기 끝" type="debug-trace" />
+        <reaction enable="n" target="zoneenv:e_5911footswitch_02_end" target2="zoneenv2spawn:e_5911footswitch_02_end_spawn" type="set-env-enable" />
+        
+        
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_5911footswitch_03_end_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 3통로 눈덩이 구르기 끝" type="debug-trace" />
+        <reaction enable="n" target="zoneenv:e_5911footswitch_03_end" target2="zoneenv2spawn:e_5911footswitch_03_end_spawn" type="set-env-enable" />
+        
+        
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_5911_Cimematic_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="necostar 초롱설인 시네마틱 시작" type="debug-trace" />
+        <reaction enable="n" target="zoneenv:e_5911_Cimematic" target2="zoneenv2spawn:e_5911_Cimematic_spawn" type="set-env-enable" />
+        
+        <reaction cinematic="I_VC_03" sight="party" to="event:env-entered:creature" type="play-cinematic" />
+        
+        <reaction spawn-1="a_5911_19" spawn-delay="10000" type="spawn-npc" />
+        
+        <reaction end="9" group="zonenpcsquad:s_5911_20" max="9" min="9" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_button_5911yongmak_ai" hanger="object">
+    <decision event="env-manipulated">
+      <filter-set>
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:env-manipulated:pc" type="warp-to-reentrance" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_C3_BabaTotem_0001_ai" hanger="object">
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter spawn="a_5911_75" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="C3_BabaTotem_0001 killed(1 구간) -oes" type="debug-trace" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_78" group-2="zonenpcsquad:s_5911_83" group-3="zonenpcsquad:s_5911_88" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_154" group-2="zonenpcsquad:s_5911_159" group-3="zonenpcsquad:s_5911_164" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_169" group-2="zonenpcsquad:s_5911_174" group-3="zonenpcsquad:s_5911_179" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5911_244" target-2="zonenpcspawn:a_5911_245" target-3="zonenpcspawn:a_5911_246" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter spawn="a_5911_76" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="C3_BabaTotem_0001 killed(2 구간) -oes" type="debug-trace" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_93" group-2="zonenpcsquad:s_5911_98" group-3="zonenpcsquad:s_5911_103" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_184" group-2="zonenpcsquad:s_5911_189" group-3="zonenpcsquad:s_5911_194" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_199" group-2="zonenpcsquad:s_5911_204" group-3="zonenpcsquad:s_5911_209" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5911_247" target-2="zonenpcspawn:a_5911_248" target-3="zonenpcspawn:a_5911_249" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter spawn="a_5911_77" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="C3_BabaTotem_0001 killed(3 구간) -oes" type="debug-trace" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_108" group-2="zonenpcsquad:s_5911_113" group-3="zonenpcsquad:s_5911_118" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_214" group-2="zonenpcsquad:s_5911_219" group-3="zonenpcsquad:s_5911_224" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_229" group-2="zonenpcsquad:s_5911_234" group-3="zonenpcsquad:s_5911_239" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5911_250" target-2="zonenpcspawn:a_5911_251" target-3="zonenpcspawn:a_5911_252" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  
+  
+
+  
+  <script alias="ME_C3_DemonShadowBoss_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="iruka41 가루라 스폰" type="debug-trace" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="n" target="zoneenv:e_Chest_5911hartA_01_1" target2="zoneenv2spawn:e_Chest_5911hartA_01_1_spawn" type="set-env-enable" />
+        <reaction group-1="zonenpcsquad:s_5911_253" spawn-delay="0" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="80" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="25">
+        <reaction text="iruka41 80% 가루라 special-id=2" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+      <reaction-set probability="25">
+        <reaction text="iruka41 80% 가루라 special-id=3" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="3" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+      <reaction-set probability="25">
+        <reaction text="iruka41 80% 가루라 special-id=4" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="4" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+      <reaction-set probability="25">
+        <reaction text="iruka41 80% 가루라 special-id=5" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="40" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="25">
+        <reaction text="iruka41 40% 가루라 special-id=2" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+      <reaction-set probability="25">
+        <reaction text="iruka41 40% 가루라 special-id=3" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="3" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+      <reaction-set probability="25">
+        <reaction text="iruka41 40% 가루라 special-id=4" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="4" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+      <reaction-set probability="25">
+        <reaction text="iruka41 40% 가루라 special-id=5" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="iruka41 가루라 운석 소환 1셋 제외" type="debug-trace" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="2000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="2300" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="2600" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="2900" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="3200" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="3500" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="3800" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="4100" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="4400" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="4700" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="5300" spawn-radius="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="iruka41 가루라 운석 소환 2셋 제외" type="debug-trace" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="2000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="2300" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="2600" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="2900" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="3200" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="3500" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="3800" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="4100" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="4400" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="4700" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="5300" spawn-radius="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="iruka41 가루라 운석 소환 3셋 제외" type="debug-trace" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="2000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="2300" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="2600" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="2900" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="3200" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="3500" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="3800" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="4100" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="4400" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="4700" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_268" max="1" min="1" spawn-delay="5300" spawn-radius="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="iruka41 가루라 운석 소환 4셋 제외" type="debug-trace" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="2000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="2300" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="2600" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="2900" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="3200" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="3500" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="3800" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="4100" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="4400" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_276" max="1" min="1" spawn-delay="4700" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_272" max="1" min="1" spawn-delay="5000" spawn-radius="0" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="4" group="zonenpcsquad:s_5911_264" max="1" min="1" spawn-delay="5300" spawn-radius="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="iruka41 설인의 동굴 가루라 광폭화" type="debug-trace" />
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="heal-max" />
+        <reaction target="event:npc-special:npc" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="iruka41 가루라 전투 종료 부하 디스폰" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_264" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_268" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_272" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_276" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_5911hartA_01_1" target2="zoneenv2spawn:e_Chest_5911hartA_01_1_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_253" respawn-after-despawn="n" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="iruka41 가루라 죽음" type="debug-trace" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_264" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_268" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_272" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_276" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction from="event:killed:defender" social="ME_WA_DemonShadowBoss_0001_msg_02" type="play-social" />
+        
+        <reaction enable="y" target="zoneenv:e_button_5911yongmak" target2="zoneenv2spawn:e_button_5911yongmak_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_5911hartA_01_1" target2="zoneenv2spawn:e_Chest_5911hartA_01_1_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5911_253" respawn-after-despawn="n" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="ME_C3_Dummy_0334_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="iruka41 가루라 운석NPC 스폰" type="debug-trace" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="ME_C3_Dummy_0335_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="iruka41 가루라 헤드라인 더미 스폰" type="debug-trace" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="iruka41 가루라 스폰" type="debug-trace" />
+        <reaction spawn-1="a_5911_257" spawn-delay="0" type="spawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+</table>

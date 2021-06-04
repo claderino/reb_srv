@@ -1,0 +1,2625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata_id_heukryonggyo.xml-->
+
+  
+  
+  
+
+  
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Boss_0001_CS1_Easy" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+      </action>
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Jab" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Jab" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_MultiSwing" skill3="ME_BEF_B1_CrocodileSharkTribeC2_MultiSwing" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash2" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target-area="4750_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_08" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Insight" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Insight" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_05" type="do-social" />
+      <action type="select">
+        <action except-condition="hide" immune-breaker-disable="y" prob="50" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" type="boss-repeater-attack" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" type="use-skill" />
+      </action>
+      
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_15" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellExplosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellExplosion" type="use-skill" />
+      
+      <action duration="1200" event-step="46" type="stay" />
+      
+      
+      <action event-step="78" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Boss_0001_CS2_Easy">
+    
+    <normal combat-distance="1" id="1" special-1="3">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+      </action>
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Jab" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Jab" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_MultiSwing" skill3="ME_BEF_B1_CrocodileSharkTribeC2_MultiSwing" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash2" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="3">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target-area="4750_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_08" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Insight" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Insight" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_05" type="do-social" />
+      <action type="select">
+        <action except-condition="hide" immune-breaker-disable="y" prob="50" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" type="boss-repeater-attack" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" type="use-skill" />
+      </action>
+      
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_15" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellExplosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellExplosion" type="use-skill" />
+      
+      <action duration="1200" event-step="46" type="stay" />
+      
+      
+      <action event-step="78" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_09" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_11" type="do-social" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action arrived-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Finish" blocked-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Parry2" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash" speed="84" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action arrived-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Finish" blocked-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Parry2" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash2" speed="84" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action arrived-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Finish" blocked-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Parry2" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash2" speed="84" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action event-step="64" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target-area="4750_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_10" type="do-social" />
+      <action event-step="65" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      
+      <action except-condition="hide" immune-breaker-disable="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" type="boss-repeater-attack" />
+      <action except-condition="hide" immune-breaker-disable="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" type="boss-repeater-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action event-step="79" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0" min-delay="60000" start-delay="10000">
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_06" type="do-social" />
+      <action duration="1000" type="stay" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" target="event:npc-combat-action:npc:min-hate-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" target="event:npc-combat-action:target" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Boss_0001_CS1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+      </action>
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Jab" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Jab" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_MultiSwing" skill3="ME_BEF_B1_CrocodileSharkTribeC2_MultiSwing" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash2" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target-area="4750_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_08" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Insight" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Insight" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_05" type="do-social" />
+      <action type="select">
+        <action except-condition="hide" immune-breaker-disable="y" prob="50" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" type="boss-repeater-attack" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" type="use-skill" />
+      </action>
+      
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_15" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellExplosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellExplosion" type="use-skill" />
+      
+      <action duration="1200" event-step="46" type="stay" />
+      
+      
+      <action event-step="78" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action event-step="77" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Boss_0001_CS2">
+    
+    <normal combat-distance="1" id="1" special-1="3">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+      </action>
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Jab" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Jab" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Smash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Smash" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_MultiSwing" skill3="ME_BEF_B1_CrocodileSharkTribeC2_MultiSwing" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash2" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="3">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target-area="4750_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_08" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Insight" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Insight" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_05" type="do-social" />
+      <action type="select">
+        <action except-condition="hide" immune-breaker-disable="y" prob="50" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" type="boss-repeater-attack" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath" type="use-skill" />
+      </action>
+      
+      <action event-step="44" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_15" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellExplosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellExplosion" type="use-skill" />
+      
+      <action duration="1200" event-step="46" type="stay" />
+      
+      
+      <action event-step="78" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_09" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_11" type="do-social" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action arrived-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Finish" blocked-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Parry2" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash" speed="84" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action arrived-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Finish" blocked-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Parry2" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash2" speed="84" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Explosion" type="use-skill" />
+      <action arrived-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Finish" blocked-effect="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash_Parry2" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_BoneDash2" speed="84" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      
+      <action event-step="64" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target-area="4750_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_10" type="do-social" />
+      <action event-step="65" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      
+      <action except-condition="hide" immune-breaker-disable="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" type="boss-repeater-attack" />
+      <action except-condition="hide" immune-breaker-disable="y" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire" type="boss-repeater-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target="event:npc-combat-action:target" type="use-skill" />
+      
+      <action event-step="79" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0" min-delay="36000" start-delay="10000">
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_06" type="do-social" />
+      <action duration="1000" type="stay" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" target="event:npc-combat-action:npc:min-hate-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" skill3="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath2" target="event:npc-combat-action:target" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Boss_0001_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Berserk1" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Berserk1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Boss_0001_battle_msg_05" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Dash" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Dash" target-area="4750_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_CrocodileSharkTribeC2_Berserk1" skill3="ME_BEF_B1_CrocodileSharkTribeC2_Berserk1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_0015_CS" hide-seq-start="y">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserShort" skill3="ME_DarkCrazyTribeBigA_None_LaserShort" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DarkCrazyTribeBigA_None_Area360" skill3="ME_DarkCrazyTribeBigA_None_Area360" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserShort" skill3="ME_DarkCrazyTribeBigA_None_LaserShort" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserLong" skill3="ME_DarkCrazyTribeBigA_None_LaserLong" type="use-skill" />
+      
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DarkCrazyTribeBigA_None_Rush" skill3="ME_DarkCrazyTribeBigA_None_Rush" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="10000" start-delay="5000">
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_0015_battle_01" type="do-social" />
+      <action repeat="1" skill="ME_BEF_B1_DarkCrazyTribeBigA_Buffwave1" skill3="ME_BEF_B1_DarkCrazyTribeBigA_Buffwave1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" id="2" max-count="0" min-delay="10000" start-delay="5000">
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_0015_battle_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_DarkCrazyTribeBigA_PullDown" skill3="ME_BEF_B1_DarkCrazyTribeBigA_PullDown" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_buff1" skill3="ME_DarkCrazyTribeBigA_None_buff1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_0016_CS" hide-seq-start="y">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_FrogTribeCLeader_None_Smash" skill3="ME_FrogTribeCLeader_None_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_FrogTribeCLeader_None_MultiSmash" skill3="ME_FrogTribeCLeader_None_MultiSmash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_FrogTribeCLeader_None_PoisonBlow" skill3="ME_BEF_B1_FrogTribeCLeader_None_PoisonBlow" type="use-skill" />
+      <action repeat="1" skill="ME_FrogTribeCLeader_None_DownSmash" skill3="ME_FrogTribeCLeader_None_DownSmash" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_FrogTribeCLeader_None_Destruction" skill3="ME_FrogTribeCLeader_None_Destruction" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_FrogTribeCLeader_None_HeavySwing" skill3="ME_FrogTribeCLeader_None_HeavySwing" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_FrogTribeCLeader_None_Dash" skill3="ME_FrogTribeCLeader_None_Dash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="10000" start-delay="5000">
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_0016_battle_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_FrogTribeCLeader_None_Summon" skill3="ME_FrogTribeCLeader_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_FrogTribeCLeader_None_GhostBlow" skill3="ME_BEF_B1_FrogTribeCLeader_None_GhostBlow" target="zonenpcspawn:a_4750_4:nearest-target" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="10000" start-delay="5000">
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_0016_battle_02" type="do-social" />
+      <action repeat="1" skill="ME_FrogTribeCLeader_None_Dash" skill3="ME_FrogTribeCLeader_None_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_FrogTribeCLeader_None_Dash" skill3="ME_FrogTribeCLeader_None_Dash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_FrogTribeCLeader_None_Dash" skill3="ME_FrogTribeCLeader_None_Dash" target="event:npc-combat-action:target" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="1">
+      <action repeat="1" skill="ME_FrogTribeCLeader_None_Summon" skill3="ME_FrogTribeCLeader_None_Summon" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Dummy_0010_CS" hide-seq-start="y">
+    
+    <normal combat-distance="7" id="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Common_GroundHateUp_Lv1" skill3="MH_Common_GroundHateUp_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_Dummy_BonePrison_SP_Trans" skill3="ME_BEF_B1_Dummy_BonePrison_SP_Trans" target="zonenpcsquad:s_4750_4:1" type="use-skill" />
+      <action duration="1200" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_0014_CS1" hide-seq-start="y" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Common_GroundHateUp" skill3="MH_Common_GroundHateUp" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1500" prob="34" type="stay" />
+        <action duration="2000" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B3_DemonSnake_Line" skill3="ME_BEF_B3_DemonSnake_Line" target="zonenpcspawn:a_4750_4:farthest-target" type="use-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B3_DemonSnake_Line" skill3="ME_BEF_B3_DemonSnake_Line" target="zonenpcspawn:a_4750_4:nearest-target" type="use-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B3_DemonSnake_Line" skill3="ME_BEF_B3_DemonSnake_Line" target="zonenpcspawn:a_4750_4:target" type="use-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B3_DemonSnake_Line" skill3="ME_BEF_B3_DemonSnake_Line" target="zonenpcspawn:a_4750_4:min-hate-target" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_0014_CS2" hide-seq-start="y" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Common_GroundHateUp" skill3="MH_Common_GroundHateUp" type="use-skill" />
+      <action type="select">
+        <action blocked-effect="ME_ID2_Common_Modify_Ability_138_Signal" immune-breaker-disable="y" pass-through="y" prob="25" skill="ME_BEF_B1_IceFireMarble_BossRush" skill3="ME_BEF_B1_IceFireMarble_BossRush" speed="126" target="zonenpcspawn:a_4750_4:farthest-target" type="boss-rush-attack" />
+        <action blocked-effect="ME_ID2_Common_Modify_Ability_138_Signal" immune-breaker-disable="y" pass-through="y" prob="25" skill="ME_BEF_B1_IceFireMarble_BossRush" skill3="ME_BEF_B1_IceFireMarble_BossRush" speed="82" target="zonenpcspawn:a_4750_4:nearest-target" type="boss-rush-attack" />
+        <action blocked-effect="ME_ID2_Common_Modify_Ability_138_Signal" immune-breaker-disable="y" pass-through="y" prob="25" skill="ME_BEF_B1_IceFireMarble_BossRush" skill3="ME_BEF_B1_IceFireMarble_BossRush" speed="107" target="zonenpcspawn:a_4750_4:target" type="boss-rush-attack" />
+        <action blocked-effect="ME_ID2_Common_Modify_Ability_138_Signal" immune-breaker-disable="y" pass-through="y" prob="25" skill="ME_BEF_B1_IceFireMarble_BossRush" skill3="ME_BEF_B1_IceFireMarble_BossRush" speed="88" target="zonenpcspawn:a_4750_4:min-hate-target" type="boss-rush-attack" />
+      </action>
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action type="select">
+        <action duration="1200" prob="33" type="stay" />
+        <action duration="1600" prob="34" type="stay" />
+        <action duration="2000" prob="33" type="stay" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_IceFireMarble_Explosion" skill3="ME_BEF_B1_IceFireMarble_Explosion" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B1_Dummy_BonePrison_SP_Trans" skill3="ME_BEF_B1_Dummy_BonePrison_SP_Trans" target="zonenpcsquad:s_4750_4:1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+
+
+
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Boss_0001_CS_1_Easy" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1" skill3="ME_BEF_B2_ZaKan_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="10" repeat="1" skill="ME_BEF_B2_ZaKan_HalfMoon" skill3="ME_BEF_B2_ZaKan_HalfMoon" type="use-skill" />
+        
+        <action prob="90" repeat="1" skill="ME_BEF_B2_ZaKan_Smash" skill3="ME_BEF_B2_ZaKan_Smash" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1" skill3="ME_BEF_B2_ZaKan_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action prob="90" repeat="1" skill="ME_BEF_B2_ZaKan_Smash" skill3="ME_BEF_B2_ZaKan_Smash" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="10" repeat="1" skill="ME_BEF_B2_ZaKan_HalfMoon" skill3="ME_BEF_B2_ZaKan_HalfMoon" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SplitBlood" skill3="ME_BEF_B2_ZaKan_SplitBlood" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk2" skill3="ME_BEF_B2_ZaKan_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_HalfMoon_fast" skill3="ME_BEF_B2_ZaKan_HalfMoon_fast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_ShadowWalk" skill3="ME_BEF_B2_ZaKan_ShadowWalk" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="15000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="near" immune-breaker-disable="y" type="gather-targets" />      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SplitBlood" skill3="ME_BEF_B2_ZaKan_SplitBlood" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B2_ZaKan_NAtk2" skill3="ME_BEF_B2_ZaKan_NAtk2" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_HalfMoon" skill3="ME_BEF_B2_ZaKan_HalfMoon" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SplitBlood" skill3="ME_BEF_B2_ZaKan_SplitBlood" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk2" skill3="ME_BEF_B2_ZaKan_NAtk2" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_09" type="do-social" />
+      
+      <action duration="5900" immune-breaker-disable="y" stance="2" stance-effect-1="3" type="change-set" weapon="1" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Zakan_Combat_Start" skill3="ME_BEF_B2_Zakan_Combat_Start" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_09" type="do-social" />
+      
+      <action duration="5900" immune-breaker-disable="y" stance="2" stance-effect-1="3" type="change-set" weapon="1" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Boss_0001_CS_2_Easy" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="10" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+        
+        <action prob="90" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_Smash" skill3="ME_BEF_B2_ZaKan_Spell_Smash" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />    
+      
+      <action repeat="1" skill="ME_BEF_B2_ZaKan_Spell_Smash" skill3="ME_BEF_B2_ZaKan_Spell_Smash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_SplitBlood" skill3="ME_BEF_B2_ZaKan_Spell_SplitBlood" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk2" skill3="ME_BEF_B2_ZaKan_Spell_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_HalfMoon_fast" skill3="ME_BEF_B2_ZaKan_Spell_HalfMoon_fast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_BlackWind" skill3="ME_BEF_B2_ZaKan_Spell_BlackWind" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="80000" start-delay="30000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction" skill3="ME_BEF_B2_ZaKan_SpellSuction" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction2" skill3="ME_BEF_B2_ZaKan_SpellSuction2" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="5" repeat="1" skill="ME_BEF_B2_ZaKan_Grab2" skill3="ME_BEF_B2_ZaKan_Grab2" target="event:npc-combat-action:special-target:1" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_10" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_02" type="do-social" />
+            
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="0" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="0" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Boss_0001_CS_3_Easy" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />      
+      <action immune-breaker-disable="y" type="select">
+        
+        <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="30" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+        
+        <action prob="70" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_Smash" skill3="ME_BEF_B2_ZaKan_Spell_Smash" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />      
+      <action immune-breaker-disable="y" type="select">
+        
+        <action prob="70" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_Smash" skill3="ME_BEF_B2_ZaKan_Spell_Smash" type="use-skill" />
+        
+        <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="30" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+      </action>      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_SplitBlood" skill3="ME_BEF_B2_ZaKan_Spell_SplitBlood" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk2" skill3="ME_BEF_B2_ZaKan_Spell_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_HalfMoon_fast" skill3="ME_BEF_B2_ZaKan_Spell_HalfMoon_fast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_BlackWind" skill3="ME_BEF_B2_ZaKan_Spell_BlackWind" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="40000" start-delay="40000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction" skill3="ME_BEF_B2_ZaKan_SpellSuction" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction2" skill3="ME_BEF_B2_ZaKan_SpellSuction2" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="5" repeat="1" skill="ME_BEF_B2_ZaKan_Grab2" skill3="ME_BEF_B2_ZaKan_Grab2" target="event:npc-combat-action:special-target:1" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="10000" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_10" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="0" min-delay="10000" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="0" min-delay="10000" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Boss_0001_CS_1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="5">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1" skill3="ME_BEF_B2_ZaKan_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1_fast" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_HalfMoon_fast" skill3="ME_BEF_B2_ZaKan_HalfMoon_fast" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Smash" skill3="ME_BEF_B2_ZaKan_Smash" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1" skill3="ME_BEF_B2_ZaKan_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1_fast" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Smash" skill3="ME_BEF_B2_ZaKan_Smash" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_HalfMoon_fast" skill3="ME_BEF_B2_ZaKan_HalfMoon_fast" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_BlackWind" skill3="ME_BEF_B2_ZaKan_BlackWind" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_ShadowWalk_back" skill3="ME_BEF_B2_ZaKan_ShadowWalk_back" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SplitBlood" skill3="ME_BEF_B2_ZaKan_SplitBlood" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk2" skill3="ME_BEF_B2_ZaKan_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="5">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_HalfMoon_fast" skill3="ME_BEF_B2_ZaKan_HalfMoon_fast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_ShadowWalk" skill3="ME_BEF_B2_ZaKan_ShadowWalk" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="15000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_BlackWind" skill3="ME_BEF_B2_ZaKan_BlackWind" target="event:npc-combat-action:special-target:1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_ShadowWalk" skill3="ME_BEF_B2_ZaKan_ShadowWalk" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SplitBlood" skill3="ME_BEF_B2_ZaKan_SplitBlood" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B2_ZaKan_NAtk2" skill3="ME_BEF_B2_ZaKan_NAtk2" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1_fast" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_ShadowWalk_back" skill3="ME_BEF_B2_ZaKan_ShadowWalk_back" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_HalfMoon_fast" skill3="ME_BEF_B2_ZaKan_HalfMoon_fast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_BlackWind" skill3="ME_BEF_B2_ZaKan_BlackWind" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SplitBlood" skill3="ME_BEF_B2_ZaKan_SplitBlood" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk2" skill3="ME_BEF_B2_ZaKan_NAtk2" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_09" type="do-social" />
+      
+      <action duration="5900" immune-breaker-disable="y" stance="2" stance-effect-1="3" type="change-set" weapon="1" />
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_100" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_101" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_102" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Zakan_Combat_Start" skill3="ME_BEF_B2_Zakan_Combat_Start" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="1" min-delay="480000" start-delay="480000">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_09" type="do-social" />
+      
+      <action duration="5900" immune-breaker-disable="y" stance="2" stance-effect-1="3" type="change-set" weapon="1" />
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_100" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_101" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_102" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_01" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Boss_0001_CS_2" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      <action type="select">
+        
+        <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_Smash" skill3="ME_BEF_B2_ZaKan_Spell_Smash" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_Smash" skill3="ME_BEF_B2_ZaKan_Spell_Smash" type="use-skill" />
+        
+        <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_BlackWind" skill3="ME_BEF_B2_ZaKan_Spell_BlackWind" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk_back" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk_back" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_SplitBlood" skill3="ME_BEF_B2_ZaKan_Spell_SplitBlood" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk2" skill3="ME_BEF_B2_ZaKan_Spell_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_HalfMoon_fast" skill3="ME_BEF_B2_ZaKan_Spell_HalfMoon_fast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_BlackWind" skill3="ME_BEF_B2_ZaKan_Spell_BlackWind" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="40000" start-delay="30000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction" skill3="ME_BEF_B2_ZaKan_SpellSuction" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction2" skill3="ME_BEF_B2_ZaKan_SpellSuction2" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="5" repeat="1" skill="ME_BEF_B2_ZaKan_Grab2" skill3="ME_BEF_B2_ZaKan_Grab2" target="event:npc-combat-action:special-target:1" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="1000" start-delay="0">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_100" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_101" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_102" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_10" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_02" type="do-social" />
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_100" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_101" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_102" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="0" min-delay="1000" start-delay="0">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_100" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_101" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_102" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="0" min-delay="1000" start-delay="0">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_100" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_101" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_102" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Boss_0001_CS_3" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      <action type="select">
+        
+        <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_Smash" skill3="ME_BEF_B2_ZaKan_Spell_Smash" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk1" skill3="ME_BEF_B2_ZaKan_Spell_NAtk1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_NAtk1_fast" skill3="ME_BEF_B2_ZaKan_NAtk1_fast" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_Smash" skill3="ME_BEF_B2_ZaKan_Spell_Smash" type="use-skill" />
+        
+        <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_BlackWind" skill3="ME_BEF_B2_ZaKan_Spell_BlackWind" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk_back" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk_back" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_SplitBlood" skill3="ME_BEF_B2_ZaKan_Spell_SplitBlood" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_NAtk2" skill3="ME_BEF_B2_ZaKan_Spell_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_HalfMoon_fast" skill3="ME_BEF_B2_ZaKan_Spell_HalfMoon_fast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_BlackWind" skill3="ME_BEF_B2_ZaKan_Spell_BlackWind" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="40000" start-delay="40000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction" skill3="ME_BEF_B2_ZaKan_SpellSuction" type="use-skill" />
+      <action repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction2" skill3="ME_BEF_B2_ZaKan_SpellSuction2" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_10" ground-pattern-2="pattern_2" ground-pattern-3="pattern_14" ground-pattern-4="pattern_16" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave_Multi" skill3="ME_BEF_B2_ZaKan_FireSpellWave_Multi" type="boss-multiground-attack" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="5" repeat="1" skill="ME_BEF_B2_ZaKan_Grab2" skill3="ME_BEF_B2_ZaKan_Grab2" target="event:npc-combat-action:special-target:1" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="10000" start-delay="0">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_100" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_101" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_102" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_10" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="1" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="0" min-delay="10000" start-delay="0">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_100" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_101" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_102" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="0" min-delay="10000" start-delay="0">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_100" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_101" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_BEF_B2_ZaKan_Spell_ShadowWalk" skill3="ME_BEF_B2_ZaKan_Spell_ShadowWalk" target-area="4744_102" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_DamageShield" skill3="ME_BEF_B2_ZaKan_DamageShield" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_11" type="do-social" />
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="2" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon" skill3="ME_BEF_B2_ZaKan_Summon" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Summon2" skill3="ME_BEF_B2_ZaKan_Summon2" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_Grab" skill3="ME_BEF_B2_ZaKan_Grab" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_FireSpellWave" skill3="ME_BEF_B2_ZaKan_FireSpellWave" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action except-condition="hide" exclude-summoned="y" immune-breaker-disable="y" skill="ME_BEF_B2_ZaKan_GhostCircle" skill3="ME_BEF_B2_ZaKan_GhostCircle" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome_Check" skill3="ME_BEF_B2_Dummy_Magi_Overcome_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_03" type="do-social" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellExplosion" skill3="ME_BEF_B2_ZaKan_SpellExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Boss_0001_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction_Berserk" skill3="ME_BEF_B2_ZaKan_SpellSuction_Berserk" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A2_Boss_0001_battle_msg_05" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_ShadowWalk" skill3="ME_BEF_B2_ZaKan_ShadowWalk" target-area="4744_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_ZaKan_SpellSuction_Berserk" skill3="ME_BEF_B2_ZaKan_SpellSuction_Berserk" type="use-skill" />
+      <action duration="1600" immune-breaker-disable="y" stance="1" stance-effect-1="1" type="change-set" weapon="1" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Dummy_0015_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="MH_BEC_R0_Common_HateUp" skill3="MH_BEC_R0_Common_HateUp" target="zonenpcspawn:a_4744_106" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Dummy_0016_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_BEF_B2_ZaKan_Dummy_TakGi" skill3="ME_BEF_B2_ZaKan_Dummy_TakGi" target="zonenpcspawn:a_4744_107" type="use-skill" />
+      <action duration="1000" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Dummy_0017_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action duration="1000" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Dummy_0018_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      
+      <action repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome" skill3="ME_BEF_B2_Dummy_Magi_Overcome" type="use-skill" />
+      <action combo="y" repeat="1" skill="ME_BEF_B2_Dummy_Magi_Overcome" skill3="ME_BEF_B2_Dummy_Magi_Overcome" type="use-skill" />
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Boss_0002_cs">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_DemonShadowCBig_SpellTrans" skill3="ME_BEF_B2_DemonShadowCBig_SpellTrans" target="zonenpcspawn:a_4744_2" type="use-skill" />
+    </normal>
+    
+
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B2_DemonShadowCBig_SpellTrans" skill3="ME_BEF_B2_DemonShadowCBig_SpellTrans" target="zonenpcspawn:a_4744_2" type="use-skill" />
+    </special>
+
+  </combat-sequence>
+
+
+
+
+  
+  
+  
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A1_0001_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_DEA_R0_Destroyer_Protection_Raging_Wind" skill3="MH_DEA_R0_Destroyer_Protection_Raging_Wind" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Protection_Judgement_Lv1" skill3="MH_Destroyer_Protection_Judgement_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_Destroyer_Destruction_Destruction_Lv1" skill3="MH_Destroyer_Destruction_Destruction_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_DEA_R0_Destroyer_Protection_Earthquake" skill3="MH_DEA_R0_Destroyer_Protection_Earthquake" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A1_0002_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" skill3="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Justicepunch" skill3="MH_DEA_R0_KungfuMaster_Attack_Justicepunch" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Strongpunch" skill3="MH_DEA_R0_KungfuMaster_Attack_Strongpunch" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A1_0003_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" skill3="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Justicepunch" skill3="MH_DEA_R0_KungfuMaster_Attack_Justicepunch" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Strongpunch" skill3="MH_DEA_R0_KungfuMaster_Attack_Strongpunch" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A1_0004_cs" seq-start-social="1">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A1_0005_cs" seq-start-social="1">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A1_0006_cs">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_cold_blast" skill3="MH_DEA_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+      <action repeat="2" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone3" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone3" type="use-skill" />
+      <action repeat="3" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A1_0007_cs">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_cold_blast" skill3="MH_DEA_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+      <action repeat="2" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone3" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone3" type="use-skill" />
+      <action repeat="3" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_0008_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Jab" skill3="ME_BoneMaskThinA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Jab" skill3="ME_BoneMaskThinA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskThinA_None_NAtk2" skill3="ME_BoneMaskThinA_None_NAtk2" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-45" id="1">
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Air" skill3="ME_BoneMaskThinA_None_Air" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_0009_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Jab" skill3="ME_BoneMaskBigA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk2" skill3="ME_BoneMaskBigA_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk1" skill3="ME_BoneMaskBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area180" skill3="ME_BoneMaskBigA_None_Area180" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Dash" skill3="ME_BoneMaskBigA_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-45" id="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area360" skill3="ME_BoneMaskBigA_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_0010_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Jab" skill3="ME_BoneMaskBigA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk2" skill3="ME_BoneMaskBigA_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk1" skill3="ME_BoneMaskBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area180" skill3="ME_BoneMaskBigA_None_Area180" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Dash" skill3="ME_BoneMaskBigA_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-45" id="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area360" skill3="ME_BoneMaskBigA_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Nmd_0002_CS1_Easy" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="4">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_NAtk1" skill3="ME_BEF_B5_BoneMaskBigALeader_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_NAtk2" skill3="ME_BEF_B5_BoneMaskBigALeader_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area180" skill3="ME_BEF_B5_BoneMaskBigALeader_Area180" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Jab" skill3="ME_BEF_B5_BoneMaskBigALeader_Jab" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_WindSmash" skill3="ME_BEF_B5_BoneMaskBigALeader_WindSmash" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_MultiSmash" skill3="ME_BEF_B5_BoneMaskBigALeader_MultiSmash" type="use-skill" />
+      </action>
+    </normal>
+    
+    
+    
+
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action duration="1000" event-step="44" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_14" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B5_BoneMaskBigALeader_BossRush" skill3="ME_BEF_B5_BoneMaskBigALeader_BossRush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      
+      <action event-step="2" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B5_BoneMaskBigALeader_BossRush" skill3="ME_BEF_B5_BoneMaskBigALeader_BossRush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      
+      <action combo="y" event-step="22" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B5_BoneMaskBigALeader_BossRush" skill3="ME_BEF_B5_BoneMaskBigALeader_BossRush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action duration="1000" event-step="44" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_15" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_05" type="do-social" />
+      
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" type="use-skill" />
+      
+      <action event-step="3" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360" type="use-skill" />
+      
+      <action event-step="12" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" type="use-skill" />
+      
+      <action combo="y" event-step="14" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" type="use-skill" />
+      <action event-step="22" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action duration="1000" event-step="44" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_16" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_08" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action event-step="4" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action combo="y" event-step="22" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="0" min-delay="60000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_12" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave1" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Nmd_0002_CS2_Easy">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_20" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_combatstart_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Nmd_0002_CS1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="4">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_NAtk1" skill3="ME_BEF_B5_BoneMaskBigALeader_NAtk1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_NAtk2" skill3="ME_BEF_B5_BoneMaskBigALeader_NAtk2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area180" skill3="ME_BEF_B5_BoneMaskBigALeader_Area180" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Jab" skill3="ME_BEF_B5_BoneMaskBigALeader_Jab" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_WindSmash" skill3="ME_BEF_B5_BoneMaskBigALeader_WindSmash" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_MultiSmash" skill3="ME_BEF_B5_BoneMaskBigALeader_MultiSmash" type="use-skill" />
+      </action>
+    </normal>
+    
+    
+    
+
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action duration="1000" event-step="44" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_14" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B5_BoneMaskBigALeader_BossRush" skill3="ME_BEF_B5_BoneMaskBigALeader_BossRush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      
+      <action event-step="2" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B5_BoneMaskBigALeader_BossRush" skill3="ME_BEF_B5_BoneMaskBigALeader_BossRush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      
+      <action combo="y" event-step="22" immune-breaker-disable="y" pass-through="y" skill="ME_BEF_B5_BoneMaskBigALeader_BossRush" skill3="ME_BEF_B5_BoneMaskBigALeader_BossRush" speed="126" target="event:npc-combat-action:target" type="boss-rush-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action duration="1000" event-step="44" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_15" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_05" type="do-social" />
+      
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" type="use-skill" />
+      
+      <action event-step="3" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360" type="use-skill" />
+      
+      <action event-step="12" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" type="use-skill" />
+      
+      <action combo="y" event-step="14" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave2" type="use-skill" />
+      <action event-step="22" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action duration="1000" event-step="44" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_16" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_08" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action event-step="4" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action combo="y" event-step="22" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="0" min-delay="40000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_12" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave1" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave1" type="use-skill" />
+    </special>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Nmd_0002_CS2">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_20" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_combatstart_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Nmd_0002_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_battle_msg_08" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave4" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WA_Whanmadan_A1_Nmd_0002_combatstart_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" skill3="ME_BEF_B5_BoneMaskBigALeader_Area360Wave3" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_Dummy_0006_cs" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_BEF_B5_BoneMaskBigALeader_Ground" skill3="ME_BEF_B5_BoneMaskBigALeader_Ground" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_0015_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Jab" skill3="ME_BoneMaskThinA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Jab" skill3="ME_BoneMaskThinA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskThinA_None_NAtk2" skill3="ME_BoneMaskThinA_None_NAtk2" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-45" id="1">
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Air" skill3="ME_BoneMaskThinA_None_Air" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_0016_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Jab" skill3="ME_BoneMaskBigA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk2" skill3="ME_BoneMaskBigA_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk1" skill3="ME_BoneMaskBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area180" skill3="ME_BoneMaskBigA_None_Area180" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Dash" skill3="ME_BoneMaskBigA_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-45" id="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area360" skill3="ME_BoneMaskBigA_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_0011_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Jab" skill3="ME_BoneMaskBigA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk2" skill3="ME_BoneMaskBigA_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk1" skill3="ME_BoneMaskBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area180" skill3="ME_BoneMaskBigA_None_Area180" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Dash" skill3="ME_BoneMaskBigA_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-45" id="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area360" skill3="ME_BoneMaskBigA_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_0012_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Jab" skill3="ME_BoneMaskThinA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Jab" skill3="ME_BoneMaskThinA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskThinA_None_NAtk2" skill3="ME_BoneMaskThinA_None_NAtk2" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-45" id="1">
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Air" skill3="ME_BoneMaskThinA_None_Air" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_0013_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Jab" skill3="ME_BoneMaskBigA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk2" skill3="ME_BoneMaskBigA_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_NAtk1" skill3="ME_BoneMaskBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area180" skill3="ME_BoneMaskBigA_None_Area180" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Dash" skill3="ME_BoneMaskBigA_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-45" id="1">
+      <action repeat="1" skill="ME_BoneMaskBigA_None_Area360" skill3="ME_BoneMaskBigA_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A1_0014_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Jab" skill3="ME_BoneMaskThinA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Jab" skill3="ME_BoneMaskThinA_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BoneMaskThinA_None_NAtk2" skill3="ME_BoneMaskThinA_None_NAtk2" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-45" id="1">
+      <action repeat="1" skill="ME_BoneMaskThinA_None_Air" skill3="ME_BoneMaskThinA_None_Air" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0001_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_KickKnockback_Lv1" skill3="MH_Destroyer_Protection_KickKnockback_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Destruction_Lv1" skill3="MH_Destroyer_Protection_Destruction_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Nemesis_Lv1" skill3="MH_Destroyer_Protection_Nemesis_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Destroyer_Destruction_LowRagingWind_Lv1_fire" skill3="MH_Destroyer_Destruction_LowRagingWind_Lv1_fire" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Lv1" skill3="MH_Destroyer_Protection_Axe_Chop_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Earthquake_Lv1" skill3="MH_Destroyer_Protection_Earthquake_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0017_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_KickKnockback_Lv1" skill3="MH_Destroyer_Protection_KickKnockback_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Destruction_Lv1" skill3="MH_Destroyer_Protection_Destruction_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Nemesis_Lv1" skill3="MH_Destroyer_Protection_Nemesis_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Destroyer_Destruction_LowRagingWind_Lv1_fire" skill3="MH_Destroyer_Destruction_LowRagingWind_Lv1_fire" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Lv1" skill3="MH_Destroyer_Protection_Axe_Chop_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Earthquake_Lv1" skill3="MH_Destroyer_Protection_Earthquake_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0002_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rushing_Wind" skill3="MH_SUA_R0_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blood_wind" skill3="MH_SUA_R0_BladeMaster_Sword_blood_wind" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blocking" skill3="MH_SUA_R0_BladeMaster_Sword_blocking" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_stab" skill3="MH_SUA_R0_BladeMaster_Sword_stab" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-2="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_flying_swallow_sword" skill3="MH_SUA_R0_BladeMaster_Sword_flying_swallow_sword" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rush" skill3="MH_SUA_R0_BladeMaster_Sword_Rush" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-20" id="1">
+      
+      <action repeat="1" skill="MH_BED_R0_BladeMaster_Sword_stab" skill3="MH_BED_R0_BladeMaster_Sword_stab" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action duration="0" stance="2" type="change-set" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0003_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_full_moon_slash" skill3="MH_SUA_R0_BladeMaster_Sword_full_moon_slash" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blood_wind" skill3="MH_SUA_R0_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_storm_wind" skill3="MH_SUA_R0_BladeMaster_Sword_storm_wind" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_full_moon_slash_Fast2" skill3="MH_SUA_R0_BladeMaster_Sword_full_moon_slash_Fast2" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_BladeMaster_Sword_turning_strike_LV1" skill3="MH_BladeMaster_Sword_turning_strike_LV1" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-2="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_flying_swallow_sword" skill3="MH_SUA_R0_BladeMaster_Sword_flying_swallow_sword" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rush" skill3="MH_SUA_R0_BladeMaster_Sword_Rush" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="down" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_BED_R0_BladeMaster_Sword_turning_strike" skill3="MH_BED_R0_BladeMaster_Sword_turning_strike" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action duration="0" stance="2" type="change-set" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0018_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rushing_Wind" skill3="MH_SUA_R0_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blood_wind" skill3="MH_SUA_R0_BladeMaster_Sword_blood_wind" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_blocking" skill3="MH_SUA_R0_BladeMaster_Sword_blocking" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_stab" skill3="MH_SUA_R0_BladeMaster_Sword_stab" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-2="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_flying_swallow_sword" skill3="MH_SUA_R0_BladeMaster_Sword_flying_swallow_sword" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_BladeMaster_Sword_Rush" skill3="MH_SUA_R0_BladeMaster_Sword_Rush" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-20" id="1">
+      
+      <action repeat="1" skill="MH_BED_R0_BladeMaster_Sword_stab" skill3="MH_BED_R0_BladeMaster_Sword_stab" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action duration="0" stance="2" type="change-set" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0004_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        <action duration="100" prob="25" type="stay" />
+        <action duration="300" prob="25" type="stay" />
+        <action duration="500" prob="25" type="stay" />
+        <action duration="700" prob="25" type="stay" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" skill3="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" type="use-skill" />
+        <action prob="50" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Counterenemy" skill3="MH_DEA_R0_KungfuMaster_Attack_Counterenemy" type="use-skill" />
+        <action combo="y" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Uppercut" skill3="MH_DEA_R0_KungfuMaster_Attack_Uppercut" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-2="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="1" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      <action repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Takedown" skill3="MH_DEA_R0_KungfuMaster_Attack_Takedown" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Armbar" skill3="MH_DEA_R0_KungfuMaster_Attack_Armbar" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0005_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        <action duration="100" prob="25" type="stay" />
+        <action duration="300" prob="25" type="stay" />
+        <action duration="500" prob="25" type="stay" />
+        <action duration="700" prob="25" type="stay" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_BED_R0_KungfuMaster_Attack_JusticePunch" skill3="MH_BED_R0_KungfuMaster_Attack_JusticePunch" type="use-skill" />
+        <action prob="50" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" skill3="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-2="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-90" id="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Finalattack_Lv1" skill3="MH_KungfuMaster_Attack_Finalattack_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_BED_R0_KungfuMaster_Attack_TurnKick" skill3="MH_BED_R0_KungfuMaster_Attack_TurnKick" type="use-skill" />
+      <action repeat="1" skill="MH_BED_R0_KungfuMaster_Attack_AxeKick" skill3="MH_BED_R0_KungfuMaster_Attack_AxeKick" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0019_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        <action duration="100" prob="25" type="stay" />
+        <action duration="300" prob="25" type="stay" />
+        <action duration="500" prob="25" type="stay" />
+        <action duration="700" prob="25" type="stay" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" skill3="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" type="use-skill" />
+        <action prob="50" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Counterenemy" skill3="MH_DEA_R0_KungfuMaster_Attack_Counterenemy" type="use-skill" />
+        <action combo="y" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Uppercut" skill3="MH_DEA_R0_KungfuMaster_Attack_Uppercut" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-2="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="1" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      <action repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Takedown" skill3="MH_DEA_R0_KungfuMaster_Attack_Takedown" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_Armbar" skill3="MH_DEA_R0_KungfuMaster_Attack_Armbar" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0020_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        <action duration="100" prob="25" type="stay" />
+        <action duration="300" prob="25" type="stay" />
+        <action duration="500" prob="25" type="stay" />
+        <action duration="700" prob="25" type="stay" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_BED_R0_KungfuMaster_Attack_JusticePunch" skill3="MH_BED_R0_KungfuMaster_Attack_JusticePunch" type="use-skill" />
+        <action prob="50" repeat="1" skill="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" skill3="MH_DEA_R0_KungfuMaster_Attack_PowerfulAttack" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-2="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-90" id="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Finalattack_Lv1" skill3="MH_KungfuMaster_Attack_Finalattack_Lv1" type="use-skill" />
+      <action repeat="1" skill="MH_BED_R0_KungfuMaster_Attack_TurnKick" skill3="MH_BED_R0_KungfuMaster_Attack_TurnKick" type="use-skill" />
+      <action repeat="1" skill="MH_BED_R0_KungfuMaster_Attack_AxeKick" skill3="MH_BED_R0_KungfuMaster_Attack_AxeKick" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0006_cs">
+    
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="33" repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fire_blast" skill3="MH_DEA_R0_ForceMaster_Deal_fire_blast" type="use-skill" />
+        <action prob="33" repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+        <action prob="34" repeat="3" skill="MH_DEA_R1_ForceMaster_Deal_fire_ball" skill3="MH_DEA_R1_ForceMaster_Deal_fire_ball" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="3" skill="MH_DEA_R0_ForceMaster_Deal_fire_ball_instant" skill3="MH_DEA_R0_ForceMaster_Deal_fire_ball_instant" type="use-skill" />
+      <action repeat="1" skill="MH_BED_R0_ForceMaster_Deal_fire_ball" skill3="MH_BED_R0_ForceMaster_Deal_fire_ball" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0007_cs">
+    
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="33" repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fire_blast" skill3="MH_DEA_R0_ForceMaster_Deal_fire_blast" type="use-skill" />
+        <action prob="33" repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+        <action prob="34" repeat="3" skill="MH_DEA_R1_ForceMaster_Deal_fire_ball" skill3="MH_DEA_R1_ForceMaster_Deal_fire_ball" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="3" skill="MH_DEA_R0_ForceMaster_Deal_fire_ball_instant" skill3="MH_DEA_R0_ForceMaster_Deal_fire_ball_instant" type="use-skill" />
+      <action repeat="1" skill="MH_BED_R0_ForceMaster_Deal_fire_ball" skill3="MH_BED_R0_ForceMaster_Deal_fire_ball" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0008_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_cold_blast" skill3="MH_DEA_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+      <action repeat="2" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone3" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone3" type="use-skill" />
+      <action repeat="3" skill="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" skill3="MH_DEA_R0_ForceMaster_Deal_energy_cyclone2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_0009_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="33" repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fire_blast" skill3="MH_DEA_R0_ForceMaster_Deal_fire_blast" type="use-skill" />
+        <action prob="33" repeat="1" skill="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_DEA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+        <action prob="34" repeat="3" skill="MH_DEA_R1_ForceMaster_Deal_fire_ball" skill3="MH_DEA_R1_ForceMaster_Deal_fire_ball" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="3" skill="MH_DEA_R0_ForceMaster_Deal_fire_ball_instant" skill3="MH_DEA_R0_ForceMaster_Deal_fire_ball_instant" type="use-skill" />
+      <action repeat="1" skill="MH_BED_R0_ForceMaster_Deal_fire_ball" skill3="MH_BED_R0_ForceMaster_Deal_fire_ball" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0001_cs">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="0" stance="2" type="change-set" weapon="1" />
+      <action repeat="1" skill="MH_JEA_B3_BladeMaster_Batto_full_moon_slash" skill3="MH_JEA_B3_BladeMaster_Batto_full_moon_slash" type="use-skill" />
+      <action repeat="1" skill="MH_JEA_B3_BladeMaster_Batto_counterattack" skill3="MH_JEA_B3_BladeMaster_Batto_counterattack" type="use-skill" />
+      <action duration="1000" target="event:npc-combat-action:target" type="stay" />
+      <action repeat="1" skill="MH_JEA_B3_BladeMaster_Batto_batto" skill3="MH_JEA_B3_BladeMaster_Batto_batto" type="use-skill" />
+      <action repeat="1" skill="MH_JEA_B3_BladeMaster_Batto_Crescent_Slash" skill3="MH_JEA_B3_BladeMaster_Batto_Crescent_Slash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action duration="0" stance="2" type="change-set" weapon="1" />
+      <action repeat="1" skill="MH_JEA_B3_BladeMaster_Batto_six_combo_air" skill3="MH_JEA_B3_BladeMaster_Batto_six_combo_air" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      <action duration="0" stance="2" type="change-set" weapon="1" />
+      <action immune-breaker-disable="y" repeat="1" skill="MH_JEA_B3_BladeMaster_Batto_back_dash" skill3="MH_JEA_B3_BladeMaster_Batto_back_dash" type="use-skill" />
+      <action social="MH_BladeMaster_0001_soc" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="MH_JEA_B3_BladeMaster_Batto_six_combo_slash" skill3="MH_JEA_B3_BladeMaster_Batto_six_combo_slash" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0002_cs">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="3" skill="MH_JEA_N1_ForceMaster_Deal_energy_cyclone" skill3="MH_JEA_N1_ForceMaster_Deal_energy_cyclone" type="use-skill" />
+      <action repeat="1" skill="MH_JEA_N1_ForceMasterBossSub_Deal_cold_blast" skill3="MH_JEA_N1_ForceMasterBossSub_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_JEA_N1_ForceMaster_Deal_fast_energy_missile" skill3="MH_JEA_N1_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0003_cs">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="MH_JEA_N1_ForceMaster_Deal_fire_ball" skill3="MH_JEA_N1_ForceMaster_Deal_fire_ball" type="use-skill" />
+      <action repeat="1" skill="MH_JEA_N1_ForceMasterBossSub_Deal_fire_blast" skill3="MH_JEA_N1_ForceMasterBossSub_Deal_fire_blast" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="MH_JEA_N1_ForceMaster_Deal_fire_ball" skill3="MH_JEA_N1_ForceMaster_Deal_fire_ball" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0004_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_LeafDodge_Lv1" skill3="MH_Assassin_Disturb_LeafDodge_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MidAir_Lv1" skill3="MH_Assassin_Disturb_MidAir_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Trampledown_Lv1_hatedown" skill3="MH_Assassin_Trampledown_Lv1_hatedown" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Mine_Lv1_hatedown" skill3="MH_Assassin_Disturb_Mine_Lv1_hatedown" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_SideStep_Lv1" skill3="MH_Assassin_Disturb_SideStep_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_HeartStab_Lv1" skill3="MH_Assassin_Disturb_HeartStab_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shuriken_Poison_Lv1" skill3="MH_Assassin_Disturb_Shuriken_Poison_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Dash_Lv1" skill3="MH_Assassin_Disturb_Dash_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Assassin_Disturb_BackStepReplace_Lv1" skill3="MH_Assassin_Disturb_BackStepReplace_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Assassin_Disturb_HeartStab_Lv1" skill3="MH_Assassin_Disturb_HeartStab_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="2" skill="MH_Assassin_Disturb_PoisonBreath_Lv1000" skill3="MH_Assassin_Disturb_PoisonBreath_Lv1000" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0005_cs">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_cold_blast_Lv1" skill3="MH_ForceMaster_Deal_cold_blast_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_breakaway_Lv1" skill3="MH_ForceMaster_Deal_breakaway_Lv1" type="use-skill" />
+    </special>
+    <special combat-distance="7" condition-1="hp-50" condition-2="frostbite" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_frost_explosion_Lv1" skill3="MH_ForceMaster_Deal_frost_explosion_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0006_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_HeartStab_Lv1_hid" skill3="MH_Assassin_Disturb_HeartStab_Lv1_hid" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_HeartStab_Lv1" skill3="MH_Assassin_Disturb_HeartStab_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Dash_Lv1" skill3="MH_Assassin_Disturb_Dash_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_LeafDodge_Lv1" skill3="MH_Assassin_Disturb_LeafDodge_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_HeartStab_Lv1" skill3="MH_Assassin_Disturb_HeartStab_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0007_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_storm_wind" skill3="MH_BladeMaster_Sword_storm_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stamp_LV1" skill3="MH_BladeMaster_Sword_stamp_LV1" type="use-skill" />
+      
+      <action duration="0" stance="2" type="change-set" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_full_moon_slash_LV1" skill3="MH_BladeMaster_Batto_full_moon_slash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_VitalSlash_LV1" skill3="MH_BladeMaster_Batto_VitalSlash_LV1" type="use-skill" />
+      
+      <action duration="0" stance="1" type="change-set" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_flying_swallow_sword_LV1" skill3="MH_BladeMaster_Sword_flying_swallow_sword_LV1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action duration="0" stance="2" type="change-set" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_full_moon_slash_LV1" skill3="MH_BladeMaster_Batto_full_moon_slash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_VitalSlash_LV1" skill3="MH_BladeMaster_Batto_VitalSlash_LV1" type="use-skill" />
+      
+      <action duration="0" stance="1" type="change-set" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0008_cs">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action social="MH_BokGonPe_0001_Battle_05_battle" type="do-social" />
+      <action repeat="1" skill="MH_DEA_B1_ForceMaster_Deal_cold_blast" skill3="MH_DEA_B1_ForceMaster_Deal_cold_blast" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_B1_ForceMaster_Deal_fast_energy_missile" skill3="MH_DEA_B1_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+      <action repeat="2" skill="MH_DEA_B1_ForceMaster_Deal_energy_cyclone" skill3="MH_DEA_B1_ForceMaster_Deal_energy_cyclone" type="use-skill" />
+      <action type="select">
+        <action prob="50" repeat="1" skill="MH_DEA_B1_ForceMaster_Deal_energy_cyclone" skill3="MH_DEA_B1_ForceMaster_Deal_energy_cyclone" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="MH_DEA_B1_ForceMaster_Deal_breakaway" skill3="MH_DEA_B1_ForceMaster_Deal_breakaway" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action social="MH_BokGonPe_0001_Battle_04_battle" type="do-social" />
+      <action repeat="2" skill="MH_DEA_B1_ForceMaster_Deal_cold_missile" skill3="MH_DEA_B1_ForceMaster_Deal_cold_missile" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="MH_DEA_B1_ForceMaster_Deal_breakaway" skill3="MH_DEA_B1_ForceMaster_Deal_breakaway" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      <action social="MH_BokGonPe_0001_Battle_03_battle" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="MH_DEA_B1_ForceMaster_Deal_rapid_cooling" skill3="MH_DEA_B1_ForceMaster_Deal_rapid_cooling" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="MH_DEA_B1_ForceMaster_Deal_breakaway" skill3="MH_DEA_B1_ForceMaster_Deal_breakaway" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_B1_ForceMaster_Deal_frost_explosion" skill3="MH_DEA_B1_ForceMaster_Deal_frost_explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0009_cs">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="MH_DEA_B1_KungfuMaster_Attack_Finalattack" skill3="MH_DEA_B1_KungfuMaster_Attack_Finalattack" type="use-skill" />
+      <action repeat="2" skill="MH_DEA_B1_KungfuMaster_Attack_PowerfulAttack" skill3="MH_DEA_B1_KungfuMaster_Attack_PowerfulAttack" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="MH_DEA_B1_KungfuMaster_Attack_Jumppunch" skill3="MH_DEA_B1_KungfuMaster_Attack_Jumppunch" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action repeat="1" skill="MH_DEA_B1_KungfuMaster_Attack_Lowkick" skill3="MH_DEA_B1_KungfuMaster_Attack_Lowkick" type="use-skill" />
+      <action repeat="1" skill="MH_DEA_B1_KungfuMaster_Attack_Takedown" skill3="MH_DEA_B1_KungfuMaster_Attack_Takedown" type="use-skill" />
+      <action combo="y" repeat="1" skill="MH_DEA_B1_KungfuMaster_Attack_Choke" skill3="MH_DEA_B1_KungfuMaster_Attack_Choke" type="use-skill" />
+    </special>
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0010_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_BarbarianSpear_None_Jab" skill3="ME_BarbarianSpear_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianSpear_None_WindBlow" skill3="ME_BarbarianSpear_None_WindBlow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianSpear_None_SunStab" skill3="ME_BarbarianSpear_None_SunStab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianSpearBow_None_MultiSmash" skill3="ME_BarbarianSpearBow_None_MultiSmash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BarbarianSpearBow_None_SunsetChop" skill3="ME_BarbarianSpearBow_None_SunsetChop" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="ME_BarbarianSpear_None_HeavyRush" skill3="ME_BarbarianSpear_None_HeavyRush" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action duration="0" stance="1" type="change-set" weapon="2" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BarbarianSpearBow_None_Change_Spear_Bow" skill3="ME_BarbarianSpearBow_None_Change_Spear_Bow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_WhistleArrow" skill3="ME_BarbarianBow_None_WhistleArrow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_HillArrow" skill3="ME_BarbarianBow_None_HillArrow" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BarbarianBow_None_PoisonArrow" skill3="ME_BarbarianBow_None_PoisonArrow" type="use-skill" />
+      
+      <action duration="0" stance="1" type="change-set" weapon="1" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BarbarianSpearBow_None_Change_Bow_Spear" skill3="ME_BarbarianSpearBow_None_Change_Bow_Spear" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0011_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_WindArrow" skill3="ME_BarbarianBow_None_WindArrow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_BreezeArrow" skill3="ME_BarbarianBow_None_BreezeArrow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_BackStep_Short" skill3="ME_BarbarianBow_None_BackStep_Short" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_WindArrow" skill3="ME_BarbarianBow_None_WindArrow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_BreezeArrow" skill3="ME_BarbarianBow_None_BreezeArrow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_WhistleArrow" skill3="ME_BarbarianBow_None_WhistleArrow" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_HillArrow" skill3="ME_BarbarianBow_None_HillArrow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BarbarianBow_None_FireArrow" skill3="ME_BarbarianBow_None_FireArrow" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0012_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Attack_Trampledown_Lv1" skill3="MH_KungfuMaster_Attack_Trampledown_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Attack_PowerAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerAttack_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Defend_Crushground_Lv1" skill3="MH_KungfuMaster_Defend_Crushground_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Heavypunch_Lv1" skill3="MH_KungfuMaster_Attack_Heavypunch_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Defend_Crushground_Lv1_hid" skill3="MH_KungfuMaster_Defend_Crushground_Lv1_hid" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Attack_Takedown_Lv1" skill3="MH_KungfuMaster_Attack_Takedown_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Attack_Pounding_First_Lv1" skill3="MH_KungfuMaster_Attack_Pounding_First_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_Nmd_0013_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_DokkebiGonB_None_Jab" skill3="ME_DokkebiGonB_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokkebiGonB_None_Smash" skill3="ME_DokkebiGonB_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokkebiGonB_None_Spin" skill3="ME_DokkebiGonB_None_Spin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokkebiGonB_None_FastSmash" skill3="ME_DokkebiGonB_None_FastSmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokkebiGonB_None_FastSpin" skill3="ME_DokkebiGonB_None_FastSpin" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_DokkebiGonB_None_Dash" skill3="ME_DokkebiGonB_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0014_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_Assassin_Disturb_AirBomb_Lv1" skill3="MH_Assassin_Disturb_AirBomb_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_Assassin_Disturb_PoisonBreath_Lv1" skill3="MH_Assassin_Disturb_PoisonBreath_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shuriken_Poison_Lv1" skill3="MH_Assassin_Disturb_Shuriken_Poison_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_TimeBomb_Lv1" skill3="MH_Assassin_Hide_TimeBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" skill3="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Whanmadan_A2_Nmd_0015_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_cold_blast_Lv1" skill3="MH_ForceMaster_Deal_cold_blast_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" condition-1="hp-50" condition-2="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_frost_explosion_Lv1" skill3="MH_ForceMaster_Deal_frost_explosion_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_cold_missile_Lv1" skill3="MH_ForceMaster_Deal_cold_missile_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  <combat-sequence alias="ME_WA_Whanmadan_A2_0023_CS" hide-seq-start="y">
+    
+    <normal combat-distance="7" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_ID_Nucleus_None_Fire2" skill3="ME_ID_Nucleus_None_Fire2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+</table>

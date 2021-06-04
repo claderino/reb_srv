@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.948.xml-->
+  <quest alias="q_epic_948" broadcast-category="field" category="epic" completed-list="y" id="948" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object2="npc:MH_WB_ChungGak_0084" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_ChungGak_0085" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_ChungGak_0086" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_ChungGak_0087" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_ChungGak_0088" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_ChungGak_0089" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_ChungGak_0090" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_ChungGak_0091" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_ChungGak_0092" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_ChungGak_0093" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object="npc:CH_WB_GoBong_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonYang_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonA_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_ChinChin_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_DoDanHa_0002" party-broadcast="n" type="approach" />
+        <case loot-item="Quest_Scroll_BackChung_0054" object2="npc:MH_WB_ChungGakABoss_0008" party-broadcast="n" progress-mission="y" type="loot" />
+        <case drop-gadget="y" object2="npc:MH_WB_ChungGak_0119" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case drop-gadget="y" object2="npc:MH_WB_ChungGak_0120" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case drop-gadget="y" object2="npc:MH_WB_ChungGak_0121" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WB_DoDanHa_0002" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="npc:CH_WB_GoBong_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_ChinChin_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonYang_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonA_0011" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_994" />
+    </completion>
+    <transit id="1" zone="zone_ChRyoungCHN">
+      <destination mission-step-id="4" zone-index="3" />
+      <destination mission-step-id="3" zone-index="3" />
+      <destination mission-step-id="2" zone-index="3" />
+      <destination mission-step-id="1" zone-index="3" />
+      <destination mission-step-id="5" zone-index="3" />
+      <destination mission-step-id="10" zone-index="2" />
+      <destination mission-step-id="11" zone-index="2" />
+      <destination mission-step-id="8" zone-index="3" />
+      <destination mission-step-id="6" zone-index="3" />
+      <destination mission-step-id="7" zone-index="3" />
+      <destination mission-step-id="9" zone-index="3" />
+    </transit>
+    <transit id="2" zone="zone_ChRyoungCHN_Doctor_SP">
+      <destination mission-step-id="8" zone-index="4" />
+      <destination mission-step-id="7" zone-index="4" />
+      <destination mission-step-id="6" zone-index="4" />
+      <destination mission-step-id="10" zone-index="4" />
+      <destination mission-step-id="9" zone-index="4" />
+      <destination mission-step-id="11" zone-index="4" />
+    </transit>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_WB_GoBong_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WB_BeonYang_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_ChinChin_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonA_0011" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1" reward-1="948_final_set1">
+        <case object="npc:CH_WB_DoDanHa_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_948_32" type="talk" />
+        <case object2="zoneenv2:2073_foot_03" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_948_17" type="env-entered" />
+        <case object="npc:CH_WB_Ryu_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_GoBong_0003" party-broadcast="n" type="approach" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_948_36" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case object="zone:zone_ChRyoungCHN_Act6" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CH_WB_Ryu_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_GoBong_0002" party-broadcast="n" type="approach" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_948_30" type="enter-zone" />
+        <case object="npc:CH_WB_BeonYang_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonA_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_KwakJun_0003" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CH_WB_KwakJun_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WB_GoBong_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_Ryu_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonYang_0007" party-broadcast="n" type="approach" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_948_30" type="enter-zone" />
+        <case object="npc:CH_WB_BeonA_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_ChinChin_0008" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_WB_KwakJun_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_948_13" type="talk" />
+        <case object="npc:CH_WB_ChinChin_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_GoBong_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CH_WB_DoDanHa_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_GoBong_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonYang_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonA_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_ChinChin_0012" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="3" zone="StartZone_Default">
+      <destination mission-step-id="1" zone-index="7" />
+      <destination mission-step-id="2" zone-index="5" />
+      <destination mission-step-id="3" zone-index="5" />
+      <destination mission-step-id="4" zone-index="5" />
+      <destination mission-step-id="5" zone-index="5" />
+      <destination mission-step-id="6" zone-index="5" />
+      <destination mission-step-id="7" zone-index="5" />
+      <destination mission-step-id="8" zone-index="5" />
+      <destination mission-step-id="9" zone-index="5" />
+      <destination mission-step-id="10" zone-index="5" />
+      <destination mission-step-id="11" zone-index="5" />
+    </transit>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_WB_GoBong_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_948_35" type="talk" />
+        <case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_948_29" type="enter-zone" />
+        <case object="npc:CH_WB_ChinChin_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_KwakJun_0003" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_WB_Ryu_0004" party-broadcast="n" progress-mission="y" quest-decision="qd_947_15" type="talk" />
+        <case object="npc:CH_WB_SeoYeon_0002" party-broadcast="n" type="approach" />
+        <case object="zone:StartZone_Epic6th_Cave" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_947_10" type="enter-zone" />
+        <case object="npc:CH_WB_ChinChin_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case grocery="Quest_Scroll_BackChung_0054" item="Quest_Scroll_BackChung_0054" party-broadcast="n" progress-mission="y" required-item-1="Quest_Scroll_BackChung_0054" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+        <case object="npc:CH_WB_ChinChin_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonA_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_BeonYang_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_GoBong_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WB_DoDanHa_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

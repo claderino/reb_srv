@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.id_treevill.xml-->
+
+	
+	
+	
+
+	
+	
+	<act-sequence alias="ME_WB_Executioner_0001_peace1" indexed-detect="1" type="peace">
+		<action social="ME_WB_Executioner_0001_Idle_01" type="social" />
+		<action social="ME_WB_Executioner_0001_Idle_01" type="social" />
+		<action social="ME_WB_Executioner_0001_soc_01" type="social" />
+		<action social="ME_WB_Executioner_0001_soc_02" type="social" />
+	</act-sequence>
+
+	
+	<act-sequence alias="ME_WB_Executioner_0001_peace2" indexed-detect="1" type="peace">
+		<action social="ME_WB_Executioner_0001_Idle_01" type="social" />
+		<action social="ME_WB_Executioner_0001_Idle_01" type="social" />
+		<action social="ME_WB_Executioner_0001_combat_soc_01" type="social" />
+	</act-sequence>
+
+
+  
+  <act-sequence alias="ME_WB_ElderEnt_0001_peace" indexed-detect="1" type="peace">
+    <action social="ME_WB_ElderEnt_0001_soc_01" type="social" />
+    <action duration="5000" type="stay" />
+    <action social="ME_WB_ElderEnt_0001_soc_02" type="social" />
+    <action social="ME_WB_ElderEnt_0001_Idle_01" type="social" />
+    <action duration="10000" type="stay" />
+    <action social="ME_WB_ElderEnt_0001_soc_03" type="social" />
+    <action duration="30000" type="stay" />
+  </act-sequence>
+
+
+  
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0001" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0001_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0001_soc_02" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+	
+	<act-sequence alias="peace_fix_social2_TreeVill_0001" indexed-detect="1" type="peace">
+		<action enter-prob="100" type="select">
+			<action duration="5000" prob="33" type="stay" />
+			<action duration="10000" prob="34" type="stay" />
+			<action duration="15000" prob="34" type="stay" />
+		</action>
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0001_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0001_battle_01" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0002" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0017_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0017_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+
+	<act-sequence alias="peace_fix_social2_TreeVill_0002" indexed-detect="1" type="peace">
+		<action enter-prob="100" type="select">
+			<action duration="5000" prob="33" type="stay" />
+			<action duration="10000" prob="34" type="stay" />
+			<action duration="15000" prob="34" type="stay" />
+		</action>
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0017_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="15000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0017_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="15000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0003" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0009_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0009_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+	
+	<act-sequence alias="peace_fix_social2_TreeVill_0003" indexed-detect="1" type="peace">
+		<action enter-prob="100" type="select">
+			<action duration="5000" prob="33" type="stay" />
+			<action duration="10000" prob="34" type="stay" />
+			<action duration="15000" prob="34" type="stay" />
+		</action>
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0009_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0009_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0004" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0019_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0019_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+
+	<act-sequence alias="peace_fix_social2_TreeVill_0004" indexed-detect="1" type="peace">
+		<action enter-prob="100" type="select">
+			<action duration="5000" prob="33" type="stay" />
+			<action duration="10000" prob="34" type="stay" />
+			<action duration="15000" prob="34" type="stay" />ㅐ
+		</action>
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0019_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0019_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0005" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0021_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0021_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+	
+	<act-sequence alias="peace_fix_social2_TreeVill_0005" indexed-detect="1" type="peace">
+		<action enter-prob="100" type="select">
+			<action duration="5000" prob="33" type="stay" />
+			<action duration="10000" prob="34" type="stay" />
+			<action duration="15000" prob="34" type="stay" />
+		</action>
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0021_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0021_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0006" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0005_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0005_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+
+	<act-sequence alias="peace_fix_social2_TreeVill_0006" indexed-detect="1" type="peace">
+		<action enter-prob="100" type="select">
+			<action duration="5000" prob="33" type="stay" />
+			<action duration="10000" prob="34" type="stay" />
+			<action duration="15000" prob="34" type="stay" />
+		</action>
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0005_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0005_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0007" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0009_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0009_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+	
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0008" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0009" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0003_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0003_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+	
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0010" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>	</act-sequence>
+
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0011" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0024_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0024_soc_02" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+
+	
+	<act-sequence alias="peace_fix_social2_TreeVill_0012" indexed-detect="1" type="peace">
+		<action enter-prob="100" type="select">
+			<action duration="5000" prob="33" type="stay" />
+			<action duration="10000" prob="34" type="stay" />
+			<action duration="15000" prob="34" type="stay" />
+		</action>
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0024_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0024_soc_02" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+	
+	
+	<act-sequence alias="peace_move1_standsocial_TreeVill_0013" indexed-detect="1" type="peace">
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0007_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+			</action>
+			<action prob="50" type="loop">
+				<action area="1" max-idle-sec="10" max-move-count="1" min-idle-sec="10" min-move-count="1" type="indexed-movearound" />
+				<action social="ME_WB_TreeVill_0007_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+			</action>
+		</action>
+	</act-sequence>
+	
+	<act-sequence alias="peace_fix_social2_TreeVill_0013" indexed-detect="1" type="peace">
+		<action enter-prob="100" type="select">
+			<action duration="5000" prob="33" type="stay" />
+			<action duration="10000" prob="34" type="stay" />
+			<action duration="15000" prob="34" type="stay" />
+		</action>
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0005_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0005_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+	
+	
+	<act-sequence alias="peace_fix_social2_TreeVill_0014" indexed-detect="1" type="peace">
+		<action enter-prob="100" type="select">
+			<action duration="5000" prob="33" type="stay" />
+			<action duration="10000" prob="34" type="stay" />
+			<action duration="15000" prob="34" type="stay" />
+		</action>
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0023_soc_01" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_TreeVill_0023_soc_01" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="10000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+
+	
+	<act-sequence alias="peace_move1_social2_Spider" indexed-detect="1" type="peace">
+		<action area="1" max-idle-sec="3" max-move-count="1" min-idle-sec="2" min-move-count="1" type="indexed-movearound" />
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="1" type="indexed-social" />
+				<action duration="2000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="2" type="indexed-social" />
+				<action duration="2000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+
+	<act-sequence alias="ME_WB_Dummy_0234_act" detect="none" type="act">
+		<action step="1" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="2" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="3" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="4" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="1" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="2" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="3" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="4" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="1" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="2" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="3" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="4" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="1" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="2" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="3" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="4" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="1" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="2" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="3" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="4" type="pause" />
+		<action duration="6000" type="stay" />
+	</act-sequence>
+
+	<act-sequence alias="ME_WB_Dummy_0238_act" detect="none" type="act">
+		<action duration="1000" type="stay" />
+		<action step="11" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="12" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="13" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="14" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="11" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="12" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="13" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="14" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="11" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="12" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="13" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="14" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="11" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="12" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="13" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="14" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="11" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="12" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="13" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="14" type="pause" />
+		<action duration="5000" type="stay" />
+	</act-sequence>
+
+	<act-sequence alias="ME_WB_Dummy_0239_act" detect="none" type="act">
+		<action duration="1500" type="stay" />
+		<action step="21" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="22" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="23" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="24" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="21" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="22" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="23" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="24" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="21" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="22" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="23" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="24" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="21" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="22" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="23" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="24" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="21" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="22" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="23" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="24" type="pause" />
+		<action duration="4500" type="stay" />
+	</act-sequence>
+
+	<act-sequence alias="ME_WB_Dummy_0240_act" detect="none" type="act">
+		<action duration="2000" type="stay" />
+		<action step="31" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="32" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="33" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="34" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="31" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="32" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="33" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="34" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="31" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="32" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="33" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="34" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="31" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="32" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="33" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="34" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="31" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="32" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="33" type="pause" />
+		<action duration="6000" type="stay" />
+		<action step="34" type="pause" />
+		<action duration="4000" type="stay" />
+	</act-sequence>
+
+	
+	<act-sequence alias="act_pathway1_social2_SpiderQueen_0003" indexed-detect="1" type="peace">
+		<action pathway="1" type="indexed-pathway" />
+		<action enter_prob="100" type="select">
+			<action prob="50" type="loop">
+				<action social="ME_WB_FireGorilla_0002_msg_04" type="social" />
+				<action social="1" type="indexed-social" />
+				<action duration="2000" type="stay" />
+			</action>
+			<action prob="50" type="loop">
+				<action social="ME_WB_FireGorilla_0002_msg_04" type="social" />
+				<action social="2" type="indexed-social" />
+				<action duration="4000" type="stay" />
+			</action>
+		</action>
+	</act-sequence>
+
+</table>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1443.xml-->
+  <quest alias="q_epic_1443" broadcast-category="field" category="epic" completed-list="y" id="1443" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="zoneenv2:e_button_secretyongmak_01" progress-mission="reaction-only" type="manipulate" />
+        <case object="zone:zone_SecretGarden_Epic" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="none">
+      <mission id="2" required-register-value="1">
+        <case object2="zoneenv2:e_button_secretyongmak_01" progress-mission="reaction-only" type="manipulate" />
+        <case object="npc:CH_CT_GunMaHye_0001" progress-mission="y" type="npc-manipulate" />
+        <case object="zone:zone_SecretGarden_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1443_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:e_button_secretyongmak_01" progress-mission="reaction-only" type="manipulate" />
+        <case convoy="epic_274_con" object="npc:CH_CT_PungEmpire_0141" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" />
+    </mission-step>
+    <mission-step id="4" rollback="leave-zone" time-limit-type="none" zone-1="zone_SecretGarden_Epic">
+      <mission id="4" required-register-value="1">
+        <case convoy="epic_274_con" object="zone:zone_SecretGarden_Epic" party-broadcast="y" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" zone-1="zone_SecretGarden_Epic">
+        <case convoy="epic_274_con" object="zone:zone_SecretGarden_Epic" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="5" rollback="leave-zone">
+      <mission id="5" required-register-value="1">
+        <case object2="npc:MH_CT_BokUn_0018" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" />
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1443_2" rollback="leave-zone" zone-1="zone_SecretGarden_Epic">
+      <mission id="6" required-register-value="1">
+        <case object2="zoneenv2:e_chest_5256_stonelantern_01" progress-mission="y" type="manipulate" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" />
+    </mission-step>
+    <mission-step id="7" rollback="none">
+      <mission id="7" required-register-value="1">
+        <case object2="zoneenv2:e_Button_5256_Yongmak_01" progress-mission="reaction-only" type="manipulate" />
+        <case object="zone:zone_YakChoGuild_Epic" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_1443_4" zone-1="zone_yakchoguild_epic">
+      <mission id="8" required-register-value="1" reward-1="1443_final_set1">
+        <case object="npc:CH_SA_PungEmpire_0014" progress-mission="y" type="talk" />
+        <case object="npc:ch_sa_jeonghado_0001" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0019" progress-mission="n" type="approach" />
+        <case object2="zoneenv2:5273_foot_1" party-broadcast="n" progress-mission="reaction-only" type="env-entered" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1444" />
+    </completion>
+    <transit id="1" zone="zone_SecretGarden_Party">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+    </transit>
+    <transit id="2" zone="zone_YakChoGuild">
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+    </transit>
+  </quest>
+</table>

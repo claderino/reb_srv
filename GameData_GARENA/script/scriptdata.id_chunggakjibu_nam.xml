@@ -1,0 +1,1807 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.id_chunggakjibu_nam.xml-->
+  
+  
+  
+  <script alias="zone_ChungGakjiBu_2_Default_ai">
+    <decision event="enter-zone">
+      <filter-set>
+      </filter-set>
+      <reaction-set>
+        <reaction text="남해함대 2구역 디폴트 세팅" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_Door_Boss03_1" target2="zoneenv2spawn:e_Door_Boss03_1_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="zone_ChungGakjiBu_3_Default_ai">
+    <decision event="enter-zone">
+      <filter-set>
+      </filter-set>
+      <reaction-set>
+        <reaction text="3구역 디폴트 세팅" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:2507_warp_2" target2="zoneenv2spawn:2507_warp_2_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:2502_DMZ01_2" target2="zoneenv2spawn:2502_DMZ01_2_spawn" type="set-env-enable" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="zone_ChungGakjiBu_1_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="남해함대 1구역 디폴트 세팅" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_Door_Boss01_1_default" target2="zoneenv2spawn:e_Door_Boss01_1_default_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_Door_Quest_1_default" target2="zoneenv2spawn:e_Door_Quest_1_default_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_2502_jaildoor_01_default" target2="zoneenv2spawn:e_2502_jaildoor_01_default_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_2502_jaildoor_02_default" target2="zoneenv2spawn:e_2502_jaildoor_02_default_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_2502_jaildoor_03_default" target2="zoneenv2spawn:e_2502_jaildoor_03_default_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  <script alias="ME_GuGuBung_0002_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung Spawn U~he~he~" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 90%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="70" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 70%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="50" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 50%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="30" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 30%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="10" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 10%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 combat start" type="debug-trace" />
+        
+        <reaction enable="n" target="zoneenv:e_Chest_2507hartA_01" target2="zoneenv2spawn:e_Chest_2507hartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 combat End" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2507hartA_01" target2="zoneenv2spawn:e_Chest_2507hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        
+        <reaction spawn-1="a_2507_162" spawn-delay="10000" type="spawn-npc" />
+        <reaction spawn-1="a_2507_163" spawn-delay="10000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    
+    
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter subject="event:killed:attacker" subject2="event:killed:attacker" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung killed" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2507hartA_01" target2="zoneenv2spawn:e_Chest_2507hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction cinematic="gergerbung_change" sight="party" to="event:killed:attacker" type="play-cinematic" />
+        
+        <reaction despawn-force="y" group-1="event:killed:defender:npc-party" type="despawn-npc-groups" />
+        
+        
+        
+        
+        
+        
+        
+        <reaction spawn-1="a_2507_168" spawn-delay="0" spawn-radius="0" spawn-target="event:killed:defender" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter subject="event:killed:attacker" subject2="event:killed:attacker" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung killed" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2507hartA_01" target2="zoneenv2spawn:e_Chest_2507hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction cinematic="gergerbung_change" sight="party" to="event:killed:attacker:my-summoner" type="play-cinematic" />
+        
+        <reaction despawn-force="y" group-1="event:killed:defender:npc-party" type="despawn-npc-groups" />
+        
+        
+        
+        
+        
+        
+        
+        <reaction spawn-1="a_2507_168" spawn-delay="0" spawn-radius="0" spawn-target="event:killed:defender" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B1_GuGuBung_Protection_Earthquake" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung attack 지진" type="debug-trace" />
+        
+        
+        
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B1_GuGuBung_Destruction_Thunderbolt" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 낙뢰" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B1_GuGuBung_Destruction_Thunderbolt2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 파괴" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B1_GuGuBung_Deal_magnetic_energyVam" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 흡공흡수" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B1_GuGuBung_Destruction_Fury" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 분노" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_GuGuBung_0003_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung King Spawn U~he~he~" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:2502_DMZ01" target2="zoneenv2spawn:2502_DMZ01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0003 combat start" type="debug-trace" />
+        
+        <reaction enable="n" target="zoneenv:e_Chest_2507hartA_01" target2="zoneenv2spawn:e_Chest_2507hartA_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:2502_DMZ01" target2="zoneenv2spawn:2502_DMZ01_spawn" type="set-env-enable" />
+        <reaction spawn-1="a_2507_186" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="100" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 100%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="100" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 100% 소환수" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction object="event:attacked:attacker" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 90%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 90%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="80" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="2" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 80%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="80" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 80%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="70" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 70%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="70" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 70%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="60" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="4" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 60%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="60" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 60%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="50" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="5" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 50%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker:my-summoner" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_152" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_155" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="50" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 50%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction object="event:attacked:attacker" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_152" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_155" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="40" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 40%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_152" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_155" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="30" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="7" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 30%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_152" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_155" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="20" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="8" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 20%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_152" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_2507_168" target="zonenpcspawn:a_2507_155" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="10" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="9" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 Hp 10%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        
+        <reaction spawn-1="a_2507_151" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0003 private spawn event-step=1" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_2502_98" max="4" min="4" spawn-delay="0" start="2" type="spawn-random-npc" />
+        <reaction amount="5000" opponent="event:npc-special:target" target="zonenpcspawn:a_2507_169" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-special:target" target="zonenpcspawn:a_2507_170" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-special:target" target="zonenpcspawn:a_2507_171" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-special:target" target="zonenpcspawn:a_2507_172" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-special:target" target="zonenpcspawn:a_2507_173" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-special:target" target="zonenpcspawn:a_2507_174" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-special:target" target="zonenpcspawn:a_2507_175" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-special:target" target="zonenpcspawn:a_2507_176" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-special:target" target="zonenpcspawn:a_2507_177" type="diff-npc-hate" />
+        
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0003 Cannon attacker spawn" type="debug-trace" />
+        
+        <reaction spawn-1="a_2507_152" spawn-2="a_2507_154" spawn-delay="1000" type="spawn-npc" />
+        <reaction spawn-1="a_2507_155" spawn-2="a_2507_157" spawn-delay="1000" type="spawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_149" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_150" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0002 combat End" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2507hartA_01" target2="zoneenv2spawn:e_Chest_2507hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        
+        <reaction seq="peace_pathway1_default" target="event:npc-combat-end:npc" type="set-npc-act" />
+        
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_169" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_170" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_172" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_173" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_174" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_175" type="despawn-npc" />
+        <reaction despawww3n-force="n" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_176" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_177" type="despawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_151" target-2="zonenpcspawn:a_2507_154" target-3="zonenpcspawn:a_2507_157" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_152" target-2="zonenpcspawn:a_2507_155" type="despawn-npc" />
+        
+        
+        <reaction enable="n" target="zoneenv:2502_DMZ01" target2="zoneenv2spawn:2502_DMZ01_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_186" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter subject="event:killed:attacker" subject2="event:killed:attacker" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung0003 killed" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2507hartA_01" target2="zoneenv2spawn:e_Chest_2507hartA_01_spawn" type="set-env-enable" />
+        
+        
+        <reaction cinematic="Gergerbung_end" sight="party" to="event:killed:attacker:my-summoner" type="play-cinematic" />
+        
+        <reaction object="event:killed:defender:npc-party:reg-2" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:killed:defender:npc-party:reg-2" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+        <reaction special-id="2" target="zonenpcspawn:a_2507_152" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_2507_155" type="npc-fire-special" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_151" target-2="zonenpcspawn:a_2507_154" target-3="zonenpcspawn:a_2507_157" type="despawn-npc" />
+        
+        <reaction spawn-1="a_2507_182" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_183" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_184" spawn-delay="5000" type="spawn-npc" />
+        <reaction spawn-1="a_2507_185" spawn-delay="0" type="spawn-npc" />
+        <reaction pc-spawn="2" target="event:killed:defender" type="warp-party" zone="zone_ChungGakjiBu_3_Setup" />
+        <reaction pc-spawn="2" target="event:killed:defender" type="warp" zone="zone_ChungGakjiBu_3_Setup" />
+        
+        
+        <reaction spawn-1="a_2507_159" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_160" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_161" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_164" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_165" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_166" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_167" spawn-delay="0" type="spawn-npc" />
+        
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_2502_98" type="despawn-npc-groups" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_186" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung0003 killed" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2507hartA_01" target2="zoneenv2spawn:e_Chest_2507hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction cinematic="Gergerbung_end" sight="party" to="event:killed:defender:npc-party:reg-2" type="play-cinematic" />
+        
+        <reaction object="event:killed:defender:npc-party:reg-2" reg="2" target="zonenpcsquad:s_2502_82" type="set-party-object" />
+        <reaction object="event:killed:defender:npc-party:reg-2" reg="2" target="zonenpcsquad:s_2502_85" type="set-party-object" />
+        <reaction special-id="2" target="zonenpcspawn:a_2507_152" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_2507_155" type="npc-fire-special" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_151" target-2="zonenpcspawn:a_2507_154" target-3="zonenpcspawn:a_2507_157" type="despawn-npc" />
+        
+        <reaction spawn-1="a_2507_182" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_183" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_184" spawn-delay="5000" type="spawn-npc" />
+        <reaction spawn-1="a_2507_185" spawn-delay="0" type="spawn-npc" />
+        <reaction pc-spawn="2" target="event:killed:defender" type="warp-party" zone="zone_ChungGakjiBu_3_Setup" />
+        <reaction pc-spawn="2" target="event:killed:defender" type="warp" zone="zone_ChungGakjiBu_3_Setup" />
+        
+        
+        <reaction spawn-1="a_2507_159" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_160" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_161" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_164" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_165" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_166" spawn-delay="0" type="spawn-npc" />
+        <reaction spawn-1="a_2507_167" spawn-delay="0" type="spawn-npc" />
+        
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_2502_98" type="despawn-npc-groups" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_2507_186" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B2_GuGuBung2_Destruction_Cut" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 요마왕 절단" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B2_GuGuBung2_Destruction_Cut2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 요마왕 분쇄" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B2_GuGuBung2_Destruction_Wind" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 요마왕 광풍" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B2_GuGuBung2_Deal_magnetic_energyBack" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 요마왕 흡공밀기" type="debug-trace" />
+        
+        
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B2_GuGuBung2_Destruction_Fury" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 요마왕 분노" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_B2_GuGuBung2_Protection_Charge" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 요마왕 돌격" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="MH_ZombieA_0006_ai">
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_Dummy_0008_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_003 cannon1 spawn" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_2507_168" target="event:npc-spawn:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_003 cannon1 combat-start" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2507_168" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0003 cannon event-step=1" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2507_168" target="event:npc-special:npc" type="diff-npc-hate" />
+        <reaction special-id="1" target="event:npc-special:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_GuGuBung_0003 cannon event-step=2" type="debug-trace" />
+        
+        <reaction pc-spawn="2" target="event:npc-special:npc:npc-party:reg-2" type="warp-party" zone="zone_ChungGakjiBu_3_Setup" />
+        <reaction pc-spawn="2" target="event:npc-special:npc:npc-party:reg-2" type="warp" zone="zone_ChungGakjiBu_3_Setup" />
+        
+        
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_R0_Dummy_None_Cannon" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 대포를 쏜다쏜다쏜다" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_DispelSkill" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGuBung 대포 디스펠디스펠" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_Dummy_0010_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="ME_GuGuBung_003 ME_Dummy_0010_ai spawn111111111" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_Dummy_0011_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_Dummy_0011 spawn" type="debug-trace" />
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_Dummy_0011 combat-start" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_JEA_R0_Dummy_None_Spread_NPC" />
+        <filter subject="event:attack:defender" subject2="event:attack:defender" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction pc-spawn="2" target="event:attack:defender" type="warp" zone="zone_ChungGakjiBu_3_Setup" />
+        <reaction text="PC를 워프 시킴 -jasoncho" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+  </script>
+  
+  <script alias="MH_JaKyoungDan_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_GuGuBung_003 MH_JaKyoungDan_0001_ai spawn" type="debug-trace" />
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="GuGuBung MH_JaKyoungDan_0001_ai combat-start " type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <reaction-set>
+        <reaction text="ME_GuGuBung_003 MH_JaKyoungDan_0001_ai act-finish" type="debug-trace" />
+        <reaction amount="5000" opponent="zonenpcspawn:a_2507_168" target="event:act-finished:npc" type="diff-npc-hate" />
+        <reaction from="event:npc-combat-end:npc" social="MH_JaKyoungDan_0001_spawn_soc" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="2502_Gergerbung_start_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GuGu 2502_Gergerbung_start_ai enter -extra" type="debug-trace" />
+        
+        
+        
+        <reaction cinematic="Gergerbung_start" sight="party" to="event:env-entered:creature" type="play-cinematic" />
+        <reaction enable="n" target="zoneenv:2502_Gergerbung_start" target2="zoneenv2spawn:2502_Gergerbung_start_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  <script alias="ME_Dog_0003_ai">
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_Dog_0003_ai combat-start -extra" type="debug-trace" />
+        
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_Dog_0003_ai npc-special -extra" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="event:npc-special:npc:npc-party" max="2" min="2" spawn-radius="220" spawn-target="event:npc-special:npc" start="4" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+        <filter spawn="a_2505_188" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_Dog_0003_ai npc-special -extra" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="event:npc-special:npc:npc-party" max="2" min="2" spawn-radius="220" spawn-target="event:npc-special:npc" start="5" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+        <filter spawn="a_2505_189" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_Dog_0003_ai npc-special -extra" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="event:npc-special:npc:npc-party" max="2" min="2" spawn-radius="220" spawn-target="event:npc-special:npc" start="5" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+  </script>
+  
+  <script alias="MH_BladeMaster_0005_ai">
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_BladeMaster_0005_ai combat-end -extra" type="debug-trace" />
+        <reaction target-1="event:npc-combat-end:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  <script alias="MH_ChungGak_0040_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="n" target="zoneenv:e_Chest_2505hartA_01" target2="zoneenv2spawn:e_Chest_2505hartA_01_spawn" type="set-env-enable" />
+        <reaction from="event:npc-combat-start:npc" social="MH_ChungGak_0040_spawn_soc" type="play-social" />
+        <reaction enable="y" target="zoneenv:2505_DMZ01" target2="zoneenv2spawn:2505_DMZ01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_ChungGak_0040_ai Bleeding-1 -extra" type="debug-trace" />
+        <reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_ChungGak_0040_ai Bleeding-2 -extra" type="debug-trace" />
+        <reaction special-id="2" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="3" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_ChungGak_0040_ai Bleeding-3 -extra" type="debug-trace" />
+        <reaction special-id="3" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_ChungGak_0040_ai special-1 -extra" type="debug-trace" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_2502_50" index-1="1" index-2="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_ChungGak_0040_ai special-2 -extra" type="debug-trace" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_2502_150" index-1="1" index-2="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_ChungGak_0040_ai special-3 -extra" type="debug-trace" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_2502_166" index-1="1" index-2="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2505hartA_01" target2="zoneenv2spawn:e_Chest_2505hartA_01_spawn" type="set-env-enable" />
+        <reaction text="MH_ChungGak_0040_ai combat-end -extra" type="debug-trace" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_2502_50" group-2="zonenpcsquad:s_2502_150" group-3="zonenpcsquad:s_2502_166" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction enable="n" target="zoneenv:2505_DMZ01" target2="zoneenv2spawn:2505_DMZ01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2505hartA_01" target2="zoneenv2spawn:e_Chest_2505hartA_01_spawn" type="set-env-enable" />
+        <reaction text="MH_ChungGak_0040_ai killed -extra" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_Door_Boss01" target2="zoneenv2spawn:e_Door_Boss01_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_2502_jaildoor_01" target2="zoneenv2spawn:e_2502_jaildoor_01_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_2502_jaildoor_02" target2="zoneenv2spawn:e_2502_jaildoor_02_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_2502_jaildoor_03" target2="zoneenv2spawn:e_2502_jaildoor_03_spawn" type="set-env-state" />
+        <reaction seq="a_2502_41_act" target="zonenpcspawn:A_2505_146" type="set-npc-act" />
+        <reaction seq="a_2502_41_act" target="zonenpcspawn:A_2505_147" type="set-npc-act" />
+        <reaction seq="a_2502_41_act" target="zonenpcspawn:A_2505_148" type="set-npc-act" />
+        <reaction seq="a_2502_41_act" target="zonenpcspawn:A_2505_207" type="set-npc-act" />
+        <reaction seq="a_2502_41_act" target="zonenpcspawn:A_2505_208" type="set-npc-act" />
+        <reaction seq="a_2502_41_act" target="zonenpcspawn:A_2505_209" type="set-npc-act" />
+        <reaction seq="a_2502_41_act" target="zonenpcspawn:A_2505_210" type="set-npc-act" />
+        
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction enable="n" target="zoneenv:2505_DMZ01" target2="zoneenv2spawn:2505_DMZ01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="MH_BladeMaster_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction enable="n" target="zoneenv:2502_Boss02_HateDefault" target2="zoneenv2spawn:2502_Boss02_HateDefault_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="n" target="zoneenv:e_Chest_2506hartA_01" target2="zoneenv2spawn:e_Chest_2506hartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+      <reaction-set probability="50">
+        <reaction from="event:npc-combat-start:npc" social="MH_BladeMaster_0001_spawn_soc" type="play-social" />
+        
+        <reaction enable="y" target="zoneenv:2506_DMZ01" target2="zoneenv2spawn:2506_DMZ01_spawn" type="set-env-enable" />
+      </reaction-set>
+      <reaction-set probability="50">
+        <reaction from="event:npc-combat-start:npc" social="MH_BladeMaster_0001_spawn_soc_01" type="play-social" />
+        
+        <reaction enable="y" target="zoneenv:2506_DMZ01" target2="zoneenv2spawn:2506_DMZ01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2506hartA_01" target2="zoneenv2spawn:e_Chest_2506hartA_01_spawn" type="set-env-enable" />
+        <reaction text="MH_BladeMaster_0001_ai npc-combat-end -extra" type="debug-trace" />
+        <reaction group-1="event:npc-combat-end:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+        <reaction enable="n" target="zoneenv:2506_DMZ01" target2="zoneenv2spawn:2506_DMZ01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_BladeMaster_0001_ai killed" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_2506hartA_01" target2="zoneenv2spawn:e_Chest_2506hartA_01_spawn" type="set-env-enable" />
+        
+        
+        <reaction state="open" state2="open" target="zoneenv:e_Door_Boss03" target2="zoneenv2spawn:e_Door_Boss03_spawn" type="set-env-state" />
+        <reaction enable="n" target="zoneenv:2502_Boss02_HateDefault" target2="zoneenv2spawn:2502_Boss02_HateDefault_spawn" type="set-env-enable" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_2506_192" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_2506_193" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_2506_194" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_2506_195" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_2506_196" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_2506_197" type="set-npc-act" />
+        <reaction enable="n" target="zoneenv:2506_DMZ01" target2="zoneenv2spawn:2506_DMZ01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="2502_Boss02_HateDefault_ai">
+    
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="2502_Boss02_HateDefault_ai -extra" type="debug-trace" />
+        <reaction target="zonenpcspawn:A_2506_9" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:A_2506_10" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:A_2506_11" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  <script alias="MH_Shooter_0002_ai">
+  </script>
+  
+  <script alias="MH_Shooter_0003_ai">
+  </script>
+  
+  <script alias="MH_JaKyoungDan_0005_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="qd_474 MH_JaKyoungDan_0005_ai spawn -extra" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="20">
+        <reaction text="qd_474 MH_JaKyoungDan_0005_ai attack -extra" type="debug-trace" />
+        <reaction from="event:attack:attacker" social="MH_JaKyoungDan_0005_combat_soc_01" type="play-social" />
+      </reaction-set>
+      <reaction-set probability="20">
+        <reaction text="qd_474 MH_JaKyoungDan_0005_ai attack -extra" type="debug-trace" />
+        <reaction from="event:attacked:attacker" social="MH_BladeMaster_0002_combat_soc_01" type="play-social" />
+      </reaction-set>
+      <reaction-set probability="60">
+        <reaction text="qd_474 MH_JaKyoungDan_0005_ai attack -extra" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="qd_474 MH_JaKyoungDan_0005_ai npc-combat-end -extra" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-combat-end:npc" type="set-npc-brain" />
+        <reaction seq="peace_fix_default" target="event:npc-combat-end:npc" type="set-npc-act" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_2505_52" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_2505_76" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_2505_77" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_JaKyoungDan_0006_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="qd_474 MH_JaKyoungDan_0006_ai spawn -extra" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="10">
+        <reaction text="qd_474 MH_JaKyoungDan_0006_ai attack -extra2" type="debug-trace" />
+        <reaction from="event:attack:attacker" social="MH_JaKyoungDan_0006_combat_soc_01" type="play-social" />
+      </reaction-set>
+      <reaction-set probability="90">
+        <reaction text="qd_474 MH_JaKyoungDan_0006_ai attack -extra" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="10">
+        <reaction text="qd_474 MH_JaKyoungDan_0006_ai attacked -extra" type="debug-trace" />
+        <reaction from="event:attacked:attacker" social="MH_BladeMaster_0003_combat_soc_01" type="play-social" />
+      </reaction-set>
+      <reaction-set probability="90">
+        <reaction text="qd_474 MH_JaKyoungDan_0006_ai attacked -extra2" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_JaKyoungDan_0006_ai npc-combat-end -extra" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-combat-end:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    
+  </script>
+  
+  
+  <script alias="2502_NPC_Run_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="qd_474 2502_NPC_Run_ai enter -extra" type="debug-trace" />
+        <reaction enable="n" target="zoneenv:2502_NPC_Run" target2="zoneenv2spawn:2502_NPC_Run_spawn" type="set-env-enable" />
+        <reaction amount="50" opponent="zonenpcspawn:a_2505_52" target="zonenpcspawn:a_2505_14" type="diff-npc-hate" />
+        <reaction amount="50" opponent="zonenpcspawn:a_2505_76" target="zonenpcspawn:a_2505_14" type="diff-npc-hate" />
+        <reaction amount="50" opponent="zonenpcspawn:a_2505_77" target="zonenpcspawn:a_2505_14" type="diff-npc-hate" />
+        <reaction amount="50" opponent="zonenpcspawn:a_2505_77" target="zonenpcspawn:a_2505_49" type="diff-npc-hate" />
+        <reaction amount="50" opponent="zonenpcspawn:a_2505_76" target="zonenpcspawn:a_2505_49" type="diff-npc-hate" />
+        <reaction amount="50" opponent="zonenpcspawn:a_2505_52" target="zonenpcspawn:a_2505_49" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-entered:creature" target="zonenpcspawn:a_2505_76" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-entered:creature" target="zonenpcspawn:a_2505_77" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+  
+  <script alias="ME_RewardBox_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="GuGuBung ZombieA_0005 Spawn ME_RewardBox_0001_ai" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:2502_DMZ01" target2="zoneenv2spawn:2502_DMZ01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="ME_RewardBox_0001_ai killed -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:2507_warp" target2="zoneenv2spawn:2507_warp_spawn" type="set-env-enable" />
+        
+        <reaction seq="peace_fix_social1" target="zonenpcspawn:a_2507_182" type="set-npc-act" />
+        <reaction seq="peace_fix_social1" target="zonenpcspawn:a_2507_185" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="2507_warp_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="2504_warp_ai env-manipulated -extra" type="debug-trace" />
+        <reaction target="event:env-manipulated:pc" type="warp-to-reentrance" />
+        
+        
+        
+        
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+  <script alias="2502_JaKyoungDan_event_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="도천풍 등장" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_2505_7" spawn-1="a_2505_74" spawn-delay="1000" type="spawn-npc" />
+        <reaction enable="n" target="zoneenv:2502_JaKyoungDan_event" target2="zoneenv2spawn:2502_JaKyoungDan_event_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="2502_1st_wave_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="웨이브1 시작" type="debug-trace" />
+        <reaction spawn-1="a_2506_198" spawn-delay="1000" type="spawn-npc" />
+        <reaction spawn-1="a_2506_199" spawn-delay="1000" type="spawn-npc" />
+        <reaction enable="n" target="zoneenv:2502_1st_wave" target2="zoneenv2spawn:2502_1st_wave_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="2502_2nd_wave_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="웨이브2 시작" type="debug-trace" />
+        <reaction spawn-1="a_2506_204" spawn-delay="1000" type="spawn-npc" />
+        <reaction spawn-1="a_2506_205" spawn-delay="1000" type="spawn-npc" />
+        <reaction spawn-1="a_2506_206" spawn-delay="1000" type="spawn-npc" />
+        <reaction enable="n" target="zoneenv:2502_2nd_wave" target2="zoneenv2spawn:2502_2nd_wave_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_ChungGak_0210_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="MH_ChungGak_0210 spawn" type="debug-trace" />
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_7" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_8" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_13" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_48" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_51" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_65" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_71" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_73" target="event:npc-spawn:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="MH_ChungGak_0210 combat-start" type="debug-trace" />
+        <reaction from="event:npc-combat-start:npc" social="CH_MuMyeongIn_0003_combatstart_soc" type="play-social" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_7" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_8" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_13" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_48" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_51" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_65" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_71" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_2505_73" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        
+      </filter-set>
+      <reaction-set>
+        <reaction text="도천풍 전투 종료" type="debug-trace" />
+        
+        
+        <reaction despawn-force="y" target-1="event:npc-combat-end:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_ForceMaster_0005_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_ForceMaster_0005 spawn" type="debug-trace" />
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="80" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="연출용 빙포 Hp 80%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction attack-target="event:attacked:attacker" spawn-1="a_2506_60" spawn-delay="1000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="60" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="연출용 빙포 Hp 60%" type="debug-trace" />
+        
+        <reaction despawn-force="y" target-1="event:attacked:defender" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_ForceMaster_0006_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_ForceMaster_0006 spawn" type="debug-trace" />
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="80" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="연출용 열포 Hp 80%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction attack-target="event:attacked:attacker" spawn-1="a_2506_61" spawn-delay="1000" type="spawn-npc" />
+        <reaction attack-target="event:attacked:attacker" spawn-1="a_2506_62" spawn-delay="1000" type="spawn-npc" />
+        <reaction attack-target="event:attacked:attacker" spawn-1="a_2506_63" spawn-delay="1000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="60" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="연출용 열포 Hp 60%" type="debug-trace" />
+        
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2506_15" type="despawn-npc" />
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2506_16" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="event:attacked:defender" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_JaKyoungDan_0004_ai">
+    <decision event="act-finished">
+      <reaction-set>
+        <reaction text="충각단 포로2 act-finish" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_JaKyoungDan_0005_ai">
+    <decision event="act-finished">
+      <reaction-set>
+        <reaction text="충각단 포로2 act-finish" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_JaKyoungDan_0006_ai">
+    <decision event="act-finished">
+      <reaction-set>
+        <reaction text="충각단 포로3 act-finish" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_KungfuMaster_0003_ai">
+    <decision event="act-finished">
+      <filter-set>
+        <filter spawn="a_2505_41" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="마파랑 처치 후 스폰 권사 act-finish 처리" type="debug-trace" />
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_BladeMaster_0002_ai">
+    <decision event="act-finished">
+      <filter-set>
+        <filter spawn="a_2505_43" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="마파랑 처치 후 스폰 검사1 act-finish 처리" type="debug-trace" />
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_BladeMaster_0003_ai">
+    <decision event="act-finished">
+      <filter-set>
+        <filter spawn="a_2505_42" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="마파랑 처치 후 스폰 검사2 act-finish 처리" type="debug-trace" />
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter spawn="a_2505_111" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="사판 스폰 검사2 act-finish 처리" type="debug-trace" />
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter spawn="a_2505_112" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="사판 스폰 검사2 act-finish 처리" type="debug-trace" />
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="MH_ForceMaster_0003_ai">
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1구역 이판 전투 시작 도깨비불 인보크" type="debug-trace" />
+        <reaction effect="MH_Common_None_Ghost_Ice_Human" target="event:npc-combat-start:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="이판 장판 스킬 event-step=1" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_2502_211" max="1" min="1" spawn-delay="0" spawn-target="event:npc-special:target" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="전투 종료 디스펠" type="debug-trace" />
+        <reaction effect-type="modify-ability-71" target="event:npc-combat-end:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1구역 초반 문열어" type="debug-trace" />
+        <reaction effect-type="modify-ability-71" target="event:killed:defender" type="dispel-by-type" />
+        <reaction state="open" state2="open" target="zoneenv:e_Door_Quest" target2="zoneenv2spawn:e_Door_Quest_spawn" type="set-env-state" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_2502_52" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_Dummy_0148_ai">
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1구역 이판 장판 스킬 쓰고 디스폰" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_KungfuMaster_0001_ai">
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="60" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1구역 사판 Hp 60%" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction attack-target="event:attacked:attacker" spawn-1="a_2505_185" spawn-delay="1000" type="spawn-npc" />
+        <reaction attack-target="event:attacked:attacker" spawn-1="a_2505_187" spawn-delay="1000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1구역 사판킬 격사 세트 디스폰" type="debug-trace" />
+        
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2505_9" type="despawn-npc" />
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2505_10" type="despawn-npc" />
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2505_11" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_PotAxParty_0020_ai">
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction text="도끼파용병 Hp 60%" type="debug-trace" />
+        <reaction spawn-1="a_2506_200" spawn-delay="1000" type="spawn-npc" />
+        <reaction spawn-1="a_2506_201" spawn-delay="1000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="일반 몬스터 디스폰" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_2506_45" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_2506_37" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_2506_37" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_2506_12" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_2506_13" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_2506_14" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_ForceMaster_0004_ai">
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="전투 종료 디스펠" type="debug-trace" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="격사 디스폰" type="debug-trace" />
+        
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2506_144" type="despawn-npc" />
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2506_145" type="despawn-npc" />
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2506_18" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_KungfuMaster_0002_ai">
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="2구역 초사 전투 시작 도깨비불 인보크" type="debug-trace" />
+        <reaction effect="MH_Common_None_Ghost_Ice_Human" target="event:npc-combat-start:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        
+      </filter-set>
+      <reaction-set>
+        <reaction text="2구역 초사 장판 스킬1 event-step=1" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:target" end="7" group="zonenpcsquad:s_2506_2" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-special:target" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="전투 종료 디스펠" type="debug-trace" />
+        <reaction effect-type="modify-ability-71" target="event:npc-combat-end:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="2구역 초사 격사 디스폰" type="debug-trace" />
+        <reaction effect-type="modify-ability-71" target="event:killed:defender" type="dispel-by-type" />
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2506_141" type="despawn-npc" />
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2506_142" type="despawn-npc" />
+        <reaction despawn-force="n" target-1="zonenpcspawn:a_2506_143" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_Dummy_0149_ai">
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        
+      </filter-set>
+      <reaction-set>
+        <reaction text="2구역 초사 장판 스킬 쓰고 디스폰" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+</table>

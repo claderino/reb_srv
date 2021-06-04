@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
+  <!--effectgroupdata_itemskill_wl.xml-->
+	<record alias="ItemSkill_WL_TargetBeam_G1_Lv1_01_E1" effect-1="ItemSkill_WL_TargetBeam_G1_Lv1_01_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_TargetBeam_G1_Lv1_02_E1" effect-1="ItemSkill_WL_TargetBeam_G1_Lv1_02_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_TargetBeam_G1_Lv2_01_E1" effect-1="ItemSkill_WL_TargetBeam_G1_Lv2_01_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_TargetBeam_G1_Lv2_02_E1" effect-1="ItemSkill_WL_TargetBeam_G1_Lv2_02_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_TargetBeam_G1_Lv3_01_E1" effect-1="ItemSkill_WL_TargetBeam_G1_Lv3_01_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_TargetBeam_G1_Lv3_02_E1" effect-1="ItemSkill_WL_TargetBeam_G1_Lv3_02_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_TargetBeam_G1_Lv4_01_E1" effect-1="ItemSkill_WL_TargetBeam_G1_Lv4_01_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_TargetBeam_G1_Lv4_02_E1" effect-1="ItemSkill_WL_TargetBeam_G1_Lv4_02_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv1_01_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv1_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv1_02_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv1_02_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv1_05_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv1_05_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv2_01_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv2_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv2_02_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv2_02_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv2_05_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv2_05_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv3_01_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv3_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv3_02_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv3_02_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv3_05_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv3_05_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv4_01_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv4_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv4_02_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv4_02_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_GroundAttack_G2_Lv4_05_E1" effect-1="ItemSkill_WL_GroundAttack_G2_Lv4_05_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv1_01_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv1_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv1_02_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv1_02_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv1_05_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv1_05_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv2_01_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv2_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv2_02_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv2_02_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv2_05_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv2_05_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv3_01_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv3_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv3_02_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv3_02_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv3_05_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv3_05_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv4_01_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv4_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv4_02_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv4_02_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Drain_Soul_G3_Lv4_05_E1" effect-1="ItemSkill_WL_Drain_Soul_G3_Lv4_05_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv1_01_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv1_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv1_01_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv1_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv1_04_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv1_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv1_04_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv1_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv2_01_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv2_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv2_01_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv2_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv2_04_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv2_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv2_04_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv2_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv3_01_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv3_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv3_01_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv3_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv3_04_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv3_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv3_04_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv3_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv4_01_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv4_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv4_01_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv4_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv4_04_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv4_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv4_04_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv4_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv5_01_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv5_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv5_01_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv5_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv5_04_E1" effect-1="ItemSkill_WL_Nuke_RW2_Lv5_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW2_Lv5_04_E2" effect-1="ItemSkill_WL_Nuke_RW2_Lv5_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv1_01_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv1_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv1_01_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv1_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv1_04_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv1_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv1_04_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv1_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv2_01_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv2_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv2_01_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv2_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv2_04_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv2_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv2_04_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv2_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv3_01_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv3_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv3_01_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv3_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv3_04_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv3_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv3_04_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv3_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv4_01_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv4_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv4_01_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv4_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv4_04_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv4_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv4_04_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv4_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv5_01_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv5_01_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv5_01_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv5_01_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv5_04_E1" effect-1="ItemSkill_WL_Nuke_RW3_Lv5_04_E1_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_Nuke_RW3_Lv5_04_E2" effect-1="ItemSkill_WL_Nuke_RW3_Lv5_04_E2_Buff" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_TargetBeam_B1_Lv1_01_E1" effect-1="ItemSkill_WL_TargetBeam_B1_Lv1_01_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" target-state-first-filter="60170" />
+	<record alias="ItemSkill_WL_TraceLevel_B2_Lv1_01_E1" effect-1="ItemSkill_WL_TraceLevel_B2_Lv1_01_Dmg" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_EventTargetNuke_B3_Lv1_01_E1" effect-1="ItemSkill_WL_EventTargetNuke_B3_Lv1_01_Flag" skill-result="critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_EventTargetNuke_B4_Lv1_01_E1" effect-1="ItemSkill_WL_EventTargetNuke_B4_Lv1_01_Flag" skill-result="critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Real_SoulMask_Lv1_01_E1" effect-1="ItemSkill_WL_Real_SoulMask_Lv1_01_Flag" skill-result="all" target="second-target" target-state="my-party" />
+	<record alias="ItemSkill_WL_DrainSoul_S1_Lv1_01_E1" effect-1="ItemSkill_WL_DrainSoul_S1_Lv1_01_Flag" effect-2="ItemSkill_CM_Logic_Flag_Check" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Command_S2_Lv1_01_E1" effect-1="Warlock_Spell_ghost_bit_Dispel" effect-2="Warlock_Spell_ghost_bit_3" skill-result="all" target="caster" target-state="all" target-state-first-filter="60254" />
+	<record alias="ItemSkill_WL_Command_S2_Lv1_01_E2" effect-1="Warlock_Spell_ghost_bit_Dispel" effect-2="Warlock_Spell_ghost_bit_3" skill-result="all" target="caster" target-state="all" target-state-first-filter="60252" />
+	<record alias="ItemSkill_WL_Command_S2_Lv1_01_E3" effect-1="Warlock_Spell_ghost_bit_Dispel" effect-2="Warlock_Spell_ghost_bit_2" skill-result="all" target="caster" target-state="all" target-state-first-filter="60250" />
+	<record alias="ItemSkill_WL_Command_S2_Lv1_01_E4" effect-1="Warlock_Spell_ghost_bit_1" skill-result="all" target="caster" target-state="all" target-state-first-filter="60253" target-state-second-filter="60255" />
+	<record alias="ItemSkill_WL_Counter_S3_Lv1_01_E1" effect-1="ItemSkill_WL_Counter_S3_Lv1_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_RecallToCaster_S4_Lv1_01_E1" effect-1="ItemSkill_WL_RecallToCaster_S4_Lv1_01_Flag" skill-result="all" target="first-target" target-state="all" />
+	<record alias="ItemSkill_WL_Command_S5_Lv1_01_E1" effect-1="Warlock_Spell_TraceLevel_three_flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_Nuke_S6_Lv1_01_E1" effect-1="ItemSkill_WL_Nuke_S6_Lv1_01_Talisman_show" effect-2="ItemSkill_WL_Nuke_S6_Lv1_01_Talisman" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_WL_TargetBeam_S7_Lv1_01_E1" effect-1="ItemSkill_WL_TargetBeam_S7_Lv1_01_E1_Flag" skill-result="hit-critical-hit" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_TraceLevel_S8_Lv1_01_E1" effect-1="Warlock_Spell_TraceLevel_flag_Dispel" effect-2="ItemSkill_WL_TraceLevel_S8_two_flag" skill-result="all" target="caster" target-state="all" target-state-first-filter="60288" />
+	<record alias="ItemSkill_WL_TraceLevel_S9_Lv1_01_E1" effect-1="ItemSkill_WL_TraceLevel_S9_Lv1_01_E1_Flag" effect-2="Common_Reduce_RecycleTime_1s_18" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_WL_RangeMoveBlock_S10_Lv1_01_E1" effect-1="ItemSkill_WL_RangeMoveBlock_S10_Lv1_01_E1_Flag" skill-result="all" target="caster" target-state="all" />
+</table>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\2503\zoneenv2placedata.2503.xml-->
+	<record action-point="-17980,16675,209" action-radius="0" alias="e_Door_Boss02_1_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="-17980,16675,209" manipulation-radius="0" tool-zone-1="2506" tool-zone-2="2503" tool-zone-3="2504" tool-zone-4="2507" type="gate" use-manipulation-point="n" />
+	<record action-point="-17824,16770,210" action-radius="0" alias="e_Door_Boss03_1_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="-17824,16770,210" manipulation-radius="0" tool-zone-1="2506" tool-zone-2="2503" type="gate" use-manipulation-point="n" />
+	<record action-point="-18016,17281,166" action-radius="20" alias="e_Chest_2506hartA_01_1_place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="-18016,17281,166" manipulation-radius="20" tool-zone-1="2506" tool-zone-2="2503" type="chest" use-manipulation-point="n" />
+	<record action-point="-16428,20783,-360" alias="2503_Chungkakdan_2502_place" region-point-1="-16275,20825,1711" region-point-2="-16576,20727,1711" region-point-3="-16581,20741,1711" region-point-4="-16279,20838,1711" tool-zone-1="2503" tool-zone-2="2506" type="portal" />
+	<record action-point="-17783,16695,258" alias="2503_Chungkakdan_2504_place" region-point-1="-17837,16671,1200" region-point-2="-17736,16732,1200" region-point-3="-17728,16720,1200" region-point-4="-17830,16658,1210" tool-zone-1="2503" tool-zone-2="2506" type="portal" />
+	<record alias="zone2503.falldeath_place" height="-750" type="fall-death" />
+</table>

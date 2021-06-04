@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1076.xml-->
+  <quest alias="q_sub_1076" broadcast-category="field" category="normal" district-1="suwal" id="1076" max-repeat="1" save-type="all">
+    <acquisition level="37" preceding-quest-1="q_epic_908" preceding-quest-2="q_sub_1088" preceding-quest-check="and" preceding-quest-mission-step-1="3">
+      <case acquire-quest="y" object="npc:CH_NolBu_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_gureum_03" object2="zoneenv2:e_gureum_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_gureum_02" object2="zoneenv2:e_gureum_02" party-broadcast="n" progress-mission="reaction-only" remove-grocery="y" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_gureum_01" object2="zoneenv2:e_gureum_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object-1="npc:me_pigbig_0011" object2-1="npc:me_pigbig_0011" party-broadcast="n" progress-mission="reaction-only" skill="gadget_q_crapa" skill3="gadget_q_crapa" type="skill" />
+        <case object="npc:me_hongdonjok_0001" object2="npc:me_hongdonjok_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="1076_final_set1">
+        <case object="npc:ch_heungbu_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_heungbu_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

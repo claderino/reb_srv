@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.762.xml-->
+  <quest alias="q_sub_762" broadcast-category="field" category="normal" district-1="deasamak" id="762" max-repeat="1" save-type="all">
+    <acquisition level="32" preceding-quest-1="q_epic_528" preceding-quest-2="q_sub_787" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_mayeongganggun_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="2" rollback="none">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_mayeongganggun_0020" object2="npc:ch_mayeongganggun_0020" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:zone_sunjinhan" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_762_3" type="enter-zone" />
+        <case object="npc:ch_mayeongganggun_0054" object2="npc:ch_mayeongganggun_0054" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="762_final_set1">
+        <case object="npc:ch_mayeongganggun_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_mayeongganggun_0020" party-broadcast="n" progress-mission="y" quest-decision="qd_762_2" type="talk" />
+        <case object="zone:zone_sunjinhan" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_762_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_SunJinhan_SP">
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.582.xml-->
+  <quest alias="q_sub_582" broadcast-category="field" category="normal" district-1="deasamak" id="582" max-repeat="1" save-type="all">
+    <acquisition level="23" preceding-quest-1="q_epic_508" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_dweller_039" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="5">
+        <case object="zoneenv:e_onoff_balbalddong_07" object2="zoneenv2:e_onoff_balbalddong_07" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_balbalddong_06" object2="zoneenv2:e_onoff_balbalddong_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_balbalddong_05" object2="zoneenv2:e_onoff_balbalddong_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_balbalddong_04" object2="zoneenv2:e_onoff_balbalddong_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_balbalddong_03" object2="zoneenv2:e_onoff_balbalddong_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_balbalddong_02" object2="zoneenv2:e_onoff_balbalddong_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_balbalddong_01" object2="zoneenv2:e_onoff_balbalddong_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case acquire-quest="n" object="npc:ch_dweller_039" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_onoff_bluepot_02" object2="zoneenv2:e_onoff_bluepot_02" party-broadcast="n" progress-mission="y" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_onoff_bluepot_01" object2="zoneenv2:e_onoff_bluepot_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+        <case object="npc:ch_dweller_039" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="582_final_set1">
+        <case drop-gadget="y" gadget="Q_PotA" gadget-required="carry-and-remove" object="zoneenv:e_onoff_3000kiln_01" object2="zoneenv2:e_onoff_3000kiln_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_onoff_bluepot_02" object2="zoneenv2:e_onoff_bluepot_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_onoff_bluepot_01" object2="zoneenv2:e_onoff_bluepot_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="npc:ch_dweller_039" party-broadcast="n" type="approach" />
+        <case gadget="q_secretion_pota" gadget-required="carry-and-remove" object="npc:ch_dweller_039" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

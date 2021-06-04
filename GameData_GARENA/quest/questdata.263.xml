@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.263.xml-->
+  <quest alias="q_epic_263" broadcast-category="field" category="epic" completed-list="n" id="263" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="zoneenv2:e_Chest_drinktable_01" party-broadcast="n" progress-mission="y" quest-decision="qd_263_2" type="manipulate" />
+        <case object="npc:CH_CT_Citizen_0193" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0112" party-broadcast="n" type="approach" />
+        <case object="zone:Zone_YumSek_Zekuk" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_263_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0112" party-broadcast="n" progress-mission="y" quest-decision="qd_263_4" type="talk" />
+        <case object="npc:CH_CT_Citizen_0195" party-broadcast="n" type="approach" />
+        <case object="zone:Zone_YumSek_Zekuk" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_263_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_CT_Citizen_0193" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="zone:Zone_YumSek_Zekuk" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_263_11" type="enter-zone" />
+        <case object="npc:CH_CT_JeGukGun_0271" party-broadcast="n" type="approach" />
+        <case object2="zoneenv2:e_chest_drinkpot_01" party-broadcast="n" progress-mission="reaction-only" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0112" party-broadcast="n" progress-mission="y" quest-decision="qd_263_9" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0271" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="zone:Zone_YumSek_Zekuk" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_263_8" type="enter-zone" />
+        <case object="npc:CH_CT_Citizen_0193" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_CT_DokGo_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_YumSek_Zekuk" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_263_10" type="enter-zone" />
+        <case object="npc:CH_CT_ORakDang_0032" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="7">
+        <case object2="npc:ME_CT_SaMyoJeong_0026" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="100" type="loot" />
+        <case object="npc:CH_CT_JeGukGun_0262" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_ORakDang_0032" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_CT_DokGo_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0262" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_ORakDang_0032" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_263_12" zone-1="Zone_BuNongChon_R">
+      <mission id="8" required-register-value="5">
+        <case object2="zoneenv2:e_pot_colorpot_03" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="zoneenv2:e_pot_colorpot_02" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="zoneenv2:e_pot_colorpot_01" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:CE_CT_Book_0005" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object2="zoneenv2:e_pot_colorpot_05" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="zoneenv2:e_pot_colorpot_04" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:CH_CT_JeGukGun_0262" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Citizen_0105" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case object="npc:CE_CT_Book_0005" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_CT_Citizen_0105" party-broadcast="n" type="approach" />
+        <fixed-reward slot-1="item:Quest_Scroll_BackChung_0002" />
+        <case object="npc:CH_CT_JeGukGun_0262" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1" reward-1="263_final_set1">
+        <case item="Quest_Scroll_BackChung_0002" party-broadcast="n" progress-mission="y" type="talk-to-item" />
+        <case object="npc:CH_CT_Citizen_0105" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0262" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CH_CT_Citizen_0105" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_Citizen_0105" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0262" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="Zone_YumSek_Zekuk_NA">
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_264" />
+    </completion>
+    <giveup-loss item-1="Quest_Scroll_BackChung_0002" item-count-1="1" />
+  </quest>
+</table>

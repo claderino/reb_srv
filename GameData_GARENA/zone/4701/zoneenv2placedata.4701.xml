@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\4701\zoneenv2placedata.4701.xml-->
+  <record action-point="-394,-6102,-295" action-radius="62" alias="e_gate_chungcafeteriardoor_01_1_place" type="gate" />
+  <record action-point="1055,-6778,-539" action-radius="62" alias="e_gate_chungfoodwarehousedoor_01_1_place" type="gate" />
+  <record action-point="842,-6967,-538" action-radius="62" alias="e_gate_chungfoodwarehousedoor_02_1_place" type="gate" />
+  <record action-point="852,-6324,-543" action-radius="20" alias="e_Chest_4705hartA_01_1_place" type="chest" />
+  <record action-point="625,-6277,-538" action-radius="62" alias="e_gate_chungkitchendoor_01_1_place" type="gate" />
+  <record action-point="710,-6968,-477" alias="4701_DongHae_A_4702_place" region-point-1="700,-7055,-685" region-point-2="700,-6881,-833" region-point-3="721,-6881,-833" region-point-4="721,-7055,-685" type="portal" />
+  <record action-point="-5583,-5268,477" alias="4701_DongHae_A_4700_place" region-point-1="-5593,-5481,1429" region-point-2="-5593,-5055,1429" region-point-3="-5573,-5055,1429" region-point-4="-5573,-5481,1429" type="portal" />
+  <record alias="zone4701.falldeath_place" height="-1083" type="fall-death" />
+</table>

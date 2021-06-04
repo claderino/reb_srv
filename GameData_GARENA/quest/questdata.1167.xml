@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1167.xml-->
+  <quest alias="q_epic_1167" category="epic" completed-list="y" id="1167" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SA_Hunter_0005" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1167_1" type="talk" />
+        <case object="zone:zone_BlackDragon_single" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="zone:zone_BlackDragon_D" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CH_SA_Hunter_0005" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1167_2" rollback="leave-zone" zone-1="zone_BlackDragon_single" zone-2="zone_BlackDragon_D">
+      <mission id="2" required-register-value="2">
+        <case object="npc:CH_SA_Ryu_0001" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_SA_InJeolMi_0001" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_SA_Ryu_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_InJeolMi_0002" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="zone_BlackDragon_single" zone-2="zone_BlackDragon_D" />
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone" zone-1="zone_BlackDragon_single" zone-2="zone_BlackDragon_D">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:5283_foot_1" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:5284_foot_1" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="npc:CH_SA_Ryu_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_InJeolMi_0002" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="zone_BlackDragon_single" zone-2="zone_BlackDragon_D" />
+    </mission-step>
+    <mission-step id="4" rollback="leave-zone" zone-1="zone_BlackDragon_single" zone-2="zone_BlackDragon_D">
+      <mission id="4" required-register-value="1">
+        <case object2="npc:ME_SA_DemonShadowCBig_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_SA_DemonShadowCBig_0003" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="zone_BlackDragon_single" zone-2="zone_BlackDragon_D" />
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object="npc:CH_SA_TaeGwang_0008" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_SA_Inbugyeom_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_InJeolMi_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JungHaDo_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_TaeGwang_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JungHaDo_0003" party-broadcast="n" type="talk" />
+        <case object="npc:CH_SA_PungEmpire_0081" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="npc:CH_SA_YuCheon_0024" party-broadcast="n" progress-mission="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_SA_PungEmpire_0081" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_Inbugyeom_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_InJeolMi_0003" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="npc:CH_SA_YuCheon_0024" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="npc:CH_SA_JungHaDo_0003" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1" reward-1="1167_final_set1">
+        <case object="npc:CH_SA_Inbugyeom_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_JungHaDo_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_InJeolMi_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0081" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="npc:CH_SA_YuCheon_0024" party-broadcast="n" progress-mission="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="StartZone_Default">
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_937" />
+    </completion>
+  </quest>
+</table>

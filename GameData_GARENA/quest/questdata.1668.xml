@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1668.xml-->
+  <quest alias="q_epic_1668" category="epic" completed-list="y" id="1668" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SB_SeoYeon_0006" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_SB_ChinChin_0024" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_SB_BunA_0023" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_SB_BunYang_0025" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_SuchunTemple_D">
+      <destination mission-step-id="1" zone-index="4" />
+    </transit>
+  </quest>
+</table>

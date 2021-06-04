@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1003.xml-->
+  <quest alias="q_sub_1003" broadcast-category="field" category="normal" district-1="suwal" id="1003" max-repeat="1" save-type="all">
+    <acquisition level="36" preceding-quest-1="q_sub_1001" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_WolChon_0015" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case drop-gadget="y" gadget-required="dont-care" object="npc:CH_IlMiMun_0010" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_Hunter_0005" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_Hunter_0004" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_Hunter_0003" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_WolChon_0015" party-broadcast="n" type="approach" visible-object="n" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case gadget="Q_GrilledA" gadget-required="carry-and-remove" object="npc:CH_Master_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_IlMiMun_0010" party-broadcast="n" progress-mission="reaction-only" type="talk" />
+        <case object="npc:CH_Hunter_0005" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_Hunter_0004" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_Hunter_0003" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_WolChon_0015" party-broadcast="n" type="approach" visible-object="n" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="1003_final_set1">
+        <case object="npc:CH_IlMiMun_0010" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

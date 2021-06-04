@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\7102\zoneenv2placedata.7102.xml-->
+	<record action-point="-764,12842,-4996" action-radius="25" alias="e_Gate_sealeddoor_01_place" tool-zone-1="7102" type="gate" />
+	<record action-point="-576,13033,-4996" action-radius="50" alias="e_Gate_sealeddoor_02_place" tool-zone-1="7102" type="gate" />
+	<record action-point="-764,13225,-4997" action-radius="25" alias="e_Gate_sealeddoor_03_place" tool-zone-1="7102" type="gate" />
+	<record action-point="-952,13036,-4996" action-radius="50" alias="e_Gate_sealeddoor_04_place" tool-zone-1="7102" type="gate" />
+	<record action-point="-764,13900,-5083" action-radius="25" alias="e_Gate_sealeddoor_05_place" tool-zone-1="7102" type="gate" />
+	<record action-point="-487,14176,-5083" action-radius="25" alias="e_Gate_sealeddoor_06_place" tool-zone-1="7102" type="gate" />
+	<record action-point="-764,14453,-5083" action-radius="25" alias="e_Gate_sealeddoor_07_place" tool-zone-1="7102" type="gate" />
+	<record action-point="-1041,14177,-5083" action-radius="25" alias="e_Gate_sealeddoor_08_place" tool-zone-1="7102" type="gate" />
+	<record action-point="-231,14144,-5083" action-radius="11" alias="e_Chest_7102tbox_06_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-766,11923,-4907" action-radius="62" alias="e_Gate_sealeddoor_09_place" tool-zone-1="7102" type="gate" />
+	<record action-point="-228,14209,-5083" action-radius="11" alias="e_Chest_7102tbox_01_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-683,11790,-4908" action-radius="12" alias="e_chest_7102_doorkey_01_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-289,14177,-5082" action-radius="11" alias="e_Chest_7102tbox_02_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-1277,14175,-5083" action-radius="11" alias="e_Chest_7102tbox_03_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-727,14690,-5083" action-radius="11" alias="e_Chest_7102tbox_04_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-807,14691,-5083" action-radius="11" alias="e_Chest_7102tbox_05_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-683,11813,-4908" action-radius="12" alias="e_chest_7102_doorkey_02_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-761,14339,-5062" action-radius="25" alias="e_button_7102yongmak_place" tool-zone-1="7102" type="button" />
+	<record action-point="-696,13800,-5084" action-radius="20" alias="e_Chest_7102hartA_01_place" tool-zone-1="7102" tool-zone-2="7101" type="chest" />
+	<record action-point="-683,11837,-4908" action-radius="12" alias="e_chest_7102_doorkey_03_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-682,11861,-4908" action-radius="12" alias="e_chest_7102_doorkey_04_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-682,11885,-4908" action-radius="12" alias="e_chest_7102_doorkey_05_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-682,11908,-4908" action-radius="12" alias="e_chest_7102_doorkey_06_place" tool-zone-1="7102" type="chest" />
+	<record action-point="-1123,11851,-4776" alias="7102_Portal_7100_place" region-point-1="-1113,11749,774" region-point-2="-1133,11749,769" region-point-3="-1133,11953,677" region-point-4="-1113,11953,683" tool-zone-1="7101" tool-zone-2="7102" type="portal" />
+	<record alias="7102_dmz_1_place" height="0" region-point-1="-906,12242,501" region-point-2="-906,12624,533" region-point-3="-628,12624,2242" region-point-4="-628,12242,509" tool-zone-1="7102" type="effect-region" />
+	<record alias="7102_dmz_2_place" height="0" region-point-1="-910,13461,1165" region-point-2="-910,13821,441" region-point-3="-632,13821,1037" region-point-4="-632,13461,1901" tool-zone-1="7102" type="effect-region" />
+	<record alias="7102_dmz_effect1_place" height="0" region-point-1="-705,13970,-5097" region-point-2="-705,13991,-5097" region-point-3="-689,13991,-5097" region-point-4="-689,13970,-5097" tool-zone-1="7102" type="effect-region" />
+	<record alias="7102_dmz_effect2_place" height="0" region-point-1="-830,13970,-5097" region-point-2="-830,13991,-5097" region-point-3="-814,13991,-5097" region-point-4="-814,13970,-5097" tool-zone-1="7102" type="effect-region" />
+	<record action-point="-466,13035,-4904" action-radius="0" alias="7102_foot_1_place" region-point-1="-526,12844,534" region-point-2="-526,13226,500" region-point-3="-406,13226,506" region-point-4="-406,12844,537" tool-zone-1="7102" type="foot-switch" />
+	<record action-point="-1058,13035,-4904" action-radius="0" alias="7102_foot_2_place" region-point-1="-1118,12844,507" region-point-2="-1118,13226,489" region-point-3="-998,13226,500" region-point-4="-998,12844,514" tool-zone-1="7102" type="foot-switch" />
+	<record action-point="-770,12771,-4904" action-radius="0" alias="7102_foot_3_place" region-point-1="-961,12833,516" region-point-2="-579,12829,533" region-point-3="-580,12709,878" region-point-4="-962,12713,518" tool-zone-1="7102" type="foot-switch" />
+	<record action-point="-770,13858,-4983" action-radius="0" alias="7102_foot_4_place" region-point-1="-961,13890,453" region-point-2="-579,13887,1031" region-point-3="-580,13827,1036" region-point-4="-962,13830,443" tool-zone-1="7102" type="foot-switch" />
+	<record action-point="-770,14497,-4983" action-radius="0" alias="7102_foot_5_place" region-point-1="-961,14529,488" region-point-2="-579,14525,-5095" region-point-3="-580,14465,860" region-point-4="-962,14469,484" tool-zone-1="7102" type="foot-switch" />
+	<record action-point="-440,14172,-4983" action-radius="0" alias="7102_foot_6_place" region-point-1="-470,13981,476" region-point-2="-471,14363,865" region-point-3="-411,14363,-5097" region-point-4="-410,13981,475" tool-zone-1="7102" type="foot-switch" />
+	<record action-point="-1088,14172,-4983" action-radius="0" alias="7102_foot_7_place" region-point-1="-1117,13981,570" region-point-2="-1118,14363,-5097" region-point-3="-1058,14363,480" region-point-4="-1057,13981,578" tool-zone-1="7102" type="foot-switch" />
+	<record alias="zone7102.falldeath_place" height="0" type="fall-death" />
+</table>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata_id_youngjirun.xml-->
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_WC_HolyMushroom_0006_CS">
+    <normal combat-distance="1" id="1">
+      <action skill3="ME_YJ_HolyMushroom_None_NAtk1_Big" type="use-skill" />
+      <action skill3="ME_YJ_HolyMushroom_None_NAtk2_Big" type="use-skill" />
+      <action skill3="ME_YJ_HolyMushroom_None_NAtk1_Big" type="use-skill" />
+      <action skill3="ME_YJ_HolyMushroom_None_NAtk2_Big" type="use-skill" />
+      <action skill3="ME_YJ_HolyMushroom_None_Area360_Big" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action skill3="ME_YJ_HolyMushroom_None_Capture_Big" type="use-skill" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="0">
+      <action social="ME_WC_HolyMushroom_0006_soc_01" type="do-social" />
+      
+      <action skill3="ME_YJ_HolyMushroom_None_GoldWeb_Big" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Mushroom_0002_CS">
+    <normal combat-distance="1" id="1">
+      <action skill3="ME_YJ_Mushroom_None_PowerAtk" type="use-skill" />
+      <action skill3="ME_YJ_Mushroom_None_PowerAtk" type="use-skill" />
+      <action skill3="ME_YJ_Mushroom_None_SelfArea" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WC_HolyMushroom_0005_CS">
+    <normal combat-distance="1" id="1">
+      <action skill3="ME_YJ_Mushroom_None_PowerAtk" type="use-skill" />
+      <action skill3="ME_YJ_Mushroom_None_PowerAtk" type="use-skill" />
+      <action skill3="ME_YJ_Mushroom_None_SelfArea" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  
+  
+  <combat-sequence alias="ME_WC_HolyMushroom_0004_CS_1" transit-cond-1="manual">
+    <normal combat-distance="3" id="1">
+      <action type="select">
+        <action prob="50" skill3="ME_YJ_HolyMushroom_None_Capture1_Small" type="use-skill" />
+        <action prob="50" skill3="ME_YJ_HolyMushroom_None_Capture2_Small" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WC_HolyMushroom_0004_CS_2">
+    <normal combat-distance="3" id="1">
+      <action skill3="ME_YJ_HolyMushroom_None_Capture1_Small" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+</table>

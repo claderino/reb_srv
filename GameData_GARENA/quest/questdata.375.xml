@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.375.xml-->
+  <quest alias="q_sub_375" broadcast-category="field" category="normal" district-1="jeryoungrim" id="375" max-repeat="1" save-type="all">
+    <acquisition level="10" preceding-quest-1="q_epic_311" preceding-quest-check="and" preceding-quest-mission-step-1="2">
+      <case acquire-quest="y" object="npc:ch_dweller_023" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="npc:ch_dweller_027" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="15">
+        <case object="npc:me_treegoblin_0014" object2="npc:me_treegoblin_0014" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_samyojeong_0011" object2="npc:me_samyojeong_0011" party-broadcast="y" progress-mission="y" type="killed" />
+        <case drop-gadget="y" gadget-required="empty" object="npc:ch_dweller_027" party-broadcast="n" progress-mission="reaction-only" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1" reward-1="375_final_set1">
+        <case object="npc:ch_dweller_023" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

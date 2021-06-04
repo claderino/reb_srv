@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1165.xml-->
+  <quest alias="q_epic_1165" broadcast-category="field" category="epic" completed-list="y" id="1165" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SA_YuGaChon_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_SA_YuGaChon_0002" party-broadcast="n" type="approach" />
+        <case object="zone:zone_PoisonDg_p" party-broadcast="n" progress-mission="y" quest-decision="qd_934_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_934_6" zone-1="zone_PoisonDg_p">
+      <mission id="3" required-register-value="3">
+        <case object="npc:MH_SA_ORakDang_0023" party-broadcast="n" type="approach" />
+        <case object="npc:MH_SA_ORakDang_0022" party-broadcast="n" type="approach" />
+        <case object="npc:MH_SA_ORakDang_0021" party-broadcast="n" type="approach" />
+        <case object2="zoneenv2:e_door_orakjail_01_1" party-broadcast="n" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_door_orakjail_05_1" party-broadcast="n" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_door_orakjail_07_1" party-broadcast="n" progress-mission="y" type="manipulate" />
+        <case object="zone:zone_PoisonDg_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_934_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object="npc:MH_SA_ORakDang_0023" party-broadcast="n" type="approach" />
+        <case object="npc:MH_SA_ORakDang_0022" party-broadcast="n" type="approach" />
+        <case object="npc:MH_SA_ORakDang_0021" party-broadcast="n" type="approach" />
+        <case object="zone:zone_PoisonDg_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_934_8" type="enter-zone" />
+        <case object="npc:CH_SA_OrakDang_0009" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_OrakDang_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_OrakDang_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_OrakDang_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_OrakDang_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_OrakDang_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_OrakDang_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_OrakDang_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_OrakDang_0001" party-broadcast="n" type="approach" />
+        <case object2="zoneenv2:e_pot_oraktable_03" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case object2="zoneenv2:e_pot_oraktable_01" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case object="npc:MH_SA_ORakDang_0016" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="zone:zone_HwanGakCho" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case loot-item="Quest_Scroll_BackChung_0086" object2="npc:MH_HwanYeongCho_0001" party-broadcast="n" progress-mission="y" quest-symbol-drop-prob="30" type="loot" />
+        <case loot-item="Quest_Scroll_BackChung_0086" object2="npc:MH_HwanYeongCho_0002" party-broadcast="n" progress-mission="y" quest-symbol-drop-prob="30" type="loot" />
+        <case loot-item="Quest_Scroll_BackChung_0086" object2="npc:mh_samagyo_0043" party-broadcast="n" progress-mission="y" quest-symbol-drop-prob="30" type="loot" />
+        <case loot-item="Quest_Scroll_BackChung_0086" object2="npc:mh_samagyo_0044" party-broadcast="n" progress-mission="y" quest-symbol-drop-prob="30" type="loot" />
+        <case object2="npc:me_samagyo_051" party-broadcast="n" type="killed" />
+        <case object2="npc:mh_samagyo_0042" party-broadcast="n" type="killed" />
+        <case object2="npc:mh_hwanyeongcho_0010" party-broadcast="n" type="killed" />
+        <case object2="npc:mh_hwanyeongcho_0011" party-broadcast="n" type="killed" />
+        <case object2="npc:mh_hwanyeongcho_0012" party-broadcast="n" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1" reward-1="1165_final_set1">
+        <case grocery="Quest_Scroll_BackChung_0086" item="Quest_Scroll_BackChung_0086" party-broadcast="n" progress-mission="y" required-item-1="Quest_Scroll_BackChung_0086" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_PoisonDg">
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+    </transit>
+    <transit id="2" zone="StartZone_Default">
+      <destination mission-step-id="1" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_1233" />
+    </completion>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_SA_HanSiRang_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

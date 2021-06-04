@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.384.xml-->
+  <quest alias="q_sub_384" broadcast-category="field" category="normal" district-1="jeryoungrim" id="384" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="14" preceding-quest-1="q_sub_383" preceding-quest-check="and">
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:ch_jakyoungdan_033" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:ch_jakyoungdan_033" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:ce_board_0012" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1" quest-decision="qd_384_1" zone-1="zone_suryengol_dun_2">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_jakyoungdan_0019" party-broadcast="y" progress-mission="y" type="talk" visible-object="y" />
+        <case object="zone:zone_suryengol_dun_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_384_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="4">
+        <case object="npc:mh_chunggak_0072" object2="npc:mh_chunggak_0072" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:mh_chunggak_0071" object2="npc:mh_chunggak_0071" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:mh_chunggak_0054" object2="npc:mh_chunggak_0054" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:mh_chunggak_0053" object2="npc:mh_chunggak_0053" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:mh_chunggak_0052" object2="npc:mh_chunggak_0052" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:mh_chunggak_0051" object2="npc:mh_chunggak_0051" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="4">
+        <case object="npc:ch_jakyoungdan_0020" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1" reward-1="384_final_set1" reward-2="384_final_set2">
+        <case completion-count="1" completion-count-op="lt" object="npc:ch_jakyoungdan_033" party-broadcast="n" progress-mission="y" type="talk" />
+        <case completion-count="1" object="npc:ch_jakyoungdan_033" party-broadcast="n" progress-mission="y" type="talk" />
+        <case completion-count="0" fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

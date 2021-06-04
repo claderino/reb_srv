@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
+  <!--skillcastcondition3data_npc2.xml-->
+	<record alias="S3_MH_Assassin_Disturb_Shuriken_DeadZone" gather-range="Unique_Target_D6504_Depth_Max" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_Dummy_None_Ground_Fire" gather-range="Common_Caster_Laser_W456D96" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="S3_ME_Dummy_None_Ground_Ice" gather-range="Common_Caster_Circle_R296" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="S3_ME_Dummy_None_Ground_Poison" gather-range="Common_Caster_Circle_R296" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="S3_MH_ForceMaster_Deal_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_MH_KungfuMaster_Attack_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_MH_BladeMaster_Sword_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_MH_Destroyer_Protection_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_MH_Assassin_Disturb_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_ID_Nucleus_None_Fire1" gather-range="Unique_Target_D6504_Depth_Max" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="S3_ME_ID_Nucleus_None_Fire2" gather-range="Unique_Target_D6504_Depth_Max" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="S3_ME_ID_Nucleus_None_Explosion" gather-range="Unique_Caster_Circle_R3504_Depth_Max" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="S3_ME_SUA_Dummy_None_Ground_Poison" gather-range="Common_Caster_Circle_R296" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="S3_ME_SUB_Dummy_None_Ground_Poison" gather-range="Common_Caster_Circle_R296" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="S3_ME_CrocodileSharkTribeB_None_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_DarkCrazyTribeBigA_None_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_DarkCrazyTribeBigB_None_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_PigTribeA_None_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_BearA_None_Ground_G" gather-range="Common_Caster_Circle_R296" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_SUP_Dummy_None_Ground_Poison" gather-range="Common_Caster_Circle_R296" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="S3_ME_SUP2_Dummy_None_Ground_Poison" gather-range="Common_Caster_Circle_R296" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="ME_ID2_Snow_Totem_Area360Heal_skill3" gather-range="ID_Bagic_Round_5M50" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_ID2_Snow_Totem_speedup_skill3" gather-range="ID_Bagic_Round_5M50" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+</table>

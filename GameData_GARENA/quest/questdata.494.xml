@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.494.xml-->
+  <quest alias="q_epic_494" category="epic" completed-list="y" district-1="jeryoungrim" id="494" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_suryengol_dun_dokcho" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_dokchogeosa_001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_314" />
+    </completion>
+    <transit id="1" zone="zone_suryengol_dun_4">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+    </transit>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ctzn_jinm_master_geonma_swd_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="귀검사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_jinm_master_geonma_swd_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="검사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_jinf_gonmyeong_foc_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="기공사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_jinm_taewang_kff_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="권사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_gonm_master_jinwoong_des_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="역사" />
+          </filter-set>
+        </case>
+        <case object="npc:ch_ganmyowal_0001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="암살자" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_lynm_master_gammadeung_shm_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="소환사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_lynm_master_gammadeung_shm_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="주술사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_jinm_taewang_kff_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="기권사" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_murimmaeng_0006" party-broadcast="n" progress-mission="y" quest-decision="qd_494_2" type="talk" />
+        <case object2="zoneenv2:2623_FS_Play1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_494_1" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="3">
+        <case object2="npc:mh_occultdoll_001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="zoneenv2:2623_FS_Play1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_494_5" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:ch_honchungyo_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_494_4" type="talk" />
+        <case object2="zoneenv2:2623_FS_Play2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_494_3" type="env-entered" />
+        <case object2="zoneenv2:2623_FS_Play1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_494_6" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="5">
+        <case object2="npc:mh_occultdoll_002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="zoneenv2:2623_FS_Play1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_494_7" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="12">
+      <mission id="13" required-register-value="1" reward-1="494_middle_set1">
+        <case object="npc:ctzn_jinm_master_geonma_swd_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="귀검사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_jinm_master_geonma_swd_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="검사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_jinf_gonmyeong_foc_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="기공사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_jinm_taewang_kff_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="권사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_gonm_master_jinwoong_des_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="역사" />
+          </filter-set>
+        </case>
+        <case object="npc:ch_ganmyowal_0001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="암살자" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_lynm_master_gammadeung_shm_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="소환사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_lynm_master_gammadeung_shm_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="주술사" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_jinm_taewang_kff_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="job" value-1="기권사" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="13">
+      <mission id="14" required-register-value="1" reward-1="494_final_set1">
+        <case object="npc:ch_dokchogeosa_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject2="case:talked:pc" type="prop" value="15" />
+          </filter-set>
+        </case>
+        <case object="npc:ch_dokchogeosa_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="14" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="11" retired="y">
+      <mission id="12" required-register-value="1">
+        <case faction="factionmain1" object="npc:CH_JR_HonChunGyo_0001" party-broadcast="n" progress-mission="y" type="join-faction" />
+        <case faction="factionmain1" object="npc:CH_JR_MuRimMaeng_0001" party-broadcast="n" progress-mission="y" type="join-faction" />
+      </mission>
+      <mission id="11" required-register-value="1">
+        <case faction="factionmain2" object="npc:CH_JR_HonChunGyo_0001" party-broadcast="n" progress-mission="y" type="join-faction" />
+        <case faction="factionmain2" object="npc:CH_JR_MuRimMaeng_0001" party-broadcast="n" progress-mission="y" type="join-faction" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" retired="y">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_JR_MuRimMaeng_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="9" retired="y">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CH_JR_HonChunGyo_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case object="npc:CH_DokChoGeoSa_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter quest="q_sub_966" subject2="case:talked:pc" type="quest-complete" />
+          </filter-set>
+        </case>
+        <case object="npc:CH_DokChoGeoSa_001" party-broadcast="n" type="talk">
+          <filter-set>
+            <filter count-op="lt" quest="q_sub_966" subject2="case:talked:pc" type="quest-complete" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+  </quest>
+</table>

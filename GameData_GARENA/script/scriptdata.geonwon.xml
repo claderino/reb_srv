@@ -1,0 +1,2616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.geonwon.xml-->
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script alias="MH_SB_BarbarianBow_0001_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="pc" />
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="5000" opponent="event:npc-combat-start:target" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6100_211" type="diff-npc-hate" />
+        <reaction from="event:npc-combat-start:npc" social="MH_SB_BarbarianBow_0001_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="summoned" />
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="5000" opponent="event:npc-combat-start:target:my-summoner" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="event:npc-combat-start:target:my-summoner" target="zonenpcspawn:a_6100_211" type="diff-npc-hate" />
+        <reaction from="event:npc-combat-start:npc" social="MH_SB_BarbarianBow_0001_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_SB_BarbarianBow_0001_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_SB_BarbarianBow_0001_battle_03" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_wolfB_0001_ai">
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="pc" />
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1000" opponent="event:npc-combat-start:target" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6100_210" type="diff-npc-hate" />
+        <reaction from="event:combat-start:npc" social="MH_SB_BarbarianBow_0001_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="summoned" />
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1000" opponent="event:npc-combat-start:target:my-summoner" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="5000" opponent="event:npc-combat-start:target:my-summoner" target="zonenpcspawn:a_6100_210" type="diff-npc-hate" />
+        <reaction from="event:combat-start:npc" social="MH_SB_BarbarianBow_0001_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    </script>
+
+  
+  <script alias="MH_SB_Poacher_0001_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_SB_Poacher_0001_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SB_Poacher_0002_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_SB_Poacher_0002_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_SB_Poacher_0002_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SB_Poacher_0003_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_SB_Poacher_0003_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SB_Poacher_0004_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_SB_Poacher_0004_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SB_Poacher_0005_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_SB_Poacher_0005_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+    
+  
+  
+
+  
+  <script alias="ME_SB_InsectTribeFlea_0001_ai">
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="Geonwon_FlameThrower_Water" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_InsectTribeFlea_0002_ai">
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="Geonwon_FlameThrower_Water" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+ 
+  
+  <script alias="CH_SB_GeonWon_0174_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GeonWon_0175_ai" parent="CH_SB_GeonWon_0174_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+  </script>
+
+  
+  <script alias="CH_SB_GeonWon_0176_ai" parent="CH_SB_GeonWon_0174_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+  </script>
+
+  
+  <script alias="ME_SB_Pest_0002_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_6100_82" social="CH_SB_GeonWon_0174_battle_04" type="play-social" />
+        <reaction from="zonenpcspawn:a_6100_84" social="CH_SB_GeonWon_0175_battle_03" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="Geonwon_FlameThrower_Water" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="kill" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction spawn-1="a_6100_17" spawn-delay="60000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CE_SB_SuWaJok_0002_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="CE_SB_SuWaJok_0002_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_SB_SuWaJok_0002_01_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction from="zonenpcspawn:a_6100_82" social="CH_SB_GeonWon_0174_battle_03" type="play-social" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_6100_82" target="event:act-finished:npc" type="diff-npc-hate" />
+        <reaction special-id="1" target="event:act-finished:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-special:npc" type="set-npc-brain" />
+        <reaction seq="CE_SB_SuWaJok_0002_02_act" target="event:npc-special:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_SB_SuWaJok_0002_02_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction spawn-1="a_6100_250" spawn-delay="60000" type="spawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  
+  
+  
+
+  
+  
+  
+  <script alias="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter leader="y" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-party" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group="event:npc-spawn:npc:npc-party" index-1="2" index-2="3" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter leader="y" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group="event:act-finished:npc:npc-party" index-1="2" index-2="3" type="spawn-npc-index" />
+        <reaction seq="act_index_1_pathway" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:2" target-2="event:killed:defender:npc-party:3" target-3="event:killed:defender:npc-party:4" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+    
+  
+  
+
+  
+  <script alias="ME_SB_AnthroCrocodile1_0008_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile1_0001_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0002_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="3" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile1_0004_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile1_0005_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile1_0011_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile1_0012_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0001_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="3" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0003_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="3" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0004_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="3" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0005_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="3" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0006_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="3" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0007_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="3" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0008_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="3" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0009_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile2_0010_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile3_0001_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" group="event:npc-special:npc:npc-party" index-1="4" spawn-delay="0" spawn-radius="150" spawn-target="event:npc-special:target" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_SB_AnthroCrocodile3_0002_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" group="event:npc-special:npc:npc-party" index-1="4" spawn-delay="0" spawn-radius="150" spawn-target="event:npc-special:target" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_SB_AnthroCrocodile3_0007_ai">
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_AnthroCrocodile3_0001_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" group="event:npc-special:npc:npc-party" index-1="4" spawn-delay="0" spawn-radius="150" spawn-target="event:npc-special:target" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile3_0008_ai">
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_AnthroCrocodile3_0001_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" group="event:npc-special:npc:npc-party" index-1="4" spawn-delay="0" spawn-radius="150" spawn-target="event:npc-special:target" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_SB_AnthroCrocodile3_0009_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" group="event:npc-special:npc:npc-party" index-1="4" spawn-delay="0" spawn-radius="150" spawn-target="event:npc-special:target" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_AnthroCrocodile3_0010_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" group="event:npc-special:npc:npc-party" index-1="4" spawn-delay="0" spawn-radius="150" spawn-target="event:npc-special:target" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_ElephantTotem_0004_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="ME_BEE_B1_FireGorillaA_None_Laser_Rotate_block" target="event:npc-spawn:npc" type="invoke-effect" />
+        <reaction seq="ME_SB_ElephantTotem_0004_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_ElephantTotem_0004_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set> 
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_ElephantTotem_0004_01_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_ChameleonTribe_0005_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_ChameleonTribe_0007_combatstart_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_SB_ChameleonTribe_0007_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_ChameleonTribe_0007_combatstart_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_ChameleonTribe_0008_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_ChameleonTribe2_0001_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_ChameleonTribe2_0003_ai">
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_ChameleonTribe2_0003_combatstart_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_ChameleonTribe2_0004_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_ChameleonTribe2_0003_combatstart_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_ChameleonTribe3_0001_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_ChameleonTribe3_0003_combatstart_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_ChameleonTribe3_0002_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_ChameleonTribe3_0003_combatstart_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_SB_ChameleonTribe3_0003_ai">
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_ChameleonTribe3_0003_combatstart_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_ChameleonTribe3_0005_ai" parent="Geonwon_squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_ChameleonTribe3_0003_combatstart_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  
+  
+  <script alias="e_chest_6170_cornel_01_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_410" subject2="zonenpcspawn:a_6170_410" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_411" subject2="zonenpcspawn:a_6170_411" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_412" subject2="zonenpcspawn:a_6170_412" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_410" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_411" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_412" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_cornel_02_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_413" subject2="zonenpcspawn:a_6170_413" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_414" subject2="zonenpcspawn:a_6170_414" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_415" subject2="zonenpcspawn:a_6170_415" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_413" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_414" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_415" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_cornel_03_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_416" subject2="zonenpcspawn:a_6170_416" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_417" subject2="zonenpcspawn:a_6170_417" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_418" subject2="zonenpcspawn:a_6170_418" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_416" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_417" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_418" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_cornel_04_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_419" subject2="zonenpcspawn:a_6170_419" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_420" subject2="zonenpcspawn:a_6170_420" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_421" subject2="zonenpcspawn:a_6170_421" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_419" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_420" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_421" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_cornel_05_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_422" subject2="zonenpcspawn:a_6170_422" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_423" subject2="zonenpcspawn:a_6170_423" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_424" subject2="zonenpcspawn:a_6170_424" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_422" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_423" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_424" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_cornel_06_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_425" subject2="zonenpcspawn:a_6170_425" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_426" subject2="zonenpcspawn:a_6170_426" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_427" subject2="zonenpcspawn:a_6170_427" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_425" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_426" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_427" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_cornel_07_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_429" subject2="zonenpcspawn:a_6170_429" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_430" subject2="zonenpcspawn:a_6170_430" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_431" subject2="zonenpcspawn:a_6170_431" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_432" subject2="zonenpcspawn:a_6170_432" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_429" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_430" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_431" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_432" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_cornel_08_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_433" subject2="zonenpcspawn:a_6170_433" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_434" subject2="zonenpcspawn:a_6170_434" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_435" subject2="zonenpcspawn:a_6170_435" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_433" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_434" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_435" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_cornel_09_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_437" subject2="zonenpcspawn:a_6170_437" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_438" subject2="zonenpcspawn:a_6170_438" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_439" subject2="zonenpcspawn:a_6170_439" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_437" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_438" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_439" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_cornel_10_ai">
+    <decision event="env-manipulate-start">
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_441" subject2="zonenpcspawn:a_6170_441" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_442" subject2="zonenpcspawn:a_6170_442" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_443" subject2="zonenpcspawn:a_6170_443" type="prop-flag" />
+      </filter-set>
+      <filter-set>
+        <filter field="combat-mode" flag="n" subject="zonenpcspawn:a_6170_444" subject2="zonenpcspawn:a_6170_444" type="prop-flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_441" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_442" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_443" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:env-manipulate-start:pc" target="zonenpcspawn:a_6170_444" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+
+  
+  <script alias="ME_SB_JunoTropicalBird_0002_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction end="9" group="zonenpcsquad:s_6170_100" max="2" min="2" spawn-delay="0" spawn-radius="300" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction end="9" group="zonenpcsquad:s_6170_100" max="3" min="3" spawn-delay="0" spawn-radius="300" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction end="9" group="zonenpcsquad:s_6170_100" max="4" min="4" spawn-delay="0" spawn-radius="300" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction end="4" group="zonenpcsquad:s_6170_110" max="4" min="4" spawn-delay="3000" spawn-radius="300" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="5" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+      
+      <decision event="npc-special">
+        <filter-set>
+          <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+          <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        </filter-set>
+        <reaction-set>
+          
+          <reaction end="4" group="zonenpcsquad:s_6170_110" max="4" min="4" spawn-delay="3000" spawn-radius="300" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+          <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        </reaction-set>
+      </decision>
+      
+      <decision event="npc-special">
+        <filter-set>
+          <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+          <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        </filter-set>
+        <reaction-set>
+          
+          <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        </reaction-set>
+      </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction end="9" group="zonenpcsquad:s_6170_100" max="4" min="4" spawn-delay="0" spawn-radius="300" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="9" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction end="9" group="zonenpcsquad:s_6170_100" max="4" min="4" spawn-delay="0" spawn-radius="300" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6170_100" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6170_110" respawn-after-despawn="n" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6170_100" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6170_110" respawn-after-despawn="n" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Juno_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+  </script>
+
+    
+    <script alias="ME_SB_Juno_0002_ai">
+      <decision event="npc-spawn">
+        <filter-set>
+          <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        </filter-set>
+        <reaction-set>
+          
+        </reaction-set>
+      </decision>
+    </script>
+
+  
+  
+
+  
+  <script alias="e_chest_6170_Barrier_02_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_6170_133" social="CH_SB_GeonWon_0250_soc_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_Barrier_04_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_6170_134" social="CH_SB_GeonWon_0251_soc_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6170_Barrier_05_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_6170_132" social="CH_SB_GeonWon_0249_soc_01" type="play-social" />
+        </reaction-set>
+    </decision>
+  </script>
+
+
+
+    
+  
+
+  
+  <script alias="CH_SB_GeonWon_0248_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="CH_SB_GeonWon_0248_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GeonWon_0248_01_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="CH_SB_GeonWon_0248_01_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+
+
+  
+  
+  
+
+  
+  
+
+  
+  <script alias="ME_SB_PirateGhostA_0004_ai">
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_PirateGhostA_0006_AI" parent="ME_SB_PirateGhostA_0004_ai">
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+
+  
+  <script alias="ME_SB_PirateGhostA_0007_AI" parent="ME_SB_PirateGhostA_0004_ai">
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+
+  
+  <script alias="ME_SB_PirateGhostA_0008_AI" parent="ME_SB_PirateGhostA_0004_ai">
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+
+  
+  <script alias="ME_SB_PirateGhostA_0009_AI" parent="ME_SB_PirateGhostA_0004_ai">
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+
+  
+  
+
+  
+  
+
+  
+  <script alias="e_chest_6150_mackerel_01_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction attack-target="event:env-manipulated:pc" end="2" group="zonenpcsquad:s_6150_87" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6150_mackerel_02_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction attack-target="event:env-manipulated:pc" end="2" group="zonenpcsquad:s_6150_85" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6150_mackerel_03_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction attack-target="event:env-manipulated:pc" end="2" group="zonenpcsquad:s_6150_89" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6150_mackerel_04_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction attack-target="event:env-manipulated:pc" end="2" group="zonenpcsquad:s_6150_99" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6150_mackerel_05_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction attack-target="event:env-manipulated:pc" end="2" group="zonenpcsquad:s_6150_97" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6150_mackerel_06_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction attack-target="event:env-manipulated:pc" end="2" group="zonenpcsquad:s_6150_91" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6150_mackerel_07_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction attack-target="event:env-manipulated:pc" end="2" group="zonenpcsquad:s_6150_93" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_chest_6150_mackerel_08_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction attack-target="event:env-manipulated:pc" end="2" group="zonenpcsquad:s_6150_95" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="ME_SB_FishmanA_0005_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_87" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_87" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_87" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_87" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0005_01_act" />
+        <filter spawn="a_6150_87" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_85" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_85" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_85" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_85" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0005_01_act" />
+        <filter spawn="a_6150_85" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_89" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_89" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_89" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_89" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0005_01_act" />
+        <filter spawn="a_6150_89" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_99" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_99" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_99" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_99" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0005_01_act" />
+        <filter spawn="a_6150_99" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_97" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_97" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_97" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_97" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0005_01_act" />
+        <filter spawn="a_6150_97" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_91" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_91" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_91" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_91" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0005_01_act" />
+        <filter spawn="a_6150_91" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_93" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_93" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_93" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_93" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0005_01_act" />
+        <filter spawn="a_6150_93" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_95" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_95" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_95" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_95" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0005_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0005_01_act" />
+        <filter spawn="a_6150_95" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+
+  
+  <script alias="ME_SB_FishmanA_0004_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_88" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_88" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_88" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_88" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0004_01_act" />
+        <filter spawn="a_6150_88" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_86" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_86" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_86" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_86" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0004_01_act" />
+        <filter spawn="a_6150_86" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_90" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_90" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_90" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_90" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0004_01_act" />
+        <filter spawn="a_6150_90" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_100" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_100" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_100" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_100" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0004_01_act" />
+        <filter spawn="a_6150_100" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_98" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_98" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_98" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_98" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0004_01_act" />
+        <filter spawn="a_6150_98" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_92" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_92" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_92" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_92" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0004_01_act" />
+        <filter spawn="a_6150_92" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_94" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_94" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_94" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_94" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0004_01_act" />
+        <filter spawn="a_6150_94" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6150_96" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_96" subject="event:invoked-effect:invoker" subject2="event:invoked-effect:invoker" type="npc-spawn" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_ME_FishmanABomb_Flag" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6150_96" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_6150_96" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_SB_FishmanA_0004_01_act" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_FishmanA_0004_01_act" />
+        <filter spawn="a_6150_96" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-spawn" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+
+  
+  <script alias="ME_SB_IronTurtle_0001_ai">
+    <decision event="killed">
+      <filter-set>
+        <filter op="lt" subject="zonenpcsquad:s_6150_20:reg-1" subject2="zonenpcsquad:s_6150_20:reg-1" type="number" value="50" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_6150_20" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="ge" subject="zonenpcsquad:s_6150_20:reg-1" subject2="zonenpcsquad:s_6150_20:reg-1" type="number" value="50" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_21" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_25" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_31" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_36" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_40" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction spawn-1="a_6150_20" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_IronTurtleBaby_0001_ai">
+        
+    <decision event="killed">
+      <filter-set>
+        <filter op="ge" subject="zonenpcsquad:s_6150_20:reg-1" subject2="zonenpcsquad:s_6150_20:reg-1" type="number" value="50" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_21" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_25" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_31" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_36" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_40" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction spawn-1="a_6150_20" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    </script>
+  
+
+  
+  <script alias="ME_SB_CrocodileSharkTribeC2_0001_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_6150_20" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_6150_138" index-1="1" index-2="2" index-3="3" index-4="4" respawn-after-despawn="n" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_6150_130" index-1="1" index-2="2" index-3="3" index-4="4" respawn-after-despawn="n" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_130" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_138" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_130" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_138" type="despawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_6150_21" respawn-after-despawn="y" spawn-delay="10000" type="spawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_6150_25" respawn-after-despawn="y" spawn-delay="15000" type="spawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_6150_31" respawn-after-despawn="y" spawn-delay="20000" type="spawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_6150_36" respawn-after-despawn="y" spawn-delay="25000" type="spawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_6150_40" respawn-after-despawn="y" spawn-delay="30000" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_FishmanC_0004_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="ME_BEE_B1_FireGorillaA_None_Laser_Rotate_block" target="event:npc-spawn:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="99" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_130" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_FishmanC_0005_ai" parent="ME_SB_FishmanC_0004_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+  </script>
+  
+  <script alias="ME_SB_FishmanC_0006_ai" parent="ME_SB_FishmanC_0004_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+  </script>
+  
+  <script alias="ME_SB_FishmanC_0007_ai" parent="ME_SB_FishmanC_0004_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+  </script>
+  
+  
+  <script alias="ME_SB_FishmanC_0008_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="ME_BEE_B1_FireGorillaA_None_Laser_Rotate_block" target="event:npc-spawn:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="99" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6150_138" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_FishmanC_0009_ai" parent="ME_SB_FishmanC_0008_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+  </script>
+  
+  <script alias="ME_SB_FishmanC_0010_ai" parent="ME_SB_FishmanC_0008_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+  </script>
+  
+  <script alias="ME_SB_FishmanC_0011_ai" parent="ME_SB_FishmanC_0008_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+  </script>
+  </table>

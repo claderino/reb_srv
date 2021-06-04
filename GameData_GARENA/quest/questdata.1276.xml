@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1276.xml-->
+  <quest alias="q_sub_1276" broadcast-category="field" category="normal" district-1="suwal" id="1276" max-repeat="1" save-type="all">
+    <acquisition level="41" preceding-quest-1="q_epic_924" preceding-quest-2="q_sub_641" preceding-quest-check="and">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="3">
+      <mission id="4" required-register-value="1" reward-1="1276_final_set1">
+        <case grocery="general_grocery_quest_0015" object="npc:CE_DokChoGeoSa_0006" party-broadcast="n" progress-mission="y" required-item-1="general_grocery_quest_0015" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:CH_SW_BeonYang_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_SW_BeonYang_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1276_1" remove-grocery="n" type="approach" />
+        <case object="npc:CH_SW_BeonA_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_MuRimMaeng_0037" party-broadcast="n" progress-mission="y" type="approach">
+          <filter-set name="무림맹">
+            <filter subject2="case:approached:pc" type="faction" value="factionmain1" />
+          </filter-set>
+        </case>
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_HonChunGyo_0034" party-broadcast="y" progress-mission="n" type="approach">
+          <filter-set name="혼천교">
+            <filter subject2="case:approached:pc" type="faction" value="factionmain2" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+  </quest>
+</table>

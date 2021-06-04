@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1071.xml-->
+  <quest alias="q_sub_1071" broadcast-category="field" category="normal" district-1="suwal" id="1071" max-repeat="1" save-type="all">
+    <acquisition level="37" preceding-quest-1="q_epic_908" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" object="npc:ch_pigfarm_0003" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="3">
+        <case object="zoneenv:e_poisongrass_06" object2="zoneenv2:e_poisongrass_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_poisongrass_05" object2="zoneenv2:e_poisongrass_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_poisongrass_04" object2="zoneenv2:e_poisongrass_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_poisongrass_03" object2="zoneenv2:e_poisongrass_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_poisongrass_02" object2="zoneenv2:e_poisongrass_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_poisongrass_01" object2="zoneenv2:e_poisongrass_01" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="1071_final_set1">
+        <case object="npc:ch_pigfarm_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="3">
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_bucket_03" object2="zoneenv2:e_bucket_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_bucket_02" object2="zoneenv2:e_bucket_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_bucket_01" object2="zoneenv2:e_bucket_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" object="zoneenv:e_bugcrop_05" object2="zoneenv2:e_bugcrop_05" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" object="zoneenv:e_bugcrop_04" object2="zoneenv2:e_bugcrop_04" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" object="zoneenv:e_bugcrop_03" object2="zoneenv2:e_bugcrop_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" object="zoneenv:e_bugcrop_02" object2="zoneenv2:e_bugcrop_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" object="zoneenv:e_bugcrop_01" object2="zoneenv2:e_bugcrop_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

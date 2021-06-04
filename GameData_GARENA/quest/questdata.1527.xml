@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1527.xml-->
+  <quest alias="q_sub_1527" broadcast-category="field" category="normal" id="1527" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-1="q_epic_1519" preceding-quest-check="or">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="1527_final_set1">
+        <case object="npc:ch_sb_geonwon_0014" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

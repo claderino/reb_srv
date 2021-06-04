@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\4458\zoneenv2placedata.4458.xml-->
+	<record action-point="-1490,-17002,394" action-radius="15" alias="e_chest_4457_supply_01_1_Place" tool-zone-1="4457" tool-zone-2="4458" type="chest" />
+	<record action-point="-568,-17001,307" action-radius="62" alias="e_gate_4457_pacheon_03_1_place" tool-zone-1="4457" tool-zone-2="4458" type="gate" />
+	<record action-point="-947,-17001,310" action-radius="62" alias="e_gate_4457_pacheon_01_1_place" tool-zone-1="4457" tool-zone-2="4458" type="gate" />
+	<record action-point="-759,-17192,311" action-radius="62" alias="e_gate_4457_pacheon_02_1_place" tool-zone-1="4457" tool-zone-2="4458" type="gate" />
+	<record action-point="355,-17001,59" action-radius="25" alias="e_Button_4457_LeaveYongmak_01_1_place" region-point-1="353,-17003,39" region-point-2="353,-16999,39" region-point-3="357,-16999,39" region-point-4="357,-17003,39" tool-zone-1="4457" tool-zone-2="4458" type="portal" />
+	<record action-point="-2661,-16532,699" alias="4458_Portal_4440_place" region-point-1="-2741,-16550,1082" region-point-2="-2741,-16514,1082" region-point-3="-2580,-16514,642" region-point-4="-2580,-16550,841" tool-zone-1="4458" tool-zone-2="4457" type="portal" />
+	<record action-point="-755,-17464,173" action-radius="0" alias="4458_foot_01_place" region-point-1="-842,-17535,243" region-point-2="-842,-17393,243" region-point-3="-667,-17393,243" region-point-4="-667,-17535,243" tool-zone-1="4458" type="foot-switch" />
+	<record action-point="-757,-17642,91" action-radius="0" alias="4458_foot_02_place" region-point-1="-822,-17725,466" region-point-2="-822,-17559,102" region-point-3="-692,-17559,247" region-point-4="-692,-17725,466" tool-zone-1="4458" type="foot-switch" />
+	<record action-point="55,-17001,116" action-radius="0" alias="4458_foot_03_place" region-point-1="-20,-17087,770" region-point-2="-20,-16915,770" region-point-3="131,-16915,37" region-point-4="131,-17087,37" tool-zone-1="4458" type="foot-switch" />
+	<record alias="4458_dmz_01_place" height="0" region-point-1="-1263,-18631,460" region-point-2="-1263,-17728,460" region-point-3="-278,-17728,37" region-point-4="-278,-18631,460" tool-zone-1="4458" type="effect-region" />
+	<record action-point="139,-17233,68" action-radius="0" alias="4458_foot_04_place" region-point-1="51,-17304,670" region-point-2="51,-17162,37" region-point-3="226,-17162,37" region-point-4="226,-17304,770" tool-zone-1="4458" type="foot-switch" />
+</table>

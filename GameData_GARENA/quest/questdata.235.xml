@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.235.xml-->
+  <quest alias="q_epic_235" broadcast-category="field" category="epic" completed-list="y" district-1="startzone" id="235" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="기공사" level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1" reward-1="235_final_set1">
+        <case object="npc:ch_youngmook_0009" party-broadcast="n" progress-mission="y" quest-decision="qd_235_m1_1" type="talk" />
+        <case object="zone:startzone_renew_force" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_234_m3_exc" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="2" quest-decision="qd_235_ms2_1" zone-1="startzone_renew_force">
+      <mission id="2" required-register-value="3">
+        <tutorial-case progress-mission="y" quest-decision="qd_235_m2_1" type="skill" zone="startzone_renew_force" />
+        <case object="zone:startzone_renew_force" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_235_m2_exc" type="enter-zone" />
+        <case object="npc:mh_redmokujin_0002" party-broadcast="n" type="approach" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WB_YoungMook_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="3" quest-decision="qd_235_ms3_1" zone-1="startzone_renew_force">
+      <mission id="4" required-register-value="3">
+        <tutorial-case progress-mission="y" type="skill" />
+        <case object="zone:startzone_renew_force" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_235_m3_exc" type="enter-zone" />
+        <case object="npc:mh_bluemokujin_0001" party-broadcast="n" type="approach" />
+      </mission>
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_WB_YoungMook_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_227" />
+    </completion>
+    <transit id="1" zone="startzone_renew_blade">
+      <destination mission-step-id="3" zone-index="3" />
+      <destination mission-step-id="2" zone-index="3" />
+      <destination mission-step-id="1" zone-index="3" />
+    </transit>
+  </quest>
+</table>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.496.xml-->
+  <quest alias="q_epic_496" category="epic" completed-list="y" district-1="jeryoungrim" id="496" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_jakyoungdan_0008" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="8">
+        <case object2="npc:me_kangsi_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_kangsi_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_kangsi_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_zombiea_0041" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_zombiea_0036" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_zombiea_0019" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_kangsitall_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_kangsitall_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_kangsitall_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:ch_nokmyeongctzn_0001" party-broadcast="n" type="talk" />
+        <case object2="npc:me_zombiea_0017" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="4" required-register-value="1">
+        <case object2="npc:me_kangsitall_0001" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:me_kangsitall_0002" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:me_kangsitall_0004" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_jakyoungdan_0008" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_shaman_0001" party-broadcast="n" type="talk" />
+        <case object="zone:zone_NokMyungCHN2_House" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_496_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_NokMyungCHN2_MaMulGul" party-broadcast="n" progress-mission="y" quest-decision="qd_496_4" type="enter-zone" />
+        <case object="zone:zone_NokMyungCHN2_House" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_496_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_496_2" zone-1="zone_NokMyungCHN2_MaMulGul">
+      <mission id="7" required-register-value="1">
+        <case object2="npc:mh_shaman_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="zone:zone_nokmyungchn2_mamulgul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_496_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_315" />
+    </completion>
+    <transit id="1" zone="zone_nokmyungchn">
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <transit id="2" zone="zone_NokMyungCHN2_House_SP">
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+    </transit>
+    <transit id="3" zone="zone_SuRyenGol_Dun_1">
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_NokMyungCHN2_KangSi" party-broadcast="n" progress-mission="y" quest-decision="qd_496_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="8" required-register-value="1" reward-1="496_final_set1">
+        <case object="npc:ch_jakyoungdan_024" party-broadcast="n" progress-mission="y" quest-decision="qd_496_5" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

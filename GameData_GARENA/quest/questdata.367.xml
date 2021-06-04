@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.367.xml-->
+  <quest alias="q_sub_367" broadcast-category="field" category="normal" district-1="jeryoungrim" id="367" max-repeat="1" save-type="all">
+    <acquisition level="9" preceding-quest-1="q_sub_374" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_dweller_022" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="12">
+        <case object="npc:mob_jinm_bandit_member_clb_002" object2="npc:mob_jinm_bandit_member_clb_002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_nokrimdo_0027" object2="npc:mh_nokrimdo_0027" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_nokrimdo_0028" object2="npc:mh_nokrimdo_0028" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mob_jinm_bandit_member_fst_002" object2="npc:mob_jinm_bandit_member_fst_002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_nokrimdo_0076" object2="npc:mh_nokrimdo_0076" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_nokrimdo_0077" object2="npc:mh_nokrimdo_0077" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_nokrimdo_0030" object2="npc:mh_nokrimdo_0030" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_nokrimdo_0029" object2="npc:mh_nokrimdo_0029" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1" reward-1="367_final_set1">
+        <case object="npc:ch_dweller_023" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_dweller_022" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

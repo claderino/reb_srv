@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1054.xml-->
+  <quest alias="q_sub_1054" attraction-1="classic-field-zone:SnakeScalesVally_Classic" attraction-2="Dungeon:Dungeon_SnakeScalesVally" broadcast-category="field" category="normal" id="1054" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_sub_1044" preceding-quest-2="q_epic_1429" preceding-quest-3="q_epic_293" preceding-quest-check="or">
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:CH_CT_Adventurer_0013" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CE_CT_Board_0037" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CH_CT_Adventurer_0013" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_CT_SnakeQueen_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object2="npc:ME_CT_SnakeSoldier_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1" reward-1="1054_final_set1" reward-2="1054_final_set2">
+        <case completion-count="0" completion-count-op="ge" object="npc:CH_CT_Adventurer_0013" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

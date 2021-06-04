@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.246.xml-->
+  <quest alias="q_epic_246" category="epic" completed-list="y" district-1="startzone" id="246" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="소환사" level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1" reward-1="246_final_set1">
+        <case object="npc:ch_youngmook_0013" party-broadcast="n" progress-mission="y" quest-decision="qd_246_m1_1" type="talk" />
+        <case object="zone:startzone_renew_minstrel" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_245_m3_exc" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="2" quest-decision="qd_246_ms2_1" zone-1="startzone_renew_minstrel">
+      <mission id="2" required-register-value="3">
+        <tutorial-case progress-mission="y" type="skill" />
+        <case object="zone:startzone_renew_minstrel" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_246_m2_exc" type="enter-zone" />
+        <case object="npc:mh_redmokujin_0002" party-broadcast="n" type="approach" />
+        <tutorial-case progress-mission="y" type="skill" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WB_YoungMook_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="3" quest-decision="qd_246_ms3_1" zone-1="startzone_renew_minstrel">
+      <mission id="4" required-register-value="3">
+        <tutorial-case progress-mission="y" type="skill" />
+        <case object="zone:startzone_renew_minstrel" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_246_m3_exc" type="enter-zone" />
+        <case object="npc:MH_BlueMokuJin_0004" party-broadcast="n" type="approach" />
+        <tutorial-case progress-mission="y" type="skill" />
+      </mission>
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_WB_YoungMook_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest job-1="소환사" quest="q_epic_247" />
+    </completion>
+    <transit id="1" zone="startzone_renew_blade">
+      <destination mission-step-id="3" zone-index="5" />
+      <destination mission-step-id="2" zone-index="5" />
+      <destination mission-step-id="1" zone-index="5" />
+      <destination mission-step-id="4" zone-index="5" />
+    </transit>
+    <mission-step completion-type="or" id="4" quest-decision="qd_246_ms4_1" zone-1="startzone_renew_minstrel">
+      <mission id="6" required-register-value="3">
+        <case object="zone:startzone_renew_minstrel" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_246_m4_exc" type="enter-zone" />
+        <case object="npc:MH_BlueMokuJin_0001" party-broadcast="n" type="approach" />
+        <tutorial-case progress-mission="y" quest-decision="qd_246_m4_skill" type="skill" zone="startzone_renew_minstrel" />
+      </mission>
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_YoungMook_0009" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

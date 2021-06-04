@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.28210.xml-->
+	<quest alias="sq_28210" category="tendency-simple" id="28210" max-repeat="-1" save-type="except-completion-and-logout-save">
+		<mission-step id="1">
+			<mission id="1" required-attraction="tendency-field:CheonSangBunJi" tendency-id="3" variation-required-field-play-point-1="0" variation-required-register-value-1="1" variation-reward-field-play-point-1="26" variation-reward-tendency-score-1="26">
+				<case multi-object-1="npc:ME_WC_AdamantineMan_0003" party-broadcast="y" progress-mission="y" type="killed" />
+			</mission>
+		</mission-step>
+	</quest>
+</table>

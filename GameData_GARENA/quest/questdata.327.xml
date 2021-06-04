@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.327.xml-->
+  <quest alias="q_sub_327" broadcast-category="field" category="normal" id="327" max-repeat="1" save-type="all">
+    <acquisition level="36">
+      <case acquire-quest="y" object="npc:CE_CT_Board_0021" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" object="npc:CE_CT_Board_0020" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" object="npc:CE_CT_Board_0019" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" object="npc:CE_CT_Board_0018" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" object="npc:CE_CT_Board_0038" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" object="npc:CE_SB_Board_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case duel-result="win" party-broadcast="n" progress-mission="y" type="duel-finish" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="327_final_set1">
+        <case object="npc:CE_CT_Board_0021" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

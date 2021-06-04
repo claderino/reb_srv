@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.649.xml-->
+  <quest alias="q_sub_649" broadcast-category="field" category="normal" district-1="deasamak" id="649" max-repeat="1" save-type="all">
+    <acquisition level="27" preceding-quest-1="q_epic_517" preceding-quest-2="q_sub_643" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_FoodMaster_003" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="7">
+        <case object="zoneenv:e_onoff_salt_01" object2="zoneenv2:e_onoff_salt_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_salt_02" object2="zoneenv2:e_onoff_salt_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_salt_03" object2="zoneenv2:e_onoff_salt_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_salt_04" object2="zoneenv2:e_onoff_salt_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_onoff_salt_05" object2="zoneenv2:e_onoff_salt_05" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+      <mission id="2" required-register-value="10">
+        <case object="npc:me_juno_0003" object2="npc:me_juno_0003" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1" reward-1="649_final_set1">
+        <case gadget-required="dont-care" object="npc:CH_FoodMaster_003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

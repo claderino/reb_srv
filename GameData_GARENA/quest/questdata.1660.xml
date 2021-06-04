@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1660.xml-->
+  <quest alias="q_sub_1660" category="normal" id="1660" max-repeat="1" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_epic_1520" preceding-quest-check="and">
+      <case acquire-quest="y" party-broadcast="n" progress-mission="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_wc_desperadosisland_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_1660_1" type="talk" valid-zone-1="zone_musintower_lobby" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="none">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_wc_desperadosisland_0043" party-broadcast="n" progress-mission="y" quest-decision="qd_1660_2" type="talk" valid-zone-1="zone_musintower_6426_quest" />
+        <case object="npc:ch_wc_desperadosisland_0002" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1660_4" type="talk" valid-zone-1="zone_musintower_lobby" />
+        <case object="npc:ch_wc_desperadosisland_0030" party-broadcast="n" type="approach" />
+        <case object="npc:ch_wc_desperadosisland_0031" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone">
+      <mission id="3" required-register-value="1">
+        <case idx="1" object="npc:mh_wc_mokujin_0008" party-broadcast="n" progress-mission="y" quest-decision="qd_1660_9" type="npc-bleeding-occured" valid-zone-1="zone_musintower_6426_quest" />
+        <case object="npc:ch_wc_desperadosisland_0002" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1660_4" type="talk" valid-zone-1="zone_musintower_lobby" />
+        <case object="npc:ch_wc_desperadosisland_0010" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="npc:ch_wc_desperadosisland_0020" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="npc:ch_wc_desperadosisland_0038" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail dispose-quest="n" rollback-step-id="2" zone-1="zone_musintower_6426_quest" />
+    </mission-step>
+    <mission-step id="4" rollback="leave-zone">
+      <mission id="4" required-register-value="1">
+        <case gadget="mokujin_head_in01" gadget-required="carry-and-remove" object="npc:ch_wc_desperadosisland_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1660_8" type="talk" valid-zone-1="zone_musintower_6426_quest" />
+        <case drop-gadget="y" gadget="mokujin_head_in01" gadget-required="empty" object="npc:ce_wc_mokujin_0002" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" valid-zone-1="zone_musintower_6426_quest" />
+        <case object="npc:mh_wc_desperadoisland_0010" party-broadcast="n" type="approach" />
+        <case object="npc:mh_wc_desperadoisland_0011" party-broadcast="n" type="approach" />
+        <case object="npc:ch_wc_desperadosisland_0034" party-broadcast="n" type="approach" />
+        <case object="npc:ch_wc_desperadosisland_0036" party-broadcast="n" type="approach" />
+        <case object="npc:ch_wc_desperadosisland_0039" party-broadcast="n" type="approach" />
+        <case object="npc:mh_wc_desperadoisland_0012" party-broadcast="n" type="approach" />
+        <case object="npc:mh_wc_desperadoisland_0013" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" zone-1="zone_musintower_6426_quest" />
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1660_6" zone-1="zone_musintower_6426_quest">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ce_wc_dummy_0099" party-broadcast="n" progress-mission="y" type="approach" valid-zone-1="zone_musintower_6426_quest" />
+        <case object="npc:ch_wc_desperadosisland_0002" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1660_4" type="talk" valid-zone-1="zone_musintower_lobby" />
+        <case object="zone:zone_musintower_6426_quest" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1660_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" rollback="leave-zone">
+      <mission id="6" required-register-value="1">
+        <case idx="2" object="npc:me_wc_kittycats_0004" party-broadcast="n" progress-mission="y" quest-decision="qd_1660_7" type="npc-bleeding-occured" valid-zone-1="zone_musintower_6426_quest" />
+        <case object="npc:ch_wc_desperadosisland_0002" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1660_4" type="talk" valid-zone-1="zone_musintower_lobby" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" zone-1="zone_musintower_6426_quest" />
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1" reward-1="1660_final_set1">
+        <case object="npc:ch_wc_desperadosisland_0146" party-broadcast="n" progress-mission="y" type="talk" valid-zone-1="zone_musintower_6426_quest" />
+        <case object="npc:ch_wc_desperadosisland_0002" party-broadcast="n" progress-mission="y" type="talk" valid-zone-1="zone_musintower_lobby" />
+        <case object="npc:ch_wc_desperadosisland_0030" party-broadcast="n" type="approach" />
+        <case object="npc:ch_wc_desperadosisland_0031" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

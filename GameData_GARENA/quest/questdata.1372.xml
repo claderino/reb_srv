@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1372.xml-->
+  <quest alias="q_sub_1372" broadcast-category="field" category="normal" id="1372" max-repeat="1" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_epic_293" preceding-quest-check="and">
+      <case acquire-quest="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_WC_YuRan_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1372_1" type="talk" />
+        <case object="zone:Zone_PaCheon_Lobby" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1372_final_set1">
+        <case object="npc:CH_WC_HoBeopoe_0028" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_YuRan_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1372_2" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

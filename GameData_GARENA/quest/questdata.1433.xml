@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1433.xml-->
+  <quest alias="q_epic_1433" category="epic" completed-list="y" id="1433" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1" quest-decision="qd_1433_2" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SA_YuCheon_0020" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Jojangre_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1433_1" type="enter-zone" />
+        <case object="npc:CH_SA_PungEmpire_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JeGukGun_0071" party-broadcast="n" type="approach" />
+        <case object="npc:ch_sa_yucheon_0025" party-broadcast="n" progress-mission="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1433_4" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="2" required-register-value="1">
+        <case drop-gadget="y" object="npc:CH_SA_YuCheon_0011" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1433_5" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="3" required-register-value="1">
+        <case gadget="Q_Body_0001" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_bigstake_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+        <case drop-gadget="y" gadget="Q_Body_0001" gadget-required="not-a" object="npc:CH_CT_Guard_0003" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_1433_6" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_CT_Guard_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1433_7" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="5" required-register-value="1">
+        <case object2="zoneenv2:e_chest_lodhing_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1433_8" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="6" required-register-value="4">
+        <case object2="npc:ME_SA_Wolf_0002" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_1433_9" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="7" required-register-value="1">
+        <case object2="zoneenv2:e_pot_bigflame_01" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_1433_16" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_SA_YuCheon_0011" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="9" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="9" required-register-value="1">
+        <case object="zone:Zone_Jojangre_p1" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+        <case object2="zoneenv2:5631_foot_3" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="npc:CH_SA_YuCheon_0011" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="10" quest-decision="qd_1433_12" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="10" required-register-value="1">
+        <case object2="npc:MH_SA_PungEmpire_0003" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="11" quest-decision="qd_1433_13" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="11" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0029" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="12" quest-decision="qd_1433_14" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="12" required-register-value="2">
+        <case object2="npc:MH_SA_JeGukGun_0001" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="13" quest-decision="qd_1433_19" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="13" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0029" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Jojangre_p1" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <mission-step id="14" quest-decision="qd_1433_18" rollback="leave-zone" zone-1="Zone_Jojangre_p1">
+      <mission id="14" required-register-value="1" reward-1="1433_final_set1">
+        <case object="npc:CH_SA_YuCheon_0019" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Jojangre_p1" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Jojangre_p1" />
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1434" />
+    </completion>
+    <transit id="1" zone="Zone_Jojangre">
+      <destination mission-step-id="14" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1669.xml-->
+  <quest alias="q_epic_1669" category="epic" extra-quest-complete-achievement="q_epic_1455" id="1669" max-repeat="1" save-type="all">
+    <acquisition job-1="소환사" valid-dayofweek-start-day-3="none" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case faction="factionmain1" party-broadcast="n" progress-mission="y" type="join-faction" />
+        <case faction="factionmain2" party-broadcast="n" progress-mission="y" type="join-faction" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case party-broadcast="n" progress-mission="y" summoned-preset="summoned_cat_preset_0001" type="acquire-summoned" />
+        <case party-broadcast="n" progress-mission="y" summoned-preset="summoned_cat_preset_0002" type="acquire-summoned" />
+        <case party-broadcast="n" progress-mission="y" summoned-preset="summoned_cat_preset_0003" type="acquire-summoned" />
+        <case party-broadcast="n" progress-mission="y" summoned-preset="summoned_cat_preset_0004" type="acquire-summoned" />
+        <case party-broadcast="n" progress-mission="y" summoned-preset="summoned_cat_preset_0005" type="acquire-summoned" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="1669_final_set1">
+        <case party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_932" />
+    </completion>
+  </quest>
+</table>

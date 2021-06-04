@@ -1,0 +1,930 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.xml-->
+
+  
+  
+  
+  
+  
+
+  <combat-sequence alias="C_Seq_None">
+    <normal combat-distance="1" id="1" />
+    <normal combat-distance="2" id="2" />
+  </combat-sequence>
+	
+  
+  <combat-sequence alias="C_Seq_None_Stay">
+    <normal combat-distance="1" id="1">
+		<action duration="5000" type="stay" />
+	</normal>
+    <normal combat-distance="2" id="2">
+		<action duration="5000" type="stay" />
+	</normal>
+  </combat-sequence>
+
+  
+  
+  
+  
+  
+  
+
+  <combat-sequence alias="Scorpion_CS_01" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="1" skill3="1" type="use-indexed-skill" />
+      <action repeat="1" skill="2" skill3="2" type="use-indexed-skill" />
+      <action repeat="1" skill="3" skill3="3" type="use-indexed-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="Scorpion_CS_02">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="1" skill3="1" type="use-indexed-skill" />
+      <action repeat="1" skill="2" skill3="2" type="use-indexed-skill" />
+    </normal>
+  </combat-sequence>
+
+
+
+  
+  
+  
+  
+  
+  
+  <combat-sequence alias="ME_Nucleus_0006" hide-seq-start="y">
+    <normal combat-distance="1" id="1">
+      
+      
+      
+      <action repeat="1" skill="ME_ID_Nucleus_None_Fire2" skill3="ME_ID_Nucleus_None_Fire2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_Nucleus_0013_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      
+      
+      <action repeat="1" skill="ME_ID_Nucleus_None_Fire2" skill3="ME_ID_Nucleus_None_Fire2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  
+  
+  
+  
+  
+  <combat-sequence alias="ME_Nucleus_0010_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="ME_ID_Nucleus_None_Explosion" skill3="ME_ID_Nucleus_None_Explosion" target="event:npc-combat-action:npc" type="use-skill" />
+      
+      
+      
+      
+    </normal>
+  </combat-sequence>
+
+
+  
+  
+  
+  
+  
+  <combat-sequence alias="ME_CT_JinSeoYeon_0004_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_JinSeoYeon_None_Smash" skill3="ME_JinSeoYeon_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeon_None_SkyBlade" skill3="ME_JinSeoYeon_None_SkyBlade" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeon_None_SkyWave" skill3="ME_JinSeoYeon_None_SkyWave" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeon_None_SkyExplosion" skill3="ME_JinSeoYeon_None_SkyExplosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_JinSeoYeon_None_SkySword" skill3="ME_JinSeoYeon_None_SkySword" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeon_None_Inhalation" skill3="ME_JinSeoYeon_None_Inhalation" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_JinSeoYeonM_0002_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_JinSeoYeonM_None_MultiSmash" skill3="ME_JinSeoYeonM_None_MultiSmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeonM_None_Fire" skill3="ME_JinSeoYeonM_None_Fire" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeonM_None_HeavySmash" skill3="ME_JinSeoYeonM_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeonM_None_Uppercut" skill3="ME_JinSeoYeonM_None_Uppercut" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeonM_None_Inhalation" skill3="ME_JinSeoYeonM_None_Inhalation" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeonM_None_Flower" skill3="ME_JinSeoYeonM_None_Flower" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeonM_None_HeavyCount" skill3="ME_JinSeoYeonM_None_HeavyCount" type="use-skill" />
+      
+      
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_JinSeoYeonM_None_MultiShot" skill3="ME_JinSeoYeonM_None_MultiShot" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JinSeoYeonM_None_Lightning" skill3="ME_JinSeoYeonM_None_Lightning" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_DesertDragon_0007_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_DesertDragon_None_Smash" skill3="ME_DesertDragon_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_HeavySmash" skill3="ME_DesertDragon_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_TailSmash" skill3="ME_DesertDragon_None_TailSmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_FireBreath" skill3="ME_DesertDragon_None_FireBreath" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_StrongWing" skill3="ME_DesertDragon_None_StrongWing" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_Inhalation" skill3="ME_DesertDragon_None_Inhalation" type="use-skill" />
+      
+      
+      
+      
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      
+      
+      <action repeat="1" skill="ME_DesertDragon_None_Dash" skill3="ME_DesertDragon_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_Valak_0002_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_Valak_None_Smash" skill3="ME_Valak_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Valak_None_MultiSmash" skill3="ME_Valak_None_MultiSmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Valak_None_IceWind" skill3="ME_Valak_None_IceWind" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Valak_None_Inhalation" skill3="ME_Valak_None_Inhalation" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Valak_None_IcePrison" skill3="ME_Valak_None_IcePrison" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_Valak_None_IceThrow" skill3="ME_Valak_None_IceThrow" type="use-skill" />
+      
+      
+    </normal>
+    <special combat-distance="7" condition-1="down" condition-subscription-1="event:npc-combat-action:npc" id="1" max-count="0">
+      
+      <action repeat="1" skill="ME_Valak_None_Rise" skill3="ME_Valak_None_Rise" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_CT_NokLimDo_0052_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_Smash" skill3="ME_ChainKnuckleBandit_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_HeavySmash" skill3="ME_ChainKnuckleBandit_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_FlameSmash" skill3="ME_ChainKnuckleBandit_None_FlameSmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_SmashDown" skill3="ME_ChainKnuckleBandit_None_SmashDown" type="use-skill" />
+      
+      
+      
+      
+      
+      
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_KnukleShot" skill3="ME_ChainKnuckleBandit_None_KnukleShot" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_MultiShot" skill3="ME_ChainKnuckleBandit_None_MultiShot" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_HeavyDash" skill3="ME_ChainKnuckleBandit_None_HeavyDash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_Dash" skill3="ME_ChainKnuckleBandit_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_SnakeSoldier_0002_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_HeavySmash" skill3="ME_SnakeSoldier_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Defence" skill3="ME_SnakeSoldier_None_Defence" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Summon" skill3="ME_SnakeSoldier_None_Summon" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_PoisonBomb" skill3="ME_SnakeSoldier_None_PoisonBomb" type="use-skill" />
+      
+      <action arrived-effect="ME_SnakeSoldier_None_HeavyDash_Finish" blocked-effect="ME_SnakeSoldier_None_HeavyDash_ParryCancel" pass-through="y" skill="ME_SnakeSoldier_None_HeavyDash" skill3="ME_SnakeSoldier_None_HeavyDash" speed="125" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Dash" skill3="ME_SnakeSoldier_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_SnakeQueen_0002_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_SnakeQueen_None_Smash" skill3="ME_SnakeQueen_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeQueen_None_HeavySmash" skill3="ME_SnakeQueen_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeQueen_None_PoisonBlow" skill3="ME_SnakeQueen_None_PoisonBlow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeQueen_None_Spin" skill3="ME_SnakeQueen_None_Spin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeQueen_None_PoisonExplosion" skill3="ME_SnakeQueen_None_PoisonExplosion" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeQueen_None_Summon" skill3="ME_SnakeQueen_None_Summon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeQueen_None_Stone" skill3="ME_SnakeQueen_None_Stone" type="use-skill" />
+      
+      
+      
+      
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_SnakeQueen_None_PoisonBomb" skill3="ME_SnakeQueen_None_PoisonBomb" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeQueen_None_Dash" skill3="ME_SnakeQueen_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_BaBaJok_0014_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BabaBoss_None_Smash_Boss" skill3="ME_BabaBoss_None_Smash_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_HeavySmash_Boss" skill3="ME_BabaBoss_None_HeavySmash_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_SmashDown_Ice_Boss" skill3="ME_BabaBoss_None_SmashDown_Ice_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_IceExplosion_Boss" skill3="ME_BabaBoss_None_IceExplosion_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_Spawn_Boss" skill3="ME_BabaBoss_None_Spawn_Boss" type="use-skill" />
+      
+      
+      
+      
+      
+      
+      
+      
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BabaBoss_None_IceThrow_Boss" skill3="ME_BabaBoss_None_IceThrow_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_JumpDash_Boss" skill3="ME_BabaBoss_None_JumpDash_Boss" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_BaBaJok_0015_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BabaLeader_None_Smash" skill3="ME_BabaLeader_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaLeader_None_MultiSwing" skill3="ME_BabaLeader_None_MultiSwing" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaLeader_None_Change" skill3="ME_BabaLeader_None_Change" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaLeader_None_DownStep" skill3="ME_BabaLeader_None_DownStep" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaLeader_None_Fall" skill3="ME_BabaLeader_None_Fall" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BabaLeader_None_Dash" skill3="ME_BabaLeader_None_Dash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaLeader_None_HeavyDash" skill3="ME_BabaLeader_None_HeavyDash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_ChuAngKa_0016_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Smash" skill3="ME_SnowmanC_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_HeavySmash" skill3="ME_SnowmanC_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Spin" skill3="ME_SnowmanC_None_Spin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceBlow" skill3="ME_SnowmanC_None_IceBlow" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceShot" skill3="ME_SnowmanC_None_IceShot" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Dash" skill3="ME_SnowmanC_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_JunoBoss_0003_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_JunoBoss_None_Yell" skill3="ME_JunoBoss_None_Yell" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_JunoBoss_0004_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_JunoBoss_None_Area180_Lv2" skill3="ME_JunoBoss_None_Area180_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_JunoBoss_None_BackLaser_Lv2" skill3="ME_JunoBoss_None_BackLaser_Lv2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_JunoBoss_None_Feather_Lv2" skill3="ME_JunoBoss_None_Feather_Lv2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_UryongLeader_0003_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_UryongLeader_None_Yell_Lv2" skill3="ME_UryongLeader_None_Yell_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_UryongLeader_None_HeavySmash" skill3="ME_UryongLeader_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_UryongLeader_None_PoisonBlow_Lv2" skill3="ME_UryongLeader_None_PoisonBlow_Lv2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_UryongLeader_None_PoisonGround" skill3="ME_UryongLeader_None_PoisonGround" type="use-skill" />
+      
+      <action repeat="1" skill="ME_UryongLeader_None_GroundOut" skill3="ME_UryongLeader_None_GroundOut" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_DesertDragon_0008_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_DesertDragon_None_Smash" skill3="ME_DesertDragon_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_HeavySmash" skill3="ME_DesertDragon_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_TailSmash" skill3="ME_DesertDragon_None_TailSmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_FireBreath" skill3="ME_DesertDragon_None_FireBreath" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_StrongWing" skill3="ME_DesertDragon_None_StrongWing" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DesertDragon_None_Inhalation" skill3="ME_DesertDragon_None_Inhalation" type="use-skill" />
+      
+      
+      
+      
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      
+      
+      <action repeat="1" skill="ME_DesertDragon_None_Dash" skill3="ME_DesertDragon_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_SA_NpcTest_0024_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_SA_NpcTest_0027_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-2="2" speical-1="1">
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_sawspin_HON" type="use-skill" />
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_Strike_HON" type="use-skill" />
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_sawstab_HON" type="use-skill" />
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_uppercut_HON" type="use-skill" />
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_GunFire1_HON" type="use-skill" />
+      <action repeat="3" skill3="ME_InsectTribeStagBeetle_None_GunFire2_HON" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="2">
+      <action duration="10000" repeat="1" skill3="ME_InsectTribeStagBeetle_None_BulletDoubleFire1" type="boss-simultaneous-ground-attack" />
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_JumpGun_HON" type="use-skill" />
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_Dash_HON" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_GunAirFire1_HON" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0" min-delay="30000" start-delay="30000">
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" origin-pos="0,0,0" repeat="3" skill3="ME_InsectTribeStagBeetle_None_BulletBomb_HON" type="boss-multiground-attack" />
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_BulletDoubleFire2_HON" type="use-skill" />
+      <action repeat="1" skill3="ME_InsectTribeStagBeetle_None_ShockWave_HON" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+
+  <combat-sequence alias="MH_SA_NpcTest_0001_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill3="ME_SoYangSang_None_Judgement" type="use-skill" />
+      <action repeat="1" skill3="ME_SoYangSang_None_Destruction" type="use-skill" />
+      <action repeat="1" skill3="ME_SoYangSang_None_SpinCut" type="use-skill" />
+      <action repeat="1" skill3="ME_SoYangSang_None_AnkleCutOff" type="use-skill" />
+      <action repeat="1" skill3="ME_SoYangSang_None_Uppercut" type="use-skill" />
+      <action repeat="1" skill3="ME_SoYangSang_None_Spinattack" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill3="ME_SoYangSang_None_DestructionCircle" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="MH_SA_NpcTest_0009_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill3="ME_Iorak_None_Natk1" type="use-skill" />
+      <action repeat="1" skill3="ME_Iorak_None_ChargeShot" type="use-skill" />
+      <action repeat="1" skill3="ME_Iorak_None_ChargeShot2" type="use-skill" />
+      <action repeat="1" skill3="ME_Iorak_None_Sliding" type="use-skill" />
+      <action repeat="1" skill3="ME_Iorak_None_Sliding_Shoot" type="use-skill" />
+      <action repeat="1" skill3="ME_Iorak_None_AerialAttack" type="use-skill" />
+      <action repeat="1" skill3="ME_Iorak_None_ShootingSpree" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="2">
+      <action repeat="1" skill3="ME_Iorak_None_BombThrow" type="use-skill" />
+      <action repeat="1" skill3="ME_Iorak_None_KickDash" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      <action repeat="1" skill3="ME_Iorak_None_AirFire" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="30000">
+      <action repeat="1" skill3="ME_Iorak_None_BackStep" type="use-skill" />
+      <action repeat="1" skill3="ME_Iorak_None_ChargeShot" type="use-skill" />
+      <action repeat="4" skill3="ME_Iorak_None_ChargeShot2_nocast" type="use-skill" />
+      <action repeat="1" skill3="ME_Iorak_None_ChargeShot2" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_SnowManBoss_None_Swing_Hon" skill3="ME_SnowManBoss_None_Swing_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_SnowManBoss_None_Uppercut_Hon" skill3="ME_SnowManBoss_None_Uppercut_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave1_Hon" skill3="ME_SnowManBoss_None_ColdWave1_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave2_Hon" skill3="ME_SnowManBoss_None_ColdWave2_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_SnowManBoss_None_Smash_Hon" skill3="ME_SnowManBoss_None_Smash_Hon" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_SnowManBoss_None_BossDash_Hon" skill3="ME_SnowManBoss_None_BossDash_Hon" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0002_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_Smash_Hon" skill3="ME_ChainKnuckleBandit_None_Smash_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_ChainKnucklebandit_None_Stamping_Hon" skill3="ME_ChainKnucklebandit_None_Stamping_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_HeavySmash_Hon" skill3="ME_ChainKnuckleBandit_None_HeavySmash_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_FlameSmash_Hon" skill3="ME_ChainKnuckleBandit_None_FlameSmash_Hon" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_HeavyDash_Hon" skill3="ME_ChainKnuckleBandit_None_HeavyDash_Hon" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0003_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Jab_Hon" skill3="ME_PilebunkerEmpire_None_Jab_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Smash_Hon" skill3="ME_PilebunkerEmpire_None_Smash_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletSwing_Hon" skill3="ME_PilebunkerEmpire_None_GimletSwing_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletTorpedo_Hon" skill3="ME_PilebunkerEmpire_None_GimletTorpedo_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_CaptureSmash_Hon" skill3="ME_PilebunkerEmpire_None_CaptureSmash_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_RageStorm_Hon" skill3="ME_PilebunkerEmpire_None_RageStorm_Hon" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_FireBlast_Hon" skill3="ME_PilebunkerEmpire_None_FireBlast_Hon" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Capture_Hon" skill3="ME_PilebunkerEmpire_None_Capture_Hon" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Jab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Jab_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" skill3="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Grab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0002_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BEI_N2_Minou_RightSlash_Night" skill3="ME_BEI_N2_Minou_RightSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_LeftSlash_Night" skill3="ME_BEI_N2_Minou_LeftSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_TyphoonSlash_Night" skill3="ME_BEI_N2_Minou_TyphoonSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_DoubleSlash_Night" skill3="ME_BEI_N2_Minou_DoubleSlash_Night" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BEI_N2_Minou_Grab_Night" skill3="ME_BEI_N2_Minou_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0003_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySpin_Night" skill3="ME_BEI_N3_PigTribeC_HeavySpin_Night" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_Grab_Night" skill3="ME_BEI_N3_PigTribeC_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0008_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_Cut2_Hell" skill3="ME_UnbalanceZombie_None_Cut2_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_Fury_Hell" skill3="ME_UnbalanceZombie_None_Fury_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_Wind_Hell" skill3="ME_UnbalanceZombie_None_Wind_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_EvilShock_Hell" skill3="ME_UnbalanceZombie_None_EvilShock_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_CrazyJump_Hell" skill3="ME_UnbalanceZombie_None_CrazyJump_Hell" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_UnbalanceZombie_None_Capture_Hell" skill3="ME_UnbalanceZombie_None_Capture_Hell" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0009_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_SnakeSoldier_None_Jab_Hell" skill3="ME_SnakeSoldier_None_Jab_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_SnakeSoldier_None_Smash_Hell" skill3="ME_SnakeSoldier_None_Smash_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="25" skill="ME_SnakeSoldier_None_HeavySmash_Hell" skill3="ME_SnakeSoldier_None_HeavySmash_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="25" repeat="1" skill="ME_SnakeSoldier_None_Spin_Hell" skill3="ME_SnakeSoldier_None_Spin_Hell" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnakeSoldier_None_Capture_Hell" skill3="ME_SnakeSoldier_None_Capture_Hell" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0010_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_InsectTribeStagBeetle_None_Smash_HON" skill3="ME_InsectTribeStagBeetle_None_Smash_HON" type="use-skill" />
+        <action immune-breaker-disable="y" prob="40" repeat="1" skill="ME_InsectTribeStagBeetle_None_Strike_HON" skill3="ME_InsectTribeStagBeetle_None_Strike_HON" type="use-skill" />
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_InsectTribeStagBeetle_None_sawspin_HON" skill3="ME_InsectTribeStagBeetle_None_sawspin_HON" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_InsectTribeStagBeetle_None_Dash_HON" skill3="ME_InsectTribeStagBeetle_None_Dash_HON" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0010_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_Cut_Hell" skill3="ME_UnbalanceZombie_None_Cut_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_Fury_Hell" skill3="ME_UnbalanceZombie_None_Fury_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_Wind_Hell" skill3="ME_UnbalanceZombie_None_Wind_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_EvilShock_Hell" skill3="ME_UnbalanceZombie_None_EvilShock_Hell" type="use-skill" />
+        <action immune-breaker-disable="y" prob="20" repeat="1" skill="ME_UnbalanceZombie_None_CrazyJump_Hell" skill3="ME_UnbalanceZombie_None_CrazyJump_Hell" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_UnbalanceZombie_None_Capture_Hell" skill3="ME_UnbalanceZombie_None_Capture_Hell" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0004_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Swing" skill3="ME_BEB_B1_SnowManBoss_None_Swing" type="use-skill" />
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Smash" skill3="ME_BEB_B1_SnowManBoss_None_Smash" type="use-skill" />
+      <action type="select">
+        <action prob="60" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Pratfall" skill3="ME_BEB_B1_SnowManBoss_None_Pratfall" type="use-skill" />
+        <action prob="40" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Backdash" skill3="ME_BEB_B1_SnowManBoss_None_Backdash" type="use-skill" />
+      </action>
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Uppercut" skill3="ME_BEB_B1_SnowManBoss_None_Uppercut" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_BossDash" skill3="ME_BEB_B1_SnowManBoss_None_BossDash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0005_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Swing" skill3="ME_BEB_B1_SnowManBoss_None_Swing" type="use-skill" />
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Smash" skill3="ME_BEB_B1_SnowManBoss_None_Smash" type="use-skill" />
+      <action type="select">
+        <action prob="60" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Pratfall" skill3="ME_BEB_B1_SnowManBoss_None_Pratfall" type="use-skill" />
+        <action prob="40" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Backdash" skill3="ME_BEB_B1_SnowManBoss_None_Backdash" type="use-skill" />
+      </action>
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Uppercut" skill3="ME_BEB_B1_SnowManBoss_None_Uppercut" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_BossDash" skill3="ME_BEB_B1_SnowManBoss_None_BossDash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="6000" start-delay="3000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0006_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Swing" skill3="ME_BEB_B1_SnowManBoss_None_Swing" type="use-skill" />
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Smash" skill3="ME_BEB_B1_SnowManBoss_None_Smash" type="use-skill" />
+      <action type="select">
+        <action prob="60" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Pratfall" skill3="ME_BEB_B1_SnowManBoss_None_Pratfall" type="use-skill" />
+        <action prob="40" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Backdash" skill3="ME_BEB_B1_SnowManBoss_None_Backdash" type="use-skill" />
+      </action>
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Uppercut" skill3="ME_BEB_B1_SnowManBoss_None_Uppercut" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_BossDash" skill3="ME_BEB_B1_SnowManBoss_None_BossDash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0007_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Swing" skill3="ME_BEB_B1_SnowManBoss_None_Swing" type="use-skill" />
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Smash" skill3="ME_BEB_B1_SnowManBoss_None_Smash" type="use-skill" />
+      <action type="select">
+        <action prob="60" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Pratfall" skill3="ME_BEB_B1_SnowManBoss_None_Pratfall" type="use-skill" />
+        <action prob="40" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Backdash" skill3="ME_BEB_B1_SnowManBoss_None_Backdash" type="use-skill" />
+      </action>
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Uppercut" skill3="ME_BEB_B1_SnowManBoss_None_Uppercut" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_BEB_B1_SnowManBoss_None_BossDash" skill3="ME_BEB_B1_SnowManBoss_None_BossDash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0004_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Jab" skill3="ME_PilebunkerEmpire_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Smash" skill3="ME_PilebunkerEmpire_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletSwing" skill3="ME_PilebunkerEmpire_None_GimletSwing" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletTorpedo" skill3="ME_PilebunkerEmpire_None_GimletTorpedo" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0005_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Jab" skill3="ME_PilebunkerEmpire_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Smash" skill3="ME_PilebunkerEmpire_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletSwing" skill3="ME_PilebunkerEmpire_None_GimletSwing" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletTorpedo" skill3="ME_PilebunkerEmpire_None_GimletTorpedo" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0006_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Jab" skill3="ME_PilebunkerEmpire_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Smash" skill3="ME_PilebunkerEmpire_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletSwing" skill3="ME_PilebunkerEmpire_None_GimletSwing" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletTorpedo" skill3="ME_PilebunkerEmpire_None_GimletTorpedo" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0007_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Jab" skill3="ME_PilebunkerEmpire_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_Smash" skill3="ME_PilebunkerEmpire_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletSwing" skill3="ME_PilebunkerEmpire_None_GimletSwing" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletTorpedo" skill3="ME_PilebunkerEmpire_None_GimletTorpedo" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="5000">
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0011_CS">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_SoulNpc_MultAttack_LV1" skill3="ME_SoulNpc_MultAttack_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Launcher_LV1" skill3="ME_SoulNpc_Launcher_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Cross_LV1" skill3="ME_SoulNpc_Cross_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_PowerPosion_LV1" skill3="ME_SoulNpc_PowerPosion_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0012_CS">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_SoulNpc_Bulletproof_LV1" skill3="ME_SoulNpc_Bulletproof_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_RecoveryDown_LV1" skill3="ME_SoulNpc_RecoveryDown_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_DamageShield_LV1" skill3="ME_SoulNpc_DamageShield_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Flash_LV1" skill3="ME_SoulNpc_Flash_LV1" type="use-skill" />
+      <action duration="5000" immune-breaker-disable="y" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0013_CS">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_SoulNpc_Shackles_LV1" skill3="ME_SoulNpc_Shackles_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Grab_LV1" skill3="ME_SoulNpc_Grab_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Bind_LV1" skill3="ME_SoulNpc_Bind_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Shove_LV1" skill3="ME_SoulNpc_Shove_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_Boss_0014_CS">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_SoulNpc_Weak_LV1" skill3="ME_SoulNpc_Weak_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Phantom_LV1" skill3="ME_SoulNpc_Phantom_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Bloodsucking_LV1" skill3="ME_SoulNpc_Bloodsucking_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Rage_LV1" skill3="ME_SoulNpc_Rage_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_ShadowWalk_LV1" skill3="ME_SoulNpc_ShadowWalk_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0013_CS">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_SoulNpc_MultAttack_LV1" skill3="ME_SoulNpc_MultAttack_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Launcher_LV1" skill3="ME_SoulNpc_Launcher_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Cross_LV1" skill3="ME_SoulNpc_Cross_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_PowerPosion_LV1" skill3="ME_SoulNpc_PowerPosion_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0014_CS">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_SoulNpc_Bulletproof_LV1" skill3="ME_SoulNpc_Bulletproof_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_RecoveryDown_LV1" skill3="ME_SoulNpc_RecoveryDown_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_DamageShield_LV1" skill3="ME_SoulNpc_DamageShield_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0015_CS">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_SoulNpc_Shackles_LV1" skill3="ME_SoulNpc_Shackles_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Grab_LV1" skill3="ME_SoulNpc_Grab_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Bind_LV1" skill3="ME_SoulNpc_Bind_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_SoulNPCTest_0016_CS">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_SoulNpc_Weak_LV1" skill3="ME_SoulNpc_Weak_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Phantom_LV1" skill3="ME_SoulNpc_Phantom_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Bloodsucking_LV1" skill3="ME_SoulNpc_Bloodsucking_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_Rage_LV1" skill3="ME_SoulNpc_Rage_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_SoulNpc_ShadowWalk_LV1" skill3="ME_SoulNpc_ShadowWalk_LV1" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+  </combat-sequence>
+
+
+
+</table>

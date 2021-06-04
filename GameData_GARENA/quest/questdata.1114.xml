@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1114.xml-->
+  <quest alias="q_sub_1114" broadcast-category="field" category="normal" id="1114" max-repeat="1" reset-type="daily" retired="y" save-type="all">
+    <acquisition check-tencent-vitality="n" level="16">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="5">
+        <case object2="npc:ME_KingFrog_003" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_BelliedFrog_002" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object2="zoneenv2:e_chest_bokbunja_01" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object2="npc:ME_Scorpion_0003" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="4" required-register-value="1">
+        <case object2="zoneenv2:e_chest_banga_01" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="5" required-register-value="1" reward-1="1114_final_set1" reward-2="1114_final_set2">
+        <case object="npc:Ctzn_JinM_NokMyeonCtzn_KeumYoungOk_001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5096\zoneenv2placedata.5096.xml-->
+	<record action-point="-7822,18648,-85" action-radius="20" alias="e_Chest_5096hartA_01_place" type="chest" />
+	<record action-point="-7775,17941,-83" action-radius="13" alias="e_chest_nokrim_treasure_vh_01_place" type="chest" />
+	<record action-point="-7734,17925,-83" action-radius="13" alias="e_chest_nokrim_treasure_vh_02_place" type="chest" />
+	<record action-point="-7705,17927,-83" action-radius="13" alias="e_chest_nokrim_treasure_vh_03_place" type="chest" />
+	<record action-point="-7626,17910,-83" action-radius="13" alias="e_chest_nokrim_treasure_vh_04_place" type="chest" />
+	<record action-point="-7589,17910,-83" action-radius="13" alias="e_chest_nokrim_treasure_vh_05_place" type="chest" />
+	<record action-point="-7545,17951,-83" action-radius="13" alias="e_chest_nokrim_treasure_vh_06_place" type="chest" />
+	<record action-point="-8124,18081,-84" action-radius="10" alias="e_chest_nokrim_treasure_n_05_place" type="chest" />
+	<record action-point="-8105,18288,-84" action-radius="10" alias="e_chest_nokrim_treasure_n_06_place" type="chest" />
+	<record action-point="-8094,18480,-84" action-radius="10" alias="e_chest_nokrim_treasure_n_01_place" type="chest" />
+	<record action-point="-7378,18094,-84" action-radius="10" alias="e_chest_nokrim_treasure_n_02_place" type="chest" />
+	<record action-point="-7387,18287,-84" action-radius="10" alias="e_chest_nokrim_treasure_n_03_place" type="chest" />
+	<record action-point="-7377,18494,-84" action-radius="10" alias="e_chest_nokrim_treasure_n_04_place" type="chest" />
+	<record action-point="-7743,19211,-159" action-radius="62" alias="e_gate_nokrim_front_01_place" type="gate" />
+	<record action-point="-7744,20206,-183" action-radius="62" alias="e_gate_nokrim_front_02_place" type="gate" />
+	<record action-point="-8045,18486,-84" action-radius="60" alias="e_gate_nokrim_01_place" type="gate" />
+	<record action-point="-8045,18286,-84" action-radius="60" alias="e_gate_nokrim_02_place" type="gate" />
+	<record action-point="-8044,18086,-83" action-radius="60" alias="e_gate_nokrim_03_place" type="gate" />
+	<record action-point="-7444,18086,-84" action-radius="60" alias="e_gate_nokrim_04_place" type="gate" />
+	<record action-point="-7444,18286,-84" action-radius="60" alias="e_gate_nokrim_05_place" type="gate" />
+	<record action-point="-7443,18486,-84" action-radius="60" alias="e_gate_nokrim_06_place" type="gate" />
+	<record action-point="-7745,17985,-83" action-radius="50" alias="e_gate_nokrim_great_01_place" type="gate" />
+	<record action-point="-8020,18132,-73" action-radius="12" alias="e_chest_nokrim_locking_01_place" type="chest" />
+	<record action-point="-8021,18240,-74" action-radius="12" alias="e_chest_nokrim_locking_02_place" type="chest" />
+	<record action-point="-8020,18440,-75" action-radius="12" alias="e_chest_nokrim_locking_03_place" type="chest" />
+	<record action-point="-7461,18440,-75" action-radius="12" alias="e_chest_nokrim_locking_04_place" type="chest" />
+	<record action-point="-7461,18331,-75" action-radius="12" alias="e_chest_nokrim_locking_05_place" type="chest" />
+	<record action-point="-7461,18132,-75" action-radius="12" alias="e_chest_nokrim_locking_06_place" type="chest" />
+	<record action-point="-7744,18118,-64" action-radius="25" alias="e_button_5096yongmak_place" region-point-1="-7746,18116,-96" region-point-2="-7746,18120,-96" region-point-3="-7742,18120,-96" region-point-4="-7742,18116,-96" type="portal" />
+	<record action-point="-7453,19502,-158" action-radius="62" alias="e_gate_nokrim_front_03_place" type="gate" />
+	<record action-point="-8031,19503,-158" action-radius="62" alias="e_gate_nokrim_front_04_place" type="gate" />
+	<record action-point="-7464,21095,-171" alias="5096_portal_5095_place" region-point-1="-7444,20951,1532" region-point-2="-7485,20951,-42" region-point-3="-7485,21239,-42" region-point-4="-7444,21239,1532" type="portal" />
+	<record action-point="-7746,19841,-75" action-radius="0" alias="5096_footswitch_01_place" region-point-1="-7868,19781,1532" region-point-2="-7868,19901,121" region-point-3="-7623,19901,121" region-point-4="-7623,19781,296" type="foot-switch" />
+	<record alias="5096_DamageZone_03_place" height="0" region-point-1="-7896,18816,156" region-point-2="-7896,19128,156" region-point-3="-7587,19128,156" region-point-4="-7587,18816,156" type="effect-region" />
+</table>

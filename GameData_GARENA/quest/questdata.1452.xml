@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1452.xml-->
+  <quest alias="q_epic_1452" broadcast-category="field" category="epic" completed-list="y" id="1452" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:Zone_Hasire_p1" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CE_WC_CrocodileSharkTribeAElder_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_YuCheon_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0054" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_WC_GunMaHye_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_JeongHaDo_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0048" party-broadcast="n" type="approach" />
+        <case object="npc:CE_WC_CrocodileSharkTribeAElder_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_YuCheon_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0054" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1452_2" zone-1="Zone_Hasire_p1">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WC_YuCheon_0010" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0054" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_GunMaHye_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeongHaDo_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0048" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_WC_YuCheon_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_JeGukGun_0055" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:MH_WC_Tanposa_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_YuCheon_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0055" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="5">
+        <case object2="npc:ME_WC_DemonShadow_0023" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:MH_WC_Tanposa_0001" party-broadcast="n" type="approach" />
+        <case drop-gadget="y" gadget="Q_DK_TimeBomb_01" gadget-required="not-a" object2="zoneenv2:e_chest_5601boombox_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_WC_JinSoA_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:MH_WC_Tanposa_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="5">
+        <case object2="npc:ME_WC_Magolka_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:CH_WC_JinSoA_0002" party-broadcast="n" type="approach" />
+        <case object="npc:MH_WC_Tanposa_0001" party-broadcast="n" type="approach" />
+        <case object2="npc:ME_WC_Magolka_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="9" zone-1="Zone_Hasire_p1">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CE_WC_SuWaJokLeader_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="3">
+        <case object="npc:CH_WC_Citizen_0010" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_WC_Citizen_0009" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_WC_Citizen_0008" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_WC_Citizen_0007" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_WC_Citizen_0006" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1">
+        <case object="npc:CH_WC_YeHaRang_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_SoYangSang_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_DangYeoWeol_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="12">
+      <mission id="13" required-register-value="1">
+        <case object="npc:CH_WC_YeHaRang_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_SoYangSang_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_DangYeoWeol_0002" party-broadcast="n" type="approach" />
+        <case object2="npc:ME_WC_YuRanM_0006" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+      <mission id="12" required-register-value="10">
+        <case object2="npc:MH_WC_Citizen_0008" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:CH_WC_YeHaRang_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_SoYangSang_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_DangYeoWeol_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="13">
+      <mission id="14" required-register-value="1">
+        <case party-broadcast="n" progress-mission="y" type="talk-to-self" />
+        <case object="npc:CH_WC_YeHaRang_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_SoYangSang_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_DangYeoWeol_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="14">
+      <mission id="15" required-register-value="1" reward-1="1452_final_set1">
+        <case object="npc:CH_WC_YuCheon_0006" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_BackDoHa_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1453" />
+    </completion>
+    <transit id="1" zone="Zone_Teasang_Room_D">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+      <destination mission-step-id="14" zone-index="1" />
+    </transit>
+    <transit id="2" zone="zone_YoungRinCHN">
+      <destination mission-step-id="1" zone-index="4" />
+      <destination mission-step-id="2" zone-index="4" />
+      <destination mission-step-id="3" zone-index="4" />
+      <destination mission-step-id="4" zone-index="4" />
+      <destination mission-step-id="5" zone-index="4" />
+      <destination mission-step-id="6" zone-index="4" />
+      <destination mission-step-id="7" zone-index="4" />
+      <destination mission-step-id="8" zone-index="4" />
+      <destination mission-step-id="9" zone-index="4" />
+      <destination mission-step-id="10" zone-index="4" />
+      <destination mission-step-id="11" zone-index="4" />
+      <destination mission-step-id="12" zone-index="4" />
+      <destination mission-step-id="13" zone-index="4" />
+      <destination mission-step-id="14" zone-index="4" />
+    </transit>
+    <transit id="3" zone="StartZone_Default">
+      <destination mission-step-id="1" zone-index="9" />
+      <destination mission-step-id="2" zone-index="9" />
+      <destination mission-step-id="3" zone-index="9" />
+      <destination mission-step-id="4" zone-index="9" />
+      <destination mission-step-id="5" zone-index="9" />
+      <destination mission-step-id="6" zone-index="9" />
+      <destination mission-step-id="7" zone-index="9" />
+      <destination mission-step-id="8" zone-index="9" />
+      <destination mission-step-id="9" zone-index="9" />
+      <destination mission-step-id="10" zone-index="9" />
+      <destination mission-step-id="11" zone-index="9" />
+      <destination mission-step-id="12" zone-index="9" />
+      <destination mission-step-id="13" zone-index="9" />
+      <destination mission-step-id="14" zone-index="9" />
+    </transit>
+  </quest>
+</table>

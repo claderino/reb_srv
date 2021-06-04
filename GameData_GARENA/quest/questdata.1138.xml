@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1138.xml-->
+  <quest alias="q_sub_1138" broadcast-category="field" category="normal" district-1="suwal" id="1138" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="38" preceding-quest-1="q_epic_912" preceding-quest-check="and" preceding-quest-count-1="1" preceding-quest-mission-step-1="6">
+      <case acquire-quest="y" object="npc:ch_daeeobang_0064" object2="npc:ch_daeeobang_0064" party-broadcast="n" type="loot" />
+      <case acquire-quest="y" object="npc:CH_DaeEoBang_0054" object2="npc:CH_DaeEoBang_0054" party-broadcast="n" type="loot" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="1138_final_set1" reward-2="1138_final_set2">
+        <case completion-count="1" completion-count-op="lt" object="npc:ch_daeeobang_0065" party-broadcast="n" progress-mission="y" type="talk" />
+        <case completion-count="1" object="npc:ch_daeeobang_0065" party-broadcast="n" progress-mission="y" type="talk" />
+        <case completion-count="0" fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.945.xml-->
+  <quest alias="q_sub_945" broadcast-category="field" category="normal" id="945" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="12" preceding-quest-1="q_epic_492" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_JR_Citizen_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="12">
+        <case object="npc:me_belliedfrog_002" object2="npc:me_belliedfrog_002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_kingfrog_003" object2="npc:me_kingfrog_003" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="2" required-register-value="5">
+        <case object="zoneenv:e_chest_2300grass_01" object2="zoneenv2:e_chest_2300grass_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_2300grass_02" object2="zoneenv2:e_chest_2300grass_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_2300grass_03" object2="zoneenv2:e_chest_2300grass_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_2300grass_04" object2="zoneenv2:e_chest_2300grass_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_2300grass_05" object2="zoneenv2:e_chest_2300grass_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_2300grass_06" object2="zoneenv2:e_chest_2300grass_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_2300grass_07" object2="zoneenv2:e_chest_2300grass_07" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_2300grass_08" object2="zoneenv2:e_chest_2300grass_08" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1" reward-1="945_final_set1" reward-2="945_final_set2">
+        <case object="npc:CH_JR_Citizen_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

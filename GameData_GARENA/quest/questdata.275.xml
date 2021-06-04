@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.275.xml-->
+  <quest alias="q_epic_275" broadcast-category="field" category="epic" completed-list="n" id="275" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0048" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BaekRimSa_Byul1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_274_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_CT_PungEmpire_0029" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0048" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BiMoo_0024" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BiMoo_0023" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BiMoo_0022" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BiMoo_0021" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_275_2" zone-1="Zone_KyeongHoiRu_p">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:e_chest_redstonelantern_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:5151_footswitch_01" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="zone:Zone_KyeongHoiRu_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_275_1" type="enter-zone" />
+        <case object2="zoneenv2:e_chest_redstonelantern_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_redstonelantern_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_redstonelantern_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_redstonelantern_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="npc:CH_CT_PungEmpire_0029" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BiMoo_0034" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BiMoo_0027" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BiMoo_0033" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BiMoo_0025" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_275_4" zone-1="Zone_KyeongHoiRu_p">
+      <mission id="4" required-register-value="1">
+        <case object2="zoneenv2:5151_footswitch_02" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="zone:Zone_KyeongHoiRu_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_275_3" type="enter-zone" />
+        <case object2="zoneenv2:e_chest_redstonelantern_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_redstonelantern_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_redstonelantern_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_redstonelantern_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_redstonelantern_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="Zone_KyeongHoiRu">
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_276" />
+    </completion>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1" reward-1="275_final_set1">
+        <case object="npc:CH_CT_Prisoner_0017" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

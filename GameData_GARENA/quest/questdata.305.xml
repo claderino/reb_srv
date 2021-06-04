@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.305.xml-->
+  <quest alias="q_epic_305" broadcast-category="field" category="epic" completed-list="y" district-1="jeryoungrim" id="305" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ctzn_jinm_cheongryeongctzn_gwakdekyu_001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zoneenv:2723_footswitch_1" object2="zoneenv2:2723_footswitch_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_305_2" type="env-entered" />
+        <case object="zone:zone_mangjasup_dun_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_305_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ctzn_jinm_jakyungdan_gongsamsik_kff_001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_dadanha_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_305_4" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="4">
+      <mission id="4" required-register-value="1" reward-1="305_final_set1">
+        <case gadget-required="dont-care" object="npc:ch_namsoyu_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_mangjasup_gerjeum_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_305_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_306" />
+    </completion>
+    <transit id="1" zone="zone_mangjasup_gerjeum_sp">
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+    </transit>
+  </quest>
+</table>

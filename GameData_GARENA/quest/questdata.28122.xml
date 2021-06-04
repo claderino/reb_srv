@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.28122.xml-->
+	<quest alias="sq_28122" category="tendency-simple" id="28122" max-repeat="-1" save-type="except-completion-and-logout-save">
+		<mission-step id="1">
+			<mission id="1" required-attraction="tendency-field:CheonSangBunJi" tendency-id="3" variation-required-field-play-point-1="0" variation-required-register-value-1="5" variation-reward-field-play-point-1="25" variation-reward-tendency-score-1="25">
+				<case multi-object-1="zoneenv2:e_chest_6400_buyustone_01" party-broadcast="y" progress-mission="y" type="loot" />
+			</mission>
+		</mission-step>
+	</quest>
+</table>

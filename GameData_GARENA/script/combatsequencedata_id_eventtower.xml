@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata_id_eventtower.xml-->
+  
+  
+  <combat-sequence alias="ME_WC_FireGorillaA_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_SummonFire" skill3="ME_WC_FireGorillaA_0001_SummonFire" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_NAtk1" skill3="ME_WC_FireGorillaA_0001_NAtk1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_NAtk2" skill3="ME_WC_FireGorillaA_0001_NAtk2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_Area360" skill3="ME_WC_FireGorillaA_0001_Area360" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="20000">
+      <action duration="100" event-step="1" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_Social1" skill3="ME_WC_FireGorillaA_0001_Social1" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      <action immune-breaker-disable="y" skill="ME_DEA_B3_FireGorillaA_None_Earthquake" skill3="ME_DEA_B3_FireGorillaA_None_Earthquake" target-area="4951_3" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_Breath" skill3="ME_WC_FireGorillaA_0001_Breath" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1">
+      <action immune-breaker-disable="y" skill="ME_DEA_B3_FireGorillaA_None_Earthquake" skill3="ME_DEA_B3_FireGorillaA_None_Earthquake" target-area="4951_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_Breath" skill3="ME_WC_FireGorillaA_0001_Breath" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" skill="ME_DEA_B3_FireGorillaA_None_Earthquake" skill3="ME_DEA_B3_FireGorillaA_None_Earthquake" target-area="4951_5" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_Breath" skill3="ME_WC_FireGorillaA_0001_Breath" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_LifeFlower_0004_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_RedFlowerSpam" skill3="ME_WC_FireGorillaA_0001_RedFlowerSpam" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="5000" start-delay="10000">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_WC_FireGorillaA_0001_RedFlowerHeal" skill3="ME_WC_FireGorillaA_0001_RedFlowerHeal" target="zonenpcspawn:a_4951_2" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_WC_PileBunkerEmpire_0007_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_PileBunkerEmpire_0007_FireBlast" skill3="ME_WC_PileBunkerEmpire_0007_FireBlast" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="9000" start-delay="10000">
+      <action duration="100" event-step="1" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_PileBunkerEmpire_0007_QuakeFire" skill3="ME_WC_PileBunkerEmpire_0007_QuakeFire" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_PileBunkerEmpire_0007_RageStorm" skill3="ME_WC_PileBunkerEmpire_0007_RageStorm" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_PileBunkerEmpire_0008_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_PileBunkerEmpire_0008_FireBlast" skill3="ME_WC_PileBunkerEmpire_0008_FireBlast" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="9000" start-delay="10000">
+      <action duration="100" event-step="1" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_PileBunkerEmpire_0008_QuakeFire" skill3="ME_WC_PileBunkerEmpire_0008_QuakeFire" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_WC_PileBunkerEmpire_0008_RageStorm" skill3="ME_WC_PileBunkerEmpire_0008_RageStorm" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_WC_Dummy_0176_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" pass-through="y" skill="ME_WC_PileBunkerEmpire_0007_RedBeam" skill3="ME_WC_PileBunkerEmpire_0007_RedBeam" speed="90" target="event:npc-combat-action:target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0177_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" pass-through="y" skill="ME_WC_PileBunkerEmpire_0008_BlueBeam" skill3="ME_WC_PileBunkerEmpire_0008_BlueBeam" speed="90" target="event:npc-combat-action:target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+
+
+
+  
+  
+  
+
+  
+  
+  <combat-sequence alias="ME_WC_KangSiFat_0001_CS1" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1">
+      
+      <action immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_Jab" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_Jab" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_BloodySmash" target="zonenpcspawn:a_4951_101" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_BloodySmash" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      <action event-step="11" immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_Rage" target="zonenpcspawn:a_4951_101" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WC_KangSiFat_0001_CS2" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action duration="1000" immune-breaker-disable="y" target="zonenpcspawn:a_4951_101" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="21" immune-breaker-disable="y" social="SpawnSocial_None" type="do-social" />
+      <action event-step="22" immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_Rage" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      
+      <action event-step="26" immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_UnderingSummon" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_UnderingSummon" target="zonenpcspawn:a_4951_101" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action event-step="23" immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_UnderingSummon" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      <action event-step="24" immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_UnderingSummon" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      <action event-step="23" immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_UnderingSummon" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      <action event-step="23" immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_UnderingSummon" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      <action event-step="25" immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_UnderingSummon" target="zonenpcspawn:a_4951_101" type="use-skill" />
+      <action event-step="23" immune-breaker-disable="y" skill3="ME_WC_KangSiFat_0001_UnderingSummon" target="zonenpcspawn:a_4951_101" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WC_GatlingGunWoman_0003_CS1">
+    
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill3="ME_WC_GatlingGunWoman_0003_GunFire1" target="zonenpcspawn:a_4951_102" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_WC_GatlingGunWoman_0003_GunLowFire" target="zonenpcspawn:a_4951_102" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_WC_GatlingGunWoman_0003_Gun1" target="zonenpcspawn:a_4951_102" type="boss-repeater-attack" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" social="ME_WC_GatlingGunWoman_0003_Combatstart_01" type="do-social" />
+        
+        <action immune-breaker-disable="y" prob="50" social="ME_WC_GatlingGunWoman_0003_Combatstart_02" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_103" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_105" type="use-ground-skill" />
+      </action>
+      <action event-step="11" immune-breaker-disable="y" social="SpawnSocial_None" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WC_GatlingGunWoman_0003_Combat_05" type="do-social" />
+      <action duration="25000" skill3="ME_WC_GatlingGunWoman_0003_BulletBomb" target="zonenpcspawn:a_4951_102" type="boss-simultaneous-ground-attack" />
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_104" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_106" type="use-ground-skill" />
+      </action>
+      
+      <action event-step="12" immune-breaker-disable="y" social="SpawnSocial_None" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WC_GatlingGunWoman_0003_Combat_06" type="do-social" />
+      <action duration="25000" skill3="ME_WC_GatlingGunWoman_0003_BulletBomb" target="zonenpcspawn:a_4951_102" type="boss-simultaneous-ground-attack" />
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_103" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_105" type="use-ground-skill" />
+      </action>
+      <action event-step="12" immune-breaker-disable="y" social="SpawnSocial_None" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="0">
+      <action immune-breaker-disable="y" skill3="ME_WC_GatlingGunWoman_0003_GunFire1" target="zonenpcspawn:a_4951_102" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_GatlingGunWoman_0003_Combat_09" type="do-social" />
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_104" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_106" type="use-ground-skill" />
+      </action>
+      
+      <action event-step="11" immune-breaker-disable="y" social="SpawnSocial_None" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="5" max-count="0">
+      <action immune-breaker-disable="y" skill3="ME_WC_GatlingGunWoman_0003_GunFire1" target="zonenpcspawn:a_4951_102" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_WC_GatlingGunWoman_0003_Combat_09" type="do-social" />
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_103" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Q" target-area="4951_105" type="use-ground-skill" />
+      </action>
+      <action event-step="11" immune-breaker-disable="y" social="SpawnSocial_None" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_KangSiTall_0001_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" skill3="ME_KangsiTall_None_Summon" target="zonenpcspawn:a_4951_102" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_KangSiTall_0002_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" skill3="ME_KangsiTall_None_Summon" target="zonenpcspawn:a_4951_102" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0179_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action duration="60000" immune-breaker-disable="y" type="stay" />
+    </normal>
+  </combat-sequence>
+
+  
+  
+  
+</table>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.28195.xml-->
+	<quest alias="sq_28195" category="tendency-simple" id="28195" max-repeat="-1" save-type="except-completion-and-logout-save">
+		<mission-step id="1">
+			<mission id="1" required-attraction="tendency-field:CheonSangBunJi" tendency-id="1" variation-required-field-play-point-1="0" variation-required-register-value-1="1" variation-reward-field-play-point-1="99" variation-reward-tendency-score-1="99">
+				<case multi-object-1="zoneenv2:e_chest_6404_OldSukSang_01" progress-mission="y" type="manipulate" />
+			</mission>
+		</mission-step>
+	</quest>
+</table>

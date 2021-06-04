@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5021\zoneenv2placedata.5021.xml-->
+  <record action-point="-24140,-6751,-1603" action-radius="50" alias="e_Chest_haobanggate_01_place" type="gate" />
+  <record action-point="-25283,-6345,-1644" action-radius="50" alias="e_Chest_haobanggate_02_place" type="gate" />
+  <record action-point="-24679,-6180,-1646" action-radius="57" alias="e_Chest_haobangjailgate_01_place" type="gate" />
+  <record action-point="-25026,-6188,-1645" action-radius="57" alias="e_Chest_haobangjailgate_02_place" type="gate" />
+  <record action-point="-23402,-6951,-1495" alias="5021_Potal_5001_place" region-point-1="-23406,-6878,-1454" region-point-2="-23380,-6881,-1494" region-point-3="-23398,-7025,-1494" region-point-4="-23425,-7021,-1434" type="portal" />
+  <record alias="5021_Foot_1_place" region-point-1="-24481,-6002,-753" region-point-2="-24445,-6009,-765" region-point-3="-24645,-7131,-1089" region-point-4="-24682,-7124,-1511" type="foot-switch" />
+  <record alias="5021_Foot_2_place" region-point-1="-23968,-6777,26811" region-point-2="-23970,-6814,26811" region-point-3="-24326,-6794,-845" region-point-4="-24324,-6757,-832" type="foot-switch" />
+  <record alias="zone5021.oceanicregion_place" type="oceanic-region" />
+</table>

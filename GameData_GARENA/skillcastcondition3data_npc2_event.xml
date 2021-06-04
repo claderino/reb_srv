@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
+  <!--skillcastcondition3data_npc2_event.xml-->
+	<record alias="ME_TX_Dummy_None_Playbuff" gather-range="ID_Bagic_Round_28M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Choke" gather-range="ID_ME_BEA_B1_Fatman_None_Choke" link-stage="stage-1" link-state="link" link-type="inhalation" move-type="free" success-target-dead-state="not-dead-restoration" success-target-flag-1="link" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Swing_G" gather-range="ID_ME_BEA_B1_Fatman_None_Swing_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Area360_G" gather-range="ID_ME_BEA_B1_Fatman_None_Area360_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Stab_G" gather-range="ID_ME_BEA_B1_Fatman_None_Stab_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Inhalation_G" gather-range="ID_ME_BEA_B1_Fatman_None_Inhalation" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Throw_G" gather-range="ID_ME_BEA_B1_Fatman_None_Throw_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_MultiChop_G" gather-range="ID_ME_BEA_B1_Fatman_None_MultiChop_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Strike_G" gather-range="ID_Bagic_Round_80M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_JumpAttack_G" gather-range="ID_Bagic_Round_5M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Power_G" gather-range="ID_Bagic_Round_20M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Throw_S" gather-range="ID_ME_BEA_B1_Fatman_None_Throw_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Spin_S" gather-range="ID_ME_BEA_B1_Fatman_None_Spin_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Social1" gather-range="ID_Bagic_Round_1M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Social2" gather-range="ID_Bagic_Round_1M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Area360_S" gather-range="ID_ME_BEA_B1_Fatman_None_Area360_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_Stab_S" gather-range="ID_ME_BEA_B1_Fatman_None_Stab_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_JumpAttack_S" gather-range="ID_Bagic_Round_5M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Fatman_None_PlayDispel" gather-range="ID_Bagic_Round_80M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_TX_ForceMaster_Deal_energy_cyclone_instant" gather-range="PVE_Target_T_CMax3520_FMax2000_EMax3520" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_TX_ForceMaster_Deal_cold_missile" gather-range="PVE_Target_T_CMax3520_FMax2000_EMax3520" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Dummy_None_LinkedLaser_BossRush" gather-range="ID_Bagic_Laser_W2M_F5M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Dummy_None_RedBeam" gather-range="ID_ME_RD_B1_Dummy_None_RedBeam_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TX_Dummy_None_LinkedLaser" gather-range="PVE_LinkedLaser_CMax4000_Width8_H1104" success-target-dead-state="not-dead-restoration" target-type="all" />
+</table>

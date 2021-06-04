@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1334.xml-->
+  <quest alias="q_sub_1334" broadcast-category="field" category="job" district-1="jeryoungrim" id="1334" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="암살자" level="10" preceding-quest-1="q_epic_311" preceding-quest-2="q_sub_1333" preceding-quest-check="and" preceding-quest-mission-step-1="7">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_HwaJung_0035" party-broadcast="n" progress-mission="y" quest-decision="qd_1334_2" type="talk" />
+        <case object="zone:zone_HuekUmmRim_ClassQ_6_C5" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1334_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1334_3" zone-1="zone_HuekUmmRim_ClassQ_6_C5">
+      <mission id="2" required-register-value="2">
+        <tutorial-case progress-mission="y" type="skill-sequence" zone="zone_HuekUmmRim_ClassQ_6_C5" />
+        <case object="zone:zone_HuekUmmRim_ClassQ_6_C5" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1334_4" type="enter-zone" />
+        <case object="npc:CH_HwaJung_0035" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_1334_6" zone-1="zone_HuekUmmRim_ClassQ_6_C5">
+      <mission id="4" required-register-value="2">
+        <tutorial-case progress-mission="y" type="skill-sequence" zone="zone_HuekUmmRim_ClassQ_6_C5" />
+        <case object="zone:zone_HuekUmmRim_ClassQ_6_C5" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1334_7" type="enter-zone" />
+        <case object="npc:CH_HwaJung_0035" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1334_8" zone-1="zone_HuekUmmRim_ClassQ_6_C5">
+      <mission id="6" required-register-value="2">
+        <tutorial-case progress-mission="y" type="skill-sequence" zone="zone_HuekUmmRim_ClassQ_6_C5" />
+        <case object="zone:zone_HuekUmmRim_ClassQ_6_C5" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1334_9" type="enter-zone" />
+        <case object="npc:CH_HwaJung_0035" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_1334_11" zone-1="zone_HuekUmmRim_ClassQ_6_C5">
+      <mission id="7" required-register-value="1" reward-1="1334_final_set1">
+        <case object="npc:CH_HwaJung_0035" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HuekUmmRim_ClassQ_6_C5" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1334_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_HuekUmmRim_ClassQ_6_SP">
+      <destination mission-step-id="1" zone-index="4" />
+      <destination mission-step-id="2" zone-index="4" />
+      <destination mission-step-id="3" zone-index="4" />
+      <destination mission-step-id="4" zone-index="4" />
+      <destination mission-step-id="5" zone-index="4" />
+      <destination mission-step-id="6" zone-index="4" />
+      <destination mission-step-id="7" zone-index="4" />
+    </transit>
+    <completion>
+      <next-quest quest="q_sub_1307" />
+    </completion>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_HwaJung_0035" party-broadcast="n" progress-mission="y" quest-decision="qd_1334_13" type="talk" />
+        <case object="zone:zone_HuekUmmRim_ClassQ_6_C5" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1334_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_HwaJung_0035" party-broadcast="n" progress-mission="y" quest-decision="qd_1334_12" type="talk" />
+        <case object="zone:zone_HuekUmmRim_ClassQ_6_C5" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1334_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

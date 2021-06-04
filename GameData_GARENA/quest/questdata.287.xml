@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.287.xml-->
+  <quest alias="q_epic_287" broadcast-category="field" category="epic" completed-list="n" id="287" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="zone:Zone_ChunMyungJiWii_p2" party-broadcast="n" progress-mission="y" quest-decision="qd_287_1" type="enter-zone" />
+        <case object="npc:CH_CT_HyunDam_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_287_3" zone-1="Zone_ChunMyungJiWii_p3">
+      <mission id="4" required-register-value="1">
+        <case object2="npc:ME_CT_JinSeoYeonM_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="StartZone_Event">
+      <destination mission-step-id="5" zone-index="2" />
+    </transit>
+    <mission-step id="5" quest-decision="qd_287_4" zone-1="StartZone_Ending">
+      <mission id="5" required-register-value="1" reward-1="287_final_set1">
+        <case object="npc:CH_CT_JinYoung_0005" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_HyunDam_0006" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_287_5" type="talk" />
+        <case object="zone:StartZone_Ending" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_287_6" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_288" />
+    </completion>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case grocery-count="0" object="npc:CH_CT_HyunDam_0006" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter quest="q_sub_960" subject2="case:talked:pc" type="quest-complete" />
+          </filter-set>
+        </case>
+        <case acquire-quest="n" object="npc:CH_CT_HyunDam_0006" party-broadcast="n" progress-mission="n" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="zone:Zone_ChunMyungJiWii_p3" party-broadcast="n" progress-mission="y" quest-decision="qd_287_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

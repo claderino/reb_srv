@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1185.xml-->
+  <quest alias="q_sub_1185" broadcast-category="field" category="normal" district-1="suwal" id="1185" max-repeat="1" save-type="all">
+    <acquisition level="39" preceding-quest-1="q_epic_915" preceding-quest-check="and" preceding-quest-mission-step-1="9">
+      <case acquire-quest="y" object="npc:ch_yeonggam_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case drop-gadget="n" gadget-required="dont-care" object="npc:ce_scissor_0001" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case idx="1" object="npc:me_dokebi_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1185_1" type="npc-bleeding-occured" />
+        <case object="npc:ch_yeonggam_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_yeonggam_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ce_dokebi_0001" object2="npc:ce_dokebi_0001" party-broadcast="n" progress-mission="y" type="pc-social" />
+        <case object="npc:ch_yeonggam_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1" reward-1="1185_final_set1">
+        <case object="npc:ch_yeonggam_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

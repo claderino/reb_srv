@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.840.xml-->
+  <quest alias="q_sub_840" broadcast-category="field" category="normal" id="840" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_1443" preceding-quest-2="q_sub_839" preceding-quest-check="and">
+      <case acquire-quest="y" completion-count="1" object="npc:CE_CT_Board_0030" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CH_CT_Citizen_0644" type="talk" />
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:CH_CT_Citizen_0644" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="8">
+        <case object2="npc:ME_CT_SnowWoman_0006" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_CT_SnowWoman_0004" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:CH_CT_Citizen_0644" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="840_final_set1" reward-2="840_final_set2">
+        <case fee="y" progress-mission="y" type="talk-to-self" />
+        <case completion-count="1" object="npc:CH_CT_Flower_0008" progress-mission="y" type="talk" />
+        <case completion-count="1" completion-count-op="lt" object="npc:CH_CT_Flower_0008" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_Citizen_0644" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

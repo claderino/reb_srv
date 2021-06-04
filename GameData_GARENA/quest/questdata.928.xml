@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.928.xml-->
+  <quest alias="q_epic_928" category="epic" completed-list="y" district-1="suwal" id="928" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1" quest-decision="qd_928_1" zone-1="zone_youngrinbong_2">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_youngrinbong_2" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_928_7" zone-1="zone_youngrinbong_3">
+      <mission id="4" required-register-value="1">
+        <case object2="npc:me_galmawang_0001" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:zone_youngrinbong_3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_928_6" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_928_10" zone-1="zone_youngrinbong_4">
+      <mission id="5" required-register-value="1">
+        <tutorial-case progress-mission="y" type="exhausted" />
+        <case object2="zoneenv2:4421_foot_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_928_9" type="env-entered" />
+        <case object="zone:zone_youngrinbong_4" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_928_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_928_12" rollback="none" zone-1="zone_YoungRinBong_0">
+      <mission id="6" required-register-value="1">
+        <case object="npc:ch_cheonjingwon_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_YoungRinBong_0" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_928_11" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ch_cheonjingwon_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="6" zone-1="zone_YoungRinBong_0" />
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1" reward-1="928_final_set1">
+        <case object="npc:ch_yuran_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_928_13" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1420" />
+    </completion>
+    <transit id="2" zone="zone_youngrinbong_6">
+      <destination mission-step-id="8" zone-index="6" />
+      <destination mission-step-id="7" zone-index="6" />
+      <destination mission-step-id="6" zone-index="6" />
+      <destination mission-step-id="5" zone-index="4" />
+      <destination mission-step-id="4" zone-index="3" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+    </transit>
+    <transit id="1" zone="zone_youngrinchn">
+      <destination mission-step-id="9" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+    </transit>
+    <mission-step id="8" quest-decision="qd_928_15" zone-1="zone_YoungRinBong_0">
+      <mission id="8" required-register-value="1">
+        <case object2="npc:ch_cheonjingwon_0002" party-broadcast="n" progress-mission="y" type="pc-social" />
+        <case object="zone:zone_YoungRinBong_0" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_928_14" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_928_3" zone-1="zone_youngrinbong_2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_gyeongchunmaeng_0009" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_youngrinbong_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_928_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_928_5" zone-1="zone_youngrinbong_2">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:4412_foot_1" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="zone:zone_youngrinbong_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_928_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="3" zone="zone_kyoungchenkiji">
+      <complete zone-index="2" />
+    </transit>
+  </quest>
+</table>

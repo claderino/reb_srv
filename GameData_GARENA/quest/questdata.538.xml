@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.538.xml-->
+  <quest alias="q_epic_538" broadcast-category="field" category="epic" completed-list="y" district-1="deasamak" id="538" invoke-fx-msg="y" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="538_middle_set1">
+        <case object="zone:zone_mushinbeacha_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_538_1" type="enter-zone" />
+        <case object="npc:CH_SoYeonHwa_0008" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_jinsoa_0012" party-broadcast="n" progress-mission="y" quest-decision="qd_538_4" type="talk" />
+        <case object="zone:zone_MuShinBeaCha_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_538_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_orakdang_0008" party-broadcast="n" progress-mission="y" quest-decision="qd_538_6" type="talk" />
+        <case object="zone:zone_MuShinBeaCha_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_538_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_tomungaekjan_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_538_8" type="talk" />
+        <case object="zone:zone_MuShinBeaCha_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_538_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_JinSoA_0015" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_syhbang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_538_2" type="enter-zone" />
+        <case object="zoneenv:e_door_jinsoadoor_01" object2="zoneenv2:e_door_jinsoadoor_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_MuShinBeaCha_1">
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_901" />
+    </completion>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1" reward-1="538_final_set1">
+        <case object="npc:ch_teachershaman_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_538_9" type="talk">
+          <filter-set name="가능">
+            <filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="36" />
+          </filter-set>
+        </case>
+        <case object="npc:ch_teachershaman_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_538_9" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="35" />
+          </filter-set>
+        </case>
+        <case object="zoneenv:3014_footswich_1" object2="zoneenv2:3014_footswich_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_538_3" type="env-entered" />
+        <case object="zoneenv:e_door_jinsoadoor_01" object2="zoneenv2:e_door_jinsoadoor_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zone:zone_syhbang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_538_2" type="enter-zone" />
+        <case object="npc:CH_JinSoA_0015" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

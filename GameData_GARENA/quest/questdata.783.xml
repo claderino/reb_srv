@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.783.xml-->
+  <quest alias="q_sub_783" broadcast-category="field" category="normal" district-1="deasamak" id="783" max-repeat="1" save-type="all">
+    <acquisition level="31" preceding-quest-1="q_epic_527" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_mayeongganggun_0019" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="7">
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_01" object2="zoneenv2:e_onoff_gravestone_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_783_1" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_02" object2="zoneenv2:e_onoff_gravestone_02" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_783_2" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_03" object2="zoneenv2:e_onoff_gravestone_03" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_783_3" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_04" object2="zoneenv2:e_onoff_gravestone_04" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_783_4" type="manipulate" />
+        <case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_05" object2="zoneenv2:e_onoff_gravestone_05" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_783_5" type="manipulate" />
+        <case object="npc:me_soldier_0001" object2="npc:me_soldier_0001" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="783_final_set1">
+        <case object="npc:ch_mayeongganggun_0019" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

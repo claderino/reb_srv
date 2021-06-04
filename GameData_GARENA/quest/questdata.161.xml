@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.161.xml-->
+  <quest alias="q_sub_161" broadcast-category="always" category="normal" district-1="deasamak" id="161" max-repeat="1" retired="y" save-type="all" tutorial="y">
+    <acquisition level="11" production-exp="0" production-id="gathering-type-2" reward-1="161_final_set1">
+      <case acquire-quest="y" object="zoneenv:e_onoff_3000soil_01" object2="zoneenv2:e_onoff_3000soil_01" progress-mission="y" type="manipulate" />
+    </acquisition>
+  </quest>
+</table>

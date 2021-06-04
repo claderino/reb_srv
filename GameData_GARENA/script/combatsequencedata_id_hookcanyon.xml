@@ -1,0 +1,1061 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata_id_hookcanyon.xml-->
+  
+  
+  
+
+  
+  <combat-sequence alias="MH_WA_Hookcanyon_Boss_0001_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="3">
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Bite" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ShockWave" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Bite" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ComboAttack" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Bite" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Claw_Fast" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Throw" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_RightSwing" type="use-skill" />
+      </action>      
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_FrontKick" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Claw_Fast" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ShoulderShock" type="use-skill" /> 
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="65000" start-delay="60000">
+      
+      <action immune-breaker-disable="y" social="ME_WA_BerserkWolf_Boss_0001_battle_12" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Social_Gaze" type="use-skill" />
+      
+      <action event-step="1" except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="near" immune-breaker-disable="y" type="gather-targets" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Ice_Ball" type="use-skill" />
+      
+      <action event-step="12" immune-breaker-disable="y" is-target-skill-gather="y" skill3="SRB_B1_BerserkWolfBoss_LinkedLaser_Ice" target-from="event:npc-combat-action:special-target:1" target-to="event:npc-combat-action:special-target:2" terminate-cond-1="distance-max" terminate-value-1="2500" type="boss-link-laser-attack" />
+      <action event-step="23" immune-breaker-disable="y" is-target-skill-gather="y" skill3="SRB_B1_BerserkWolfBoss_LinkedLaser_Ice" target-from="event:npc-combat-action:special-target:2" target-to="event:npc-combat-action:special-target:3" terminate-cond-1="distance-max" terminate-value-1="2500" type="boss-link-laser-attack" />
+      <action event-step="31" immune-breaker-disable="y" is-target-skill-gather="y" skill3="SRB_B1_BerserkWolfBoss_LinkedLaser_Ice" target-from="event:npc-combat-action:special-target:3" target-to="event:npc-combat-action:special-target:1" terminate-cond-1="distance-max" terminate-value-1="2500" type="boss-link-laser-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Throw" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave" target-area="6601_146" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave" target-area="6601_147" type="use-ground-skill" />
+      </action>
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_148" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_149" type="use-ground-skill" />
+      </action>
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="33" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_150" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="33" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_151" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="34" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_152" type="use-ground-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Throw" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave" target-area="6601_148" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave" target-area="6601_149" type="use-ground-skill" />
+      </action>
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="33" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_150" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="33" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_151" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="34" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_152" type="use-ground-skill" />
+      </action>     
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Absorb" type="use-skill" />
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Absorb2" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">     
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Social_Crying" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Throw" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Combat_Start" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="4" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" social="ME_WA_BerserkWolf_Boss_0001_Berserk" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_Berserk" target-area="6601_2" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Hookcanyon_Boss_0001_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_Berserk" target-area="6601_2" type="use-ground-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">      
+      
+      <action immune-breaker-disable="y" social="ME_WA_BerserkWolf_Boss_0001_Berserk" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_Berserk" target-area="6601_2" type="use-ground-skill" />  
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WA_Hookcanyon_Boss_0001_CS_Easy" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="3">
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Bite_Easy" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ShockWave" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Bite_Easy" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ComboAttack" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Bite_Easy" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Claw" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Throw_Easy" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_RightSwing" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_FrontKick" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Claw" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ShoulderShock" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="65000" start-delay="60000">
+      
+      <action immune-breaker-disable="y" social="ME_WA_BerserkWolf_Boss_0001_battle_12" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Social_Gaze" type="use-skill" />
+      
+      <action event-step="1" except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="near" immune-breaker-disable="y" type="gather-targets" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Ice_Ball" type="use-skill" />
+      
+      <action event-step="12" immune-breaker-disable="y" is-target-skill-gather="y" skill3="SRB_B1_BerserkWolfBoss_LinkedLaser_Ice" target-from="event:npc-combat-action:special-target:1" target-to="event:npc-combat-action:special-target:2" terminate-cond-1="distance-max" terminate-value-1="2500" type="boss-link-laser-attack" />
+      <action event-step="23" immune-breaker-disable="y" is-target-skill-gather="y" skill3="SRB_B1_BerserkWolfBoss_LinkedLaser_Ice" target-from="event:npc-combat-action:special-target:2" target-to="event:npc-combat-action:special-target:3" terminate-cond-1="distance-max" terminate-value-1="2500" type="boss-link-laser-attack" />
+      <action event-step="31" immune-breaker-disable="y" is-target-skill-gather="y" skill3="SRB_B1_BerserkWolfBoss_LinkedLaser_Ice" target-from="event:npc-combat-action:special-target:3" target-to="event:npc-combat-action:special-target:1" terminate-cond-1="distance-max" terminate-value-1="2500" type="boss-link-laser-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Throw_Easy" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave" target-area="6601_146" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave" target-area="6601_147" type="use-ground-skill" />
+      </action>
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_148" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_149" type="use-ground-skill" />
+      </action>
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="33" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_150" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="33" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_151" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="34" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_152" type="use-ground-skill" />
+      </action>     
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Throw_Easy" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave" target-area="6601_148" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave" target-area="6601_149" type="use-ground-skill" />
+      </action>      
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="33" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_150" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="33" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_151" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="34" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_152" type="use-ground-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_ColdWave_NoCast" target-area="6601_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Absorb" type="use-skill" />
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Absorb2" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">      
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Social_Crying" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Throw_Easy" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRB_B1_BerserkWolfBoss_Combat_Start" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0012_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />     
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0013_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0014_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0023_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0024_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0025_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0026_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0001_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill3="MH_BEC_R0_Common_HateUp" type="use-skill" />      
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0002_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill3="SRB_B1_Dummy_Arrogance_Check" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0003_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Dummy_Arrogance_Ember" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      
+      <action duration="1000" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0004_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill3="SRB_B1_Dummy_Arrogance_Check" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0005_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill3="SRB_B1_Dummy_Arrogance_Check" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0006_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill3="SRB_B1_Dummy_Arrogance_Check" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0007_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Dummy_Arrogance_Ember_Easy" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      
+      <action duration="1000" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0008_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill3="SRB_B1_Dummy_Arrogance_Check" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0009_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill3="SRB_B1_Dummy_Arrogance_Check" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0010_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action repeat="1" skill3="MH_BEC_R0_Common_HateUp" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      <action event-step="1" repeat="1" skill3="SRB_B1_Dummy_IceColdWave" type="use-skill" />
+    </special>    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0011_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill3="MH_BEC_R0_Common_HateUp" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      <action event-step="1" repeat="1" skill3="SRB_B1_Dummy_IceColdWave" type="use-skill" />
+    </special>    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0012_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill3="MH_BEC_R0_Common_HateUp" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      <action event-step="1" repeat="1" skill3="SRB_B1_Dummy_IceColdWave" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Dummy_0013_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action duration="1000" type="stay" />
+    </normal>    
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0003_cs">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        
+        <action prob="40" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="ME_BerserkWolfA_Jab" type="use-skill" />        
+        
+        <action prob="30" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="40" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="ME_BerserkWolfA_Jab" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_ShoulderDash" type="use-skill" />
+    </normal>      
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0004_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill3="ME_BerserkWolfA_Jab" type="use-skill" />
+      <action type="select">
+        
+        <action prob="40" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="ME_BerserkWolfA_Jab" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="40" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="ME_BerserkWolfA_Jab" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_ShoulderDash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0005_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="2" skill3="ME_BerserkWolfA_Jab" type="use-skill" />
+      <action type="select">
+        
+        <action prob="40" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="ME_BerserkWolfA_Jab" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="40" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="ME_BerserkWolfA_Jab" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_ShoulderDash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0006_cs">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_ThrowDagger" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0007_cs">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_ThrowDagger" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0008_cs">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_ThrowDagger" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+
+
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0009_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfC_RepeatShow" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        
+        <action move-msec="1500" move-type="flee" prob="33" range-within="500" type="combat-move" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_RepeatShow" type="use-skill" />
+        
+        <action move-msec="3000" move-type="flee" prob="50" range-within="800" type="combat-move" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">            
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_FireShot" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_SniperShot" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0010_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfC_RepeatShow" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        
+        <action move-msec="1500" move-type="flee" prob="33" range-within="500" type="combat-move" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_RepeatShow" type="use-skill" />
+        
+        <action move-msec="3000" move-type="flee" prob="50" range-within="800" type="combat-move" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_FireShot" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_SniperShot" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0011_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfC_RepeatShow" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        
+        <action move-msec="1500" move-type="flee" prob="33" range-within="500" type="combat-move" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_RepeatShow" type="use-skill" />
+        
+        <action move-msec="3000" move-type="flee" prob="50" range-within="800" type="combat-move" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_FireShot" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_SniperShot" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0015_cs">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_ShoulderDash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0016_cs">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_SlashStab" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_StabStab" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfB_ThrowDagger" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0017_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfC_RepeatShow" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        
+        <action move-msec="1500" move-type="flee" prob="33" range-within="500" type="combat-move" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_RepeatShow" type="use-skill" />
+        
+        <action move-msec="3000" move-type="flee" prob="50" range-within="800" type="combat-move" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_FireShot" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfC_SniperShot" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0018_cs">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_ShoulderDash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0019_cs">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_DoubleSlash" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+      </action>
+      <action type="select">
+        <action duration="1000" prob="33" type="stay" />
+        <action duration="1300" prob="34" type="stay" />
+        <action duration="1700" prob="33" type="stay" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_SmashAxe" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_R0_BerserkWolfA_ShoulderDash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0021_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />      
+      <action type="select">
+         
+         <action prob="34" repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+         
+         <action prob="33" repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+         
+        <action prob="33" repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="34" repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+        
+        <action prob="33" repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+        
+        <action prob="33" repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="13000" start-delay="17000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_0022_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />      
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+      <action type="select">
+        
+        <action prob="34" repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+        
+        <action prob="33" repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+        
+        <action prob="33" repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Jab" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="23000" start-delay="7000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_Hookcanyon_Nmd_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Laser" type="use-skill" />
+      
+      <action repeat="1" skill3="ME_CheonYoungBig_None_Area360Lightning" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000">
+      
+      <action repeat="1" skill3="SRB_B1_Haetae_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+</table>

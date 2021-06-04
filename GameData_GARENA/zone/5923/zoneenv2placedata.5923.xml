@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5923\zoneenv2placedata.5923.xml-->
+	<record alias="e_AirDash_SacrificeGrave_02_a_Place" duration="5800" end-pos="13670,8930,-1033" region-point-1="13574,9001,-1721" region-point-2="13574,9061,-1721" region-point-3="13634,9061,-1719" region-point-4="13634,9001,-1721" summon-end-pos="13670,8930,-1033" tool-zone-1="5923" tool-zone-2="5926" type="airdash" />
+	<record action-point="14508,9506,-1231" action-radius="0" alias="e_gate_5926HeaSang_02_place" tool-zone-1="5923" tool-zone-2="5926" type="gate" />
+	<record action-point="14145,9151,-1230" action-radius="0" alias="e_gate_5926HeaSang_01_place" tool-zone-1="5923" tool-zone-2="5926" type="gate" />
+	<record action-point="14175,7471,-1717" action-radius="62" alias="e_gate_5926_gate_01_place" tool-zone-1="5923" tool-zone-2="5926" type="gate" />
+	<record action-point="15400,8192,-1655" alias="5923_HeaSangMuDom_5922_place" region-point-1="15408,8326,-1447" region-point-2="15408,8059,-1447" region-point-3="15391,8059,-1447" region-point-4="15391,8326,-1447" tool-zone-1="5923" tool-zone-2="5926" type="portal" />
+	<record action-point="14507,9626,-1110" alias="5923_HeaSangMuDom_5924_place" region-point-1="14645,9634,-996" region-point-2="14645,9619,-996" region-point-3="14370,9619,-1100" region-point-4="14370,9634,-1030" tool-zone-1="5923" tool-zone-2="5926" type="portal" />
+	<record alias="zone5923.falldeath_place" height="-2105" type="fall-death" />
+</table>

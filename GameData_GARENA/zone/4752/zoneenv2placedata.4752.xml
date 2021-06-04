@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\4752\zoneenv2placedata.4752.xml-->
+	<record alias="AirDash_HaeMuJin_04_A_Place" duration="4800" end-pos="7015,8720,-366" region-point-1="6944,8624,-533" region-point-2="6977,8574,-533" region-point-3="6927,8541,-533" region-point-4="6894,8591,-533" summon-end-pos="7015,8720,-366" tool-zone-1="4752" tool-zone-2="4751" tool-zone-3="4753" type="airdash" />
+	<record action-point="7702,8573,-654" action-radius="0" alias="e_Chest_4752_Lever_01_Place" tool-zone-1="4752" type="chest" />
+	<record action-point="7662,8575,-654" action-radius="0" alias="e_Chest_4752_Lever_02_Place" tool-zone-1="4752" type="chest" />
+	<record action-point="7682,8524,-638" action-radius="25" alias="e_Button_4748_LeaveYongmak_01_Place" tool-zone-1="4752" type="button" />
+	<record action-point="7820,8584,-655" action-radius="20" alias="e_Chest_4748hartA_01_Place" tool-zone-1="4752" tool-zone-2="4753" type="chest" />
+	<record action-point="7332,8559,-316" action-radius="0" alias="4752_footswitch_place" region-point-1="7215,8603,-38" region-point-2="7292,8678,-287" region-point-3="7449,8515,-665" region-point-4="7372,8441,-318" tool-zone-1="4752" tool-zone-2="4753" type="foot-switch" />
+	<record action-point="6827,8685,-464" alias="4752_portal_4747_place" region-point-1="6849,8713,-533" region-point-2="6851,8711,-533" region-point-3="6804,8656,-533" region-point-4="6802,8658,-533" tool-zone-1="4751" tool-zone-2="4752" tool-zone-3="4753" type="portal" />
+	<record alias="zone4752.falldeath_place" height="-538" type="fall-death" />
+</table>

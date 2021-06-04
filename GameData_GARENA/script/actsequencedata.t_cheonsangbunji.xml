@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.t_cheonsangbunji.xml-->
+
+  
+  <act-sequence alias="peace_fix_social2_Ryu" detect="both-360" type="peace">
+    <action enter-prob="100" type="select">
+      <action duration="15000" prob="30" type="stay" />
+      <action duration="20000" prob="30" type="stay" />
+      <action duration="25000" prob="40" type="stay" />
+    </action>
+    <action enter-prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="peace_fix_social2_15s_Ryu" detect="both-360" type="peace">
+      <action duration="15000" prob="30" type="stay" />
+    <action enter-prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="act_fix_AnthroElephantB_246" detect="both-360" type="act">
+    <action enter-prob="100" type="select">
+      <action duration="15000" prob="30" type="stay" />
+      <action duration="20000" prob="30" type="stay" />
+      <action duration="25000" prob="40" type="stay" />
+    </action>
+    <action enter-prob="100" type="select">
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_01" type="social" />
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_02" type="social" />
+      <action prob="34" social="ME_WC_AnthroElephantB_0010_soc_03" type="social" />
+    </action>
+  </act-sequence>
+  
+  
+  <act-sequence alias="act_fix_AnthroElephantB_247" detect="both-360" type="act">
+    <action enter-prob="100" type="select">
+      <action duration="15000" prob="30" type="stay" />
+      <action duration="20000" prob="30" type="stay" />
+      <action duration="25000" prob="40" type="stay" />
+    </action>
+    <action enter-prob="100" type="select">
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_01" type="social" />
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_02" type="social" />
+      <action prob="34" social="ME_WC_AnthroElephantB_0010_soc_03" type="social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="act_fix_AnthroElephantB_248" detect="both-360" type="act">
+    <action enter-prob="100" type="select">
+      <action duration="15000" prob="30" type="stay" />
+      <action duration="20000" prob="30" type="stay" />
+      <action duration="25000" prob="40" type="stay" />
+    </action>
+    <action enter-prob="100" type="select">
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_01" type="social" />
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_02" type="social" />
+      <action prob="34" social="ME_WC_AnthroElephantB_0010_soc_03" type="social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="act_fix_AnthroElephantB_249" detect="both-360" type="act">
+    <action enter-prob="100" type="select">
+      <action duration="15000" prob="30" type="stay" />
+      <action duration="20000" prob="30" type="stay" />
+      <action duration="25000" prob="40" type="stay" />
+    </action>
+    <action enter-prob="100" type="select">
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_01" type="social" />
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_02" type="social" />
+      <action prob="34" social="ME_WC_AnthroElephantB_0010_soc_03" type="social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="act_fix_AnthroElephantB_357" detect="both-360" type="act">
+    <action enter-prob="100" type="select">
+      <action duration="15000" prob="30" type="stay" />
+      <action duration="20000" prob="30" type="stay" />
+      <action duration="25000" prob="40" type="stay" />
+    </action>
+    <action enter-prob="100" type="select">
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_01" type="social" />
+      <action prob="33" social="ME_WC_AnthroElephantB_0010_soc_02" type="social" />
+      <action prob="34" social="ME_WC_AnthroElephantB_0010_soc_03" type="social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WC_Dummy_0205_01_act" detect="none" type="act">
+    <action duration="3600000" type="stay" />
+    <action duration="3600000" type="stay" />
+    <action duration="3600000" type="stay" />
+    <action duration="3600000" type="stay" />
+    <action duration="3600000" type="stay" />
+    <action duration="3600000" type="stay" />
+    <action enter-prob="100" type="select">
+      <action duration="1000" prob="50" type="stay" />
+      <action duration="3600000" prob="50" type="stay" />
+    </action>
+    <action enter-prob="100" type="select">
+      <action duration="1000" prob="50" type="stay" />
+      <action duration="3600000" prob="50" type="stay" />
+    </action>
+    <action enter-prob="100" type="select">
+      <action duration="1000" prob="50" type="stay" />
+      <action duration="3600000" prob="50" type="stay" />
+    </action>
+  </act-sequence>
+  
+  
+  <act-sequence alias="MH_WC_BalGulDan_0071_01_act" detect="none" type="act">
+    <action enter-prob="100" type="select">
+      <action prob="50" social="MH_WC_BalGulDan_0071_soc_01" type="social" />
+      <action prob="50" social="MH_WC_BalGulDan_0071_soc_02" type="social" />
+    </action>
+    <action duration="4000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WC_BalGulDan_0004_01_act" detect="none" type="act">
+    <action enter-prob="100" type="select">
+      <action prob="50" social="MH_WC_BalGulDan_0004_soc_01" type="social" />
+      <action prob="50" social="MH_WC_BalGulDan_0004_soc_02" type="social" />
+    </action>
+    <action duration="4000" type="stay" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="act_ME_WC_NaHanThunder_0001" indexed-detect="1" type="peace">
+    <action hide="n" type="hide" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="act_ME_WC_NaHanThunder_0001_2" indexed-detect="1" type="peace">
+    <action hide="n" type="hide" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+</table>

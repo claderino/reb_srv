@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.25052.xml-->
+  <quest alias="q_sub_25052" broadcast-category="field" category="dungeon" dungeon="Dungeon_SulinDongGul" id="25052" max-repeat="1" progress-difficulty-type-1="n" progress-difficulty-type-2="y" progress-difficulty-type-3="n" reset-by-acquire-time="none" reset-type="none" retired="y" save-type="nothing">
+    <acquisition check-tencent-vitality="n" level="1" preceding-quest-1="q_epic_1429" preceding-quest-2="q_epic_293 " preceding-quest-check="or">
+      <case acquire-quest="y" object2="zoneenv2:5919_portal_5910" party-broadcast="n" type="enter-portal" />
+      <case acquire-quest="y" object2="zoneenv2:808_Portal_5910" party-broadcast="n" type="enter-portal" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_C3_YettyCaveBoss_0002" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="Zone_SulinDongGul_1_Default">
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

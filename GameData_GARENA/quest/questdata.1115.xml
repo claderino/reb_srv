@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1115.xml-->
+  <quest alias="q_sub_1115" broadcast-category="field" category="normal" id="1115" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition level="45" preceding-quest-1="q_epic_1420" preceding-quest-2="q_epic_1545" preceding-quest-check="or">
+      <case acquire-quest="y" grocery="Quest_Scroll_BackChung_0063" item="Quest_Scroll_BackChung_0063" party-broadcast="n" required-item-1="Quest_Scroll_BackChung_0063" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0085" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0084" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0047" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0046" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0045" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0044" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0043" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0042" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0034" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0033" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0063" object2="npc:ME_SA_NokLimDo_0032" party-broadcast="n" quest-symbol-drop-prob="6" type="loot" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="1115_final_set1" reward-2="1115_final_set2">
+        <case drop-gadget="y" gadget="Q_Red_Water_Jar_01" gadget-required="not-a" object2="zoneenv2:e_chest_water_jar_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Q_Red_Water_Jar_01" gadget-required="not-a" object2="zoneenv2:e_chest_water_jar_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Q_Red_Water_Jar_01" gadget-required="not-a" object2="zoneenv2:e_chest_water_jar_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Q_Red_Water_Jar_01" gadget-required="not-a" object2="zoneenv2:e_chest_water_jar_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Q_Red_Water_Jar_01" gadget-required="not-a" object2="zoneenv2:e_chest_water_jar_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="Q_Red_Water_Jar_01" gadget-required="carry-and-remove" object="npc:CH_SA_BaramContents_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

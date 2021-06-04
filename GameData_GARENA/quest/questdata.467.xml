@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.467.xml-->
+  <quest alias="q_sub_467" broadcast-category="field" category="normal" district-1="jeryoungrim" id="467" max-repeat="1" save-type="all">
+    <acquisition level="14" preceding-quest-1="q_epic_496" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_merchantweapon_002" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1" reward-1="467_final_set1">
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_onoff_amsuk_01" object2="zoneenv2:e_onoff_amsuk_01" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_onoff_amsuk_02" object2="zoneenv2:e_onoff_amsuk_02" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_onoff_amsuk_03" object2="zoneenv2:e_onoff_amsuk_03" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_onoff_amsuk_04" object2="zoneenv2:e_onoff_amsuk_04" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_onoff_amsuk_05" object2="zoneenv2:e_onoff_amsuk_05" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="q_rockb" gadget-required="carry-and-remove" object="npc:ch_merchantweapon_002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

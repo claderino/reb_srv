@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.20042.xml-->
+  <quest alias="q_sub_20042" broadcast-category="field" category="normal" id="20042" max-repeat="-1" reset-type="none" save-type="except-completion">
+    <acquisition level="43" preceding-quest-check="and">
+      <case acquire-quest="y" fielditem="q_windmeteorites_0001" party-broadcast="n" progress-mission="n" type="pick-up-fielditem">
+        <filter-set name="혼천교">
+          <filter subject2="case:pick-up-fielditem:pc" type="active-faction" value="factionmain2" />
+        </filter-set>
+        <filter-set name="무림맹">
+          <filter subject2="case:pick-up-fielditem:pc" type="active-faction" value="factionmain1" />
+        </filter-set>
+      </case>
+    </acquisition>
+    <mission-step completion-type="or" id="1" quest-decision="qd_20042_1" rollback="remove-fielditem" zone-1="zone_windplain">
+      <mission id="1" required-register-value="1" reward-1="20042_final_set1">
+        <case gadget="q_windmeteorites_0001" gadget-required="carry-and-remove" object="npc:ch_sa_bff_murimmedic_0001_0001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set name="무림맹">
+            <filter subject2="case:talked:pc" type="active-faction" value="factionmain1" />
+          </filter-set>
+        </case>
+      </mission>
+      <mission id="2" required-register-value="1" reward-1="20042_final_set1">
+        <case gadget="q_windmeteorites_0001" gadget-required="carry-and-remove" object="npc:ch_sa_bff_honcheonmedic_0001_0001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set name="혼천교">
+            <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+      </mission>
+      <mission-step-fail dispose-quest="y" />
+    </mission-step>
+  </quest>
+</table>

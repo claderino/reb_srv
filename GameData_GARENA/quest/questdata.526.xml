@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.526.xml-->
+  <quest alias="q_epic_526" category="epic" completed-list="y" district-1="deasamak" id="526" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_unguksoldier_0007" party-broadcast="n" type="approach" visible-object="y" />
+        <case object="npc:ch_jinsoa_0007" party-broadcast="n" progress-mission="y" remove-grocery="y" type="talk" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="zone:zone_ZaSekHoSu" party-broadcast="n" progress-mission="y" quest-decision="qd_526_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_yeharang_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_ZaSekHoSu" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_526_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_526_2" zone-1="zone_ZaSekHoSu">
+      <mission id="6" required-register-value="1">
+        <case object2="zoneenv2:e_onoff_yeflower91" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zone:zone_ZaSekHoSu" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_526_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_526_3" zone-1="zone_ZaSekHoSu">
+      <mission id="7" required-register-value="1" reward-1="526_middle_set1">
+        <case object="npc:ch_yeosarang_0001" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_ZaSekHoSu" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_526_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_526_5" zone-1="zone_ZaSekHoSu">
+      <mission id="8" required-register-value="1">
+        <case object="npc:ch_yeharang_0002" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_ZaSekHoSu" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_526_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_527" />
+    </completion>
+    <transit id="1" zone="zone_ZaSekHoSu2">
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+    </transit>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1" reward-1="526_final_set1">
+        <case object="npc:ch_muun_0016" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_yeharang_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="3">
+        <case object2="npc:me_darkcrazytribe_009" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="100" type="loot" />
+        <case object="npc:ch_jinsoa_0007" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_jinsoa_0007" party-broadcast="n" progress-mission="y" type="talk" visible-object="y" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1441.xml-->
+  <quest alias="q_epic_1441" broadcast-category="field" category="epic" completed-list="y" id="1441" max-repeat="1" save-type="all">
+    <mission-step id="1" quest-decision="qd_279_1" zone-1="zone_UnRimWon_Epic_Do">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_CT_DoCheonPung_0008" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_DoCheonPung_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0074" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_HyunDam_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0326" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0325" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0320" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0321" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_279_8" zone-1="zone_UnRimWon_Epic">
+      <mission id="2" required-register-value="1">
+        <case convoy="epic_279_con" object="npc:CH_CT_DoCheonPung_0009" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_UnRimWon_EpicRoom" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_15" type="enter-zone" />
+        <case object="zone:zone_unrimwon_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone" zone-1="zone_UnRimWon_Epic">
+      <mission id="3" required-register-value="1">
+        <case convoy="epic_279_con" object="zone:zone_UnRimWon_Epic" party-broadcast="n" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail quest-decision="qd_279_5" rollback-step-id="2" zone-1="zone_UnRimWon_Epic">
+        <case convoy="epic_279_con" object="zone:zone_UnRimWon_Epic" party-broadcast="n" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_279_4" zone-1="zone_UnRimWon_EpicRoom">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_CT_DoCheonPung_0013" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_UnRimWon_EpicRoom" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_3" type="enter-zone" />
+        <case object="zone:zone_UnRimWon_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_13" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="zone:zone_UnRimWon_EpicEnd" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="zone:zone_UnRimWon_EpicRoom" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_14" type="enter-zone" />
+        <case object="zone:zone_UnRimWon_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_13" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" rollback="leave-zone" zone-1="zone_UnRimWon_EpicRoom">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_UnRimWon_EpicRoom" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_14" type="enter-zone" />
+        <case object="zone:zone_UnRimWon_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_13" type="enter-zone" />
+        <case idx="1" object="npc:MH_CT_HockRyuGo_0007" party-broadcast="n" progress-mission="y" quest-decision="qd_279_12" type="npc-bleeding-occured" />
+        <case object="zone:zone_unrimwon_epicend" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_9" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_279_7" rollback="leave-zone" zone-1="zone_UnRimWon_EpicEnd">
+      <mission id="7" required-register-value="1">
+        <case gadget="Q_Baby_0001" gadget-required="carry-and-remove" object="npc:CH_CT_DoCheonPung_0015" party-broadcast="n" progress-mission="y" type="talk" />
+        <case drop-gadget="y" gadget="Q_Baby_0001" gadget-required="not-a" object="npc:CH_CT_Citizen_0073" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="zone:zone_UnRimWon_EpicRoom" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_14" type="enter-zone" />
+        <case object="zone:zone_UnRimWon_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_279_13" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="6" zone-1="zone_UnRimWon_EpicEnd" />
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_CT_DoCheonPung_0008" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_PungEmpire_0038" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_HyunDam_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0320" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0321" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9" quest-decision="qd_279_16" zone-1="zone_unrimwon_epic_do">
+      <mission id="9" required-register-value="1" reward-1="1441_final_set1">
+        <case object="npc:CH_SA_PungEmpire_0038" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_DoCheonPung_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_HyunDam_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0320" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0321" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <acquisition level="1" />
+    <transit id="1" zone="zone_UnRimWon">
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="9" zone-index="2" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_1442" />
+    </completion>
+  </quest>
+</table>

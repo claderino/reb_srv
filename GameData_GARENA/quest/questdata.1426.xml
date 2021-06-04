@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1426.xml-->
+  <quest alias="q_epic_1426" category="epic" completed-list="y" id="1426" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="y" quest-decision="qd_1426_1" type="enter-zone" />
+        <case object="npc:CH_SA_JeGukGun_0044" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="2" required-register-value="1">
+        <case object2="zoneenv2:5541_foot_2" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1426_1" type="enter-zone" />
+        <case object2="npc:MH_SA_HaOBang_0001" party-broadcast="y" progress-mission="reaction-only" type="killed" />
+        <case object2="npc:MH_SA_HaOBang_0009" party-broadcast="y" progress-mission="reaction-only" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_1426_3" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="4" required-register-value="5">
+        <case object2="npc:MH_SA_HaOBang_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_SA_HaOBang_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_SA_PotAxParty_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1426_2" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1426_5" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_SA_HaoBang_0006" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1426_7" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CE_SA_Pot_0003" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_1426_9" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CE_SA_Pot_0005" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_1426_11" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_SA_HaoBang_0006" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="9" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="9" required-register-value="1">
+        <case idx="3" object="npc:CH_SA_HaoBang_0017" party-broadcast="n" progress-mission="y" type="npc-bleeding-occured" />
+        <case object="npc:CH_SA_HaoBang_0018" party-broadcast="n" type="approach" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="10" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="10" required-register-value="1">
+        <case idx="3" object="npc:CH_SA_HaoBang_0006" party-broadcast="n" progress-mission="y" quest-decision="qd_1426_15" type="npc-bleeding-occured" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="11" quest-decision="qd_1426_17" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="11" required-register-value="1">
+        <case object="npc:CH_SA_YuCheon_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="12" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="12" required-register-value="1">
+        <case object="npc:CH_SA_HaoBang_0020" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="13" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="13" required-register-value="3">
+        <case object2="zoneenv2:e_Chest_baramjailgate_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_baramjailgate_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_baramjailgate_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+        <case object="npc:CH_SA_Citizen_0085" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0086" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0087" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <mission-step id="14" quest-decision="qd_1426_20" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="14" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1426_final_set1">
+        <case object="npc:CH_SA_Citizen_0084" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_HaoBanginn_p" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+        <case object="npc:ce_sa_haobang_0007" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="npc:ce_sa_haobang_0010" party-broadcast="n" type="approach" />
+        <case object="npc:ce_sa_haobang_0009" party-broadcast="n" type="approach" />
+        <case object="npc:ce_sa_haobang_0008" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+    <transit id="1" zone="Zone_HaoBanginn">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_1427" />
+    </completion>
+    <mission-step id="3" rollback="leave-zone" zone-1="Zone_HaoBanginn_p">
+      <mission id="3" required-register-value="2">
+        <case object2="npc:ME_SA_BingIkRyung_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_SA_BingIkRyung_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn_p" />
+    </mission-step>
+  </quest>
+</table>

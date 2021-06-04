@@ -1,0 +1,2039 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.id_musintower_top.xml-->
+  
+  
+  
+  
+  <script alias="4904_Foot_1_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="4904_Foot_1_ai entered -extra_4904" type="debug-trace" />
+        <reaction seq="CH_MusinTower_0006_01_act" target="zonenpcspawn:a_4904_10" type="set-npc-act" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="4904_Foot_2_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="4904_Foot_2_ai entered -extra_4904" type="debug-trace" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+        <reaction state="open" state2="open" target="zoneenv:e_gate_musintower4_door_02" target2="zoneenv2spawn:e_gate_musintower4_door_02_spawn" type="set-env-state" />
+        <reaction amount="1" reg="1" target="zonenpcspawn:a_4904_3" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_MusinTowerManager_0004_ai">
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0004_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0004_ai finished_1 -extra_4904" type="debug-trace" />
+        <reaction seq="CH_MusinTowerManager_0004_02_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0004_02_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0004_ai finished_2 -extra_4904" type="debug-trace" />
+        <reaction seq="CH_MusinTowerManager_0004_03_act" target="event:act-finished:npc" type="set-npc-act" />
+        
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0004_04_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0004_ai finished_4 -extra_4904" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4904_3" type="set-npc-brain" />
+        <reaction from="zonenpcspawn:a_4904_3" social="Kangsi_Spawn" type="play-surround-social" />
+        <reaction seq="act_wait_3sec_xdetect" target="zonenpcspawn:a_4904_3" type="set-npc-act" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4904_2_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0004_ai spawn -extra_4904" type="debug-trace" />
+        <reaction seq="CH_MusinTowerManager_0004_05_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0004_05_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0004_ai finished_5 -extra_4904" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_gate_musintower4_door_01" target2="zoneenv2spawn:e_gate_musintower4_door_01_spawn" type="set-env-state" />
+        <reaction seq="act_wait_5sec_xdetect" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_5sec_xdetect" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="y" target="zoneenv:e_button_4904yongmak" target2="zoneenv2spawn:e_button_4904yongmak_spawn" type="set-env-enable" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_MusinTower_0006_ai">
+    
+    
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_0006_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0006_ai finished_1 -extra_4904" type="debug-trace" />
+        <reaction seq="CH_MusinTowerManager_0004_01_act" target="zonenpcspawn:a_4904_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_0006_02_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0006_ai finished_2 -extra_4904" type="debug-trace" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  <script alias="MH_MuSinTower4_npc01_ai">
+    
+    <decision event="npc-spawn" forward="y">
+      <filter-set>
+        <filter op="eq" subject="event:npc-spawn:npc:npc-party:reg-1" subject2="event:npc-spawn:npc:npc-party:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_MuSinTower4_npc01_ai manipulated -extra_4904" type="debug-trace" />
+        <reaction seq="act_wait_3sec_xdetect" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction amount="1" reg="1" target="event:npc-spawn:npc:npc-party" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_3sec_xdetect" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_MuSinTower4_npc01_ai finished -extra_4904" type="debug-trace" />
+        
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-manipulate-end">
+      <reaction-set>
+        <reaction text="MH_MuSinTower4_npc01_ai manipulated -extra_4904" type="debug-trace" />
+        <reaction group="event:npc-manipulate-end:npc:npc-party" index-1="2" type="spawn-npc-index" />
+        <reaction seq="CH_MusinTowerManager_0004_04_act" target="zonenpcspawn:a_4904_2" type="set-npc-act" />
+        <reaction seq="CH_MusinTower_0006_02_act" target="zonenpcspawn:a_4904_10" type="set-npc-act" />
+        <reaction group="zonenpcsquad:s_4904_4" index-1="1" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4904_5" index-1="1" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4904_6" index-1="1" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4904_7" index-1="1" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4904_8" index-1="1" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4904_9" index-1="1" type="despawn-npc-index" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4904_3" type="set-npc-brain" />
+        <reaction from="zonenpcspawn:a_4904_3" social="Kangsi_Spawn" type="play-surround-social" />
+        <reaction seq="act_wait_3sec_xdetect" target="zonenpcspawn:a_4904_3" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <quest-decision alias="qd_20011_1" />
+    <quest-decision alias="qd_20012_1" />
+    <quest-decision alias="qd_20013_1" />
+    <quest-decision alias="qd_20014_1" />
+    <quest-decision alias="qd_20015_1" />
+    <quest-decision alias="qd_20016_1" />
+  </script>
+  <script alias="MH_MuSinTower4_DangGoonMyung_0001_ai" parent="MH_MuSinTower4_npc01_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_SeolYe_0001_ai" parent="MH_MuSinTower4_npc01_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_HeukSamAn_0001_ai" parent="MH_MuSinTower4_npc01_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_SukSamJa_0001_ai" parent="MH_MuSinTower4_npc01_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_TaeHoRan_0001_ai" parent="MH_MuSinTower4_npc01_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_DaMaCha_0001_ai" parent="MH_MuSinTower4_npc01_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  <script alias="MH_MuSinTower4_npc02_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="MH_MuSinTower4_npc02_ai spawn -extra_4904" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="peace_fix_social2" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_MuSinTower4_npc02_ai special_1 -extra_4904" type="debug-trace" />
+        <reaction effect="MH_CH_KungfuMaster_Attack_Lowkick_down" target="event:npc-special:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_5sec_xdetect" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_MuSinTower4_npc02_ai finished -extra_4904" type="debug-trace" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_MuSinTower4_SukSamJa_0002_ai" parent="MH_MuSinTower4_npc02_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_TaeHoRan_0002_ai" parent="MH_MuSinTower4_npc02_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_DangGoonMyung_0002_ai" parent="MH_MuSinTower4_npc02_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_SeolYe_0002_ai" parent="MH_MuSinTower4_npc02_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_HeukSamAn_0002_ai" parent="MH_MuSinTower4_npc02_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_MuSinTower4_DaMaCha_0002_ai" parent="MH_MuSinTower4_npc02_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower4_ChunRyunGangSi_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower4_ChunRyunGangSi_0001_ai spawn -extra_4904" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="burrow_xdetect_default" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_3sec_xdetect" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_5sec_xdetect" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower4_ChunRyunGangSi_0001_ai finished_1 -extra_4904" type="debug-trace" />
+        <reaction seq="burrow_out" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_MuSinTower4_ChunRyunGangSi_0001_ai start -extra_4904" type="debug-trace" />
+        <reaction seq="act_wait_0sec_despawn" target="zonenpcspawn:a_4904_2" type="set-npc-act" />
+        <reaction seq="act_wait_0sec_despawn" target="zonenpcspawn:a_4904_10" type="set-npc-act" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4904_4_1" target="event:npc-combat-start:npc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4904_5_1" target="event:npc-combat-start:npc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4904_6_1" target="event:npc-combat-start:npc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4904_7_1" target="event:npc-combat-start:npc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4904_8_1" target="event:npc-combat-start:npc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4904_9_1" target="event:npc-combat-start:npc" type="set-npc-brain" />
+        <reaction amount="1" opponent="zonenpcspawn:a_4904_4_1" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_4904_5_1" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_4904_6_1" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_4904_7_1" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_4904_8_1" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_4904_9_1" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower4_ChunRyunGangSi_0001_ai special_1 -extra_4904" type="debug-trace" />
+        <reaction amount="10000" opponent="event:npc-special:npc" target="zonenpcspawn:a_4904_4_1" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="event:npc-special:npc" target="zonenpcspawn:a_4904_5_1" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="event:npc-special:npc" target="zonenpcspawn:a_4904_6_1" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="event:npc-special:npc" target="zonenpcspawn:a_4904_7_1" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="event:npc-special:npc" target="zonenpcspawn:a_4904_8_1" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="event:npc-special:npc" target="zonenpcspawn:a_4904_9_1" type="diff-npc-hate" />
+        <reaction special-id="3" target="zonenpcspawn:a_4904_4_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_4904_5_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_4904_6_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_4904_7_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_4904_8_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_4904_9_1" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter op="eq" subject="event:npc-special:action-result" subject2="event:npc-special:action-result" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower4_ChunRyunGangSi_0001_ai special_2 -extra_4904" type="debug-trace" />
+        <reaction attack-target="event:npc-special:target" end="5" group="event:npc-special:npc:npc-party" max="2" min="2" spawn-radius="250" spawn-target="event:npc-special:npc" start="2" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower4_ChunRyunGangSi_0001_ai end -extra_4904" type="debug-trace" />
+        <reaction spawn-1="a_4904_2" spawn-2="a_4904_10" type="spawn-npc" />
+        <reaction spawn-1="a_4904_4" spawn-2="a_4904_5" spawn-3="a_4904_6" spawn-4="a_4904_7" spawn-5="a_4904_8" spawn-6="a_4904_9" type="spawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:A_4904_4_1" target-2="zonenpcspawn:A_4904_5_1" target-3="zonenpcspawn:a_4904_6_1" target-4="zonenpcspawn:a_4904_7_1" target-5="zonenpcspawn:a_4904_8_1" target-6="zonenpcspawn:a_4904_9_1" type="despawn-npc" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-combat-end:npc" type="set-npc-brain" />
+        <reaction seq="burrow_xdetect_default" target="event:npc-combat-end:npc" type="set-npc-act" />
+        <reaction target="event:npc-combat-end:npc:npc-party:2" target2="event:npc-combat-end:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-end:npc:npc-party:3" target2="event:npc-combat-end:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-end:npc:npc-party:4" target2="event:npc-combat-end:npc:npc-party:4" type="kill" />
+        <reaction target="event:npc-combat-end:npc:npc-party:5" target2="event:npc-combat-end:npc:npc-party:5" type="kill" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="ME_MuSinTower4_ChunRyunGangSi_0001_ai killed -extra_4904" type="debug-trace" />
+        <reaction spawn-1="a_4904_2_1" type="spawn-npc" />
+        <reaction seq="act_wait_5sec_xdetect" target="zonenpcspawn:A_4904_4_1" type="set-npc-act" />
+        <reaction seq="act_wait_5sec_xdetect" target="zonenpcspawn:A_4904_5_1" type="set-npc-act" />
+        <reaction seq="act_wait_5sec_xdetect" target="zonenpcspawn:A_4904_6_1" type="set-npc-act" />
+        <reaction seq="act_wait_5sec_xdetect" target="zonenpcspawn:A_4904_7_1" type="set-npc-act" />
+        <reaction seq="act_wait_5sec_xdetect" target="zonenpcspawn:A_4904_8_1" type="set-npc-act" />
+        <reaction seq="act_wait_5sec_xdetect" target="zonenpcspawn:A_4904_9_1" type="set-npc-act" />
+        <reaction target="event:killed:defender:npc-party:2" target2="event:killed:defender:npc-party:2" type="kill" />
+        <reaction target="event:killed:defender:npc-party:3" target2="event:killed:defender:npc-party:3" type="kill" />
+        <reaction target="event:killed:defender:npc-party:4" target2="event:killed:defender:npc-party:4" type="kill" />
+        <reaction target="event:killed:defender:npc-party:5" target2="event:killed:defender:npc-party:5" type="kill" />
+      </reaction-set>
+    </decision>
+    <decision event="kill">
+      <filter-set>
+        <filter subject="event:kill:defender" subject2="event:kill:defender" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower4_ChunRyunGangSi_0001_ai kill -extra_4904" type="debug-trace" />
+        <reaction percent="30" target="event:kill:attacker" target2="event:kill:attacker" type="heal" />
+        <reaction target="zonenpcspawn:A_4904_4_1" target2="zonenpcspawn:A_4904_4_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_5_1" target2="zonenpcspawn:A_4904_5_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_6_1" target2="zonenpcspawn:A_4904_6_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_7_1" target2="zonenpcspawn:A_4904_7_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_8_1" target2="zonenpcspawn:A_4904_8_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_9_1" target2="zonenpcspawn:A_4904_9_1" type="kill" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower4_GangSi_0001_ai">
+    <decision event="kill">
+      <filter-set>
+        <filter subject="event:kill:defender" subject2="event:kill:defender" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower4_GangSi_0001_ai kill -extra_4904" type="debug-trace" />
+        <reaction percent="30" target="event:kill:attacker" target2="event:kill:attacker" type="heal" />
+        <reaction target="zonenpcspawn:A_4904_4_1" target2="zonenpcspawn:A_4904_4_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_5_1" target2="zonenpcspawn:A_4904_5_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_6_1" target2="zonenpcspawn:A_4904_6_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_7_1" target2="zonenpcspawn:A_4904_7_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_8_1" target2="zonenpcspawn:A_4904_8_1" type="kill" />
+        <reaction target="zonenpcspawn:A_4904_9_1" target2="zonenpcspawn:A_4904_9_1" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_MuSinTowerDummy_0014_ai" />
+  
+  
+  
+  
+  <script alias="4905_Foot_1_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="4905_Foot_1_ai entered -extra_4905" type="debug-trace" />
+        <reaction seq="CH_MusinTowerManager_0005_01_act" target="zonenpcspawn:a_4905_2" type="set-npc-act" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="4905_Foot_2_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="4905_Foot_2_ai entered -extra_4905" type="debug-trace" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+        <reaction state="open" state2="open" target="zoneenv:e_gate_musintower5_door_02" target2="zoneenv2spawn:e_gate_musintower5_door_02_spawn" type="set-env-state" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_MusinTowerManager_0005_ai">
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0005_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0005_ai finished_1 -extra_4905" type="debug-trace" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4905_2_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0005_ai spawn -extra_4905" type="debug-trace" />
+        <reaction seq="CH_MusinTowerManager_0005_02_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0005_02_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0005_ai finished_2 -extra_4905" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_gate_musintower5_door_01" target2="zoneenv2spawn:e_gate_musintower5_door_01_spawn" type="set-env-state" />
+        <reaction seq="act_wait_5sec_xdetect" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_5sec_xdetect" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="y" target="zoneenv:e_button_4905yongmak" target2="zoneenv2spawn:e_button_4905yongmak_spawn" type="set-env-enable" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower3_GoleamLeader_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower3_GoleamLeader_0001_ai spawn -extra_4905" type="debug-trace" />
+        
+        
+        <reaction seq="peace_fix_not_detect" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction group="zonenpcsquad:s_4905_23" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_3sec_xdetect" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_5sec_xdetect" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower3_GoleamLeader_0001_ai finished_1 -extra_4905" type="debug-trace" />
+        <reaction seq="burrow_out" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_MuSinTower3_GoleamLeader_0001_ai start -extra_4905" type="debug-trace" />
+        <reaction seq="act_wait_0sec_despawn" target="zonenpcspawn:a_4905_2" type="set-npc-act" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        
+        <reaction group="zonenpcsquad:s_4905_3_1" index-1="1" spawn-delay="270000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4905_23" index-1="1" index-2="2" index-3="3" index-4="4" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower3_GoleamLeader_0001_ai end -extra_4905" type="debug-trace" />        
+        <reaction group="zonenpcsquad:s_4905_3_1" index-1="1" type="despawn-npc-index" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:A_4905_22" type="set-npc-act" />
+        <reaction group="zonenpcsquad:s_4905_23" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="ME_MuSinTower3_GoleamLeader_0001_ai killed -extra_4905" type="debug-trace" />        
+        <reaction group="zonenpcsquad:s_4905_3_1" index-1="1" type="despawn-npc-index" />
+        <reaction spawn-1="a_4905_2_1" spawn-delay="2000" type="spawn-npc" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:A_4905_22" type="set-npc-act" />
+        <reaction group="zonenpcsquad:s_4905_23" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower5_Hack_0001_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower5_Hack_0001_ai spawn -extra_4905" type="debug-trace" />
+        <reaction seq="ME_MuSinTower5_Hack_0001_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <reaction-set>
+        <reaction text="ME_MuSinTower5_Hack_0001_ai finished -extra_4905" type="debug-trace" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction group="zonenpcsquad:s_4905_3_1" index-1="1" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_MuSinTower5_Hack_0002_ai" parent="ME_MuSinTower5_Hack_0001_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower5_Hack_0002_ai spawn -extra_4905" type="debug-trace" />
+        <reaction seq="ME_MuSinTower5_Hack_0002_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_MuSinTower5_Hack_0003_ai" parent="ME_MuSinTower5_Hack_0001_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower5_Hack_0003_ai spawn -extra_4905" type="debug-trace" />
+        <reaction seq="ME_MuSinTower5_Hack_0003_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="ME_MuSinTower5_Hack_0004_ai" parent="ME_MuSinTower5_Hack_0001_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower5_Hack_0004_ai spawn -extra_4905" type="debug-trace" />
+        <reaction seq="ME_MuSinTower5_Hack_0004_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  
+  
+  
+  <script alias="ME_MuSinTowerDummy_0011_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai spawn_23 -extra_4905" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai spawn_24 -extra_4905" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai spawn_25 -extra_4905" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai spawn_26 -extra_4905" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="역사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_1 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_13" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_2 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_28" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="암살자" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_3 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_10" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_23" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_4 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_26" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="권사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_5 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_20" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="소환사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_6 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_13" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_40" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="주술사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_6 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_18" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="린검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_7 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_28" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="귀검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_8 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_28" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="기권사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_23_9 -azer" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env2_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env2_HpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_20" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="역사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_1 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_10" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_2 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_43" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="암살자" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_3 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_32" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_4 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_3" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="권사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_5 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_29" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="소환사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_6 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_31" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="주술사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_6 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="린검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_7 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_32" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="귀검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_8 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_32" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="기권사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_24_9 -azer" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env4_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env4_Buff_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_4" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="역사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_1 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_9" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_2 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_3" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="암살자" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_3 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_11" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_4 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_4" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="권사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_5 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_13" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="소환사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_6 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_9" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="주술사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_6 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_23" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="린검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_7 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_7" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="귀검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_8 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_7" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="기권사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_25_9 -azer" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:4" target2="event:npc-combat-start:npc:npc-party:4" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env1_PlusDamage" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env1_SpHeal_01" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Critical" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_7" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="역사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_1 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_12" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_2 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_41" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="암살자" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_3 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_31" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_4 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_34" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="권사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_5 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_41" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="소환사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_6 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_7" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="주술사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_6 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="린검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_7 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_4" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="귀검사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_8 -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_4" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="기권사" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start_26_9 -azer" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc:npc-party:1" target2="event:npc-combat-start:npc:npc-party:1" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:2" target2="event:npc-combat-start:npc:npc-party:2" type="kill" />
+        <reaction target="event:npc-combat-start:npc:npc-party:3" target2="event:npc-combat-start:npc:npc-party:3" type="kill" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+        <reaction target-1="event:npc-combat-start:npc" type="despawn-npc" />
+        <reaction effect="ME_Common_Env3_Buff" target="event:npc-combat-start:target" type="invoke-effect" />
+        <reaction effect="ME_Common_Env_Recycle_3" target="event:npc-combat-start:target" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai start -extra_4905" type="debug-trace" />
+        <reaction target="event:npc-combat-start:npc" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_4905_23" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai killed_23 -extra_4905" type="debug-trace" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_def" target2="zoneenv2spawn:e_chest_musintower5_def_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_4905_24" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai killed_24 -extra_4905" type="debug-trace" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_mp" target2="zoneenv2spawn:e_chest_musintower5_mp_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_4905_25" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai killed_25 -extra_4905" type="debug-trace" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_atk" target2="zoneenv2spawn:e_chest_musintower5_atk_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_4905_26" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0011_ai killed_26 -extra_4905" type="debug-trace" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower5_hp" target2="zoneenv2spawn:e_chest_musintower5_hp_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_MuSinTowerDummy_0015_ai">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </script>
+  
+  
+  
+  
+  <script alias="4906_Foot_1_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="4906_Foot_1_ai entered -extra_4906" type="debug-trace" />
+        <reaction seq="CH_MusinTowerManager_0006_01_act" target="zonenpcspawn:a_4906_2" type="set-npc-act" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="4906_Foot_2_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="4906_Foot_2_ai entered -extra_4906" type="debug-trace" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+        <reaction state="open" state2="open" target="zoneenv:e_gate_musintower6_door_02" target2="zoneenv2spawn:e_gate_musintower6_door_02_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_MusinTowerManager_0006_ai">
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0006_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai finished_1 -extra_4906" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai paused_1 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTowerManager_0006_soc_7_1" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai paused_2 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTowerManager_0006_soc_7_2" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai paused_3 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTowerManager_0006_soc_7_3" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai paused_4 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTowerManager_0006_soc_7_4" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai paused_5 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTowerManager_0006_soc_7_5" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0006_02_act" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai finished_2_1 -extra_4906" type="debug-trace" />
+        
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0006_02_act" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai finished_2_2 -extra_4906" type="debug-trace" />
+        
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0006_02_act" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai finished_2_3 -extra_4906" type="debug-trace" />
+        
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0006_02_act" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai finished_2_4 -extra_4906" type="debug-trace" />
+        
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0006_02_act" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai finished_2_5 -extra_4906" type="debug-trace" />
+        
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4906_2_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai spawn -extra_4906" type="debug-trace" />
+        <reaction seq="CH_MusinTowerManager_0006_03_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0006_03_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTowerManager_0006_ai finished_3 -extra_4906" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_gate_musintower6_door_01" target2="zoneenv2spawn:e_gate_musintower6_door_01_spawn" type="set-env-state" />
+        <reaction seq="act_wait_5sec_xdetect" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_5sec_xdetect" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="y" target="zoneenv:e_button_4906yongmak" target2="zoneenv2spawn:e_button_4906yongmak_spawn" type="set-env-enable" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_MusinTower_0007_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai spawn -extra_4906" type="debug-trace" />
+        <reaction seq="CH_MusinTower_0007_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai paused_1 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTower_0007_soc_3_1" type="play-social" />
+        <reaction from="event:act-paused:npc" social="Hongdon_Spawn" type="play-surround-social" />
+        <reaction spawn-1="A_4906_3" spawn-delay="1000" type="spawn-npc" />
+        <reaction enable="y" target="zoneenv:e_button_4906dragonball_1" target2="zoneenv2spawn:e_button_4906dragonball_1_spawn" type="set-env-enable" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai paused_2 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTower_0007_soc_3_2" type="play-social" />
+        <reaction from="event:act-paused:npc" social="Nakwon_Spawn" type="play-surround-social" />
+        <reaction spawn-1="A_4906_4" spawn-delay="1000" type="spawn-npc" />
+        <reaction enable="y" target="zoneenv:e_button_4906dragonball_1" target2="zoneenv2spawn:e_button_4906dragonball_1_spawn" type="set-env-enable" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai paused_3 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTower_0007_soc_3_3" type="play-social" />
+        <reaction from="event:act-paused:npc" social="Paldok_Spawn" type="play-surround-social" />
+        <reaction spawn-1="A_4906_6" spawn-delay="1000" type="spawn-npc" />
+        <reaction enable="y" target="zoneenv:e_button_4906dragonball_1" target2="zoneenv2spawn:e_button_4906dragonball_1_spawn" type="set-env-enable" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai paused_4 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTower_0007_soc_3_4" type="play-social" />
+        <reaction from="event:act-paused:npc" social="ChungPung_Spawn" type="play-surround-social" />
+        <reaction spawn-1="A_4906_5" spawn-delay="1000" type="spawn-npc" />
+        <reaction enable="y" target="zoneenv:e_button_4906dragonball_1" target2="zoneenv2spawn:e_button_4906dragonball_1_spawn" type="set-env-enable" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai paused_5 -extra_4906" type="debug-trace" />
+        <reaction from="event:act-paused:npc" social="CH_MusinTower_0007_soc_7" type="play-social" />
+        <reaction from="event:act-paused:npc" social="GoldenPig_Spawn" type="play-surround-social" />
+        <reaction spawn-1="A_4906_23" spawn-delay="1000" type="spawn-npc" />
+        <reaction enable="y" target="zoneenv:e_button_4906dragonball_1" target2="zoneenv2spawn:e_button_4906dragonball_1_spawn" type="set-env-enable" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_0007_act_02" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-2" subject2="zonenpcsquad:s_4906_23:reg-2" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai finished_1 -extra_4906" type="debug-trace" />
+        <reaction seq="CH_MusinTowerManager_0006_02_act" target="zonenpcspawn:a_4906_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_0007_act_02" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-2" subject2="zonenpcsquad:s_4906_23:reg-2" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai finished_2_1 -extra_4906" type="debug-trace" />
+        
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_0007_act_02" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-2" subject2="zonenpcsquad:s_4906_23:reg-2" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai finished_2_2 -extra_4906" type="debug-trace" />
+        
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_0007_act_02" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-2" subject2="zonenpcsquad:s_4906_23:reg-2" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai finished_2_3 -extra_4906" type="debug-trace" />
+        
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_0007_act_02" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-2" subject2="zonenpcsquad:s_4906_23:reg-2" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai finished_2_4 -extra_4906" type="debug-trace" />
+        
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_0007_act_02" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-2" subject2="zonenpcsquad:s_4906_23:reg-2" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4906_23:reg-1" subject2="zonenpcsquad:s_4906_23:reg-1" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_MusinTower_0007_ai finished_2_5 -extra_4906" type="debug-trace" />
+        
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="e_chest_musintower_Roulettle_ai">
+    <decision event="env-manipulated">
+      <reaction-set probability="22">
+        <reaction text="e_chest_musintower_Roulettle_ai manipulated_1 -extra_4906" type="debug-trace" />
+        <reaction social="e_chest_musintower_Roulettle_B" to="event:env-manipulated:pc" type="play-surround-social" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_4906_23" type="set-party-number" />
+        <reaction seq="CH_MusinTower_0007_act_02" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="23">
+        <reaction text="e_chest_musintower_Roulettle_ai manipulated_2 -extra_4906" type="debug-trace" />
+        <reaction social="e_chest_musintower_Roulettle_C" to="event:env-manipulated:pc" type="play-surround-social" />
+        <reaction amount="2" reg="1" target="zonenpcsquad:s_4906_23" type="set-party-number" />
+        <reaction seq="CH_MusinTower_0007_act_02" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="22">
+        <reaction text="e_chest_musintower_Roulettle_ai manipulated_3 -extra_4906" type="debug-trace" />
+        <reaction social="e_chest_musintower_Roulettle_A" to="event:env-manipulated:pc" type="play-surround-social" />
+        <reaction amount="3" reg="1" target="zonenpcsquad:s_4906_23" type="set-party-number" />
+        <reaction seq="CH_MusinTower_0007_act_02" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="23">
+        <reaction text="e_chest_musintower_Roulettle_ai manipulated_4 -extra_4906" type="debug-trace" />
+        <reaction social="e_chest_musintower_Roulettle_D" to="event:env-manipulated:pc" type="play-surround-social" />
+        <reaction amount="4" reg="1" target="zonenpcsquad:s_4906_23" type="set-party-number" />
+        <reaction seq="CH_MusinTower_0007_act_02" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="3">
+        <reaction text="e_chest_musintower_Roulettle_ai manipulated_5 -extra_4906" type="debug-trace" />
+        <reaction social="e_chest_musintower_Roulettle_E" to="event:env-manipulated:pc" type="play-surround-social" />
+        <reaction amount="5" reg="1" target="zonenpcsquad:s_4906_23" type="set-party-number" />
+        <reaction seq="CH_MusinTower_0007_act_02" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="2">
+        <reaction text="e_chest_musintower_Roulettle_ai manipulated_6 -extra_4906" type="debug-trace" />
+        <reaction social="e_chest_musintower_Roulettle_F" to="event:env-manipulated:pc" type="play-surround-social" />
+        <reaction amount="5" reg="1" target="zonenpcsquad:s_4906_23" type="set-party-number" />
+        <reaction seq="CH_MusinTower_0007_act_02" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="3">
+        <reaction text="e_chest_musintower_Roulettle_ai manipulated_7 -extra_4906" type="debug-trace" />
+        <reaction social="e_chest_musintower_Roulettle_G" to="event:env-manipulated:pc" type="play-surround-social" />
+        <reaction amount="5" reg="1" target="zonenpcsquad:s_4906_23" type="set-party-number" />
+        <reaction seq="CH_MusinTower_0007_act_02" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="2">
+        <reaction text="e_chest_musintower_Roulettle_ai manipulated_8 -extra_4906" type="debug-trace" />
+        <reaction social="e_chest_musintower_Roulettle_H" to="event:env-manipulated:pc" type="play-surround-social" />
+        <reaction amount="5" reg="1" target="zonenpcsquad:s_4906_23" type="set-party-number" />
+        <reaction seq="CH_MusinTower_0007_act_02" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_button_4906dragonball_1_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="e_button_4906dragonball_1_ai manipulated -extra" type="debug-trace" />
+        <reaction group="zonenpcsquad:s_4906_3" index-1="1" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4906_4" index-1="1" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4906_5" index-1="1" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4906_6" index-1="1" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4906_23" index-1="1" type="despawn-npc-index" />
+        <reaction state="close" state2="close" target="zoneenv:e_chest_musintower_Roulettle" target2="zoneenv2spawn:e_chest_musintower_Roulettle_spawn" type="set-env-state" />
+        <reaction enable="n" target="zoneenv:e_button_4906dragonball_1" target2="zoneenv2spawn:e_button_4906dragonball_1_spawn" type="set-env-enable" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_4906_23" type="set-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_MuSinTower6_Monster_ai" parent="Boss_Immune_ai">
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_Monster_ai killed -extra_4906" type="debug-trace" />
+        <reaction spawn-1="A_4906_2_1" spawn-delay="1000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="기공사" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="소환사" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_Monster_ai start_0 -extra_4906" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+        <reaction enable="n" target="zoneenv:e_button_4906dragonball_1" target2="zoneenv2spawn:e_button_4906dragonball_1_spawn" type="set-env-enable" />
+        <reaction seq="peace_fix_not_detect" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+        <reaction seq="act_wait_0sec_despawn" target="zonenpcspawn:a_4906_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_Monster_ai start -extra_4906" type="debug-trace" />
+        <reaction enable="n" target="zoneenv:e_button_4906dragonball_1" target2="zoneenv2spawn:e_button_4906dragonball_1_spawn" type="set-env-enable" />
+        <reaction seq="peace_fix_not_detect" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+        <reaction seq="act_wait_0sec_despawn" target="zonenpcspawn:a_4906_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_Monster_ai end -extra_4906" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4906dragonball_1" target2="zoneenv2spawn:e_button_4906dragonball_1_spawn" type="set-env-enable" />
+        <reaction seq="CH_MusinTower_0007_act_03" target="zonenpcspawn:A_4906_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="invoked-effect" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower6_HongDon_0001_ai" parent="ME_MuSinTower6_Monster_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_HongDon_0001_ai spawn -extra_4906" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_HongDon_0001_ai special-gas1 -extra_4906" type="debug-trace" />
+        <reaction end="5" group="event:npc-special:npc:npc-party" max="1" min="1" spawn-target="event:npc-special:npc" start="2" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="invoked-effect" forward="y" />
+  </script>
+  <script alias="ME_MuSinTowerDummy_0021_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0021_ai spawn -extra_4906" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_MuSinTowerDummy_0021_ai special-1 -extra_4906" type="debug-trace" />
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower6_NakWon_0001_ai" parent="ME_MuSinTower6_Monster_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_NakWon_0001_ai spawn -extra_4906" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="invoked-effect" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower6_ChungPung_0001_ai" parent="ME_MuSinTower6_Monster_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_ChungPung_0001_ai spawn -extra_4906" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_ChungPung_0001_ai bleeding -extra_4904" type="debug-trace" />
+        <reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="invoked-effect" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower6_PalDokMo_0001_ai" parent="ME_MuSinTower6_Monster_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_MuSinTower6_PalDokMo_0001_ai spawn -extra_4906" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="invoked-effect" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_CT_PigBaby_0008_ai" parent="ME_MuSinTower6_Monster_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_CT_PigBaby_0008_ai spawn -extra_4906" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="invoked-effect" forward="y" />
+  </script>
+</table>

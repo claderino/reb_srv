@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.baekchung_nokrimdo.xml-->
+
+  
+  <act-sequence alias="ME_CT_Dummy_0293_01_act" type="act">
+    <action hide="y" type="hide" />
+    <action duration="60000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="ME_CT_Dummy_0290_01_act" type="act">
+    <action hide="y" type="hide" />
+    
+    <action duration="300000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_CT_Dummy_0290_02_act" type="act">
+    <action hide="y" type="hide" />
+    <action duration="60000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="ME_CT_Dummy_0289_act" type="act">
+    <action hide="y" type="hide" />
+    <action duration="60000" type="stay" />
+    <action step="7" type="pause" />
+    <action duration="30000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="30000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="30000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="30000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="30000" type="stay" />
+    <action step="5" type="pause" />
+    <action duration="30000" type="stay" />
+    <action step="6" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_CT_Dummy_0318_act" indexed-detect="1" type="act">
+    <action hide="y" type="hide" />
+    <action duration="8000" type="stay" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_CT_Dummy_0296_act" type="act">
+    <action hide="y" type="hide" />
+    <action duration="45000" type="stay" />
+  </act-sequence>
+  
+  
+  
+  <act-sequence alias="CH_CT_JeGukGun_0229_00_act" type="act">
+    <action duration="5000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_JeGukGun_0229_01_act" type="act">
+    <action social="CH_CT_JeGukGun_0229_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_JeGukGun_0229_02_act" type="act">
+    <action social="CH_CT_JeGukGun_0229_soc_02" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_JeGukGun_0229_03_act" type="act">
+    <action social="CH_CT_JeGukGun_0229_soc_03" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_JeGukGun_0229_04_act" type="act">
+    <action social="CH_CT_JeGukGun_0229_soc_04" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_JeGukGun_0229_05_act" type="act">
+    <action social="CH_CT_JeGukGun_0229_soc_05" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_JeGukGun_0229_06_act" type="act">
+    <action social="CH_CT_JeGukGun_0229_soc_06" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0005_01_act" type="act">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_NokLimDo_0050_soc_01" type="social" />
+  </act-sequence>
+  
+  <act-sequence alias="MH_CT_NokLimDo_0005_02_act" type="act">
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0006_01_act" type="act">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_NokLimDo_0006_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0006_02_act" type="act">
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0050_01_act" type="act">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_NokLimDo_0050_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0050_02_act" type="act">
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0007_01_act" type="act">
+    <action social="MH_CT_NokLimDo_0007_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0007_02_act" type="act">
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0008_01_act" type="act">
+    <action social="MH_CT_NokLimDo_0008_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0008_02_act" type="act">
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0051_01_act" type="act">
+    <action social="MH_CT_NokLimDo_0051_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0051_02_act" type="act">
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="ME_CT_Dummy_0276_act" type="act">
+    <action hide="y" type="hide" />
+    <action duration="600000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_CT_Dummy_0278_act" type="act">
+    <action hide="y" type="hide" />
+    <action duration="600000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_CT_Dummy_0280_act" type="act">
+    <action hide="y" type="hide" />
+    <action duration="600000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0025_01_act" type="act">
+    <action social="MH_CT_NokLimDo_0025_soc_1" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0025_02_act" type="act">
+    <action social="MH_CT_NokLimDo_0025_soc_2" type="social" />
+    <action duration="10000" type="stay" />
+    <action social="MH_CT_NokLimDo_0025_soc_3" type="social" />
+    <action duration="10000" type="stay" />
+    <action social="MH_CT_NokLimDo_0025_soc_2" type="social" />
+    <action duration="10000" type="stay" />
+    <action social="MH_CT_NokLimDo_0025_soc_3" type="social" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_NokLimDo_0026_01_act" type="act">
+    <action social="MH_CT_NokLimDo_0026_soc_1" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0026_02_act" type="act">
+    <action duration="10000" type="stay" />
+    <action social="MH_CT_NokLimDo_0026_soc_2" type="social" />
+    <action duration="10000" type="stay" />
+    <action social="MH_CT_NokLimDo_0026_soc_3" type="social" />
+    <action duration="10000" type="stay" />
+    <action social="MH_CT_NokLimDo_0026_soc_2" type="social" />
+    <action duration="10000" type="stay" />
+    <action social="MH_CT_NokLimDo_0026_soc_3" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0053_01_act" type="act">
+    <action duration="15000" type="stay" />
+    <action enter-prob="100" type="select">
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_1" type="social" />
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_2" type="social" />
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_3" type="social" />
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_4" type="social" />
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_5" type="social" />
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_6" type="social" />
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_7" type="social" />
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_8" type="social" />
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_9" type="social" />
+      <action prob="10" social="MH_CT_NokLimDo_0053_soc_10" type="social" />
+    </action>
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_NokLimDo_0054_01_act" type="act">
+    <action duration="3000" type="stay" />
+    <action enter-prob="70" type="select">
+      <action prob="33" social="MH_CT_NokLimDo_0054_soc_1" type="social" />
+      <action prob="33" social="MH_CT_NokLimDo_0054_soc_2" type="social" />
+      <action prob="34" social="MH_CT_NokLimDo_0054_soc_3" type="social" />
+    </action>
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_NokLimDo_0055_01_act" type="act">
+    <action duration="3000" type="stay" />
+    <action enter-prob="70" type="select">
+      <action prob="33" social="MH_CT_NokLimDo_0054_soc_1" type="social" />
+      <action prob="33" social="MH_CT_NokLimDo_0054_soc_2" type="social" />
+      <action prob="34" social="MH_CT_NokLimDo_0054_soc_3" type="social" />
+    </action>
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_NokLimDo_0056_01_act" type="act">
+    <action duration="3000" type="stay" />
+    <action enter-prob="70" type="select">
+      <action prob="33" social="MH_CT_NokLimDo_0056_soc_1" type="social" />
+      <action prob="33" social="MH_CT_NokLimDo_0056_soc_2" type="social" />
+      <action prob="34" social="MH_CT_NokLimDo_0056_soc_3" type="social" />
+    </action>
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Rich_0008_act" type="act">
+    <action social="CH_CT_Rich_0008_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_Rich_0009_act" type="act">
+    <action social="CH_CT_Rich_0009_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+    
+  
+  <act-sequence alias="ME_CT_NokLimDo_0177_01_act" indexed-detect="1" type="act">
+    <action social="ME_CT_NokLimDo_0177_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_CT_NokLimDo_0177_02_act" indexed-detect="1" type="act">
+    <action social="ME_CT_NokLimDo_0177_soc_02" type="social" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="MH_CT_NokLimDo_0094_act" indexed-detect="1" type="act">
+    <action duration="4000" type="stay" />
+    <action enter-prob="100" type="select">
+      <action prob="25" social="MH_CT_NokLimDo_0094_soc_01" type="social" />
+      <action prob="25" social="MH_CT_NokLimDo_0094_soc_02" type="social" />
+      <action prob="25" social="MH_CT_NokLimDo_0094_soc_03" type="social" />
+      <action prob="25" social="MH_CT_NokLimDo_0094_soc_04" type="social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0080_01_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0080_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_NokLimDo_0080_02_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0080_soc_02" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_NokLimDo_0078_01_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0078_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_NokLimDo_0078_02_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0078_soc_01" type="social" />
+    <action duration="14000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0057_01_act" indexed-detect="1" type="act">
+    <action duration="7000" type="stay" />
+    <action enter-prob="100" type="select">
+      <action prob="50" social="MH_CT_NokLimDo_0057_soc_01" type="social" />
+      <action prob="50" social="MH_CT_NokLimDo_0057_soc_02" type="social" />
+    </action>
+  </act-sequence>
+  
+  <act-sequence alias="MH_CT_NokLimDo_0057_02_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0057_soc_03" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0057_03_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0057_soc_04" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_NokLimDo_0058_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0058_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0059_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0059_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_CT_HaOBanng_0148_act" indexed-detect="1" type="act">
+    <action duration="20000" type="stay" />
+    <action enter-prob="100" type="select">
+      <action prob="20" social="ME_CT_HaOBanng_0148_soc_01" type="social" />
+      <action prob="20" social="ME_CT_HaOBanng_0148_soc_02" type="social" />
+      <action prob="20" social="ME_CT_HaOBanng_0148_soc_03" type="social" />
+      <action prob="20" social="ME_CT_HaOBanng_0148_soc_04" type="social" />
+      <action prob="20" social="ME_CT_HaOBanng_0148_soc_05" type="social" />
+    </action>
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_NokLimDo_0102_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0102_soc_01" type="social" />
+    <action duration="40000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_NokLimDo_0109_act" indexed-detect="1" type="act">
+    <action duration="15000" type="stay" />
+    <action social="MH_CT_NokLimDo_0109_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_NokLimDo_0111_act" indexed-detect="1" type="act">
+    <action social="MH_CT_NokLimDo_0111_soc_01" type="social" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="ME_CT_HyeolPung_0015_act" indexed-detect="1" type="act">
+    <action duration="15000" type="stay" />
+    <action enter-prob="100" type="select">
+      <action prob="33" social="ME_CT_HyeolPung_0015_soc_01" type="social" />
+      <action prob="34" social="ME_CT_HyeolPung_0015_soc_02" type="social" />
+      <action prob="33" social="ME_CT_HyeolPung_0015_soc_03" type="social" />
+    </action>
+  </act-sequence>
+
+  
+
+  
+  <act-sequence alias="CH_CT_Prisoner_0050_act" type="act">
+    <action social="CH_CT_Prisoner_0050_soc_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="CH_CT_Prisoner_0050_soc_02" type="social" />
+    <action duration="8000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_Prisoner_0080_act" type="act">
+    <action social="MH_CT_Prisoner_0080_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action social="MH_CT_Prisoner_0080_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Prisoner_0051_01_act" type="act">
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_Prisoner_0051_02_act" type="act">
+    <action social="CH_CT_Prisoner_0051_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action social="CH_CT_Prisoner_0051_soc_02" type="social" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_CT_JeGukGun_0050_01_act" type="act">
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_JeGukGun_0050_02_act" type="act">
+    <action social="CH_CT_JeGukGun_0050_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action social="CH_CT_JeGukGun_0050_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_JeGukGun_0051_01_act" type="act">
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_JeGukGun_0051_02_act" type="act">
+    <action social="CH_CT_JeGukGun_0051_soc_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="CH_CT_JeGukGun_0051_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_DoCheonPung_0018_act_01" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_DoCheonPung_0018_combat_soc_10" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_DoCheonPung_0018_path_01" indexed-detect="1" type="act">
+    <action pathway="wp5031_10_1" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_DoCheonPung_0018_path_02" indexed-detect="1" type="act">
+    <action pathway="wp5031_10_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_DoCheonPung_0018_path_03" indexed-detect="1" type="act">
+    <action pathway="wp5031_10_3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_DoCheonPung_0018_path_04" type="act">
+    <action social="CH_CT_DoCheonPung_0018_combat_soc_03" type="social" />
+    <action pathway="wp5031_10_4" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_DoCheonPung_0018_path_05" indexed-detect="1" type="act">
+    <action social="CH_CT_DoCheonPung_0018_combat_soc_06" type="social" />
+    <action pathway="wp5031_10_5" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_DoCheonPung_0018_path_06" indexed-detect="1" type="act">
+    <action social="CH_CT_DoCheonPung_0018_combat_soc_07" type="social" />
+    <action pathway="wp5031_10_6" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_BlackDragon_0022_wait_01" detect="none" type="act">
+    <action duration="5000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BlackDragon_0022_peace" detect="none" type="peace">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_BlackDragon_0022_combat_soc_02" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BlackDragon_0026_peace" detect="none" type="peace">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_BlackDragon_0026_combat_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BlackDragon_0027_peace" detect="none" type="peace">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_BlackDragon_0027_combat_soc_02" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BlackDragon_0028_peace" detect="none" type="peace">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_BlackDragon_0028_combat_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BlackDragon_0020_peace" detect="none" type="peace">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_BlackDragon_0020_combat_soc_02" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BlackDragon_0021_peace" detect="none" type="peace">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_BlackDragon_0021_combat_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_NokLimDo_0046_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_NokLimDo_0046_soc_01" type="social" />
+    <action social="CH_CT_NokLimDo_0046_soc_02" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_BlackDragon_0017_peace" detect="none" type="peace">
+    <action social="MH_CT_BlackDragon_0017_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BlackDragon_0018_peace" detect="none" type="peace">
+    <action social="MH_CT_BlackDragon_0018_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BlackDragon_0023_peace" detect="none" type="peace">
+    <action social="MH_CT_BlackDragon_0023_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BlackDragon_0024_peace" detect="none" type="peace">
+    <action social="MH_CT_BlackDragon_0024_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+</table>

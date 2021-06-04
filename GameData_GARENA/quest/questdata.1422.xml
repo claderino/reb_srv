@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1422.xml-->
+  <quest alias="q_epic_1422" broadcast-category="field" category="epic" completed-list="y" id="1422" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="zoneenv2:5510_foot_1" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="npc:CH_SA_Citizen_0045" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_SA_Citizen_0045" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_SA_Citizen_0046" party-broadcast="n" type="approach" />
+        <case object2="zoneenv2:5510_foot_2" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="npc:CH_SA_JeGukGun_0033" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0050" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_ORakDang_0011" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_SA_ORakDang_0013" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_Citizen_0046" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_ORakDang_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0050" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JeGukGun_0033" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_SA_ORakDang_0013" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0052" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_Citizen_0046" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_SA_Citizen_0046" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="npc:CH_SA_Citizen_0055" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object2="npc:CH_SA_Citizen_0046" party-broadcast="n" progress-mission="y" type="pc-social" />
+        <case object="npc:CH_SA_Citizen_0055" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_SA_Citizen_0054" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_Citizen_0055" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1422_final_set1">
+        <case object="npc:CH_SA_Citizen_0046" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Citizen_0055" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1423" />
+    </completion>
+  </quest>
+</table>

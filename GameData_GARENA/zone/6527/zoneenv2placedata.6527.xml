@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\6527\zoneenv2placedata.6527.xml-->
+	<record action-point="6242,-7542,-636" action-radius="62" alias="e_gate_6527_01_Place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="6242,-7542,-629" manipulation-radius="62" tool-zone-1="6527" tool-zone-2="6526" type="gate" use-manipulation-point="n" />
+	<record action-point="5937,-7753,-636" action-radius="62" alias="e_gate_6527_02_Place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="5937,-7753,-629" manipulation-radius="62" tool-zone-1="6527" tool-zone-2="6526" type="gate" use-manipulation-point="n" />
+	<record action-point="6193,-7859,-640" action-radius="62" alias="e_gate_6527_03_Place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="6193,-7859,-632" manipulation-radius="62" tool-zone-1="6527" tool-zone-2="6526" type="gate" use-manipulation-point="n" />
+	<record action-point="6051,-7929,-637" action-radius="62" alias="e_gate_6527_04_Place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="6051,-7929,-629" manipulation-radius="62" tool-zone-1="6527" tool-zone-2="6526" type="gate" use-manipulation-point="n" />
+	<record action-point="6476,-7273,-565" alias="6527_portal_6516_place" region-point-1="6470,-7373,3396" region-point-2="6458,-7371,3396" region-point-3="6481,-7173,3396" region-point-4="6493,-7174,3396" tool-zone-1="6526" tool-zone-2="6527" type="portal" />
+	<record action-point="6016,-8087,-597" action-radius="0" alias="6527_foot_1_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="6016,-8087,-597" manipulation-radius="0" region-point-1="5918,-8133,-645" region-point-2="5936,-8014,1042" region-point-3="6114,-8041,-5" region-point-4="6096,-8160,-645" tool-zone-1="6527" type="foot-switch" use-manipulation-point="n" />
+</table>

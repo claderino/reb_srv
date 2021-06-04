@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1113.xml-->
+  <quest alias="q_sub_1113" attraction-1="cave2:cave_none_0255" broadcast-category="field" category="normal" id="1113" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition level="45" preceding-quest-1="q_epic_1420" preceding-quest-2="q_epic_1545" preceding-quest-check="or">
+      <case acquire-quest="y" grocery="Quest_Scroll_BackChung_0079" item="Quest_Scroll_BackChung_0079" party-broadcast="n" required-item-1="Quest_Scroll_BackChung_0079" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:ME_SA_MaYeongGangGun_0022" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_Bandit_0183" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_Bandit_0183" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_Bandit_0171" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_Bandit_0170" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_NokLimDo_0072" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_NokLimDo_0070" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_NokLimDo_0068" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_Bandit_0186" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_Bandit_0177" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0079" object2="npc:MH_SA_Bandit_0176" party-broadcast="n" quest-symbol-drop-prob="8" type="loot" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="zoneenv2:e_Chest_haobangjailgate_01_1" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_haobangjailgate_02_1" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case convoy="sub_684_con_1" object="npc:ME_CT_PotAxPartyLeader_0001" party-broadcast="y" progress-mission="y" type="talk" />
+        <case convoy="sub_684_con_2" object="npc:ME_CT_PotAxPartyLeader_0002" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object2="zoneenv2:e_chest_barmhaobanggate_02_1" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zone:Zone_HaoBanginn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1113_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1113_3" rollback="leave-zone" time-limit="300" zone-1="Zone_HaoBanginn">
+      <mission id="2" required-register-value="1">
+        <case drop-gadget="y" object2="zoneenv2:e_pot_hangari_01" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case drop-gadget="y" object2="zoneenv2:e_pot_hangari_02" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case drop-gadget="y" object2="zoneenv2:e_pot_hangari_03" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case drop-gadget="y" object2="zoneenv2:e_pot_hangari_04" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case drop-gadget="y" object2="zoneenv2:e_pot_hangari_05" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case drop-gadget="y" object2="zoneenv2:e_pot_hangari_06" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case convoy="sub_684_con_1" object="zone:Zone_HaoBanginn" party-broadcast="y" progress-mission="y" type="convoy-arrived" />
+        <case convoy="sub_684_con_2" object="zone:Zone_HaoBanginn" party-broadcast="y" progress-mission="y" type="convoy-arrived" />
+        <case object="npc:CH_CT_Citizen_0165" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Citizen_0166" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Citizen_0167" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Citizen_0168" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Citizen_0169" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_HaoBanginn">
+        <case convoy="sub_684_con_1" object="zone:Zone_HaoBanginn" party-broadcast="n" progress-mission="reaction-only" type="convoy-failed" />
+        <case convoy="sub_684_con_2" object="zone:Zone_HaoBanginn" party-broadcast="n" progress-mission="reaction-only" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="1113_final_set1" reward-2="1113_final_set2">
+        <case object="npc:CH_CT_DangGunMyung_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>
