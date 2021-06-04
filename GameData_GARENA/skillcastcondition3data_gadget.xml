@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_gadget.xml-->
-  <record alias="Gadget_Common_FlameThrower_skill3" gather-range="Gadget_Caster_CMax1520_Width128_Dis800" immune-caster-block-skill="n" link-state="not-link" link-type="none" success-target-dead-state="not-dead-restoration-exhaustion" target-type="enemy" />
+	<record alias="Gadget_Common_FlameThrower_skill3" gather-range="Gadget_Caster_CMax1520_Width128_Dis800" immune-caster-block-skill="n" link-state="not-link" link-type="none" success-target-dead-state="not-dead-restoration-exhaustion" target-type="enemy" />
 	<record alias="Gadget_BombA_Damage_Lv1_skill3" gather-range="Gadget_Ground_T360_CMax1496_RMin0_RMax248" immune-caster-block-skill="n" link-state="not-link" link-type="none" success-target-dead-state="not-dead-restoration-exhaustion" target-type="enemy" />
 	<record alias="Gadget_BombA_Damage_Lv2_skill3" gather-range="Gadget_Ground_T_CMax1496_FMax1496_EMax1496" immune-caster-block-skill="n" link-state="not-link" link-type="none" success-target-dead-state="not-dead-restoration-exhaustion" target-type="enemy" />
 	<record alias="Gadget_BombA_Damage_Lv3_skill3" gather-range="Gadget_Ground_T360_CMax1496_RMin0_RMax248" immune-caster-block-skill="n" link-state="not-link" link-type="none" success-target-dead-state="not-dead-restoration-exhaustion" target-type="enemy" />

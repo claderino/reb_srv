@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_assassin.xml-->
-  <record alias="Assassin_Hide_Reveal_Lv1_Stance" buff-type="instant" drop-field-item="n" id="15000011" level="1" miss-probability="0" save-db="n" stance="교란" type="stance" />
+	<record alias="Assassin_Hide_Reveal_Lv1_Stance" buff-type="instant" drop-field-item="n" id="15000011" level="1" miss-probability="0" save-db="n" stance="교란" type="stance" />
 	<record alias="Assassin_Hide_Reveal_Lv1_Reveal" buff-type="instant" dispel-attribute-1="은신" drop-field-item="n" id="15000012" level="1" miss-probability="0" save-db="n" type="dispel-attribute" />
 	<record alias="Assassin_Hide_Reveal_Lv1_Passive" buff-type="buff" dispel-attribute-1="은신" drop-field-item="n" id="15000013" level="1" save-db="n" type="put-in-sword" />
 	<record alias="Assassin_Hide_PassiveEffect" buff-type="buff" function-1="block-parry" id="15000025" level="1" miss-probability="0" modify-ability-1="attack-critical-damage-percent" modify-ability-2="defend-dodge-base-percent" modify-ability-diff-1="300" modify-ability-diff-2="500" save-db="n" type="Modify-Ability-25" />

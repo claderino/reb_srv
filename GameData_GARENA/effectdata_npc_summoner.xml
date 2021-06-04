@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc_summoner.xml-->
-  <record alias="MH_Summoned_Summon_Tackle_Lv1" id="55162001" type="force-attack" />
+	<record alias="MH_Summoned_Summon_Tackle_Lv1" id="55162001" type="force-attack" />
 	<record alias="MH_Summoned_Summon_NormalAttack1_Lv1_Damage" buff-type="instant" drop-field-item="n" id="55162011" level="1" miss-probability="0" power-percent-max="100" power-percent-min="100" save-db="n" type="melee-physical-attack" />
 	<record alias="MH_Summoned_Summon_TurningSlash_Lv1_Down" apply-duration-formula="y" attribute-1="다운" attribute-2="행동불가" buff-type="debuff" catch-linked="not-attach" catch-linker="dispel" detach-by-timeout-effect="Common_stun" drop-field-item="y" flag="down" function-1="block-move" function-2="block-rotate" function-3="block-skill" function-4="block-dodge" function-5="block-bounce" function-6="block-parry" id="55162021" immune-breaker-attribute="다운" inhalation-linked="not-attach" inhalation-linker="dispel" level="1" miss-probability="0" mount-linked="not-attach" mount-linker="dispel" passive-duration="3000" power-percent-max="160" power-percent-min="160" save-db="n" type="down" />
 	<record alias="MH_Summoned_Summon_TurningSlash_Lv1_Damage" buff-type="instant" drop-field-item="n" id="55162022" level="1" miss-probability="0" power-percent-max="160" power-percent-min="160" save-db="n" type="melee-physical-attack" />

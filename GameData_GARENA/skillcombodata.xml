@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="skill-combo" version="0.5">
   <!--skillcombodata.xml-->
-  <record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="hit" />
 	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="critical-hit" />
 	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="parry" />
 	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="dodge" />

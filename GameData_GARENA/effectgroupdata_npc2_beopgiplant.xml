@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_beopgiplant.xml-->
-  <record alias="ME_GWB_B1_MechGorilla_ChainShock_E1_01" effect-1="ME_GWB_B1_MechGorilla_ChainShock_FirstStun" skill-result="all" target="first-target" target-state="enemy" />
+	<record alias="ME_GWB_B1_MechGorilla_ChainShock_E1_01" effect-1="ME_GWB_B1_MechGorilla_ChainShock_FirstStun" skill-result="all" target="first-target" target-state="enemy" />
 	<record alias="ME_GWB_B1_MechGorilla_ChainShock_E2_01" effect-1="ME_GWB_B1_MechGorilla_ChainShock_Stun" effect-2="ME_GWB_B1_MechGorilla_ChainShock_Range_fx" effect-3="ME_ID2_Common_Exhaustion" skill-result="all" target="first-target" target-state="enemy" />
 	<record alias="ME_GWB_B1_MechGorilla_ChainShock_E2_02" effect-1="ME_GWB_B1_MechGorilla_ChainShock_Stun" effect-2="ME_ID2_Common_Exhaustion" skill-result="all" target="second-target" target-state="enemy" />
 	<record alias="ME_GWB_B1_MechGorilla_ChainShock2_E4_01" effect-1="ME_ID2_Common_Dispel_Modify_Ability_70" effect-2="ME_ID2_Common_Dispel_Modify_Ability_71" skill-result="all" target="first-target" target-state="enemy" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_itemskill_sw.xml-->
-  <record alias="ItemSkill_CM_Logic_Flag_Check" attribute-1="조건만족" buff-type="buff" detach-count="1" detach-slot-1="attacked-hit" detach-slot-2="attacked-critical" id="40700000" level="1" miss-probability="0" passive-duration="100" save-db="n" type="Modify-Ability-108" />
+	<record alias="ItemSkill_CM_Logic_Flag_Check" attribute-1="조건만족" buff-type="buff" detach-count="1" detach-slot-1="attacked-hit" detach-slot-2="attacked-critical" id="40700000" level="1" miss-probability="0" passive-duration="100" save-db="n" type="Modify-Ability-108" />
 	<record alias="ItemSkill_SW_RotateSoulBlade_G1_Lv1_01_Flag" buff-type="buff" flag="DragonKick" id="40700001" level="1" passive-duration="6000" save-db="n" type="Modify-Ability-258" />
 	<record alias="ItemSkill_SW_RotateSoulBlade_G1_Lv1_02_Damage" attack-attribute-type="wind" buff-type="instant" id="40700002" level="1" power-percent-max="130" power-percent-min="130" type="melee-physical-attack" />
 	<record alias="ItemSkill_SW_RotateSoulBlade_G1_Lv1_04_Damage" attack-attribute-type="Lightning" buff-type="instant" id="40700005" level="1" power-percent-max="90" power-percent-min="90" type="melee-physical-attack" />

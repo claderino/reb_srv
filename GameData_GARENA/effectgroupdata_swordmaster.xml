@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_swordmaster.xml-->
-  <record alias="SwordMaster_Common_Dummy_EG" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />
+	<record alias="SwordMaster_Common_Dummy_EG" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />
 	<record alias="SwordMaster_Common_WindBit_3" effect-1="SwordMaster_common_WindBit_Dispel" effect-2="SwordMaster_common_WindBit_3" skill-result="all" target="caster" target-state="all" target-state-first-filter="60098" target-state-second-filter="60102" />
 	<record alias="SwordMaster_Common_WindBit_2" effect-1="SwordMaster_common_WindBit_Dispel" effect-2="SwordMaster_common_WindBit_2" skill-result="all" target="caster" target-state="all" target-state-first-filter="60096" target-state-second-filter="60102" />
 	<record alias="SwordMaster_Common_WindBit_2_Logic" effect-1="SwordMaster_common_WindBit_Dispel" effect-2="SwordMaster_common_WindBit_2" effect-3="SwordMaster_Logic_Flag" skill-result="all" target="caster" target-state="all" target-state-first-filter="60096" target-state-second-filter="60102" />

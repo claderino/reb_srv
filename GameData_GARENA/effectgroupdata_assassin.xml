@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_assassin.xml-->
-  <record alias="Assassin3_Disturb_MistSlash_Lv1_E1_01" effect-1="Common_Logic_Flag_Check" individual-probability="n" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" target-state-first-filter="40055" />
+	<record alias="Assassin3_Disturb_MistSlash_Lv1_E1_01" effect-1="Common_Logic_Flag_Check" individual-probability="n" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" target-state-first-filter="40055" />
 	<record alias="Assassin3_Disturb_MistSlash_Lv1_E1_02" effect-1="Common_Logic_Flag_Check" individual-probability="n" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" target-state-first-filter="40038" />
 	<record alias="Assassin3_Disturb_MistSlash_Lv1_E1_03" effect-1="Assassin3_Disturb_MistSlash_Lv1_Damage" individual-probability="n" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" target-state-first-filter="60091" />
 	<record alias="Assassin3_Disturb_MistSlash_Lv1_E1_04" effect-1="Assassin3_Disturb_MistSlash_Lv1_Damage_Add" individual-probability="n" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" target-state-first-filter="60092" />

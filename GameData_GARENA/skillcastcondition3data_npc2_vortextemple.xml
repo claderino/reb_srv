@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_vortextemple.xml-->
-  <record alias="GWD_VT_B1_Flazard_Fire_Inhalation" gather-range="ID_GWD_VT_B1_Flazard_Fire_Inhalation" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Flazard_Fire_Inhalation" gather-range="ID_GWD_VT_B1_Flazard_Fire_Inhalation" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="GWD_VT_B1_Flazard_Fire_CrossLaser" gather-range="ID_GWD_VT_B1_Flazard_Fire_CrossLaser" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="GWD_VT_B1_Flazard_Fire_Jump" gather-range="ID_GWD_VT_B1_Flazard_Fire_Jump" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="GWD_VT_B1_Flazard_Fire_SpikeAttack" gather-range="ID_GWD_VT_B1_Flazard_Fire_SpikeAttack" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />

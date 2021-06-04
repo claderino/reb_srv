@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_summoner.xml-->
-  <record alias="Summoned_Common_Stance_Command" buff-type="instant" drop-field-item="n" id="16000020" level="1" miss-probability="0" save-db="n" stance="소환수-command-1" type="stance" />
+	<record alias="Summoned_Common_Stance_Command" buff-type="instant" drop-field-item="n" id="16000020" level="1" miss-probability="0" save-db="n" stance="소환수-command-1" type="stance" />
 	<record alias="Summoned_Common_Stance_Follow" buff-type="instant" drop-field-item="n" id="16000021" level="1" miss-probability="0" save-db="n" stance="소환수-follow" type="stance" />
 	<record alias="Summoner_Common_Dispel_Block" buff-type="instant" dispel-attribute-1="행동불가" dispel-attribute-2="이동불가" drop-field-item="n" id="16000022" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" miss-probability="0" save-db="n" stance="none" type="dispel-attribute" zone-id="65535" />
 	<record alias="Summoner_Common_Hide_3000ms" attribute-1="은신" buff-type="buff" detach-count="1" detach-slot-1="attacked-hit" detach-slot-2="attacked-critical" drop-field-item="n" event-effect-1="Summoner_Immune_Physical_Abnormal_100ms" event-effect-target-1="effect-owner" flag="hide" id="16000023" immune-attribute-1="중첩불가2" level="1" miss-probability="0" modify-ability-1="speed" modify-ability-percent-1="100" passive-duration="3000" save-db="n" second-slot-event-effect-1="Summoner_Immune_Physical_Abnormal_100ms" second-slot-event-effect-target-1="effect-owner" target-combat-mode="y" type="hide" />

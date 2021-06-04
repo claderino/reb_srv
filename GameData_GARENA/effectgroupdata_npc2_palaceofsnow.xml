@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_palaceofsnow.xml-->
-  <record alias="ME_BEA_B1_Common_None_Immune_KillMark" effect-1="ME_BEA_B1_Common_None_KillMark_Immune" skill-result="all" target="second-target" target-state="Enemy" target-state-first-filter="50042" />
+	<record alias="ME_BEA_B1_Common_None_Immune_KillMark" effect-1="ME_BEA_B1_Common_None_KillMark_Immune" skill-result="all" target="second-target" target-state="Enemy" target-state-first-filter="50042" />
 	<record alias="ME_BEA_B1_Fatman_None_Inhalation_E1_01" effect-1="ME_BEA_B1_Fatman_None_Inhalation_Recall2Caster" effect-2="ME_BEA_B1_Fatman_None_Inhalation_link" effect-3="ME_BEA_B1_Fatman_None_GoldDispel" effect-4="ME_BEA_B1_Fatman_None_SilverDispel" skill-result="hit-critical-hit" target="first-target" target-state="Enemy" />
 	<record alias="ME_BEA_B1_Fatman_None_Choke_E1_01" effect-1="ME_Common_None_Unlink" effect-2="MH_Common_Dispel_enddelay" effect-3="ME_BEA_B1_Fatman_None_Choke_Feedback_link" effect-4="ME_BEA_B1_Fatman_None_Choke_damage" skill-result="hit-critical-hit" target="first-target" target-state="Enemy" />
 	<record alias="ME_BEA_B1_Fatman_None_Choke_E2_01" effect-1="ME_BEA_B1_Fatman_None_Choke_extend-link" effect-2="ME_BEA_B1_Fatman_None_Choke_damage" skill-result="hit-critical-hit" target="first-target" target-state="Enemy" />

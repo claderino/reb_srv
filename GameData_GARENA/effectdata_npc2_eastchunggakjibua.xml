@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc2_eastchunggakjibua.xml-->
-  <record alias="MH_SUA_R0_Common_Immune_Moveblock" buff-type="buff" catch-linked="attach" catch-linker="attach" id="59009005" immune-attribute-1="이동불가" inhalation-linked="attach" inhalation-linker="attach" level="1" link-stage="stage-1" link-type="normal" mount-linked="attach" mount-linker="attach" type="modify-ability-4" />
+	<record alias="MH_SUA_R0_Common_Immune_Moveblock" buff-type="buff" catch-linked="attach" catch-linker="attach" id="59009005" immune-attribute-1="이동불가" inhalation-linked="attach" inhalation-linker="attach" level="1" link-stage="stage-1" link-type="normal" mount-linked="attach" mount-linker="attach" type="modify-ability-4" />
 	<record alias="MH_CH_AssassinBoss_Hide_Mine_Multi_Flag" attribute-1="멍해짐" buff-type="instant" drop-field-item="n" id="59009010" level="1" link-stage="stage-1" link-type="normal" type="melee-physical-attack" />
 	<record alias="MH_CH_AssassinBoss_Hide_Mine_Show" buff-type="debuff" drop-field-item="n" id="59009011" level="1" link-stage="stage-1" link-type="normal" passive-duration="60000" type="Modify-Ability-71" />
 	<record alias="MH_CH_AssassinBoss_Hide_Mine_Single_Flag" attribute-1="얼어붙음" buff-type="instant" drop-field-item="n" id="59009020" level="1" link-stage="stage-1" link-type="normal" type="melee-physical-attack" />

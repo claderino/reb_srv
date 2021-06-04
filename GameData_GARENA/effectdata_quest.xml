@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_quest.xml-->
-  <record alias="Quest_Crescent205_Stun_detach" buff-type="buff" drop-field-item="n" id="70008" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" max-hp-percent="0" miss-probability="0" passive-duration="0" save-db="n" stance="none" type="buff-max-hp" zone-id="65535" />
+	<record alias="Quest_Crescent205_Stun_detach" buff-type="buff" drop-field-item="n" id="70008" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" max-hp-percent="0" miss-probability="0" passive-duration="0" save-db="n" stance="none" type="buff-max-hp" zone-id="65535" />
 	<record alias="Quest_ChunggakAttack109_Death" buff-type="instant" death-probability="50" id="70012" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" save-db="n" stance="none" type="instantaneous-death" zone-id="65535" />
 	<record alias="Quest_453_Death" buff-type="instant" hp-diff="-30" id="70021" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" save-db="n" stance="none" type="hp-damage" zone-id="65535" />
 	<record alias="Quest_426_death2" buff-type="instant" death-probability="100" id="70028" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" save-db="n" stance="none" type="instantaneous-death" zone-id="65535" />

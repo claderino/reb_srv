@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="AIData" release-side="server" type="npc-reset-stage" version="0.12">
   <!--npcresetstagedata.xml-->
-  <record alias="default_CombatStart" clear-npc-reg="y" clear-party-reg="y" despawn-my-party="n" spawn-my-party="n" />
+	<record alias="default_CombatStart" clear-npc-reg="y" clear-party-reg="y" despawn-my-party="n" spawn-my-party="n" />
 	<record alias="default_CombatEnd" clear-npc-reg="y" clear-party-reg="y" despawn-my-party="y" spawn-my-party="y" />
 	<record alias="ME_ChungGakABoss_0005_RS_spawn" despawn-my-party="n" set-env-operation-1="disable" set-env-operation-2="disable" set-env2-target-1="e_chest_chungsteamlever_01_spawn" set-env2-target-2="e_chest_chungsteamlever_02_spawn" spawn-my-party="n" />
 	<record alias="ME_ChungGakABoss_0005_RS_CombatStart" despawn-my-party="n" set-env-operation-1="disable" set-env-operation-2="enable" set-env2-target-1="e_Chest_4707hartA_01_spawn" set-env2-target-2="e_PhohwaranDMZ01_spawn" spawn-my-party="n" />

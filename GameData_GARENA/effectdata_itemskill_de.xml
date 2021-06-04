@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_itemskill_de.xml-->
-  <record alias="ItemSkill_DE_Wrath_G1_Lv1_01_Flag" buff-type="buff" flag="Saver" id="40300001" level="1" passive-duration="6000" save-db="n" type="Modify-Ability-258" />
+	<record alias="ItemSkill_DE_Wrath_G1_Lv1_01_Flag" buff-type="buff" flag="Saver" id="40300001" level="1" passive-duration="6000" save-db="n" type="Modify-Ability-258" />
 	<record alias="ItemSkill_DE_Wrath_G1_Lv1_02_Damage" attack-attribute-type="earth" buff-type="instant" id="40300002" level="1" power-percent-max="75" power-percent-min="75" type="melee-physical-attack" />
 	<record alias="ItemSkill_DE_Wrath_G1_Lv1_03_Damage" attack-attribute-type="void" buff-type="instant" id="40300003" level="1" power-percent-max="75" power-percent-min="75" type="melee-physical-attack" />
 	<record alias="ItemSkill_DE_Wrath_G1_Lv2_01_Flag" buff-type="buff" flag="Saver" id="40300004" level="1" passive-duration="6000" save-db="n" type="Modify-Ability-258" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_jukpaewangraid.xml-->
-  <record alias="S3_RDC_B1_AncientAdamantineMan_None_Curse" gather-range="ID_Bagic_Round_100M" move-type="free" success-caster-flag-1="npc-state-1" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_RDC_B1_AncientAdamantineMan_None_Curse" gather-range="ID_Bagic_Round_100M" move-type="free" success-caster-flag-1="npc-state-1" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_RDC_B1_ElectricBall_ChainLightning" gather-range="ID_RDC_B1_ElectricBall_ChainLightning" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_RDC_B1_JukPaeWang_LinkLaser_1" gather-range="ID_RDC_B1_JukPaeWang_LinkLaser_1" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_RDC_B1_JukPaeWang_LinkLaser_2" gather-range="ID_RDC_B1_JukPaeWang_LinkLaser_2" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />

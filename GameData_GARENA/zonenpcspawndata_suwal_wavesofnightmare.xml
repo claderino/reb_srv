@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="ZoneData0" release-side="server" type="ZoneNpcSpawn" version="0.17">
   <!--zonenpcspawndata_suwal_wavesofnightmare.xml-->
-  <record act-detect-1="pc-360" act-pathway-1="4738_2_p0" act-pathway-2="4738_2_p" act-sequence="peace_HuekUmmLim_DF_Boss_xdetect" alias="a_4738_2" area="4738_2" id="1" init-spawn="y" npc="ME_WB_DemonGorilla_0001" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="225" yaw-min="225" zone="4738" />
+	<record act-detect-1="pc-360" act-pathway-1="4738_2_p0" act-pathway-2="4738_2_p" act-sequence="peace_HuekUmmLim_DF_Boss_xdetect" alias="a_4738_2" area="4738_2" id="1" init-spawn="y" npc="ME_WB_DemonGorilla_0001" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="225" yaw-min="225" zone="4738" />
 	<record act-detect-1="both-360" act-sequence="peace_fix_default" alias="a_4738_3" area="4738_3" id="2" init-spawn="n" npc="ME_WB_DarkAura_0001" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="355" yaw-min="0" zone="4738" />
 	<record act-detect-1="both-360" act-sequence="peace_fix_default" alias="a_4738_4" area="4738_4" id="3" init-spawn="n" npc="ME_WB_DarkAura_0006" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="355" yaw-min="0" zone="4738" />
 	<record act-detect-1="both-360" act-sequence="peace_fix_default" alias="a_4738_5" area="4738_5" id="4" init-spawn="n" npc="ME_WB_DarkAura_0007" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="355" yaw-min="0" zone="4738" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_eastchunggakjibub.xml-->
-  <record alias="ME_SUB_B1_SeaMonsterBoss_None_PosionSpit_E1_01" effect-1="ME_SUB_B1_SeaMonsterBoss_None_PosionSpit_damage" effect-2="ME_Common_None_HateDown" effect-3="MH_Common_Bleeding_SUB_Boss_45" skill-result="hit-critical-hit" target="first-target" target-state="Enemy" />
+	<record alias="ME_SUB_B1_SeaMonsterBoss_None_PosionSpit_E1_01" effect-1="ME_SUB_B1_SeaMonsterBoss_None_PosionSpit_damage" effect-2="ME_Common_None_HateDown" effect-3="MH_Common_Bleeding_SUB_Boss_45" skill-result="hit-critical-hit" target="first-target" target-state="Enemy" />
 	<record alias="ME_SUB_B1_SeaMonsterBoss_None_PosionSpit_E1_p" effect-1="ME_SUB_B1_SeaMonsterBoss_None_PosionSpit_damage" skill-result="parry-perfect-parry-counter" target="first-target" target-state="Enemy" />
 	<record alias="ME_SUB_B1_SeaMonsterBoss_None_Poisonlock_E1_01" effect-1="ME_SUB_B1_SeaMonsterBoss_None_Poisonlock_damage" effect-2="MH_Common_Bleeding_SUB_Boss_45" effect-3="ME_Common_None_HateUP" skill-result="hit-critical-hit" target="first-second-target" target-state="Enemy" />
 	<record alias="ME_SUB_B1_SeaMonsterBoss_None_Poisonlock_E2_Simslot" effect-1="ME_SUB_B1_SeaMonsterBoss_None_Bleeding_InsDmg" effect-2="MH_Common_Bleeding_SUB_Boss_45" skill-result="hit-critical-hit" target="first-second-target" target-state="Enemy" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="AIData" release-side="server" type="difficulty-type-npc-brain-combat-parameters" version="0.1">
   <!--difficultytypenpcbraincombatparametersdata.xml-->
-  <record combat-sequence-1="ME_WA_Whanmadan_A1_Nmd_0002_CS1_Easy" difficulty-type="1" npc-brain-parameters="ME_WA_Whanmadan_A1_Nmd_0002_bp" script="ME_WA_Whanmadan_A1_Nmd_0002_ai_Easy" />
+	<record combat-sequence-1="ME_WA_Whanmadan_A1_Nmd_0002_CS1_Easy" difficulty-type="1" npc-brain-parameters="ME_WA_Whanmadan_A1_Nmd_0002_bp" script="ME_WA_Whanmadan_A1_Nmd_0002_ai_Easy" />
 	<record combat-sequence-1="ME_WA_Whanmadan_A1_Nmd_0002_CS1" difficulty-type="2" npc-brain-parameters="ME_WA_Whanmadan_A1_Nmd_0002_bp" script="ME_WA_Whanmadan_A1_Nmd_0002_ai" />
 	<record combat-sequence-1="ME_WA_Whanmadan_A1_Boss_0001_CS1_Easy" combat-sequence-2="ME_WA_Whanmadan_A1_Boss_0001_CS2_Easy" difficulty-type="1" npc-brain-parameters="ME_WA_Whanmadan_A1_Boss_0001_bp" script="ME_WA_Whanmadan_A1_Boss_0001_ai_Easy" />
 	<record combat-sequence-1="ME_WA_Whanmadan_A1_Boss_0001_CS1" combat-sequence-2="ME_WA_Whanmadan_A1_Boss_0001_CS2" difficulty-type="2" npc-brain-parameters="ME_WA_Whanmadan_A1_Boss_0001_bp" script="ME_WA_Whanmadan_A1_Boss_0001_ai" />

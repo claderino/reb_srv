@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc2_jukpaewangraid.xml-->
-  <record alias="RDC_B1_ElectricBall_Appearance" attribute-1="보스-1" buff-type="buff" id="59051001" leave-zone-detach="y" level="1" type="Modify-Ability-69" />
+	<record alias="RDC_B1_ElectricBall_Appearance" attribute-1="보스-1" buff-type="buff" id="59051001" leave-zone-detach="y" level="1" type="Modify-Ability-69" />
 	<record alias="RDC_B1_SteelMarble_Burrow_barrier" buff-type="buff" id="59051002" leave-zone-detach="y" level="1" type="Modify-Ability-72" />
 	<record alias="RDC_B1_JukPaeWang_Debuff" buff-type="buff" drop-field-item="n" id="59051003" leave-zone-detach="y" level="1" passive-duration="60000" stack-amount="2" transform-effect="ME_ID2_Common_Berserk_Instantaneous_Death" type="Modify-Ability-173" />
 	<record alias="RDC_B1_JukPaeWang_Debuff_TimeCheck" attribute-1="보스-1" buff-type="buff" drop-field-item="n" id="59051004" leave-zone-detach="y" level="1" passive-duration="5000" type="Modify-Ability-69" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc_blademaster.xml-->
-  <record alias="MH_BladeMaster_Sword_take_wing_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" success-target-flag-1="midair-1" success-target-op="or" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_take_wing_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" success-target-flag-1="midair-1" success-target-op="or" target-type="all" />
 	<record alias="MH_BladeMaster_Sword_ascension_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" success-target-flag-1="midair-3" success-target-op="or" target-type="all" />
 	<record alias="MH_BladeMaster_Batto_acceleration_Q_skill3" immune-caster-block-skill="y" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="MH_BladeMaster_Batto_batto_skill3" gather-range="PVE_Caster_Laser_CMax384_Width104_Dis504" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />

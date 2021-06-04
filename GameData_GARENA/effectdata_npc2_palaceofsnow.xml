@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc2_palaceofsnow.xml-->
-  <record alias="ME_BEA_B1_Zone_Debuff_frostbite" attribute-1="얼음" buff-type="buff" drop-field-item="n" hp-percent="-99" id="59021000" knockback-speed="0" level="1" modify-ability-1="speed" modify-ability-percent-1="-15" passive-interval="1000" target-combat-mode="y" type="interval-hp-damage" />
+	<record alias="ME_BEA_B1_Zone_Debuff_frostbite" attribute-1="얼음" buff-type="buff" drop-field-item="n" hp-percent="-99" id="59021000" knockback-speed="0" level="1" modify-ability-1="speed" modify-ability-percent-1="-15" passive-interval="1000" target-combat-mode="y" type="interval-hp-damage" />
 	<record alias="ME_BEA_B1_Fatman_None_Spheal_G" attribute-1="치유" attribute-2="얼어붙음" buff-type="instant" id="59021001" level="1" sp-diff="1" type="sp-heal" />
 	<record alias="ME_BEA_B1_Fatman_None_Spheal_S" attribute-1="치유" attribute-2="멍해짐" buff-type="instant" id="59021002" level="1" sp-diff="1" type="sp-heal" />
 	<record alias="ME_BEA_B1_Fatman_None_SPMinus3" buff-type="instant" id="59021003" level="1" sp-percent="-100" type="sp-damage" />

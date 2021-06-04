@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_buyudong.xml-->
-  <record alias="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack_E1_01" effect-1="ME_ID2_Common_Melee_Damage_140" effect-2="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack_Kneel" effect-3="Common_ReactToDown_Flag" skill-result="Hit-critical-hit" target="second-target" target-state="Enemy" />
+	<record alias="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack_E1_01" effect-1="ME_ID2_Common_Melee_Damage_140" effect-2="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack_Kneel" effect-3="Common_ReactToDown_Flag" skill-result="Hit-critical-hit" target="second-target" target-state="Enemy" />
 	<record alias="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack_E1_p" effect-1="ME_ID2_Common_Melee_Damage_140" skill-result="Parry-Perfect-Parry-Counter" target="second-target" target-state="Enemy" />
 	<record alias="ME_GWA_B1_AncientAdamantineMan_None_Smash_E1_01" effect-1="ME_ID2_Common_Melee_Damage_350" effect-2="MH_Common_None_feedback_KnockbackD" effect-3="Common_ReactToDown_Flag_700ms" skill-result="Hit-critical-hit" target="second-target" target-state="Enemy" />
 	<record alias="ME_GWA_B1_AncientAdamantineMan_None_Smash_E1_p" effect-1="ME_ID2_Common_Melee_Damage_350" skill-result="Parry-Perfect-Parry-Counter" target="second-target" target-state="Enemy" />

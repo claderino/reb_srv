@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_soulfighter.xml-->
-  <record alias="SoulFighter_Common_Force_Earth5" effect-1="SoulFighter_Common_properties_Dispel" effect-2="SoulFighter_Common_Forcepower_Lv5_Flag" skill-result="Hit-Critical-Hit" target="caster" target-state="all" target-state-first-filter="60106" target-state-second-filter="60098" />
+	<record alias="SoulFighter_Common_Force_Earth5" effect-1="SoulFighter_Common_properties_Dispel" effect-2="SoulFighter_Common_Forcepower_Lv5_Flag" skill-result="Hit-Critical-Hit" target="caster" target-state="all" target-state-first-filter="60106" target-state-second-filter="60098" />
 	<record alias="SoulFighter_Common_Force_Earth4" effect-1="SoulFighter_Common_properties_Dispel" effect-2="SoulFighter_Common_Forcepower_Lv4_Flag" skill-result="Hit-Critical-Hit" target="caster" target-state="all" target-state-first-filter="60104" target-state-second-filter="60098" />
 	<record alias="SoulFighter_Common_Force_Earth3" effect-1="SoulFighter_Common_properties_Dispel" effect-2="SoulFighter_Common_Forcepower_Lv3_Flag" skill-result="Hit-Critical-Hit" target="caster" target-state="all" target-state-first-filter="60102" target-state-second-filter="60098" />
 	<record alias="SoulFighter_Common_Force_Earth2" effect-1="SoulFighter_Common_properties_Dispel" effect-2="SoulFighter_Common_Forcepower_Lv2_Flag" skill-result="Hit-Critical-Hit" target="caster" target-state="all" target-state-first-filter="60100" target-state-second-filter="60098" />

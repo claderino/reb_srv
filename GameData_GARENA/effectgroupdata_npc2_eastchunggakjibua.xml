@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_eastchunggakjibua.xml-->
-  <record alias="MH_CH_AssassinBoss_Hide_Mine_Multi_E1_Caster" effect-1="MH_CH_AssassinBoss_Hide_Mine_Multi_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="MH_CH_AssassinBoss_Hide_Mine_Multi_E1_Caster" effect-1="MH_CH_AssassinBoss_Hide_Mine_Multi_Flag" skill-result="all" target="caster" target-state="all" />
 	<record alias="MH_CH_AssassinBoss_Hide_Mine_Single_E1_Caster" effect-1="MH_CH_AssassinBoss_Hide_Mine_Single_Flag" skill-result="all" target="caster" target-state="all" />
 	<record alias="MH_CH_AssassinBoss_Hide_MineBomb_E1_01" effect-1="MH_CH_AssassinBoss_Hide_MineBomb_down" effect-2="MH_Common_Bleeding_SUA_Boss_45" effect-3="ME_Common_None_HateDown" effect-4="Common_ReactToDown_Flag" skill-result="Hit-Critical-Hit" target="second-target" target-state="Enemy" />
 	<record alias="MH_CH_AssassinBoss_Hide_MineBomb_E1_Caster" effect-1="MH_CH_AssassinBoss_Hide_Mine_ShowDispel" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />

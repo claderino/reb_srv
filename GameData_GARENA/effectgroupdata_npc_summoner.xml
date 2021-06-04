@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc_summoner.xml-->
-  <record alias="MH_Summoned_Summon_BurningFist_Lv1_E1_01" effect-1="MH_Summoned_Summon_BurningFist_Lv1_Damage" effect-2="MH_Summoned_Summon_BurningFist_Lv1_embers" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
+	<record alias="MH_Summoned_Summon_BurningFist_Lv1_E1_01" effect-1="MH_Summoned_Summon_BurningFist_Lv1_Damage" effect-2="MH_Summoned_Summon_BurningFist_Lv1_embers" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
 	<record alias="MH_Summoned_Summon_BurningFist_Lv1_E1_02" effect-1="MH_Summoned_Summon_BurningFist_Lv1_Damage" skill-result="Parry-Perfect-Parry-Counter" target="first-target" target-state="enemy" />
 	<record alias="MH_Summoned_Summon_HammerImpact_Lv1_E1_01" effect-1="MH_Summoned_Summon_HammerImpact_Lv1_Damage" effect-2="MH_Summoned_Summon_HammerImpact_Lv1_embers_explosion" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
 	<record alias="MH_Summoned_Summon_HammerImpact_Lv1_E1_02" effect-1="MH_Summoned_Summon_HammerImpact_Lv1_Stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40017" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc_assassin.xml-->
-  <record alias="MH_Assassin_Disturb_DewSlash_Lv1_E1_01" effect-1="MH_Assassin_Disturb_DewSlash_Lv1_Damage" individual-probability="n" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />
+	<record alias="MH_Assassin_Disturb_DewSlash_Lv1_E1_01" effect-1="MH_Assassin_Disturb_DewSlash_Lv1_Damage" individual-probability="n" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />
 	<record alias="MH_Assassin_Disturb_DewSlash_Lv1_E1_02" effect-1="MH_Assassin_Disturb_DewSlash_Lv1_Damage" individual-probability="n" skill-result="Parry-Perfect-Parry-Counter" target="first-target" target-state="enemy" />
 	<record alias="MH_Assassin_Disturb_DewSlash_Lv1_E1_03" effect-1="MH_Assassin_Hide_Reveal_Lv1_Reveal" effect-2="MH_Assassin_Hide_Reveal_Lv1_Stance" individual-probability="n" skill-result="all" target="caster" target-state="all" />
 	<record alias="MH_Assassin_Disturb_MistSlash_Lv1_E1_01" effect-1="MH_Assassin_Disturb_MistSlash_Lv1_Damage" individual-probability="n" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />

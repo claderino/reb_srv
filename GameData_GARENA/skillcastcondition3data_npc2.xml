@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2.xml-->
-  <record alias="S3_MH_Assassin_Disturb_Shuriken_DeadZone" gather-range="Unique_Target_D6504_Depth_Max" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_MH_Assassin_Disturb_Shuriken_DeadZone" gather-range="Unique_Target_D6504_Depth_Max" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_ME_Dummy_None_Ground_Fire" gather-range="Common_Caster_Laser_W456D96" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="S3_ME_Dummy_None_Ground_Ice" gather-range="Common_Caster_Circle_R296" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="S3_ME_Dummy_None_Ground_Poison" gather-range="Common_Caster_Circle_R296" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />

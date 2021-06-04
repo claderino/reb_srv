@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="ItemData" release-side="server" type="guild-action" version="0.1">
   <!--guildactiondata.xml-->
-  <record action="join-guild" exclusive-enable="N" open-enable="Y" />
+	<record action="join-guild" exclusive-enable="N" open-enable="Y" />
 	<record action="edit-guild-member-permission" exclusive-enable="Y" open-enable="N" />
 	<record action="change-guild-member-grade" exclusive-enable="Y" open-enable="N" />
 	<record action="change-guild-flag-bearer" exclusive-enable="Y" open-enable="N" />

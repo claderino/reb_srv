@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_itemskill_as.xml-->
-  <record alias="ItemSkill_AS_SummonPoint_G1_Lv1_01_E1" effect-1="ItemSkill_AS_SummonPoint_G1_Lv1_01_Flag" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_AS_SummonPoint_G1_Lv1_01_E1" effect-1="ItemSkill_AS_SummonPoint_G1_Lv1_01_Flag" skill-result="all" target="caster" target-state="all" />
 	<record alias="ItemSkill_AS_HeartStab_G1_Lv1_01_E1" effect-1="ItemSkill_AS_HeartStab_G1_Lv1_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
 	<record alias="ItemSkill_AS_HeartStab_Hide_G1_Lv1_01_E1" effect-1="ItemSkill_AS_HeartStab_G1_Hide_Lv1_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
 	<record alias="ItemSkill_AS_SummonPoint_G1_Lv2_01_E1" effect-1="ItemSkill_AS_SummonPoint_G1_Lv2_01_Flag" skill-result="all" target="caster" target-state="all" />

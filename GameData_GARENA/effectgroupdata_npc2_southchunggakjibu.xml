@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_southchunggakjibu.xml-->
-  <record alias="ME_Dummy_None_Cannon_E1_01" effect-1="ME_Dummy_None_Cannon_damage_first" skill-result="hit-critical-hit" target="first-target" target-state="all" />
+	<record alias="ME_Dummy_None_Cannon_E1_01" effect-1="ME_Dummy_None_Cannon_damage_first" skill-result="hit-critical-hit" target="first-target" target-state="all" />
 	<record alias="ME_Dummy_None_Cannon_E1_02" effect-1="ME_Dummy_None_Cannon_stun" skill-result="hit-critical-hit" target="second-target" target-state="all" target-state-first-filter="30000" />
 	<record alias="ME_GuGuBung_Destruction_Thunderbolt_E1_01" effect-1="ME_GuGuBung_Destruction_Thunderbolt_damage" effect-2="ME_GuGuBung_Destruction_Thunderbolt_Knockback" effect-3="ME_GuGuBung_Deal_embers" effect-4="ME_GuGuBung_Deal_burn" effect-5="Common_ReactToDown_Flag_200ms" skill-result="hit-critical-hit" target="second-target" target-state="Enemy" />
 	<record alias="ME_GuGuBung_Destruction_Thunderbolt_E1_p" effect-1="ME_GuGuBung_Destruction_Thunderbolt_damage" skill-result="parry" target="second-target" target-state="Enemy" />

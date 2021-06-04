@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_vortextemple.xml-->
-  <record alias="GWD_VT_B1_Flazard_Fire_WindyMoonSlash2_E1_01" effect-1="ME_ID2_Common_Melee_Damage_400" effect-2="GWD_VT_B1_Common_embers" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
+	<record alias="GWD_VT_B1_Flazard_Fire_WindyMoonSlash2_E1_01" effect-1="ME_ID2_Common_Melee_Damage_400" effect-2="GWD_VT_B1_Common_embers" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
 	<record alias="GWD_VT_B1_Flazard_Fire_WindyMoonSlash2_E1_P" effect-1="ME_ID2_Common_Melee_Damage_400" skill-result="parry-perfect-parry-counter" target="second-target" target-state="enemy" />
 	<record alias="GWD_VT_B1_Flazard_Fire_FireSword_E1_01" effect-1="ME_ID2_Common_Melee_Damage_420" effect-2="GWD_VT_B1_Common_embers" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
 	<record alias="GWD_VT_B1_Flazard_Fire_FireSword_E1_P" effect-1="ME_ID2_Common_Melee_Damage_420" skill-result="parry-perfect-parry-counter" target="second-target" target-state="enemy" />

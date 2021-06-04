@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc2_eastchunggakjibub.xml-->
-  <record alias="ME_SUB_B1_SeaMonsterBoss_None_PosionSpit_damage" buff-type="instant" id="59008010" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" power-percent-max="210" power-percent-min="210" type="force-attack" />
+	<record alias="ME_SUB_B1_SeaMonsterBoss_None_PosionSpit_damage" buff-type="instant" id="59008010" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" power-percent-max="210" power-percent-min="210" type="force-attack" />
 	<record alias="ME_SUB_B1_SeaMonsterBoss_None_Poisonlock_damage" aoe-damage="y" buff-type="instant" id="59008020" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" power-percent-max="460" power-percent-min="460" type="force-attack" />
 	<record alias="ME_SUB_B1_SeaMonsterBoss_None_Bleeding_InsDmg" attribute-1="독" buff-type="instant" hp-diff="-1528" id="59008021" level="1" type="hp-damage" />
 	<record alias="ME_SUB_B1_SeaMonsterBoss_None_TailSmash_damage" aoe-damage="y" buff-type="instant" id="59008030" level="1" link-stage="stage-1" link-type="normal" power-percent-max="465" power-percent-min="465" type="melee-physical-attack" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_cheonsangbunji.xml-->
-  <record alias="ME_WC_Dummy_0200_CannonAtk_E1_01" effect-1="ME_WC_Dummy_0200_CannonAtk_damage" effect-2="ME_WC_Dummy_0200_CannonAtk_knockback" effect-3="Common_ReactToDown_Flag_700ms" skill-result="all" target="second-target" target-state="enemy" />
+	<record alias="ME_WC_Dummy_0200_CannonAtk_E1_01" effect-1="ME_WC_Dummy_0200_CannonAtk_damage" effect-2="ME_WC_Dummy_0200_CannonAtk_knockback" effect-3="Common_ReactToDown_Flag_700ms" skill-result="all" target="second-target" target-state="enemy" />
 	<record alias="ME_WC_Dummy_0200_CannonAtk_E1_01_p" effect-1="ME_WC_Dummy_0200_CannonAtk_damage" skill-result="parry-perfect-parry-counter" target="second-target" target-state="enemy" />
 	<record alias="ME_WC_Dummy_0201_LightningAtk_E1_01" effect-1="ME_WC_Dummy_0201_LightningAtk_damage" effect-2="ME_WC_Dummy_0201_LightningAtk_stun" effect-3="Common_ReactToDown_Flag_1800ms" skill-result="all" target="second-target" target-state="enemy" />
 	<record alias="ME_WC_Dummy_0201_LightningAtk_E1_01_p" effect-1="ME_WC_Dummy_0201_LightningAtk_damage" skill-result="parry-perfect-parry-counter" target="second-target" target-state="enemy" />

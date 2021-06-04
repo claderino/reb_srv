@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc2.xml-->
-  <record alias="ME_Common_None_HateDown" buff-type="instant" drop-field-item="n" id="59000001" level="1" link-stage="stage-1" link-type="normal" stance="none" type="set-min-hate" />
+	<record alias="ME_Common_None_HateDown" buff-type="instant" drop-field-item="n" id="59000001" level="1" link-stage="stage-1" link-type="normal" stance="none" type="set-min-hate" />
 	<record alias="ME_Common_None_HateUP" buff-type="instant" drop-field-item="n" id="59000002" level="1" link-stage="stage-1" link-type="normal" stance="none" type="set-max-hate" />
 	<record alias="ME_Dummy_None_Fire_block" attribute-1="무적" buff-type="buff" drop-field-item="n" function-1="block-move" function-2="block-rotate" function-3="immune-damage" id="59000003" level="1" link-stage="stage-1" link-type="normal" passive-duration="0" stance="none" type="invincible" />
 	<record alias="ME_FireGorillaA_None_sound" buff-type="buff" drop-field-item="n" id="59000004" level="1" link-stage="stage-1" link-type="normal" passive-duration="5000" stance="none" type="Modify-ability-71" />

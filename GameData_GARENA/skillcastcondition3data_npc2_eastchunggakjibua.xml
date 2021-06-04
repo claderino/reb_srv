@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_eastchunggakjibua.xml-->
-  <record alias="S3_MH_SUA_B2_Assassin_Hide_Mine_Multi" gather-range="ID_MH_SUA_B2_Assassin_Hide_Mine_Multi" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_MH_SUA_B2_Assassin_Hide_Mine_Multi" gather-range="ID_MH_SUA_B2_Assassin_Hide_Mine_Multi" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_MH_SUA_B2_Assassin_Hide_Mine_Single" gather-range="ID_MH_SUA_B2_Assassin_Hide_Mine_Single" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_MH_SUA_B2_Assassin_Hide_MineBomb" gather-range="ID_MH_SUA_B2_Assassin_Hide_MineBomb" immune-caster-block-skill="y" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="S3_MH_SUA_B2_Assassin_Disturb_PoisonBreath" gather-range="ID_MH_SUA_B2_Assassin_Disturb_PoisonBreath" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />

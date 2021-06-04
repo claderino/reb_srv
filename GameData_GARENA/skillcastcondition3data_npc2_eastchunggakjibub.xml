@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_eastchunggakjibub.xml-->
-  <record alias="S3_ME_SUB_B1_SeaMonsterBoss_None_PosionSpit" fail-caster-flag-1="burrow" gather-range="ID_ME_SUB_B1_SeaMonsterBoss_None_PosionSpit" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_SUB_B1_SeaMonsterBoss_None_PosionSpit" fail-caster-flag-1="burrow" gather-range="ID_ME_SUB_B1_SeaMonsterBoss_None_PosionSpit" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_ME_SUB_B1_SeaMonsterBoss_None_Poisonlock" fail-caster-flag-1="burrow" gather-range="ID_ME_SUB_B1_SeaMonsterBoss_None_Poisonlock" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_ME_SUB_B1_SeaMonsterBoss_None_TailSmash" fail-caster-flag-1="burrow" gather-range="ID_ME_SUB_B1_SeaMonsterBoss_None_TailSmash" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_ME_SUB_B1_SeaMonsterBoss_None_JawUppercut" fail-caster-flag-1="burrow" gather-range="ID_ME_SUB_B1_SeaMonsterBoss_None_JawUppercut" success-target-dead-state="not-dead-restoration" target-type="all" />

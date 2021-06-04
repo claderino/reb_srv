@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_cheonsangbunji.xml-->
-  <record alias="ME_WC_Dummy_0200_CannonAtk" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_WC_Dummy_0200_CannonAtk" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="ME_WC_Dummy_0201_LightningAtk" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="ME_WC_GaneSha_0001_Swing" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="ME_WC_GaneSha_0001_GiantSwing" gather-range="PVE_Caster_Laser_CMax3000_Width200_Dis1952" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />

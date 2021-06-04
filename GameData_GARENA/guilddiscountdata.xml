@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="ItemData" release-side="server" type="guild-discount" version="0.5">
   <!--guilddiscountdata.xml-->
-  <record alias="GuildDiscount_itemgrowth_1p" />
+	<record alias="GuildDiscount_itemgrowth_1p" />
 	<record alias="GuildDiscount_itemgrowth_5p" item-growth="5" />
 	<record alias="GuildDiscount_itemgrowth_10p" item-growth="10" />
 	<record alias="GuildDiscount_12LV" item-growth="10" post-charge-discount-max="20000" post-charge-discount-rate="10" />

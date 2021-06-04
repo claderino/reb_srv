@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_palaceofsnow.xml-->
-  <record alias="S3_ME_BEA_B1_Fatman_None_Choke" fail-target-flag-1="npc-state-1" fail-target-flag-2="npc-state-2" fail-target-op="or" gather-range="ID_ME_BEA_B1_Fatman_None_Choke" link-stage="stage-1" link-state="link" link-type="inhalation" move-type="free" success-target-dead-state="not-dead-restoration" success-target-flag-1="link" target-type="all" />
+	<record alias="S3_ME_BEA_B1_Fatman_None_Choke" fail-target-flag-1="npc-state-1" fail-target-flag-2="npc-state-2" fail-target-op="or" gather-range="ID_ME_BEA_B1_Fatman_None_Choke" link-stage="stage-1" link-state="link" link-type="inhalation" move-type="free" success-target-dead-state="not-dead-restoration" success-target-flag-1="link" target-type="all" />
 	<record alias="S3_ME_BEA_B1_Fatman_None_Swing_G" gather-range="ID_ME_BEA_B1_Fatman_None_Swing_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_ME_BEA_B1_Fatman_None_Area360_G" gather-range="ID_ME_BEA_B1_Fatman_None_Area360_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_ME_BEA_B1_Fatman_None_Stab_G" gather-range="ID_ME_BEA_B1_Fatman_None_Stab_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />

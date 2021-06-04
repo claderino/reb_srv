@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="ItemSkill" version="0.10">
   <!--itemskilldata_bm.xml-->
-  <record alias="ItemSkill_BK_LightningSoulBlade_G1_Lv1_01" check-effect-flag-op="or" check-skill-result="all" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_BK_LightningSoulBlade_G1_Lv1_01_E1" skill-id="20603" skill-variation-id-1="11" skill-variation-id-2="21" target-skill-step="cast" />
+	<record alias="ItemSkill_BK_LightningSoulBlade_G1_Lv1_01" check-effect-flag-op="or" check-skill-result="all" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_BK_LightningSoulBlade_G1_Lv1_01_E1" skill-id="20603" skill-variation-id-1="11" skill-variation-id-2="21" target-skill-step="cast" />
 	<record alias="ItemSkill_BK_LightningSoulBlade_G1_Lv1_02" check-effect-flag-1="flydragon" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_BK_LightningSoulBlade_G1_Lv1_02_E1" skill-id="20233" skill-variation-id-1="21" target-skill-step="exec-1" />
 	<record alias="ItemSkill_BK_LightningSoulBlade_G1_Lv1_03" check-effect-flag-1="flydragon" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_BK_LightningSoulBlade_G1_Lv1_03_E1" skill-id="20233" skill-variation-id-1="11" target-skill-step="exec-1" />
 	<record alias="ItemSkill_BK_LightningSoulBlade_G1_Lv1_04" check-effect-flag-1="flydragon" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_BK_LightningSoulBlade_G1_Lv1_02_E1" skill-id="20400" skill-variation-id-1="21" target-skill-step="exec-1" />

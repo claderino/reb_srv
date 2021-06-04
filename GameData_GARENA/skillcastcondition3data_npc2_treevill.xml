@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_treevill.xml-->
-  <record alias="SRA_R0_AnthroEntA_None_Natk" gather-range="ID_Bagic_Target" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="SRA_R0_AnthroEntA_None_Natk" gather-range="ID_Bagic_Target" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="SRA_R0_AnthroEntA_None_MultiStab" gather-range="ID_Bagic_Laser_W0M50_F4M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="SRA_R0_AnthroEntA_None_HeavyStrike" gather-range="ID_Bagic_Laser_W0M50_F4M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="SRA_R0_AnthroEntA_None_LeafRush" gather-range="ID_Bagic_Target" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />

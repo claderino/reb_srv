@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_islandofoutlaws.xml-->
-  <record alias="SW_IO_B5_YeonHwaLin_BlindFire" gather-range="ID_IO_B5_YeonHwaLin_BlindFire" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="SW_IO_B5_YeonHwaLin_BlindFire" gather-range="ID_IO_B5_YeonHwaLin_BlindFire" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="SW_IO_B5_YeonHwaLin_BackStep" gather-range="PVE_Caster_T_CMax3000_FMax3000_EMax3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="SW_IO_B5_Dummy_AnchorRush" gather-range="ID_IO_B5_YeonHwaLin_AnchorRush" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="SW_IO_B5_Dummy_TurretWave" gather-range="ID_MH_MS3_B5_Soyangsang_BackHack_Wave" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />

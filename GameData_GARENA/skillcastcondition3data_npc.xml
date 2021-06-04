@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc.xml-->
-  <record alias="ME_AdamantineMan_None_Area360_skill3" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax632" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_AdamantineMan_None_Area360_skill3" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax632" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="ME_AdamantineMan_None_Capture_skill3" gather-range="PVE_Target_T_CMax3000_FMax3000_EMax3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="ME_AdamantineMan_None_Dash_skill3" fail-target-effect-attribute-1="공중" gather-range="PVE_Ground_T360_CMax3000_RMin0_RMax456" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="ME_AdamantineMan_None_Laser_skill3" gather-range="PVE_Caster_Laser_CMax3000_Width240_Dis656" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />

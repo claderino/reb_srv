@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_wavesofnightmare.xml-->
-  <record alias="ME_BEE_B1_FireGorillaA_None_Attack_NPC_First" effect-1="ME_BEE_B1_FireGorillaA_None_Attack_Flag" skill-result="all" target="first-target" target-state="Enemy" target-state-first-filter="30000" />
+	<record alias="ME_BEE_B1_FireGorillaA_None_Attack_NPC_First" effect-1="ME_BEE_B1_FireGorillaA_None_Attack_Flag" skill-result="all" target="first-target" target-state="Enemy" target-state-first-filter="30000" />
 	<record alias="ME_BEE_B1_FireGorillaA_None_Attack_NPC_Second" effect-1="ME_BEE_B1_FireGorillaA_None_Attack_Flag" skill-result="all" target="second-target" target-state="Enemy" target-state-first-filter="30000" />
 	<record alias="ME_BEE_B1_FireGorillaA_None_Attack_NPC_FirstSecond" effect-1="ME_BEE_B1_FireGorillaA_None_Attack_Flag" skill-result="all" target="first-second-target" target-state="Enemy" target-state-first-filter="30000" />
 	<record alias="ME_BEE_B1_FireGorillaA_None_NAtk3_E1_01" effect-1="ME_ID2_Common_Melee_Damage_250" skill-result="hit-critical-hit" target="second-target" target-state="Enemy" />
