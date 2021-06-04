@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_forcemaster.xml-->
-	<record alias="ForceMaster_Common_Sp_Charge1" effect-1="ForceMaster_Common_2ndGage_Charge1" skill-result="hit-critical-hit" target="caster" target-state="all" />
+  <record alias="ForceMaster_Common_Sp_Charge1" effect-1="ForceMaster_Common_2ndGage_Charge1" skill-result="hit-critical-hit" target="caster" target-state="all" />
 	<record alias="ForceMaster_Common_Sp_Charge2" effect-1="ForceMaster_Common_2ndGage_Charge2" skill-result="hit-critical-hit" target="caster" target-state="all" />
 	<record alias="ForceMaster_Deal_common_goodforce_fire" effect-1="ForceMaster_Deal_common_FireBit_1" skill-result="critical-hit" target="caster" target-state="all" target-state-first-filter="60097" />
 	<record alias="ForceMaster_Deal_common_goodforce_ice" effect-1="ForceMaster_Deal_common_IceBit_1" skill-result="critical-hit" target="caster" target-state="all" target-state-first-filter="60103" />

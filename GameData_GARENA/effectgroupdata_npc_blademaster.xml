@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc_blademaster.xml-->
-	<record alias="MH_BladeMaster_Common_HateDown" effect-1="MH_BladeMaster_Common_HateDown" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+  <record alias="MH_BladeMaster_Common_HateDown" effect-1="MH_BladeMaster_Common_HateDown" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
 	<record alias="MH_BladeMaster_Batto_batto_E1_01" effect-1="MH_BladeMaster_Batto_batto_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
 	<record alias="MH_BladeMaster_Batto_batto_E1_02" effect-1="MH_BladeMaster_Batto_batto_damage" skill-result="parry-perfect-parry-counter" target="first-second-target" target-state="enemy" />
 	<record alias="MH_BladeMaster_Batto_crescent_slash_E1_01" effect-1="MH_BladeMaster_Batto_crescent_slash_LV1_Damage" effect-2="MH_BladeMaster_Batto_crescent_slash_LV1_DashBlock1" effect-3="MH_BladeMaster_Batto_crescent_slash_LV1_Speed1" skill-result="Hit-Critical-Hit" target="second-target" target-state="Enemy" />

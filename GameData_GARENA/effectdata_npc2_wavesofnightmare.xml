@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc2_wavesofnightmare.xml-->
-	<record alias="MH_BEG_R0_Common_None_Explosion_Die_Show" buff-type="instant" hp-percent="-100" id="59030010" knockback-speed="0" level="1" type="hp-damage" />
+  <record alias="MH_BEG_R0_Common_None_Explosion_Die_Show" buff-type="instant" hp-percent="-100" id="59030010" knockback-speed="0" level="1" type="hp-damage" />
 	<record alias="MH_BEG_R0_Common_None_SelfDie" buff-type="instant" hp-percent="-100" id="59030011" knockback-speed="0" level="1" type="hp-damage" />
 	<record alias="ME_BEE_B1_FireGorillaA_None_Attack_Flag" attribute-1="멍해짐" buff-type="buff" catch-linked="attach" catch-linker="attach" id="59027000" inhalation-linked="attach" inhalation-linker="attach" level="1" mount-linked="attach" mount-linker="attach" passive-duration="1000" type="Modify-Ability-70" />
 	<record alias="ME_BEE_B1_FireGorillaA_None_SpHeal" buff-type="instant" id="59027001" level="1" sp-diff="3" type="sp-heal" />

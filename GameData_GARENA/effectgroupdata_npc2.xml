@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2.xml-->
-	<record alias="ME_Dummy_None_Ground_Fire_E1_01" effect-1="ME_Dummy_None_Ground_Fire_damage" effect-2="MH_Common_Deal_embers" effect-3="MH_Common_None_Kneel" skill-result="hit-critical-hit" target="second-target" target-state="Enemy" />
+  <record alias="ME_Dummy_None_Ground_Fire_E1_01" effect-1="ME_Dummy_None_Ground_Fire_damage" effect-2="MH_Common_Deal_embers" effect-3="MH_Common_None_Kneel" skill-result="hit-critical-hit" target="second-target" target-state="Enemy" />
 	<record alias="ME_Dummy_None_Ground_Ice_E1_01" effect-1="MH_Common_SpeedDown_40" skill-result="hit-critical-hit" target="second-target" target-state="Enemy" />
 	<record alias="ME_Dummy_None_Ground_Ice_E4_01" effect-1="ME_Dummy_None_Ground_Ice_damage" skill-result="hit-critical-hit" target="second-target" target-state="Enemy" />
 	<record alias="ME_Dummy_None_Ground_Ice_E5_01" effect-1="MH_Common_None_rapid_cooling_fastfreezing" skill-result="hit-critical-hit" target="second-target" target-state="Enemy" />

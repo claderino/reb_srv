@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_destroyer.xml-->
-	<record alias="Destroyer_Common_MoveBlock_Binding" effect-1="Destroyer_Common_MoveBlock_Binding" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />
+  <record alias="Destroyer_Common_MoveBlock_Binding" effect-1="Destroyer_Common_MoveBlock_Binding" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />
 	<record alias="Destroyer_Common_Dispel_Defend_Up" effect-1="Destroyer_Common_dispel_Defend_Up" skill-result="All" target="caster" target-state="all" />
 	<record alias="Destroyer_Protection_Judgement_Lv1_E1_01_Move" effect-1="Destroyer_Protection_Judgement_Lv1_damage_SpDrain" skill-result="Hit-Critical-Hit" target="first-second-target" target-state="enemy" />
 	<record alias="Destroyer_Protection_Judgement_Lv1_E1_02_Move" effect-1="Destroyer_Protection_Judgement_Lv1_damage" skill-result="Parry-Perfect-Parry-Counter" target="first-second-target" target-state="enemy" />

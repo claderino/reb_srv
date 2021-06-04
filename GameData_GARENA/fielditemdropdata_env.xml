@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="AIData" release-side="server" type="FielditemDrop" version="0.8">
   <!--fielditemdropdata_env.xml-->
-	<record alias="e_onoff_bombheap_fd" drop-case="manipulated" drop-place="hand" fielditem-1="ShockBombA_Lv26" prob-1="100" type="env" />
+  <record alias="e_onoff_bombheap_fd" drop-case="manipulated" drop-place="hand" fielditem-1="ShockBombA_Lv26" prob-1="100" type="env" />
 	<record alias="e_onoff_warmfire_01_fd" drop-case="manipulated" drop-place="hand" fielditem-1="Q_TorchlightF" prob-1="100" type="env" />
 	<record alias="e_destroy_boom_01_fd" area="2100_69" drop-case="killed" drop-place="area" fielditem-1="Q_BombA" prob-1="100" type="env" />
 	<record alias="e_destroy_boom_02_fd" area="2100_115" drop-case="killed" drop-place="area" fielditem-1="Q_BombA" prob-1="100" type="env" />

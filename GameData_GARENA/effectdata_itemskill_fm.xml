@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_itemskill_fm.xml-->
-	<record alias="ItemSkill_FM_fire_bit_missile_G1_Lv1_01_Flag" buff-type="buff" flag="Smash" id="40400001" level="1" passive-duration="15000" save-db="n" type="Modify-Ability-258" />
+  <record alias="ItemSkill_FM_fire_bit_missile_G1_Lv1_01_Flag" buff-type="buff" flag="Smash" id="40400001" level="1" passive-duration="15000" save-db="n" type="Modify-Ability-258" />
 	<record alias="ItemSkill_FM_fire_bit_missile_G1_Lv1_02_Flag" buff-type="buff" flag="silverweb-1" id="40400002" level="1" passive-duration="15000" save-db="n" type="Modify-Ability-258" />
 	<record alias="ItemSkill_FM_fire_bit_missile_G1_Lv1_03_Damage" attack-attribute-type="fire" buff-type="instant" id="40400003" level="1" power-percent-max="43" power-percent-min="43" save-db="n" type="melee-physical-attack" />
 	<record alias="ItemSkill_FM_fire_bit_missile_G1_Lv1_04_Damage" attack-attribute-type="ice" buff-type="instant" id="40400004" level="1" power-percent-max="23" power-percent-min="23" save-db="n" type="melee-physical-attack" />

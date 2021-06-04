@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="ZoneData0" release-side="server" type="ZoneNpcSpawn" version="0.17">
   <!--zonenpcspawndata_baekcheong_guimunguan_nightmare.xml-->
-	<record act-detect-1="none" act-sequence="peace_fix_default" alias="a_5907_2" area="5907_2" id="1" init-spawn="y" npc="MH_C3_AngSi_0009" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="225" yaw-min="225" zone="5907" />
+  <record act-detect-1="none" act-sequence="peace_fix_default" alias="a_5907_2" area="5907_2" id="1" init-spawn="y" npc="MH_C3_AngSi_0009" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="225" yaw-min="225" zone="5907" />
 	<record act-detect-1="both-360" act-pathway-1="5908_2_P1" act-pathway-2="5908_2_P2" act-pathway-3="5908_2_P3" act-sequence="ME_C3_KangSiFat_0004_peace" alias="a_5908_2" area="5908_2" id="1" init-spawn="y" npc="ME_C3_KangSiFat_0004" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="45" yaw-min="45" zone="5908" />
 	<record act-area-1="5908_3" act-detect-1="both-360" act-sequence="Nightmare_peace_move1_default" alias="a_5908_3" area="5908_3" id="2" init-spawn="y" npc="ME_C3_KangSiTall_0004" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="355" yaw-min="0" zone="5908" />
 	<record act-area-1="5908_4" act-detect-1="both-360" act-sequence="Nightmare_peace_move1_default" alias="a_5908_4" area="5908_4" id="3" init-spawn="y" npc="ME_C3_KangSiTall_0004" respawn="n" respawn-delay-max="80000" respawn-delay-min="50000" yaw-max="355" yaw-min="0" zone="5908" />

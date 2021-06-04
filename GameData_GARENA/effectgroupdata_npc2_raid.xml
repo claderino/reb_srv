@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_raid.xml-->
-	<record alias="MH_RD_B3_ForceMAster_None_Rage_E1_01" effect-1="ME_RD_B3_MuseongM_None_Berserk_death" individual-probability="n" skill-result="all" target="second-target" target-state="enemy" />
+  <record alias="MH_RD_B3_ForceMAster_None_Rage_E1_01" effect-1="ME_RD_B3_MuseongM_None_Berserk_death" individual-probability="n" skill-result="all" target="second-target" target-state="enemy" />
 	<record alias="MH_RD_B3_ForceMAster_None_Rage_E1_p" effect-1="MH_RD_B3_ForceMAster_None_Rage_damage" individual-probability="n" skill-result="parry-perfect-parry-counter" target="second-target" target-state="enemy" />
 	<record alias="ME_RD_B3_ForceMAster_None_EvilArmor_E1_01" effect-1="ME_RD_B3_ForceMAster_None_EvilArmor_Buff" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
 	<record alias="ME_RD_B3_ForceMAster_None_EvilArmor_E1_p" effect-1="ME_RD_B3_ForceMAster_None_EvilArmor_Buff" skill-result="parry-perfect-parry-counter" target="first-target" target-state="enemy" />

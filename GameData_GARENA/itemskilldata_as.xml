@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="ItemSkill" version="0.10">
   <!--itemskilldata_as.xml-->
-	<record alias="ItemSkill_AS_SummonPoint_G1_Lv1_01" check-effect-flag-op="or" check-skill-result="all" include-inheritance-skill="n" item-skill-effect-1="ItemSkill_AS_SummonPoint_G1_Lv1_01_E1" skill-id="25214" skill-variation-id-1="13" skill-variation-id-2="53" skill-variation-id-3="23" skill-variation-id-4="63" target-skill-step="cast" />
+  <record alias="ItemSkill_AS_SummonPoint_G1_Lv1_01" check-effect-flag-op="or" check-skill-result="all" include-inheritance-skill="n" item-skill-effect-1="ItemSkill_AS_SummonPoint_G1_Lv1_01_E1" skill-id="25214" skill-variation-id-1="13" skill-variation-id-2="53" skill-variation-id-3="23" skill-variation-id-4="63" target-skill-step="cast" />
 	<record alias="ItemSkill_AS_HeartStab_G1_Lv1_01" check-effect-flag-1="HighKick" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="n" item-skill-effect-1="ItemSkill_AS_HeartStab_G1_Lv1_01_E1" skill-id="25370" target-skill-step="exec-1" />
 	<record alias="ItemSkill_AS_HeartStab_G1_Lv1_02" check-effect-flag-1="HighKick" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="n" item-skill-effect-1="ItemSkill_AS_HeartStab_G1_Lv1_01_E1" skill-id="25266" target-skill-step="exec-1" />
 	<record alias="ItemSkill_AS_HeartStab_Hide_G1_Lv1_01" check-effect-flag-1="HighKick" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="n" item-skill-effect-1="ItemSkill_AS_HeartStab_Hide_G1_Lv1_01_E1" skill-id="25371" target-skill-step="exec-1" />

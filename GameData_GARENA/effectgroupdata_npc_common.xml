@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc_common.xml-->
-	<record alias="EG_NPC_Common_Force_Damage_10" effect-1="ME_ID2_Common_Force_Damage_10" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+  <record alias="EG_NPC_Common_Force_Damage_10" effect-1="ME_ID2_Common_Force_Damage_10" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
 	<record alias="EG_NPC_Common_Force_Damage_10_p" effect-1="ME_ID2_Common_Force_Damage_10" skill-result="parry-perfect-parry-counter" target="first-second-target" target-state="enemy" />
 	<record alias="EG_NPC_Common_Force_Damage_20" effect-1="ME_ID2_Common_Force_Damage_20" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
 	<record alias="EG_NPC_Common_Force_Damage_20_p" effect-1="ME_ID2_Common_Force_Damage_20" skill-result="parry-perfect-parry-counter" target="first-second-target" target-state="enemy" />

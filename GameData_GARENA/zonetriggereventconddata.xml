@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="AIData" release-side="server" type="ZoneTriggerEventCond" version="0.11">
   <!--zonetriggereventconddata.xml-->
-	<record alias="5510_Invade_Stage_Start" event-day-of-week="entire-week" event-hour-1="0" event-hour-2="18" event-hour-3="21" event-minute-1="0" event-minute-2="0" event-minute-3="0" type="weekly-event" />
+  <record alias="5510_Invade_Stage_Start" event-day-of-week="entire-week" event-hour-1="0" event-hour-2="18" event-hour-3="21" event-minute-1="0" event-minute-2="0" event-minute-3="0" type="weekly-event" />
 	<record alias="5510_Invade_Stage_Start_test" event-day-of-week="entire-week" event-hour-1="10" event-hour-2="11" event-hour-3="12" event-hour-4="13" event-hour-5="14" event-hour-6="15" event-hour-7="16" event-hour-8="17" event-minute-1="0" event-minute-2="0" event-minute-3="0" event-minute-4="0" event-minute-5="0" event-minute-6="0" event-minute-7="0" event-minute-8="0" type="weekly-event" />
 	<record alias="5510_Invade_Stage_Failure_Killed_01" kill-count="1" target-npc-1="ME_SA_JeGukGun_0112" target-npc-2="ME_SA_JeGukGun_0113" target-npc-3="ME_SA_JeGukGun_0114" type="npc-killed-event" />
 	<record alias="5510_Invade_Stage_Failure_Killed_02" kill-count="1" target-npc-1="ME_SA_JeGukGun_0112" target-npc-2="ME_SA_JeGukGun_0113" target-npc-3="ME_SA_JeGukGun_0114" type="npc-killed-event" />

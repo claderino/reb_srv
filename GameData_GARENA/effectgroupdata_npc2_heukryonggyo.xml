@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_heukryonggyo.xml-->
-	<record alias="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath_E1_01" effect-1="ME_ID2_Common_Force_Damage_270" effect-2="MH_Common_None_feedback_KnockbackD" effect-3="Common_ReactToDown_Flag_700ms" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="40058" />
+  <record alias="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath_E1_01" effect-1="ME_ID2_Common_Force_Damage_270" effect-2="MH_Common_None_feedback_KnockbackD" effect-3="Common_ReactToDown_Flag_700ms" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="40058" />
 	<record alias="ME_BEF_B1_CrocodileSharkTribeC2_SpellBreath_E1_p" effect-1="ME_ID2_Common_Force_Damage_270" skill-result="parry-perfect-parry-counter" target="second-target" target-state="enemy" />
 	<record alias="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison_E1_01" effect-1="ME_BEF_B1_CrocodileSharkTribeC2_BonePrison_Kneel" skill-result="all" target="first-second-target" target-state="enemy" />
 	<record alias="ME_BEF_B1_CrocodileSharkTribeC2_SpellFire_E1_01" effect-1="ME_ID2_Common_Force_Damage_180" effect-2="MH_Common_None_feedback_KnockbackD" effect-3="Common_ReactToDown_Flag_700ms" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />

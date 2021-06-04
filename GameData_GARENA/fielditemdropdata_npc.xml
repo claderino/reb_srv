@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="AIData" release-side="server" type="FielditemDrop" version="0.8">
   <!--fielditemdropdata_npc.xml-->
-	<record alias="Test_Npc_Killed_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv4" prob-1="100" type="npc" />
+  <record alias="Test_Npc_Killed_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv4" prob-1="100" type="npc" />
 	<record alias="Test_Npc_Bleeding_fd" drop-case="bleeding" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv4" hp-percent="80" prob-1="100" type="npc" />
 	<record alias="Test_Npc_effect_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="다운" fielditem-1="TwoHand_Flylizard_LanternA_Lv4" prob-1="100" type="npc" />
 	<record alias="Test_Npc_effect-and-bleeding_fd" drop-case="effect-and-bleeding" drop-place="front-npc" effect-attribute-1="다운" fielditem-1="TwoHand_Flylizard_LanternA_Lv4" hp-percent="50" prob-1="100" type="npc" />

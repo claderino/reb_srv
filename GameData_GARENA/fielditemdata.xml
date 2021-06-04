@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="AIData" release-side="server" type="fielditem" version="0.57">
   <!--fielditemdata.xml-->
-	<record alias="None" explosion-time="0" id="1" init-activated="n" not-change-create-pos="n" pickup-duration="600" putdown-duration="400" remain-duration="20000" target-state="enemy" type="use" />
+  <record alias="None" explosion-time="0" id="1" init-activated="n" not-change-create-pos="n" pickup-duration="600" putdown-duration="400" remain-duration="20000" target-state="enemy" type="use" />
 	<record alias="Ref_Bomb" explosion-time="6000" id="2" init-activated="n" invoke-effect-1="Gadget_BombA_Lv25_Damage" invoke-effect-2="Gadget_OneHand_BombA" not-change-create-pos="n" pickup-duration="600" putdown-duration="400" remain-duration="20000" target-radius="37" target-state="all" throw-skill="Gadget_OneHand_BombA_Damage_Lv12" throw-skill3="Gadget_OneHand_BombA_Damage_Lv12" type="throw" use-count="1" />
 	<record alias="Ref_Pot" consume-use-count-1="1" explosion-time="0" id="3" init-activated="n" not-change-create-pos="n" pickup-duration="600" putdown-duration="400" remain-duration="20000" target-state="enemy" type="use" use-count="1" use-skill-1="Gadget_PotA_Damage_Lv1" use-skill3-1="Gadget_PotA_Damage_Lv1" />
 	<record alias="Ref_Sword" consume-use-count-1="1" explosion-time="0" id="4" init-activated="n" not-change-create-pos="n" pickup-duration="600" putdown-duration="400" remain-duration="20000" target-state="enemy" type="use" use-count="5" use-skill-1="Gadget_SlowswordA_Damage_Lv1" use-skill3-1="Gadget_SlowswordA_Damage_Lv1" />

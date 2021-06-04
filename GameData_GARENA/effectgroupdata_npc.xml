@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc.xml-->
-	<record alias="ME_AdamantineMan_None_Area360_E1_01" effect-1="ME_AdamantineMan_None_Area360_damage" individual-probability="n" skill-result="Hit-Critical-Hit" target="second-target" target-state="enemy" />
+  <record alias="ME_AdamantineMan_None_Area360_E1_01" effect-1="ME_AdamantineMan_None_Area360_damage" individual-probability="n" skill-result="Hit-Critical-Hit" target="second-target" target-state="enemy" />
 	<record alias="ME_AdamantineMan_None_Area360_E1_p" effect-1="ME_AdamantineMan_None_Area360_damage" individual-probability="n" skill-result="Parry-Perfect-Parry-Counter" target="second-target" target-state="enemy" />
 	<record alias="ME_AdamantineMan_None_Area360_E5_01" effect-1="ME_AdamantineMan_None_Area360_knockback" effect-2="PVE_Common_HateDown" effect-3="Common_ReactToDown_Flag_700ms" individual-probability="n" skill-result="Hit-Critical-Hit" target="second-target" target-state="enemy" />
 	<record alias="ME_AdamantineMan_None_Area360_E5_counter" effect-1="ME_AdamantineMan_None_Area360_damage" individual-probability="n" skill-result="Counter" target="second-target" target-state="enemy" />

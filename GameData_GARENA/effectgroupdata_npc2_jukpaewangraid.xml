@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_jukpaewangraid.xml-->
-	<record alias="RDC_B1_AncientAdamantineMan_None_Curse_E1_01" effect-1="ME_ID2_Common_Instantaneous_Death" skill-result="all" target="second-target" target-state="enemy" />
+  <record alias="RDC_B1_AncientAdamantineMan_None_Curse_E1_01" effect-1="ME_ID2_Common_Instantaneous_Death" skill-result="all" target="second-target" target-state="enemy" />
 	<record alias="RDC_B1_JukPaeWang_DonutExplosion_E1_01" effect-1="RDC_B1_JukPaeWang_Debuff" effect-2="RDC_B1_JukPaeWang_Debuff_TimeCheck" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="60058" />
 	<record alias="RDC_B1_JukPaeWang_PatterSword_E1_01" effect-1="RDC_B1_JukPaeWang_Debuff" effect-2="RDC_B1_JukPaeWang_Debuff_TimeCheck" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="60058" />
 	<record alias="RDC_B1_JukPaeWang_DefenseExplosion_E1_01" effect-1="RDC_B1_JukPaeWang_Debuff" effect-2="RDC_B1_JukPaeWang_Debuff_TimeCheck" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="60058" />

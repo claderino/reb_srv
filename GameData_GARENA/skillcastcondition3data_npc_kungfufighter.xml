@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc_kungfufighter.xml-->
-	<record alias="MH_KungfuMaster_Attack_Armbar_Lv1_skill3" gather-range="PVE_Target_T_CMax10000_FMax10000_EMax10000" immune-caster-block-skill="n" link-stage="stage-1" link-state="link" link-type="mount" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+  <record alias="MH_KungfuMaster_Attack_Armbar_Lv1_skill3" gather-range="PVE_Target_T_CMax10000_FMax10000_EMax10000" immune-caster-block-skill="n" link-stage="stage-1" link-state="link" link-type="mount" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="MH_KungfuMaster_Attack_Armbar_Lv1_Hatedown_skill3" gather-range="PVE_Target_T_CMax10000_FMax10000_EMax10000" immune-caster-block-skill="n" link-stage="stage-1" link-state="link" link-type="mount" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="MH_KungfuMaster_Attack_Commandskill_right_Lv1_skill3" gather-range="PVE_Target_T_CMax384_FMax800_EMax360" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="MH_KungfuMaster_Attack_Commandskill_left_Lv1_skill3" gather-range="PVE_Target_T_CMax384_FMax800_EMax360" immune-caster-block-skill="n" link-state="not-link" link-type="none" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />

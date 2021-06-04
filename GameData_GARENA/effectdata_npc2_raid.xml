@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc2_raid.xml-->
-	<record alias="MH_RD_B3_ForceMAster_None_Rage_damage" buff-type="instant" id="59028000" level="1" power-percent-max="400" power-percent-min="400" type="melee-physical-attack" />
+  <record alias="MH_RD_B3_ForceMAster_None_Rage_damage" buff-type="instant" id="59028000" level="1" power-percent-max="400" power-percent-min="400" type="melee-physical-attack" />
 	<record alias="ME_RD_B3_Ghost_change" buff-type="buff" drop-field-item="y" id="59028001" leave-zone-detach="y" level="1" passive-duration="60000" type="ghost" />
 	<record alias="ME_RD_B3_MuseongGhost_energy_check" buff-type="buff" hp-diff="25120" id="59028010" leave-zone-detach="y" level="1" passive-duration="3000" stack-amount="99" target-combat-mode="y" transform-effect="ME_RD_B3_MuseongGhost_energy_check_Q3" type="Modify-Ability-72" />
 	<record alias="ME_RD_B3_MuseongGhost_energy_check_Q3" attribute-1="퀘스트-3" buff-type="buff" id="59028011" level="1" link-stage="stage-1" link-type="normal" passive-duration="1000" target-combat-mode="y" type="Modify-Ability-139" />

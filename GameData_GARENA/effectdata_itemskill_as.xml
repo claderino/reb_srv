@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_itemskill_as.xml-->
-	<record alias="ItemSkill_AS_SummonPoint_G1_Lv1_01_Flag" buff-type="buff" flag="HighKick" id="40500001" level="1" miss-probability="0" passive-duration="10000" save-db="n" type="Modify-Ability-109" />
+  <record alias="ItemSkill_AS_SummonPoint_G1_Lv1_01_Flag" buff-type="buff" flag="HighKick" id="40500001" level="1" miss-probability="0" passive-duration="10000" save-db="n" type="Modify-Ability-109" />
 	<record alias="ItemSkill_AS_HeartStab_G1_Lv1_Damage" attack-attribute-type="void" buff-type="instant" id="40500002" level="1" miss-probability="0" power-percent-max="140" power-percent-min="140" save-db="n" type="melee-physical-attack" />
 	<record alias="ItemSkill_AS_HeartStab_G1_Hide_Lv1_Damage" attack-attribute-type="lightning" buff-type="instant" id="40500003" level="1" miss-probability="0" power-percent-max="140" power-percent-min="140" save-db="n" type="melee-physical-attack" />
 	<record alias="ItemSkill_AS_SummonPoint_G1_Lv2_01_Flag" buff-type="buff" flag="HighKick" id="40500004" level="1" miss-probability="0" passive-duration="10000" save-db="n" type="Modify-Ability-109" />

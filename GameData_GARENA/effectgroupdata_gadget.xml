@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_gadget.xml-->
-	<record alias="Gadget_BombA_Damage_Lv1_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
+  <record alias="Gadget_BombA_Damage_Lv1_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
 	<record alias="Gadget_BombA_Damage_Lv2_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
 	<record alias="Gadget_BombA_Damage_Lv3_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
 	<record alias="Gadget_PotA_Damage_Lv1_E1_01" effect-1="80003" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />

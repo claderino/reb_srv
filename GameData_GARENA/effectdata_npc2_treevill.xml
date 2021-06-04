@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc2_treevill.xml-->
-	<record alias="SRA_R0_AnthroEntB_None_RearDash_Root" apply-duration-formula="y" attribute-1="이동불가" buff-type="debuff" drop-field-item="n" function-1="block-move" function-2="block-rotate" id="51019500" immune-attribute-1="흡공" level="1" passive-duration="3000" target-combat-mode="y" type="Modify-Ability-70" />
+  <record alias="SRA_R0_AnthroEntB_None_RearDash_Root" apply-duration-formula="y" attribute-1="이동불가" buff-type="debuff" drop-field-item="n" function-1="block-move" function-2="block-rotate" id="51019500" immune-attribute-1="흡공" level="1" passive-duration="3000" target-combat-mode="y" type="Modify-Ability-70" />
 	<record alias="ME_AnthroEntB_None_RearDash_Root" apply-duration-formula="y" attribute-1="이동불가" buff-type="debuff" drop-field-item="n" function-1="block-move" function-2="block-rotate" id="51019501" immune-attribute-1="흡공" level="1" passive-duration="3000" target-combat-mode="y" type="Modify-Ability-70" />
 	<record alias="SRA_R0_AnthroEntC_None_VineZone_Root" apply-duration-formula="y" attribute-1="이동불가" buff-type="debuff" drop-field-item="n" function-1="block-move" function-2="block-rotate" id="51019630" immune-attribute-1="흡공" level="1" passive-duration="1000" target-combat-mode="y" type="Modify-Ability-70" />
 	<record alias="ME_AnthroEntC_None_VineZone_Root" apply-duration-formula="y" attribute-1="이동불가" buff-type="debuff" drop-field-item="n" function-1="block-move" function-2="block-rotate" id="51019631" immune-attribute-1="흡공" level="1" passive-duration="1000" target-combat-mode="y" type="Modify-Ability-70" />

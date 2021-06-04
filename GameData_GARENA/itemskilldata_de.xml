@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="ItemSkill" version="0.10">
   <!--itemskilldata_de.xml-->
-	<record alias="ItemSkill_DE_Wrath_G1_Lv1_01" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_DE_Wrath_G1_Lv1_02_E1" skill-id="24020" skill-variation-id-1="11" target-skill-step="exec-1" />
+  <record alias="ItemSkill_DE_Wrath_G1_Lv1_01" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_DE_Wrath_G1_Lv1_02_E1" skill-id="24020" skill-variation-id-1="11" target-skill-step="exec-1" />
 	<record alias="ItemSkill_DE_Wrath_G1_Lv1_02" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_DE_Wrath_G1_Lv1_03_E1" skill-id="24020" skill-variation-id-1="21" target-skill-step="exec-1" />
 	<record alias="ItemSkill_DE_Wrath_G1_Lv1_03" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_DE_Wrath_G1_Lv1_02_E1" skill-id="24590" skill-variation-id-1="11" target-skill-step="exec-1" />
 	<record alias="ItemSkill_DE_Wrath_G1_Lv1_04" check-effect-flag-op="or" check-skill-result="hit-critical-hit" include-inheritance-skill="y" item-skill-effect-1="ItemSkill_DE_Wrath_G1_Lv1_03_E1" skill-id="24590" skill-variation-id-1="21" target-skill-step="exec-1" />

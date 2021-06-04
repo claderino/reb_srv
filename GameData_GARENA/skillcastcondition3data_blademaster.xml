@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_blademaster.xml-->
-	<record alias="BladeMaster_Common_Disabled" gather-range="Common_Target_D304" move-type="free" required-weapon-type="aura-bangle" stance="파괴" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+  <record alias="BladeMaster_Common_Disabled" gather-range="Common_Target_D304" move-type="free" required-weapon-type="aura-bangle" stance="파괴" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="BladeMaster_Sword_full_moon_slash_LV1" gather-range="BM_Caster_T360_CastMax_296_RMin0_RMax304" move-type="free" required-weapon-type="sword" stance="천검세" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="BladeMaster_Batto_full_moon_slash_LV1" gather-range="BM_Caster_T360_CastMax_296_RMin0_RMax304" move-type="free" required-weapon-type="sword" stance="납도" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="BladeMaster_Sword_full_moon_slash_LV12" check-sp-type="point" check-sp-value="2" gather-range="BM_Caster_T360_CastMax_296_RMin0_RMax304" move-type="free" required-weapon-type="sword" stance="천검세" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />

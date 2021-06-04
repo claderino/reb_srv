@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc_warlock.xml-->
-	<record alias="MH_Warlock_Spell_AbsoluteDefense_Lv1_buff" buff-type="buff" detach-count="1" detach-slot-1="attacked-miss" flag="catchshield" function-1="immune-damage" function-2="immune-debuff" id="55170020" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" modify-ability-1="defend-immune-base-percent" modify-ability-diff-1="1000" passive-duration="5000" stance="none" type="Modify-Ability-152" />
+  <record alias="MH_Warlock_Spell_AbsoluteDefense_Lv1_buff" buff-type="buff" detach-count="1" detach-slot-1="attacked-miss" flag="catchshield" function-1="immune-damage" function-2="immune-debuff" id="55170020" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" modify-ability-1="defend-immune-base-percent" modify-ability-diff-1="1000" passive-duration="5000" stance="none" type="Modify-Ability-152" />
 	<record alias="MH_Warlock_Spell_GroundAttack_Cast_Flag" buff-type="buff" flag="IceBit" id="55170030" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" miss-probability="0" passive-duration="3000" save-db="n" stance="none" type="Modify-Ability-142" />
 	<record alias="MH_Warlock_Spell_GroundAttack_Cast_Flag_Dispel" buff-type="instant" dispel-type="modify-ability-142" id="55170031" knockback-speed="0" level="1" link-stage="stage-1" link-type="normal" miss-probability="0" save-db="n" stance="none" type="dispel-type" />
 	<record alias="MH_Warlock_Spell_GroundAttack_Lv1_R1_Dmg" buff-type="instant" id="55170032" level="1" miss-probability="0" power-percent-max="160" power-percent-min="160" save-db="n" stance="none" type="force-attack" />

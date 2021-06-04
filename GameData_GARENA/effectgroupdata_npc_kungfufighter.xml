@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc_kungfufighter.xml-->
-	<record alias="MH_KungfuMaster_Attack_Armbar_Lv1_E1_01" effect-1="MH_KungfuMaster_Attack_Armbar_Lv1_extend-link" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />
+  <record alias="MH_KungfuMaster_Attack_Armbar_Lv1_E1_01" effect-1="MH_KungfuMaster_Attack_Armbar_Lv1_extend-link" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />
 	<record alias="MH_KungfuMaster_Attack_Armbar_Lv1_E1_02" effect-1="KungfuMaster_mount_Flag" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />
 	<record alias="MH_KungfuMaster_Attack_Armbar_Lv1_E2_01" effect-1="MH_KungfuMaster_Attack_Armbar_Lv1_damage" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />
 	<record alias="MH_KungfuMaster_Attack_Armbar_Lv1_E2_02" effect-1="ME_Common_None_HateDown" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="AIData" release-side="server" type="BossNpc" version="0.16">
   <!--bossnpcdata.xml-->
-	<record alias="ME_GuGuBung_0003_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+  <record alias="ME_GuGuBung_0003_BossNpc" boss-brain-type="boss" use-bleeding="y" />
 	<record alias="ME_GuGuBung_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
 	<record alias="ME_FireGorilla_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
 	<record alias="MH_BladeMaster_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
@@ -424,7 +424,7 @@
 	<record alias="ME_WA_Whanmadan_A1_Nmd_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
 	<record alias="ME_WA_Whanmadan_A1_Nmd_0002_BossNpc" berserk-sequence="ME_WA_Whanmadan_A1_Nmd_0002_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" use-bleeding="n" />
 	<record alias="ME_WA_Whanmadan_A1_Boss_0001_BossNpc" berserk-sequence="ME_WA_Whanmadan_A1_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" use-bleeding="n" />
-	<record alias="ME_WA_Whanmadan_A2_Boss_0001_BossNpc" berserk-sequence="ME_WA_Whanmadan_A2_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="540000" boss-brain-type="boss" mysterious-store-spawn="a_4744_36" mysterious-store-spawn-prob="10" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A2_Boss_0001_BossNpc" berserk-sequence="ME_WA_Whanmadan_A2_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="540000" boss-brain-type="boss" mysterious-store-spawn="a_4744_36" mysterious-store-spawn-prob="100" use-bleeding="n" />
 	<record alias="ME_WC_RaidBossTest_0001_BossNpc" boss-brain-type="raid-boss" use-bleeding="n" />
 	<record alias="ME_WC_RaidBossTest_0004_BossNpc" boss-brain-type="raid-boss" use-bleeding="n" />
 	<record alias="ME_WC_RaidBossTest_0005_BossNpc" boss-brain-type="raid-boss" use-bleeding="n" />

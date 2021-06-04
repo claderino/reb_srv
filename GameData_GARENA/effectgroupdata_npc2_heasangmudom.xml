@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_heasangmudom.xml-->
-	<record alias="ME_DEA_B3_FireGorillaA_None_NAtk1_E1_01" effect-1="ME_DEA_B3_FireGorillaA_None_NAtk1_damage" effect-2="ME_DEA_B3_FireGorillaA_None_NAtk1_knockback" effect-3="Common_ReactToDown_Flag_700ms" skill-result="hit-critical-hit" target="second-target" target-state="Enemy" />
+  <record alias="ME_DEA_B3_FireGorillaA_None_NAtk1_E1_01" effect-1="ME_DEA_B3_FireGorillaA_None_NAtk1_damage" effect-2="ME_DEA_B3_FireGorillaA_None_NAtk1_knockback" effect-3="Common_ReactToDown_Flag_700ms" skill-result="hit-critical-hit" target="second-target" target-state="Enemy" />
 	<record alias="ME_DEA_B3_FireGorillaA_None_NAtk1_E1_p" effect-1="ME_DEA_B3_FireGorillaA_None_NAtk1_damage" skill-result="parry" target="second-target" target-state="Enemy" />
 	<record alias="ME_DEA_B3_FireGorillaA_None_NAtk1_E1_pp" effect-1="ME_DEA_B3_FireGorillaA_None_NAtk1_damage" skill-result="perfect-parry" target="second-target" target-state="Enemy" />
 	<record alias="ME_DEA_B3_FireGorillaA_None_NAtk1_E1_counter" effect-1="ME_DEA_B3_FireGorillaA_None_NAtk1_damage" skill-result="counter" target="second-target" target-state="Enemy" />

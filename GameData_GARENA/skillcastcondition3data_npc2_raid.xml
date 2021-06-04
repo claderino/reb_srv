@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_raid.xml-->
-	<record alias="MH_RD_B3_ForceMAster_None_Rage" gather-range="ID_Bagic_Round_50M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+  <record alias="MH_RD_B3_ForceMAster_None_Rage" gather-range="ID_Bagic_Round_50M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="ME_RD_B3_ForceMAster_None_EvilArmor" gather-range="PVE_Target_T_CMax8000_FMax8000_EMax8000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="ME_RD_B3_MuseongGhost_energy_cyclone_instant" gather-range="PVE_Target_T_CMax10000_FMax10000_EMax10000" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="ME_RD_B3_MuseongGhost_cold_missile" gather-range="PVE_Target_T_CMax10000_FMax10000_EMax10000" success-target-dead-state="not-dead-restoration" target-type="all" />

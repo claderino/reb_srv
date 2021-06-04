@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_islandofoutlaws.xml-->
-	<record alias="SW_IO_B5_YeonHwaLin_SlowSnipe_E1_01" effect-1="SW_IO_B5_YeonHwaLin_SlowSnipe_castshow" skill-result="all" target="first-target" target-state="enemy" />
+  <record alias="SW_IO_B5_YeonHwaLin_SlowSnipe_E1_01" effect-1="SW_IO_B5_YeonHwaLin_SlowSnipe_castshow" skill-result="all" target="first-target" target-state="enemy" />
 	<record alias="SW_IO_B5_YeonHwaLin_SlowSnipe_E1_02" effect-1="SW_IO_B5_YeonHwaLin_SlowSnipe_execshow" skill-result="all" target="first-target" target-state="enemy" />
 	<record alias="SW_IO_B5_YeonHwaLin_SpinFire_Knockback" effect-1="MH_Common_None_feedback_KnockbackA" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
 	<record alias="SW_IO_B5_YeonHwaLin_Bind_E1_01" effect-1="SW_IO_B5_YeonHwaLin_Bind" skill-result="all" target="first-target" target-state="enemy" />

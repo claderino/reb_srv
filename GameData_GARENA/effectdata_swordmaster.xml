@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_swordmaster.xml-->
-	<record alias="SwordMaster_Common_Stance_Sword" buff-type="instant" id="27000000" level="1" stance="검술" type="stance" />
+  <record alias="SwordMaster_Common_Stance_Sword" buff-type="instant" id="27000000" level="1" stance="검술" type="stance" />
 	<record alias="SwordMaster_Common_Stance_Batto" buff-type="instant" id="27000001" level="1" stance="발도" type="stance" />
 	<record alias="SwordMaster_Common_Stance_Soul" buff-type="instant" id="27000002" level="1" stance="어검" type="stance" />
 	<record alias="SwordMaster_Common_Stance_Sword_Passive" buff-type="buff" id="27000003" level="1" type="Modify-Ability-24" />

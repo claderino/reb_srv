@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc_summoner.xml-->
-	<record alias="MH_Summoner_Summon_Tear_Lv1_skill3" immune-caster-block-skill="n" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+  <record alias="MH_Summoner_Summon_Tear_Lv1_skill3" immune-caster-block-skill="n" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="MH_Summoner_Summon_Rose_Lv1_skill3" immune-caster-block-skill="n" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="MH_Summoner_Summon_Butterfly_Lv1_skill3" immune-caster-block-skill="n" move-type="free" prev-combo-check-point-1="fire" prev-combo-event-type-1="attack" prev-combo-id-1="16101" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="MH_Summoner_Summon_Coil_Lv1_skill3" immune-caster-block-skill="n" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" success-target-flag-1="defence" success-target-flag-2="stun" target-type="all" />

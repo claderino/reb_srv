@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_kungfufighter.xml-->
-	<record alias="KungfuMaster3_Attack_Pounding_Lv1_E1_01" effect-1="KungfuMaster3_Attack_Pounding_Lv1_ExtendLink" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />
+  <record alias="KungfuMaster3_Attack_Pounding_Lv1_E1_01" effect-1="KungfuMaster3_Attack_Pounding_Lv1_ExtendLink" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />
 	<record alias="KungfuMaster3_Attack_Pounding_Lv1_E2_01" effect-1="KungfuMaster3_Attack_Pounding_Lv1_Mountee_Damage" skill-result="Hit-Critical-Hit" target="first-target" target-state="enemy" />
 	<record alias="KungfuMaster3_Attack_Pounding_Lv1_E2_02" effect-1="KungfuMaster3_Attack_Pounding_Lv1_Down" skill-result="Hit-Critical-Hit" target="second-target" target-state="enemy" />
 	<record alias="KungfuMaster3_Attack_Pounding_Lv1_E2_03" effect-1="KungfuMaster3_Attack_Pounding_Lv1_Damage" skill-result="Parry-Perfect-Parry-Counter" target="second-target" target-state="enemy" />

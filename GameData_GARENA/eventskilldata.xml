@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="event-skill" version="0.6">
   <!--eventskilldata.xml-->
-	<record event-type="attacked" skill-1-2="10120" skill-result="perfect-parry" stance-type="천검세" state="none" />
+  <record event-type="attacked" skill-1-2="10120" skill-result="perfect-parry" stance-type="천검세" state="none" />
 	<record event-type="attacked" skill-1-2="10120" skill-result="parry" stance-type="천검세" state="none" />
 	<record event-type="attacked" skill-1-1="10306" skill-1-2="10120" skill-result="bounce" stance-type="천검세" state="none" />
 	<record event-type="attacked" skill-result="dodge" stance-type="천검세" state="none" />

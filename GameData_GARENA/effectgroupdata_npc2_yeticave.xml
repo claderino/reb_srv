@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_yeticave.xml-->
-	<record alias="ME_BEB_B1_SnowManBoss_None_Swing_E1_01" effect-1="ME_BEB_B1_SnowManBoss_None_Swing_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
+  <record alias="ME_BEB_B1_SnowManBoss_None_Swing_E1_01" effect-1="ME_BEB_B1_SnowManBoss_None_Swing_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
 	<record alias="ME_BEB_B1_SnowManBoss_None_Swing_E1_p" effect-1="ME_BEB_B1_SnowManBoss_None_Swing_damage" skill-result="parry-perfect-parry-counter" target="second-target" target-state="enemy" />
 	<record alias="ME_BEB_B1_SnowManBoss_None_Smash_E1_01" effect-1="ME_BEB_B1_SnowManBoss_None_Smash_damage" effect-2="ME_Common_None_Stun" skill-result="hit-critical-hit" target="second-target" target-state="enemy" />
 	<record alias="ME_BEB_B1_SnowManBoss_None_Smash_E1_p" effect-1="ME_BEB_B1_SnowManBoss_None_Smash_damage" skill-result="parry-perfect-parry-counter" target="second-target" target-state="enemy" />

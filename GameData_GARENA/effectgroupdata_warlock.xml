@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_warlock.xml-->
-	<record alias="Warlock_Common_Dummy_EG" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />
+  <record alias="Warlock_Common_Dummy_EG" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />
 	<record alias="Warlock_Common_Sp_Charge1_E" effect-1="Warlock_Common_Sp_Charge1" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />
 	<record alias="Warlock_Common_Sp_Charge2_E" effect-1="Warlock_Common_Sp_Charge2" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />
 	<record alias="Warlock_Common_Sp_Charge3_E" effect-1="Warlock_Common_Sp_Charge3" skill-result="Hit-Critical-Hit" target="caster" target-state="all" />

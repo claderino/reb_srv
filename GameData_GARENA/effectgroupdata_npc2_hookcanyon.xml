@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect-group" version="0.3">
   <!--effectgroupdata_npc2_hookcanyon.xml-->
-	<record alias="SRB_B1_BerserkWolfBoss_Bite_Mount_EG" effect-1="SRB_B1_BerserkWolfBoss_Bite_Takedown_mount" skill-result="all" target="first-target" target-state="enemy" />
+  <record alias="SRB_B1_BerserkWolfBoss_Bite_Mount_EG" effect-1="SRB_B1_BerserkWolfBoss_Bite_Takedown_mount" skill-result="all" target="first-target" target-state="enemy" />
 	<record alias="SRB_B1_BerserkWolfBoss_Bite_CasterFlag_EG" effect-1="SRB_B1_BerserkWolfBoss_Bite_Takedown_Flag" skill-result="all" target="caster" target-state="all" />
 	<record alias="SRB_B1_BerserkWolfBoss_Bite_ExtendMountLink_EG" effect-1="SRB_B1_BerserkWolfBoss_Bite_Takedown_extend-link" skill-result="all" target="first-target" target-state="enemy" />
 	<record alias="SRB_B1_BerserkWolfBoss_Bite_Mount_Unlink_EG" effect-1="ME_ID2_Common_Mount_Unlink" skill-result="all" target="first-target" target-state="enemy" />

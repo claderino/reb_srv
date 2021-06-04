@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc_assassin.xml-->
-	<record alias="MH_Assassin_Hide_Reveal_Lv1_Stance" buff-type="instant" drop-field-item="n" id="55150000" level="1" miss-probability="0" save-db="n" stance="교란" type="stance" />
+  <record alias="MH_Assassin_Hide_Reveal_Lv1_Stance" buff-type="instant" drop-field-item="n" id="55150000" level="1" miss-probability="0" save-db="n" stance="교란" type="stance" />
 	<record alias="MH_Assassin_Hide_Reveal_Lv1_Reveal" buff-type="instant" dispel-attribute-1="은신" drop-field-item="n" id="55150001" level="1" miss-probability="0" save-db="n" type="dispel-attribute" />
 	<record alias="MH_Assassin_targetPoison_Lv1" attribute-1="독" attribute-2="맹독" buff-type="debuff" drop-field-item="n" flag="poison" id="55150002" level="1" miss-probability="0" passive-duration="9000" passive-interval="3000" power-percent-max="30" power-percent-min="30" save-db="n" stack-amount="5" stance="none" target-combat-mode="y" type="poison" />
 	<record alias="MH_Assassin_Disturb_Hide_Lv1_Passive" attribute-1="은신" buff-type="buff" change-default-stance-by-detach-timeout="y" detach-count="1" detach-slot-1="attacked-hit" detach-slot-2="attacked-critical" drop-field-item="n" flag="hide" id="55150003" level="1" miss-probability="0" modify-ability-1="speed" modify-ability-percent-1="100" passive-duration="6000" save-db="n" target-combat-mode="y" type="hide" />

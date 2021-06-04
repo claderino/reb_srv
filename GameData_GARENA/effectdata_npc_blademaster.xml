@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="effect" version="0.237">
   <!--effectdata_npc_blademaster.xml-->
-	<record alias="MH_BladeMaster_Common_Q_damage0" buff-type="instant" id="55100000" level="1" type="melee-physical-attack" />
+  <record alias="MH_BladeMaster_Common_Q_damage0" buff-type="instant" id="55100000" level="1" type="melee-physical-attack" />
 	<record alias="MH_BladeMaster_Common_Dispel_Stun" buff-type="instant" dispel-type="stun" id="55100001" level="1" type="dispel-type" />
 	<record alias="MH_BladeMaster_Common_Dispel_Kneel" buff-type="instant" dispel-type="kneel" id="55100002" level="1" type="dispel-type" />
 	<record alias="MH_BladeMaster_Common_Dispel_Down" buff-type="instant" dispel-type="down" id="55100003" level="1" type="dispel-type" />

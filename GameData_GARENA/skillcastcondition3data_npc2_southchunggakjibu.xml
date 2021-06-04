@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
   <!--skillcastcondition3data_npc2_southchunggakjibu.xml-->
-	<record alias="S3_ME_JEA_R0_Dummy_None_Cannon" gather-range="ID_ME_JEA_R0_Dummy_None_Cannon" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+  <record alias="S3_ME_JEA_R0_Dummy_None_Cannon" gather-range="ID_ME_JEA_R0_Dummy_None_Cannon" immune-caster-block-skill="y" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
 	<record alias="S3_ME_JEA_B1_GuGuBung_Destruction_Thunderbolt" gather-range="ID_ME_JEA_B1_GuGuBung_Destruction_Thunderbolt" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_ME_JEA_B1_GuGuBung_Protection_Raging_Wind1" gather-range="ID_ME_JEA_B1_GuGuBung_Protection_Raging_Wind1" success-target-dead-state="not-dead-restoration" target-type="all" />
 	<record alias="S3_ME_JEA_B1_GuGuBung_Protection_Earthquake" fail-target-effect-attribute-1="공중" gather-range="ID_ME_JEA_B1_GuGuBung_Protection_Earthquake" success-target-dead-state="not-dead-restoration" target-type="all" />
