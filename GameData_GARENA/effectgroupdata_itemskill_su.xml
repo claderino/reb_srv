@@ -104,5 +104,7 @@
 	<record alias="ItemSkill_SU_Sunflower_G3_Lv4_01_E1" effect-1="ItemSkill_SU_Sunflower_G3_Lv4_01_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
 	<record alias="ItemSkill_SU_Pollen_S9_Lv1_01_E1" effect-1="ItemSkill_SU_Pollen_S9_Lv1_01_Flag" skill-result="all" target="caster" target-state="all" />
 	<record alias="ItemSkill_SU_Pollen_S9_Lv1_02_E1" effect-1="ItemSkill_SU_Pollen_S9_Lv1_02_Flag" skill-result="all" target="caster" target-state="all" />
-	<record alias="ItemSkill_SU_Sunflower_S10_Lv1_01_E1" effect-1="ItemSkill_SU_Sunflower_S10_Lv1_01_Stack" skill-result="all" target="caster" target-state="all" />
+	<record alias="ItemSkill_SU_Sunflower_S10_Lv1_01_E1" effect-1="ItemSkill_SU_Sunflower_S10_Lv1_01_Stack" skill-result="all" target="caster" target-state="all" />	
+	<record alias="ItemSkill_SU_Sunflower_Pulse_Lv3_01_E1" effect-1="ItemSkill_SU_Sunflower_Pulse_Lv3_01_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" />
+	<record alias="ItemSkill_SU_Hornet_Pulse_Lv2_01_E1" effect-1="ItemSkill_SU_Hornet_Pulse_Lv2_01_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" />
 </table>
