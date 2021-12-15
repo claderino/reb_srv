@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.298.xml-->
+  <quest alias="q_sub_298" attraction-1="dungeon:Dungeon_BaekCheong_Sulokgoong" broadcast-category="field" category="normal" id="298" max-repeat="1">
+    <acquisition level="50" preceding-quest-1="q_sub_296" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_c3_seolokgung_0004" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:me_c3_seolokgungboss_0003" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="298_final_set1">
+        <case object="npc:ch_c3_seolokgung_0004" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

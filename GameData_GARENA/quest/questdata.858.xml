@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.858.xml-->
+  <quest alias="q_sub_858" broadcast-category="field" category="normal" district-1="deasamak" id="858" max-repeat="1" save-type="all">
+    <acquisition level="33" preceding-quest-1="q_epic_532" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_mayeongganggun_0027" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_mayeongganggun_0032" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="9">
+        <case object="npc:mh_jukryongchae_0002" object2="npc:mh_jukryongchae_0002" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="80" type="loot" />
+        <case object="npc:mh_jukryongchae_0003" object2="npc:mh_jukryongchae_0003" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="80" type="loot" />
+        <case object="npc:mh_jukryongchae_0001" object2="npc:mh_jukryongchae_0001" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="80" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="858_final_set1">
+        <case object="npc:ch_mayeongganggun_0031" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_blackmarket_0004" party-broadcast="n" type="approach" />
+        <case object="npc:ch_dojuksang_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.437.xml-->
+  <quest alias="q_sub_437" broadcast-category="field" category="normal" id="437" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition level="40" preceding-quest-1="q_epic_926" preceding-quest-check="and" preceding-quest-mission-step-1="6">
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:CH_KyeongChunMaeng_0017" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CE_Board_0005" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CH_KyeongChunMaeng_0017" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:me_skullcaptain_0011" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_unbalancezombie_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_skullbunguk_0004" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:me_skullbunguk_0003" party-broadcast="n" type="killed" />
+        <case object2="npc:me_skullbunguk_0002" party-broadcast="n" type="killed" />
+        <case object2="npc:me_skullbempire_0004" party-broadcast="n" type="killed" />
+        <case object2="npc:me_skullbempire_0003" party-broadcast="n" type="killed" />
+        <case object2="npc:me_skullbempire_0001" party-broadcast="n" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="437_final_set1" reward-2="437_final_set2">
+        <case completion-count="1" completion-count-op="lt" object="npc:CH_KyeongChunMaeng_0017" party-broadcast="n" progress-mission="y" type="talk" />
+        <case completion-count="1" object="npc:CH_KyeongChunMaeng_0017" party-broadcast="n" progress-mission="y" type="talk" />
+        <case completion-count="0" fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

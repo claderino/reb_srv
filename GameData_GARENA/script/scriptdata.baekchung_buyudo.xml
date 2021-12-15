@@ -1,0 +1,3045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.baekchung_buyudo.xml-->
+
+
+
+
+  <script alias="Zone_BuYouDo_New_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="kinggoat  부유도 zone enter" type="debug-trace" />
+        <reaction effect="Item_Effect_faction_Score_Boost_dispel" target="event:enter-zone:pc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  <script alias="ME_CT_SoraCrab_0021_ai">
+    <quest-decision alias="qd_1176_1">
+      <reaction-set>
+        <reaction text="BuYuDo qd_1176_1 -byerror" type="debug-trace" />
+        <reaction respawn-after-despawn="y" target-1="case:npc-manipulate:npc" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1211_1">
+      <reaction-set>
+        <reaction text="BuYuDo qd_1176_1 -byerror" type="debug-trace" />
+        <reaction respawn-after-despawn="y" target-1="case:npc-manipulate:npc" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  <script alias="Boss_BuYuDo_01_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="BuYuDo Boss Spawn01 -byerror" type="debug-trace" />
+        <reaction seq="act_wait_20sec" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction attack-target="event:npc-spawn:npc:npc-party:reg-2" group="event:npc-spawn:npc:npc-party" index-1="2" index-2="3" spawn-delay="0" spawn-radius="300" spawn-target="event:npc-spawn:npc" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="BuYuDo Boss killed01 -byerror" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction despawn-force="n" group-1="event:killed:defender:npc-party" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Boss Combat End01 -byerror" type="debug-trace" />
+        <reaction target="event:npc-combat-end:npc:npc-party:2" type="reset-npc-all-hate" />
+        <reaction target="event:npc-combat-end:npc:npc-party:3" type="reset-npc-all-hate" />
+        <reaction seq="act_wait_20sec" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_20sec" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Boss Finish01 -byerror" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction amount="0" reg="2" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction group-1="event:act-finished:npc:npc-party" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction text="BuYuDo Boss attacked01 -byerror" type="debug-trace" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <reaction-set>
+        <reaction text="BuYuDo Boss attack01 -byerror" type="debug-trace" />
+        <reaction amount="1" opponent="event:attack:defender" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attack:defender" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_BoneMaskBigA_0008_ai" parent="Boss_BuYuDo_01_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="ME_BoneMaskBigA_0008_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="ME_BoneMaskBigA_0008_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="3" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="ME_BoneMaskBigA_0008_battle_03" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="JaCo_BuYuDo_01_ai">
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_7100_95:reg-1" subject2="zonenpcsquad:s_7100_95:reg-1" type="number" value="9" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Jaco killed End01 -byerror" type="debug-trace" />
+        <reaction object="event:killed:attacker" reg="2" target="zonenpcsquad:s_7100_95" type="set-party-object" />
+        <reaction attack-target="event:killed:attacker" group="zonenpcsquad:s_7100_95" index-1="1" spawn-delay="1000" spawn-target="event:killed:attacker" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="neq" subject="zonenpcsquad:s_7100_95:reg-1" subject2="zonenpcsquad:s_7100_95:reg-1" type="number" value="9" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Jaco killed01 -byerror" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_7100_95" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_BoneMaskBigA_0007_ai" parent="JaCo_BuYuDo_01_ai">
+    <decision event="killed" forward="y" />
+  </script>
+  <script alias="ME_BoneMaskThinA_0010_ai" parent="JaCo_BuYuDo_01_ai">
+    <decision event="killed" forward="y" />
+  </script>
+  <script alias="ME_CT_Uryong_0009_ai" parent="JaCo_BuYuDo_01_ai">
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="Boss_BuYuDo_02_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="BuYuDo Boss Spawn02 -byerror" type="debug-trace" />
+        <reaction seq="act_wait_20sec" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction attack-target="event:npc-spawn:npc:npc-party:reg-2" group="event:npc-spawn:npc:npc-party" index-1="2" index-2="3" spawn-delay="0" spawn-radius="300" spawn-target="event:npc-spawn:npc" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="BuYuDo Boss killed02 -byerror" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction despawn-force="n" group-1="event:killed:defender:npc-party" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Boss Combat End02 -byerror" type="debug-trace" />
+        <reaction target="event:npc-combat-end:npc:npc-party:2" type="reset-npc-all-hate" />
+        <reaction target="event:npc-combat-end:npc:npc-party:3" type="reset-npc-all-hate" />
+        <reaction seq="act_wait_20sec" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_20sec" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Boss Finish02 -byerror" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction group-1="event:act-finished:npc:npc-party" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction text="BuYuDo Boss attacked02 -byerror" type="debug-trace" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <reaction-set>
+        <reaction text="BuYuDo Boss attack02 -byerror" type="debug-trace" />
+        <reaction amount="1" opponent="event:attack:defender" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attack:defender" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_DarkCrazyTribeC_0007_ai" parent="Boss_BuYuDo_02_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="ME_DarkCrazyTribeC_0007_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="ME_DarkCrazyTribeC_0007_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="3" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="ME_DarkCrazyTribeC_0007_battle_03" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="JaCo_BuYuDo_02_ai">
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_7100_148:reg-1" subject2="zonenpcsquad:s_7100_148:reg-1" type="number" value="9" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Jaco killed End02 -byerror" type="debug-trace" />
+        <reaction object="event:killed:attacker" reg="2" target="zonenpcsquad:s_7100_148" type="set-party-object" />
+        <reaction attack-target="event:killed:attacker" group="zonenpcsquad:s_7100_148" index-1="1" spawn-delay="1000" spawn-target="event:killed:attacker" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="neq" subject="zonenpcsquad:s_7100_148:reg-1" subject2="zonenpcsquad:s_7100_148:reg-1" type="number" value="9" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Jaco killed02 -byerror" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_7100_148" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_DarkCrazyTribeA_0003_ai" parent="JaCo_BuYuDo_02_ai">
+    <decision event="killed" forward="y" />
+  </script>
+  <script alias="ME_DarkCrazyTribeB_0005_ai" parent="JaCo_BuYuDo_02_ai">
+    <decision event="killed" forward="y" />
+  </script>
+  <script alias="ME_DarkCrazyTribeC_0004_ai" parent="JaCo_BuYuDo_02_ai">
+    <decision event="killed" forward="y" />
+  </script>
+  <script alias="ME_DarkCrazyTribeD_0002_ai" parent="JaCo_BuYuDo_02_ai">
+    <decision event="killed" forward="y" />
+  </script>
+  <script alias="ME_DarkCrazyTribe_0048_ai" parent="JaCo_BuYuDo_02_ai">
+    <decision event="killed" forward="y" />
+  </script>
+  <script alias="ME_CT_SeaMonster_0015_ai" parent="JaCo_BuYuDo_02_ai">
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_CT_BoneMaskBigA_0010_ai" parent="JaCo_BuYuDo_01_G_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  <script alias="ME_DarkCrazyTribeC_0005_ai" parent="JaCo_BuYuDo_02_G_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_DarkCrazyTribe_0049_ai" parent="JaCo_BuYuDo_02_G_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="JaCo_BuYuDo_01_G_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter leader="y" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-party" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:npc-spawn:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter leader="y" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:act-finished:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+        <reaction seq="act_index_1_pathway" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_7100_95:reg-1" subject2="zonenpcsquad:s_7100_95:reg-1" type="number" value="9" />
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Jaco killed End01G -byerror" type="debug-trace" />
+        <reaction attack-target="event:killed:attacker" group="zonenpcsquad:s_7100_95" index-1="1" spawn-delay="1000" spawn-target="event:killed:attacker" type="spawn-npc-index" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:2" target-2="event:killed:defender:npc-party:3" target-3="event:killed:defender:npc-party:4" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:5" target-2="event:killed:defender:npc-party:6" target-3="event:killed:defender:npc-party:7" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:8" target-2="event:killed:defender:npc-party:9" target-3="event:killed:defender:npc-party:10" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="neq" subject="zonenpcsquad:s_7100_95:reg-1" subject2="zonenpcsquad:s_7100_95:reg-1" type="number" value="9" />
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Jaco killed01G -byerror" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_7100_95" type="diff-party-number" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:2" target-2="event:killed:defender:npc-party:3" target-3="event:killed:defender:npc-party:4" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:5" target-2="event:killed:defender:npc-party:6" target-3="event:killed:defender:npc-party:7" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:8" target-2="event:killed:defender:npc-party:9" target-3="event:killed:defender:npc-party:10" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="JaCo_BuYuDo_02_G_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter leader="y" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-party" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:npc-spawn:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter leader="y" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:act-finished:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+        <reaction seq="act_index_1_pathway" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_7100_148:reg-1" subject2="zonenpcsquad:s_7100_148:reg-1" type="number" value="9" />
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Jaco killed End02G -byerror" type="debug-trace" />
+        <reaction attack-target="event:killed:attacker" group="zonenpcsquad:s_7100_148" index-1="1" spawn-delay="1000" spawn-target="event:killed:attacker" type="spawn-npc-index" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:2" target-2="event:killed:defender:npc-party:3" target-3="event:killed:defender:npc-party:4" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:5" target-2="event:killed:defender:npc-party:6" target-3="event:killed:defender:npc-party:7" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:8" target-2="event:killed:defender:npc-party:9" target-3="event:killed:defender:npc-party:10" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="neq" subject="zonenpcsquad:s_7100_148:reg-1" subject2="zonenpcsquad:s_7100_148:reg-1" type="number" value="9" />
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BuYuDo Jaco killed02G -byerror" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_7100_148" type="diff-party-number" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:2" target-2="event:killed:defender:npc-party:3" target-3="event:killed:defender:npc-party:4" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:5" target-2="event:killed:defender:npc-party:6" target-3="event:killed:defender:npc-party:7" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:8" target-2="event:killed:defender:npc-party:9" target-3="event:killed:defender:npc-party:10" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_Dummy_0328_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-spawn:npc:reg-1" subject2="event:npc-spawn:npc:reg-1" type="number" value="0" />
+      </filter-set>
+      
+      <reaction-set probability="25">
+        <reaction text="ME_Dummy_0328_ai Spawn a_7100_94 sd-150 -pure" type="debug-trace" />
+        <reaction spawn-1="a_7100_94" spawn-delay="150000" type="spawn-npc" />
+        
+        <reaction amount="1" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+      
+      <reaction-set probability="25">
+        <reaction text="ME_Dummy_0328_ai Spawn a_7100_94 sd-300 -pure" type="debug-trace" />
+        <reaction spawn-1="a_7100_94" spawn-delay="300000" type="spawn-npc" />
+        
+        <reaction amount="1" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+      
+      <reaction-set probability="25">
+        <reaction text="ME_Dummy_0328_ai Spawn a_7100_147 sd-150 -pure" type="debug-trace" />
+        <reaction spawn-1="a_7100_147" spawn-delay="150000" type="spawn-npc" />
+        
+        <reaction amount="1" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+      
+      <reaction-set probability="25">
+        <reaction text="ME_Dummy_0328_ai Spawn a_7100_147 sd-300 -pure" type="debug-trace" />
+        <reaction spawn-1="a_7100_147" spawn-delay="300000" type="spawn-npc" />
+        
+        <reaction amount="1" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_Dummy_0328_10min_act" />
+        <filter op="eq" subject="event:act-finished:npc:reg-1" subject2="event:act-finished:npc:reg-1" type="number" value="0" />
+      </filter-set>
+      
+      <reaction-set probability="50">
+        <reaction text="ME_Dummy_0328_ai act-finished a_7100_94 sd-900 -pure" type="debug-trace" />
+        <reaction spawn-1="a_7100_94" spawn-delay="900000" type="spawn-npc" />
+        
+        <reaction amount="1" reg="1" target="event:act-finished:npc" type="set-npc-number" />
+      </reaction-set>
+      
+      <reaction-set probability="50">
+        <reaction text="ME_Dummy_0328_ai act-finished a_7100_147 sd-900 -pure" type="debug-trace" />
+        <reaction spawn-1="a_7100_147" spawn-delay="900000" type="spawn-npc" />
+        
+        <reaction amount="1" reg="1" target="event:act-finished:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_CT_JunoBoss_0001_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0001_ai spawnd -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0001_ai burrow-out -pure" type="debug-trace" />
+        
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0001_ai burrow-in -pure" type="debug-trace" />
+        
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7100_191_1:reg-1" subject2="zonenpcspawn:a_7100_191_1:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0001_ai killed. set-reg 3 -pure" type="debug-trace" />
+        
+        
+        
+        <reaction spawn-1="a_7100_195" spawn-delay="900000" type="spawn-npc" />
+        
+        <reaction amount="3" reg="1" target="zonenpcspawn:a_7100_191_1" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7100_191_1:reg-1" subject2="zonenpcspawn:a_7100_191_1:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0001_ai killed. set-reg 2 -pure" type="debug-trace" />
+        
+        
+        
+        <reaction spawn-1="a_7100_147" spawn-delay="900000" type="spawn-npc" />
+        
+        <reaction amount="2" reg="1" target="zonenpcspawn:a_7100_191_1" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7100_191_1:reg-1" subject2="zonenpcspawn:a_7100_191_1:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0001_ai killed. set-reg 2 -pure" type="debug-trace" />
+        
+        
+        
+        <reaction spawn-1="a_7100_147" spawn-delay="900000" type="spawn-npc" />
+        
+        <reaction amount="2" reg="1" target="zonenpcspawn:a_7100_191_1" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_JunoBoss_0002_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0002_ai spawnd -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0002_ai burrow-out -pure" type="debug-trace" />
+        
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0002_ai burrow-in -pure" type="debug-trace" />
+        
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7100_191_1:reg-1" subject2="zonenpcspawn:a_7100_191_1:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0002_ai killed. set-reg 3 -pure" type="debug-trace" />
+        
+        
+        
+        <reaction spawn-1="a_7100_195" spawn-delay="900000" type="spawn-npc" />
+        
+        <reaction amount="3" reg="1" target="zonenpcspawn:a_7100_191_1" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7100_191_1:reg-1" subject2="zonenpcspawn:a_7100_191_1:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0002_ai killed. set-reg 2 -pure" type="debug-trace" />
+        
+        
+        
+        <reaction spawn-1="a_7100_94" spawn-delay="900000" type="spawn-npc" />
+        
+        <reaction amount="2" reg="1" target="zonenpcspawn:a_7100_191_1" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7100_191_1:reg-1" subject2="zonenpcspawn:a_7100_191_1:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0002_ai reg-1=1 killed. set-reg 2 -pure" type="debug-trace" />
+        
+        
+        
+        <reaction spawn-1="a_7100_94" spawn-delay="900000" type="spawn-npc" />
+        
+        <reaction amount="2" reg="1" target="zonenpcspawn:a_7100_191_1" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_CT_DesertDragon_0003_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0003_ai spawnd -pure" type="debug-trace" />
+        
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_01" target2="zoneenv2spawn:e_Button_7100gemstone_01_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_02" target2="zoneenv2spawn:e_Button_7100gemstone_02_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_03" target2="zoneenv2spawn:e_Button_7100gemstone_03_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_04" target2="zoneenv2spawn:e_Button_7100gemstone_04_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_05" target2="zoneenv2spawn:e_Button_7100gemstone_05_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_06" target2="zoneenv2spawn:e_Button_7100gemstone_06_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_07" target2="zoneenv2spawn:e_Button_7100gemstone_07_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_08" target2="zoneenv2spawn:e_Button_7100gemstone_08_spawn" type="set-env-enable" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_01" target2="zoneenv2spawn:e_Button_7100gemstone_01_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_02" target2="zoneenv2spawn:e_Button_7100gemstone_02_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_03" target2="zoneenv2spawn:e_Button_7100gemstone_03_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_04" target2="zoneenv2spawn:e_Button_7100gemstone_04_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_05" target2="zoneenv2spawn:e_Button_7100gemstone_05_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_06" target2="zoneenv2spawn:e_Button_7100gemstone_06_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_07" target2="zoneenv2spawn:e_Button_7100gemstone_07_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_08" target2="zoneenv2spawn:e_Button_7100gemstone_08_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_7100_192" spawn-delay="30000" type="spawn-npc" />
+        <reaction spawn-1="a_7100_193" spawn-delay="30000" type="spawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7100_192" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7100_193" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0003_ai transit-cs -pure" type="debug-trace" />
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0003_ai transit-cs -pure" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_7100_191_4" group="zonenpcsquad:s_7100_426" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" type="spawn-npc-index" />
+        <reaction from="event:npc-special:npc" social="ME_CT_DesertDragon_0003_Summon" type="play-social" />
+        <reaction effect="PVE_Common_Immune_debuff_damage_10000ms" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="11" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0003_ai transit-cs -pure" type="debug-trace" />
+        <reaction from="event:npc-special:npc" social="ME_CT_DesertDragon_0003_Heal" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="99" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0003_ai rage -pure" type="debug-trace" />
+        <reaction caster="event:npc-special:npc" effect="PVE_Common_ImmuneAll" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0003_ai combat-end -pure" type="debug-trace" />
+        <reaction caster="event:npc-combat-end:npc" effect="ME_DesertDragon_None_Inhalation_BerserkMode_dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_7100_426" type="despawn-npc-groups" />
+        <reaction target="event:npc-combat-end:npc" type="dispel-buff" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      
+      <reaction-set probability="33">
+        <reaction text="ME_CT_DesertDragon_0003_ai killed. spawn king -pure" type="debug-trace" />
+        
+        <reaction spawn-1="a_7100_191" spawn-delay="600000" type="spawn-npc" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_7100_426" type="despawn-npc-groups" />
+      </reaction-set>
+      
+      <reaction-set probability="67">
+        <reaction text="ME_CT_DesertDragon_0003_ai killed. resest -pure" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_7100_191_1" type="set-npc-number" />
+        
+        <reaction seq="ME_Dummy_0328_10min_act" target="zonenpcspawn:a_7100_191_1" type="set-npc-act" />
+        
+        <reaction spawn-1="a_7100_192" spawn-delay="30000" type="spawn-npc" />
+        <reaction spawn-1="a_7100_193" spawn-delay="30000" type="spawn-npc" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_7100_426" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_CT_DesertDragon_0004_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0004_ai spawn -pure" type="debug-trace" />
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_01" target2="zoneenv2spawn:e_Button_7100gemstone_01_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_02" target2="zoneenv2spawn:e_Button_7100gemstone_02_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_03" target2="zoneenv2spawn:e_Button_7100gemstone_03_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_04" target2="zoneenv2spawn:e_Button_7100gemstone_04_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_05" target2="zoneenv2spawn:e_Button_7100gemstone_05_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_06" target2="zoneenv2spawn:e_Button_7100gemstone_06_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_07" target2="zoneenv2spawn:e_Button_7100gemstone_07_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Button_7100gemstone_08" target2="zoneenv2spawn:e_Button_7100gemstone_08_spawn" type="set-env-enable" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_01" target2="zoneenv2spawn:e_Button_7100gemstone_01_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_02" target2="zoneenv2spawn:e_Button_7100gemstone_02_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_03" target2="zoneenv2spawn:e_Button_7100gemstone_03_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_04" target2="zoneenv2spawn:e_Button_7100gemstone_04_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_05" target2="zoneenv2spawn:e_Button_7100gemstone_05_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_06" target2="zoneenv2spawn:e_Button_7100gemstone_06_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_07" target2="zoneenv2spawn:e_Button_7100gemstone_07_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_08" target2="zoneenv2spawn:e_Button_7100gemstone_08_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_7100_192" spawn-delay="30000" type="spawn-npc" />
+        <reaction spawn-1="a_7100_193" spawn-delay="30000" type="spawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7100_192" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7100_193" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="200" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0004_ai attacked -pure" type="debug-trace" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction caster="event:attacked:defender" effect="Gang_Play_Additional_die_damage_DesertDragon2" target="event:attacked:defender" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0004_ai transit-cs -pure" type="debug-trace" />
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0004_ai transit-cs -pure" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_7100_191_4" group="zonenpcsquad:s_7100_435" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" type="spawn-npc-index" />
+        <reaction attack-target="zonenpcspawn:a_7100_191_4" group="zonenpcsquad:s_7100_441" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" type="spawn-npc-index" />
+        <reaction from="event:npc-special:npc" social="ME_CT_DesertDragon_0004_Summon" type="play-social" />
+        <reaction effect="PVE_Common_Immune_debuff_damage_10000ms" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="11" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0004_ai transit-cs -pure" type="debug-trace" />
+        <reaction from="event:npc-special:npc" social="ME_CT_DesertDragon_0004_Heal" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0004_ai combat-end -pure" type="debug-trace" />
+        <reaction caster="event:npc-combat-end:npc" effect="ME_DesertDragon_None_Inhalation_BerserkMode_dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_7100_426_1" type="despawn-npc-groups" />
+        <reaction target="event:npc-combat-end:npc" type="dispel-buff" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0004_ai killed. -pure" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_7100_191_1" type="set-npc-number" />
+        
+        <reaction seq="ME_Dummy_0328_10min_act" target="zonenpcspawn:a_7100_191_1" type="set-npc-act" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_01" target2="zoneenv2spawn:e_Button_7100gemstone_01_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_02" target2="zoneenv2spawn:e_Button_7100gemstone_02_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_03" target2="zoneenv2spawn:e_Button_7100gemstone_03_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_04" target2="zoneenv2spawn:e_Button_7100gemstone_04_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_05" target2="zoneenv2spawn:e_Button_7100gemstone_05_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_06" target2="zoneenv2spawn:e_Button_7100gemstone_06_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_07" target2="zoneenv2spawn:e_Button_7100gemstone_07_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Button_7100gemstone_08" target2="zoneenv2spawn:e_Button_7100gemstone_08_spawn" type="set-env-state" />
+        <reaction enable="y" target="zoneenv:e_Button_7100gemstone_01" target2="zoneenv2spawn:e_Button_7100gemstone_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Button_7100gemstone_02" target2="zoneenv2spawn:e_Button_7100gemstone_02_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Button_7100gemstone_03" target2="zoneenv2spawn:e_Button_7100gemstone_03_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Button_7100gemstone_04" target2="zoneenv2spawn:e_Button_7100gemstone_04_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Button_7100gemstone_05" target2="zoneenv2spawn:e_Button_7100gemstone_05_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Button_7100gemstone_06" target2="zoneenv2spawn:e_Button_7100gemstone_06_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Button_7100gemstone_07" target2="zoneenv2spawn:e_Button_7100gemstone_07_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Button_7100gemstone_08" target2="zoneenv2spawn:e_Button_7100gemstone_08_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_7100_192" spawn-delay="30000" type="spawn-npc" />
+        <reaction spawn-1="a_7100_193" spawn-delay="30000" type="spawn-npc" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_7100_426_1" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_BC_Golem_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="10000" opponent="zonenpcspawn:a_7100_191_4" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction special-id="1" target="event:npc-spawn:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="10000" opponent="zonenpcspawn:a_7100_191_4" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction special-id="1" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="down" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="midair-1" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="stun" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="knockback" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="kneel" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_BC_Golem_0001_ai invoke-effect. despawn -pure" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter>
+      <filter>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter>
+      <reaction-set>
+        <reaction amount="10000" opponent="zonenpcspawn:a_7100_191_4" target="event:attacked:defender" type="diff-npc-hate" />
+        <reaction effect="ME_Golem_None_Heal_PCHeal" target="event:attacked:attacker" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_BC_Golem_0002_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="10000" opponent="zonenpcspawn:a_7100_191_4" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction special-id="1" target="event:npc-spawn:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="10000" opponent="zonenpcspawn:a_7100_191_4" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction special-id="1" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="down" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="midair-1" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="stun" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="knockback" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter flag="y" flagtype="kneel" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_BC_Golem_0002_ai invoke-effect. despawn -pure" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter>
+      <filter>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter>
+      <reaction-set>
+        <reaction amount="10000" opponent="zonenpcspawn:a_7100_191_4" target="event:attacked:defender" type="diff-npc-hate" />
+        <reaction effect="ME_Golem_None_Heal_PCHeal" target="event:attacked:attacker" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_BC_Dummy_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7100 dummy spawn -pureblue" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_BC_Dummy_0001_act_01" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7100 dummy message 01 -pureblue" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_7100_195" social="ME_CT_DesertDragon_0003_Heal" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_BC_Dummy_0001_act_02" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7100 dummy message 02 -pureblue" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_7100_191" social="ME_CT_DesertDragon_0004_Heal" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_CT_Hades_0004_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Hades_0004_ai reset -bongny" type="debug-trace" />
+        <reaction target="event:npc-special:npc" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_MamMoSu_0003_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_MamMoSu_0003_ai reset -bongny" type="debug-trace" />
+        <reaction target="event:npc-special:npc" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="MH_MuRimMaeng_0095_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  <script alias="MH_HonCheonGyo_0064_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  <script alias="BuYuDo_Faction_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="GangPlay Boss npc-spawn -byerror" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        
+        <reaction attack-target="event:npc-spawn:npc:npc-party:reg-4" group="event:npc-spawn:npc:npc-party" index-1="2" index-2="3" index-3="4" index-4="5" index-5="6" spawn-delay="0" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="200" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay Boss attacked -byerror" type="debug-trace" />
+        <reaction object="event:attacked:attacker" reg="2" target="event:attacked:defender:npc-party" type="set-party-object" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction caster="event:attacked:defender" effect="Gang_Play_Additional_die_damage" target="event:attacked:defender" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction text="GangPlay Boss attacked(co) -byerror" type="debug-trace" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:5" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:6" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <reaction-set>
+        <reaction text="GangPlay Boss attack(co) -byerror" type="debug-trace" />
+        <reaction amount="1" opponent="event:attack:defender" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attack:defender" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attack:defender" target="event:attacked:defender:npc-party:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attack:defender" target="event:attacked:defender:npc-party:5" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attack:defender" target="event:attacked:defender:npc-party:6" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="GangPlay Boss Killed -byerror" type="debug-trace" />
+        <reaction despawn-force="n" group-1="event:killed:defender:npc-party" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay Boss npc-combat-end -byerror" type="debug-trace" />
+        <reaction target="event:npc-combat-end:npc:npc-party:2" type="reset-npc-all-hate" />
+        <reaction target="event:npc-combat-end:npc:npc-party:3" type="reset-npc-all-hate" />
+        <reaction target="event:npc-combat-end:npc:npc-party:4" type="reset-npc-all-hate" />
+        <reaction target="event:npc-combat-end:npc:npc-party:5" type="reset-npc-all-hate" />
+        <reaction target="event:npc-combat-end:npc:npc-party:6" type="reset-npc-all-hate" />
+        <reaction seq="act_wait_20sec" target="event:npc-combat-end:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    
+  </script>
+  
+  <script alias="MH_CT_HonCheonGyo_0094_ai" parent="BuYuDo_Faction_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_CT_HonCheonGyo_0094_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_CT_HonCheonGyo_0094_battle_03" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="3" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_CT_HonCheonGyo_0094_battle_04" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="MH_CT_MuRimMaeng_0137_ai" parent="BuYuDo_Faction_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_CT_MuRimMaeng_0137_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_CT_MuRimMaeng_0137_battle_03" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="3" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="MH_CT_MuRimMaeng_0137_battle_04" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="BuYuDo_MuRim_ai">
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_MuRimMaeng_0041" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_422:reg-2" subject2="zonenpcsquad:s_7100_422:reg-2" type="number" value="1" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_422:reg-3" subject2="zonenpcsquad:s_7100_422:reg-3" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay MuRim Named killed01 -byerror" type="debug-trace" />
+        <reaction object="event:killed:attacker" reg="4" target="zonenpcsquad:s_7100_422" type="set-party-object" />
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+        <reaction amount="0" reg="3" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+        <reaction group="zonenpcsquad:s_7100_422" index-1="1" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_MuRimMaeng_0041" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay MuRim Named killed01-1 -byerror" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_MuRimMaeng_0042" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_422:reg-1" subject2="zonenpcsquad:s_7100_422:reg-1" type="number" value="1" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_422:reg-3" subject2="zonenpcsquad:s_7100_422:reg-3" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay MuRim Named killed02 -byerror" type="debug-trace" />
+        <reaction object="event:killed:attacker" reg="4" target="zonenpcsquad:s_7100_422" type="set-party-object" />
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+        <reaction amount="0" reg="3" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+        <reaction group="zonenpcsquad:s_7100_422" index-1="1" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_MuRimMaeng_0042" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay MuRim Named killed02-1 -byerror" type="debug-trace" />
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_MuRimMaeng_0043" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_422:reg-1" subject2="zonenpcsquad:s_7100_422:reg-1" type="number" value="1" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_422:reg-2" subject2="zonenpcsquad:s_7100_422:reg-2" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay MuRim Named killed03 -byerror" type="debug-trace" />
+        <reaction object="event:killed:attacker" reg="4" target="zonenpcsquad:s_7100_422" type="set-party-object" />
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+        <reaction amount="0" reg="3" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+        <reaction group="zonenpcsquad:s_7100_422" index-1="1" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_MuRimMaeng_0043" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay MuRim Named killed03-1 -byerror" type="debug-trace" />
+        <reaction amount="1" reg="3" target="zonenpcsquad:s_7100_422" type="set-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="BuYuDo_HonChun_ai">
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_HonChunGyo_0038" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_419:reg-2" subject2="zonenpcsquad:s_7100_419:reg-2" type="number" value="1" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_419:reg-3" subject2="zonenpcsquad:s_7100_419:reg-3" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay HonChun Named killed01 -byerror" type="debug-trace" />
+        <reaction object="event:killed:attacker" reg="4" target="zonenpcsquad:s_7100_419" type="set-party-object" />
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+        <reaction amount="0" reg="3" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+        <reaction group="zonenpcsquad:s_7100_419" index-1="1" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_HonChunGyo_0038" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay HonChun Named killed01-1 -byerror" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_HonChunGyo_0041" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_419:reg-1" subject2="zonenpcsquad:s_7100_419:reg-1" type="number" value="1" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_419:reg-3" subject2="zonenpcsquad:s_7100_419:reg-3" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay HonChun Named killed02 -byerror" type="debug-trace" />
+        <reaction object="event:killed:attacker" reg="4" target="zonenpcsquad:s_7100_419" type="set-party-object" />
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+        <reaction amount="0" reg="3" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+        <reaction group="zonenpcsquad:s_7100_419" index-1="1" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_HonChunGyo_0041" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay HonChun Named killed02-1 -byerror" type="debug-trace" />
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_HonChunGyo_0042" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_419:reg-1" subject2="zonenpcsquad:s_7100_419:reg-1" type="number" value="1" />
+        <filter op="ge" subject="zonenpcsquad:s_7100_419:reg-2" subject2="zonenpcsquad:s_7100_419:reg-2" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay HonChun Named killed03 -byerror" type="debug-trace" />
+        <reaction object="event:killed:attacker" reg="4" target="zonenpcsquad:s_7100_419" type="set-party-object" />
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+        <reaction amount="0" reg="3" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+        <reaction group="zonenpcsquad:s_7100_419" index-1="1" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="npc-id" value="CH_HonChunGyo_0042" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="GangPlay HonChun Named killed03-1 -byerror" type="debug-trace" />
+        <reaction amount="1" reg="3" target="zonenpcsquad:s_7100_419" type="set-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_MuRimMaeng_0041_ai" parent="BuYuDo_MuRim_ai">
+    <decision event="killed" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_MuRimMaeng_0041_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_MuRimMaeng_0041_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_MuRimMaeng_0043_ai" parent="BuYuDo_MuRim_ai">
+    <decision event="killed" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_MuRimMaeng_0043_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_MuRimMaeng_0043_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_MuRimMaeng_0042_ai" parent="BuYuDo_MuRim_ai">
+    <decision event="killed" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_MuRimMaeng_0042_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_MuRimMaeng_0042_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_HonChunGyo_0038_ai" parent="BuYuDo_HonChun_ai">
+    <decision event="killed" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_HonChunGyo_0038_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_HonChunGyo_0038_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="3" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_HonChunGyo_0038_battle_03" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_HonChunGyo_0041_ai" parent="BuYuDo_HonChun_ai">
+    <decision event="killed" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_HonChunGyo_0041_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_HonChunGyo_0041_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_HonChunGyo_0042_ai" parent="BuYuDo_HonChun_ai">
+    <decision event="killed" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_HonChunGyo_0042_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="CH_HonChunGyo_0042_battle_02" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="MH_MuRimMaeng_0053_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  <script alias="MH_MuRimMaeng_0073_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  <script alias="MH_HonCheonGyo_0022_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  <script alias="MH_HonCheonGyo_0042_ai" parent="squad_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  
+  
+  <script alias="e_Chest_7100meteor_01_ai" />
+  <script alias="e_Chest_7100meteor_02_ai" />
+  <script alias="e_Chest_7100meteor_03_ai" />
+  <script alias="e_Chest_7100meteor_04_ai" />
+  <script alias="e_Chest_7100meteor_05_ai" />
+  <script alias="e_Chest_7100meteor_06_ai" />
+  <script alias="e_Chest_7100meteor_07_ai" />
+  <script alias="e_Chest_7100meteor_08_ai" />
+  <script alias="e_Chest_7100meteor_09_ai" />
+  <script alias="e_Chest_7100meteor_10_ai" />
+  <script alias="e_Chest_7100meteor_11_ai" />
+  <script alias="e_Chest_7100meteor_12_ai" />
+  <script alias="e_Chest_7100meteor_13_ai" />
+  <script alias="e_Chest_7100meteor_14_ai" />
+  <script alias="e_Chest_7100meteor_15_ai" />
+  <script alias="e_Chest_7100meteor_16_ai" />
+  <script alias="e_Chest_7100meteor_17_ai" />
+  <script alias="e_Chest_7100meteor_18_ai" />
+  <script alias="e_Chest_7100meteor_19_ai" />
+  <script alias="e_Chest_7100meteor_20_ai" />
+  <script alias="e_Chest_7100meteor_21_ai" />
+  <script alias="e_Chest_7100meteor_22_ai" />
+  <script alias="e_Chest_7100meteor_23_ai" />
+  
+  
+  <script alias="ME_CT_BoneMaskThinA_0015_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_BoneMaskThinA_0015_ai spawnd -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_BoneMaskThinA_0015_ai combat-start -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+        <reaction text="ME_CT_BoneMaskThinA_0015_ai bleeding-1 -pure" type="debug-trace" />
+        <reaction from="event:npc-bleeding:npc" social="ME_CT_BoneMaskThinA_0015_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_BoneMaskThinA_0015_ai killed -pure" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_01" target2="zoneenv2spawn:e_Gate_sealeddoor_01_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_CT_Dummy_0329_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0329_ai spawn. set-act -pure" type="debug-trace" />
+        
+        
+        <reaction seq="ME_CT_Dummy_0329_act1" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0329_ai act-pause 1 -pure" type="debug-trace" />
+        
+        
+        <reaction spawn-1="a_7102_57_1" type="spawn-npc" />
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0329_ai act-pause 2 -pure" type="debug-trace" />
+        
+        
+        <reaction spawn-1="a_7102_57_2" type="spawn-npc" />
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0329_ai act-pause 3 -pure" type="debug-trace" />
+        
+        
+        <reaction spawn-1="a_7102_57_3" type="spawn-npc" />
+        
+        <reaction amount="1" reg="1" target="zonenpcspawn:a_7102_57" type="set-npc-number" />
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0329_ai act-pause 4 -pure" type="debug-trace" />
+        
+        
+        <reaction spawn-1="a_7102_57_4" type="spawn-npc" />
+        
+        <reaction amount="2" reg="1" target="zonenpcspawn:a_7102_57" type="set-npc-number" />
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0329_ai act-pause 5 -pure" type="debug-trace" />
+        
+        
+        <reaction spawn-1="a_7102_57_5" type="spawn-npc" />
+        
+        <reaction amount="3" reg="1" target="zonenpcspawn:a_7102_57" type="set-npc-number" />
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_Gate_sealeddoor_02_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="e_Gate_sealeddoor_02_ai env-manipulated -pure" type="debug-trace" />
+        
+        <reaction seq="ME_CT_Spider_0070_burrow_out1" target="zonenpcspawn:a_7102_111" type="set-npc-act" />
+        <reaction seq="ME_CT_Spider_0070_burrow_out2" target="zonenpcspawn:a_7102_86" type="set-npc-act" />
+        <reaction seq="ME_CT_Spider_0070_burrow_out2" target="zonenpcspawn:a_7102_87" type="set-npc-act" />
+        <reaction seq="ME_CT_Spider_0070_burrow_out2" target="zonenpcspawn:a_7102_88" type="set-npc-act" />
+        <reaction seq="ME_CT_Spider_0070_burrow_out2" target="zonenpcspawn:a_7102_89" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_Gate_sealeddoor_04_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="e_Gate_sealeddoor_04_ai env-manipulated -pure" type="debug-trace" />
+        
+        <reaction spawn-1="a_7102_112_1" spawn-delay="1000" type="spawn-npc" />
+        
+        <reaction target="zonenpcspawn:a_7102_58" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_59" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_60" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_61" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_62" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_63" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_64" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_65" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_66" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_67" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_68" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_69" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_70" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_71" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_72" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_73" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_74" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_75" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_76" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_77" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_78" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_79" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_80" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_90" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_91" type="reset-npc-all-hate" />
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_58" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_59" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_60" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_61" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_62" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_63" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_64" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_65" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_66" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_67" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_68" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_69" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_70" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_71" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_72" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_73" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_74" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_75" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_76" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_77" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_78" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_79" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_80" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_90" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_7102_112_1" target="zonenpcspawn:a_7102_91" type="diff-npc-hate" />
+        
+        <reaction spawn-1="a_7102_112" spawn-delay="6000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Pest_0047_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Pest_0047_ai spawned -pure" type="debug-trace" />
+        <reaction target="zonenpcspawn:a_7102_58" target2="zonenpcspawn:a_7102_58" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_59" target2="zonenpcspawn:a_7102_59" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_60" target2="zonenpcspawn:a_7102_60" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_61" target2="zonenpcspawn:a_7102_61" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_62" target2="zonenpcspawn:a_7102_62" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_63" target2="zonenpcspawn:a_7102_63" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_64" target2="zonenpcspawn:a_7102_64" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_65" target2="zonenpcspawn:a_7102_65" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_66" target2="zonenpcspawn:a_7102_66" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_67" target2="zonenpcspawn:a_7102_67" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_68" target2="zonenpcspawn:a_7102_68" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_69" target2="zonenpcspawn:a_7102_69" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_70" target2="zonenpcspawn:a_7102_70" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_71" target2="zonenpcspawn:a_7102_71" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_72" target2="zonenpcspawn:a_7102_72" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_73" target2="zonenpcspawn:a_7102_73" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_74" target2="zonenpcspawn:a_7102_74" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_75" target2="zonenpcspawn:a_7102_75" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_76" target2="zonenpcspawn:a_7102_76" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_77" target2="zonenpcspawn:a_7102_77" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_78" target2="zonenpcspawn:a_7102_78" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_79" target2="zonenpcspawn:a_7102_79" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_80" target2="zonenpcspawn:a_7102_80" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_90" target2="zonenpcspawn:a_7102_90" type="kill" />
+        <reaction target="zonenpcspawn:a_7102_91" target2="zonenpcspawn:a_7102_91" type="kill" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Pest_0047_ai spawn slave" type="debug-trace" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_7102_118" index-1="1" index-2="2" index-3="3" index-4="4" spawn-delay="0" spawn-radius="300" spawn-target="event:npc-special:npc" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Pest_0047_ai combat-end -pure" type="debug-trace" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_118" index-1="1" index-2="2" index-3="3" index-4="4" respawn-after-despawn="n" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_7102_111:reg-1" subject2="zonenpcsquad:s_7102_111:reg-1" type="number" value="1" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Pest_0047_ai killed_1 -pure" type="debug-trace" />
+        <reaction spawn-1="a_7102_19" type="spawn-npc" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_118" index-1="1" index-2="2" index-3="3" index-4="4" respawn-after-despawn="n" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_7102_111:reg-1" subject2="zonenpcsquad:s_7102_111:reg-1" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Pest_0047_ai killed_0 -pure" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_7102_111" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_118" index-1="1" index-2="2" index-3="3" index-4="4" respawn-after-despawn="n" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Spider_0070_ai">
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_7102_111:reg-1" subject2="zonenpcsquad:s_7102_111:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Spider_0070_ai killed -pure" type="debug-trace" />
+        <reaction spawn-1="a_7102_19" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_7102_111:reg-1" subject2="zonenpcsquad:s_7102_111:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Pest_0047_ai killed_0 -pure" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_7102_111" type="set-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_SkullCaptain_0014_ai">
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_CT_SkullCaptain_0014_ai combat-start -pure" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:7102_dmz_effect1" target2="zoneenv2spawn:7102_dmz_effect1_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:7102_dmz_effect2" target2="zoneenv2spawn:7102_dmz_effect2_spawn" type="set-env-enable" />
+        <reaction attack-target="event:npc-combat-start:target" spawn-1="a_7102_23" type="spawn-npc" />
+        <reaction attack-target="event:npc-combat-start:target" spawn-1="a_7102_24" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:npc:reg-1" subject2="event:npc-special:npc:reg-1" type="number" value="0" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SkullCaptain_0014_ai spawn slave" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:npc-special:npc" type="diff-npc-number" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_25" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_26" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_27" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_28" type="set-npc-act" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_25" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_26" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_27" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_28" type="diff-npc-hate" />
+        <reaction enable="n" target="zoneenv:7102_dmz_effect1" target2="zoneenv2spawn:7102_dmz_effect1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:7102_dmz_effect2" target2="zoneenv2spawn:7102_dmz_effect2_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:npc:reg-1" subject2="event:npc-special:npc:reg-1" type="number" value="1" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SkullCaptain_0014_ai spawn slave" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:npc-special:npc" type="diff-npc-number" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_29" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_30" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_31" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_32" type="set-npc-act" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_29" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_30" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_31" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_32" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:npc:reg-1" subject2="event:npc-special:npc:reg-1" type="number" value="2" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SkullCaptain_0014_ai spawn slave" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:npc-special:npc" type="diff-npc-number" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_33" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_34" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_35" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_36" type="set-npc-act" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_33" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_34" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_35" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_36" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:npc:reg-1" subject2="event:npc-special:npc:reg-1" type="number" value="3" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SkullCaptain_0014_ai spawn slave" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:npc-special:npc" type="diff-npc-number" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_37" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_38" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_39" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_40" type="set-npc-act" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_37" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_38" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_39" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_40" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:npc:reg-1" subject2="event:npc-special:npc:reg-1" type="number" value="4" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SkullCaptain_0014_ai spawn slave" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:npc-special:npc" type="diff-npc-number" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_41" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_42" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_43" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_44" type="set-npc-act" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_41" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_42" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_43" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_44" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:npc:reg-1" subject2="event:npc-special:npc:reg-1" type="number" value="5" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SkullCaptain_0014_ai spawn slave" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:npc-special:npc" type="diff-npc-number" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_45" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_46" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_47" type="set-npc-act" />
+        <reaction seq="burrow_out" target="zonenpcspawn:a_7102_48" type="set-npc-act" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_45" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_46" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_47" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:npc-special:target" target="zonenpcspawn:a_7102_48" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SkullCaptain_0014_ai combat-end slave burrow-in -pure" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_23" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_24" type="despawn-npc" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_25" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_26" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_27" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_28" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_29" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_30" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_31" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_32" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_33" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_34" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_35" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_36" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_37" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_38" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_39" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_40" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_41" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_42" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_43" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_44" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_45" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_46" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_47" type="set-npc-act" />
+        <reaction seq="burrow_xdetect_default" target="zonenpcspawn:a_7102_48" type="set-npc-act" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_effect1" target2="zoneenv2spawn:7102_dmz_effect1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:7102_dmz_effect2" target2="zoneenv2spawn:7102_dmz_effect2_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="ME_CT_SkullCaptain_0014_ai killed -pure" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_05" target2="zoneenv2spawn:e_Gate_sealeddoor_05_spawn" type="set-env-state" />
+        
+        <reaction group="zonenpcsquad:s_7102_49" index-1="1" index-2="2" index-3="3" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_23" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_24" type="despawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_25" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_26" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_27" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_28" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_29" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_30" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_31" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_32" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_33" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_34" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_35" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_36" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_37" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_38" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_39" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_40" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_41" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_42" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_43" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_44" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_45" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_46" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_47" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_48" type="despawn-npc" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_effect1" target2="zoneenv2spawn:7102_dmz_effect1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:7102_dmz_effect2" target2="zoneenv2spawn:7102_dmz_effect2_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_DesertDragon_0012_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0012_ai spawn -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0012_ai combat-start -pure" type="debug-trace" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_effect1" target2="zoneenv2spawn:7102_dmz_effect1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:7102_dmz_effect2" target2="zoneenv2spawn:7102_dmz_effect2_spawn" type="set-env-enable" />
+        
+        <reaction enable="y" target="zoneenv:7102_dmz_2" target2="zoneenv2spawn:7102_dmz_2_spawn" type="set-env-enable" />
+        <reaction group="zonenpcsquad:s_7102_94" index-1="1" index-2="2" type="spawn-npc-index" />
+        
+        <reaction enable="n" target="zoneenv:e_Chest_7102hartA_01" target2="zoneenv2spawn:e_Chest_7102hartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0012_ai transit-cs -pure" type="debug-trace" />
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0012_ai combat-end -pure" type="debug-trace" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_2" target2="zoneenv2spawn:7102_dmz_2_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_94" index-1="1" index-2="2" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_7102hartA_01" target2="zoneenv2spawn:e_Chest_7102hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction group="zonenpcsquad:s_7102_49" index-1="2" index-2="3" type="spawn-npc-index" />
+        
+        <reaction target="zonenpcspawn:a_7102_50" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_7102_51" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7102_57:reg-1" subject2="zonenpcspawn:a_7102_57:reg-1" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0012_ai killed reg-0  -pure" type="debug-trace" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_49" index-1="2" index-2="3" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_1" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_2" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_3" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_4" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_5" type="despawn-npc" />
+        
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_06" target2="zoneenv2spawn:e_Gate_sealeddoor_06_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_07" target2="zoneenv2spawn:e_Gate_sealeddoor_07_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_08" target2="zoneenv2spawn:e_Gate_sealeddoor_08_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_7102_57_6" type="spawn-npc" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_2" target2="zoneenv2spawn:7102_dmz_2_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_94" index-1="1" index-2="2" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_7102hartA_01" target2="zoneenv2spawn:e_Chest_7102hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction enable="y" target="zoneenv:e_button_7102yongmak" target2="zoneenv2spawn:e_button_7102yongmak_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7102_57:reg-1" subject2="zonenpcspawn:a_7102_57:reg-1" type="number" value="1" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0012_ai killed reg-1  -pure" type="debug-trace" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_49" index-1="2" index-2="3" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_1" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_2" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_3" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_4" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_5" type="despawn-npc" />
+        
+        
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_07" target2="zoneenv2spawn:e_Gate_sealeddoor_07_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_08" target2="zoneenv2spawn:e_Gate_sealeddoor_08_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_7102_57_6" type="spawn-npc" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_2" target2="zoneenv2spawn:7102_dmz_2_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_94" index-1="1" index-2="2" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_7102hartA_01" target2="zoneenv2spawn:e_Chest_7102hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction enable="y" target="zoneenv:e_button_7102yongmak" target2="zoneenv2spawn:e_button_7102yongmak_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7102_57:reg-1" subject2="zonenpcspawn:a_7102_57:reg-1" type="number" value="2" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0012_ai killed reg-2  -pure" type="debug-trace" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_49" index-1="2" index-2="3" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_1" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_2" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_3" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_4" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_5" type="despawn-npc" />
+        
+        
+        
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_08" target2="zoneenv2spawn:e_Gate_sealeddoor_08_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_7102_57_6" type="spawn-npc" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_2" target2="zoneenv2spawn:7102_dmz_2_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_94" index-1="1" index-2="2" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_7102hartA_01" target2="zoneenv2spawn:e_Chest_7102hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction enable="y" target="zoneenv:e_button_7102yongmak" target2="zoneenv2spawn:e_button_7102yongmak_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_7102_57:reg-1" subject2="zonenpcspawn:a_7102_57:reg-1" type="number" value="3" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0012_ai killed reg-3 -pure" type="debug-trace" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_49" index-1="2" index-2="3" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_1" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_2" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_3" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_4" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_5" type="despawn-npc" />
+        
+        
+        
+        
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_2" target2="zoneenv2spawn:7102_dmz_2_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_94" index-1="1" index-2="2" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_7102hartA_01" target2="zoneenv2spawn:e_Chest_7102hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction enable="y" target="zoneenv:e_button_7102yongmak" target2="zoneenv2spawn:e_button_7102yongmak_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_DesertDragon_0012_ai killed. default -pure" type="debug-trace" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_49" index-1="2" index-2="3" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_1" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_2" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_3" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_4" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_57_5" type="despawn-npc" />
+        
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_06" target2="zoneenv2spawn:e_Gate_sealeddoor_06_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_07" target2="zoneenv2spawn:e_Gate_sealeddoor_07_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_08" target2="zoneenv2spawn:e_Gate_sealeddoor_08_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_7102_57_6" type="spawn-npc" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_2" target2="zoneenv2spawn:7102_dmz_2_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_94" index-1="1" index-2="2" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_7102hartA_01" target2="zoneenv2spawn:e_Chest_7102hartA_01_spawn" type="set-env-enable" />
+        
+        <reaction enable="y" target="zoneenv:e_button_7102yongmak" target2="zoneenv2spawn:e_button_7102yongmak_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_JunoBoss_0005_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0005_ai spawn -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill" value="Gadget_RedBall_0001" />
+        <filter flag="y" flagtype="burrow" subject="event:attacked:defender" subject2="event:attacked:defender" type="effect-flag" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3" value="Gadget_RedBall_0001" />
+        <filter flag="y" flagtype="burrow" subject="event:attacked:defender" subject2="event:attacked:defender" type="effect-flag" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="junoboss burrow break -pure" type="debug-trace" />
+        <reaction immediately="y" target="event:attacked:defender" transit-cond-idx="2" type="transit-npc-combat" />
+        <reaction effect="Gadget_Q_RifleA_Fall" target="event:attacked:defender" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0005_ai transit-cs -pure" type="debug-trace" />
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0005_ai spawn-gadget -pure" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:target" spawn-1="a_7102_122_2" spawn-target="event:npc-special:target" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0005_ai combat-end -pure" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_JunoBoss_0006_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0006_ai spawn -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill" value="Gadget_BlueBall_0001" />
+        <filter flag="y" flagtype="burrow" subject="event:attacked:defender" subject2="event:attacked:defender" type="effect-flag" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3" value="Gadget_BlueBall_0001" />
+        <filter flag="y" flagtype="burrow" subject="event:attacked:defender" subject2="event:attacked:defender" type="effect-flag" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="junoboss burrow break -pure" type="debug-trace" />
+        <reaction immediately="y" target="event:attacked:defender" transit-cond-idx="2" type="transit-npc-combat" />
+        <reaction effect="Gadget_Q_RifleA_Fall" target="event:attacked:defender" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0006_ai transit-cs -pure" type="debug-trace" />
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0006_ai spawn-gadget -pure" type="debug-trace" />
+        
+        <reaction attack-target="event:npc-special:target" spawn-1="a_7102_122_1" spawn-target="event:npc-special:target" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_JunoBoss_0005_ai combat-end -pure" type="debug-trace" />
+        
+        <reaction amount="0" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Dummy_0345_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0345_ai spawn. set-act -pure" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_chest_7102_doorkey_01" target2="zoneenv2spawn:e_chest_7102_doorkey_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_chest_7102_doorkey_02" target2="zoneenv2spawn:e_chest_7102_doorkey_02_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_chest_7102_doorkey_03" target2="zoneenv2spawn:e_chest_7102_doorkey_03_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_chest_7102_doorkey_04" target2="zoneenv2spawn:e_chest_7102_doorkey_04_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_chest_7102_doorkey_05" target2="zoneenv2spawn:e_chest_7102_doorkey_05_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_chest_7102_doorkey_06" target2="zoneenv2spawn:e_chest_7102_doorkey_06_spawn" type="set-env-enable" />
+        
+        <reaction seq="act_wait_15sec_xdetect" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_wait_15sec_xdetect" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0345_ai act-fin. -pure" type="debug-trace" />
+        
+        <reaction from="event:act-finished:npc" social="ME_CT_Dummy_0345_soc_01" type="play-social" />
+        
+        <reaction seq="act_wait_15sec_xdetect" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_SeolOkGungBoss_0003_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_7102_122" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SeolOkGungBoss_0003_ai a_7102_122 spawn -pure" type="debug-trace" />
+        
+        <reaction attack-target="zonenpcspawn:a_7102_49" group="zonenpcsquad:s_7102_122" index-1="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_7102_123" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SeolOkGungBoss_0003_ai a_7102_123 spawn -pure" type="debug-trace" />
+        
+        <reaction attack-target="zonenpcspawn:a_7102_49" group="zonenpcsquad:s_7102_123" index-1="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_7102_124" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SeolOkGungBoss_0003_ai a_7102_124 spawn -pure" type="debug-trace" />
+        
+        <reaction attack-target="zonenpcspawn:a_7102_49" group="zonenpcsquad:s_7102_124" index-1="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_7102_125" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SeolOkGungBoss_0003_ai a_7102_125 spawn -pure" type="debug-trace" />
+        
+        <reaction attack-target="zonenpcspawn:a_7102_49" group="zonenpcsquad:s_7102_125" index-1="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_7102_122" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SeolOkGungBoss_0003_ai a_7102_122 killed -pure" type="debug-trace" />
+        
+        <reaction target="zonenpcspawn:a_7102_122_1" target2="zonenpcspawn:a_7102_122_1" type="kill" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_7102_123" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SeolOkGungBoss_0003_ai a_7102_123 killed -pure" type="debug-trace" />
+        
+        <reaction target="zonenpcspawn:a_7102_123_1" target2="zonenpcspawn:a_7102_123_1" type="kill" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_7102_124" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SeolOkGungBoss_0003_ai a_7102_124 killed -pure" type="debug-trace" />
+        
+        <reaction target="zonenpcspawn:a_7102_124_1" target2="zonenpcspawn:a_7102_124_1" type="kill" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_7102_125" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_SeolOkGungBoss_0003_ai a_7102_125 killed -pure" type="debug-trace" />
+        
+        <reaction target="zonenpcspawn:a_7102_125_1" target2="zonenpcspawn:a_7102_125_1" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Dummy_0380_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0380_ai spawn -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0380_ai event-step=1 -pure" type="debug-trace" />
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Dummy_0381_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0381_ai spawn -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0381_ai event-step=1 -pure" type="debug-trace" />
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Minowoo_0001_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_CT_Minowoo_0001_ai combat-start -pure" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:7102_dmz_1" target2="zoneenv2spawn:7102_dmz_1_spawn" type="set-env-enable" />
+        <reaction group="zonenpcsquad:s_7102_92" index-1="1" index-2="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Minowoo_0001_ai transit-cs -pure" type="debug-trace" />
+        <reaction immediately="n" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Minowoo_0001_ai slave-spawn -pure" type="debug-trace" />
+        <reaction spawn-1="a_7102_52" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_7102_52" spawn-1="a_7102_20" type="spawn-npc" />
+        <reaction spawn-1="a_7102_53" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_7102_53" spawn-1="a_7102_21" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Minowoo_0001_ai slave-spawn -pure" type="debug-trace" />
+        <reaction spawn-1="a_7102_83" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_7102_83" spawn-1="a_7102_81" type="spawn-npc" />
+        <reaction spawn-1="a_7102_84" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_7102_84" spawn-1="a_7102_82" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Minowoo_0001_ai slave-spawn -pure" type="debug-trace" />
+        <reaction spawn-1="a_7102_52" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_7102_52" spawn-1="a_7102_20" type="spawn-npc" />
+        <reaction spawn-1="a_7102_53" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_7102_53" spawn-1="a_7102_21" type="spawn-npc" />
+        <reaction spawn-1="a_7102_83" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_7102_83" spawn-1="a_7102_81" spawn-delay="3000" type="spawn-npc" />
+        <reaction spawn-1="a_7102_84" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_7102_84" spawn-1="a_7102_82" spawn-delay="3000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="dead" op="neq" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Minowoo_0001_ai combat-end -pure" type="debug-trace" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_1" target2="zoneenv2spawn:7102_dmz_1_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_92" index-1="1" index-2="2" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_20" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_21" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_81" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_82" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Minowoo_0001_ai killed -pure" type="debug-trace" />
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_03" target2="zoneenv2spawn:e_Gate_sealeddoor_03_spawn" type="set-env-state" />
+        
+        <reaction enable="n" target="zoneenv:7102_dmz_1" target2="zoneenv2spawn:7102_dmz_1_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_7102_92" index-1="1" index-2="2" respawn-after-despawn="n" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_20" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_21" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_81" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_82" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_52" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_53" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_83" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_84" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Minowoo_0002_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Minowoo_0002_ai -pure" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="ME_SUC_B4_Minou_None_HornRushAttack_Finish" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Minowoo_0002_ai invoked-effect -pure" type="debug-trace" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Dummy_0336_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_CT_Dummy_0336_ai -pure" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_Button_7102_Yongmak_01_ai">
+    
+    <decision event="env-manipulated">
+      <filter-set>
+        <filter subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="pc" />
+        <filter op="eq" subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="active-faction" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="e_Button_7102_Yongmak_01_ai manipulated faction-1 -pure" type="debug-trace" />
+        <reaction pc-spawn="2" target="event:env-manipulated:pc" type="warp" zone="Zone_BuYouDo_New" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="env-manipulated">
+      <filter-set>
+        <filter subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="pc" />
+        <filter op="eq" subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="active-faction" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="e_Button_7102_Yongmak_01_ai manipulated faction-2 -pure" type="debug-trace" />
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_BuYouDo_New" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_button_7102yongmak_ai">
+    
+    <decision event="env-manipulated">
+      <filter-set>
+        <filter subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="pc" />
+        <filter op="eq" subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="active-faction" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="e_button_7102yongmak_ai manipulated faction-1 -pure" type="debug-trace" />
+        <reaction pc-spawn="2" target="event:env-manipulated:pc" type="warp" zone="Zone_BuYouDo_New" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="env-manipulated">
+      <filter-set>
+        <filter subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="pc" />
+        <filter op="eq" subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="active-faction" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="e_button_7102yongmak_ai manipulated faction-2 -pure" type="debug-trace" />
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_BuYouDo_New" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="7102_foot_1_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="npc-id" value="ME_CT_Minowoo_0001" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7102_foot_1_ai env-entered. reset -pure" type="debug-trace" />
+        <reaction target="event:env-entered:creature" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="7102_foot_2_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="npc-id" value="ME_CT_Minowoo_0001" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7102_foot_2_ai env-entered. reset -pure" type="debug-trace" />
+        <reaction target="event:env-entered:creature" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="7102_foot_3_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="npc-id" value="ME_CT_Minowoo_0001" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7102_foot_3_ai env-entered. reset -pure" type="debug-trace" />
+        <reaction target="event:env-entered:creature" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="7102_foot_4_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="npc-id" value="ME_CT_DesertDragon_0012" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7102_foot_4_ai env-entered. reset -pure" type="debug-trace" />
+        <reaction target="event:env-entered:creature" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="7102_foot_5_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="npc-id" value="ME_CT_DesertDragon_0012" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7102_foot_5_ai env-entered. reset -pure" type="debug-trace" />
+        <reaction target="event:env-entered:creature" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="7102_foot_6_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="npc-id" value="ME_CT_DesertDragon_0012" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7102_foot_6_ai env-entered. reset -pure" type="debug-trace" />
+        <reaction target="event:env-entered:creature" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="7102_foot_7_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="npc-id" value="ME_CT_DesertDragon_0012" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="7102_foot_7_ai env-entered. reset -pure" type="debug-trace" />
+        <reaction target="event:env-entered:creature" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_chest_7102_doorkey_01_ai">
+    <decision event="env-manipulated">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_7102_49:reg-2" subject2="zonenpcsquad:s_7102_49:reg-2" type="number" value="5" />
+        <filter subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="e_chest_7102_doorkey manipulated -pure" type="debug-trace" />
+        
+        <reaction state="open" state2="open" target="zoneenv:e_Gate_sealeddoor_09" target2="zoneenv2spawn:e_Gate_sealeddoor_09_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_7102_57" type="spawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_7102_12" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="env-manipulated">
+      <filter-set>
+        <filter subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="e_chest_7102_doorkey manipulated -pure" type="debug-trace" />
+        
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_7102_49" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_chest_7102_doorkey_02_ai" parent="e_chest_7102_doorkey_01_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_chest_7102_doorkey_03_ai" parent="e_chest_7102_doorkey_01_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_chest_7102_doorkey_04_ai" parent="e_chest_7102_doorkey_01_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_chest_7102_doorkey_05_ai" parent="e_chest_7102_doorkey_01_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_chest_7102_doorkey_06_ai" parent="e_chest_7102_doorkey_01_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  
+  <script alias="BuYuDo_Jaco_ai">
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_index_1_pathway" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="act_Gang_01" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_CT_MuRimMaeng_0133_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_MuRimMaeng_0134_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_MuRimMaeng_0132_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_MuRimMaeng_0127_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_MuRimMaeng_0126_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_MuRimMaeng_0125_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_HonCheonGyo_0093_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_HonCheonGyo_0092_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_HonCheonGyo_0091_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_HonCheonGyo_0087_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_HonCheonGyo_0085_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_CT_HonCheonGyo_0086_ai" parent="BuYuDo_Jaco_ai">
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="CH_CT_MuRimMaeng_0080_ai">
+    
+    <quest-decision alias="qd_1169_1">
+      <reaction-set>
+        <reaction target="case:talked:pc" teleport="7100_Teleport_1" type="activate-teleport" />
+        <reaction text="7100 qd_1169_1 activate-teleport" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  <script alias="CH_CT_HonChunGyo_0079_ai">
+    <quest-decision alias="qd_1170_1">
+      <reaction-set>
+        <reaction target="case:talked:pc" teleport="7100_Teleport_2" type="activate-teleport" />
+        <reaction text="7100 qd_1170_1 activate-teleport" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+</table>

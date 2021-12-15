@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.831.xml-->
+  <quest alias="q_sub_831" broadcast-category="field" category="normal" id="831" max-repeat="1" reset-type="none" save-type="all">
+    <acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_1443" preceding-quest-check="and">
+      <case acquire-quest="y" completion-count="0" completion-count-op="ge" object="npc:CH_CT_Flower_0004" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1" reward-1="831_final_set1">
+        <case completion-count="1" completion-count-op="lt" object="npc:CH_CT_Flower_0004" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="2" required-register-value="4">
+        <case object2="zoneenv2:e_Chest_insam_07" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_insam_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_insam_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_insam_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_insam_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_insam_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_insam_01" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+      <mission id="1" required-register-value="10">
+        <case object2="npc:MH_CT_NokLimDo_0206" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_NokLimDo_0205" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_NokLimDo_0203" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_NokLimDo_0208" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_RuneMechaB_0007" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_NokLimDo_0204" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

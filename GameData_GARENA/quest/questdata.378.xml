@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.378.xml-->
+  <quest alias="q_sub_378" broadcast-category="field" category="normal" district-1="jeryoungrim" id="378" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="10" preceding-quest-1="q_epic_311" preceding-quest-check="and" preceding-quest-mission-step-1="2">
+      <case acquire-quest="y" completion-count="0" object="npc:ctzn_jinm_hogieum_shm_001" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CE_Board_0014" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:me_moran_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1" reward-1="378_final_set1" reward-2="378_final_set2">
+        <case object="npc:ctzn_jinm_hogieum_shm_001" progress-mission="y" type="talk" />
+        <case completion-count="0" fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1398.xml-->
+  <quest alias="q_sub_1398" attraction-1="classic-field-zone:windplain_majuk" broadcast-category="field" category="normal" id="1398" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition level="45" preceding-quest-1="q_epic_1420" preceding-quest-2="q_epic_293" preceding-quest-3="q_epic_1545" preceding-quest-check="or">
+      <case acquire-quest="y" grocery="Quest_Scroll_BackChung_0065" item="Quest_Scroll_BackChung_0065" party-broadcast="n" required-item-1="Quest_Scroll_BackChung_0065" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+      <case loot-item="Quest_Scroll_BackChung_0065" object2="npc:ME_SA_FrogTribeC_0008" party-broadcast="n" quest-symbol-drop-prob="10" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0065" object2="npc:ME_SA_FrogTribeC_0003" party-broadcast="n" quest-symbol-drop-prob="10" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0065" object2="npc:ME_SA_BelliedWaterFrog_0002" party-broadcast="n" quest-symbol-drop-prob="10" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0065" object2="npc:ME_SA_BelliedWaterFrog_0001" party-broadcast="n" quest-symbol-drop-prob="10" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0065" object2="npc:ME_SA_BelliedFrog_0009" party-broadcast="n" quest-symbol-drop-prob="10" type="loot" />
+      <case loot-item="Quest_Scroll_BackChung_0065" object2="npc:ME_SA_BelliedFrog_0006" party-broadcast="n" quest-symbol-drop-prob="10" type="loot" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CE_SA_JinDol_0001" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object2="zoneenv2:e_chest_5501trapequi_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_06" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object="npc:CE_SA_DolJin_0001" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object2="zoneenv2:e_chest_5501trapequi_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_06" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object="npc:CE_SA_PaDol_0002" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object2="zoneenv2:e_chest_5501trapequi_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object2="zoneenv2:e_chest_5501trapequi_06" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="4" required-register-value="1" reward-1="1398_final_set1" reward-2="1398_final_set2">
+        <case object="npc:CE_SA_PaDol_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

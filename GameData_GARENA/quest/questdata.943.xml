@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.943.xml-->
+  <quest alias="q_sub_943" broadcast-category="field" category="normal" id="943" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="16" preceding-quest-1="q_epic_316" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_JR_MangNanJa_0001" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="0" completion-count-op="ge" party-broadcast="n" type="talk-to-self">
+        <filter-set>
+          <filter field="level" op="ge" subject2="case:talk-to-self:pc" type="prop" value="19" />
+        </filter-set>
+      </case>
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_songamheartzone" party-broadcast="n" progress-mission="y" quest-decision="qd_943_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="leave-zone" zone-1="zone_SongAmHeartZone">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_JR_BeonYang_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail zone-1="zone_SongAmHeartZone" />
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone" zone-1="zone_SongAmHeartZone">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:e_chest_2451harta_01" party-broadcast="y" progress-mission="reaction-only" type="manipulate" />
+        <tutorial-case progress-mission="y" type="charge-heart-count" zone="zone_songamheartzone" />
+      </mission>
+      <mission-step-fail zone-1="zone_SongAmHeartZone" />
+    </mission-step>
+    <mission-step id="4" rollback="leave-zone" zone-1="zone_SongAmHeartZone">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_JR_BeonA_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail zone-1="zone_SongAmHeartZone" />
+    </mission-step>
+    <mission-step id="5" rollback="leave-zone" zone-1="zone_SongAmHeartZone">
+      <mission id="5" required-register-value="1">
+        <case object2="zoneenv2:e_chest_2451harta_02" party-broadcast="y" progress-mission="reaction-only" type="manipulate" />
+        <tutorial-case progress-mission="y" type="charge-heart-count" zone="zone_songamheartzone" />
+      </mission>
+      <mission-step-fail zone-1="zone_SongAmHeartZone" />
+    </mission-step>
+    <mission-step id="6" rollback="leave-zone" zone-1="zone_SongAmHeartZone">
+      <mission id="6" required-register-value="1">
+        <case drop-gadget="y" gadget-required="dont-care" object="npc:CH_JR_BeonA_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail zone-1="zone_SongAmHeartZone" />
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone" zone-1="zone_SongAmHeartZone">
+      <mission id="7" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_JR_BeonA_0002" party-broadcast="n" progress-mission="reaction-only" type="talk" />
+        <tutorial-case progress-mission="y" type="use-heart-count" zone="zone_songamheartzone" />
+      </mission>
+      <mission-step-fail zone-1="zone_SongAmHeartZone" />
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1" reward-1="943_final_set1">
+        <case object="zone:zone_SongAmHeartZone" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_943_2" type="enter-zone" />
+        <case object="npc:CH_JR_BeonYang_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <giveup-loss item-1="Quest_Tutorial_SpecialMaterial_0001" />
+  </quest>
+</table>

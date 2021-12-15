@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1013.xml-->
+  <quest alias="q_sub_1013" broadcast-category="field" category="normal" district-1="suwal" id="1013" max-repeat="1" save-type="all">
+    <acquisition level="36" preceding-quest-1="q_epic_905" preceding-quest-2="q_sub_1019" preceding-quest-check="and" preceding-quest-mission-step-1="7">
+      <case acquire-quest="y" object="npc:ch_sinryong_0045" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1" quest-decision="qd_1013_2" zone-1="zone_MaengSuGul">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ME_Tiger_0009" object2="npc:ME_Tiger_0009" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zone:zone_MaengSuGul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1013_1" type="enter-zone" />
+        <case object="npc:CH_Hunter_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WolChon_0010" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ME_bear_0015" object2="npc:ME_bear_0015" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zone:zone_MaengSuGul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1013_4" type="enter-zone" />
+        <case object="npc:CH_Hunter_0013" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="1013_final_set1">
+        <case object="npc:CH_Hunter_0006" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_Hunter_0008" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_Hunter_0007" party-broadcast="n" type="approach" visible-object="n" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

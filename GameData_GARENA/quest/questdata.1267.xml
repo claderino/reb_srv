@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1267.xml-->
+  <quest activated-faction="factionmain2" alias="q_sub_1267" broadcast-category="field" category="normal" district-1="suwal" id="1267" main-faction="factionmain2" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" faction="factionmain2" faction-level="2" level="41" preceding-quest-1="q_epic_928" preceding-quest-check="and">
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:CH_HonChunGyo_0022" party-broadcast="n" type="talk">
+        <filter-set>
+          <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+        </filter-set>
+      </case>
+      <case acquire-quest="y" completion-count="1" object="npc:CH_HonChunGyo_0022" party-broadcast="n" type="talk">
+        <filter-set>
+          <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+        </filter-set>
+      </case>
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="2">
+        <case object2="npc:MH_JeGukGun_0180" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0181" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0182" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0183" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0184" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="2" required-register-value="10">
+        <case object2="npc:MH_JeGukGun_0185" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0186" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0187" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0188" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0189" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0190" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0191" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0192" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_JeGukGun_0193" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0194" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0195" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0196" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0197" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0198" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0199" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0200" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0201" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0202" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_JeGukGun_0203" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_RuneMechaBattle_0011" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WolfEmpire_0003" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1" reward-1="1267_final_set1" reward-2="1267_final_set2">
+        <case completion-count="1" completion-count-op="lt" object="npc:CH_HonChunGyo_0022" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case completion-count="1" object="npc:CH_HonChunGyo_0022" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+  </quest>
+</table>

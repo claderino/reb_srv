@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.baekchung_pacheonseongdo.xml-->
+
+  
+  
+  
+
+  
+  <act-sequence alias="1290_citizen_act_01" type="act">
+    <action social="1" type="indexed-social" />
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="100" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_BaekWoon_0005_act_01" type="act">
+    <action social="CH_WC_BaekWoon_0005_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action social="CH_WC_BaekWoon_0005_soc_02" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="1000" type="stay" />
+    <action social="CH_WC_BaekWoon_0005_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_BaekWoon_0005_act_02" type="act">
+    <action duration="5000" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_YuGaChon_0024_act_01" type="act">
+    <action social="CH_WC_YuGaChon_0024_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_YuGaChon_0025_act_01" type="act">
+    <action social="CH_WC_YuGaChon_0025_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_YuGaChon_0026_act_01" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_YuGaChon_0027_act_01" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_BaekWoon_0003_act_01" type="act">
+    <action social="CH_WC_BaekWoon_0003_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0001_act_01" type="act">
+    <action social="CH_WC_HoBeopoe_0001_soc_02" type="social" />
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0033_act_01" type="act">
+    <action duration="100" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0002_act_01" type="act">
+    <action social="CH_WC_HoBeopoe_0002_soc_02" type="social" />
+    <action duration="100" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0002_act_02" type="act">
+    <action duration="1000" type="stay" />
+    <action social="PaCheon_Once_SkillRevival" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="1292_Common_Act" type="act">
+    <action duration="1000" type="stay" />
+    <action enter_prob="100" type="select">
+      <action prob="80" type="loop">
+        <action social="PaCheon_Once_SkillRevival" type="social" />
+      </action>
+      <action prob="10" type="loop">
+        <action social="1" type="indexed-social" />
+      </action>
+      <action prob="10" type="loop">
+        <action social="2" type="indexed-social" />
+      </action>
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0033_act_02" type="act">
+    <action duration="1000" type="stay" />
+    <action social="PaCheon_Once_SkillRevival" type="social" />
+  </act-sequence>  
+
+  
+  <act-sequence alias="CH_WC_MooSung_0002_act_01" type="act">
+    <action duration="5000" type="stay" />
+    
+    <action social="CH_WC_MooSung_0002_soc_01" type="social" />
+    
+    <action step="1" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="2000" type="stay" />
+    
+    <action social="CH_WC_MooSung_0002_soc_02" type="social" />
+    <action duration="2000" type="stay" />
+    
+    <action social="CH_WC_MooSung_0002_soc_03" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_MooSung_0002_act_02" type="act">
+    <action social="Musung_DuribunShow" type="social" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0049_act_01" type="act">
+    <action duration="4000" type="stay" />
+    <action step="99" type="pause" />
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0049_soc_02" type="social" />
+    <action duration="1000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0049_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0049_soc_04" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0049_act_02" type="act">
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0049_soc_05" type="social" />
+    <action step="1" type="pause" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0049_act_03" type="act">
+    <action duration="2000" type="stay" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0050_act_01" type="act">
+    <action social="CH_WC_HoBeopoe_0050_soc_02" type="social" />
+    <action step="1" type="pause" />
+    <action social="CH_WC_HoBeopoe_0050_soc_03" type="social" />
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_MooSung_0005_act_01" type="act">
+    <action social="CH_WC_MooSung_0005_soc_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_MooSung_0005_soc_02" type="social" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_WC_MooSung_0005_act_02" type="act">
+    <action duration="3000" type="stay" />
+    <action social="CH_WC_MooSung_0005_soc_03" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_MooSung_0005_soc_04" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_MooSung_0005_soc_05" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_MooSung_0005_soc_06" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0026_show_soc" type="social" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_WC_MooSung_0005_act_03" type="act">
+    <action duration="5000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="10000" type="stay" />
+    <action step="2" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="1294_Common_Act" type="act">
+    <action social="PaCheon_Once_SkillRevival" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0026_act01" type="act">
+    <action social="CH_WC_HoBeopoe_0026_show_soc" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0019_act01" type="act">
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0019_soc_03" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0018_act01" type="act">
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0018_soc_03" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0017_act01" type="act">
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0017_soc_03" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0017_act02" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0017_soc_04" type="social" />
+    <action duration="2000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0021_act01" type="act">
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0021_soc_03" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0020_act01" type="act">
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0020_soc_03" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0066_act01" type="act">
+    <action duration="2000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0066_soc_02" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0061_act01" type="act">
+    <action duration="6000" type="stay" />
+    <action enter_prob="100" type="select">
+      <action prob="10" social="CH_WC_HoBeopoe_0061_soc_01" type="social" />
+      <action prob="20" social="CH_WC_HoBeopoe_0061_soc_02" type="social" />
+      <action duration="1000" prob="70" type="stay" />
+    </action>    
+  </act-sequence>
+
+  <act-sequence alias="CH_WC_HoBeopoe_0064_act01" type="act">
+    <action social="PaCheon_Once_SkillRevival" type="social" />
+    <action enter_prob="100" type="select">
+      <action prob="20" social="CH_WC_HoBeopoe_0064_soc_02" type="social" />
+      <action duration="1000" prob="80" type="stay" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="1294_1_Floor_Act" type="peace">
+    <action social="HockRyuGo_soc_01" type="social" />
+  </act-sequence>
+  
+  
+  
+  
+
+
+
+  
+  <act-sequence alias="peace_random_stay16_Ryu" indexed-detect="1" type="peace">
+    <action enter_prob="100" type="select">
+      <action duration="7000" prob="25" type="stay" />
+      <action duration="10000" prob="25" type="stay" />
+      <action duration="15000" prob="25" type="stay" />
+      <action duration="20000" prob="25" type="stay" />
+    </action>
+    <action social="1" type="indexed-social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="peace_random_stay_Ryu" indexed-detect="1" type="peace">
+    <action enter_prob="100" type="select">
+      <action duration="100" prob="50" type="stay" />
+      <action duration="3000" prob="50" type="stay" />
+    </action>
+    <action enter_prob="100" type="select">
+      <action prob="70" social="1" type="indexed-social" />
+      <action prob="30" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="peace_fix_social2_stay10" indexed-detect="1" type="peace">
+    <action enter_prob="100" type="select">
+      <action prob="50" type="loop">
+        <action social="1" type="indexed-social" />
+        <action duration="10000" type="stay" />
+      </action>
+      <action prob="50" type="loop">
+        <action social="2" type="indexed-social" />
+        <action duration="10000" type="stay" />
+      </action>
+    </action>
+  </act-sequence>
+
+
+  
+  <act-sequence alias="MH_WC_HockRyuGo_0006_act" indexed-detect="1" type="peace">
+    <action social="MH_WC_HockRyuGo_0006_combat_soc_01" type="social" />
+    <action duration="15000" type="stay" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="ME_WC_Dummy_0062_act_01" type="act">
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_Citizen_0037_act_01" type="act">
+    <action social="1" type="indexed-social" />
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WC_HoBeopoe_0012_act_01" type="act">
+    <action social="MuYeongDan_SingleA_Skill_HeadLine_Msg_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="MH_WC_HoBeopoe_0012_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WC_HoBeopoe_0013_act_01" type="act">
+    <action social="MH_WC_HoBeopoe_0013_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0071_act_01" type="act">
+    <action social="CH_WC_HoBeopoe_0071_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0071_soc_02" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="1000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0071_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+    <action social="CH_WC_HoBeopoe_0071_soc_04" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WC_HockRyuGo_0017_act_01" type="act">
+    <action social="MH_WC_HockRyuGo_0017_soc_07" type="social" />
+
+    <action duration="5000" type="stay" />
+    <action social="MH_WC_HockRyuGo_0017_soc_03" type="social" />
+
+    <action step="1" type="pause" />
+
+    <action social="MH_WC_HockRyuGo_0017_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WC_AncientMechTwinsB_0001_act_01" type="act">
+    <action duration="3000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="MH_WC_MudSoldier_0001_act" indexed-detect="1" type="act">
+    <action hide="n" type="hide" />
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WC_MudSoldier_0002_act" indexed-detect="1" type="act">
+    <action hide="n" type="hide" />
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WC_Dummy_0055_act_01" type="act">
+    <action duration="8000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WC_Dummy_0055_act_02" type="act">
+    <action duration="8000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WC_Dummy_0055_act_03" type="act">
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WC_Dummy_0055_act_04" type="act">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0015_act_01" type="act">
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0015_act_02" type="act">
+    <action social="ps_RandomSocial" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_WC_HoBeopoe_0016_act_02" type="act">
+    <action social="ps_RandomSocial" type="social" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="MH_WC_HockRyuGo_0011_act_01" type="act">
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WC_HockRyuGo_0013_act_01" type="act">
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WC_HockRyuGo_0014_act_01" type="act">
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="Spawn_act_1_Wait" type="act">
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+
+</table>

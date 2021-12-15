@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.936.xml-->
+  <quest alias="q_epic_936" broadcast-category="field" category="epic" completed-list="y" id="936" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SA_Citizen_0021" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_SA_Hunter_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CE_SA_Wolf_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="2">
+        <case object2="npc:ME_CT_GongGakSooRider_0008" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="50" type="loot" />
+        <case object="npc:CE_SA_Wolf_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Hunter_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_936_1" zone-1="zone_NorthField_N">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CE_SA_Wolf_0001" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_SA_Hunter_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CE_SA_Wolf_0002" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="npc:CH_SA_Hunter_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_Hunter_0005" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1167" />
+    </completion>
+    <transit id="1" zone="StartZone_Default">
+      <destination mission-step-id="12" zone-index="2" />
+      <destination mission-step-id="11" zone-index="2" />
+      <destination mission-step-id="10" zone-index="2" />
+      <destination mission-step-id="9" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+    </transit>
+    <mission-step id="8" quest-decision="qd_936_13" zone-1="zone_NorthField_N">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_SA_Hunter_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CE_SA_Wolf_0003" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="npc:ME_CT_UnGumho_0001" party-broadcast="y" prob="100" progress-mission="y" quest-symbol-drop-prob="50" type="loot" />
+        <case object="npc:CH_SA_Hunter_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_936_14" zone-1="zone_NorthField_N">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_SA_Hunter_0004" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="10" quest-decision="qd_936_2" zone-1="zone_NorthField_N">
+      <mission id="10" required-register-value="1" reward-1="936_final_set1">
+        <case object="npc:CH_SA_Hunter_0005" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CE_SA_Wolf_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_SA_Hunter_0006" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

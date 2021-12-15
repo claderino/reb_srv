@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\2073\zoneenv2placedata.2073.xml-->
+	<record action-point="-12408,-12883,-519" alias="2073_portal_2075_place" region-point-1="-12472,-12888,-528" region-point-2="-12470,-12865,94" region-point-3="-12343,-12878,94" region-point-4="-12345,-12901,-528" tool-zone-1="2073" type="portal" />
+	<record action-point="-12467,-12574,-560" action-radius="0" alias="2073_foot_01_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="-12467,-12574,-560" manipulation-radius="0" region-point-1="-12683,-12774,-596" region-point-2="-12683,-12373,-591" region-point-3="-12251,-12373,-596" region-point-4="-12251,-12774,-454" tool-zone-1="2073" type="foot-switch" use-manipulation-point="n" />
+	<record action-point="-11791,-12831,-533" alias="2073_portal_2701_place" region-point-1="-11772,-12894,6258" region-point-2="-11823,-12773,6258" region-point-3="-11809,-12767,6258" region-point-4="-11759,-12888,6258" tool-zone-1="2010" tool-zone-2="2073" type="portal" />
+	<record action-point="-13584,-12729,-743" alias="2073_portal_2625_place" region-point-1="-13563,-12746,-636" region-point-2="-13610,-12721,-641" region-point-3="-13605,-12711,-754" region-point-4="-13558,-12736,-754" tool-zone-1="2010" tool-zone-2="2083" tool-zone-3="2073" type="portal" />
+	<record action-point="-13657,-12859,-706" action-radius="0" alias="2073_foot_03_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="-13657,-12859,-706" manipulation-radius="0" region-point-1="-13597,-13000,-764" region-point-2="-13809,-12877,-764" region-point-3="-13718,-12719,-763" region-point-4="-13506,-12842,-757" tool-zone-1="2073" type="foot-switch" use-manipulation-point="n" />
+	<record alias="zone2073.oceanicregion_place" type="oceanic-region" />
+</table>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.912.xml-->
+  <quest alias="q_epic_912" category="epic" completed-list="y" district-1="suwal" id="912" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_daeeobang_0039" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="npc:ME_FishmanC_0005" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:ch_daeeobang_0039" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_daeeobang_0039" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_daeeobang_0006" party-broadcast="n" progress-mission="y" quest-decision="qd_912_6" type="talk" />
+        <case object="zone:zone_jekukbimileunsincher" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_912_5" type="enter-zone" />
+        <case object="npc:ch_daeeobang_0039" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object2="zoneenv2:4565_footswitch_2" party-broadcast="n" progress-mission="y" quest-decision="qd_912_2" type="env-entered" />
+        <case object="zone:zone_jekukbimileunsincher" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_912_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_912_7" zone-1="zone_jekukbimileunsincher">
+      <mission id="6" required-register-value="1">
+        <case object="npc:ch_honghwadae_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_912_8" type="talk" />
+        <case object2="zoneenv2:4565_footswitch_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_912_4" type="env-entered" />
+        <case object="zone:zone_jekukbimileunsincher" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_912_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1" reward-1="912_final_set1">
+        <case object="npc:CH_DaeEoBang_0046" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_913" />
+    </completion>
+  </quest>
+</table>

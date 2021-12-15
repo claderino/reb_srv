@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1638.xml-->
+  <quest alias="q_epic_1638" broadcast-category="field" category="epic" completed-list="y" id="1638" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_WA_BunYang_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Epic8_BuYuHamDae_D" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1638_01" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1638_2" rollback="none" zone-1="Zone_Epic8_BuYuHamDae">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_WA_CheolMuGoe_0002" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="zone:Zone_Epic8_BuYuHamDae" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1638_02" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1638_3" rollback="leave-zone" zone-1="Zone_Epic8_BuYuHamDae">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WA_CheolMuGoe_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Epic8_BuYuHamDae" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1638_03" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="1" zone-1="Zone_Epic8_BuYuHamDae" />
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_NamSoYu_0001" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="zone:Zone_6502_EunKwangIel_House1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1638_04" type="enter-zone" />
+        <case object="npc:MH_WA_Epic8_NamSoYu_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1638_4" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" rollback="none">
+      <mission id="5" required-register-value="1">
+        <case object="zone:Zone_6514_Epic8_ChonJang_House" party-broadcast="n" progress-mission="y" quest-decision="qd_1638_05" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone">
+      <mission id="7" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_0197" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" zone-1="Zone_6514_Epic8_ChonJang_House" />
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1638_6" rollback="leave-zone" zone-1="Zone_6514_Epic8_ChonJang_House">
+      <mission id="6" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_0194" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" zone-1="Zone_6514_Epic8_ChonJang_House" />
+    </mission-step>
+    <transit id="1" zone="zone_GeonWon_BuYuHamDae">
+      <destination mission-step-id="3" zone-index="4" />
+      <destination mission-step-id="2" zone-index="4" />
+    </transit>
+    <transit id="2" zone="zone_GeonWon_BuYuHamDae_4_D">
+      <destination mission-step-id="1" zone-index="2" />
+    </transit>
+    <mission-step id="8">
+      <mission id="8" required-register-value="10">
+        <case object2="npc:ME_WA_Epic8_0034" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WA_Epic8_0039" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WA_Epic8_0040" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_0195" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="10" rollback="none">
+      <mission id="10" required-register-value="1">
+        <case object="zone:Zone_6515_PeRangJok_Battle" party-broadcast="n" progress-mission="y" quest-decision="qd_1638_011" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="11" quest-decision="qd_1638_10" rollback="leave-zone" zone-1="Zone_6515_PeRangJok_Battle">
+      <mission id="11" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_0200" party-broadcast="n" progress-mission="y" quest-decision="qd_1638_10" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="10" zone-1="Zone_6515_PeRangJok_Battle" />
+    </mission-step>
+    <mission-step id="12" quest-decision="qd_1638_11" rollback="leave-zone" zone-1="Zone_6515_PeRangJok_Battle">
+      <mission id="12" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_0200" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="10" zone-1="Zone_6515_PeRangJok_Battle" />
+    </mission-step>
+    <mission-step id="13" rollback="leave-zone">
+      <mission id="13" required-register-value="1">
+        <case gadget="Q_FirewoodC_0004" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_6515_01" party-broadcast="y" progress-mission="y" quest-decision="qd_1638_13" type="manipulate" />
+        <case drop-gadget="y" gadget="Q_FirewoodC_0004" gadget-required="not-a" object2="zoneenv2:e_firewood_6515_01" party-broadcast="y" progress-mission="reaction-only" quest-decision="qd_1638_14" type="manipulate" />
+      </mission>
+      <mission-step-fail rollback-step-id="10" zone-1="Zone_6515_PeRangJok_Battle" />
+    </mission-step>
+    <mission-step id="15" rollback="leave-zone">
+      <mission id="15" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_0200" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="10" zone-1="Zone_6515_PeRangJok_Battle" />
+    </mission-step>
+    <transit id="3" zone="Zone_6512_Epic8_Start_Default">
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+      <destination mission-step-id="14" zone-index="1" />
+    </transit>
+    <mission-step id="16">
+      <mission id="16" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1638_final_set1">
+        <case object="npc:MH_WA_Epic8_0298" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1639" />
+    </completion>
+    <mission-step id="14" quest-decision="qd_1638_12" rollback="leave-zone" zone-1="Zone_6515_PeRangJok_Battle">
+      <mission id="14" required-register-value="1">
+        <case object="npc:ME_WA_Dummy_0036" party-broadcast="n" progress-mission="y" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="10" zone-1="Zone_6515_PeRangJok_Battle" />
+    </mission-step>
+    <transit id="4" zone="Zone_6567_PeRangJok_Default">
+      <destination mission-step-id="14" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="15" zone-index="1" />
+    </transit>
+  </quest>
+</table>

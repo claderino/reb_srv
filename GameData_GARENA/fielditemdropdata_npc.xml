@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="FielditemDrop" version="0.8">
+  <!--fielditemdropdata_npc.xml-->
+	<record alias="Test_Npc_Killed_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv4" prob-1="100" type="npc" />
+	<record alias="Test_Npc_Bleeding_fd" drop-case="bleeding" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv4" hp-percent="80" prob-1="100" type="npc" />
+	<record alias="Test_Npc_effect_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="다운" fielditem-1="TwoHand_Flylizard_LanternA_Lv4" prob-1="100" type="npc" />
+	<record alias="Test_Npc_effect-and-bleeding_fd" drop-case="effect-and-bleeding" drop-place="front-npc" effect-attribute-1="다운" fielditem-1="TwoHand_Flylizard_LanternA_Lv4" hp-percent="50" prob-1="100" type="npc" />
+	<record alias="ME_FlyLizardLantern_010_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv12" prob-1="100" type="npc-deadbody" />
+	<record alias="Mob_Etc_MFlt_Spctr_Lantern_Lizard_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv5" prob-1="100" type="npc-deadbody" />
+	<record alias="Mob_Etc_MFlt_Spctr_Lantern_Lizard_002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv16" prob-1="100" type="npc-deadbody" />
+	<record alias="Mob_Etc_MFlt_Spctr_Pdungn_Lantern_Lizard_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv5" prob-1="100" type="npc-deadbody" />
+	<record alias="Mob_Etc_MFlt_Spctr_Pdungn_Lantern_Lizard_002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv7" prob-1="100" type="npc-deadbody" />
+	<record alias="Mob_Etc_MFlt_Spctr_Pdungn_Lantern_Lizard_003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv7" prob-1="100" type="npc-deadbody" />
+	<record alias="Mob_Etc_MFlt_Spctr_Pdungn_Lantern_Lizard_004_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv14" prob-1="100" type="npc-deadbody" />
+	<record alias="Mob_Etc_MFlt_Spctr_Pdungn_Lantern_Lizard_005_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv11" prob-1="100" type="npc-deadbody" />
+	<record alias="PVE_FlyLizardLantern_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv16" prob-1="100" type="npc-deadbody" />
+	<record alias="ME_FlyLizardLantern_012_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv26" prob-1="100" type="npc-deadbody" />
+	<record alias="ME_FlyLizard_Lantern_006_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv12" prob-1="100" type="npc-deadbody" />
+	<record alias="ME_FlyLizard_Lantern_007_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv18" prob-1="100" type="npc-deadbody" />
+	<record alias="ME_FlyLizard_Lantern_008_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv12" prob-1="100" type="npc-deadbody" />
+	<record alias="ME_FlyLizard_Lantern_009_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv13" prob-1="100" type="npc-deadbody" />
+	<record alias="ME_FlyLizardLantern_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv28" prob-1="100" type="npc-deadbody" />
+	<record alias="ME_FlyLizardLantern_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TwoHand_Flylizard_LanternA_Lv27" prob-1="100" type="npc-deadbody" />
+	<record alias="Mob_Hmn_MLnd_BMan_HangARi_002_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="OneHand_TimeBombA_Lv13" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyB_001_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="OneHand_TimeBombA_Lv13" prob-1="100" type="npc" />
+	<record alias="Mob_Hmn_MLnd_BMan_HangARi_001_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="OneHand_TimeBombA_Lv13" prob-1="100" type="npc" />
+	<record alias="ME_HaeChi_0004_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_LampA" prob-1="100" type="npc" />
+	<record alias="ME_HaeChi_0005_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_LampB" prob-1="100" type="npc" />
+	<record alias="MH_ChungGak_0040_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_Lv20" prob-1="100" type="npc" />
+	<record alias="MH_Practitioner_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv19" prob-1="100" type="npc" />
+	<record alias="Mob_Hmn_MLnd_Soul_PDungn_Zombie_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="Mob_Hmn_MLnd_Soul_Zombie_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="Mob_Hmn_MFlt_Soul_PDungn_Moran_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="Mob_Hmn_MFlt_Soul_Moran_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="Mob_Hmn_MLnd_Soul_PDungn_Zombie_Q_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="Mob_Hmn_MFlt_Soul_Moran_Q_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_Moran_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_Moran_002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_Moran_003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="MH_ZombieA_0003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_ZombieA_0004_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_ZombieA_0016_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_ZombieA_0017_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_ZombieA_0018_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_ZombieA_0019_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_ZombieA_0021_fd" drop-case="killed" drop-place="front-npc" fielditem-1="CharmA" prob-1="100" type="npc" />
+	<record alias="ME_Pest_006_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_008_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_009_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="20" type="npc" />
+	<record alias="PVE_Pest_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="20" type="npc" />
+	<record alias="ME_Pest_010_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="20" type="npc" />
+	<record alias="ME_Pest_011_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_012_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_014_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_016_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_017_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_0003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_0004_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_0006_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="20" type="npc" />
+	<record alias="ME_SandBug_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_0008_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="20" type="npc" />
+	<record alias="ME_Pest_0009_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_Pest" prob-1="100" type="npc" />
+	<record alias="ME_Pest_0005_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_PestSmall" prob-1="100" type="npc" />
+	<record alias="ME_Pest_0007_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_PestSmall" prob-1="100" type="npc" />
+	<record alias="ME_PestSmall_0004_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_PestSmall" prob-1="20" type="npc" />
+	<record alias="PVE_PestSmall_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_PestSmall" prob-1="20" type="npc" />
+	<record alias="Mob_Etc_Mset_Spctr_Mushroom_Snake_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_HolyMushroom" prob-1="100" type="npc" />
+	<record alias="PVE_HolyMushroom_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_HolyMushroom" prob-1="100" type="npc" />
+	<record alias="ME_Wool_005_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_HolyMushroom" prob-1="100" type="npc" />
+	<record alias="ME_HolyMushroom_002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_HolyMushroom" prob-1="100" type="npc" />
+	<record alias="ME_HolyMushroom_003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_HolyMushroom" prob-1="100" type="npc" />
+	<record alias="ME_ToRyongCho_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_HolyMushroom" prob-1="100" type="npc" />
+	<record alias="ME_HolyMushroom_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_HolyMushroom" prob-1="100" type="npc" />
+	<record alias="PVE_GrassBeast_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_GrassBeast" prob-1="100" type="npc" />
+	<record alias="PVE_GrassBeastBurrow_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_GrassBeast" prob-1="100" type="npc" />
+	<record alias="Mob_4LegR_MLnd_Spctr_GrassBeast_Green_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_GrassBeast" prob-1="100" type="npc" />
+	<record alias="Mob_4LegR_MLnd_Spctr_GrassBeast_Green_003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_GrassBeast" prob-1="100" type="npc" />
+	<record alias="ME_GrassBeast_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_GrassBeast" prob-1="100" type="npc" />
+	<record alias="ME_Pest_0012_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_PestSmall" prob-1="20" type="npc" />
+	<record alias="ME_DarkCrazyTribe_008_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_Dark_SwordA" prob-1="50" type="npc" />
+	<record alias="ME_DarkCrazyTribe_0006_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_PoisonedNeedleA" prob-1="50" type="npc" />
+	<record alias="CH_MaYeongGangGun_0020_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_BombA_Lv32" prob-1="100" type="npc" />
+	<record alias="ME_PotAxParty_0006_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="Q_BombI" prob-1="100" type="npc" />
+	<record alias="ME_PotAxParty_0007_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv28" prob-1="100" type="npc" />
+	<record alias="ME_DarkCrazyTribe_0018_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_PoisonedNeedleA" prob-1="100" type="npc" />
+	<record alias="MH_MuRimMeng_026_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv26" prob-1="20" type="npc" />
+	<record alias="MH_HonChoenGyo_026_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv26" prob-1="20" type="npc" />
+	<record alias="MH_MuRimMeng_036_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv36" prob-1="20" type="npc" />
+	<record alias="MH_HonChoenGyo_036_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv36" prob-1="20" type="npc" />
+	<record alias="ME_DarkCrazyTribe_0044_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_PoisonedNeedleA" prob-1="100" type="npc" />
+	<record alias="ME_DarkCrazyTribe_001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_Dark_SwordA" prob-1="50" type="npc" />
+	<record alias="ME_DarkCrazyTribe_003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_PoisonedNeedleA" prob-1="50" type="npc" />
+	<record alias="ME_DarkCrazyTribe_0037_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_Dark_SwordA" prob-1="50" type="npc" />
+	<record alias="ME_DarkCrazyTribe_0039_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_PoisonedNeedleA" prob-1="50" type="npc" />
+	<record alias="ME_PotAxParty_0005_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="Q_BombG" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyA_0003_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="Q_BombG" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyB_0003_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="Q_BombG" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyA_005_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="Q_BombG" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyA_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_RedBombA" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyB_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_BlueBombA" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyC_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_YellowBombA" prob-1="100" type="npc" />
+	<record alias="ME_Henchman_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_TorchlightF" prob-1="100" type="npc" />
+	<record alias="ME_PotAxParty_0008_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv28" prob-1="100" type="npc" />
+	<record alias="ME_Wolf_0004_fd" drop-case="killed" drop-place="front-npc" fielditem-1="LampA" prob-1="100" type="npc" />
+	<record alias="ME_Wolf_0005_fd" drop-case="killed" drop-place="front-npc" fielditem-1="LampA" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyA2_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="IceBombA_Lv38" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyB2_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="GinSengA_Lv38" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyC2_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="FireBombA_Lv38" prob-1="100" type="npc" />
+	<record alias="ME_PotAxPartyB2_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BoneA" fielditem-2="GinSengA_Lv38" fielditem-3="FireBombA_Lv38" prob-1="10" prob-2="25" prob-3="25" type="npc" />
+	<record alias="ME_Golem_0021_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Heal_Lv39" prob-1="100" type="npc" />
+	<record alias="ME_Golem_0022_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Destroy_Lv39" prob-1="100" type="npc" />
+	<record alias="ME_Golem_0023_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Explosion_Lv39" prob-1="100" type="npc" />
+	<record alias="ME_GolemScaleDown1_0007_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Heal_Lv39" prob-1="100" type="npc" />
+	<record alias="ME_GolemScaleDown1_0008_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Destroy_Lv39" prob-1="100" type="npc" />
+	<record alias="ME_GolemScaleDown1_0009_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Explosion_Lv39" prob-1="100" type="npc" />
+	<record alias="MH_NokRimDo_0082_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv17" prob-1="100" type="npc" />
+	<record alias="MH_Bandit_0021_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv17" prob-1="100" type="npc" />
+	<record alias="MH_Bandit_0022_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv17" prob-1="100" type="npc" />
+	<record alias="MH_Bandit_0020_fd" drop-case="killed" drop-place="front-npc" fielditem-1="RifleA_Lv17" prob-1="100" type="npc" />
+	<record alias="MH_Samagyo_0065_fd" drop-case="killed" drop-place="front-npc" fielditem-1="WedgeA" prob-1="100" type="npc" />
+	<record alias="MH_Samagyo_0066_fd" drop-case="killed" drop-place="front-npc" fielditem-1="WedgeB" prob-1="100" type="npc" />
+	<record alias="MH_Samagyo_0067_fd" drop-case="killed" drop-place="front-npc" fielditem-1="WedgeC" prob-1="100" type="npc" />
+	<record alias="MH_Samagyo_0068_fd" drop-case="killed" drop-place="front-npc" fielditem-1="WedgeD" prob-1="100" type="npc" />
+	<record alias="MH_Samagyo_0069_fd" drop-case="killed" drop-place="front-npc" fielditem-1="WedgeE" prob-1="100" type="npc" />
+	<record alias="ME_GolemLeader_0005_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomA_Green" prob-1="100" type="npc" />
+	<record alias="ME_GolemLeader_0006_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomA_Red" prob-1="100" type="npc" />
+	<record alias="ME_GolemLeader_0007_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomA_Blue" prob-1="100" type="npc" />
+	<record alias="ME_Golem_0005_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomA_Heal" prob-1="100" type="npc" />
+	<record alias="ME_Golem_0006_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Destroy" prob-1="100" type="npc" />
+	<record alias="ME_Golem_0007_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Explosion" prob-1="100" type="npc" />
+	<record alias="ME_GolemScaleDown1_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Heal" prob-1="100" type="npc" />
+	<record alias="ME_GolemScaleDown1_0003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Destroy" prob-1="100" type="npc" />
+	<record alias="ME_GolemScaleDown1_0004_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Explosion" prob-1="100" type="npc" />
+	<record alias="ME_PigBaby_0005_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Deadbody_PigA" prob-1="100" type="npc-deadbody" />
+	<record alias="ME_DarkCrazyTribeBigB_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AntidotA" prob-1="100" type="npc" />
+	<record alias="BombA_Lv1_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv1" prob-1="5" type="npc" />
+	<record alias="BombA_Lv2_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv2" prob-1="5" type="npc" />
+	<record alias="BombA_Lv3_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv3" prob-1="5" type="npc" />
+	<record alias="BombA_Lv4_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv4" prob-1="5" type="npc" />
+	<record alias="BombA_Lv5_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv5" prob-1="5" type="npc" />
+	<record alias="BombA_Lv6_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv6" prob-1="5" type="npc" />
+	<record alias="BombA_Lv7_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv7" prob-1="5" type="npc" />
+	<record alias="BombA_Lv8_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv8" prob-1="5" type="npc" />
+	<record alias="BombA_Lv9_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv9" prob-1="5" type="npc" />
+	<record alias="BombA_Lv10_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv10" prob-1="5" type="npc" />
+	<record alias="BombA_Lv11_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv11" prob-1="5" type="npc" />
+	<record alias="BombA_Lv12_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv12" prob-1="5" type="npc" />
+	<record alias="BombA_Lv13_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv13" prob-1="5" type="npc" />
+	<record alias="BombA_Lv14_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv14" prob-1="5" type="npc" />
+	<record alias="BombA_Lv15_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv15" prob-1="5" type="npc" />
+	<record alias="BombA_Lv16_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv16" prob-1="5" type="npc" />
+	<record alias="BombA_Lv17_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv17" prob-1="5" type="npc" />
+	<record alias="BombA_Lv18_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv18" prob-1="5" type="npc" />
+	<record alias="BombA_Lv19_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv19" prob-1="5" type="npc" />
+	<record alias="BombA_Lv20_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv20" prob-1="5" type="npc" />
+	<record alias="BombA_Lv21_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv21" prob-1="5" type="npc" />
+	<record alias="BombA_Lv22_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv22" prob-1="5" type="npc" />
+	<record alias="BombA_Lv23_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv23" prob-1="5" type="npc" />
+	<record alias="BombA_Lv24_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv24" prob-1="5" type="npc" />
+	<record alias="BombA_Lv25_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv25" prob-1="5" type="npc" />
+	<record alias="BombA_Lv26_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv26" prob-1="5" type="npc" />
+	<record alias="BombA_Lv27_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv27" prob-1="5" type="npc" />
+	<record alias="BombA_Lv28_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv28" prob-1="5" type="npc" />
+	<record alias="BombA_Lv29_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv29" prob-1="5" type="npc" />
+	<record alias="BombA_Lv30_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv30" prob-1="5" type="npc" />
+	<record alias="BombA_Lv31_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv31" prob-1="5" type="npc" />
+	<record alias="BombA_Lv32_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv32" prob-1="5" type="npc" />
+	<record alias="BombA_Lv33_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv33" prob-1="5" type="npc" />
+	<record alias="BombA_Lv34_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv34" prob-1="5" type="npc" />
+	<record alias="BombA_Lv35_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv35" prob-1="5" type="npc" />
+	<record alias="BombA_Lv36_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv36" prob-1="5" type="npc" />
+	<record alias="BombA_Lv37_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv37" prob-1="5" type="npc" />
+	<record alias="BombA_Lv38_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv38" prob-1="5" type="npc" />
+	<record alias="BombA_Lv39_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv39" prob-1="5" type="npc" />
+	<record alias="BombA_Lv40_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv40" prob-1="5" type="npc" />
+	<record alias="BombA_Lv41_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv41" prob-1="5" type="npc" />
+	<record alias="BombA_Lv42_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv42" prob-1="5" type="npc" />
+	<record alias="BombA_Lv43_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv43" prob-1="5" type="npc" />
+	<record alias="BombA_Lv44_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv44" prob-1="5" type="npc" />
+	<record alias="BombA_Lv45_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv45" prob-1="5" type="npc" />
+	<record alias="BombA_Lv46_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv46" prob-1="5" type="npc" />
+	<record alias="BombA_Lv47_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv47" prob-1="5" type="npc" />
+	<record alias="BombA_Lv48_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv48" prob-1="5" type="npc" />
+	<record alias="BombA_Lv49_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv49" prob-1="5" type="npc" />
+	<record alias="BombA_Lv50_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv50" prob-1="5" type="npc" />
+	<record alias="ME_EoInJok_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv40" prob-1="25" type="npc" />
+	<record alias="MH_BokGonPae_0012_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_Lv36" prob-1="100" type="npc" />
+	<record alias="ME_RewardBox_0006_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Rifle_Detect_Lv43" prob-1="100" type="npc" />
+	<record alias="ME_EoInJok_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_Lv18" prob-1="25" type="npc" />
+	<record alias="ME_RewardBox_0009_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombC_Lv43_1" fielditem-2="FlameThrowerC_Lv43_1" fielditem-3="RifleC_Lv43_1" prob-1="10" prob-2="5" prob-3="20" type="npc" />
+	<record alias="ME_RewardBox_0008_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombC_Lv42_1" fielditem-2="RifleC_Lv42_1" prob-1="10" prob-2="20" type="npc" />
+	<record alias="ME_RewardBox_0007_fd" drop-case="killed" drop-place="front-npc" fielditem-1="FlameThrowerC_Lv42_2" prob-1="5" type="npc" />
+	<record alias="ME_RewardBox_0011_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombC_Lv42_3" fielditem-2="FlameThrowerC_Lv42_3" fielditem-3="RifleC_Lv42_2" prob-1="40" prob-2="30" prob-3="30" type="npc" />
+	<record alias="BombC_Lv42_2_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombC_Lv42_2" prob-1="15" type="npc" />
+	<record alias="ME_RewardBox_0012_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In01" fielditem-2="RifleS_In01" prob-1="50" prob-2="50" type="npc" />
+	<record alias="ME_PigTribeB_0009_fd" drop-case="killed" drop-place="front-npc" fielditem-1="FlameThrowerA_Lv39" prob-1="100" type="npc" />
+	<record alias="EffectBall_In01_Poison_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In01" prob-1="100" type="npc" />
+	<record alias="EffectBall_In02_Fire_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In02" prob-1="100" type="npc" />
+	<record alias="EffectBall_In03_Ice_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In03" prob-1="100" type="npc" />
+	<record alias="AntiPoisonBall_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AntiPoisonBall_01" prob-1="100" type="npc" />
+	<record alias="MH_MuRimMaeng_0104_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Fire_01" prob-1="100" type="npc" />
+	<record alias="MH_HonCheonGyo_0073_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Fire_02" prob-1="100" type="npc" />
+	<record alias="ME_RewardBox_0014_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Bomb_Poison_01" prob-1="50" prob-2="50" type="npc" />
+	<record alias="me_samyojeong_0011_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TorchtreeA_lv12" prob-1="100" type="npc" />
+	<record alias="me_treegoblin_0014_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TorchtreeA_lv12" prob-1="100" type="npc" />
+	<record alias="EffectBall_In06_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In06" prob-1="100" type="npc" />
+	<record alias="EffectBall_In07_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In07" prob-1="100" type="npc" />
+	<record alias="Stome_ChungGak_Bomb_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In01" prob-1="10" type="npc" />
+	<record alias="Stome_ChungGak_Rifle_fd" drop-case="killed" drop-place="front-npc" fielditem-1="RifleS_In01" prob-1="50" type="npc" />
+	<record alias="BombBoxA_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombBoxA_In01" prob-1="100" type="npc" />
+	<record alias="ME_NakWon_0012_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Tower_Rifle_01" prob-1="100" type="npc" />
+	<record alias="ME_NakWon_0013_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Tower_Rifle_01" prob-1="100" type="npc" />
+	<record alias="EffectBall_In04_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In04" prob-1="100" type="npc" />
+	<record alias="EffectBall_In05_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In05" prob-1="100" type="npc" />
+	<record alias="BlueBatA_In01_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="다운" fielditem-1="BlueBatA_In01" prob-1="100" type="npc" />
+	<record alias="SkullBomb_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SkullBomb_In01" prob-1="100" type="npc" />
+	<record alias="SkullBomb_In02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SkullBomb_In02" prob-1="100" type="npc" />
+	<record alias="BombB_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombB_In01" prob-1="100" type="npc" />
+	<record alias="EffectBall_In08_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In08" prob-1="100" type="npc" />
+	<record alias="EffectBall_In09_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In09" prob-1="100" type="npc" />
+	<record alias="RifleS_In02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="RifleS_In02" prob-1="50" type="npc" />
+	<record alias="BombS_In03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In03" prob-1="10" type="npc" />
+	<record alias="ME_DarkCrazyTribeC_0007_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_EffectBall_01" prob-1="100" type="npc" />
+	<record alias="ME_BoneMaskBigA_0008_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_EffectBall_01" prob-1="100" type="npc" />
+	<record alias="ME_CT_UryongLeader_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_EffectBall_02" prob-1="100" type="npc" />
+	<record alias="ME_CT_SeaMonsterLeader_0003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_EffectBall_02" prob-1="100" type="npc" />
+	<record alias="Shield_In_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Shield_In_01" prob-1="100" type="npc" />
+	<record alias="ME_CT_TreeGoblin_0015_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AntiPoison_0001" prob-1="100" type="npc" />
+	<record alias="MH_CT_Mokujin_0078_fd" drop-case="killed" drop-place="front-npc" fielditem-1="MachineGun_Lv50" prob-1="100" type="npc" />
+	<record alias="MH_CT_Mokujin_0079_fd" drop-case="killed" drop-place="front-npc" fielditem-1="FlameThrower_Lv50" prob-1="100" type="npc" />
+	<record alias="MH_CT_Mokujin_0080_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SkullBomb_Lv50" prob-1="100" type="npc" />
+	<record alias="SnowBall_In_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SnowBall_In_01" prob-1="100" type="npc" />
+	<record alias="SnowBall_In_02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SnowBall_In_02" prob-1="100" type="npc" />
+	<record alias="SnowBall_In_03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SnowBall_In_03" prob-1="100" type="npc" />
+	<record alias="SnowBall_In_04_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SnowBall_In_04" prob-1="100" type="npc" />
+	<record alias="SnowBall_In_05_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SnowBall_In_05" prob-1="100" type="npc" />
+	<record alias="SnowBall_In_06_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SnowBall_In_06" prob-1="100" type="npc" />
+	<record alias="BombS_In04_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In04" prob-1="100" type="npc" />
+	<record alias="BombS_In05_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In05" prob-1="100" type="npc" />
+	<record alias="FlameThrower_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="FlameThrower_In01" prob-1="100" type="npc" />
+	<record alias="ME_CT_RewardBox_0022_fd" drop-case="killed" drop-place="front-npc" fielditem-1="MachineGun_Lv47" prob-1="100" type="npc" />
+	<record alias="ME_CT_RewardBox_0023_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NokRimDo_Bomb_0003" prob-1="100" type="npc" />
+	<record alias="MH_CT_BokUnHoe_0001_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="Q_Bomb_0007" prob-1="100" type="npc" />
+	<record alias="ME_CT_RewardBox_0010_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_CT_RewardBox_0011_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_CT_RewardBox_0012_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_CT_RewardBox_0013_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_CT_RewardBox_0014_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_CT_RewardBox_0015_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_C3_HolyMushroom_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="RedBall_In01" prob-1="100" type="npc" />
+	<record alias="EffectBall_In10_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In10" prob-1="100" type="npc" />
+	<record alias="EffectBall_In11_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In11" prob-1="100" type="npc" />
+	<record alias="ME_CT_Dummy_0294_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NokRimDo_Bomb_0002" prob-1="100" type="npc" />
+	<record alias="ME_CT_SkullFighter_0023_fd" drop-case="killed" drop-place="front-npc" fielditem-1="WebShooter_0001" prob-1="50" type="npc" />
+	<record alias="EffectBall_In12_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In12" prob-1="100" type="npc" />
+	<record alias="SniperGun_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SniperGun_In01" prob-1="100" type="npc" />
+	<record alias="ME_C3_SnowBall_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In13" prob-1="100" type="npc" />
+	<record alias="ME_CT_RewardBox_0036_fd" drop-case="killed" drop-place="front-npc" fielditem-1="MachineGun_Lv50_lv2" prob-1="100" type="npc" />
+	<record alias="ME_CT_SeolOkGungBoss_0003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="AtomB_Destroy_Lv39" prob-1="100" type="npc" />
+	<record alias="ME_CT_Dummy_0380_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BlueBall_0001" prob-1="100" type="npc" />
+	<record alias="ME_CT_Dummy_0381_fd" drop-case="killed" drop-place="front-npc" fielditem-1="RedBall_0001" prob-1="100" type="npc" />
+	<record alias="BombS_In07_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In07" prob-1="100" type="npc" />
+	<record alias="ME_CT_MusinTower_SImHwa_0029_fd" drop-case="effect" drop-place="front-npc" effect-attribute-1="가젯드랍" fielditem-1="BlueBall_0002" prob-1="100" type="npc" />
+	<record alias="ME_CT_MusinTower_SImHwa_0015_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_01" prob-1="100" type="npc" />
+	<record alias="BlueBall_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BlueBall_In01" prob-1="100" type="npc" />
+	<record alias="ME_CT_MusinTower_SImHwa_0022_fd" drop-case="killed" drop-place="front-npc" fielditem-1="MachineGun_Lv50_03" prob-1="100" type="npc" />
+	<record alias="ME_CT_MusinTower_SImHwa_0023_fd" drop-case="killed" drop-place="front-npc" fielditem-1="RedBombB_02" prob-1="100" type="npc" />
+	<record alias="MH_C3_JeGukGun_0038_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In06" prob-1="100" type="npc" />
+	<record alias="MH_C3_JeGukGun_0039_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In06" prob-1="100" type="npc" />
+	<record alias="RedBombB_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="RedBombB_In01" prob-1="100" type="npc" />
+	<record alias="ME_BC_RewardBox_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_BC_RewardBox_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_BC_RewardBox_0003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_BC_RewardBox_0004_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_Bomb_Ice_01" fielditem-2="Arena_Launcher_01" fielditem-3="Arena_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_CT_ItemBox_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In15" prob-1="100" type="npc" />
+	<record alias="BombS_In08_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In08" prob-1="100" type="npc" />
+	<record alias="ME_SA_UnbalanceZombieBScaleUp1_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_03" prob-1="100" type="npc" />
+	<record alias="ME_SA_YuRanM_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_04" prob-1="100" type="npc" />
+	<record alias="ME_SA_DemonShadowCBig_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_05" prob-1="100" type="npc" />
+	<record alias="ME_SA_SpiderQueen_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_02" prob-1="100" type="npc" />
+	<record alias="ME_SA_FireGorillaA_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_02" prob-1="100" type="npc" />
+	<record alias="ME_SA_SinSiBoss_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_02" prob-1="100" type="npc" />
+	<record alias="BombBoxA_In02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombBoxA_In02" prob-1="100" type="npc" />
+	<record alias="FlameThrower_In02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="FlameThrower_In02" prob-1="100" type="npc" />
+	<record alias="SniperGun_In02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SniperGun_In02" prob-1="100" type="npc" />
+	<record alias="EffectBall_In16_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In16" prob-1="100" type="npc" />
+	<record alias="PoisonedNeedle_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="PoisonedNeedle_0001" prob-1="100" type="npc" />
+	<record alias="EffectBall_In17_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In17" prob-1="100" type="npc" />
+	<record alias="ME_WB_HolyMushroom_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_06" prob-1="100" type="npc" />
+	<record alias="EffectBall_In18_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In18" prob-1="100" type="npc" />
+	<record alias="EffectBall_In19_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In19" prob-1="100" type="npc" />
+	<record alias="EffectBall_In20_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In20" prob-1="100" type="npc" />
+	<record alias="DemonASword_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="DemonASword_01" prob-1="100" type="npc" />
+	<record alias="EffectBall_07_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_07" prob-1="100" type="npc" />
+	<record alias="BombS_In09_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_In09" prob-1="100" type="npc" />
+	<record alias="MH_WB_ChungGak_0118_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SniperGun_In02" fielditem-2="FlameThrower_In02" fielditem-3="BombBoxA_In02" prob-1="30" prob-2="30" prob-3="40" type="npc" />
+	<record alias="ME_SA_Dummy_0030_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_CrocodileSharkTribeC2_01" prob-1="100" type="npc" />
+	<record alias="ME_SA_Dummy_0031_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_CrocodileSharkTribeC2_02" prob-1="100" type="npc" />
+	<record alias="ME_SA_Dummy_0032_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_CrocodileSharkTribeC2_03" prob-1="100" type="npc" />
+	<record alias="ME_SA_CrocodileSharkTribeC2_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_CrocodileSharkTribeC2_04" prob-1="100" type="npc" />
+	<record alias="EffectBall_In21_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In21" prob-1="100" type="npc" />
+	<record alias="EffectBall_In22_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In22" prob-1="100" type="npc" />
+	<record alias="EffectBall_08_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_08" prob-1="100" type="npc" />
+	<record alias="ME_WB_DarkCrazyTribeA_0012_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_HeukChang" fielditem-2="FreezingThrowerA_HeukChang" fielditem-3="EffectBall_HeukChang" prob-1="40" prob-2="30" prob-3="30" type="npc" />
+	<record alias="ME_WB_RewardBox_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombA_HeukChang" fielditem-2="FreezingThrowerA_HeukChang" fielditem-3="EffectBall_HeukChang" prob-1="40" prob-2="30" prob-3="30" type="npc" />
+	<record alias="ME_WA_UnbalanceZombieBScaleUp1_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_02" prob-1="100" type="npc" />
+	<record alias="ME_WA_SpiderQueen_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_02" prob-1="100" type="npc" />
+	<record alias="ME_WA_FireGorillaA_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_02" prob-1="100" type="npc" />
+	<record alias="ME_WA_SinSiBoss_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_02" prob-1="100" type="npc" />
+	<record alias="EffectBall_In23_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In23" prob-1="100" type="npc" />
+	<record alias="ME_WA_DesertDragon_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Arena_EffectBall_03" prob-1="100" type="npc" />
+	<record alias="EffectBall_In24_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In24" prob-1="100" type="npc" />
+	<record alias="ME_SA_MusinTower_SImHwa_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BlueBall_0002" prob-1="100" type="npc" />
+	<record alias="EffectBall_In25_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In25" prob-1="100" type="npc" />
+	<record alias="EffectBall_In26_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In26" prob-1="100" type="npc" />
+	<record alias="EffectBall_In27_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In27" prob-1="100" type="npc" />
+	<record alias="EffectBall_In28_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In28" prob-1="100" type="npc" />
+	<record alias="EffectBall_In29_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In29" prob-1="100" type="npc" />
+	<record alias="EffectBall_In30_Lake_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In30_Lake" prob-1="100" type="npc" />
+	<record alias="EffectBall_In31_Lake_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In31_Lake" prob-1="100" type="npc" />
+	<record alias="EffectBall_In32_Lake_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In32_Lake" prob-1="100" type="npc" />
+	<record alias="ME_SA_bff_ItemBox_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BFF_IronHammer_01" prob-1="100" type="npc" />
+	<record alias="ME_SA_bff_ItemBox_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BFF_FlameThrower_01" prob-1="100" type="npc" />
+	<record alias="ME_SA_bff_ItemBox_0003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BFF_PoisonThrower_01" prob-1="100" type="npc" />
+	<record alias="EffectBall_09_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_09" prob-1="100" type="npc" />
+	<record alias="ME_CT_RewardBox_0009_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_Rifle_0006" prob-1="100" type="npc" />
+	<record alias="ME_CT_RewardBox_0016_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_PoisonedNeedle_0003" prob-1="100" type="npc" />
+	<record alias="ME_SA_RichVill_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_BombBoxA_01" fielditem-2="Q_FlameThrower_0008" prob-1="50" prob-2="50" type="npc" />
+	<record alias="ME_SA_RichVill_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_SniperGun_01" fielditem-2="Q_MachineGun_01" prob-1="50" prob-2="50" type="npc" />
+	<record alias="EffectBall_In30_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_In30" prob-1="100" type="npc" />
+	<record alias="EffectBall_10_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_10" prob-1="100" type="npc" />
+	<record alias="EffectBall_RainbowLake_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_RainbowLake" prob-1="100" type="npc" />
+	<record alias="ME_SA_NokLimDo_0083_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_Majeok" prob-1="100" type="npc" />
+	<record alias="ME_SA_FrogTribeCLeader_0003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_Majeok" prob-1="100" type="npc" />
+	<record alias="CE_SA_Pot_0006_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_Majeok" fielditem-2="Torchlight_Majeok" fielditem-3="Launcher_Majeok" prob-1="3" prob-2="5" prob-3="2" type="npc" />
+	<record alias="CE_SA_Pot_0007_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_Majeok" fielditem-2="Torchlight_Majeok" fielditem-3="Launcher_Majeok" prob-1="3" prob-2="5" prob-3="2" type="npc" />
+	<record alias="CE_SA_Box_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_Majeok" fielditem-2="Torchlight_Majeok" fielditem-3="Launcher_Majeok" prob-1="6" prob-2="10" prob-3="4" type="npc" />
+	<record alias="EffectBall_PungNyeon_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_PungNyeon" prob-1="100" type="npc" />
+	<record alias="ME_SA_BFF_HoncheonPileBunkerEmpire_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="JackPot_EffectBall" prob-1="100" type="npc" />
+	<record alias="ME_SA_BFF_MurimPileBunkerEmpire_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="JackPot_EffectBall" prob-1="100" type="npc" />
+	<record alias="BFF_PigTribeC_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BFF_PigTribeC_BombA" fielditem-2="BFF_PigTribeC_BombB" fielditem-3="BFF_PigTribeC_FlameThrower" prob-1="15" prob-2="10" prob-3="5" type="npc" />
+	<record alias="BFF_BoneMaskBigALeader_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BFF_BoneMaskBigALeader_BombA" fielditem-2="BFF_BoneMaskBigALeader_BombB" fielditem-3="BFF_BoneMaskBigALeader_FlameThrower" prob-1="15" prob-2="10" prob-3="5" type="npc" />
+	<record alias="BFF_HumanNotEVE_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BFF_BoneMaskBigALeader_BombA" fielditem-2="BFF_BoneMaskBigALeader_BombB" fielditem-3="BFF_BoneMaskBigALeader_FlameThrower" prob-1="45" prob-2="30" prob-3="15" type="npc" />
+	<record alias="BombS_HeaSang50Lv_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BombS_HeaSang50Lv" prob-1="100" type="npc" />
+	<record alias="EffectBall_China_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_China_01" prob-1="100" type="npc" />
+	<record alias="EffectBall_China_02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_China_02" prob-1="100" type="npc" />
+	<record alias="EffectBall_China_03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_China_03" prob-1="100" type="npc" />
+	<record alias="DK_EffectBallA_fd" drop-case="killed" drop-place="front-npc" fielditem-1="DK_EffectBall_01" prob-1="100" type="npc" />
+	<record alias="DK_TimeBomb_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="DK_TimeBomb_01" prob-1="100" type="npc" />
+	<record alias="DK_IceBomb_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="DK_IceBomb_01" prob-1="100" type="npc" />
+	<record alias="DK_PoisonBomb_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="DK_PoisonBomb_01" prob-1="100" type="npc" />
+	<record alias="DK_SmokeBomb_fd" drop-case="killed" drop-place="front-npc" fielditem-1="DK_SmokeBomb_01" prob-1="100" type="npc" />
+	<record alias="BFF_HumanNotEVEB_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BFF_HumanNotEVE_BombA" fielditem-2="BFF_HumanNotEVE_BombB" prob-1="15" prob-2="10" type="npc" />
+	<record alias="BFF_HumanNotEVEC_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BFF_HumanNotEVE_BombA" fielditem-2="BFF_HumanNotEVE_BombB" prob-1="10" prob-2="5" type="npc" />
+	<record alias="ME_WB_SoraCrab_0004_fd" drop-case="killed" drop-place="front-npc" fielditem-1="RedBall_Jr01" prob-1="100" type="npc" />
+	<record alias="ME_WB_SoraCrab_0005_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BlueBall_Jr01" prob-1="100" type="npc" />
+	<record alias="ME_WB_Dummy_0176_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SniperRifleA_Jr01" fielditem-2="FireGun_Jr01" fielditem-3="TimeBombBig_Jr01" prob-1="35" prob-2="35" prob-3="30" type="npc" />
+	<record alias="ME_WB_Dummy_0177_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SniperRifleA_Jr01" fielditem-2="FireGun_Jr01" fielditem-3="TimeBombBig_Jr01" prob-1="40" prob-2="40" prob-3="20" type="npc" />
+	<record alias="CE_SA_WeaponBox_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_Birthday_Rifle" prob-1="100" type="npc" />
+	<record alias="CE_SA_WeaponBox_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_Birthday_Rifle" prob-1="100" type="npc" />
+	<record alias="DK_EffectBallB_fd" drop-case="killed" drop-place="front-npc" fielditem-1="DK_EffectBall_02" prob-1="100" type="npc" />
+	<record alias="DK_EffectBallC_fd" drop-case="killed" drop-place="front-npc" fielditem-1="DK_EffectBall_03" prob-1="100" type="npc" />
+	<record alias="ME_WB_Dummy_0171_fd" drop-case="killed" drop-place="front-npc" fielditem-1="EffectBall_MushRoom" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_Seed_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_Seed_01" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_Seed_02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_Seed_02" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_Seed_03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_Seed_03" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_Thrower_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_Thrower_01" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_Thrower_02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_Thrower_02" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_EffectBall_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_EffectBall_In01" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_EffectBall_In02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_EffectBall_In02" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_Thrower_03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_Thrower_03" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_EffectBall_In03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_EffectBall_In03" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_Seed_prob_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_Seed_01" fielditem-2="NightWindPlain_Seed_03" prob-1="50" prob-2="50" type="npc" />
+	<record alias="NightWindPlain_Seed_prob_02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_Seed_02" fielditem-2="NightWindPlain_Seed_03" prob-1="50" prob-2="50" type="npc" />
+	<record alias="NightWindPlain_EffectBall_In04_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_EffectBall_In04" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_EffectBall_In05_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_EffectBall_In05" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_EffectBall_In06_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_EffectBall_In06" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_EffectBall_In07_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_EffectBall_In07" prob-1="100" type="npc" />
+	<record alias="NightWindPlain_EffectBall_In08_fd" drop-case="killed" drop-place="front-npc" fielditem-1="NightWindPlain_EffectBall_In08" prob-1="100" type="npc" />
+	<record alias="ME_SA_RewardBox_0006_fd" drop-case="killed" drop-place="front-npc" fielditem-1="BC02_Bomb_Ice_01" fielditem-2="BC02_Launcher_01" fielditem-3="BC02_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_SA_RewardBox_0007_fd" drop-case="killed" fielditem-1="BC02_Bomb_Ice_01" fielditem-2="BC02_Launcher_01" fielditem-3="BC02_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_SA_RewardBox_0008_fd" drop-case="killed" fielditem-1="BC02_Bomb_Ice_01" fielditem-2="BC02_Launcher_01" fielditem-3="BC02_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_SA_RewardBox_0009_fd" drop-case="killed" fielditem-1="BC02_Bomb_Ice_01" fielditem-2="BC02_Launcher_01" fielditem-3="BC02_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_SA_RewardBox_0010_fd" drop-case="killed" fielditem-1="BC02_Bomb_Ice_01" fielditem-2="BC02_Launcher_01" fielditem-3="BC02_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_SA_RewardBox_0011_fd" drop-case="killed" fielditem-1="BC02_Bomb_Ice_01" fielditem-2="BC02_Launcher_01" fielditem-3="BC02_MachineGun_01" prob-1="70" prob-2="20" prob-3="10" type="npc" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0003_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SacrificeGrave_Shield_01" prob-1="100" type="npc" />
+	<record alias="ME_WB_ElectricBall_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="ElectricBall_Bomb_01" prob-1="100" type="npc" />
+	<record alias="PaCheon_EffectBall_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="PaCheon_EffectBall_01" prob-1="100" type="npc" />
+	<record alias="PaCheon_RedBall_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="PaCheon_RedBall_01" prob-1="100" type="npc" />
+	<record alias="PaCheon_EffectBall_02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="PaCheon_EffectBall_02" prob-1="100" type="NPC" />
+	<record alias="PaCheon_EffectBall_03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="PaCheon_EffectBall_03" prob-1="100" type="NPC" />
+	<record alias="PaCheon_EffectBall_04_fd" drop-case="killed" drop-place="front-npc" fielditem-1="PaCheon_EffectBall_04" prob-1="100" type="NPC" />
+	<record alias="Event_Tower_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Event_Gadget_05" prob-1="100" type="NPC" />
+	<record alias="PaCheon_EffectBall_05_fd" drop-case="killed" drop-place="front-npc" fielditem-1="PaCheon_EffectBall_05" prob-1="100" type="NPC" />
+	<record alias="ME_SB_BlackDragonBall_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_Magi_Bomb_01" prob-1="100" type="npc" />
+	<record alias="Q_Epic7_Prison_Bomb_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Q_Epic7_Prison_Bomb" prob-1="100" type="npc" />
+	<record alias="Naryu_EffectBall_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Naryu_EffectBall_In01" prob-1="100" type="npc" />
+	<record alias="TX_Event_SnowBall_fd" drop-case="killed" drop-place="none" fielditem-1="TX_Event_SnowBall_01" fielditem-2="TX_Event_SnowBall_02" prob-1="90" prob-2="10" type="npc" />
+	<record alias="TX_Event_BigSnowBall_fd" drop-case="killed" drop-place="none" fielditem-1="TX_Event_SnowBall_01" fielditem-2="TX_Event_SnowBall_02" prob-1="80" prob-2="20" type="npc" />
+	<record alias="TX_Event_FireWorks_fd" drop-case="killed" drop-place="none" fielditem-1="TX_Event_BombA_01" fielditem-2="TX_Event_BombBoxA_01" prob-1="50" prob-2="50" type="npc" />
+	<record alias="Naryu_EffectBall_In02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Naryu_EffectBall_In02" prob-1="100" type="npc" />
+	<record alias="TX_Event_EffectBall_01_fd" drop-case="killed" drop-place="none" fielditem-1="TX_Event_EffectBall_01" prob-1="100" type="npc" />
+	<record alias="TX_Event_SnowBall_03_fd" drop-case="killed" drop-place="none" fielditem-1="TX_Event_SnowBall_03" fielditem-2="TX_Event_SnowBall_04" prob-1="50" prob-2="50" type="npc" />
+	<record alias="Naryu_EffectBall_In03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Naryu_EffectBall_In03" prob-1="100" type="npc" />
+	<record alias="Naryu_EffectBall_In04_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Naryu_EffectBall_In04" prob-1="100" type="npc" />
+	<record alias="Naryu_EffectBall_In05_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Naryu_EffectBall_In05" prob-1="100" type="npc" />
+	<record alias="Naryu_EffectBall_In06_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Naryu_EffectBall_In06" prob-1="100" type="npc" />
+	<record alias="TX_Event_SnowBall_03_SmallFoot_fd" drop-case="killed" drop-place="none" fielditem-1="TX_Event_SnowBall_03" fielditem-2="TX_Event_SnowBall_04" prob-1="5" prob-2="5" type="npc" />
+	<record alias="Naryu_EffectBall_In07_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Naryu_EffectBall_In07" prob-1="100" type="npc" />
+	<record alias="EffectBall_In33_Lab_fd" drop-case="effect" drop-place="none" effect-attribute-1="가젯드랍" fielditem-1="EffectBall_In33_Lab" prob-1="100" type="npc" />
+	<record alias="EffectBall_In34_Dispel_Lab_fd" drop-case="killed" drop-place="none" fielditem-1="EffectBall_In34_Dispel_Lab" prob-1="100" type="npc" />
+	<record alias="SecretHall_EffectBall_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SecretHall_EffectBall_In01" prob-1="100" type="npc" />
+	<record alias="VT_healball_0002_fd" drop-case="killed" drop-place="front-npc" fielditem-1="VT_healball_0002" prob-1="100" type="npc" />
+	<record alias="VT_healball_0001_fd" drop-case="killed" drop-place="front-npc" fielditem-1="VT_healball_0001" prob-1="100" type="npc" />
+	<record alias="Gadget_TX_Toad_EffectBall_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Gadget_TX_Toad_EffectBall" prob-1="100" type="npc" />
+	<record alias="Gadget_TX_Toad_DispelBall_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Gadget_TX_Toad_DispelBall" prob-1="100" type="npc" />
+	<record alias="SecretHall_EffectBall_In02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SecretHall_EffectBall_In02" prob-1="100" type="npc" />
+	<record alias="SecretHall_EffectBall_In03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SecretHall_Magi_Bomb_01" prob-1="100" type="npc" />
+	<record alias="SecretHall_EffectBall_In04_fd" drop-case="killed" drop-place="front-npc" fielditem-1="SecretHall_EffectBall_In03" prob-1="100" type="npc" />
+	<record alias="TX_BlueBall_In_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TX_BlueBall_In_01" prob-1="100" type="npc" />
+	<record alias="TX_BlueBall_In_02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TX_BlueBall_In_02" prob-1="100" type="npc" />
+	<record alias="Shield_FishmanCArmor_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="Shield_FishmanCArmor_In01" prob-1="100" type="npc" />
+	<record alias="TreeVill_Bomb_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TreeVill_Bomb_In01" prob-1="100" type="npc" />
+	<record alias="TreeVill_Restriction_Bomb_01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TreeVill_Restriction_Bomb_01" prob-1="100" type="npc" />
+	<record alias="TreeVill_EffectBall_In01_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TreeVill_EffectBall_In01" prob-1="100" type="npc" />
+	<record alias="TreeVill_EffectBall_In02_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TreeVill_EffectBall_In02" prob-1="100" type="npc" />
+	<record alias="TreeVill_EffectBall_In03_fd" drop-case="killed" drop-place="front-npc" fielditem-1="TreeVill_EffectBall_In03" prob-1="100" type="npc" />
+</table>

@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<table release-module="QuestData" release-side="server" type="quest" version="1.262">
-  <!--quest\questdata.206.xml-->
-  <quest alias="q_sub_206" broadcast-category="always" category="normal" district-1="suwal" id="206" max-repeat="1" save-type="all" tutorial="y">
-    <acquisition level="11" production-exp="0" production-id="production-type-5" reward-1="206_final_set1">
-      <case acquire-quest="y" grocery="General_Grocery_ProduceRecipe_0085" item="General_Grocery_ProduceRecipe_0085" required-item-1="General_Grocery_ProduceRecipe_0085" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
-    </acquisition>
-  </quest>
-</table>

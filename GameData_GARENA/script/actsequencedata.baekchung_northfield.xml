@@ -1,0 +1,2423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.baekchung_northfield.xml-->
+  
+  
+  
+  
+
+  
+  
+  
+  <act-sequence alias="interactive_set1_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="interactive_set2_act" indexed-detect="1" type="act">
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="EndTok_set_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="CH_CT_GunMaHye_0001_1_act" indexed-detect="1" type="act">
+    <action social="CH_CT_GunMaHye_0001_soc_20" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_GunMaHye_0001_2_act" indexed-detect="1" type="act">
+    <action social="CH_CT_GunMaHye_0001_soc_21" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_PungEmpire_0141_con_start_act" indexed-detect="1" type="act">
+    <action social="CH_CT_GunMaHye_0001_soc_24" type="social" />
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_GunMaHye_0001_soc_06" type="social" />
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_GunMaHye_0001_soc_07" type="social" />
+    <action pathway="wp5256_area40_1" type="pathway" />
+    <action social="CH_CT_GunMaHye_0001_soc_08" type="social" />
+    <action pathway="wp5256_area40_2" type="pathway" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_PungEmpire_0141_2_act" indexed-detect="1" type="act">
+    <action duration="6000" type="stay" />
+    <action social="CH_CT_GunMaHye_0001_soc_14" type="social" />
+    <action step="3" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_PungEmpire_0141_3_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_GunMaHye_0001_soc_15" type="social" />
+    <action step="10" type="pause" />
+    <action pathway="5256_p34" type="pathway" />
+    <action step="9" type="pause" />
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_GunMaHye_0001_soc_16" type="social" />
+    <action step="5" type="pause" />
+    <action duration="4000" type="stay" />
+    <action social="CH_CT_GunMaHye_0001_soc_17" type="social" />
+    <action step="6" type="pause" />
+    <action duration="6000" type="stay" />
+    <action social="CH_CT_GunMaHye_0001_soc_18" type="social" />
+    <action step="7" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_PungEmpire_0141_4_act" indexed-detect="1" type="act">
+    <action social="MH_CT_BokUn_0018_soc_100" type="social" />
+    <action step="6" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_PungEmpire_0141_5_act" indexed-detect="1" type="act">
+    <action pathway="5256_p37" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_PungEmpire_0141_1_path_act" indexed-detect="1" type="act">
+    <action pathway="5256_p33" type="pathway" />
+    <action step="8" type="pause" />
+    <action social="CH_CT_GunMaHye_0001_soc_10" type="social" />
+    <action step="4" type="pause" />
+    <action duration="4000" type="stay" />
+    <action social="CH_CT_GunMaHye_0001_soc_11" type="social" />
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_GunMaHye_0001_soc_12" type="social" />
+    <action step="2" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_PungEmpire_0141_4_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5256_area40_3" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_PungEmpire_0141_3_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5256_area40_4" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_PungEmpire_0141_con_arrived_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_PungEmpire_0141_2_path_act" indexed-detect="1" type="act">
+    <action social="YakChoKun_Tel_Open_HL" type="social" />
+    <action social="CH_CT_PungEmpire_0141_soc_05" type="social" />
+    <action pathway="wp5256_area40_5" type="pathway" />
+    <action social="CH_CT_GunMaHye_0001_soc_19" type="social" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_JeongHaDo_0005_1_path_act" indexed-detect="1" type="act">
+    
+    <action pathway="wp5256_area2_1" type="pathway" />
+    <action step="3" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_1_act1" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_JeongHaDo_0005_soc_06" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_1_act2" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_JeongHaDo_0005_soc_07" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_1_act3" indexed-detect="1" type="act">
+    <action pathway="5256_p36" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_1_act4" indexed-detect="1" type="act">
+    <action pathway="5256_p38" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_1_act5" indexed-detect="1" type="act">
+    <action pathway="5256_p39" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_1_act6" indexed-detect="1" type="act">
+    <action social="CH_CT_JeongHaDo_0005_soc_09" type="social" />
+    <action social="CH_CT_JeongHaDo_0005_soc_10" type="social" />
+    <action step="4" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_1_act7" indexed-detect="1" type="act">
+    <action social="CH_CT_JeongHaDo_0015_soc_102" type="social" />
+    <action step="5" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_1_act8" indexed-detect="1" type="act">
+    <action social="CH_CT_JeongHaDo_0005_soc_05" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_2_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5256_area60_2" type="pathway" />
+    <action social="CH_CT_JeongHaDo_0015_soc_102" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_8_path_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="wp5256_area60_2" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_JeongHaDo_0005_soc_04" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_5_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5256_area60_3" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_JeongHaDo_0005_3_path_act" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    
+  </act-sequence>
+  <act-sequence alias="CH_CT_JeongHaDo_0005_4_path_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_JeongHaDo_0015_soc_02" type="social" />
+    <action pathway="wp5256_area60_4" type="pathway" />
+    
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="MH_CT_BokUn_0032_1_act" indexed-detect="1" type="act">
+    <action social="MH_CT_BokUn_0032_soc_03" type="social" />
+    <action duration="6000" type="stay" />
+    <action social="MH_CT_BokUn_0032_soc_04" type="social" />
+    <action duration="6000" type="stay" />
+    
+  </act-sequence>
+
+  
+
+  
+  <act-sequence alias="MH_CT_BokUn_0032_3_act" indexed-detect="1" type="act">
+    <action duration="4000" type="stay" />
+    <action social="MH_CT_BokUn_0032_soc_05" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_BokUn_0019_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5256_area74_1" type="pathway" />
+    <action social="MH_CT_BokUn_0019_comabat_soc_01" type="social" />
+    <action pathway="wp5256_area74_2" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_BokUn_0018_1_act" indexed-detect="1" type="act">
+    <action social="MH_CT_BokUn_0018_soc_01" type="social" />
+    <action duration="7000" type="stay" />
+    <action social="MH_CT_BokUn_0018_soc_02" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_BokUn_0018_2_act" indexed-detect="1" type="act">
+    <action duration="8000" type="stay" />
+    <action social="MH_CT_BokUn_0018_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_BokUn_0018_3_act" indexed-detect="1" type="act">
+    <action pathway="5256_p35" type="pathway" />
+    <action step="2" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_BokUn_0014_1_act" indexed-detect="1" type="act">
+    <action social="MH_CT_BokUn_0014_soc_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="MH_CT_BokUn_0014_soc_02" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_BokUn_0014_soc_03" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_BokUn_0011_1_act" indexed-detect="1" type="act">
+    <action social="MH_CT_BokUn_0011_soc_02" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_BokUn_0009_1_act" indexed-detect="1" type="act">
+    <action social="MH_CT_BokUn_0009_soc_05" type="social" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CE_CT_Dummy_0017_1_act_act" indexed-detect="1" type="act">
+    <action duration="17000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="MH_CT_BokUn_0007_act_43" indexed-detect="1" type="act">
+    <action pathway="wp5256_area43" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BokUn_0009_act_44" indexed-detect="1" type="act">
+    <action pathway="wp5256_area44" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BokUn_0007_act_45" indexed-detect="1" type="act">
+    <action pathway="wp5256_area45" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BokUn_0009_act_46" indexed-detect="1" type="act">
+    <action pathway="wp5256_area46" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BokUn_0007_act_47" indexed-detect="1" type="act">
+    <action pathway="wp5256_area47" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_BokUn_0009_act_48" indexed-detect="1" type="act">
+    <action pathway="wp5256_area48" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CE_CT_Dummy_0018_act_1" indexed-detect="1" type="act">
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="CH_CT_GunMaHye_0002_1_act" indexed-detect="1" type="act">
+    <action social="CH_CT_GunMaHye_0001_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_GunMaHye_0002_2_act" indexed-detect="1" type="act">
+    <action social="CH_CT_GunMaHye_0001_soc_04" type="social" />
+    <action duration="2000" type="stay" />
+    
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="CH_CT_JeongHaDo_0005_5_act" indexed-detect="1" type="act">
+    <action duration="5000" type="stay" />
+    <action social="CH_CT_JeongHaDo_0005_soc_03" type="social" />
+    
+    <action step="7" type="pause" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="CH_CT_PungEmpire_0038_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5235_area4" type="pathway" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_PungEmpire_0038_2_fix_act" indexed-detect="1" type="act">
+    <action duration="100" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_PungEmpire_0038_2_act" indexed-detect="1" type="act">
+    <action duration="4000" type="stay" />
+    <action social="CH_CT_PungEmpire_0038_soc_03" type="social" />
+    
+    <action step="2" type="pause" />
+    <action duration="4000" type="stay" />
+    <action social="CH_CT_PungEmpire_0038_soc_04" type="social" />
+    
+    <action step="3" type="pause" />
+    <action duration="8000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="3000" type="stay" />
+    <action social="CH_CT_PungEmpire_0038_soc_05" type="social" />
+    
+    <action step="5" type="pause" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="CH_CT_JeGukGun_0260_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5235_area5" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_JeGukGun_0260_2_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_JeGukGun_0260_soc_01" type="social" />
+    <action pathway="wp5235_area5_2" type="pathway" />
+    <action duration="3500" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_JeGukGun_0261_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5235_area6" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_JeGukGun_0261_2_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_JeGukGun_0261_soc_01" type="social" />
+    <action pathway="wp5235_area6_2" type="pathway" />
+    <action duration="4000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_HyunDam_0007_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5235_area7" type="pathway" />
+  </act-sequence>
+
+  
+  
+  
+  <act-sequence alias="CH_CT_TeacherShaman_0003_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_TeacherShaman_0003_act_1" indexed-detect="1" type="act">
+    <action social="CH_CT_TeacherShaman_0003_soc_010" type="social" />
+    <action duration="2000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_TeacherShaman_0003_act_2" indexed-detect="1" type="act">
+    <action pathway="wp5251_area9" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_TeacherShaman_0004_spawn_act_1" indexed-detect="1" type="act">
+    <action duration="7000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_TeacherShaman_0004_spawn_act_2" indexed-detect="1" type="act">
+    <action duration="7000" type="stay" />
+    <action step="2" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_TeacherShaman_0004_spawn_act_3" indexed-detect="1" type="act">
+    <action duration="7000" type="stay" />
+    <action step="3" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_TeacherShaman_0004_spawn_act_4" indexed-detect="1" type="act">
+    <action duration="7000" type="stay" />
+    <action step="4" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_TeacherShaman_0004_spawn_act_5" indexed-detect="1" type="act">
+    <action duration="7000" type="stay" />
+    <action step="5" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_TeacherShaman_0004_spawn_act_6" indexed-detect="1" type="act">
+    <action duration="7000" type="stay" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_TeacherKungfuFighter_0001_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5251_area7" type="pathway" />
+    <action social="CH_CT_TeacherKungfuFighter_0001_soc_010" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_TeacherKungfuFighter_0001_2_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_TeacherKungfuFighter_0001_combat_soc_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_TeacherForceMaster_0001_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5251_area8" type="pathway" />
+    <action social="CH_CT_TeacherForceMaster_0001_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_TeacherForceMaster_0001_2_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_TeacherForceMaster_0001_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_TeacherDestroyer_0001_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5251_area5" type="pathway" />
+    <action social="CH_CT_TeacherDestroyer_0001_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_TeacherDestroyer_0001_2_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_TeacherDestroyer_0001_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_GanMyoWal_0002_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5251_area4" type="pathway" />
+    <action social="CH_CT_GanMyoWal_0002_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_GanMyoWal_0002_2_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_GanMyoWal_0002_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_HaoBang_0055_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5251_area6" type="pathway" />
+    <action social="CH_CT_HaoBang_0055_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_HaoBang_0055_2_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_HaoBang_0055_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_TeacherBladeMaster_0001_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5251_area3" type="pathway" />
+    <action social="CH_CT_TeacherBladeMaster_0001_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_TeacherBladeMaster_0001_2_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_TeacherBladeMaster_0001_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_HyunDam_0002_path_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5233_area2" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+
+
+  
+  
+  
+  <act-sequence alias="CH_CT_JinSoA_0021_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_YeHaRang_0007_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_YeHaRang_0007_2_path_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="wp5251_area3" type="pathway" />
+  </act-sequence>
+
+  
+
+  
+  <act-sequence alias="CH_CT_YeHaRang_0008_act_1" indexed-detect="1" type="act">
+    <action pathway="wp5235_area23" type="pathway" />
+    <action social="CH_CT_YeHaRang_0008_soc_01" type="social" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_SoYangSang_0003_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_JeongHaDo_0007_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_HyunDam_0005_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5236_area4" type="pathway" />
+  </act-sequence>
+
+
+  
+  
+
+  <act-sequence alias="CH_CT_DoCheonPung_0009_con_start_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0043_act_1" indexed-detect="1" type="act">
+    <action step="1" type="pause" />
+    <action duration="2500" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="2500" type="stay" />
+    <action step="3" type="pause" />
+    
+    <action duration="3000" type="stay" />
+    <action step="6" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="7" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_DoCheonPung_0009_act_1" indexed-detect="1" type="act">
+    <action pathway="5261_p7" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_GunMaYeom_0003_act_1" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="5261_p8" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_SamSeolRin_0001_act_1" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="5261_p9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_DoCheonPung_0009_act_2" indexed-detect="1" type="act">
+    <action social="CH_CT_DoCheonPung_0009_soc_3_1" type="social" />
+    <action pathway="5261_p17" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_DoCheonPung_0009_act_2_1" indexed-detect="1" type="act">
+    <action pathway="5261_p47" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_GunMaYeom_0003_act_2" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="5261_p19" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_SamSeolRin_0001_act_2" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="5261_p18" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0043_act_2" indexed-detect="1" type="act">
+    <action step="10" type="pause" />
+    
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0043_act_3" indexed-detect="1" type="act">
+    <action duration="15000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CE_CT_Dummy_0043_act_4" indexed-detect="1" type="act">
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0044_act_1" indexed-detect="1" type="act">
+    
+    <action step="5" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="6" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="7" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="8" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0044_act_1_1" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action step="20" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="21" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="22" type="pause" />
+  </act-sequence>
+
+
+  <act-sequence alias="CE_CT_Dummy_0044_act_2" indexed-detect="1" type="act">
+    <action step="10" type="pause" />
+    <action duration="2000" type="stay" />
+    
+    <action step="13" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_DoCheonPung_0009_act_3" indexed-detect="1" type="act">
+    <action social="CH_CT_DoCheonPung_0009_soc_5_1" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="5261_p1" type="pathway" />
+    <action pathway="5261_p25" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_GunMaYeom_0003_act_3" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="5261_p3" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_SamSeolRin_0001_act_3" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="5261_p5" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0045_act_1" indexed-detect="1" type="act">
+    <action step="1" type="pause" />
+    
+    <action duration="3000" type="stay" />
+    <action step="5" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="6" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="7" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0045_act_1_1" indexed-detect="1" type="act">
+    <action step="20" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="21" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="22" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="23" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="24" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0045_act_2" indexed-detect="1" type="act">
+    <action step="10" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="11" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="12" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="13" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_DoCheonPung_0009_act_3_1" indexed-detect="1" type="act">
+    <action pathway="5261_p48" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_GunMaYeom_0003_act_3_1" indexed-detect="1" type="act">
+    <action social="CH_CT_GunMaYeom_0003_soc_20_1" type="social" />
+    <action pathway="5261_p49" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_GunMaYeom_0003_act_4" indexed-detect="1" type="act">
+    <action pathway="5261_p26" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_SamSeolRin_0001_act_4" indexed-detect="1" type="act">
+    <action pathway="5261_p27" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_DoCheonPung_0009_act_5" indexed-detect="1" type="act">
+    <action pathway="5261_p10" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_GunMaYeom_0003_act_5" indexed-detect="1" type="act">
+    <action pathway="5261_p11" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_SamSeolRin_0001_act_5" indexed-detect="1" type="act">
+    <action pathway="5261_p12" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_SamSeolRin_0001_act_5_1" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action social="CH_CT_SamSeolRin_0001_soc_20_1" type="social" />
+    <action pathway="5261_p15" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0046_act_1" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="5" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="6" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0046_act_2" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action step="10" type="pause" />
+    <action duration="6000" type="stay" />
+    <action step="11" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CE_CT_Dummy_0046_act_3" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action step="20" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="21" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="22" type="pause" />
+    
+    <action duration="3000" type="stay" />
+    <action step="24" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="25" type="pause" />
+    
+    <action duration="3000" type="stay" />
+    <action step="27" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="28" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="29" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_DoCheonPung_0009_act_6" indexed-detect="1" type="act">
+    <action pathway="5261_p36" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_GunMaYeom_0003_act_6" indexed-detect="1" type="act">
+    <action pathway="5261_p40" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_SamSeolRin_0001_act_6" indexed-detect="1" type="act">
+    <action pathway="5261_p41" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_GeoGeoBung_0002_act_6" indexed-detect="1" type="act">
+    <action pathway="5261_p37" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_UnKook_0001_act_6" indexed-detect="1" type="act">
+    <action pathway="5261_p32" type="pathway" />
+    <action social="CH_CT_UnKook_0001_soc_1" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="5261_p34" type="pathway" />
+    <action social="CH_CT_UnKook_0001_soc_1" type="social" />
+    <action step="2" type="pause" />
+    <action pathway="5261_p38" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_UnKook_0002_act_6" indexed-detect="1" type="act">
+    <action pathway="5261_p33" type="pathway" />
+    <action social="CH_CT_UnKook_0002_soc_1" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="5261_p35" type="pathway" />
+    <action social="CH_CT_UnKook_0002_soc_1" type="social" />
+    <action step="2" type="pause" />
+    <action pathway="5261_p39" type="pathway" />
+  </act-sequence>
+
+
+  <act-sequence alias="CH_CT_DoCheonPung_0009_act_7" indexed-detect="1" type="act">
+    <action step="2" type="pause" />
+    <action social="CH_CT_DoCheonPung_0009_soc_13_1" type="social" />
+    <action pathway="5261_p2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_DoCheonPung_0009_con_arrived_act" indexed-detect="1" type="act">
+    <action social="CH_CT_DoCheonPung_0009_soc_13_2" type="social" />
+    <action pathway="wp5261_area2_6" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_GunMaYeom_0003_act_7" indexed-detect="1" type="act">
+    <action pathway="5261_p43" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_SamSeolRin_0001_act_7" indexed-detect="1" type="act">
+    <action pathway="5261_p42" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_GeoGeoBung_0002_act_7" indexed-detect="1" type="act">
+    <action pathway="5261_p4" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_UnKook_0001_act_7" indexed-detect="1" type="act">
+    <action pathway="5261_p6" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_UnKook_0002_act_7" indexed-detect="1" type="act">
+    <action pathway="5261_p42" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Guard_0013_act_7" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="5261_p4" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_Guard_0014_act_7" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="5261_p6" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_Guard_0015_act_7" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="5261_p42" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_Guard_0016_act_7" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="5261_p43" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_GeoGeoBung_0002_act_1" indexed-detect="1" type="act">
+    <action pathway="5261_p29" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_UnKook_0001_act_1" indexed-detect="1" type="act">
+    <action pathway="5261_p30" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_UnKook_0002_act_1" indexed-detect="1" type="act">
+    <action pathway="5261_p31" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_DoCheonPung_0013_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_DoCheonPung_0013_soc_1_2" type="social" />
+    <action pathway="5263_p3" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_DoCheonPung_0015_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5264_area2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_DoCheonPung_0015_act_1" indexed-detect="1" type="act">
+    <action social="CH_CT_DoCheonPung_0015_soc_18_1" type="social" />
+    <action social="CH_CT_DoCheonPung_0015_soc_18_2" type="social" />
+    <action social="CH_CT_DoCheonPung_0015_soc_18_3" type="social" />
+    <action duration="3000" type="stay" />
+    <action social="CH_CT_DoCheonPung_0015_soc_18_4" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_HockRyuGo_0007_act_1" indexed-detect="1" type="act">
+    <action duration="9000" type="stay" />
+    <action social="MH_CT_HockRyuGo_0007_soc_18_1" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_HockRyuGo_0007_spawn_act_1" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action social="MH_CT_HockRyuGo_0007_soc_16_1" type="social" />
+    <action social="MH_CT_HockRyuGo_0007_soc_16_2" type="social" />
+    <action social="MH_CT_HockRyuGo_0007_soc_16_4" type="social" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="CE_CT_Dummy_0019_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_BaekRim_0001_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_ORakDang_0017_1_path_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_ORakDang_0017_2_move_peace" indexed-detect="1" type="peace">
+    <action area="2" max-idle-sec="3" max-move-count="1" min-idle-sec="2" min-move-count="1" type="indexed-movearound" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_ORakDang_0017_3_path_act" indexed-detect="1" type="act">
+    
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_JinSoA_0024_1_path_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_JinSoA_0024_2_move_peace" indexed-detect="1" type="peace">
+    <action area="2" max-idle-sec="3" max-move-count="1" min-idle-sec="2" min-move-count="1" type="indexed-movearound" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_JinSoA_0024_3_path_act" indexed-detect="1" type="act">
+    
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_JeongHaDo_0009_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="2" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_JeongHaDo_0009_2_path_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="wp5231_area14" type="pathway" />
+    
+    <action duration="1000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="1000" type="stay" />
+    <action step="4" type="pause" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_HyunDam_0003_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_HyunDam_0003_2_fix_peace" indexed-detect="1" type="peace">
+    <action social="CH_CT_HyunDam_0003_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_HyunDam_0003_3_fix_act" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+    <action social="CH_CT_Citizen_0126_soc_01" type="social" />
+    <action duration="1500" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_HyunDam_0003_4_fix_act" indexed-detect="1" type="act">
+    <action step="3" type="pause" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_BaekRim_0007_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_BaekRim_0007_2_fix_peace" indexed-detect="1" type="peace">
+    <action social="CH_CT_BaekRim_0007_soc_01" type="social" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_BaekRim_0008_1_fix_peace" indexed-detect="1" type="peace">
+    <action social="CH_CT_BaekRim_0008_soc_01" type="social" />
+  </act-sequence>
+
+
+
+  
+  <act-sequence alias="CH_CT_BaekRim_0022_Set1_act" indexed-detect="1" type="act">
+    <action social="CH_CT_BaekRim_0022_soc_94" type="social" />
+    <action pathway="wp5231_area94" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_BaekRim_0022_Set2_act" indexed-detect="1" type="act">
+    <action social="CH_CT_BaekRim_0022_soc_100" type="social" />
+    <action pathway="wp5231_area100" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_BaekRim_0023_Set3_act" indexed-detect="1" type="act">
+    <action social="CH_CT_BaekRim_0023_102" type="social" />
+    <action pathway="wp5231_area102" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_BaekRim_0023_Set4_act" indexed-detect="1" type="act">
+    <action social="CH_CT_BaekRim_0023_107" type="social" />
+    <action pathway="wp5231_area107" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_BaekRim_0024_Set5_act" indexed-detect="1" type="act">
+    <action social="CH_CT_BaekRim_0024_109" type="social" />
+    <action pathway="wp5231_area109" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_BaekRim_0023_Set6_act" indexed-detect="1" type="act">
+    <action social="CH_CT_BaekRim_0023_117" type="social" />
+    <action pathway="wp5231_area117" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_BaekRim_0024_Set7_act" indexed-detect="1" type="act">
+    <action social="CH_CT_BaekRim_0024_124" type="social" />
+    <action pathway="wp5231_area124" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_BaekRim_0022_Set8_act" indexed-detect="1" type="act">
+    <action social="CH_CT_BaekRim_0022_128" type="social" />
+    <action pathway="wp5231_area128" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_CT_BaekRim_0023_Set9_act" indexed-detect="1" type="act">
+    <action social="CH_CT_BaekRim_0023_135" type="social" />
+    <action pathway="wp5231_area135" type="pathway" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="CH_CT_HyunDam_0003_1_act" indexed-detect="1" type="act">
+    <action social="CH_CT_HyunDam_0003_combat_soc_01" type="social" />
+    <action social="CH_CT_HyunDam_0003_combat_soc_02" type="social" />
+    <action social="CH_CT_HyunDam_0003_soc_100" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_HyunDam_0003_2_act" indexed-detect="1" type="act">
+    <action social="CH_CT_HyunDam_0003_combat_soc_06" type="social" />
+    <action social="CH_CT_HyunDam_0003_combat_soc_07" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_HyunDam_0003_3_act" indexed-detect="1" type="act">
+    <action social="CH_CT_HyunDam_0003_combat_soc_06" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="CH_CT_HyunDam_0003_combat_soc_07" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_HyunDam_0009_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area184" type="pathway" />
+    <action social="CH_CT_HyunDam_0003_combat_soc_08" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_PungGek_0014_spawn_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_bottom_1" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_PungGek_0015_spawn_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_bottom_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_PungGek_0018_spawn_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_bottom_3" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_PungGek_0016_spawn_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_top_1" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_PungGek_0019_spawn_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_top_2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_PungGek_0020_spawn_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_top_3" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="MH_CT_PungGek_0017_spawn_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_center_1" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_PungGek_0021_spawn_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_center_3" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_PungGek_0016_center_act" indexed-detect="1" type="act">
+    <action pathway="5231_p4" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_PungGek_0017_center_act" indexed-detect="1" type="act">
+    <action pathway="5231_p5" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_PungGek_0019_center_act" indexed-detect="1" type="act">
+    <action pathway="5231_p12" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_PungGek_0020_center_act" indexed-detect="1" type="act">
+    <action pathway="5231_p14" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_BaekRim_0025_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area16" type="pathway" />
+    
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0026_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area17" type="pathway" />
+    
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0027_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area18" type="pathway" />
+    
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0028_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area19" type="pathway" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_BaekRim_0036_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area185" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0037_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area186" type="pathway" />
+    <action social="CH_CT_BaekRim_0037_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0038_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area187" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0039_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area188" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0040_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area189" type="pathway" />
+    <action social="CH_CT_BaekRim_0040_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0041_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area190" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0042_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area191" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0043_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area192" type="pathway" />
+    <action social="CH_CT_BaekRim_0043_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_BaekRim_0044_Paht_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5231_area193" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_Dummy_0020_1_act" indexed-detect="1" type="act">
+    <action step="1" type="pause" />
+    <action duration="15000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="7000" type="stay" />
+    <action step="3" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CE_CT_Dummy_0020_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="2500" type="stay" />
+    <action step="5" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="6" type="pause" />
+    <action duration="10000" type="stay" />
+    <action step="7" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CE_CT_Dummy_0020_3_act" indexed-detect="1" type="act">
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_HyunDam_0004_path_1_act" indexed-detect="1" type="act">
+    <action pathway="wp5238_area4" type="pathway" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="CH_CT_Monk_0030_peace_act_1" indexed-detect="1" type="peace">
+    <action pathway="wp5238_area10_1" type="pathway" />
+    <action social="CH_CT_Monk_0030_soc_01" type="social" />
+    <action pathway="wp5238_area10_2" type="pathway" />
+    <action social="CH_CT_Monk_0030_soc_02" type="social" />
+    <action pathway="wp5238_area10_3" type="pathway" />
+    <action social="CH_CT_Monk_0030_soc_03" type="social" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="MH_CT_PungGaek_0024_act" indexed-detect="1" type="peace">
+    <action social="1" type="indexed-social" />
+    <action social="MH_CT_PungGaek_0024_soc_01" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_CT_PungGaek_0025_act" indexed-detect="1" type="peace">
+    <action social="1" type="indexed-social" />
+    <action duration="2000" type="stay" />
+    <action social="MH_CT_PungGaek_0025_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_JeongHaDo_0009_app_act_1" indexed-detect="1" type="act">
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="2" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_ORakDang_0017_app_act_1" indexed-detect="1" type="act">
+    <action step="3" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="4" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_JinSoA_0024_app_act_1" indexed-detect="1" type="act">
+    <action step="5" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="6" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CE_CT_Dummy_0041_act_1" indexed-detect="1" type="act">
+    <action duration="5000" type="stay" />
+    <action step="10" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="11" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="12" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="13" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="14" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="15" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="16" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="17" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="18" type="pause" />
+  </act-sequence>
+  <act-sequence alias="CE_CT_Dummy_0041_act_2" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action step="20" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="21" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="22" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_PungWeol_path" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_PungWeol_path_2" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="Bukbang_epic_soc_04" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_PungWeol_path_3" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="Bukbang_epic_soc_05" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_PungWeol_path_4" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="Bukbang_epic_soc_06" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_MangNanJa_0007_act_1" indexed-detect="1" type="act">
+    <action social="CH_CT_MangNanJa_0007_soc_04" type="social" />
+    <action pathway="wp5276_area85" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_PungWeol_0079_act_1" indexed-detect="1" type="act">
+    <action social="CH_CT_PungWeol_0079_soc_03" type="social" />
+    <action pathway="wp5276_area87" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_PungWeol_0080_act_1" indexed-detect="1" type="act">
+    <action social="CH_CT_PungWeol_0080_soc_03" type="social" />
+    <action pathway="wp5276_area88" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_PungWeol_0084_act_1" indexed-detect="1" type="act">
+    <action pathway="wp5276_area86" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_CT_PungWeol_0085_act_1" indexed-detect="1" type="act">
+    <action pathway="wp5276_area89" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+
+  
+  
+  
+  <act-sequence alias="CH_SA_GoBong_0003_act" type="act">
+    <action pathway="2" type="indexed-pathway" />
+    <action social="ChongTa_M3_Battle_soc_51" type="social" />
+  </act-sequence>
+  <act-sequence alias="Q_Epic_1445_path_02" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_SA_DoDanHa_0004_act" type="act">
+    <action social="Bukbang_epic_soc_10" type="social" />
+  </act-sequence>
+  <act-sequence alias="Q_Epic_1445_path_01" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+
+  
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0994_1_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Citizen_0994_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Citizen_0995_1_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Citizen_0995_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Citizen_0997_1_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Citizen_0997_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="CH_CT_Monk_0027_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Monk_0027_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action step="1" type="pause" />
+    
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Monk_0028_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Monk_0028_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Monk_0029_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Monk_0029_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Monk_0035_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Monk_0035_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Monk_0036_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Monk_0036_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Monk_0037_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Monk_0037_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0179_1_path_peace" indexed-detect="1" type="peace">
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Citizen_0180_1_path_peace" indexed-detect="1" type="peace">
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Citizen_0181_1_path_peace" indexed-detect="1" type="peace">
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Citizen_0179_2_path_act" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="3000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="3000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Citizen_0180_2_path_act" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="3000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="3000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Citizen_0181_2_path_act" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="3000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="3000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="CH_CT_Monk_0010_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="wp5250_area2" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Monk_0010_2_fix_act" indexed-detect="1" type="act">
+    <action duration="5000" type="stay" />
+    <action social="CH_CT_Monk_0010_soc_02" type="social" />
+    <action duration="5000" type="stay" />
+    <action social="CH_CT_Monk_0010_soc_03" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Monk_0010_3_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Monk_0010_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Monk_0004_act_01" indexed-detect="1" type="act">
+    <action social="CH_CT_Monk_0004_combat_soc_01" type="social" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Monk_0014_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_Monk_0014_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Monk_0005_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_Monk_0005_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Monk_0016_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_Monk_0016_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Monk_0009_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_Monk_0009_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Monk_0002_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_Monk_0002_combat_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="MH_CT_HockRyuGo_0027_1_fix_peace" detect="pc-360" type="peace">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="ME_CT_ToGa_0004_1_move_peace" indexed-detect="1" type="peace">
+    <action area="2" max-idle-sec="3" max-move-count="1" min-idle-sec="2" min-move-count="1" type="indexed-movearound" />
+    <action enter_prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="MH_CT_JeGukGun_0505_1_fix_act" indexed-detect="1" type="act">
+    <action social="MH_CT_JeGukGun_0505_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="CE_CT_Lion_0002_1_path_act" detect="none" type="act">
+    <action pathway="wp5267_area2" type="pathway" />
+    <action social="CE_CT_Lion_0002_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_Lion_0002_2_path_act" indexed-detect="1" type="act">
+    <action pathway="5267_p4" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="ME_CT_BukBang_0003_1_path_act" detect="none" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="wp5267_area3" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_CT_BukBang_0003_2_fix_peace" detect="pc-360" type="peace">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_Mercenary_0007_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Mercenary_0007_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="wp5200_area148" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_Mercenary_0015_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_Mercenary_0015_soc_01" type="social" />
+    <action duration="30000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Mercenary_0019_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_Mercenary_0019_soc_01" type="social" />
+    <action duration="30000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_Mercenary_0021_1_fix_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="CH_CT_Mercenary_0021_soc_01" type="social" />
+    <action duration="30000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="CH_CT_Monk_0026_1_path_act" detect="none" type="act">
+    <action social="CH_CT_Monk_0026_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+    <action social="CH_CT_Monk_0026_soc_02" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="5268_p7" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CE_CT_PigKing_0005_1_fix_act" detect="none" type="act">
+    <action step="2" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_PigKing_0005_2_path_act" indexed-detect="1" type="act">
+    <action social="CE_CT_PigKing_0005_soc_02" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="3" type="pause" />
+    <action pathway="5268_p5" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0991_1_fix_peace" detect="none" type="peace">
+    <action duration="3000" type="stay" />
+    <action social="CH_T_Citizen_0991_combat_soc" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0992_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Citizen_0992_soc_01" type="social" />
+    <action pathway="5268_p3" type="pathway" />
+    <action social="CH_CT_Citizen_0992_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Citizen_0992_2_path_act" indexed-detect="1" type="act">
+    <action pathway="5268_p6" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Citizen_0992_3_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Citizen_0992_soc_03" type="social" />
+    <action pathway="5268_p4" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="CH_CT_Monk_0007_1_path_act" detect="none" type="act">
+    <action pathway="wp5269_area2" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Monk_0007_2_fix_act" detect="none" type="act">
+    
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CE_CT_PigKing_0002_1_path_act" detect="none" type="act">
+    <action pathway="wp5269_area3" type="pathway" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="CE_CT_Lion_0004_1_path_act" indexed-detect="1" type="act">
+    <action social="CE_CT_Lion_0004_soc_01" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="wp5276_Lion" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CE_CT_LumberJack_0004_1_path_act" indexed-detect="1" type="act">
+    
+    <action pathway="wp5276_Crow" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CE_CT_ScareCrow_0003_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5276_Jack" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_ManBokI_0001_1_path_act" indexed-detect="1" type="act">
+    <action duration="5000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+
+  
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0872_path_01" type="act">
+    <action social="CH_CT_Citizen_0872_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="wp5276_area22" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0873_path_01" type="act">
+    <action social="CH_CT_Citizen_0873_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="wp5276_area23" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0874_path_01" type="act">
+    <action social="CH_CT_Citizen_0874_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="wp5276_area24" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0875_path_01" type="act">
+    <action social="CH_CT_Citizen_0875_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="wp5276_area63" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+
+  
+  
+  
+  <act-sequence alias="CH_CT_Flower_0009_1_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5278_area4" type="pathway" />
+    <action social="CH_CT_Flower_0009_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Flower_0009_2_fix_act" indexed-detect="1" type="act">
+    
+    <action duration="1000" type="stay" />
+    <action step="2" type="pause" />
+    
+    <action step="3" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Flower_0009_3_path_act" indexed-detect="1" type="act">
+    <action pathway="wp5278_area4_2" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Blizzard_0003_1_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Blizzard_0003_soc_01" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Blizzard_0001_1_fix_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Blizzard_0001_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0182_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Citizen_0182_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0183_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Citizen_0183_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0184_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Citizen_0184_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Citizen_0521_1_path_act" indexed-detect="1" type="act">
+    <action social="CH_CT_Citizen_0521_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Hunter_0026_1_fix_act" indexed-detect="1" type="act">
+    
+    <action duration="1000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  
+  <act-sequence alias="CH_CT_Adventurer_0007_1_fix_act" detect="none" type="act">
+    <action enter-prob="100" type="select">
+      <action prob="33" social="CH_CT_Adventurer_0007_soc_01" type="social" />
+      <action prob="33" social="CH_CT_Adventurer_0007_soc_02" type="social" />
+      <action prob="34" social="CH_CT_Adventurer_0007_soc_03" type="social" />
+    </action>
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_CT_Adventurer_0008_1_fix_act" detect="none" type="act">
+    <action enter-prob="100" type="select">
+      <action prob="33" social="CH_CT_Adventurer_0008_soc_01" type="social" />
+      <action prob="33" social="CH_CT_Adventurer_0008_soc_02" type="social" />
+      <action prob="34" social="CH_CT_Adventurer_0008_soc_03" type="social" />
+    </action>
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CH_CT_Adventurer_0009_1_fix_act" detect="none" type="act">
+    <action enter-prob="100" type="select">
+      <action prob="33" social="CH_CT_Adventurer_0009_soc_01" type="social" />
+      <action prob="33" social="CH_CT_Adventurer_0009_soc_02" type="social" />
+      <action prob="34" social="CH_CT_Adventurer_0009_soc_03" type="social" />
+    </action>
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+
+
+  
+  
+  
+  
+
+
+  
+  
+  <act-sequence alias="CH_CT_Slave_0032_act_01" type="act">
+    <action social="CH_CT_Slave_0032_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Slave_0045_act_01" type="act">
+    <action social="CH_CT_Slave_0045_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Slave_0034_act_01" type="act">
+    <action social="CH_CT_Slave_0034_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_Slave_0049_act_01" type="act">
+    <action social="CH_CT_Slave_0049_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_JeGukGun_0499_peace" indexed-detect="1" type="peace">
+    <action enter_prob="100" type="select">
+      <action prob="80" type="loop">
+        <action social="MH_CT_JeGukGun_0499_combat_soc_01" type="social" />
+        <action duration="5000" type="stay" />
+      </action>
+      <action prob="20" type="loop">
+        <action social="MH_CT_JeGukGun_0499_combat_soc_02" type="social" />
+        <action duration="5000" type="stay" />
+      </action>
+    </action>
+  </act-sequence>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  <act-sequence alias="CH_SA_JinSeoYeon_0012_path" type="act">
+    <action social="CH_SA_JinSeoYeon_0001_soc" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_SA_PungEmpire_0017_path" type="act">
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_SA_PungEmpire_0035_path" type="act">
+    <action social="Bukbang_epic_soc_21" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_SA_PungEmpire_0035_path_1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="Bukbang_epic_soc_22" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_SA_PungEmpire_0035_path_2" type="act">
+    <action duration="2000" type="stay" />
+    <action social="Bukbang_epic_soc_23" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SA_BeakMuGi_0001_act" type="act">
+    <action duration="500" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  <act-sequence alias="CH_SA_JinSoA_0006_act_01" indexed-detect="1" type="act">
+    <action social="CH_SA_SeolSanJinSoA_0005_soc" type="social" />
+    
+    <action pathway="2" type="indexed-pathway" />
+    <action step="1" type="pause" />
+    <action social="CH_SA_SeolSanJinSoA_0002_combat_soc" type="social" />
+    <action pathway="3" type="indexed-pathway" />
+    <action social="CH_SA_SeolSanJinSoA_0003_combat_soc" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_SA_JinSoA_0006_act_02" indexed-detect="1" type="act">
+    <action social="CH_SA_SeolSanJinSoA_0006_soc" type="social" />
+    <action pathway="4" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_SA_JinSoA_0006_act_03" type="act">
+    <action social="NorthernBorder_Tel_Open_HL" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_SA_Citizen_0195_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    <action social="CH_SA_SeolSanKidnapCitizen_0001_soc" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="CH_SA_SeolSanKidnapCitizen_0001_spawn" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CH_SA_Citizen_0195_act_02" indexed-detect="1" type="act">
+    <action social="CH_SA_SeolSanKidnapCitizen_0002_soc" type="social" />
+    <action pathway="2" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_CT_JinSeoYeon_0013_Path1_act" indexed-detect="1" type="act">
+    <action social="CH_SA_BeakChungPa_soc_08" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="5" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="6" type="pause" />
+    <action duration="7500" type="stay" />
+    <action step="7" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="8" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="9" type="pause" />
+    <action duration="4000" type="stay" />
+    <action pathway="wp5292_area2_1" type="pathway" />
+    <action social="CH_CT_JinSeoYeon_0013_soc_03" type="social" />
+    <action pathway="wp5292_area2_2" type="pathway" />
+    <action step="10" type="pause" />
+    <action social="CH_CT_JinSeoYeon_0013_soc_04" type="social" />
+    <action pathway="wp5292_area2_3" type="pathway" />
+    <action step="11" type="pause" />
+    <action social="CH_CT_JinSeoYeon_0013_soc_05" type="social" />
+    <action pathway="wp5292_area2_4" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_CT_HongSukKeun_0006_Path1_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="5" type="pause" />
+    <action duration="5000" type="stay" />
+    <action step="6" type="pause" />
+    <action duration="6000" type="stay" />
+    <action step="7" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="8" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="9" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="10" type="pause" />
+  </act-sequence>
+
+
+
+  
+
+  
+  <act-sequence alias="MH_CT_JeGukGun_0571_act_01" type="act">
+    <action duration="100" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action social="MH_MuYeongDan_0025_spwan_soc" type="social" />
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_JeGukGun_0571_act_02" type="act">
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_JeGukGun_0571_act_03" detect="both-360" type="act">
+    <action duration="4000" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="Assasin_GangPlay_act_01" type="act">
+    <action duration="100" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="Assasin_GangPlay_act_02" detect="both-360" type="act">
+    <action hide="n" type="hide" />
+    <action duration="100" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="Assasin_GangPlay_act_03" detect="both-360" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="Assasin_GangPlay_act_04" detect="both-360" type="act">
+    <action duration="500" type="stay" />
+    <action pathway="3" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_CT_JeGukGun_0573_act_01" detect="both-360" type="act">
+    <action social="MH_MuRimMeng_0002_battle_03_soc" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ChoGae_Jaco_act_01" detect="both-360" type="act">
+    <action duration="4000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="act_Gang_01" detect="both-360" type="peace">
+    <action enter_prob="100" type="select">
+      <action prob="80" type="loop">
+        <action duration="5000" type="stay" />
+      </action>
+      <action prob="20" type="loop">
+        <action duration="5000" type="stay" />
+      </action>
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="Gane_Timer_act" type="act">
+    <action enter_prob="100" type="select">
+      <action duration="450000" prob="100" type="stay" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="Snowwoman_battle_sec20" type="act">
+    <action duration="30000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="Snowwoman_ScareCrow_Social" detect="none" type="act">
+    <action duration="60000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="Snowwoman_Combat_Delay_01" detect="none" type="act">
+    <action duration="3500" type="stay" />
+  </act-sequence>
+  <act-sequence alias="Snowwoman_Combat_Delay_02" detect="none" type="act">
+    <action duration="3500" type="stay" />
+  </act-sequence>
+  <act-sequence alias="Snowwoman_Combat_Delay_03" detect="none" type="act">
+    <action duration="3500" type="stay" />
+  </act-sequence>
+  <act-sequence alias="Snowwoman_Combat_Delay_04" detect="none" type="act">
+    <action duration="3500" type="stay" />
+  </act-sequence>
+  <act-sequence alias="Snowwoman_Combat_Delay_05" detect="none" type="act">
+    <action duration="3500" type="stay" />
+  </act-sequence>
+  <act-sequence alias="Snowwoman_Combat_Delay_06" detect="none" type="act">
+    <action duration="3500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_Lion_0004_act" type="act">
+    <action social="CE_CT_Lion_0004_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="1000" type="stay" />
+    <action social="CE_CT_Lion_0004_soc_04" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_LumberJack_0004_act" type="act">
+    <action social="CE_CT_LumberJack_0004_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="1000" type="stay" />
+    <action social="CE_CT_LumberJack_0004_soc_04" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_Lion_0005_act" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="CE_CT_Lion_0005_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_LumberJack_0005_act" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="CE_CT_LumberJack_0005_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_ScareCrow_0004_act" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="CE_CT_ScareCrow_0004_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_Lion_0005_act2" type="act">
+    <action social="CE_CT_Lion_0005_soc_02" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_LumberJack_0005_act2" type="act">
+    <action social="CE_CT_LumberJack_0005_soc_02" type="social" />
+    <action duration="1500" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_CT_ScareCrow_0004_act2" type="act">
+    <action social="CE_CT_ScareCrow_0004_soc_02" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="2" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  
+  
+  <act-sequence alias="CH_SA_HyunDam_0002_01_act" type="act">
+    <action pathway="5239_2_p" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_SA_HyunDam_0002_02_act" type="act">
+    <action pathway="5232_10_p" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_SA_HyunDam_0002_03_act" type="peace">
+    <action social="CH_SA_HyunDam_0002_soc_01" type="social" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_SA_HyunDam_0002_04_act" type="act">
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  
+	
+	<act-sequence alias="CH_SA_Hyunsung_0004_soc_01_act" type="act">
+		<action pathway="5269_p1" type="pathway" />
+		
+		<action social="CH_SA_Hyunsung_0004_soc_01" type="social" />
+		<action duration="4000" type="stay" />
+		
+		<action social="CH_SA_Hyunsung_0004_soc_02" type="social" />
+		<action duration="4000" type="stay" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_Hyunsung_0004_soc_02_act" type="act">
+		<action duration="4000" type="stay" />
+		<action respawn="n" type="despawn" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_HyunDam_0004_soc_01_act" type="act">
+		<action duration="1000" type="stay" />
+		<action step="1" type="pause" />
+		
+		<action social="CH_SA_HyunDam_0004_soc_01" type="social" />
+		<action duration="4000" type="stay" />
+		
+		<action social="CH_SA_HyunDam_0004_soc_02" type="social" />
+		<action pathway="5269_p14" type="pathway" />
+		<action social="BFF_Miner_Operate_Soc_Default" type="social" />
+		<action social="BFF_Miner_Operate_Soc_Default" type="social" />
+		<action step="2" type="pause" />
+		<action duration="4000" type="stay" />
+		<action step="3" type="pause" />
+		<action duration="4000" type="stay" />
+		<action step="4" type="pause" />
+		<action duration="4000" type="stay" />
+		<action step="5" type="pause" />
+		<action duration="4000" type="stay" />
+		<action step="6" type="pause" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_CT_DoCheonPung_0008_soc_01_act" type="act">
+		<action social="CH_CT_DoCheonPung_0008_soc_01" type="social" />
+		<action duration="10000" type="stay" />
+		<action social="CH_CT_DoCheonPung_0008_soc_02" type="social" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_PungEmpire_0074_soc_01_act" type="act">
+		<action social="CH_SA_PungEmpire_0074_soc_01" type="social" />
+		<action duration="4000" type="stay" />
+		<action pathway="5269_p12" type="pathway" />
+		<action respawn="n" type="despawn" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_NokLimDo_0018_soc_01_act" type="act">
+		<action duration="1000" type="stay" />
+		<action pathway="5269_p5" type="pathway" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_ORakDang_0025_soc_01_act" type="act">
+		<action duration="1000" type="stay" />
+		<action pathway="5269_p4" type="pathway" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_Citizen_0321_soc_01_act" type="act">
+		<action social="CH_SA_Citizen_0321_soc_01" type="social" />
+		<action duration="2000" type="stay" />
+		<action pathway="5269_p8" type="pathway" />
+		<action respawn="n" type="despawn" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_Citizen_0320_soc_01_act" type="act">
+		<action duration="1000" type="stay" />
+		<action pathway="5269_p7" type="pathway" />
+		<action respawn="n" type="despawn" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_NokLimDo_0018_soc_02_act" type="act">
+		<action duration="6000" type="stay" />
+		<action pathway="5269_p10" type="pathway" />
+		<action respawn="n" type="despawn" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_ORakDang_0025_soc_02_act" type="act">
+		<action duration="4000" type="stay" />
+		<action pathway="5269_p9" type="pathway" />
+		<action respawn="n" type="despawn" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_CT_DoCheonPung_0008_soc_02_act" type="act">
+		<action duration="5000" type="stay" />
+		<action social="CH_CT_DoCheonPung_0008_soc_03" type="social" />
+		<action duration="4000" type="stay" />
+		<action pathway="5269_p11" type="pathway" />
+		<action respawn="n" type="despawn" />
+	</act-sequence>
+
+	
+	<act-sequence alias="CH_SA_HyunDam_0004_soc_02_act" type="act">
+		<action duration="9000" type="stay" />
+		<action social="CH_SA_HyunDam_0004_soc_03" type="social" />
+		<action duration="8000" type="stay" />
+	</act-sequence>
+	
+	
+	<act-sequence alias="CH_CT_HyunDam_0008_soc_01_Act" type="act">
+		<action duration="1000" type="stay" />
+		<action social="CH_CT_HyunDam_0008_soc_01" type="social" />
+		<action duration="8000" type="stay" />
+		<action social="CH_CT_HyunDam_0008_soc_02" type="social" />
+		<action duration="8000" type="stay" />
+	</act-sequence>
+</table>

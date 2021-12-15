@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.439.xml-->
+  <quest alias="q_sub_439" broadcast-category="field" category="normal" district-1="jeryoungrim" id="439" max-repeat="1" save-type="all">
+    <acquisition level="13" preceding-quest-1="q_epic_314" preceding-quest-2="q_sub_425" preceding-quest-check="and" preceding-quest-mission-step-1="2">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="439_final_set1">
+        <case object="npc:ch_dweller_033" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="1" retired="y">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_JR_BeonA_0001" party-broadcast="n" type="approach" />
+        <tutorial-case progress-mission="y" type="airdash" />
+        <case object="npc:CH_JR_BeonYang_0001" party-broadcast="n" type="approach" />
+        <tutorial-case progress-mission="y" type="airdash" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.509.xml-->
+  <quest alias="q_epic_509" category="epic" completed-list="y" district-1="deasamak" id="509" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:mh_inspector_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_508_10" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_04" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_05" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_06" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_07" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_08" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_09" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_10" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_11" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_12" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_13" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_14" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Q_TorchlightA" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_illugrass3006_15" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_tlight3006_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_tlight3006_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_tlight3006_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_tlight3006_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_tlight3006_06" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_tlight3006_07" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_tlight3006_08" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_tlight3006_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+      <mission id="4" required-register-value="8">
+        <case drop-gadget="n" object2="npc:MH_Samagyo_0041" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_samagyo_0042" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_Samagyo_0043" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_Samagyo_0044" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:Me_Samagyo_0074" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_Samagyo_0046" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_hwanyeongcho_0007" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_hwanyeongcho_0009" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_hwanyeongcho_0006" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="5" required-register-value="1">
+        <case object="npc:mh_hansirang_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_508_11" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_SamaBunta" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_508_12" type="enter-zone" />
+        <case object2="zoneenv2:3007_shamandie" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:3007_DirtySama" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_508_15" type="env-entered" />
+        <case object="npc:ch_unguksoldier_0006" party-broadcast="n" progress-mission="n" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_UnGukSoldier_0005" party-broadcast="n" progress-mission="y" quest-decision="qd_508_17" type="talk" />
+        <case object="zone:zone_SamaBunta" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_508_12" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_510" />
+    </completion>
+    <transit id="1" zone="zone_HwanGakCho">
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+    </transit>
+    <mission-step id="7">
+      <mission id="8" required-register-value="1">
+        <case object2="zoneenv2:3007_cinema" party-broadcast="n" progress-mission="y" quest-decision="qd_509_7" type="env-entered" />
+        <case object="zone:zone_SamaBunta" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_509_8" type="enter-zone" />
+        <case object="npc:CH_UnGukSoldier_0005" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CH_HanSiRang_0007" party-broadcast="n" progress-mission="y" type="approach" visible-object="y" />
+        <case object="npc:ch_chungun_0003" party-broadcast="n" type="approach" visible-object="y" />
+        <case object="npc:ce_picture_0001" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="10" required-register-value="1">
+        <case object="npc:ch_chungun_0003" party-broadcast="n" progress-mission="y" type="talk" visible-object="y" />
+        <case object="npc:CH_HanSiRang_0007" party-broadcast="n" type="approach" visible-object="y" />
+        <case object="npc:ce_picture_0001" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="11" required-register-value="1">
+        <case object2="zoneenv2:e_onoff_forbackmu_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object="npc:ch_chungun_0003" party-broadcast="n" type="approach" visible-object="y" />
+        <case object="npc:CH_HanSiRang_0007" party-broadcast="n" type="approach" visible-object="y" />
+        <case object="npc:ce_picture_0001" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="12" required-register-value="1" reward-1="509_final_set1">
+        <case object="npc:ch_chungun_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_509_10" type="talk" visible-object="y">
+          <filter-set name="가능">
+            <filter field="level" op="ge" subject2="case:talked:pc" type="prop" value="24" />
+          </filter-set>
+        </case>
+        <case object="npc:ch_chungun_0003" party-broadcast="n" progress-mission="y" type="talk" visible-object="y">
+          <filter-set name="불가능">
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="23" />
+          </filter-set>
+        </case>
+        <case object="npc:CH_HanSiRang_0007" party-broadcast="n" type="approach" visible-object="y" />
+        <case object="npc:ce_picture_0001" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_HwanYoungPhase" party-broadcast="n" progress-mission="y" quest-decision="qd_508_16" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.605.xml-->
+  <quest alias="q_sub_605" broadcast-category="field" category="normal" district-1="deasamak" id="605" max-repeat="1" save-type="all">
+    <acquisition level="24" preceding-quest-1="q_epic_508" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_subfactiontrading_0003" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_tongkeunbanjum_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="npc:ch_tongkeunbanjum_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:me_juno_0006" object2="npc:me_juno_0006" party-broadcast="y" progress-mission="y" type="loot" />
+        <case drop-gadget="y" gadget-required="empty" object="npc:ch_tongkeunbanjum_0002" party-broadcast="n" progress-mission="reaction-only" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1" reward-1="605_final_set1">
+        <case object="npc:ch_tongkeunbanjum_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

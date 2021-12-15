@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.307.xml-->
+  <quest alias="q_epic_307" broadcast-category="field" category="epic" completed-list="y" district-1="jeryoungrim" id="307" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_jakyoungdan_029" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="5" />
+          </filter-set>
+        </case>
+        <case object="npc:ch_jakyoungdan_029" party-broadcast="n" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="4" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:mh_chunggak_0009" object2="npc:mh_chunggak_0009" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:ch_jakyoungdan_029" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_jakyoungdan_029" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_308" />
+    </completion>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:mh_nokrimdo_0066" object2="npc:mh_nokrimdo_0066" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="50" type="loot" />
+        <case object="npc:mh_nokrimdo_0065" object2="npc:mh_nokrimdo_0065" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="50" type="loot" />
+        <case object="npc:mh_nokrimdo_0064" object2="npc:mh_nokrimdo_0064" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="50" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="5">
+      <mission id="5" required-register-value="1" reward-1="307_final_set1">
+        <case object="npc:CH_JaKyoungDan_0038" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

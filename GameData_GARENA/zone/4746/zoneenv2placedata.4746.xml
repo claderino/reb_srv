@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\4746\zoneenv2placedata.4746.xml-->
+	<record action-point="8173,10463,-530" action-radius="50" alias="e_Wall_4746_haemujin_01_place" tool-zone-1="4746" type="wall" />
+	<record action-point="7273,10821,-402" action-radius="50" alias="e_Gate_4746_haemujin_01_Place" tool-zone-1="4746" type="gate" />
+	<record action-point="4354,10397,-401" action-radius="0" alias="e_Chest_4746_Lever_01_Place" tool-zone-1="4746" type="chest" />
+	<record action-point="4713,10831,-401" action-radius="0" alias="e_Chest_4746_Lever_02_Place" tool-zone-1="4746" type="chest" />
+	<record action-point="4789,10705,-402" action-radius="20" alias="e_Chest_4746hartA_01_Place" tool-zone-1="4746" type="chest" />
+	<record alias="AirDash_HaeMuJin_01_A_Place" duration="4800" end-pos="4743,10444,-239" region-point-1="4711,10469,-413" region-point-2="4651,10464,-413" region-point-3="4647,10524,-413" region-point-4="4707,10528,-413" summon-end-pos="4743,10444,-239" tool-zone-1="4746" tool-zone-2="4745" type="airdash" />
+	<record action-point="9302,10464,-197" alias="4746_portal_4430_place" region-point-1="9293,10406,-50" region-point-2="9293,10522,-50" region-point-3="9311,10522,-51" region-point-4="9311,10406,-50" tool-zone-1="4745" tool-zone-2="4746" type="portal" />
+	<record action-point="4812,10385,-153" alias="4746_portal_4747_place" region-point-1="4766,10333,477" region-point-2="4855,10441,477" region-point-3="4859,10437,477" region-point-4="4770,10329,477" tool-zone-1="4745" tool-zone-2="4746" type="portal" />
+	<record action-point="5569,11110,-347" action-radius="0" alias="4746_footswitch_02_place" region-point-1="5366,11918,-691" region-point-2="5660,11938,-691" region-point-3="5771,10301,-89" region-point-4="5477,10281,-89" tool-zone-1="4746" type="foot-switch" />
+	<record action-point="7213,10735,-399" action-radius="0" alias="4746_footswitch_03_place" region-point-1="7156,10598,-233" region-point-2="7156,10871,-297" region-point-3="7270,10871,-214" region-point-4="7270,10598,-233" tool-zone-1="4746" type="foot-switch" />
+	<record alias="4746_DMZ01_place" height="0" region-point-1="4668,10911,253" region-point-2="5106,11483,-691" region-point-3="5376,11276,-691" region-point-4="4938,10704,253" tool-zone-1="4746" type="effect-region" />
+	<record alias="zone4746.falldeath_place" height="-538" type="fall-death" />
+</table>

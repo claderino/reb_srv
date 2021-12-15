@@ -1,0 +1,2245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.id_playground_event.xml-->
+
+  
+  
+  
+  
+  
+  
+  <script alias="1156_FootSwitch_01_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="꾸미기용 연극 시작 (skin/1156)" type="debug-trace" />
+        
+        <reaction enable="n" target2="event:env-entered:env" type="set-env-enable" />
+        <reaction seq="CH_SB_InJeolMi_0004_act_01" target="zonenpcspawn:a_1156_42" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="1156_FootSwitch_02_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="npc-id" value="ME_SB_BadBoy_0001" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="npc-id" value="ME_SB_BadBoy_0002" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="계단 범위 밖으로 넘어감 전투 초기화 (skin/1156)" type="debug-trace" />
+        <reaction target="zonenpcspawn:a_1156_2" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_1156_3" type="reset-npc-all-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+
+  
+  <script alias="ME_SB_BadBoy_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield_Passive" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동, 소동 전투 시작 시 hate 공유" type="debug-trace" />
+        
+        <reaction spawn-1="a_1156_51" type="spawn-npc" />
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_BadBoy_0001_combatstart_01" type="play-social" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_1156_2" type="set-party-number" />
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_1156_2" type="set-party-number" />
+        <reaction amount="1" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_1156_2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_1156_3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attack:defender" target="zonenpcspawn:a_1156_2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attack:defender" target="zonenpcspawn:a_1156_3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 소동 들어갔는지 확인 (skin/1156) " type="debug-trace" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_2" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_3" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 소동 hate 공유(skin/1156) " type="debug-trace" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcspawn:a_1156_2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcspawn:a_1156_3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="90" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-1" subject2="zonenpcsquad:s_1156_2:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 CS1-&gt;CS2 변경, 방어막 버프, 요동 중앙 이동, 소동 아웃 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_FireShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_2" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_3" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        
+        <reaction effect="ME_TX_Fatman_None_NoTarget_Buff" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction text="레이저 타이머 엑트 스폰 (skin/1156) " type="debug-trace" />
+        <reaction spawn-1="a_1156_16" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="90" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 레지+1, 방어막 버프 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_TX_Fatman_None_FireShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        
+        <reaction effect="ME_TX_Fatman_None_Invincible" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="33" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="놀이버프 우선 디스폰 (skin/1156)" type="debug-trace" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_2" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1156_16" target-2="zonenpcspawn:a_1156_31" type="despawn-npc" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1156_8_1" target-2="zonenpcspawn:a_1156_9_1" target-3="zonenpcspawn:a_1156_10_1" target-4="zonenpcspawn:a_1156_11_1" type="despawn-npc" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1156_12_1" target-2="zonenpcspawn:a_1156_13_1" target-3="zonenpcspawn:a_1156_14_1" target-4="zonenpcspawn:a_1156_15_1" type="despawn-npc" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1156_17" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_4_1" group-2="zonenpcsquad:s_1156_4_2" group-3="zonenpcsquad:s_1156_4_3" type="despawn-npc-groups" />
+        
+        <reaction effect="ME_TX_Fatman_None_NoTarget_Dispel" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 얼음땡 놀이 종료 / 요동, 소동 일반 전투 / 타이머 엑트 디스폰 (skin/1156)" type="debug-trace" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_2" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_3" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        
+        <reaction from="zonenpcspawn:a_1156_2" social="ME_SB_BadBoy_0001_battle_03" type="play-social" />
+        
+        <reaction from="zonenpcspawn:a_1156_3" social="ME_SB_BadBoy_0002_battle_01" type="play-social" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="55" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-1" subject2="zonenpcsquad:s_1156_2:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 CS3-&gt;CS4 변경, 방어막 버프, 소동 중앙 이동, 요동 아웃 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_FireShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_2" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_3" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        
+        <reaction effect="ME_TX_Fatman_None_NoTarget_Buff" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction text="링크 레이저 더미 스폰 (skin/1156) " type="debug-trace" />
+        <reaction spawn-1="a_1156_17" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="55" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 레지+1, 방어막 버프 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_TX_Fatman_None_FireShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        
+        <reaction effect="ME_TX_Fatman_None_Invincible" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="20" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-1" subject2="zonenpcsquad:s_1156_2:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 CS5-&gt;CS6 변경, 방어막 버프, 소동 중앙 이동, 요동 아웃 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_FireShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_2" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_3" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction text="52번 일자,링크 통제 27번 놀이버프 스폰 (skin/1156) " type="debug-trace" />
+        <reaction spawn-1="a_1156_52" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="20" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 레지+1, 방어막 버프 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_TX_Fatman_None_FireShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        
+        <reaction effect="ME_TX_Fatman_None_Invincible" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동, 소동 HP 1% (skin/1156)" type="debug-trace" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_2" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_3" type="npc-fire-special" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_16" target-2="zonenpcspawn:a_1156_31" target-3="zonenpcspawn:a_1156_27" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_8" type="despawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_17" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_51" target-2="zonenpcspawn:a_1156_52" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_4_1" group-2="zonenpcsquad:s_1156_4_2" group-3="zonenpcsquad:s_1156_4_3" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_1" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_2" type="despawn-npc-groups" />
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동만 HP 1% (skin/1156)" type="debug-trace" />
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+        <reaction effect="ME_TX_Fatman_None_FireShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="77" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동,소동 전투종료 디스폰/ 연극용 스폰 (skin/1156) " type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+        <reaction spawn-1="a_1156_28" spawn-delay="1000" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1156_40" target-2="zonenpcspawn:a_1156_41" target-3="zonenpcspawn:a_1156_42" type="despawn-npc" />
+        <reaction spawn-1="a_1156_49" spawn-2="a_1156_46" spawn-3="a_1156_47" spawn-4="a_1156_48" spawn-delay="3000" type="spawn-npc" />
+        
+        <reaction group-1="zonenpcsquad:s_1156_56" type="despawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_1156_56_2" spawn-delay="3000" type="spawn-npc-groups" />
+        
+        
+        <reaction target-1="zonenpcspawn:a_1156_16" target-2="zonenpcspawn:a_1156_31" target-3="zonenpcspawn:a_1156_27" target-4="zonenpcspawn:a_1156_18" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_8" type="despawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_17" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_51" target-2="zonenpcspawn:a_1156_52" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_4_1" group-2="zonenpcsquad:s_1156_4_2" group-3="zonenpcsquad:s_1156_4_3" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_2" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_1" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 전투 종료 게임끝 (skin/1156)" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_16" target-2="zonenpcspawn:a_1156_31" target-3="zonenpcspawn:a_1156_27" target-4="zonenpcspawn:a_1156_18" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_8" type="despawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_17" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_51" target-2="zonenpcspawn:a_1156_52" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_4_1" group-2="zonenpcsquad:s_1156_4_2" group-3="zonenpcsquad:s_1156_4_3" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_2" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_1" type="despawn-npc-groups" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 전투 종료 초기화 (skin/1156)" type="debug-trace" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction target="zonenpcspawn:a_1156_2" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_1156_3" type="reset-npc-all-hate" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_16" target-2="zonenpcspawn:a_1156_31" target-3="zonenpcspawn:a_1156_27" target-4="zonenpcspawn:a_1156_18" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_8" type="despawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_17" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_51" target-2="zonenpcspawn:a_1156_52" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_4_1" group-2="zonenpcsquad:s_1156_4_2" group-3="zonenpcsquad:s_1156_4_3" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_1" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_2" type="despawn-npc-groups" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  
+ 
+  <script alias="ME_SB_BadBoy_0002_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield_Passive" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동, 소동 전투 시작 시 hate 공유" type="debug-trace" />
+        <reaction from="event:npc-combat-start:npc" social="ME_SB_BadBoy_0002_combatstart_01" type="play-social" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_1156_2" type="set-party-number" />
+        <reaction amount="0" reg="2" target="zonenpcsquad:s_1156_2" type="set-party-number" />
+        <reaction amount="1" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_1156_2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_1156_3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attack:defender" target="zonenpcspawn:a_1156_2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attack:defender" target="zonenpcspawn:a_1156_3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 소동 들어갔는지 확인 (skin/1156) " type="debug-trace" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_2" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_3" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동 소동 hate 공유(skin/1156)" type="debug-trace" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcspawn:a_1156_2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcspawn:a_1156_3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="90" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-1" subject2="zonenpcsquad:s_1156_2:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동 CS1-&gt;CS2 변경, 방어막 버프, 소동 아웃, 요동 중앙 이동 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_IceShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_2" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_3" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        
+        <reaction effect="ME_TX_Fatman_None_NoTarget_Buff" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction text="레이저 타이머 엑트 스폰 (skin/1156) " type="debug-trace" />
+        <reaction spawn-1="a_1156_16" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="90" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동 레지+1, 방어막 버프 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_TX_Fatman_None_IceShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        
+        <reaction effect="ME_TX_Fatman_None_Invincible" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="55" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-1" subject2="zonenpcsquad:s_1156_2:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동 CS3-&gt;CS4 변경, 방어막 버프, 소동 아웃, 요동 중앙 이동 (skin/1156)" type="debug-trace" />
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_IceShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_2" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_3" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        
+        <reaction effect="ME_TX_Fatman_None_NoTarget_Buff" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction text="링크 레이저 더미 스폰 (skin/1156)" type="debug-trace" />
+        <reaction spawn-1="a_1156_17" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="55" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동 레지+1, 방어막 버프 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_TX_Fatman_None_IceShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        
+        <reaction effect="ME_TX_Fatman_None_Invincible" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="33" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="놀이버프 우선 디스폰 (skin/1156) " type="debug-trace" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_2" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1156_16" target-2="zonenpcspawn:a_1156_31" type="despawn-npc" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1156_8_1" target-2="zonenpcspawn:a_1156_9_1" target-3="zonenpcspawn:a_1156_10_1" target-4="zonenpcspawn:a_1156_11_1" type="despawn-npc" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1156_17" target-2="zonenpcspawn:a_1156_52" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_4_1" group-2="zonenpcsquad:s_1156_4_2" group-3="zonenpcsquad:s_1156_4_3" type="despawn-npc-groups" />
+        
+        <reaction effect="ME_TX_Fatman_None_NoTarget_Dispel" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동 얼음땡 놀이 종료 / 요동, 소동 일반 전투 / 타이머 엑트 디스폰 (skin/1156)" type="debug-trace" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_2" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_3" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        
+        <reaction from="zonenpcspawn:a_1156_2" social="ME_SB_BadBoy_0001_battle_04" type="play-social" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="20" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-1" subject2="zonenpcsquad:s_1156_2:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동 CS5-&gt;CS6 변경, 방어막 버프, 소동 중앙 이동, 요동 아웃 (skin/1156)" type="debug-trace" />
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="ME_Common_None_Unlink" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_IceShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_2" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_1156_3" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="invincible" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction text="52번 일자,링크 통제 27번 놀이버프 스폰 (skin/1156) " type="debug-trace" />
+        <reaction spawn-1="a_1156_52" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="20" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동 레지+1, 방어막 버프 (skin/1156)" type="debug-trace" />
+        
+        <reaction effect="ME_TX_Fatman_None_IceShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        
+        <reaction effect="ME_TX_Fatman_None_Invincible" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동, 소동 HP 1% (skin/1156)" type="debug-trace" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_2" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_3" type="npc-fire-special" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1156_40" target-2="zonenpcspawn:a_1156_41" target-3="zonenpcspawn:a_1156_42" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_16" target-2="zonenpcspawn:a_1156_31" target-3="zonenpcspawn:a_1156_27" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_8" type="despawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_17" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_51" target-2="zonenpcspawn:a_1156_52" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_4_1" group-2="zonenpcsquad:s_1156_4_2" group-3="zonenpcsquad:s_1156_4_3" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_1" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_2" type="despawn-npc-groups" />
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동만 HP 1% (skin/1156)" type="debug-trace" />
+        <reaction amount="1" reg="2" target="zonenpcsquad:s_1156_2" type="diff-party-number" />
+        <reaction effect="ME_TX_Fatman_None_IceShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction effect="ME_TX_Fatman_None_DamageShield" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="77" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동,소동 전투종료 디스폰/ 연극용 스폰 (skin/1156) " type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+        <reaction spawn-1="a_1156_29" spawn-delay="1000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동 전투 종료 게임끝 (skin/1156)" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_16" target-2="zonenpcspawn:a_1156_31" target-3="zonenpcspawn:a_1156_27" target-4="zonenpcspawn:a_1156_18" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_8" type="despawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_17" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_51" target-2="zonenpcspawn:a_1156_52" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_4_1" group-2="zonenpcsquad:s_1156_4_2" group-3="zonenpcsquad:s_1156_4_3" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_1" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_2" type="despawn-npc-groups" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-2" subject2="zonenpcsquad:s_1156_2:reg-2" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="소동 전투 종료 초기화(skin/1156)" type="debug-trace" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_1156_2" type="invoke-effect" />
+        <reaction effect="MH_common_CasterSkillBlock" target="zonenpcspawn:a_1156_3" type="invoke-effect" />
+        <reaction target="zonenpcspawn:a_1156_2" type="reset-npc-all-hate" />
+        <reaction target="zonenpcspawn:a_1156_3" type="reset-npc-all-hate" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_16" target-2="zonenpcspawn:a_1156_31" target-3="zonenpcspawn:a_1156_27" target-4="zonenpcspawn:a_1156_18" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_8" type="despawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_17" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_51" target-2="zonenpcspawn:a_1156_52" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_4_1" group-2="zonenpcsquad:s_1156_4_2" group-3="zonenpcsquad:s_1156_4_3" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_1" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_1156_32_2" type="despawn-npc-groups" />
+        
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_2" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-72" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+        <reaction effect-type="modify-ability-28" target="zonenpcspawn:a_1156_3" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+ 
+ 
+ 
+  
+  
+  
+  <script alias="ME_SB_Dummy_0042_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction special-id="1" target="event:npc-spawn:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_4_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_5_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_6_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_7_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 1번 디스폰 (skin/1156) " type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0043_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction special-id="1" target="event:npc-spawn:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_4_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_5_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_6_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_7_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 2번 디스폰 (skin/1156) " type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0044_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction special-id="1" target="event:npc-spawn:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_4_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_5_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_6_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_7_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 3번 디스폰 (skin/1156) " type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0045_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction special-id="1" target="event:npc-spawn:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_4_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_5_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_6_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_7_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 4번 디스폰 (skin/1156) " type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="ME_SB_Dummy_0054_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0055_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_SB_Dummy_0055_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동, 소동 90% 소셜 출력 / 가젯용 장난감 스폰(skin/1156)" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_1156_2" social="ME_SB_BadBoy_0001_Soc_03" type="play-social" />
+        
+        <reaction from="zonenpcspawn:a_1156_3" social="ME_SB_BadBoy_0002_Soc_04" type="play-social" />
+        <reaction group-1="zonenpcsquad:s_1156_32_2" type="spawn-npc-groups" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동, 소동 90% 소셜 출력 / 일자 레이저 2번 그룹 스폰(skin/1156)" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_1156_2" social="ME_SB_BadBoy_0001_Soc_04" type="play-social" />
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_2" spawn-2="a_1156_5_2" spawn-3="a_1156_6_2" spawn-4="a_1156_7_2" type="spawn-npc" />
+         
+        <reaction spawn-1="a_1156_18" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 3그룹 스폰 (skin/1156)" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_3" spawn-2="a_1156_5_3" spawn-3="a_1156_6_3" spawn-4="a_1156_7_3" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0055_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 그룹 엑트 다시 시작 (skin/1156)" type="debug-trace" />
+        <reaction seq="ME_SB_Dummy_0055_act_02" target="zonenpcspawn:a_1156_16" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 1그룹 스폰 (skin/1156)" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_1" spawn-2="a_1156_5_1" spawn-3="a_1156_6_1" spawn-4="a_1156_7_1" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 2그룹 스폰 (skin/1156)" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_2" spawn-2="a_1156_5_2" spawn-3="a_1156_6_2" spawn-4="a_1156_7_2" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 3그룹 스폰 (skin/1156)" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_3" spawn-2="a_1156_5_3" spawn-3="a_1156_6_3" spawn-4="a_1156_7_3" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0055_act_02" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 그룹 엑트 다시 시작 (skin/1156)" type="debug-trace" />
+        <reaction seq="ME_SB_Dummy_0055_act_02" target="zonenpcspawn:a_1156_16" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0046_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0047_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0048_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0049_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0050_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0051_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0052_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0053_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0056_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="링크레이저 타이머 시작 (skin/1156)" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_SB_Dummy_0056_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동, 소동 60% 소셜 출력 / 가젯용 장난감 스폰(skin/1156)" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_1156_3" social="ME_SB_BadBoy_0002_Soc_05" type="play-social" />
+        <reaction group-1="zonenpcsquad:s_1156_32_2" type="spawn-npc-groups" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0056_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동,소동 60% 소셜 출력 / 링크 레이저 소환 시작(skin/1156)" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_1156_3" social="ME_SB_BadBoy_0002_Soc_06" type="play-social" />
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_31" type="spawn-npc" />
+        
+        <reaction spawn-1="a_1156_18" type="spawn-npc" />
+        <reaction seq="ME_SB_Dummy_0056_act_02" target="zonenpcspawn:a_1156_17" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="흥링크 레이저 밖 1번 이동 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="zonenpcspawn:a_1156_8_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="zonenpcspawn:a_1156_9_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="zonenpcspawn:a_1156_10_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="zonenpcspawn:a_1156_11_1" type="diff-npc-hate" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_8_1" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_9_1" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_10_1" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_11_1" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크 레이저 밖 2번 이동 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="zonenpcspawn:a_1156_8_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="zonenpcspawn:a_1156_9_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="zonenpcspawn:a_1156_10_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="zonenpcspawn:a_1156_11_1" type="diff-npc-hate" />
+        <reaction special-id="2" target="zonenpcspawn:a_1156_8_1" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_1156_9_1" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_1156_10_1" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_1156_11_1" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크 레이저 밖 3번 이동 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="zonenpcspawn:a_1156_8_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="zonenpcspawn:a_1156_9_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="zonenpcspawn:a_1156_10_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="zonenpcspawn:a_1156_11_1" type="diff-npc-hate" />
+        <reaction special-id="3" target="zonenpcspawn:a_1156_8_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_1156_9_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_1156_10_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_1156_11_1" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크 레이저 밖 4번 이동 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="zonenpcspawn:a_1156_8_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="zonenpcspawn:a_1156_9_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="zonenpcspawn:a_1156_10_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="zonenpcspawn:a_1156_11_1" type="diff-npc-hate" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_8_1" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_9_1" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_10_1" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_11_1" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0056_act_02" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크레이저 다시 이동 /임시 더미 area (skin/1156)" type="debug-trace" />
+        <reaction seq="ME_SB_Dummy_0056_act_02" target="zonenpcspawn:a_1156_17" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0059_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 타겟 더미 전투시작 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크레이저 2번그룹 스폰 (skin/1156) " type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_8_1" spawn-2="a_1156_9_1" spawn-3="a_1156_10_1" spawn-4="a_1156_11_1" type="spawn-npc" />
+        <reaction special-id="2" target="event:npc-special:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="66" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크레이저 스킬더미 전투 유지용 엑트 (skin/1156) " type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:npc-special:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:npc-special:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:npc-special:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:npc-special:npc" type="diff-npc-hate" />
+        <reaction seq="ME_SB_Dummy_0058_act_01" target="event:npc-special:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0058_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크레이저 스킬더미 hate(skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="event:act-finished:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="event:act-finished:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="event:act-finished:npc" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="event:act-finished:npc" type="diff-npc-hate" />
+        <reaction seq="ME_SB_Dummy_0058_act_01" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0060_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  <script alias="CH_SB_InJeolMi_0004_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="만복이 소셜(skin/1156)" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_1156_40" social="CH_SB_Manbok_0001_soc_1" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="만복이 소셜(skin/1156)" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_1156_45" social="CH_SB_Children_0003_soc_1" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_InJeolMi_0004_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="아이들 퇴장(skin/1156)" type="debug-trace" />
+        <reaction seq="CH_SB_InJeolMi_0004_act_02" target="zonenpcspawn:a_1156_40" type="set-npc-act" />
+        <reaction seq="CH_SB_Jeomsun_0001_act_01" target="zonenpcspawn:a_1156_41" type="set-npc-act" />
+        <reaction seq="CH_SB_Manbok_0001_act_01" target="zonenpcspawn:a_1156_42" type="set-npc-act" />
+        <reaction seq="CH_SB_Children_0001_act_01" target="zonenpcspawn:a_1156_43" type="set-npc-act" />
+        <reaction seq="CH_SB_Children_0002_act_01" target="zonenpcspawn:a_1156_44" type="set-npc-act" />
+        <reaction seq="CH_SB_Children_0003_act_01" target="zonenpcspawn:a_1156_45" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_Jeomsun_0001_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_Manbok_0001_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_Children_0001_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_Children_0001_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="연출용 아이들1 이동 끝 / 디스폰(skin/1156)" type="debug-trace" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_Children_0002_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_Children_0002_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="연출용 아이들2 이동 끝 / 디스폰(skin/1156)" type="debug-trace" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="CH_SB_Children_0003_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_Children_0003_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="연출용 아이들3 이동 끝 / 디스폰(skin/1156)" type="debug-trace" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_SB_ItemBox_0001_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="보물상자 스폰 (skin/1156)" type="debug-trace" />
+      </reaction-set>
+    </decision>
+
+    
+      <decision event="killed">
+        <filter-set>
+          <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        </filter-set>
+        <reaction-set>
+          <reaction text="천하사절 랜덤 스폰 (skin/1156)" type="debug-trace" />
+          <reaction end="3" group="zonenpcsquad:s_1156_50" max="1" min="1" spawn-delay="0" start="1" type="spawn-random-npc" />
+          
+          <reaction enable="y" target="zoneenv:e_button_1156yongmak_01" target2="zoneenv2spawn:e_button_1156yongmak_01_spawn" type="set-env-enable" />
+        </reaction-set>
+      </decision>
+    </script>
+
+  
+  <script alias="ME_SB_Dummy_0061_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_SB_Dummy_0061_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동, 소동 30% 소셜 출력 / 가젯용 장난감 스폰(skin/1156)" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_1156_2" social="ME_SB_BadBoy_0001_Soc_05" type="play-social" />
+        <reaction group-1="zonenpcsquad:s_1156_32_1" type="spawn-npc-groups" />
+        
+        <reaction spawn-1="a_1156_27" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0061_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="요동,소동 30% 소셜 출력 / 링크 레이저 소환 시작(skin/1156)" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_1156_3" social="ME_SB_BadBoy_0002_Soc_07" type="play-social" />
+        <reaction seq="ME_SB_Dummy_0061_act_02" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크 레이저 소환 시작  (skin/1156)" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_31" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크 레이저 1번 이동 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="zonenpcspawn:a_1156_8_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="zonenpcspawn:a_1156_9_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="zonenpcspawn:a_1156_10_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="zonenpcspawn:a_1156_11_1" type="diff-npc-hate" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_8_1" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_9_1" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_10_1" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_11_1" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크 레이저 2번 이동 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="zonenpcspawn:a_1156_8_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="zonenpcspawn:a_1156_9_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="zonenpcspawn:a_1156_10_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="zonenpcspawn:a_1156_11_1" type="diff-npc-hate" />
+        <reaction special-id="2" target="zonenpcspawn:a_1156_8_1" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_1156_9_1" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_1156_10_1" type="npc-fire-special" />
+        <reaction special-id="2" target="zonenpcspawn:a_1156_11_1" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크 레이저 3번 이동 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="zonenpcspawn:a_1156_8_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="zonenpcspawn:a_1156_9_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="zonenpcspawn:a_1156_10_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="zonenpcspawn:a_1156_11_1" type="diff-npc-hate" />
+        <reaction special-id="3" target="zonenpcspawn:a_1156_8_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_1156_9_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_1156_10_1" type="npc-fire-special" />
+        <reaction special-id="3" target="zonenpcspawn:a_1156_11_1" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크 레이저 4번 이동 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="zonenpcspawn:a_1156_8_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="zonenpcspawn:a_1156_9_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="zonenpcspawn:a_1156_10_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="zonenpcspawn:a_1156_11_1" type="diff-npc-hate" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_8_1" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_9_1" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_10_1" type="npc-fire-special" />
+        <reaction special-id="4" target="zonenpcspawn:a_1156_11_1" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="7" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크 레이저 1번 이동 (skin/1156)" type="debug-trace" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_8_0" target="zonenpcspawn:a_1156_8_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_9_0" target="zonenpcspawn:a_1156_9_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_10_0" target="zonenpcspawn:a_1156_10_1" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1156_11_0" target="zonenpcspawn:a_1156_11_1" type="diff-npc-hate" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_8_1" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_9_1" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_10_1" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_1156_11_1" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="8" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="링크레이저 디스폰, 일자레이저 스폰 (skin/1156)" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_31" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_1156_8_1" target-2="zonenpcspawn:a_1156_9_1" target-3="zonenpcspawn:a_1156_10_1" target-4="zonenpcspawn:a_1156_11_1" type="despawn-npc" />
+        
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_1" spawn-2="a_1156_5_1" spawn-3="a_1156_6_1" spawn-4="a_1156_7_1" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="9" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="일자 레이저 2번 그룹 이동 (skin/1156)" type="debug-trace" />
+        
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_2" spawn-2="a_1156_5_2" spawn-3="a_1156_6_2" spawn-4="a_1156_7_2" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="10" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="일자 레이저 3번 그룹 이동 (skin/1156)" type="debug-trace" />
+        
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_3" spawn-2="a_1156_5_3" spawn-3="a_1156_6_3" spawn-4="a_1156_7_3" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="11" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="일자 레이저 3번 그룹 이동 (skin/1156)" type="debug-trace" />
+        
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_1" spawn-2="a_1156_5_1" spawn-3="a_1156_6_1" spawn-4="a_1156_7_1" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="12" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="일자 레이저 3번 그룹 이동 (skin/1156)" type="debug-trace" />
+        
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_2" spawn-2="a_1156_5_2" spawn-3="a_1156_6_2" spawn-4="a_1156_7_2" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="13" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="일자 레이저 3번 그룹 이동 (skin/1156)" type="debug-trace" />
+        
+        <reaction attack-target="zonenpcspawn:a_1156_4_0" spawn-1="a_1156_4_3" spawn-2="a_1156_5_3" spawn-3="a_1156_6_3" spawn-4="a_1156_7_3" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0061_act_02" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="레이저 통제 종료 다시 재 시작(skin/1156)" type="debug-trace" />
+        <reaction seq="ME_SB_Dummy_0061_act_02" target="zonenpcspawn:a_1156_52" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0058_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_SB_Dummy_0058_act_01" target="zonenpcspawn:a_1156_27" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1)장난감 2마리 스폰 (skin/1156)" type="debug-trace" />
+        
+        <reaction spawn-1="a_1156_36_1" spawn-2="a_1156_37_1" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="2)장난감 2마리 스폰 (skin/1156)" type="debug-trace" />
+        
+        <reaction spawn-1="a_1156_32_1" spawn-2="a_1156_33_1" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="3)장난감 2마리 스폰 (skin/1156)" type="debug-trace" />
+        
+        <reaction spawn-1="a_1156_34_1" spawn-2="a_1156_35_1" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0058_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="30초 후 장난감 엑트 다시 시작(skin/1156)" type="debug-trace" />
+        <reaction seq="ME_SB_Dummy_0058_act_02" target="zonenpcspawn:a_1156_27" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="4)장난감 2마리 스폰 (skin/1156)" type="debug-trace" />
+        
+        <reaction spawn-1="a_1156_54_2" spawn-2="a_1156_55_2" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1)장난감 2마리 스폰 (skin/1156)" type="debug-trace" />
+        
+        <reaction spawn-1="a_1156_36_2" spawn-2="a_1156_37_2" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1)장난감 2마리 스폰 (skin/1156)" type="debug-trace" />
+        
+        <reaction spawn-1="a_1156_32_2" spawn-2="a_1156_33_2" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0058_act_02" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="30초 후 장난감 엑트 다시 시작(skin/1156)" type="debug-trace" />
+        <reaction seq="ME_SB_Dummy_0058_act_02" target="zonenpcspawn:a_1156_27" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0057_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-1" subject2="zonenpcsquad:s_1156_2:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_SB_Dummy_0057_act_01" target="zonenpcspawn:a_1156_18" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_1156_2:reg-1" subject2="zonenpcsquad:s_1156_2:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_SB_Dummy_0057_act_02" target="zonenpcspawn:a_1156_18" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1) 포효 스킬(skin/1156)" type="debug-trace" />
+        
+        <reaction special-id="2" target="zonenpcspawn:a_1156_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="2) 포효 스킬(skin/1156)" type="debug-trace" />
+        
+        <reaction special-id="2" target="zonenpcspawn:a_1156_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="3) 포효 스킬 / 최종 결산(skin/1156)" type="debug-trace" />
+        
+        <reaction special-id="3" target="zonenpcspawn:a_1156_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0057_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="엑트 더미 디스폰(skin/1156)" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1) 포효 스킬(skin/1156)" type="debug-trace" />
+        
+        <reaction special-id="2" target="zonenpcspawn:a_1156_3" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="2) 포효 스킬(skin/1156)" type="debug-trace" />
+        
+        <reaction special-id="2" target="zonenpcspawn:a_1156_3" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="3) 포효 스킬/최종 결산(skin/1156)" type="debug-trace" />
+        
+        <reaction special-id="3" target="zonenpcspawn:a_1156_3" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0057_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="엑트 더미 디스폰(skin/1156)" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_SB_Dummy_0057_act_02" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="엑트 더미 디스폰(skin/1156)" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+
+  
+  <script alias="CE_SB_BadBoy_0001_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="연극용 요동 스폰(skin/1156)" type="debug-trace" />
+        <reaction seq="CE_SB_BadBoy_0001_act_01" target="zonenpcspawn:a_1156_28" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CE_SB_BadBoy_0002_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="연극용 소동 스폰(skin/1156)" type="debug-trace" />
+        <reaction seq="CE_SB_BadBoy_0002_act_01" target="zonenpcspawn:a_1156_29" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  
+</table>

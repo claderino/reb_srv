@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5230\zoneenv2placedata.5230.xml-->
+	<record action-point="1540,-13579,1250" action-radius="18" alias="e_Chest_sorapot_01_place" tool-zone-1="5230" type="chest" />
+	<record action-point="1540,-13609,1241" action-radius="15" alias="e_chest_jajakstfiresub_01_place" tool-zone-1="5230" type="chest" />
+	<record action-point="1189,-13384,1232" action-radius="25" alias="e_chest_jajaktreesub_01_place" tool-zone-1="5230" type="chest" />
+	<record action-point="1819,-14529,1266" action-radius="12" alias="e_Chest_silkmush_01_place" tool-zone-1="5230" type="chest" />
+	<record action-point="1299,-14349,1219" action-radius="12" alias="e_Chest_silkmush_02_place" tool-zone-1="5230" type="chest" />
+	<record action-point="1081,-13834,1208" action-radius="12" alias="e_Chest_silkmush_03_place" tool-zone-1="5230" type="chest" />
+	<record action-point="1307,-13453,1237" action-radius="12" alias="e_Chest_silkmush_04_place" tool-zone-1="5230" type="chest" />
+	<record action-point="720,-13360,1205" action-radius="12" alias="e_Chest_silkmush_05_place" tool-zone-1="5230" type="chest" />
+	<record action-point="738,-12860,1245" action-radius="12" alias="e_Chest_silkmush_06_place" tool-zone-1="5230" type="chest" />
+	<record action-point="105,-13863,1208" action-radius="12" alias="e_Chest_silkmush_07_place" tool-zone-1="5230" type="chest" />
+	<record action-point="277,-12903,1240" action-radius="12" alias="e_Chest_silkmush_08_place" tool-zone-1="5230" type="chest" />
+	<record action-point="276,-12307,1237" action-radius="12" alias="e_Chest_silkmush_09_place" tool-zone-1="5230" type="chest" />
+	<record action-point="1732,-14135,1246" action-radius="12" alias="e_Chest_silkmush_10_place" tool-zone-1="5230" type="chest" />
+	<record action-point="-304,-11517,1284" alias="5230_Portal_Jajak_place" region-point-1="-1040,-11993,1623" region-point-2="-1057,-11966,1658" region-point-3="432,-11041,1784" region-point-4="448,-11068,1770" tool-zone-1="5230" tool-zone-2="5300" tool-zone-3="5237" tool-zone-4="5239" type="portal" />
+	<record action-point="-1308,-14499,1559" alias="5230_Portal_SooRyun_place" region-point-1="-1310,-14611,3562" region-point-2="-1326,-14387,2371" region-point-3="-1306,-14386,2364" region-point-4="-1289,-14610,3562" tool-zone-1="5230" tool-zone-2="5300" tool-zone-3="5237" tool-zone-4="5239" type="portal" />
+	<record action-point="1451,-13601,1226" action-radius="0" alias="5230_Foot_Cook_place" region-point-1="1456,-13645,1394" region-point-2="1422,-13569,1392" region-point-3="1446,-13558,1229" region-point-4="1480,-13634,1229" tool-zone-1="5230" type="foot-switch" />
+	<record action-point="-169,-14931,1287" alias="5230_Portal_Byul1_place" region-point-1="-232,-14866,1618" region-point-2="-219,-14855,1607" region-point-3="-106,-14996,1610" region-point-4="-119,-15006,1241" tool-zone-1="5230" type="portal" />
+	<record action-point="-610,-13806,1279" alias="5230_Portal_Byul2_place" region-point-1="-654,-13875,1240" region-point-2="-583,-13728,1240" region-point-3="-566,-13736,1240" region-point-4="-637,-13884,1240" tool-zone-1="5230" type="portal" />
+	<record action-point="611,-14755,1305" alias="5230_Portal_BonDang_place" region-point-1="529,-14765,1264" region-point-2="529,-14746,1264" region-point-3="693,-14746,1755" region-point-4="693,-14765,1264" tool-zone-1="5230" type="portal" />
+	<record action-point="1790,-14856,1342" alias="5230_Portal_An1_place" region-point-1="1740,-14929,1656" region-point-2="1825,-14775,1657" region-point-3="1840,-14784,1288" region-point-4="1755,-14937,1288" tool-zone-1="5230" type="portal" />
+	<record action-point="3633,-13047,1818" alias="5230_potal_UnRim_place" region-point-1="3196,-12920,2052" region-point-2="3204,-12897,2047" region-point-3="4071,-13174,2286" region-point-4="4063,-13197,2293" tool-zone-1="5230" tool-zone-2="5231" tool-zone-3="5239" type="portal" />
+	<record alias="zone5230.falldeath_place" height="0" type="fall-death" />
+</table>

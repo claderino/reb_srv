@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1311.xml-->
+  <quest alias="q_sub_1311" category="job" district-1="jeryoungrim" id="1311" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="권사" level="8" preceding-quest-1="q_epic_310" preceding-quest-2="q_sub_1310" preceding-quest-check="and">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_HwaJung_0020" party-broadcast="n" progress-mission="y" quest-decision="qd_1311_2" type="talk" />
+        <case object="zone:zone_HuekUmmRim_ClassQ_4_C2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1311_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2" quest-decision="qd_1311_3" zone-1="zone_HuekUmmRim_ClassQ_4_C2">
+      <mission id="2" required-register-value="3">
+        <case object="zone:zone_HuekUmmRim_ClassQ_4_C2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1311_4" type="enter-zone" />
+        <case object="npc:CH_HwaJung_0020" party-broadcast="n" type="approach" />
+        <case object="npc:MH_MokuJin_0012" party-broadcast="n" type="approach" />
+        <tutorial-case progress-mission="y" type="skill-sequence" zone="zone_HuekUmmRim_ClassQ_4_C2" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="1311_final_set1">
+        <case object="npc:CH_HwaJung_0020" party-broadcast="n" progress-mission="y" quest-decision="qd_1311_8" type="talk" />
+        <case object="zone:zone_HuekUmmRim_ClassQ_4_C2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1311_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_HuekUmmRim_ClassQ_4_SP">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+    </transit>
+  </quest>
+</table>

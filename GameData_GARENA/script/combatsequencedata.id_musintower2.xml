@@ -1,0 +1,2290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.id_musintower2.xml-->
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS1" transit-cond-1="bleeding-75">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Smash" skill3="ME_SnowmanC_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_HeavySmash" skill3="ME_SnowmanC_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceBlow" skill3="ME_SnowmanC_None_IceBlow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Spin" skill3="ME_SnowmanC_None_Spin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceFeather" skill3="ME_SnowmanC_None_IceFeather" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceShot" skill3="ME_SnowmanC_None_IceShot" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Dash" skill3="ME_SnowmanC_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS2" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action duration="1000" type="stay" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnowmanC_None_IceShock" skill3="ME_SnowmanC_None_IceShock" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnowmanC_None_Center2" skill3="ME_SnowmanC_None_Center2" target-area="4931_3" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0002_msg_01" type="do-social" />
+      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_SnowmanC_None_Summon" skill3="ME_SnowmanC_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnowmanC_None_IceBall" skill3="ME_SnowmanC_None_IceBall" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action arrived-effect="ME_SnowmanC_None_BossRush_Arrived" blocked-effect="" event-step="2" immune-breaker-disable="y" pass-through="y" skill="ME_SnowmanC_None_BossRush" skill3="ME_SnowmanC_None_BossRush" speed="125" type="boss-rush-attack" />
+      <action arrived-effect="ME_SnowmanC_None_BossRush_Arrived" blocked-effect="" immune-breaker-disable="y" pass-through="y" skill="ME_SnowmanC_None_BossRush_NoCast" skill3="ME_SnowmanC_None_BossRush_NoCast" speed="125" type="boss-rush-attack" />
+      <action arrived-effect="ME_SnowmanC_None_BossRush_Arrived" blocked-effect="" event-step="3" immune-breaker-disable="y" pass-through="y" skill="ME_SnowmanC_None_BossRush_NoCast" skill3="ME_SnowmanC_None_BossRush_NoCast" speed="125" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS3" transit-cond-1="bleeding-45">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Smash" skill3="ME_SnowmanC_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_HeavySmash" skill3="ME_SnowmanC_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceBlow" skill3="ME_SnowmanC_None_IceBlow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Spin" skill3="ME_SnowmanC_None_Spin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceFeather" skill3="ME_SnowmanC_None_IceFeather" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceShot" skill3="ME_SnowmanC_None_IceShot" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Dash" skill3="ME_SnowmanC_None_Dash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="4" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS4" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action duration="1000" type="stay" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnowmanC_None_IceShock" skill3="ME_SnowmanC_None_IceShock" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnowmanC_None_Center2" skill3="ME_SnowmanC_None_Center2" target-area="4931_3" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0002_msg_01" type="do-social" />
+      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_SnowmanC_None_Summon" skill3="ME_SnowmanC_None_Summon" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnowmanC_None_IceBall" skill3="ME_SnowmanC_None_IceBall" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action arrived-effect="ME_SnowmanC_None_BossRush_Arrived" blocked-effect="" event-step="2" immune-breaker-disable="y" pass-through="y" skill="ME_SnowmanC_None_BossRush" skill3="ME_SnowmanC_None_BossRush" speed="125" type="boss-rush-attack" />
+      <action arrived-effect="ME_SnowmanC_None_BossRush_Arrived" blocked-effect="" immune-breaker-disable="y" pass-through="y" skill="ME_SnowmanC_None_BossRush_NoCast" skill3="ME_SnowmanC_None_BossRush_NoCast" speed="125" type="boss-rush-attack" />
+      <action arrived-effect="ME_SnowmanC_None_BossRush_Arrived" blocked-effect="" event-step="3" immune-breaker-disable="y" pass-through="y" skill="ME_SnowmanC_None_BossRush_NoCast" skill3="ME_SnowmanC_None_BossRush_NoCast" speed="125" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS5">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Smash" skill3="ME_SnowmanC_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_HeavySmash" skill3="ME_SnowmanC_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceBlow" skill3="ME_SnowmanC_None_IceBlow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Spin" skill3="ME_SnowmanC_None_Spin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceFeather" skill3="ME_SnowmanC_None_IceFeather" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_SnowmanC_None_IceShot" skill3="ME_SnowmanC_None_IceShot" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowmanC_None_Dash" skill3="ME_SnowmanC_None_Dash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="4" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS6" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS7" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS8" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS9" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_CS10" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS1" transit-cond-1="bleeding-75">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BabaBoss_None_Smash_Boss" skill3="ME_BabaBoss_None_Smash_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_HeavySmash_Boss" skill3="ME_BabaBoss_None_HeavySmash_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_FrontAttack" skill3="ME_BabaBoss_None_FrontAttack" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_SmashDown_Ice_Boss" skill3="ME_BabaBoss_None_SmashDown_Ice_Boss" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BabaBoss_None_IceThrow_Boss" skill3="ME_BabaBoss_None_IceThrow_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_JumpDash_Boss" skill3="ME_BabaBoss_None_JumpDash_Boss" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS2" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action duration="1000" type="stay" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BabaBoss_None_IceExplosion_Boss" skill3="ME_BabaBoss_None_IceExplosion_Boss" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BabaBoss_None_JumpDash_Center" skill3="ME_BabaBoss_None_JumpDash_Center" target-area="4931_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0002_msg_01" type="do-social" />
+      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BabaBoss_None_Summon_Boss" skill3="ME_BabaBoss_None_Summon_Boss" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BabaBoss_None_IceBall" skill3="ME_BabaBoss_None_IceBall" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action arrived-effect="ME_BabaBoss_None_BossRush_Arrived" blocked-effect="" event-step="2" immune-breaker-disable="y" pass-through="y" skill="ME_BabaBoss_None_BossRush" skill3="ME_BabaBoss_None_BossRush" speed="125" type="boss-rush-attack" />
+      <action arrived-effect="ME_BabaBoss_None_BossRush_Arrived" blocked-effect="" immune-breaker-disable="y" pass-through="y" skill="ME_BabaBoss_None_BossRush_NoCast" skill3="ME_BabaBoss_None_BossRush_NoCast" speed="125" type="boss-rush-attack" />
+      <action arrived-effect="ME_BabaBoss_None_BossRush_Arrived" blocked-effect="" event-step="3" immune-breaker-disable="y" pass-through="y" skill="ME_BabaBoss_None_BossRush_NoCast" skill3="ME_BabaBoss_None_BossRush_NoCast" speed="125" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS3" transit-cond-1="bleeding-45">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_BabaBoss_None_Smash_Boss" skill3="ME_BabaBoss_None_Smash_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_HeavySmash_Boss" skill3="ME_BabaBoss_None_HeavySmash_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_FrontAttack" skill3="ME_BabaBoss_None_FrontAttack" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_SmashDown_Ice_Boss" skill3="ME_BabaBoss_None_SmashDown_Ice_Boss" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_BabaBoss_None_IceThrow_Boss" skill3="ME_BabaBoss_None_IceThrow_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_JumpDash_Boss" skill3="ME_BabaBoss_None_JumpDash_Boss" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="4" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS4" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action duration="1000" type="stay" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BabaBoss_None_IceExplosion_Boss" skill3="ME_BabaBoss_None_IceExplosion_Boss" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BabaBoss_None_JumpDash_Center" skill3="ME_BabaBoss_None_JumpDash_Center" target-area="4931_4" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0002_msg_01" type="do-social" />
+      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BabaBoss_None_Summon_Boss" skill3="ME_BabaBoss_None_Summon_Boss" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BabaBoss_None_IceBall" skill3="ME_BabaBoss_None_IceBall" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action arrived-effect="ME_BabaBoss_None_BossRush_Arrived" blocked-effect="" event-step="2" immune-breaker-disable="y" pass-through="y" skill="ME_BabaBoss_None_BossRush" skill3="ME_BabaBoss_None_BossRush" speed="125" type="boss-rush-attack" />
+      <action arrived-effect="ME_BabaBoss_None_BossRush_Arrived" blocked-effect="" immune-breaker-disable="y" pass-through="y" skill="ME_BabaBoss_None_BossRush_NoCast" skill3="ME_BabaBoss_None_BossRush_NoCast" speed="125" type="boss-rush-attack" />
+      <action arrived-effect="ME_BabaBoss_None_BossRush_Arrived" blocked-effect="" event-step="3" immune-breaker-disable="y" pass-through="y" skill="ME_BabaBoss_None_BossRush_NoCast" skill3="ME_BabaBoss_None_BossRush_NoCast" speed="125" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS5">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_BabaBoss_None_Smash_Boss" skill3="ME_BabaBoss_None_Smash_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_HeavySmash_Boss" skill3="ME_BabaBoss_None_HeavySmash_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_FrontAttack" skill3="ME_BabaBoss_None_FrontAttack" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_SmashDown_Ice_Boss" skill3="ME_BabaBoss_None_SmashDown_Ice_Boss" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_BabaBoss_None_IceThrow_Boss" skill3="ME_BabaBoss_None_IceThrow_Boss" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaBoss_None_JumpDash_Boss" skill3="ME_BabaBoss_None_JumpDash_Boss" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="4" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS6" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS7" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS8" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS9" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_CS10" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0001_CS1">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action event-step="1" repeat="1" skill="ME_IronBall_None_Fall" skill3="ME_IronBall_None_Fall" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0001_CS2" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0019_CS">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="ME_IronBall_None_Fall" skill3="ME_IronBall_None_Fall" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_SnowBall_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+
+    <special combat-distance="3" id="1" max-count="1">
+      <action arrived-effect="ME_BEA_R0_Snow_None_Rush_Arrived" pass-through="y" skill="ME_BEB_R0_SnowBall_None_Snowballing" skill3="ME_BEB_R0_SnowBall_None_Snowballing" speed="96" target="event:npc-combat-action:target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0382_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      <action repeat="1" skill="ME_Icicle_None_IcicleDrop_Musin_1Floor" skill3="ME_Icicle_None_IcicleDrop_Musin_1Floor" type="use-skill" />
+      <action duration="4000" type="stay" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0383_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      <action repeat="1" skill="ME_IronBall_None_Fall_Ground" skill3="ME_IronBall_None_Fall_Ground" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0384_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action type="select">
+        <action prob="20" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+        <action prob="20" repeat="1" skill="ME_Dummy_None_400ms" skill3="ME_Dummy_None_400ms" type="use-skill" />
+        <action prob="20" repeat="1" skill="ME_Dummy_None_600ms" skill3="ME_Dummy_None_600ms" type="use-skill" />       
+      </action>
+      <action repeat="1" skill="ME_Icicle_None_IcicleDrop_Musin_1Floor" skill3="ME_Icicle_None_IcicleDrop_Musin_1Floor" target="event:npc-combat-action:npc" type="use-skill" />
+      <action duration="4000" type="stay" />
+    </special>
+  </combat-sequence> 
+  
+  <combat-sequence alias="ME_CT_Dummy_0386_CS" hide-seq-start="y" />
+
+  
+  
+  
+  
+
+  
+    <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS1" transit-cond-1="bleeding-75">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_Smash" skill3="ME_ChainKnuckleBandit_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_HeavySmash" skill3="ME_ChainKnuckleBandit_None_HeavySmash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_ChainKnuckleBandit_None_FlameSmash" skill3="ME_ChainKnuckleBandit_None_FlameSmash" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_KnukleShot" skill3="ME_ChainKnuckleBandit_None_KnukleShot" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_HeavyDash" skill3="ME_ChainKnuckleBandit_None_HeavyDash" type="use-skill" />
+    </normal>
+
+      <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+        
+        <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+        
+        <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+        
+        <action immune-breaker-disable="y" repeat="1" skill="ME_ChainKnuckleBandit_None_SmashDown" skill3="ME_ChainKnuckleBandit_None_SmashDown" target="event:npc-combat-action:npc" type="use-skill" />
+        
+        <action immune-breaker-disable="y" skill="ME_ChainKnuckleBandit_None_MultiShot2" skill3="ME_ChainKnuckleBandit_None_MultiShot2" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      </special>
+  </combat-sequence>
+
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS2" transit-cond-1="bleeding-30">
+    <normal combat-distance="1" id="1" special-1="2" special-2="1">
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_Smash" skill3="ME_ChainKnuckleBandit_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_HeavySmash" skill3="ME_ChainKnuckleBandit_None_HeavySmash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_ChainKnuckleBandit_None_FlameSmash" skill3="ME_ChainKnuckleBandit_None_FlameSmash" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_KnukleShot" skill3="ME_ChainKnuckleBandit_None_KnukleShot" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_HeavyDash" skill3="ME_ChainKnuckleBandit_None_HeavyDash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="40000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_ChainKnuckleBandit_None_SmashDown" skill3="ME_ChainKnuckleBandit_None_SmashDown" target="event:npc-combat-action:npc" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_ChainKnuckleBandit_None_MultiShot2" skill3="ME_ChainKnuckleBandit_None_MultiShot2" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_ChainKnuckleBandit_None_Jump" skill3="ME_ChainKnuckleBandit_None_Jump" target-area="4932_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_800ms" skill3="ME_Dummy_None_800ms" type="use-skill" />
+      <action immune-breaker-disable="y" social="MH_CT_MusinTower_SImHwa_0004_msg_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="4" skill="ME_ChainKnuckleBandit_None_FlameGround_Musin_Lv2" skill3="ME_ChainKnuckleBandit_None_FlameGround_Musin_Lv2" type="use-skill" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS3">
+    <normal combat-distance="1" id="1" special-1="2" special-2="1">
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_Smash" skill3="ME_ChainKnuckleBandit_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_ChainKnuckleBandit_None_HeavySmash" skill3="ME_ChainKnuckleBandit_None_HeavySmash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_ChainKnuckleBandit_None_FlameSmash" skill3="ME_ChainKnuckleBandit_None_FlameSmash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="40000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_ChainKnuckleBandit_None_SmashDown" skill3="ME_ChainKnuckleBandit_None_SmashDown" target="event:npc-combat-action:npc" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_ChainKnuckleBandit_None_MultiShot2" skill3="ME_ChainKnuckleBandit_None_MultiShot2" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_ChainKnuckleBandit_None_Jump" skill3="ME_ChainKnuckleBandit_None_Jump" target-area="4932_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_800ms" skill3="ME_Dummy_None_800ms" type="use-skill" />
+      <action immune-breaker-disable="y" social="MH_CT_MusinTower_SImHwa_0004_msg_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="4" skill="ME_ChainKnuckleBandit_None_FlameGround_Musin_Lv2" skill3="ME_ChainKnuckleBandit_None_FlameGround_Musin_Lv2" type="use-skill" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS4" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS5" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS6" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS7" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS8" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS9" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_CS10" />
+
+  
+  <combat-sequence alias="ME_CT_Dummy_0387_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">      
+      <action repeat="1" skill="ME_Common_None_Ground_Explosion" skill3="ME_Common_None_Ground_Explosion" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">      
+      <action event-step="1" repeat="1" skill="ME_Common_None_Ground_Explosion" skill3="ME_Common_None_Ground_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0388_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">      
+      <action repeat="1" skill="ME_Dummy_None_ImmuneGround" skill3="ME_Dummy_None_ImmuneGround" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1" start-delay="5000">
+      <action event-step="1" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_Dummy_0413_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0">
+      <action repeat="1" skill="ME_JinSeoYeonM_None_MukHwaGround" skill3="ME_JinSeoYeonM_None_MukHwaGround" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_ItemBox_0001_CS" />
+  
+  <combat-sequence alias="ME_CT_DummyMusinTower_0001_CS" hide-seq-start="y" />
+  
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS1" transit-cond-1="bleeding-75">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Jab" skill3="ME_DokebiGonNamed_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Smash" skill3="ME_DokebiGonNamed_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_SmashDown" skill3="ME_DokebiGonNamed_None_SmashDown" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiTormado" skill3="ME_DokebiGonNamed_None_DokebiTormado" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Dash" skill3="ME_DokebiGonNamed_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS2" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFireLaser" skill3="ME_DokebiGonNamed_None_DokebiFireLaser" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0010_msg_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_Dash_Center" skill3="ME_DokebiGonNamed_None_Dash_Center" target-area="4933_2" type="use-ground-skill" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_Summon" skill3="ME_DokebiGonNamed_None_Summon" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="1" start-delay="25000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action event-step="5" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      <action event-step="6" immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_FireGround" skill3="ME_DokebiGonNamed_None_FireGround" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      
+      <action event-step="5" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      <action event-step="6" immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_FireGround" skill3="ME_DokebiGonNamed_None_FireGround" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      
+      <action event-step="4" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS3" transit-cond-1="bleeding-50">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Jab" skill3="ME_DokebiGonNamed_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Smash" skill3="ME_DokebiGonNamed_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_SmashDown" skill3="ME_DokebiGonNamed_None_SmashDown" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiTormado" skill3="ME_DokebiGonNamed_None_DokebiTormado" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Dash" skill3="ME_DokebiGonNamed_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS4" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFireLaser" skill3="ME_DokebiGonNamed_None_DokebiFireLaser" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0010_msg_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_Dash_Center" skill3="ME_DokebiGonNamed_None_Dash_Center" target-area="4933_2" type="use-ground-skill" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_Summon" skill3="ME_DokebiGonNamed_None_Summon" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="1" start-delay="25000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action event-step="5" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      <action event-step="6" immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_FireGround" skill3="ME_DokebiGonNamed_None_FireGround" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      
+      <action event-step="5" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      <action event-step="6" immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_FireGround" skill3="ME_DokebiGonNamed_None_FireGround" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      
+      <action event-step="4" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS5" transit-cond-1="bleeding-20">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Jab" skill3="ME_DokebiGonNamed_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Smash" skill3="ME_DokebiGonNamed_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_SmashDown" skill3="ME_DokebiGonNamed_None_SmashDown" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiTormado" skill3="ME_DokebiGonNamed_None_DokebiTormado" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Dash" skill3="ME_DokebiGonNamed_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS6">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Jab" skill3="ME_DokebiGonNamed_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Smash" skill3="ME_DokebiGonNamed_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_SmashDown" skill3="ME_DokebiGonNamed_None_SmashDown" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiTormado" skill3="ME_DokebiGonNamed_None_DokebiTormado" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Dash" skill3="ME_DokebiGonNamed_None_Dash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_Dash_Center" skill3="ME_DokebiGonNamed_None_Dash_Center" target-area="4933_2" type="use-ground-skill" />
+      
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire_Multiground" skill3="ME_DokebiGonNamed_None_DokebiFire_Multiground" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire_Multiground" skill3="ME_DokebiGonNamed_None_DokebiFire_Multiground" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire_Multiground" skill3="ME_DokebiGonNamed_None_DokebiFire_Multiground" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire_Multiground" skill3="ME_DokebiGonNamed_None_DokebiFire_Multiground" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire_Multiground" skill3="ME_DokebiGonNamed_None_DokebiFire_Multiground" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire_Multiground" skill3="ME_DokebiGonNamed_None_DokebiFire_Multiground" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire_Multiground" skill3="ME_DokebiGonNamed_None_DokebiFire_Multiground" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire_Multiground" skill3="ME_DokebiGonNamed_None_DokebiFire_Multiground" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire_Multiground" skill3="ME_DokebiGonNamed_None_DokebiFire_Multiground" type="boss-multiground-attack" />
+      </action>
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS7" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS8" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS9" />  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_CS10" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0011_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Jab" skill3="ME_DokebiGonNamed_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Smash" skill3="ME_DokebiGonNamed_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiGonNamed_None_SmashDown" skill3="ME_DokebiGonNamed_None_SmashDown" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiTormado" skill3="ME_DokebiGonNamed_None_DokebiTormado" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiGonNamed_None_Dash" skill3="ME_DokebiGonNamed_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0012_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DokebiJin_None_Jab" skill3="ME_DokebiJin_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiJin_None_Smash" skill3="ME_DokebiJin_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiJin_None_Tormado" skill3="ME_DokebiJin_None_Tormado" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiJin_None_LeftDash" skill3="ME_DokebiJin_None_LeftDash" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiJin_None_DanceSmash" skill3="ME_DokebiJin_None_DanceSmash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DokebiJin_None_Dash" skill3="ME_DokebiJin_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0013_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DokebiGon_None_Jab" skill3="ME_DokebiGon_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiGon_None_Smash" skill3="ME_DokebiGon_None_Smash" type="use-skill" />      
+      <action repeat="1" skill="ME_DokebiGon_None_SmashDown" skill3="ME_DokebiGon_None_SmashDown" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiGon_None_DokebiTormado" skill3="ME_DokebiGon_None_DokebiTormado" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DokebiGon_None_Dash" skill3="ME_DokebiGon_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0014_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DokebiAssassin_None_Jab" skill3="ME_DokebiAssassin_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiAssassin_None_BladeSpin" skill3="ME_DokebiAssassin_None_BladeSpin" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiAssassin_None_DarkBlow" skill3="ME_DokebiAssassin_None_DarkBlow" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiAssassin_None_BladeSmash_Lv1" skill3="ME_DokebiAssassin_None_BladeSmash_Lv1" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiAssassin_None_BladeSmash_Lv2" skill3="ME_DokebiAssassin_None_BladeSmash_Lv2" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiAssassin_None_FireBlade" skill3="ME_DokebiAssassin_None_FireBlade" type="use-skill" />
+      <action repeat="1" skill="ME_DokebiAssassin_None_DokebiBlade" skill3="ME_DokebiAssassin_None_DokebiBlade" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0015_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1" start-delay="10000">
+      <action event-step="1" repeat="1" skill="ME_Gourd_None_Explosion" skill3="ME_Gourd_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0027_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1" start-delay="10000">
+      <action event-step="1" repeat="1" skill="ME_Gourd_None_Explosion" skill3="ME_Gourd_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_Gourd_0001_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1" start-delay="10000">
+      <action event-step="1" repeat="1" skill="ME_Gourd_None_Explosion" skill3="ME_Gourd_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0395_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action repeat="1" skill="ME_DokebiGonNamed_None_FireLaser_Repeat" skill3="ME_DokebiGonNamed_None_FireLaser_Repeat" target="event:npc-combat-action:npc:npc-party:2" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      <action repeat="1" skill="ME_DokebiGonNamed_None_FireLaser_Repeat" skill3="ME_DokebiGonNamed_None_FireLaser_Repeat" target="event:npc-combat-action:npc:npc-party:2" type="use-skill" />
+      <action event-step="1" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0396_CS" hide-seq-start="y" />
+
+  
+  <combat-sequence alias="ME_CT_Dummy_0397_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action repeat="1" skill="ME_DokebiGonNamed_None_FireLaser_Repeat" skill3="ME_DokebiGonNamed_None_FireLaser_Repeat" target="event:npc-combat-action:npc:npc-party:2" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      <action repeat="1" skill="ME_DokebiGonNamed_None_FireLaser_Repeat" skill3="ME_DokebiGonNamed_None_FireLaser_Repeat" target="event:npc-combat-action:npc:npc-party:2" type="use-skill" />
+      <action event-step="1" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_Dummy_0398_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action repeat="1" skill="ME_DokebiGonNamed_None_FireGround_Explosion" skill3="ME_DokebiGonNamed_None_FireGround_Explosion" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_FireGround_Explosion_Cast" skill3="ME_DokebiGonNamed_None_FireGround_Explosion_Cast" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action repeat="1" skill="ME_DokebiGonNamed_None_FireGround_Explosion" skill3="ME_DokebiGonNamed_None_FireGround_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_CT_Dummy_0399_CS" hide-seq-start="y" />
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Jab" skill3="ME_SnakeSoldier_None_Jab" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnakeSoldier_None_Smash" skill3="ME_SnakeSoldier_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_RearDash" skill3="ME_SnakeSoldier_None_RearDash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_HeavySmash" skill3="ME_SnakeSoldier_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Defence" skill3="ME_SnakeSoldier_None_Defence" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Spin" skill3="ME_SnakeSoldier_None_Spin" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action duration="20000" repeat="1" skill="ME_SnakeSoldier_None_PoisonBomb" skill3="ME_SnakeSoldier_None_PoisonBomb" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_Dash" skill3="ME_SnakeSoldier_None_Dash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="3" id="1" max-count="0" min-delay="30000" start-delay="20000">
+      
+      <action repeat="1" skill="ME_SnakeSoldier_None_ShockWave" skill3="ME_SnakeSoldier_None_ShockWave" type="use-skill" />
+            
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+      </action>
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS2" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS3" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS4" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS5" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS6" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS7" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS8" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS9" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_CS10" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0007_CS">
+    <normal combat-distance="7" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0021_CS" />
+
+  
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0008_CS">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="MH_Shooter_Rifle_Suppressing_Fire" skill3="MH_Shooter_Rifle_Suppressing_Fire" type="use-skill" />
+      
+      
+      
+      
+    </normal>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0009_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SnakeMan_None_Jab" skill3="ME_SnakeMan_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeMan_None_HeavySmash" skill3="ME_SnakeMan_None_HeavySmash" type="use-skill" />
+      
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_SnakeMan_None_Dash" skill3="ME_SnakeMan_None_Dash" type="use-skill" />
+    </normal>
+    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0026_CS">
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnakeWoman_None_Jab" skill3="ME_SnakeWoman_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeWoman_None_PoisonBlow" skill3="ME_SnakeWoman_None_PoisonBlow" type="use-skill" />
+      <action repeat="1" skill="ME_SnakeWoman_None_HeavySpin" skill3="ME_SnakeWoman_None_HeavySpin" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_SnakeWoman_None_ParalyzeBlow" skill3="ME_SnakeWoman_None_ParalyzeBlow" type="use-skill" />
+    </normal>
+    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0022_CS" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0023_CS" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0024_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SnowmanA_None_Claw" skill3="ME_SnowmanA_None_Claw" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0025_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SnowmanB_None_Claw" skill3="ME_SnowmanB_None_Claw" type="use-skill" />
+      
+    </normal>
+    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_Dummy_0393_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="5000">
+      <action event-step="12" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0007_msg_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="20" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0020_msg_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="8" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      <action immune-breaker-disable="y" repeat="8" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0020_msg_03" type="do-social" />
+      <action immune-breaker-disable="y" repeat="2" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0007_msg_07" type="do-social" />
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="8" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1">
+      <action immune-breaker-disable="y" repeat="8" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0020_msg_04" type="do-social" />
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="8" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" repeat="8" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0020_msg_05" type="do-social" />
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="8" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="5" max-count="1">
+      <action immune-breaker-disable="y" repeat="8" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0020_msg_02" type="do-social" />
+      <action immune-breaker-disable="y" repeat="8" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      <action event-step="5" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_Dummy_0394_CS" />
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS1" seq-start-social="1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindPunch" skill3="ME_SUC_B2_NaHanWind_None_WindPunch" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindLowkick" skill3="ME_SUC_B2_NaHanWind_None_WindLowkick" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindCounter" skill3="ME_SUC_B2_NaHanWind_None_WindCounter" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindKneeStrike" skill3="ME_SUC_B2_NaHanWind_None_WindKneeStrike" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindPunch" skill3="ME_SUC_B2_NaHanWind_None_WindPunch" type="use-skill" />
+      
+      <action repeat="1" skill="ME_NaHanWind_None_WindBackDash" skill3="ME_NaHanWind_None_WindBackDash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindKneeKick" skill3="ME_SUC_B2_NaHanWind_None_WindKneeKick" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_NaHanWind_0002_battle_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindFury" skill3="ME_SUC_B2_NaHanWind_None_WindFury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_FireTatsumaki" skill3="ME_SUC_B2_NaHanWind_None_FireTatsumaki" type="use-skill" />
+    </special>
+    
+    
+    <special combat-distance="7" id="3" max-count="1">
+      <action immune-breaker-disable="y" social="ME_NaHanWind_0002_battle_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindFury" skill3="ME_SUC_B2_NaHanWind_None_WindFury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_GreatWindCutter" skill3="ME_SUC_B2_NaHanWind_None_GreatWindCutter" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_NaHanWind_0002_battle_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindFury" skill3="ME_SUC_B2_NaHanWind_None_WindFury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_GreatWindCutter" skill3="ME_SUC_B2_NaHanWind_None_GreatWindCutter" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindChainKick" skill3="ME_SUC_B2_NaHanWind_None_WindChainKick" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="5" max-count="1">
+      <action immune-breaker-disable="y" social="ME_NaHanWind_0002_battle_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindFury" skill3="ME_SUC_B2_NaHanWind_None_WindFury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_GreatWindCutter" skill3="ME_SUC_B2_NaHanWind_None_GreatWindCutter" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindChainKick" skill3="ME_SUC_B2_NaHanWind_None_WindChainKick" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS2" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS3" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS4" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS5" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS6" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS7" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS8" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS9" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_CS10" />
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0005_beserk_CS">
+    <normal combat-distance="3" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindFury" skill3="ME_SUC_B2_NaHanWind_None_WindFury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_GreatWindCutter" skill3="ME_SUC_B2_NaHanWind_None_GreatWindCutter" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindChainKick" skill3="ME_SUC_B2_NaHanWind_None_WindChainKick" type="use-skill" />
+    </normal>
+    <normal combat-distance="4" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindFury" skill3="ME_SUC_B2_NaHanWind_None_WindFury" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B2_NaHanWind_None_GreatWindCutter" skill3="ME_SUC_B2_NaHanWind_None_GreatWindCutter" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" skill3="ME_SUC_B2_NaHanWind_None_ChainWindCutter_Musin" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action repeat="1" skill="ME_SUC_B2_NaHanWind_None_WindChainKick" skill3="ME_SUC_B2_NaHanWind_None_WindChainKick" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="100" immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0005_msg_beserk" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS1" seq-start-social="1" transit-cond-1="bleeding-80">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderBolt" skill3="ME_SUC_B1_NaHanThunder_None_ThunderBolt" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderSpread" skill3="ME_SUC_B1_NaHanThunder_None_ThunderSpread" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderWall" skill3="ME_SUC_B1_NaHanThunder_None_ThunderWall" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder1" skill3="ME_SUC_B1_NaHanThunder_None_Thunder1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder2" skill3="ME_SUC_B1_NaHanThunder_None_Thunder2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderShock" skill3="ME_SUC_B1_NaHanThunder_None_ThunderShock" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_FireLightningBall" skill3="ME_SUC_B1_NaHanThunder_None_FireLightningBall" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS2" transit-cond-1="bleeding-60">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderBolt" skill3="ME_SUC_B1_NaHanThunder_None_ThunderBolt" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderSpread" skill3="ME_SUC_B1_NaHanThunder_None_ThunderSpread" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderWall" skill3="ME_SUC_B1_NaHanThunder_None_ThunderWall" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder1" skill3="ME_SUC_B1_NaHanThunder_None_Thunder1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder2" skill3="ME_SUC_B1_NaHanThunder_None_Thunder2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderShock" skill3="ME_SUC_B1_NaHanThunder_None_ThunderShock" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Destroyer" skill3="ME_SUC_B1_NaHanThunder_None_Destroyer" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ChainLightningBall" skill3="ME_SUC_B1_NaHanThunder_None_ChainLightningBall" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_FireLightningBall" skill3="ME_SUC_B1_NaHanThunder_None_FireLightningBall" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS3" transit-cond-1="bleeding-40">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderBolt" skill3="ME_SUC_B1_NaHanThunder_None_ThunderBolt" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderSpread" skill3="ME_SUC_B1_NaHanThunder_None_ThunderSpread" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderWall" skill3="ME_SUC_B1_NaHanThunder_None_ThunderWall" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder1" skill3="ME_SUC_B1_NaHanThunder_None_Thunder1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder2" skill3="ME_SUC_B1_NaHanThunder_None_Thunder2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderShock" skill3="ME_SUC_B1_NaHanThunder_None_ThunderShock" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Destroyer" skill3="ME_SUC_B1_NaHanThunder_None_Destroyer" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ChainLightningBall" skill3="ME_SUC_B1_NaHanThunder_None_ChainLightningBall" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_FireLightningBall" skill3="ME_SUC_B1_NaHanThunder_None_FireLightningBall" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS4" transit-cond-1="bleeding-20">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderBolt" skill3="ME_SUC_B1_NaHanThunder_None_ThunderBolt" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderSpread" skill3="ME_SUC_B1_NaHanThunder_None_ThunderSpread" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderWall" skill3="ME_SUC_B1_NaHanThunder_None_ThunderWall" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder1" skill3="ME_SUC_B1_NaHanThunder_None_Thunder1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder2" skill3="ME_SUC_B1_NaHanThunder_None_Thunder2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderShock" skill3="ME_SUC_B1_NaHanThunder_None_ThunderShock" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Destroyer" skill3="ME_SUC_B1_NaHanThunder_None_Destroyer" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ChainLightningBall" skill3="ME_SUC_B1_NaHanThunder_None_ChainLightningBall" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_13" ground-pattern-5="pattern_14" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderStorm" skill3="ME_SUC_B1_NaHanThunder_None_ThunderStorm" type="boss-multiground-attack" />
+      
+      <action ground-pattern-1="pattern_11" ground-pattern-2="pattern_6" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderStorm" skill3="ME_SUC_B1_NaHanThunder_None_ThunderStorm" type="boss-multiground-attack" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_FireLightningBall" skill3="ME_SUC_B1_NaHanThunder_None_FireLightningBall" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS5">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderBolt" skill3="ME_SUC_B1_NaHanThunder_None_ThunderBolt" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderSpread" skill3="ME_SUC_B1_NaHanThunder_None_ThunderSpread" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderWall" skill3="ME_SUC_B1_NaHanThunder_None_ThunderWall" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder1" skill3="ME_SUC_B1_NaHanThunder_None_Thunder1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Thunder2" skill3="ME_SUC_B1_NaHanThunder_None_Thunder2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderShock" skill3="ME_SUC_B1_NaHanThunder_None_ThunderShock" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="ME_SUC_B1_NaHanThunder_None_Destroyer" skill3="ME_SUC_B1_NaHanThunder_None_Destroyer" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ChainLightningBall" skill3="ME_SUC_B1_NaHanThunder_None_ChainLightningBall" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_FireLightningBall" skill3="ME_SUC_B1_NaHanThunder_None_FireLightningBall" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS6" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS7" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS8" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS9" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_CS10" />
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0006_beserk_CS">
+    <normal combat-distance="3" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderSpread" skill3="ME_SUC_B1_NaHanThunder_None_ThunderSpread" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_13" ground-pattern-5="pattern_14" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderStorm" skill3="ME_SUC_B1_NaHanThunder_None_ThunderStorm" type="boss-multiground-attack" />
+      
+      <action ground-pattern-1="pattern_11" ground-pattern-2="pattern_6" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderStorm" skill3="ME_SUC_B1_NaHanThunder_None_ThunderStorm" type="boss-multiground-attack" />
+      
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action event-step="20" immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+    </normal>
+    <normal combat-distance="4" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderSpread" skill3="ME_SUC_B1_NaHanThunder_None_ThunderSpread" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_13" ground-pattern-5="pattern_14" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderStorm" skill3="ME_SUC_B1_NaHanThunder_None_ThunderStorm" type="boss-multiground-attack" />
+      
+      <action ground-pattern-1="pattern_11" ground-pattern-2="pattern_6" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderStorm" skill3="ME_SUC_B1_NaHanThunder_None_ThunderStorm" type="boss-multiground-attack" />
+      
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="90" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+      <action event-step="20" immune-breaker-disable="y" repeat="1" skill="ME_SUC_B1_NaHanThunder_None_ThunderRage" skill3="ME_SUC_B1_NaHanThunder_None_ThunderRage" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="100" immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0006_msg_beserk" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_NaHanWindTornado_0001_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action arrived-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Finish" blocked-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Parry" pass-through="y" skill="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" skill3="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" speed="40" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action arrived-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Finish" blocked-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Parry" pass-through="y" skill="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" skill3="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" speed="40" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action arrived-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Finish" blocked-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Parry" pass-through="y" skill="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" skill3="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" speed="40" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action duration="100" event-step="1" target="event:npc-combat-action:npc" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_NaHanElectricBall_0001_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action arrived-effect="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall_Finish" blocked-effect="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall_Parry" pass-through="y" skill="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall" skill3="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall" speed="40" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action arrived-effect="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall_Finish" blocked-effect="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall_Parry" pass-through="y" skill="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall" skill3="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall" speed="40" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action arrived-effect="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall_Finish" blocked-effect="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall_Parry" pass-through="y" skill="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall" skill3="ME_SUC_B1_NaHanThunder_ElectricBall_LightningBall" speed="40" target="event:npc-combat-action:target" type="boss-rush-attack" />
+      <action duration="100" event-step="1" target="event:npc-combat-action:npc" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_Dummy_0389_CS" />
+  <combat-sequence alias="ME_CT_Dummy_0390_CS" />
+  <combat-sequence alias="ME_CT_Dummy_0391_CS" />
+  <combat-sequence alias="ME_CT_Dummy_0392_CS" />
+
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash1" skill3="ME_RuneMechaTransform_None_Smash1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash2" skill3="ME_RuneMechaTransform_None_Smash2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_MultiLaser" skill3="ME_RuneMechaTransform_None_MultiLaser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Beam" skill3="ME_RuneMechaTransform_None_Beam" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_EnergyShock" skill3="ME_RuneMechaTransform_None_EnergyShock" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_JumpAttack" skill3="ME_RuneMechaTransform_None_JumpAttack" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" condition-1="hp-85" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_GroundShock" skill3="ME_RuneMechaTransform_None_GroundShock" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" condition-1="hp-85" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action arrived-effect="" blocked-effect="ME_RuneMechaTransform_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_RuneMechaTransform_None_BossRush" skill3="ME_RuneMechaTransform_None_BossRush" speed="126" type="boss-rush-attack" />
+      <action arrived-effect="" blocked-effect="ME_RuneMechaTransform_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_RuneMechaTransform_None_BossRush_NoCast" skill3="ME_RuneMechaTransform_None_BossRush_NoCast" speed="126" type="boss-rush-attack" />
+      <action arrived-effect="ME_RuneMechaTransform_None_BossRush_Arrived" blocked-effect="ME_RuneMechaTransform_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_RuneMechaTransform_None_BossRush_NoCast" skill3="ME_RuneMechaTransform_None_BossRush_NoCast" speed="126" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS2" transit-action-1="burrow" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash1" skill3="ME_RuneMechaTransform_None_Smash1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash2" skill3="ME_RuneMechaTransform_None_Smash2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_MultiLaser" skill3="ME_RuneMechaTransform_None_MultiLaser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Beam" skill3="ME_RuneMechaTransform_None_Beam" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_EnergyShock" skill3="ME_RuneMechaTransform_None_EnergyShock" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_JumpAttack" skill3="ME_RuneMechaTransform_None_JumpAttack" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" condition-1="hp-70" id="1" max-count="1">
+      
+      <action event-step="7" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" target="event:npc-combat-action:npc" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_JumpGround" skill3="ME_RuneMechaTransform_None_JumpGround" target-area="4936_2" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS3" transit-action-1="unburrow" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Recovery" skill3="ME_RuneMechaTransform_None_Recovery" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="2" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action repeat="2" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0016_msg_09" type="do-social" />
+      
+      <action event-step="3" repeat="1" skill="ME_RuneMechaTransform_None_RobotFire" skill3="ME_RuneMechaTransform_None_RobotFire" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action event-step="6" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Recovery_NoCast" skill3="ME_RuneMechaTransform_None_Recovery_NoCast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0016_msg_05" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="4" skill="ME_RuneMechaTransform_None_EarthquakeWave" skill3="ME_RuneMechaTransform_None_EarthquakeWave" type="use-skill" />
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_EarthquakeWave" skill3="ME_RuneMechaTransform_None_EarthquakeWave" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action duration="30000" repeat="1" skill="ME_RuneMechaTransform_None_MissileBomb" skill3="ME_RuneMechaTransform_None_MissileBomb" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action event-step="5" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      
+      <action repeat="3" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0016_msg_09" type="do-social" />
+      
+      <action event-step="3" repeat="1" skill="ME_RuneMechaTransform_None_RobotFire" skill3="ME_RuneMechaTransform_None_RobotFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS4" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash1" skill3="ME_RuneMechaTransform_None_Smash1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash2" skill3="ME_RuneMechaTransform_None_Smash2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_MultiLaser" skill3="ME_RuneMechaTransform_None_MultiLaser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Beam" skill3="ME_RuneMechaTransform_None_Beam" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_EnergyShock" skill3="ME_RuneMechaTransform_None_EnergyShock" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_JumpAttack" skill3="ME_RuneMechaTransform_None_JumpAttack" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" condition-1="hp-55" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_GroundShock" skill3="ME_RuneMechaTransform_None_GroundShock" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" condition-1="hp-55" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action arrived-effect="" blocked-effect="ME_RuneMechaTransform_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_RuneMechaTransform_None_BossRush" skill3="ME_RuneMechaTransform_None_BossRush" speed="126" type="boss-rush-attack" />
+      <action arrived-effect="" blocked-effect="ME_RuneMechaTransform_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_RuneMechaTransform_None_BossRush_NoCast" skill3="ME_RuneMechaTransform_None_BossRush_NoCast" speed="126" type="boss-rush-attack" />
+      <action arrived-effect="ME_RuneMechaTransform_None_BossRush_Arrived" blocked-effect="ME_RuneMechaTransform_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_RuneMechaTransform_None_BossRush_NoCast" skill3="ME_RuneMechaTransform_None_BossRush_NoCast" speed="126" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS5" transit-action-1="burrow" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash1" skill3="ME_RuneMechaTransform_None_Smash1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash2" skill3="ME_RuneMechaTransform_None_Smash2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_MultiLaser" skill3="ME_RuneMechaTransform_None_MultiLaser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Beam" skill3="ME_RuneMechaTransform_None_Beam" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_EnergyShock" skill3="ME_RuneMechaTransform_None_EnergyShock" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_JumpAttack" skill3="ME_RuneMechaTransform_None_JumpAttack" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" condition-1="hp-40" id="1" max-count="1">
+      
+      <action event-step="7" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" target="event:npc-combat-action:npc" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_JumpGround" skill3="ME_RuneMechaTransform_None_JumpGround" target-area="4936_2" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS6" transit-action-1="unburrow" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Recovery" skill3="ME_RuneMechaTransform_None_Recovery" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="2" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action repeat="2" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0016_msg_09" type="do-social" />
+      
+      <action event-step="3" repeat="1" skill="ME_RuneMechaTransform_None_RobotFire" skill3="ME_RuneMechaTransform_None_RobotFire" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Recovery_NoCast" skill3="ME_RuneMechaTransform_None_Recovery_NoCast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="4" skill="ME_RuneMechaTransform_None_EarthquakeWave" skill3="ME_RuneMechaTransform_None_EarthquakeWave" type="use-skill" />
+      <action event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_EarthquakeWave" skill3="ME_RuneMechaTransform_None_EarthquakeWave" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action duration="30000" repeat="1" skill="ME_RuneMechaTransform_None_MissileBomb" skill3="ME_RuneMechaTransform_None_MissileBomb" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action event-step="5" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+      
+      <action repeat="3" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0016_msg_09" type="do-social" />
+      
+      <action event-step="3" repeat="1" skill="ME_RuneMechaTransform_None_RobotFire" skill3="ME_RuneMechaTransform_None_RobotFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS7" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash1" skill3="ME_RuneMechaTransform_None_Smash1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash2" skill3="ME_RuneMechaTransform_None_Smash2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_MultiLaser" skill3="ME_RuneMechaTransform_None_MultiLaser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Beam" skill3="ME_RuneMechaTransform_None_Beam" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_EnergyShock" skill3="ME_RuneMechaTransform_None_EnergyShock" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_JumpAttack" skill3="ME_RuneMechaTransform_None_JumpAttack" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" condition-1="hp-25" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_GroundShock" skill3="ME_RuneMechaTransform_None_GroundShock" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" condition-1="hp-25" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action arrived-effect="" blocked-effect="ME_RuneMechaTransform_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_RuneMechaTransform_None_BossRush" skill3="ME_RuneMechaTransform_None_BossRush" speed="126" type="boss-rush-attack" />
+      <action arrived-effect="" blocked-effect="ME_RuneMechaTransform_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_RuneMechaTransform_None_BossRush_NoCast" skill3="ME_RuneMechaTransform_None_BossRush_NoCast" speed="126" type="boss-rush-attack" />
+      <action arrived-effect="ME_RuneMechaTransform_None_BossRush_Arrived" blocked-effect="ME_RuneMechaTransform_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill="ME_RuneMechaTransform_None_BossRush_NoCast" skill3="ME_RuneMechaTransform_None_BossRush_NoCast" speed="126" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS8">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash1" skill3="ME_RuneMechaTransform_None_Smash1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash2" skill3="ME_RuneMechaTransform_None_Smash2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_MultiLaser" skill3="ME_RuneMechaTransform_None_MultiLaser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Beam" skill3="ME_RuneMechaTransform_None_Beam" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_EnergyShock" skill3="ME_RuneMechaTransform_None_EnergyShock" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_JumpAttack" skill3="ME_RuneMechaTransform_None_JumpAttack" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="45000" start-delay="30000">
+      
+      <action event-step="7" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" target="event:npc-combat-action:npc" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_JumpGround" skill3="ME_RuneMechaTransform_None_JumpGround" target-area="4936_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_GroundShock" skill3="ME_RuneMechaTransform_None_GroundShock" type="use-skill" />
+      
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+      </action>
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" prob="34" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" prob="33" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+      </action>
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS9" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_CS10" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0016_beserk_CS">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      
+      <action duration="30000" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+    </normal>
+
+    <normal combat-distance="7" id="2" special-1="1" special-2="2">
+      
+      <action duration="30000" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="98" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0016_msg_07" type="do-social" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action duration="30000" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS1" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS2" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS3" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS4" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS5" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS6" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS7" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS8" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS9" />
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0017_CS10" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0028_CS" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0029_CS1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_RuneMechaTransformDown_None_Smash1" skill3="ME_RuneMechaTransformDown_None_Smash1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransformDown_None_Smash2" skill3="ME_RuneMechaTransformDown_None_Smash2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransformDown_None_MultiLaser" skill3="ME_RuneMechaTransformDown_None_MultiLaser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransformDown_None_Beam" skill3="ME_RuneMechaTransformDown_None_Beam" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_RuneMechaTransformDown_None_JumpAttack" skill3="ME_RuneMechaTransformDown_None_JumpAttack" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_DetectHide" skill3="ME_RuneMechaTransform_None_DetectHide" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransformDown_None_Sucide" skill3="ME_RuneMechaTransformDown_None_Sucide" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0029_CS2" />
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0031_CS1">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Request" skill3="ME_RuneMechaTransform_None_Request" target="zonenpcsquad:s_4936_2:1" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" target="zonenpcsquad:s_4936_2:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_RuneMechaTransform_None_Request" skill3="ME_RuneMechaTransform_None_Request" target="zonenpcsquad:s_4936_2:1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0031_CS2" />
+
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0032_CS" />
+
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0400_CS1" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="MH_Common_None_WindOut" skill3="MH_Common_None_WindOut" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_CT_Dummy_0400_CS2" hide-seq-start="y" />
+ 
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0401_CS" />
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0402_CS" />
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0403_CS" />
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0404_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="0" start-delay="0">      
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  
+
+  
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS1" seq-start-social="1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_YukSon_None_PowerfulAttack" skill3="ME_YukSon_None_PowerfulAttack" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_RearDash" skill3="ME_YukSon_None_RearDash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_Lowkick" skill3="ME_YukSon_None_Lowkick" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_YukSon_None_TakeDown" skill3="ME_YukSon_None_TakeDown" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_YukSon_None_Choke" skill3="ME_YukSon_None_Choke" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_Counter" skill3="ME_YukSon_None_Counter" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_HeavyPunch" skill3="ME_YukSon_None_HeavyPunch" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_BackDash" skill3="ME_YukSon_None_BackDash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_HeavyPunch" skill3="ME_YukSon_None_HeavyPunch" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_YukSon_None_JumpAttack" skill3="ME_YukSon_None_JumpAttack" type="use-skill" />
+    </normal>
+
+    <special combat-distance="3" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action event-step="97" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_CatchToAir" skill3="ME_YukSon_None_CatchToAir" type="use-skill" />
+    </special>
+
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action event-step="97" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_AirKick" skill3="ME_YukSon_None_AirKick" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_FlyTakeDown" skill3="ME_YukSon_None_FlyTakeDown" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="1">
+      
+      <action event-step="96" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action event-step="97" social="MH_CT_MusinTower_SImHwa_0018_msg_02" type="do-social" />
+      
+      <action event-step="11" repeat="1" skill="ME_YukSon_Drunken_Awakening1" skill3="ME_YukSon_Drunken_Awakening1" type="use-skill" />
+      
+      <action duration="0" stance="2" type="change-set" weapon="2" />
+      <action event-step="98" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS2" seq-start-social="2" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_DrunkenFists2" skill3="ME_YukSon_Drunken_DrunkenFists2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_DrunkenFists1" skill3="ME_YukSon_Drunken_DrunkenFists1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_Bounce_Counter" skill3="ME_YukSon_Drunken_Bounce_Counter" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_FireBreath" skill3="ME_YukSon_Drunken_FireBreath" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_Throw" skill3="ME_YukSon_Drunken_Throw" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_ChainDash" skill3="ME_YukSon_Drunken_ChainDash" type="use-skill" />
+    </normal>
+
+    <special combat-distance="3" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action event-step="97" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_CatchToAir" skill3="ME_YukSon_Drunken_CatchToAir" type="use-skill" />
+    </special>
+
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action event-step="97" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_AirKick" skill3="ME_YukSon_Drunken_AirKick" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_FlyTakeDown" skill3="ME_YukSon_Drunken_FlyTakeDown" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action event-step="95" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action event-step="95" social="MH_CT_MusinTower_SImHwa_0018_msg_04" type="do-social" />
+      
+      <action event-step="13" repeat="1" skill="ME_YukSon_Drunken_Awakening3" skill3="ME_YukSon_Drunken_Awakening3" type="use-skill" />
+      
+      <action event-step="95" social="MH_CT_MusinTower_SImHwa_0018_soc_08" type="do-social" />
+      
+      <action event-step="2" repeat="1" skill="ME_YukSon_Drunken_ChainDash" skill3="ME_YukSon_Drunken_ChainDash" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="0">
+      
+      <action event-step="95" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action event-step="95" social="MH_CT_MusinTower_SImHwa_0018_msg_03" type="do-social" />
+      
+      <action event-step="12" repeat="1" skill="ME_YukSon_Drunken_Awakening2" skill3="ME_YukSon_Drunken_Awakening2" type="use-skill" />
+      
+      <action event-step="95" social="MH_CT_MusinTower_SImHwa_0018_soc_07" type="do-social" />
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_Throw" skill3="ME_YukSon_Drunken_Throw" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="1">
+      
+      <action event-step="96" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_Drunken_Drunken_Out" skill3="ME_YukSon_Drunken_Drunken_Out" type="use-skill" />
+      
+      <action duration="0" stance="1" type="change-set" weapon="1" />
+      <action event-step="99" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS3" seq-start-social="3" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">      
+      
+      <action repeat="1" skill="ME_YukSon_None_ForceAttack" skill3="ME_YukSon_None_ForceAttack" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_PierceAttack" skill3="ME_YukSon_None_PierceAttack" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_HeavyPunch" skill3="ME_YukSon_None_HeavyPunch" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_Counter" skill3="ME_YukSon_None_Counter" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_PowerfulAttack" skill3="ME_YukSon_None_PowerfulAttack" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_RearDash" skill3="ME_YukSon_None_RearDash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_Lowkick" skill3="ME_YukSon_None_Lowkick" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_YukSon_None_TakeDown" skill3="ME_YukSon_None_TakeDown" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_YukSon_None_Choke" skill3="ME_YukSon_None_Choke" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_BackDash" skill3="ME_YukSon_None_BackDash" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_YukSon_None_MartialDance" skill3="ME_YukSon_None_MartialDance" type="use-skill" />
+    </normal>
+
+    <special combat-distance="3" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action event-step="97" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_CatchToAir" skill3="ME_YukSon_None_CatchToAir" type="use-skill" />
+    </special>
+
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action event-step="97" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_AirKick" skill3="ME_YukSon_None_AirKick" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_FlyTakeDown" skill3="ME_YukSon_None_FlyTakeDown" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action event-step="96" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_JumpGround" skill3="ME_YukSon_None_JumpGround" target-area="4937_2" type="use-ground-skill" />
+      <action event-step="3" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action social="MH_CT_MusinTower_SImHwa_0018_soc_04" type="do-social" />
+      
+      <action repeat="1" skill="ME_YukSon_None_IceExplosion" skill3="ME_YukSon_None_IceExplosion" type="use-skill" />
+      <action event-step="5" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_MartialDance" skill3="ME_YukSon_None_MartialDance" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS4">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action event-step="97" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action social="MH_CT_MusinTower_SImHwa_0018_soc_10" type="do-social" />
+      
+      <action duration="1000" type="stay" />
+      
+      <action event-step="4" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_beserk_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_MartialDance" skill3="ME_YukSon_None_MartialDance" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="97" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action duration="0" stance="1" type="change-set" weapon="1" />
+      
+      <action event-step="1" social="MH_CT_MusinTower_SImHwa_0018_msg_01" type="do-social" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action event-step="97" repeat="1" skill="ME_YukSon_None_DetectHide" skill3="ME_YukSon_None_DetectHide" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YukSon_None_MartialDance" skill3="ME_YukSon_None_MartialDance" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_YukSon_None_AirKick" skill3="ME_YukSon_None_AirKick" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_YukSon_None_FlyTakeDown" skill3="ME_YukSon_None_FlyTakeDown" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS5" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS6" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS7" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS8" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS9" />
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0018_CS10" />
+  
+  
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0030_CS" />
+
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0405_CS" hide-seq-start="y" />
+  
+  <combat-sequence alias="ME_CT_Dummy_0406_CS" hide-seq-start="y" />
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0407_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action repeat="1" skill="ME_Icicle_None_IcicleDrop_Musin" skill3="ME_Icicle_None_IcicleDrop_Musin" type="use-skill" />
+      <action repeat="1" skill="ME_Icicle_None_IceSmog_Musin" skill3="ME_Icicle_None_IceSmog_Musin" type="use-skill" />
+      <action event-step="1" repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_Dummy_0408_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action repeat="1" skill="ME_Dummy_None_200ms" skill3="ME_Dummy_None_200ms" type="use-skill" />    
+    </normal>
+    
+    <special combat-distance="7" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_frost_explosion_Lv1" skill3="MH_ForceMaster_Deal_frost_explosion_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_CT_Dummy_0409_CS" hide-seq-start="y" />
+
+  
+  <combat-sequence alias="ME_CT_Dummy_0385_CS" hide-seq-start="y" />
+  
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_CT_RuneMechaTransform_0001_CS1" transit-action-1="burrow" transit-cond-1="bleeding-50">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash1" skill3="ME_RuneMechaTransform_None_Smash1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Smash2" skill3="ME_RuneMechaTransform_None_Smash2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_MultiLaser" skill3="ME_RuneMechaTransform_None_MultiLaser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Beam" skill3="ME_RuneMechaTransform_None_Beam" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action duration="30000" repeat="1" skill="ME_RuneMechaTransform_None_Missile_Sim" skill3="ME_RuneMechaTransform_None_Missile_Sim" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_JumpAttack" skill3="ME_RuneMechaTransform_None_JumpAttack" type="use-skill" />
+    </normal>
+
+    <special combat-distance="3" id="1" max-count="0" min-delay="20000" start-delay="10000">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_GroundShock" skill3="ME_RuneMechaTransform_None_GroundShock" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_13" ground-pattern-5="pattern_14" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_13" ground-pattern-5="pattern_14" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_RuneMechaTransform_None_MultiGround_Missile" skill3="ME_RuneMechaTransform_None_MultiGround_Missile" type="boss-multiground-attack" />      
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_CT_RuneMechaTransform_0001_CS2">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_Recovery" skill3="ME_RuneMechaTransform_None_Recovery" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action repeat="1" skill="ME_RuneMechaTransform_None_RobotFire" skill3="ME_RuneMechaTransform_None_RobotFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+    
+  
+  <combat-sequence alias="ME_CT_YukSon_0001_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_YukSon_None_PowerfulAttack" skill3="ME_YukSon_None_PowerfulAttack" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_HeavyPunch" skill3="ME_YukSon_None_HeavyPunch" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_Counter" skill3="ME_YukSon_None_Counter" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_Counter_Attack" skill3="ME_YukSon_None_Counter_Attack" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_BackDash" skill3="ME_YukSon_None_BackDash" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_Lowkick" skill3="ME_YukSon_None_Lowkick" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_ForceAttack" skill3="ME_YukSon_None_ForceAttack" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_PierceAttack" skill3="ME_YukSon_None_PierceAttack" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_RearDash" skill3="ME_YukSon_None_RearDash" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_JumpAttack" skill3="ME_YukSon_None_JumpAttack" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_JumpGround" skill3="ME_YukSon_None_JumpGround" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_IceExplosion" skill3="ME_YukSon_None_IceExplosion" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_MartialDance" skill3="ME_YukSon_None_MartialDance" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_AirKick" skill3="ME_YukSon_None_AirKick" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_FlyTakeDown" skill3="ME_YukSon_None_FlyTakeDown" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_TakeDown" skill3="ME_YukSon_None_TakeDown" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_None_Choke" skill3="ME_YukSon_None_Choke" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_Awakening1" skill3="ME_YukSon_Drunken_Awakening1" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_Awakening2" skill3="ME_YukSon_Drunken_Awakening2" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_Awakening3" skill3="ME_YukSon_Drunken_Awakening3" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_Throw" skill3="ME_YukSon_Drunken_Throw" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_Windmill" skill3="ME_YukSon_Drunken_Windmill" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_DrunkenFists2" skill3="ME_YukSon_Drunken_DrunkenFists2" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_DrunkenFists1" skill3="ME_YukSon_Drunken_DrunkenFists1" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_Bounce_Counter" skill3="ME_YukSon_Drunken_Bounce_Counter" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_Bounce_Counter_Attack" skill3="ME_YukSon_Drunken_Bounce_Counter_Attack" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_FireBreath" skill3="ME_YukSon_Drunken_FireBreath" type="use-skill" />
+      <action repeat="1" skill="ME_YukSon_Drunken_ChainDash" skill3="ME_YukSon_Drunken_ChainDash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0002_beserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnowmanC_None_Dash" skill3="ME_SnowmanC_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="100" immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0002_msg_beserk" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0003_beserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BabaBoss_None_JumpDash_Boss" skill3="ME_BabaBoss_None_JumpDash_Boss" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="100" immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0003_msg_beserk" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_CT_MusinTower_SImHwa_0004_beserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill="ME_ChainKnuckleBandit_None_MultiShot" skill3="ME_ChainKnuckleBandit_None_MultiShot" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      <action immune-breaker-disable="y" repeat="2" skill="ME_ChainKnuckleBandit_None_FlameGround_Musin_Lv2" skill3="ME_ChainKnuckleBandit_None_FlameGround_Musin_Lv2" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="100" immune-breaker-disable="y" social="MH_CT_MusinTower_SImHwa_0004_msg_beserk" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0010_beserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DokebiGonNamed_None_DokebiFire" skill3="ME_DokebiGonNamed_None_DokebiFire" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="100" immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0010_msg_beserk" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_CT_MusinTower_SImHwa_0020_beserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+      <action duration="20000" repeat="1" skill="ME_SnakeSoldier_None_PoisonBomb" skill3="ME_SnakeSoldier_None_PoisonBomb" type="boss-simultaneous-ground-attack" />
+      <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_9" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+      <action duration="20000" repeat="1" skill="ME_SnakeSoldier_None_PoisonBomb" skill3="ME_SnakeSoldier_None_PoisonBomb" type="boss-simultaneous-ground-attack" />
+      <action ground-pattern-1="pattern_12" ground-pattern-2="pattern_14" ground-pattern-3="pattern_15" ground-pattern-4="pattern_17" ground-pattern-5="pattern_18" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill="ME_SnakeSoldier_None_MultiGround" skill3="ME_SnakeSoldier_None_MultiGround" type="boss-multiground-attack" />
+      <action duration="20000" repeat="1" skill="ME_SnakeSoldier_None_PoisonBomb" skill3="ME_SnakeSoldier_None_PoisonBomb" type="boss-simultaneous-ground-attack" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="100" immune-breaker-disable="y" social="ME_CT_MusinTower_SImHwa_0020_msg_beserk" type="do-social" />
+    </special>
+  </combat-sequence>
+
+
+</table>

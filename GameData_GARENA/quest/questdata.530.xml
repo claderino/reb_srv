@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.530.xml-->
+  <quest alias="q_epic_530" category="epic" completed-list="y" district-1="deasamak" id="530" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ce_hwerang_007" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject2="case:talked:pc" type="prop" value="33" />
+          </filter-set>
+        </case>
+        <case object="npc:ce_hwerang_007" party-broadcast="n" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="32" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:e_onfoff_treeroot_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onfoff_treeroot_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onfoff_treeroot_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onfoff_treeroot_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onfoff_treeroot_05" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object2="zoneenv2:e_onfoff_cleanmachine_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_onfoff_cyclemachine_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="4" required-register-value="1" reward-1="530_final_set1">
+        <case object="npc:ce_hwerang_007" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_531" />
+    </completion>
+  </quest>
+</table>

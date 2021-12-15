@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.277.xml-->
+  <quest alias="q_epic_277" broadcast-category="field" category="epic" completed-list="n" id="277" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="2" quest-decision="qd_277_2" zone-1="zone_SooRyunGool_Epic">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_CT_TeacherShaman_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_SooRyunGool_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_277_1" type="enter-zone" />
+        <case object2="zoneenv2:e_button_prisonyongmak_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone" zone-1="zone_SooRyunGool_Epic">
+      <mission id="3" required-register-value="1">
+        <case idx="1" object="npc:CH_CT_TeacherBladeMaster_0001" party-broadcast="n" progress-mission="y" type="npc-bleeding-occured" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" zone-1="zone_SooRyunGool_Epic" />
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_277_5" zone-1="zone_SooRyunGool_Epic">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_CT_TeacherShaman_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_SooRyunGool_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_277_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="2" zone="zone_SooRyunGool_Daily">
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest faction="SecondFaction1" quest="q_epic_289" />
+      <next-quest faction="SecondFaction2" quest="q_epic_293" />
+    </completion>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="zoneenv2:e_button_prisonyongmak_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_CT_HyunDam_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_277_7" type="talk" />
+        <case object="zone:zone_BaekRimSa_An1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_289_6" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_CT_HyunDam_0008" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject2="case:talked:pc" type="prop" value="48" />
+          </filter-set>
+        </case>
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_277_8" type="enter-zone" />
+        <case object="npc:CH_CT_HyunDam_0008" party-broadcast="n" type="talk">
+          <filter-set name="레벨제한">
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="47" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step completion-type="or" id="7">
+      <mission id="8" required-register-value="1">
+        <case grocery="quest_costum_dress_1010" join-faction2="SecondFaction2" object2="zoneenv2:e_Chest_backbrazierB_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+      </mission>
+      <mission id="7" required-register-value="1">
+        <case join-faction2="SecondFaction1" object2="zoneenv2:e_Chest_backbrazierA_01" party-broadcast="n" progress-mission="y" type="manipulate">
+          <filter-set>
+            <filter field="equip-body" op="eq" subject2="case:manipulated:pc" type="prop" value="910000" />
+          </filter-set>
+        </case>
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_277_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="9" required-register-value="1" reward-1="277_final_set1">
+        <case object="npc:CH_CT_HyunDam_0008" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_277_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="Zone_NoiOk_d">
+      <destination mission-step-id="1" zone-index="1" />
+      <complete zone-index="2" />
+    </transit>
+  </quest>
+</table>

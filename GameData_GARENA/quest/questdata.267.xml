@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.267.xml-->
+  <quest alias="q_epic_267" broadcast-category="field" category="epic" completed-list="n" id="267" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_CT_Hasijang_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CE_CT_ThiefCat_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Hasijang_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="10">
+        <case object2="npc:ME_CT_HaOBanng_0100" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_HaOBanng_0101" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_HaOBanng_0102" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_HaOBanng_0103" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_HaOBanng_0104" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_HaOBanng_0105" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:CE_CT_ThiefCat_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Hasijang_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_CT_Hasijang_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_Hasijang_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1" reward-1="267_final_set1">
+        <case object="npc:CH_CT_JeGukGun_0236" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_DoSungSuBiDae" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_267_1" type="enter-zone" />
+        <case object="npc:CE_CT_ThiefCat_0009" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0047" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0046" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_Hasijang_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_268" />
+    </completion>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_CT_BaekRim_0029" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_267_2" zone-1="Zone_HaSiJangInZone">
+      <mission id="5" required-register-value="1">
+        <case object="zone:Zone_HaSiJangInZone" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object2="npc:CH_CT_BaekRim_0030" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:Zone_HaSiJangInZone" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_267_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CE_CT_Book_0006" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_CT_BaekRim_0029" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_267_3" zone-1="Zone_HaSiJangInZone">
+      <mission id="6" required-register-value="1">
+        <case object2="npc:ME_CT_HaOBanng_0092" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:Zone_HaSiJangInZone" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_267_4" type="enter-zone" />
+        <case object="npc:ME_CT_HaOBanng_0018" party-broadcast="n" type="approach" />
+        <case object="npc:ME_CT_HaOBanng_0017" party-broadcast="n" type="approach" />
+        <case object="npc:ME_CT_HaOBanng_0016" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

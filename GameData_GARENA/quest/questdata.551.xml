@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.551.xml-->
+  <quest alias="q_sub_551" broadcast-category="field" category="normal" district-1="deasamak" id="551" max-repeat="1" save-type="all">
+    <acquisition level="19" preceding-quest-1="q_epic_501" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_goboonyeong_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="12">
+        <case object="npc:me_ironturtle_002" object2="npc:me_ironturtle_002" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="100" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case drop-gadget="y" gadget="Q_PerfumeA" gadget-required="empty" object="zoneenv:e_onoff_smallpot_01" object2="zoneenv2:e_onoff_smallpot_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="551_final_set1">
+        <case drop-gadget="n" gadget="Q_PerfumeA" gadget-required="carry-and-remove" object="npc:ch_unguksoldier_014" party-broadcast="n" progress-mission="y" type="talk" />
+        <case drop-gadget="y" gadget="Q_PerfumeA" gadget-required="empty" object="zoneenv:e_onoff_smallpot_01" object2="zoneenv2:e_onoff_smallpot_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

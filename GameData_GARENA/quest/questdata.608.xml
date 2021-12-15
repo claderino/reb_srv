@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.608.xml-->
+  <quest activated-faction="factionmain2" alias="q_sub_608" broadcast-category="field" category="normal" district-1="deasamak" id="608" main-faction="factionmain2" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" faction="factionmain2" level="24" preceding-quest-1="q_sub_602" preceding-quest-2="q_sub_603" preceding-quest-check="or">
+      <case acquire-quest="y" object="npc:ch_honchenogyo_0002" party-broadcast="n" type="talk">
+        <filter-set>
+          <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+        </filter-set>
+      </case>
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="12">
+        <case object2="npc:mh_murimmeng_0002" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:mh_murimmeng_0003" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:mh_murimmeng_0004" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:mh_murimmeng_0005" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:mh_murimmeng_0006" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:mh_murimmeng_0007" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:mh_murimmeng_0008" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="faction:factionmain1" party-broadcast="y" progress-mission="y" type="killed" valid-zone-1="zone_yeolsajeedea">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:CH_MuRimMaeng_0021" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:CH_MuRimMaeng_0017" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:CH_MuRimMeng_0005" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:CH_MuRimMeng_0004" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:CH_MuRimMeng_0003" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:CH_MuRimMeng_0002" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+        <case object2="npc:CH_MuRimMeng_0001" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="608_final_set1" reward-2="608_final_set2">
+        <case object="npc:ch_honchenogyo_0002" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+  </quest>
+</table>

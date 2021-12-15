@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.302.xml-->
+  <quest alias="q_epic_302" broadcast-category="field" category="epic" completed-list="y" district-1="jeryoungrim" id="302" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_dochunpung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_302_3" type="approach" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="3">
+        <case object2="npc:mh_chunggak_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0011" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0012" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0013" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0266" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0265" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0264" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0263" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0262" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0261" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0260" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0259" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_chunggak_0258" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_06" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_07" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_08" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_09" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_onoff_downpoli_10" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case approach-social="q_302_m3_app_2" object="npc:ch_jakyungdan_0004" party-broadcast="n" type="approach" />
+        <case gadget="q_jakyungdana" gadget-required="carry-and-remove" object="npc:ch_kwakjun_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="4">
+      <mission id="4" required-register-value="1" reward-1="302_final_set1">
+        <case object="npc:ctzn_jinm_jakyungdan_docheonpung_001" party-broadcast="n" progress-mission="y" quest-decision="qd_302_2" type="talk" />
+        <case object="npc:CH_NamSoYu_0001" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="zone:zone_chryoungchn_doctor1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_302_1" type="enter-zone" />
+        <case object="zone:zone_chryoungchn" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_301_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_chryoungchn_doctor_start">
+      <destination mission-step-id="4" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_303" />
+    </completion>
+  </quest>
+</table>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="LocalizationData" release-side="server" type="BotScoringLevel" version="0.2">
+  <!--botscoringleveldata.xml-->
+	<record alias="bot score level 1" fix-env-reward-min-count="n" isolate-persistent-zone="y" level="1" reduce-acquire-duel-point="1000" reduce-acquire-exp="1000" reduce-acquire-money="800" reduce-acquire-partybattle-point="1000" reduce-attack-power="600" reduce-defensive-power="600" require-bot-score="15001" />
+	<record alias="bot score level 2" fix-env-reward-min-count="n" isolate-persistent-zone="y" level="2" reduce-acquire-duel-point="1000" reduce-acquire-exp="1000" reduce-acquire-money="800" reduce-acquire-partybattle-point="1000" reduce-attack-power="600" reduce-defensive-power="600" require-bot-score="50001" />
+	<record alias="bot score level 3" fix-env-reward-min-count="n" isolate-persistent-zone="y" level="3" reduce-acquire-duel-point="1000" reduce-acquire-exp="1000" reduce-acquire-money="800" reduce-acquire-partybattle-point="1000" reduce-attack-power="600" reduce-defensive-power="600" require-bot-score="100001" />
+	<record alias="bot score level 4" fix-env-reward-min-count="n" isolate-persistent-zone="y" level="4" reduce-acquire-duel-point="1000" reduce-acquire-exp="1000" reduce-acquire-money="800" reduce-acquire-partybattle-point="1000" reduce-attack-power="600" reduce-defensive-power="600" require-bot-score="200001" />
+	<record alias="bot score level 5" fix-env-reward-min-count="n" isolate-persistent-zone="y" level="5" reduce-acquire-duel-point="1000" reduce-acquire-exp="1000" reduce-acquire-money="800" reduce-acquire-partybattle-point="1000" reduce-attack-power="600" reduce-defensive-power="600" require-bot-score="400001" />
+</table>

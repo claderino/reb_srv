@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.387.xml-->
+  <quest alias="q_sub_387" broadcast-category="field" category="normal" district-1="jeryoungrim" id="387" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="14" preceding-quest-1="q_sub_383" preceding-quest-check="and">
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" gadget-required="dont-care" object="npc:ch_doctor_0002" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:ch_doctor_0002" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:ce_board_0012" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="5">
+        <case drop-gadget="n" gadget="q_torchlighta_5" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_aljumeoni_07" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="n" gadget="q_torchlighta_5" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_aljumeoni_06" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="n" gadget="q_torchlighta_5" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_aljumeoni_05" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="n" gadget="q_torchlighta_5" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_aljumeoni_04" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="n" gadget="q_torchlighta_5" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_aljumeoni_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="n" gadget="q_torchlighta_5" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_aljumeoni_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="n" gadget="q_torchlighta_5" gadget-required="carry-and-remove" object2="zoneenv2:e_onoff_aljumeoni_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_chest_brazier_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_chest_brazier_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_chest_brazier_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_chest_brazier_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object2="npc:mh_chunggak_0064" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="3" required-register-value="1" reward-1="387_final_set1" reward-2="387_final_set2">
+        <case completion-count="1" completion-count-op="lt" object="npc:ch_doctor_0002" progress-mission="y" type="talk" />
+        <case completion-count="1" object="npc:ch_doctor_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case completion-count="0" fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

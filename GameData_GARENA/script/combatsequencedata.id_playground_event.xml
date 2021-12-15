@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.id_playground_event.xml-->
+
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0001_CS1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Area360_G" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_MultiChop_G" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Area360_G" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Stab_G" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Inhalation_G" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-90" id="2" max-count="1">
+      <action event-step="90" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_28" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0001_CS2" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_G" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_G" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_TX_Fatman_None_JumpAttack_G" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_30" type="use-ground-skill" />
+       
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Strike_G" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_PlayDispel" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Social1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="2">
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Power_G" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_battle_01" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="1">
+      <action event-step="33" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Power_G" type="use-skill" />
+      <action event-step="10" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_battle_02" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_28" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0001_CS3" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Area360_G" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_MultiChop_G" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Area360_G" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Stab_G" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Inhalation_G" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_TX_Fatman_None_JumpAttack_G" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_38" type="use-ground-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-55" id="2" max-count="1">
+      <action event-step="55" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_28" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0001_CS4" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_28" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Social1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_G" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_28" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0001_CS5" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Area360_G" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_MultiChop_G" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Area360_G" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Stab_G" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Inhalation_G" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_TX_Fatman_None_JumpAttack_G" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_38" type="use-ground-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-20" id="2" max-count="1">
+      <action event-step="20" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_28" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0001_CS6" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_14" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_15" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_12" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_13" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_TX_Fatman_None_JumpAttack_G" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_38" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Strike_G" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Social2" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_28" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  
+  
+  
+  
+  <combat-sequence alias="ME_SB_BadBoy_0002_CS1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Spin_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Stab_S" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-90" id="2" max-count="1">
+      <action event-step="90" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_29" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0002_CS2" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_29" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Social1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_29" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0002_CS3" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Spin_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Stab_S" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_39" type="use-ground-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-55" id="2" max-count="1">
+      <action event-step="55" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_29" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0002_CS4" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_30" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Strike_G" type="use-skill" />
+       
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_PlayDispel" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Social1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="2">
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Power_G" type="use-skill" />
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0002_battle_02" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="1">
+      <action event-step="33" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Power_G" type="use-skill" />
+      <action event-step="10" immune-breaker-disable="y" social="ME_SB_BadBoy_0002_battle_03" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_29" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0002_CS5" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+     
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Spin_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Stab_S" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_39" type="use-ground-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-20" id="2" max-count="1">
+      <action event-step="20" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_29" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_BadBoy_0002_CS6" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_24" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_26" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_25" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_23" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Throw_S" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_G" target-area="1156_39" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_PlayDispel" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Strike_G" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_Social2" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_TX_Fatman_None_JumpAttack_Show" target-area="1156_29" type="use-ground-skill" />
+      <action event-step="77" immune-breaker-disable="y" social="ME_SB_BadBoy_0001_Soc_06" type="do-social" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0042_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_RedBeam" speed="50" target="zonenpcspawn:a_1156_5_0" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0043_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_RedBeam" speed="50" target="zonenpcspawn:a_1156_4_0" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0044_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_RedBeam" speed="50" target="zonenpcspawn:a_1156_7_0" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0045_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_RedBeam" speed="50" target="zonenpcspawn:a_1156_6_0" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0046_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_9_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_20_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_19_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="4" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_8_0" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0047_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_11_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_22_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_20_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="4" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_9_0" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0048_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_8_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_19_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_21_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="4" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_10_0" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0049_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_10_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_21_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_22_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="4" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_11_0" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0050_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_23_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_12_0" type="boss-rush-attack" />
+    </special>
+    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0051_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_24_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_13_0" type="boss-rush-attack" />
+    </special>
+    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0052_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_25_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_14_0" type="boss-rush-attack" />
+    </special>
+    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0053_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_26_0" type="boss-rush-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" pass-through="n" skill3="ME_TX_Dummy_None_LinkedLaser_BossRush" speed="70" target="zonenpcspawn:a_1156_15_0" type="boss-rush-attack" />
+    </special>
+    
+  </combat-sequence>
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_SB_Dummy_0059_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1" special-2="3">
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="100" event-step="8" immune-breaker-disable="y" type="stay" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      <action duration="100" immune-breaker-disable="y" type="stay" />
+      <action duration="3600000" skill3="ME_TX_Dummy_None_LinkedLaser" target-from="zonenpcspawn:a_1156_8_1" target-to="zonenpcspawn:a_1156_9_1" type="boss-link-laser-attack" />
+      <action duration="3600000" skill3="ME_TX_Dummy_None_LinkedLaser" target-from="zonenpcspawn:a_1156_9_1" target-to="zonenpcspawn:a_1156_11_1" type="boss-link-laser-attack" />
+      <action duration="3600000" skill3="ME_TX_Dummy_None_LinkedLaser" target-from="zonenpcspawn:a_1156_10_1" target-to="zonenpcspawn:a_1156_8_1" type="boss-link-laser-attack" />
+      <action duration="3600000" skill3="ME_TX_Dummy_None_LinkedLaser" target-from="zonenpcspawn:a_1156_11_1" target-to="zonenpcspawn:a_1156_10_1" type="boss-link-laser-attack" />
+      <action duration="3600000" skill3="ME_TX_Dummy_None_LinkedLaser" target-from="zonenpcspawn:a_1156_8_1" target-to="zonenpcspawn:a_1156_11_1" type="boss-link-laser-attack" />
+      <action duration="3600000" skill3="ME_TX_Dummy_None_LinkedLaser" target-from="zonenpcspawn:a_1156_9_1" target-to="zonenpcspawn:a_1156_10_1" type="boss-link-laser-attack" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      <action duration="100" event-step="66" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_SB_MokuJin_0007_CS">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_SB_MokuJin_0008_CS">
+    <normal combat-distance="7" id="1">
+        <action repeat="5" skill3="MH_ForceMaster_Deal_cold_missile_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  
+  
+  
+
+</table>

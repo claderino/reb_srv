@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.247.xml-->
+  <quest alias="q_epic_247" broadcast-category="field" category="epic" completed-list="y" district-1="startzone" id="247" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="소환사" level="1" />
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1" reward-1="247_middle_set1">
+        <case object="npc:ch_youngmook_0013" party-broadcast="n" progress-mission="y" quest-decision="qd_247_m1_1" type="talk" />
+        <case object="zone:startzone_renew_minstrel" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m1_exc" type="enter-zone" />
+        <case object="npc:CH_YoungMook_0009" party-broadcast="n" progress-mission="y" quest-decision="qd_247_m1_1" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:1107_foot_2" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="zone:startzone_renew_minstrel" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m2_exc" type="enter-zone" />
+        <case object="npc:ch_youngmook_0013" party-broadcast="n" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="4" quest-decision="qd_247_ms3_1" zone-1="startzone_renew_donggul">
+      <mission id="4" required-register-value="3">
+        <case object2="npc:mh_mokujin_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:ch_youngmook_0013" party-broadcast="n" type="talk" />
+        <case object="npc:ch_musung_0004" party-broadcast="n" type="approach" />
+        <case object="zone:startzone_renew_donggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_common_donggul_exc" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="5">
+      <mission id="5" required-register-value="1">
+        <tutorial-case progress-mission="y" type="pc-bleeding" />
+        <case object="npc:mh_musung_0001" party-broadcast="n" type="approach" />
+        <case object="npc:ch_youngmook_0013" party-broadcast="n" type="talk" />
+        <case object="zone:startzone_renew_donggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m4_exc" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="6" quest-decision="qd_247_ms5_1" rollback="leave-world" zone-1="startzone_renew_donggul">
+      <mission id="6" required-register-value="1">
+        <tutorial-case progress-mission="y" type="complete-self-revival" />
+        <case object="npc:mh_musung_0001" party-broadcast="n" type="approach" />
+        <case object="npc:ch_youngmook_0013" party-broadcast="n" type="talk" />
+        <case object="zone:startzone_renew_donggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m5_exc" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" />
+    </mission-step>
+    <mission-step completion-type="and" id="8" retired="n">
+      <mission id="8" required-register-value="1">
+        <tutorial-case progress-mission="y" type="use-item" />
+        <case object="npc:ch_musung_0001" party-broadcast="n" type="talk" />
+        <case object="npc:ch_youngmook_0013" party-broadcast="n" type="talk" />
+        <case object="zone:startzone_renew_donggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m7_exc" type="enter-zone" />
+        <tutorial-case progress-mission="y" type="use-item" />
+        <tutorial-case progress-mission="y" type="use-item" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="11">
+      <mission id="11" required-register-value="1" reward-1="247_final_set1">
+        <case object="npc:ch_musung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_247_m7_1" type="talk" />
+        <case object="npc:ch_youngmook_0009" party-broadcast="n" type="talk" />
+        <case object="zone:startzone_renew_donggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m10_exc" type="enter-zone" />
+        <completion-loss item-1="quest_grocery_repairtool_0001" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest job-1="소환사" quest="q_epic_243" />
+    </completion>
+    <transit id="1" zone="startzone_renew_blade">
+      <destination mission-step-id="8" zone-index="7" />
+      <destination mission-step-id="7" zone-index="7" />
+      <destination mission-step-id="6" zone-index="7" />
+      <destination mission-step-id="5" zone-index="7" />
+      <destination mission-step-id="4" zone-index="7" />
+      <destination mission-step-id="1" zone-index="5" />
+      <destination mission-step-id="2" zone-index="5" />
+      <destination mission-step-id="10" zone-index="7" />
+      <destination mission-step-id="9" zone-index="7" />
+      <destination mission-step-id="11" zone-index="7" />
+      <destination mission-step-id="3" zone-index="5" />
+    </transit>
+    <mission-step id="9" retired="y">
+      <mission id="9" required-register-value="1">
+        <fixed-reward item-count-1="10" slot-1="item:quest_grocery_repairtool_0001" />
+        <case object="npc:ch_musung_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_youngmook_0009" party-broadcast="n" type="talk" />
+        <case object="zone:startzone_renew_donggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m8_exc" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10" retired="y">
+      <mission id="10" required-register-value="1">
+        <tutorial-case progress-mission="y" type="repair-with-campfire" />
+        <case object="npc:ch_youngmook_0009" party-broadcast="n" type="talk" />
+        <case object="npc:ch_musung_0001" party-broadcast="n" type="approach" />
+        <case object="zone:startzone_renew_donggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m9_exc" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone">
+      <mission id="7" required-register-value="1">
+        <tutorial-case progress-mission="y" type="skill" />
+        <case object="npc:ch_musung_0001" party-broadcast="n" type="talk" />
+        <case object="zone:startzone_renew_donggul" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m6_exc" type="enter-zone" />
+        <case object="npc:ch_youngmook_0013" party-broadcast="n" type="approach" />
+        <fixed-reward slot-1="item:Merchant_Grocery_Potion_1255" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" zone-1="startzone_renew_donggul" />
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case party-broadcast="n" progress-mission="y" type="talk-to-self" />
+        <case object="npc:ch_youngmook_0013" party-broadcast="n" type="approach" />
+        <case object="zone:startzone_renew_minstrel" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_247_m1_exc" type="enter-zone" />
+        <case object="npc:CH_YoungMook_0009" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

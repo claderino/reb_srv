@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="SkillDashAttribute3" version="0.3">
+  <!--skilldashattribute3data.xml-->
+	<record alias="Dash_M0" dash-margin="0" dash-type="dash" />
+	<record alias="Dash_M8" dash-margin="1" dash-type="dash" />
+	<record alias="Dash_M24" dash-margin="3" dash-type="dash" />
+	<record alias="Dash_M40" dash-margin="5" dash-type="dash" />
+	<record alias="Dash_M80" dash-margin="10" dash-type="dash" />
+	<record alias="Dash_M104" dash-margin="13" dash-type="dash" />
+	<record alias="Dash_M112" dash-margin="14" dash-type="dash" />
+	<record alias="Dash_M120" dash-margin="15" dash-type="dash" />
+	<record alias="Dash_M144" dash-margin="18" dash-type="dash" />
+	<record alias="Dash_M200" dash-margin="25" dash-type="dash" />
+	<record alias="Dash_M240" dash-margin="30" dash-type="dash" />
+	<record alias="Dash_M304" dash-margin="38" dash-type="dash" />
+	<record alias="LeftDash_M0" dash-margin="0" dash-type="left-dash" />
+	<record alias="LeftDash_M96" dash-margin="12" dash-type="left-dash" />
+	<record alias="LeftDash_M104" dash-margin="13" dash-type="left-dash" />
+	<record alias="LeftDash_M144" dash-margin="18" dash-type="left-dash" />
+	<record alias="LeftDash_M200" dash-margin="25" dash-type="left-dash" />
+	<record alias="LeftDash_M800" dash-margin="100" dash-type="left-dash" />
+	<record alias="RightDash_M0" dash-margin="0" dash-type="right-dash" />
+	<record alias="RightDash_M104" dash-margin="13" dash-type="right-dash" />
+	<record alias="RightDash_M800" dash-margin="100" dash-type="right-dash" />
+	<record alias="RearDash_M0" dash-margin="0" dash-type="rear-dash" />
+	<record alias="RearDash_M0_NoRadius" calculate-dash-position-include-radius="N" dash-margin="0" dash-type="rear-dash" />
+	<record alias="RearDash_M80" dash-margin="10" dash-type="rear-dash" />
+	<record alias="RearDash_M104" dash-margin="13" dash-type="rear-dash" />
+	<record alias="RearDash_M120" dash-margin="15" dash-type="rear-dash" />
+	<record alias="RearDash_M144" dash-margin="18" dash-type="rear-dash" />
+	<record alias="RearDash_M200" dash-margin="25" dash-type="rear-dash" />
+	<record alias="RearDash_M648" dash-margin="81" dash-type="rear-dash" />
+	<record alias="RearDash_M400" dash-margin="50" dash-type="rear-dash" />
+	<record alias="ZeroPointDash_M0" dash-margin="0" dash-type="zero-point-dash" />
+	<record alias="None" />
+</table>

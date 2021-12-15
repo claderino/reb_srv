@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ItemData" release-side="server" type="achievement-register" version="0.31">
+  <!--achievementregisterdata.xml-->
+	<record alias="1_1_kill-npc" id="1" job="job-none" max-value="1" npc-1="ME_SA_CrocodileSharkTribeC2_0001" persistant="y" type="kill-npc" version="1" />
+	<record alias="2_1_quest-complete" id="2" job="job-none" max-value="1" persistant="y" quest="q_sub_1055" type="quest-complete" version="1" />
+	<record alias="3_1_kill-npc" id="3" job="job-none" max-value="10000" npc-1="ME_SA_Pest_0005" npc-2="ME_SA_Pest_0006" persistant="y" type="kill-npc" version="1" />
+	<record alias="4_1_kill-npc" id="4" job="job-none" max-value="10000" npc-1="ME_SA_Juno_0003" npc-2="ME_SA_JunoBig_0003" persistant="y" type="kill-npc" version="1" />
+	<record alias="5_1_manipulate-env" env2-1="e_chest_muilfishing_01" env2-2="e_chest_muilfishing_01_1" id="5" job="job-none" max-value="10000" persistant="y" type="manipulate-env" version="1" />
+	<record alias="6_1_get-contribution-count" id="6" job="job-none" max-value="1000" npc-1="ME_SA_CrocodileSharkTribeC2_0002" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="7_1_quest-complete" id="7" job="job-none" max-value="100" persistant="y" quest="q_sub_1067" type="quest-complete" version="1" />
+	<record alias="8_1_quest-complete" id="8" job="job-none" max-value="100" persistant="y" quest="q_sub_1069" type="quest-complete" version="1" />
+	<record alias="9_1_quest-complete" id="9" job="job-none" max-value="100" persistant="y" quest="q_sub_1070" type="quest-complete" version="1" />
+	<record alias="10_1_equip-item-n" id="10" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="11_1_kill-boss-npc" boss-npc="ME_SA_DemonShadowCBig_0001" id="11" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="12_1_kill-boss-npc" boss-npc="MH_SA_HockRyuGo_0045" id="12" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="13_1_quest-complete" id="13" job="job-none" max-value="1" persistant="y" quest="q_epic_938" type="quest-complete" version="1" />
+	<record alias="14_1_quest-complete" id="14" job="job-none" max-value="100" persistant="y" quest="q_sub_355" type="quest-complete" version="1" />
+	<record alias="15_1_quest-complete" id="15" job="job-none" max-value="100" persistant="y" quest="q_sub_892" type="quest-complete" version="1" />
+	<record alias="16_1_quest-complete" id="16" job="job-none" max-value="100" persistant="y" quest="q_sub_1205" type="quest-complete" version="1" />
+	<record alias="17_1_quest-complete" id="17" job="job-none" max-value="100" persistant="y" quest="q_sub_458" type="quest-complete" version="1" />
+	<record alias="18_1_quest-complete" id="18" job="job-none" max-value="100" persistant="y" quest="q_sub_804" type="quest-complete" version="1" />
+	<record alias="19_1_quest-complete" id="19" job="job-none" max-value="100" persistant="y" quest="q_sub_1006" type="quest-complete" version="1" />
+	<record alias="20_1_kill-boss-npc" boss-npc="ME_MuSinTower_0004" id="20" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="21_1_kill-boss-npc" boss-npc="MH_CT_MusinTower_SImHwa_0018" id="21" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="22_1_manipulate-env" env2-1="e_chest_musintower_Roulettle" env2-2="e_chest_ver1_musintower2_Roulettle" id="22" job="job-none" max-value="100" persistant="y" type="manipulate-env" version="1" />
+	<record alias="23_1_get-contribution-count" id="23" job="job-none" max-value="100" npc-1="ME_CT_Valak_0003" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="24_1_kill-npc" id="24" job="job-none" max-value="1000" npc-1="ME_CT_SnakeWoman_0001" npc-2="ME_CT_SnakeMan_0001" persistant="y" type="kill-npc" version="1" />
+	<record alias="25_1_kill-boss-npc" boss-npc="ME_CT_SnakeQueen_0001" id="25" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="26_1_kill-boss-npc" boss-npc="ME_CT_SnakeSoldier_0001" id="26" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="27_1_kill-npc" id="27" job="job-none" max-value="100" npc-1="ME_CT_BaBaJok_0013" persistant="y" type="kill-npc" version="1" />
+	<record alias="28_1_kill-boss-npc" boss-npc="ME_CT_JinSeoYeonM_0001" id="28" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="29_1_kill-boss-npc" boss-npc="ME_CT_JinSeoYeonM_0001" id="29" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="30_1_kill-boss-npc" id="30" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="31_1_kill-boss-npc" boss-npc="ME_ChungGakABoss_0003" id="31" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="32_1_kill-boss-npc" id="32" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="33_1_use-gadget-to-npc" gadget="D_SpeargunA_Lv45" id="33" job="job-none" max-value="300" npc="ME_IronTurtleEgg_0003" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="34_1_kill-boss-npc" id="34" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="35_1_kill-boss-npc" boss-npc="ME_PotAxPartyA_0010" id="35" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="36_1_kill-boss-npc" id="36" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="37_1_kill-npc" id="37" job="job-none" max-value="1" npc-1="ME_C3_HolyMushroom_0001" persistant="y" type="kill-npc" version="1" />
+	<record alias="38_1_use-gadget-to-npc" gadget="SnowBall_In_01" id="38" job="job-none" max-value="300" npc="ME_C3_Yetty_0003" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="39_1_kill-boss-npc" id="39" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="40_1_kill-boss-npc" id="40" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="41_1_kill-npc" id="41" job="job-none" max-value="1" npc-1="ME_C3_RewardBox_0015" npc-2="ME_C3_RewardBox_0016" persistant="y" type="kill-npc" version="1" />
+	<record alias="42_1_kill-boss-npc" boss-npc="ME_C3_SeolOkGungBoss_0005" id="42" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="43_1_kill-boss-npc" boss-npc="MH_C3_MokuJin_0015" id="43" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="293_1_kill-boss-npc" boss-npc="ME_WB_DemonGorilla_0001" id="293" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="294_1_kill-boss-npc" boss-npc="ME_WA_Heajuk_A2_0026" id="294" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="297_1_kill-boss-npc" boss-npc="ME_CT_DesertDragon_0012" id="297" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="298_1_use-gadget-to-npc" gadget="RedBall_0001" id="298" job="job-none" max-value="1" npc="ME_CT_JunoBoss_0005" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="299_1_use-gadget-to-npc" gadget="BlueBall_0001" id="299" job="job-none" max-value="1" npc="ME_CT_JunoBoss_0006" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="46_1_kill-boss-npc" boss-npc="MH_C3_JeGukGun_0041" id="46" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="47_1_growth-item" id="47" job="job-none" max-value="1" persistant="y" seed-item-brand="ItemBrand_General_Weapon_2230" type="growth-item" version="1" />
+	<record alias="48_1_awakening-item" id="48" item-brand="ItemBrand_General_Weapon_2140" job="job-none" max-value="1" persistant="y" type="awakening-item" version="1" />
+	<record alias="49_1_transform-item-brand" id="49" item-brand="ItemBrand_General_Weapon_2141" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="50_1_equip-item-brand-n" id="50" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="51_1_transform-item-brand" id="51" item-brand="ItemBrand_General_Weapon_2006" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="52_1_transform-item-brand" id="52" item-brand="ItemBrand_General_Weapon_2008" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="53_1_equip-item-brand-n" id="53" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="54_1_transform-item-brand" id="54" item-brand="ItemBrand_General_Weapon_2009" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="55_1_transform-item-brand" id="55" item-brand="ItemBrand_General_Weapon_2010" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="56_1_equip-item-brand-n" id="56" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="57_1_transform-item-brand" id="57" item-brand="ItemBrand_General_Weapon_2011" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="58_1_transform-item-brand" id="58" item-brand="ItemBrand_General_Weapon_2025" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="59_1_transform-item-brand" id="59" item-brand="ItemBrand_General_Weapon_2061" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="60_1_transform-item-brand" id="60" item-brand="ItemBrand_General_Weapon_2128" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="61_1_transform-item-brand" id="61" item-brand="ItemBrand_General_Weapon_2233" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="62_1_transform-item-brand" id="62" item-brand="ItemBrand_General_Weapon_2234" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="63_1_transform-item-brand" id="63" item-brand="ItemBrand_General_Weapon_2235" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="64_1_growth-item" id="64" job="job-none" max-value="1" persistant="y" seed-item-brand="ItemBrand_General_Ring_2094" type="growth-item" version="1" />
+	<record alias="65_1_awakening-item" id="65" item-brand="ItemBrand_General_Ring_2094" job="job-none" max-value="1" persistant="y" type="awakening-item" version="1" />
+	<record alias="66_1_transform-item-brand" id="66" item-brand="ItemBrand_General_Ring_2062" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="67_1_transform-item-brand" id="67" item-brand="ItemBrand_General_Ring_2063" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="68_1_equip-item-brand-n" id="68" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="69_1_transform-item-brand" id="69" item-brand="ItemBrand_General_Ring_2064" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="70_1_transform-item-brand" id="70" item-brand="ItemBrand_General_Ring_2066" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="71_1_equip-item-brand-n" id="71" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="72_1_transform-item-brand" id="72" item-brand="ItemBrand_General_Earring_2037" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="73_1_transform-item-brand" id="73" item-brand="ItemBrand_General_Earring_2038" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="74_1_equip-item-brand-n" id="74" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="75_1_transform-item-brand" id="75" item-brand="ItemBrand_General_Earring_2039" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="76_1_transform-item-brand" id="76" item-brand="ItemBrand_General_Earring_2041" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="77_1_equip-item-brand-n" id="77" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="78_1_transform-item-brand" id="78" item-brand="ItemBrand_General_Necklace_2074" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="79_1_transform-item-brand" id="79" item-brand="ItemBrand_General_Necklace_2075" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="80_1_equip-item-brand-n" id="80" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="81_1_transform-item-brand" id="81" item-brand="ItemBrand_General_Necklace_2076" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="82_1_transform-item-brand" id="82" item-brand="ItemBrand_General_Necklace_2077" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="83_1_equip-item-brand-n" id="83" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="84_1_equip-item-brand-n" id="84" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="85_1_equip-item-brand-n" id="85" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="86_1_equip-item-brand-n" id="86" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="87_1_equip-item-brand-n" id="87" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="88_1_equip-item-brand-n" id="88" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="89_1_equip-item-brand-n" id="89" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="90_1_equip-item-brand-n" id="90" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="91_1_equip-item-brand-n" id="91" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="92_1_equip-item-brand-n" id="92" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="93_1_equip-item-brand-n" id="93" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="94_1_equip-item-brand-n" id="94" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="95_1_equip-item-brand-n" id="95" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="96_1_equip-item-brand-n" id="96" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="97_1_equip-item-brand-n" id="97" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="98_1_equip-item-brand-n" id="98" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="99_1_equip-item-brand-n" id="99" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="100_1_equip-item-brand-n" id="100" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="101_1_equip-item-brand-n" id="101" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="102_1_equip-item-brand-n" id="102" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="103_1_equip-item-brand-n" id="103" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="104_1_equip-item-brand-n" id="104" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="105_1_equip-item-brand-n" id="105" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="106_1_equip-item-brand-n" id="106" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="107_1_equip-item-brand-n" id="107" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="108_1_equip-item-brand-n" id="108" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="109_1_equip-item-brand-n" id="109" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="110_1_equip-item-brand-n" id="110" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="111_1_equip-item-brand-n" id="111" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="112_1_equip-item-brand-n" id="112" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="113_1_equip-item-brand-n" id="113" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="114_1_equip-item-brand-n" id="114" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="115_1_equip-item-brand-n" id="115" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="116_1_equip-item-brand-n" id="116" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="117_1_equip-item-brand-n" id="117" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="118_1_equip-item-brand-n" id="118" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="119_1_equip-item-brand-n" id="119" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="120_1_equip-item-brand-n" id="120" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="121_1_equip-item-brand-n" id="121" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="122_1_equip-item-brand-n" id="122" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="123_1_equip-item-brand-n" id="123" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="124_1_equip-item-brand-n" id="124" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="125_1_equip-item-brand-n" id="125" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="126_1_equip-item-brand-n" id="126" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="127_1_equip-item-brand-n" id="127" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="128_1_equip-item-brand-n" id="128" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="129_1_equip-item-brand-n" id="129" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="130_1_equip-item-brand-n" id="130" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="131_1_equip-item-brand-n" id="131" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="133_1_equip-item-brand-n" id="133" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="134_1_equip-item-brand-n" id="134" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="135_1_equip-item-brand-n" id="135" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="136_1_equip-item-n" id="136" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="137_1_equip-item-n" id="137" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="138_1_equip-item-n" id="138" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="139_1_equip-item-n" id="139" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="140_1_equip-item-n" id="140" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="141_1_equip-item-n" id="141" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="142_1_equip-item-n" id="142" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="143_1_equip-item-n" id="143" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="144_1_get-contribution-count" id="144" job="job-none" max-value="100" npc-1="ME_WA_DemonShadowBoss_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="145_1_get-contribution-count" id="145" job="job-none" max-value="1000" npc-1="ME_CT_DesertDragon_0004" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="146_1_get-contribution-count" id="146" job="job-none" max-value="100" npc-1="ME_GatlingGunWoman_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="147_1_get-contribution-count" id="147" job="job-none" max-value="100" npc-1="ME_ChungGakB2Boss_0006" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="148_1_quest-complete" id="148" job="job-none" max-value="1" persistant="y" quest="q_epic_1235" type="quest-complete" version="1" />
+	<record alias="149_1_equip-item-n" id="149" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="150_1_kill-boss-npc" boss-npc="ME_WB_SnakeSoldier_0002" id="150" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="151_1_quest-complete" id="151" job="job-none" max-value="1" persistant="y" quest="q_epic_996" type="quest-complete" version="1" />
+	<record alias="152_1_quest-complete" id="152" job="job-none" max-value="1" persistant="y" quest="q_epic_1519" type="quest-complete" version="1" />
+	<record alias="153_1_quest-complete" id="153" job="job-none" max-value="100" persistant="y" quest="q_sub_1062" type="quest-complete" version="1" />
+	<record alias="154_1_quest-complete" id="154" job="job-none" max-value="100" persistant="y" quest="q_sub_1060" type="quest-complete" version="1" />
+	<record alias="155_1_kill-boss-npc" boss-npc="ME_SA_GeoGeoBoong_0001" id="155" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="156_1_kill-npc" id="156" job="job-none" max-value="10000" npc-1="MH_SA_NokLimDo_0059" npc-2="MH_SA_NokLimDo_0061" npc-3="MH_SA_NokLimDo_0068" npc-4="MH_SA_NokLimDo_0070" npc-5="MH_SA_NokLimDo_0072" persistant="y" type="kill-npc" version="1" />
+	<record alias="157_1_quest-complete" id="157" job="job-none" max-value="100" persistant="y" quest="q_sub_1117" type="quest-complete" version="1" />
+	<record alias="158_1_get-contribution-count" id="158" job="job-none" max-value="1" npc-1="ME_GeoGeoBoong_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="159_1_get-contribution-count" id="159" job="job-none" max-value="1" npc-1="ME_ChungGakB2Boss_0010" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="160_1_get-contribution-count" id="160" job="job-none" max-value="1" npc-1="ME_ChungGakB2Boss_0011" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="161_1_get-contribution-count" id="161" job="job-none" max-value="1" npc-1="ME_JunoBoss_0002" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="162_1_get-contribution-count" id="162" job="job-none" max-value="1" npc-1="ME_ChungGakB2Boss_0002" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="163_1_get-contribution-count" id="163" job="job-none" max-value="1" npc-1="ME_ChungGakB2Boss_0009" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="164_1_use-gadget-to-npc" gadget="BombBoxA_In01" id="164" job="job-none" max-value="1" npc="ME_FishmanCBoss_0001" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="165_1_use-gadget-to-npc" gadget="BombBoxA_In01" id="165" job="job-none" max-value="1" npc="MH_ChungGak_0330" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="166_1_use-gadget-to-npc" gadget="BombBoxA_In01" id="166" job="job-none" max-value="1" npc="MH_ChungGak_0310" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="167_1_use-gadget-to-npc" gadget="EffectBall_In18" id="167" job="job-none" max-value="1" npc="ME_WB_GuGuBung_0003" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="168_1_manipulate-env" env2-1="e_refiner_7200refiner_01" env2-2="e_refiner_7200refiner_02" env2-3="e_refiner_7200refiner_03" env2-state-1="step-3" env2-state-2="step-3" env2-state-3="step-3" id="168" job="job-none" max-value="100" persistant="y" type="manipulate-env" version="1" />
+	<record alias="169_1_manipulate-env" env2-1="e_refiner_7200refiner_01" env2-2="e_refiner_7200refiner_02" env2-3="e_refiner_7200refiner_03" env2-state-1="step-4" env2-state-2="step-4" env2-state-3="step-4" id="169" job="job-none" max-value="100" persistant="y" type="manipulate-env" version="1" />
+	<record alias="170_1_inventory-size" id="170" job="job-none" max-value="0" type="inventory-size" version="1" />
+	<record alias="171_1_depot-size" id="171" job="job-none" max-value="0" type="depot-size" version="1" />
+	<record alias="172_1_wardrobe-size" id="172" job="job-none" max-value="0" type="wardrobe-size" version="1" />
+	<record alias="173_1_pc-level" id="173" job="job-none" max-value="0" type="pc-level" version="1" />
+	<record alias="174_1_teleport-count" id="174" job="job-none" max-value="5000" persistant="y" type="teleport-count" version="1" />
+	<record alias="175_1_quest-complete" id="175" job="job-none" max-value="1" persistant="y" quest="q_epic_320" type="quest-complete" version="1" />
+	<record alias="176_1_quest-complete" id="176" job="job-none" max-value="1" persistant="y" quest="q_epic_538" type="quest-complete" version="1" />
+	<record alias="177_1_quest-complete" id="177" job="job-none" max-value="1" persistant="y" quest="q_epic_928" type="quest-complete" version="1" />
+	<record alias="178_1_quest-complete" id="178" job="job-none" max-value="100" persistant="y" quest="q_sub_1159" type="quest-complete" version="1" />
+	<record alias="179_1_quest-complete" id="179" job="job-none" max-value="100" persistant="y" quest="q_sub_1132" type="quest-complete" version="1" />
+	<record alias="180_1_quest-complete" id="180" job="job-none" max-value="100" persistant="y" quest="q_sub_1135" type="quest-complete" version="1" />
+	<record alias="181_1_quest-complete" id="181" job="job-none" max-value="100" persistant="y" quest="q_sub_1138" type="quest-complete" version="1" />
+	<record alias="182_1_quest-complete" id="182" job="job-none" max-value="100" persistant="y" quest="q_sub_414" type="quest-complete" version="1" />
+	<record alias="183_2_quest-complete" id="183" job="job-none" max-value="100" type="null" version="2" />
+	<record alias="184_1_growth-item" id="184" job="job-none" max-value="10" persistant="y" type="growth-item" version="1" />
+	<record alias="185_1_growth-item" id="185" job="job-none" max-value="1" persistant="y" type="growth-item" version="1" />
+	<record alias="186_1_decompose-item" id="186" job="job-none" max-value="1" persistant="y" type="decompose-item" version="1" />
+	<record alias="187_1_decompose-item" id="187" job="job-none" max-value="1" persistant="y" type="decompose-item" version="1" />
+	<record alias="188_1_decompose-item-equip-type-n" id="188" job="job-none" max-value="0" persistant="y" type="decompose-item-equip-type-n" version="1" />
+	<record alias="189_1_decompose-item" equip-gem-only="y" id="189" job="job-none" max-value="5000" persistant="y" type="decompose-item" version="1" />
+	<record alias="190_1_decompose-item-weapon-gem-level-n" id="190" job="job-none" max-value="0" persistant="y" type="decompose-item-weapon-gem-level-n" version="1" />
+	<record alias="191_1_decompose-item" id="191" job="job-none" max-value="5000" persistant="y" type="decompose-item" version="1" />
+	<record alias="192_1_zero-durability" id="192" job="job-none" max-value="500" persistant="y" type="zero-durability" version="1" />
+	<record alias="193_1_repair-item" id="193" job="job-none" max-value="5000" persistant="y" type="repair-item" version="1" />
+	<record alias="194_1_attach-equip-gem-piece" id="194" job="job-none" max-value="500" persistant="y" type="attach-equip-gem-piece" version="1" />
+	<record alias="195_1_attach-equip-gem-piece" id="195" job="job-none" max-value="500" persistant="y" type="attach-equip-gem-piece" version="1" />
+	<record alias="196_1_attach-equip-gem-piece" id="196" job="job-none" max-value="1" persistant="y" type="attach-equip-gem-piece" version="1" />
+	<record alias="202_1_kill-boss-npc" id="202" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="203_1_dungeon-clear-count" boss-npc="ME_GuGuBung_0003" id="203" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="204_1_kill-boss-npc" id="204" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="205_1_kill-boss-npc" boss-npc="ME_FireGorilla_0001" id="205" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="206_1_kill-boss-npc" boss-npc="MH_BokGonPe_0001" id="206" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="207_1_kill-boss-npc" boss-npc="MH_BokGonPe_0025" id="207" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="208_1_kill-boss-npc" boss-npc="ME_FireGorilla_0001" id="208" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="209_1_dungeon-clear-count" boss-npc="ME_FireGorilla_0001" id="209" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="210_1_kill-boss-npc" boss-npc="ME_HongUn_0001" id="210" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="211_1_dungeon-clear-count" boss-npc="ME_HongUn_0001" id="211" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="212_1_kill-boss-npc" boss-npc="ME_JunoBoss_001" id="212" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="213_1_use-gadget-to-npc" gadget="Q_RifleA" id="213" job="job-none" max-value="100" npc="ME_JunoBoss_001" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="214_1_kill-boss-npc" boss-npc="ME_NakWonDaeSung_0002" id="214" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="215_1_kill-boss-npc" boss-npc="ME_NakWonDaeSung_0002" id="215" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="216_1_kill-boss-npc" boss-npc="ME_HyeolPung_0004" id="216" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="217_1_use-gadget-to-npc" gadget="FlameThrowerA_Lv39" id="217" job="job-none" max-value="100" npc="ME_HyeolPung_0004" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="218_1_kill-boss-npc" boss-npc="MH_Scholar_0001" id="218" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="219_1_kill-boss-npc" boss-npc="MH_Scholar_0001" id="219" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="220_1_kill-boss-npc" boss-npc="ME_SpiderQueen_0001" id="220" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="221_1_dungeon-clear-count" boss-npc="ME_SpiderQueen_0001" id="221" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="222_1_kill-pc" id="222" job="job-none" max-value="10000" persistant="y" type="kill-pc" version="1" />
+	<record alias="223_1_kill-pc" id="223" job="job-none" max-value="1000" persistant="y" type="kill-pc" version="1" />
+	<record alias="224_1_kill-pc" id="224" job="job-none" max-value="1000" persistant="y" type="kill-pc" version="1" />
+	<record alias="225_1_equip-item-n" id="225" job="job-none" max-value="0" persistant="y" type="equip-item-n" version="1" />
+	<record alias="226_1_kill-pc" id="226" job="job-none" max-value="100" persistant="y" type="kill-pc" version="1" />
+	<record alias="227_1_kill-pc" id="227" job="job-none" max-value="100" persistant="y" type="kill-pc" version="1" />
+	<record alias="228_1_kill-pc" id="228" job="job-none" max-value="100" persistant="y" type="kill-pc" version="1" />
+	<record alias="229_1_kill-pc" id="229" job="job-none" max-value="100" persistant="y" type="kill-pc" version="1" />
+	<record alias="230_1_kill-pc" id="230" job="job-none" max-value="1" persistant="y" type="kill-pc" version="1" />
+	<record alias="231_1_exchange-faction-score-count" id="231" job="job-none" max-value="500" persistant="y" type="exchange-faction-score-count" version="1" />
+	<record alias="232_1_exchange-faction-score-count" id="232" job="job-none" max-value="1" persistant="y" type="exchange-faction-score-count" version="1" />
+	<record alias="233_1_kill-npc" id="233" job="job-none" max-value="50" npc-1="MH_KwakChil_0001" npc-2="MH_Chuhwayoeun_0001" npc-3="CH_JaKyeongDan_0001" npc-4="CH_JaKyeongDan_0002" persistant="y" type="kill-npc" version="1" />
+	<record alias="234_1_kill-pc" id="234" job="job-none" max-value="1000" persistant="y" type="kill-pc" version="1" />
+	<record alias="235_1_kill-npc" id="235" job="job-none" max-value="50" npc-1="CH_ChungGak_0008" npc-2="CH_ChungGak_0009" persistant="y" type="kill-npc" version="1" />
+	<record alias="236_1_kill-pc" id="236" job="job-none" max-value="1000" persistant="y" type="kill-pc" version="1" />
+	<record alias="237_1_kill-pc" id="237" job="job-none" max-value="1000" persistant="y" type="kill-pc" version="1" />
+	<record alias="238_1_kill-pc" id="238" job="job-none" max-value="1000" persistant="y" type="kill-pc" version="1" />
+	<record alias="239_1_kill-npc" id="239" job="job-none" max-value="50" npc-1="MH_GeongChunMaeng_0078" npc-2="MH_GeongChunMaeng_0079" npc-3="MH_GeongChunMaeng_0080" npc-4="MH_GeongChunMaeng_0081" persistant="y" type="kill-npc" version="1" />
+	<record alias="240_1_kill-pc" id="240" job="job-none" max-value="1000" persistant="y" type="kill-pc" version="1" />
+	<record alias="241_1_kill-pc" id="241" job="job-none" max-value="1000" persistant="y" type="kill-pc" version="1" />
+	<record alias="242_1_pc-dead" id="242" job="job-none" max-value="1000" persistant="y" type="pc-dead" version="1" />
+	<record alias="243_1_pc-dead" id="243" job="job-none" max-value="1" persistant="y" type="pc-dead" version="1" />
+	<record alias="244_1_pc-dead" id="244" job="job-none" max-value="1" persistant="y" type="pc-dead" version="1" />
+	<record alias="245_1_detach-post-attachment-count" id="245" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-count" version="1" />
+	<record alias="246_1_detach-post-attachment-count" id="246" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-count" version="1" />
+	<record alias="247_1_detach-post-attachment-count" id="247" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-count" version="1" />
+	<record alias="248_1_detach-post-attachment-money" id="248" job="job-none" max-value="1000000000" persistant="y" type="detach-post-attachment-money" version="1" />
+	<record alias="249_1_detach-post-attachment-item" id="249" item="General_Grocery_SpecialMaterial_0016" job="job-none" max-value="10000" persistant="y" type="detach-post-attachment-item" version="1" />
+	<record alias="250_1_detach-post-attachment-count" id="250" job="job-none" max-value="500" persistant="y" type="detach-post-attachment-count" version="1" />
+	<record alias="251_1_detach-post-attachment-count" id="251" job="job-none" max-value="500" persistant="y" type="detach-post-attachment-count" version="1" />
+	<record alias="client.use-talk-social.kiss" id="252" job="job-none" max-value="0" persistant="y" type="client-only" version="1" />
+	<record alias="client.use-talk-social.hooray" id="253" job="job-none" max-value="0" persistant="y" type="client-only" version="1" />
+	<record alias="client.use-talk-social.fear" id="254" job="job-none" max-value="0" persistant="y" type="client-only" version="1" />
+	<record alias="client.use-talk-social.boredom" id="255" job="job-none" max-value="0" persistant="y" type="client-only" version="1" />
+	<record alias="client.use-talk-social.scare" id="256" job="job-none" max-value="0" persistant="y" type="client-only" version="1" />
+	<record alias="client.capture-screen-shot" id="257" job="job-none" max-value="0" persistant="y" type="client-only" version="1" />
+	<record alias="client.capture-charactor-shot" id="258" job="job-none" max-value="0" persistant="y" type="client-only" version="1" />
+	<record alias="Timer_common01" id="259" job="job-none" max-value="0" type="time" version="1" />
+	<record alias="260_1_duel-win-count" id="260" job="job-none" max-value="5000" persistant="y" type="duel-win-count" version="1" />
+	<record alias="261_1_duel-win-count" id="261" job="job-none" max-value="5000" persistant="y" type="duel-win-count" version="1" />
+	<record alias="262_1_duel-grade" id="262" job="job-none" max-value="0" type="duel-grade" version="1" />
+	<record alias="263_1_duel-grade" id="263" job="job-none" max-value="0" type="duel-grade" version="1" />
+	<record alias="264_1_quest-complete-count" id="264" job="job-none" max-value="5000" persistant="y" type="quest-complete-count" version="1" />
+	<record alias="265_1_help-restoration" id="265" job="job-none" max-value="1000" persistant="y" type="help-restoration" version="1" />
+	<record alias="266_1_help-resurrect" id="266" job="job-none" max-value="1000" persistant="y" type="help-resurrect" version="1" />
+	<record alias="267_1_dungeon-clear-count" boss-npc="ME_ChungGakABoss_0005" id="267" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="268_1_quest-complete" id="268" job="job-none" max-value="1" persistant="y" quest="q_epic_1455" type="quest-complete" version="1" />
+	<record alias="269_1_pc-mastery-level" id="269" job="job-none" max-value="0" type="pc-mastery-level" version="1" />
+	<record alias="270_1_use-grocery-n" id="270" job="job-none" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="271_1_use-grocery-n" id="271" job="job-none" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="272_1_use-grocery-n" id="272" job="job-none" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="273_1_use-grocery-n" id="273" job="job-none" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="274_1_use-grocery-n" id="274" job="job-none" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="275_1_use-grocery" id="275" job="job-none" max-value="5000" persistant="y" type="use-grocery" version="1" />
+	<record alias="276_1_use-grocery" id="276" job="job-none" max-value="1000" persistant="y" type="use-grocery" version="1" />
+	<record alias="277_1_use-grocery" id="277" job="job-none" max-value="100" persistant="y" type="use-grocery" version="1" />
+	<record alias="278_1_use-grocery" id="278" job="job-none" max-value="500" persistant="y" type="use-grocery" version="1" />
+	<record alias="279_1_detach-post-attachment-item-n" id="279" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-item-n" version="1" />
+	<record alias="280_1_detach-post-attachment-item-n" id="280" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-item-n" version="1" />
+	<record alias="281_1_detach-post-attachment-item-n" id="281" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-item-n" version="1" />
+	<record alias="282_1_detach-post-attachment-item-n" id="282" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-item-n" version="1" />
+	<record alias="283_1_detach-post-attachment-item-n" id="283" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-item-n" version="1" />
+	<record alias="284_1_detach-post-attachment-item-n" id="284" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-item-n" version="1" />
+	<record alias="285_1_detach-post-attachment-item-n" id="285" job="job-none" max-value="1" persistant="y" type="detach-post-attachment-item-n" version="1" />
+	<record alias="286_1_kill-boss-npc" boss-npc="ME_ChungGakABoss_0005" id="286" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="287_1_kill-boss-npc" boss-npc="ME_ChungGakBBoss_0006" id="287" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="288_1_kill-boss-npc" boss-npc="ME_RewardBox_0017" id="288" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="289_1_kill-boss-npc" boss-npc="ME_C3_YettyCaveBoss_0002" id="289" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="290_1_kill-boss-npc" boss-npc="ME_C3_GalMaWang_0001" id="290" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="291_1_kill-boss-npc" boss-npc="ME_C3_BaeYiDoMachine_0001" id="291" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="292_1_kill-boss-npc" boss-npc="ME_C3_SeolOkGungBoss_0005" id="292" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="295_1_kill-boss-npc" boss-npc="ME_GuGuBung_0003" id="295" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="296_1_kill-boss-npc" boss-npc="ME_FireGorilla_0001" id="296" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="901_1_BM_use-grocery-n" id="901" job="검사" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="901_1_KF_use-grocery-n" id="901" job="권사" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="901_1_DE_use-grocery-n" id="901" job="역사" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="901_1_FM_use-grocery-n" id="901" job="기공사" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="901_1_AS_use-grocery-n" id="901" job="암살자" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="901_1_SU_use-grocery-n" id="901" job="소환사" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="901_1_SM_use-grocery-n" id="901" job="귀검사" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="901_1_WL_use-grocery-n" id="901" job="주술사" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="901_1_SF_use-grocery-n" id="901" job="기권사" max-value="1" persistant="y" type="use-grocery-n" version="1" />
+	<record alias="304_1_use-gadget-to-npc" gadget="EffectBall_In18" id="304" job="job-none" max-value="1" npc="ME_WB_GuGuBung_0002" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="305_1_use-gadget-to-npc" gadget="EffectBall_In18" id="305" job="job-none" max-value="1" npc="ME_WB_GuGuBung_0001" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="300_1_kill-boss-npc" boss-npc="MH_ChungGak_0040" id="300" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="301_1_kill-boss-npc" boss-npc="MH_BladeMaster_0001" id="301" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="302_1_kill-boss-npc" boss-npc="ME_GuGuBung_0003" id="302" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="303_1_kill-boss-npc" boss-npc="ME_C3_YettyCaveBoss_0002" id="303" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="306_1_get-contribution-count" id="306" job="job-none" max-value="100" npc-1="ME_WA_UnbalanceZombieBScaleUp1_0001" npc-2="ME_WA_UnbalanceZombieBScaleUp1_0003" npc-3="ME_WA_UnbalanceZombieBScaleUp1_0004" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="307_1_get-contribution-count" id="307" job="job-none" max-value="100" npc-1="ME_WA_SpiderQueen_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="308_1_get-contribution-count" id="308" job="job-none" max-value="100" npc-1="ME_WA_FireGorillaA_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="309_1_get-contribution-count" id="309" job="job-none" max-value="100" npc-1="ME_WA_SinSiBoss_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="310_1_manipulate-env" env2-1="e_chest_3010hellherb_01_01" id="310" job="job-none" max-value="1000" persistant="y" type="manipulate-env" version="1" />
+	<record alias="311_1_get-contribution-count" id="311" job="job-none" max-value="1000" npc-1="ME_WA_UnbalanceZombieBScaleUp1_0002" npc-2="ME_WA_UnbalanceZombieBScaleUp1_0005" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="312_1_kill-boss-npc" boss-npc="ME_C3_ChungGakB3Boss_0001" id="312" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="313_1_kill-boss-npc" boss-npc="ME_C3_ChungGakB2Boss_0001" id="313" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="314_1_manipulate-env" env2-1="e_Button_7200gemstone_01" id="314" job="job-none" max-value="1000" persistant="y" type="manipulate-env" version="1" />
+	<record alias="315_1_kill-pc" id="315" job="job-none" max-value="5000" persistant="y" type="kill-pc" version="1" />
+	<record alias="316_1_help-resurrect" id="316" job="job-none" max-value="100" persistant="y" type="help-resurrect" version="1" />
+	<record alias="317_1_help-restoration" id="317" job="job-none" max-value="100" persistant="y" type="help-restoration" version="1" />
+	<record alias="318_1_give-faction-score-to-refiner" env2-1="e_refiner_7200refiner_01" env2-2="e_refiner_7200refiner_02" env2-3="e_refiner_7200refiner_03" id="318" job="job-none" max-value="5000" persistant="y" type="give-faction-score-to-refiner" version="1" />
+	<record alias="319_1_kill-boss-npc" boss-npc="ME_ChungGakBBoss_0006" id="319" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="320_1_kill-boss-npc" boss-npc="ME_MuSinTower_0004" id="320" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="321_1_kill-boss-npc" boss-npc="MH_CT_MusinTower_SImHwa_0018" id="321" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="322_1_get-contribution-count" id="322" job="job-none" max-value="100" npc-1="ME_WB_Valak_0003" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="323_1_equip-item-brand-n" id="323" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="324_1_equip-item-brand-n" id="324" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="325_1_use-grocery" id="325" job="job-none" max-value="1000" persistant="y" type="use-grocery" version="1" />
+	<record alias="327_1_kill-boss-npc" boss-npc="ME_WA_Whanmadan_A2_Boss_0001" id="327" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="328_1_kill-npc" id="328" job="job-none" max-value="100" npc-1="MH_WA_Whanmadan_A2_Nmd_0008" persistant="y" type="kill-npc" version="1" />
+	<record alias="329_1_kill-npc" id="329" job="job-none" max-value="100" npc-1="MH_WA_Whanmadan_A2_Nmd_0010" persistant="y" type="kill-npc" version="1" />
+	<record alias="330_1_kill-npc" id="330" job="job-none" max-value="100" npc-1="MH_WA_Whanmadan_A2_Nmd_0001" persistant="y" type="kill-npc" version="1" />
+	<record alias="331_1_kill-npc" id="331" job="job-none" max-value="100" npc-1="MH_WA_Whanmadan_A2_Nmd_0004" persistant="y" type="kill-npc" version="1" />
+	<record alias="332_1_kill-npc" id="332" job="job-none" max-value="100" npc-1="MH_WA_Whanmadan_A2_Nmd_0012" persistant="y" type="kill-npc" version="1" />
+	<record alias="333_1_kill-boss-npc" boss-npc="ME_WA_Whanmadan_A2_Boss_0001" id="333" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="334_1_kill-npc" id="334" job="job-none" max-value="100" npc-1="ME_WA_Whanmadan_A2_0015" persistant="y" type="kill-npc" version="1" />
+	<record alias="335_1_kill-npc" id="335" job="job-none" max-value="100" npc-1="ME_WA_Whanmadan_A2_0016" persistant="y" type="kill-npc" version="1" />
+	<record alias="336_1_kill-npc" id="336" job="job-none" max-value="100" npc-1="MH_WA_Whanmadan_A1_0006" npc-2="MH_WA_Whanmadan_A1_0007" npc-3="MH_WA_Whanmadan_A2_0006" npc-4="MH_WA_Whanmadan_A2_0007" persistant="y" type="kill-npc" version="1" />
+	<record alias="337_1_equip-item-brand-n" id="337" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="338_1_get-contribution-count" id="338" job="job-none" max-value="100" npc-1="ME_WC_DemonShadowBoss_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="339_1_quest-complete" id="339" job="job-none" max-value="100" persistant="y" quest="q_sub_1500" type="quest-complete" version="1" />
+	<record alias="340_1_quest-complete" id="340" job="job-none" max-value="100" persistant="y" quest="q_sub_1501" type="quest-complete" version="1" />
+	<record alias="341_1_quest-complete" id="341" job="job-none" max-value="100" persistant="y" quest="q_sub_1502" type="quest-complete" version="1" />
+	<record alias="342_1_use-gadget-to-npc" gadget="DK_FlameThrower_01" id="342" job="job-none" max-value="300" npc="ME_WC_YuRanM_0006" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="343_1_use-gadget-to-npc" gadget="DK_FreezingThrower_01" id="343" job="job-none" max-value="300" npc="ME_WC_YuRanM_0006" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="344_1_quest-complete" id="344" job="job-none" max-value="100" persistant="y" quest="q_sub_20042" type="quest-complete" version="1" />
+	<record alias="345_1_kill-pc" id="345" job="job-none" max-value="500" persistant="y" type="kill-pc" version="1" />
+	<record alias="346_1_get-contribution-count" id="346" job="job-none" max-value="1000" npc-1="ME_SA_BFF_MurimPileBunkerEmpire_0002" npc-2="ME_SA_BFF_HoncheonPileBunkerEmpire_0002" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="347_1_manipulate-env" env2-1="e_chest_5500hiddenstone_04" env2-2="e_chest_5500hiddenstone_05" env2-3="e_chest_5500hiddenstone_06" env2-4="e_chest_5500hiddenstone_07" env2-5="e_chest_5500hiddenstone_14" env2-6="e_chest_5500hiddenstone_15" env2-7="e_chest_5500hiddenstone_16" env2-8="e_chest_5500hiddenstone_17" id="347" job="job-none" max-value="100" persistant="y" type="manipulate-env" version="1" />
+	<record alias="348_1_get-contribution-count" id="348" job="job-none" max-value="100" npc-1="MH_SA_BFF_HonCheonMiner_0003" npc-2="MH_SA_BFF_MurimMiner_0003" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="349_1_get-contribution-count" id="349" job="job-none" max-value="100" npc-1="ME_SA_BFF_HoncheonChainKnuckleBandit_0001" npc-2="ME_SA_BFF_MuRimChainKnuckleBandit_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="350_1_get-contribution-count" id="350" job="job-none" max-value="100" npc-1="ME_SA_BFF_HoncheonChainKnuckleBandit_0003" npc-2="ME_SA_BFF_MuRimChainKnuckleBandit_0003" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="351_1_kill-npc" id="351" job="job-none" max-value="10" npc-1="ME_SA_BFF_SnowmanBoss_0001" persistant="y" type="kill-npc" version="1" />
+	<record alias="352_1_get-contribution-count" id="352" job="job-none" max-value="100" npc-1="ME_SA_InsectTribeStagBeetle_0001" npc-2="ME_SA_NokLimDo_0008" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="353_1_get-contribution-count" id="353" job="job-none" max-value="100" npc-1="ME_SA_Toad_0002" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="354_1_kill-npc" id="354" job="job-none" max-value="1000" npc-1="ME_SA_NokLimDo_0083" npc-2="ME_SA_FrogTribeCLeader_0003" persistant="y" type="kill-npc" version="1" />
+	<record alias="355_1_manipulate-env" env2-1="e_chest_NokLim_goldbox2_01" id="355" job="job-none" max-value="100" persistant="y" type="manipulate-env" version="1" />
+	<record alias="356_1_get-contribution-count" id="356" job="job-none" max-value="100" npc-1="ME_SA_SnakeSoldier_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="357_1_get-contribution-count" id="357" job="job-none" max-value="100" npc-1="ME_SA_SnakeSoldier_0002" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="358_1_get-contribution-count" id="358" job="job-none" max-value="100" npc-1="ME_SA_NokLimDo_0035" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="359_1_get-contribution-count" id="359" job="job-none" max-value="100" npc-1="ME_SA_NokLimDo_0036" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="360_1_get-contribution-count" id="360" job="job-none" max-value="100" npc-1="ME_SA_NokLimDo_0037" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="361_1_get-contribution-count" id="361" job="job-none" max-value="100" npc-1="ME_SA_Toad_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="362_1_get-contribution-count" id="362" job="job-none" max-value="100" npc-1="ME_SA_CrocodileSharkTribeC_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="363_1_get-contribution-count" id="363" job="job-none" max-value="100" npc-1="ME_SA_SeaMonsterBoss_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="364_1_get-contribution-count" id="364" job="job-none" max-value="100" npc-1="ME_SA_IronTurtleBig_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="365_1_kill-npc" id="365" job="job-none" max-value="20" npc-1="ME_SA_TreasureHunter_0001" persistant="y" type="kill-npc" version="1" />
+	<record alias="366_1_get-contribution-count" id="366" job="job-none" max-value="20" npc-1="ME_SA_bff_TreasureRat_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="367_1_equip-item-n" id="367" job="job-none" max-value="0" persistant="y" type="equip-item-n" version="1" />
+	<record alias="368_1_decompose-item" id="368" job="job-none" max-value="5000" persistant="y" type="decompose-item" version="1" />
+	<record alias="369_1_decompose-item" id="369" job="job-none" max-value="5000" persistant="y" type="decompose-item" version="1" />
+	<record alias="370_1_equip-item-brand-n" id="370" job="job-none" max-value="0" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="371_1_equip-item-brand-n" id="371" job="job-none" max-value="0" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="372_1_pc-mastery-level" id="372" job="job-none" max-value="0" type="pc-mastery-level" version="1" />
+	<record alias="373_1_kill-boss-npc" boss-npc="ME_CT_MeiOne_0009" id="373" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="374_1_kill-boss-npc" boss-npc="ME_CT_KangSiFat_0002" id="374" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="375_1_kill-boss-npc" boss-npc="ME_CT_ChuAngKa_0009" id="375" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="376_1_kill-boss-npc" boss-npc="ME_CT_SnowWoman_0001" id="376" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="377_1_growth-item" id="377" job="job-none" max-value="1" persistant="y" seed-item-brand="ItemBrand_General_Weapon_2230" type="growth-item" version="1" />
+	<record alias="378_1_awakening-item" id="378" item-brand="ItemBrand_General_Weapon_2230" job="job-none" max-value="1" persistant="y" type="awakening-item" version="1" />
+	<record alias="379_1_transform-item-brand" id="379" item-brand="ItemBrand_General_Weapon_2231" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="380_1_transform-item-brand" id="380" item-brand="ItemBrand_General_Weapon_2233" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="381_1_transform-item-brand" id="381" item-brand="ItemBrand_General_Weapon_2235" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="382_1_growth-item" id="382" job="job-none" max-value="1" persistant="y" seed-item-brand="ItemBrand_General_Ring_2094" type="growth-item" version="1" />
+	<record alias="383_1_awakening-item" id="383" item-brand="ItemBrand_General_Ring_2094" job="job-none" max-value="1" persistant="y" type="awakening-item" version="1" />
+	<record alias="384_1_transform-item-brand" id="384" item-brand="ItemBrand_General_Ring_2127" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="385_1_equip-item-brand-n" id="385" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="386_1_transform-item-brand" id="386" item-brand="ItemBrand_General_Earring_2037" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="387_1_equip-item-brand-n" id="387" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="388_1_transform-item-brand" id="388" item-brand="ItemBrand_General_Necklace_2074" job="job-none" max-value="1" persistant="y" type="transform-item-brand" version="1" />
+	<record alias="389_1_kill-boss-npc" boss-npc="ME_SA_GeoGeoBoong_0001" id="389" job="job-none" max-value="100" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="390_1_kill-npc" id="390" job="job-none" max-value="100" npc-1="ME_SA_Juno_0005" npc-2="ME_SA_Juno_0006" persistant="y" type="kill-npc" version="1" />
+	<record alias="391_1_get-contribution-count" id="391" job="job-none" max-value="100" npc-1="ME_WA_NightWindPlain_Boss_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="392_1_get-contribution-count" id="392" job="job-none" max-value="100" npc-1="ME_WA_NightWindPlain_Boss_0003" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="393_1_get-contribution-count" id="393" job="job-none" max-value="100" npc-1="ME_WA_NightWindPlain_Boss_0005" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="394_1_get-contribution-count" id="394" job="job-none" max-value="100" npc-1="ME_WA_NightWindPlain_Boss_0006" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="395_1_manipulate-env" env2-1="e_chest_airpurification_01" env2-2="e_chest_airpurification_02" env2-3="e_chest_airpurification_03" env2-4="e_chest_airpurification_04" env2-5="e_chest_airpurification_05" id="395" job="job-none" max-value="100" persistant="y" type="manipulate-env" version="1" />
+	<record alias="396_1_kill-npc" id="396" job="job-none" max-value="100" npc-1="ME_WA_NightWindPlain_0025" persistant="y" type="kill-npc" version="1" />
+	<record alias="397_1_equip-item-brand-n" id="397" job="검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="398_1_equip-item-brand-n" id="398" job="권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="399_1_equip-item-brand-n" id="399" job="역사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="400_1_equip-item-brand-n" id="400" job="기공사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="401_1_equip-item-brand-n" id="401" job="암살자" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="402_1_equip-item-brand-n" id="402" job="소환사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="403_1_equip-item-brand-n" id="403" job="귀검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="404_1_equip-item-brand-n" id="404" job="주술사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="405_1_get-contribution-count" id="405" job="job-none" max-value="100" npc-1="ME_WA_NightWindPlain_Boss_Mid_0002" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="406_1_kill-boss-npc" boss-npc="ME_C3_SeolOkGungBoss_0005" id="406" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="407_1_kill-boss-npc" boss-npc="ME_WA_Whanmadan_A2_Boss_0001" id="407" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="408_1_kill-boss-npc" boss-npc="ME_WB_FireGorilla_0002" id="408" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="409_1_kill-boss-npc" boss-npc="ME_WB_FireGorilla_0002" id="409" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="410_1_kill-boss-npc" boss-npc="ME_WB_FireGorilla_0002" id="410" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="411_1_manipulate-env" env2-1="e_chest_5927_switch_01" id="411" job="job-none" max-value="100" persistant="y" type="manipulate-env" version="1" />
+	<record alias="412_1_equip-item-brand-n" id="412" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="413_1_party-battle-challenge-count" id="413" job="job-none" max-value="2000" persistant="y" type="party-battle-challenge-count" version="1" />
+	<record alias="414_1_party-battle-win-count" id="414" job="job-none" max-value="1000" persistant="y" type="party-battle-win-count" version="1" />
+	<record alias="415_1_equip-item-brand-n" id="415" job="검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="416_1_equip-item-brand-n" id="416" job="권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="417_1_equip-item-brand-n" id="417" job="소환사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="418_1_equip-item-brand-n" id="418" job="기공사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="419_1_equip-item-brand-n" id="419" job="역사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="420_1_equip-item-brand-n" id="420" job="암살자" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="421_1_equip-item-brand-n" id="421" job="귀검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="422_1_equip-item-brand-n" id="422" job="주술사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="423_1_quest-complete" id="423" job="job-none" max-value="1" persistant="y" quest="q_sub_1295" type="quest-complete" version="1" />
+	<record alias="424_1_kill-boss-npc" boss-npc="ME_WC_DemonEmpire_0003" id="424" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="425_1_kill-boss-npc" boss-npc="ME_WC_DemonEmpire_0003" id="425" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="426_1_kill-boss-npc" boss-npc="ME_WC_PaCheonBoss_0003" id="426" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="427_1_kill-boss-npc" boss-npc="MH_WC_DemonTwins_0009" id="427" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="428_1_kill-boss-npc" boss-npc="ME_WC_PaCheonBoss_0001" id="428" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="429_1_kill-boss-npc" boss-npc="ME_WC_PaCheonBoss_0004" id="429" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="430_1_equip-item-brand-n" id="430" job="검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="431_1_equip-item-brand-n" id="431" job="권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="432_1_equip-item-brand-n" id="432" job="소환사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="433_1_equip-item-brand-n" id="433" job="기공사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="434_1_equip-item-brand-n" id="434" job="역사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="435_1_equip-item-brand-n" id="435" job="암살자" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="436_1_equip-item-brand-n" id="436" job="귀검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="437_1_equip-item-brand-n" id="437" job="주술사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="438_1_equip-item-brand-n" id="438" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="439_1_quest-complete" id="439" job="job-none" max-value="1" persistant="y" quest="q_sub_1294" type="quest-complete" version="1" />
+	<record alias="440_1_kill-boss-npc" boss-npc="ME_WC_DemonEmpire_0003" id="440" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="441_1_manipulate-env" env2-1="e_chest_4453_lever_01_2" env2-2="e_chest_4453_lever_01_3" env2-3="e_chest_4453_lever_01_4" env2-4="e_chest_4453_lever_01_7" env2-5="e_chest_4453_lever_01_1" id="441" job="job-none" max-value="50" persistant="y" type="manipulate-env" version="1" />
+	<record alias="442_1_kill-boss-npc" boss-npc="MH_WC_GiganToad_0001" id="442" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="443_1_equip-item-brand-n" id="443" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="444_1_equip-item-brand-n" id="444" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="445_1_equip-item-brand-n" id="445" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="446_1_equip-item-n" id="446" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="447_1_equip-item-n" id="447" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="448_1_equip-item-n" id="448" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="449_1_equip-item-n" id="449" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="450_1_use-grocery" id="450" job="job-none" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="451_1_kill-boss-npc" boss-npc="MH_WA_Musin_extend_0006" id="451" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="452_1_kill-boss-npc" boss-npc="MH_WA_Musin_extend_0006" id="452" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="453_1_kill-boss-npc" boss-npc="ME_WB_RuneMechaKingAsura_0001" id="453" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="454_1_kill-boss-npc" boss-npc="ME_WB_RuneMechaKingAsura_0001" id="454" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="455_1_kill-boss-npc" boss-npc="ME_WB_RuneMechaKingAsura_0001" id="455" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="456_1_equip-item-brand-n" id="456" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="457_1_equip-item-brand-n" id="457" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="458_1_equip-item-brand-n" id="458" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="459_1_equip-item-brand-n" id="459" job="기권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="460_1_equip-item-brand-n" id="460" job="기권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="461_1_equip-item-brand-n" id="461" job="기권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="462_1_kill-npc" id="462" job="job-none" max-value="100" npc-1="ME_SB_Deer_0001" persistant="y" type="kill-npc" version="1" />
+	<record alias="463_1_kill-npc" id="463" job="job-none" max-value="50" npc-1="ME_SB_Pest_0002" persistant="y" type="kill-npc" version="1" />
+	<record alias="464_1_kill-npc" id="464" job="job-none" max-value="100" npc-1="ME_SB_FishmanA_0004" npc-2="ME_SB_FishmanA_0005" persistant="y" type="kill-npc" version="1" />
+	<record alias="465_1_duel-bot-challenge-finished-floor" id="465" job="job-none" max-value="200" persistant="y" type="duel-bot-challenge-finished-floor" version="1" />
+	<record alias="466_1_duel-bot-challenge-finished-floor" id="466" job="job-none" max-value="200" persistant="y" type="duel-bot-challenge-finished-floor" version="1" />
+	<record alias="467_1_duel-bot-challenge-finished-floor" id="467" job="job-none" max-value="200" persistant="y" type="duel-bot-challenge-finished-floor" version="1" />
+	<record alias="468_1_duel-bot-challenge-finished-floor" id="468" job="job-none" max-value="200" persistant="y" type="duel-bot-challenge-finished-floor" version="1" />
+	<record alias="469_1_duel-bot-challenge-finished-floor" id="469" job="job-none" max-value="200" persistant="y" type="duel-bot-challenge-finished-floor" version="1" />
+	<record alias="881_1_kill-boss-npc" boss-npc="ME_WA_Whanmadan_A2_Boss_0001" for-newbie-care="y" id="881" job="job-none" max-value="10" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="882_1_kill-boss-npc" boss-npc="ME_WB_FireGorilla_0002" for-newbie-care="y" id="882" job="job-none" max-value="10" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="883_1_kill-boss-npc" boss-npc="ME_WC_DemonEmpire_0003" for-newbie-care="y" id="883" job="job-none" max-value="10" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="884_1_kill-boss-npc" boss-npc="ME_WB_RuneMechaKingAsura_0001" for-newbie-care="y" id="884" job="job-none" max-value="10" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="885_1_kill-boss-npc" boss-npc="MH_WA_Bubki_Boss_0001" for-newbie-care="y" id="885" job="job-none" max-value="10" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="886_1_kill-boss-npc" boss-npc="ME_WB_DemonJinTaePyeong_0001" for-newbie-care="y" id="886" job="job-none" max-value="10" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="470_1_kill-boss-npc" boss-npc="MH_WA_Bubki_Boss_0001" id="470" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="471_1_kill-boss-npc" boss-npc="MH_WA_Bubki_Boss_0001" id="471" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="472_1_kill-boss-npc" boss-npc="MH_WA_Bubki_Boss_0001" id="472" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="473_1_equip-item-brand-n" id="473" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="474_1_get-contribution-count" id="474" job="job-none" max-value="100" npc-1="ME_WC_ChainKnuckleBandit_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="475_1_get-contribution-count" id="475" job="job-none" max-value="100" npc-1="ME_WC_CrocodileSharkTribeC2_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="476_1_get-contribution-count" id="476" job="job-none" max-value="100" npc-1="ME_WC_GaneSha_0001" persistant="y" type="get-contribution-count" version="1" />
+	<record alias="477_1_kill-boss-npc" boss-npc="ME_WB_DemonJinTaePyeong_0001" id="477" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="478_1_kill-boss-npc" boss-npc="ME_WB_DemonJinTaePyeong_0001" id="478" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="479_1_kill-boss-npc" boss-npc="ME_WB_DemonJinTaePyeong_0001" id="479" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="480_1_party-battle-challenge-count" id="480" job="job-none" max-value="2000" persistant="y" type="party-battle-challenge-count" version="1" />
+	<record alias="481_1_party-battle-win-count" id="481" job="job-none" max-value="1000" persistant="y" type="party-battle-win-count" version="1" />
+	<record alias="482_1_tendency-quest-complete-count" id="482" job="job-none" max-value="500" persistant="y" tendency-id="1" type="tendency-quest-complete-count" version="1" />
+	<record alias="483_1_tendency-quest-complete-count" id="483" job="job-none" max-value="500" persistant="y" tendency-id="2" type="tendency-quest-complete-count" version="1" />
+	<record alias="484_1_tendency-quest-complete-count" id="484" job="job-none" max-value="500" persistant="y" tendency-id="3" type="tendency-quest-complete-count" version="1" />
+	<record alias="485_1_accumulate-field-play-point" id="485" job="job-none" max-value="500000" persistant="y" type="accumulate-field-play-point" version="1" />
+	<record alias="486_1_kill-boss-npc" boss-npc="ME_WC_StormTempleNamed_0001" id="486" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="487_1_kill-boss-npc" boss-npc="ME_WC_StormTempleNamed_0003" id="487" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="488_1_kill-boss-npc" boss-npc="ME_WC_StormTempleNamed_0004" id="488" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="489_1_quest-complete" id="489" job="job-none" max-value="1" persistant="y" quest="q_epic_1611" type="quest-complete" version="1" />
+	<record alias="490_1_quest-complete" id="490" job="job-none" max-value="1" persistant="y" quest="q_sub_1620" type="quest-complete" version="1" />
+	<record alias="491_1_quest-complete" id="491" job="job-none" max-value="1" persistant="y" quest="q_sub_1621" type="quest-complete" version="1" />
+	<record alias="492_1_equip-item-brand-n" id="492" job="검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="493_1_equip-item-brand-n" id="493" job="권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="494_1_equip-item-brand-n" id="494" job="소환사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="495_1_equip-item-brand-n" id="495" job="기공사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="496_1_equip-item-brand-n" id="496" job="역사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="497_1_equip-item-brand-n" id="497" job="암살자" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="498_1_equip-item-brand-n" id="498" job="귀검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="499_1_equip-item-brand-n" id="499" job="주술사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="500_1_equip-item-brand-n" id="500" job="기권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="501_1_use-grocery" id="501" job="job-none" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="502_1_kill-boss-npc" boss-npc="ME_WA_JeokpaewangRaid_Boss_0001" id="502" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="503_1_quest-complete" id="503" job="job-none" max-value="1" persistant="y" quest="q_sub_1632" type="quest-complete" version="1" />
+	<record alias="504_1_manipulate-env" env2-1="e_Chest_6361_Lever_01" id="504" job="job-none" max-value="1" persistant="y" type="manipulate-env" version="1" />
+	<record alias="505_1_equip-item-brand-n" id="505" job="검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="506_1_equip-item-brand-n" id="506" job="권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="507_1_equip-item-brand-n" id="507" job="소환사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="508_1_equip-item-brand-n" id="508" job="기공사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="509_1_equip-item-brand-n" id="509" job="역사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="510_1_equip-item-brand-n" id="510" job="암살자" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="511_1_equip-item-brand-n" id="511" job="귀검사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="512_1_equip-item-brand-n" id="512" job="주술사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="513_1_equip-item-brand-n" id="513" job="기권사" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="514_1_equip-item-n" id="514" job="job-none" max-value="1" persistant="y" type="equip-item-n" version="1" />
+	<record alias="545_1_kill-boss-npc" boss-npc="ME_WC_InfinityChamberBoss_0001" id="545" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="546_1_kill-boss-npc" boss-npc="ME_WC_SecretRoomBoss_0001" id="546" job="job-none" max-value="100" persistant="y" team-broadcast="y" type="kill-boss-npc" version="1" />
+	<record alias="1001_1_skill-training-subject-complete" id="1001" job="검사" max-value="1" persistant="y" skill-training-room-group="1" type="skill-training-subject-complete" version="1" />
+	<record alias="1002_1_skill-training-subject-complete" id="1002" job="검사" max-value="1" persistant="y" skill-training-room-group="2" type="skill-training-subject-complete" version="1" />
+	<record alias="1003_1_skill-training-subject-complete" id="1003" job="검사" max-value="1" persistant="y" skill-training-room-group="3" type="skill-training-subject-complete" version="1" />
+	<record alias="1004_1_skill-training-subject-complete" id="1004" job="검사" max-value="1" persistant="y" skill-training-room-group="4" type="skill-training-subject-complete" version="1" />
+	<record alias="1005_1_skill-training-subject-complete" id="1005" job="검사" max-value="1" persistant="y" skill-training-room-group="11" type="skill-training-subject-complete" version="1" />
+	<record alias="1006_1_skill-training-subject-complete" id="1006" job="검사" max-value="1" persistant="y" skill-training-room-group="12" type="skill-training-subject-complete" version="1" />
+	<record alias="1007_1_skill-training-subject-complete" id="1007" job="검사" max-value="1" persistant="y" skill-training-room-group="13" type="skill-training-subject-complete" version="1" />
+	<record alias="1008_1_skill-training-subject-complete" id="1008" job="검사" max-value="1" persistant="y" skill-training-room-group="14" type="skill-training-subject-complete" version="1" />
+	<record alias="1011_1_skill-training-subject-complete" id="1011" job="권사" max-value="1" persistant="y" skill-training-room-group="101" type="skill-training-subject-complete" version="1" />
+	<record alias="1012_1_skill-training-subject-complete" id="1012" job="권사" max-value="1" persistant="y" skill-training-room-group="102" type="skill-training-subject-complete" version="1" />
+	<record alias="1013_1_skill-training-subject-complete" id="1013" job="권사" max-value="1" persistant="y" skill-training-room-group="103" type="skill-training-subject-complete" version="1" />
+	<record alias="1014_1_skill-training-subject-complete" id="1014" job="권사" max-value="1" persistant="y" skill-training-room-group="104" type="skill-training-subject-complete" version="1" />
+	<record alias="1015_1_skill-training-subject-complete" id="1015" job="권사" max-value="1" persistant="y" skill-training-room-group="111" type="skill-training-subject-complete" version="1" />
+	<record alias="1016_1_skill-training-subject-complete" id="1016" job="권사" max-value="1" persistant="y" skill-training-room-group="112" type="skill-training-subject-complete" version="1" />
+	<record alias="1017_1_skill-training-subject-complete" id="1017" job="권사" max-value="1" persistant="y" skill-training-room-group="113" type="skill-training-subject-complete" version="1" />
+	<record alias="1018_1_skill-training-subject-complete" id="1018" job="권사" max-value="1" persistant="y" skill-training-room-group="114" type="skill-training-subject-complete" version="1" />
+	<record alias="1021_1_skill-training-subject-complete" id="1021" job="역사" max-value="1" persistant="y" skill-training-room-group="201" type="skill-training-subject-complete" version="1" />
+	<record alias="1022_1_skill-training-subject-complete" id="1022" job="역사" max-value="1" persistant="y" skill-training-room-group="202" type="skill-training-subject-complete" version="1" />
+	<record alias="1023_1_skill-training-subject-complete" id="1023" job="역사" max-value="1" persistant="y" skill-training-room-group="203" type="skill-training-subject-complete" version="1" />
+	<record alias="1024_1_skill-training-subject-complete" id="1024" job="역사" max-value="1" persistant="y" skill-training-room-group="204" type="skill-training-subject-complete" version="1" />
+	<record alias="1025_1_skill-training-subject-complete" id="1025" job="역사" max-value="1" persistant="y" skill-training-room-group="211" type="skill-training-subject-complete" version="1" />
+	<record alias="1026_1_skill-training-subject-complete" id="1026" job="역사" max-value="1" persistant="y" skill-training-room-group="212" type="skill-training-subject-complete" version="1" />
+	<record alias="1027_1_skill-training-subject-complete" id="1027" job="역사" max-value="1" persistant="y" skill-training-room-group="213" type="skill-training-subject-complete" version="1" />
+	<record alias="1028_1_skill-training-subject-complete" id="1028" job="역사" max-value="1" persistant="y" skill-training-room-group="214" type="skill-training-subject-complete" version="1" />
+	<record alias="1031_1_skill-training-subject-complete" id="1031" job="기공사" max-value="1" persistant="y" skill-training-room-group="301" type="skill-training-subject-complete" version="1" />
+	<record alias="1032_1_skill-training-subject-complete" id="1032" job="기공사" max-value="1" persistant="y" skill-training-room-group="302" type="skill-training-subject-complete" version="1" />
+	<record alias="1033_1_skill-training-subject-complete" id="1033" job="기공사" max-value="1" persistant="y" skill-training-room-group="303" type="skill-training-subject-complete" version="1" />
+	<record alias="1034_1_skill-training-subject-complete" id="1034" job="기공사" max-value="1" persistant="y" skill-training-room-group="304" type="skill-training-subject-complete" version="1" />
+	<record alias="1035_1_skill-training-subject-complete" id="1035" job="기공사" max-value="1" persistant="y" skill-training-room-group="311" type="skill-training-subject-complete" version="1" />
+	<record alias="1036_1_skill-training-subject-complete" id="1036" job="기공사" max-value="1" persistant="y" skill-training-room-group="312" type="skill-training-subject-complete" version="1" />
+	<record alias="1037_1_skill-training-subject-complete" id="1037" job="기공사" max-value="1" persistant="y" skill-training-room-group="313" type="skill-training-subject-complete" version="1" />
+	<record alias="1038_1_skill-training-subject-complete" id="1038" job="기공사" max-value="1" persistant="y" skill-training-room-group="314" type="skill-training-subject-complete" version="1" />
+	<record alias="1041_1_skill-training-subject-complete" id="1041" job="암살자" max-value="1" persistant="y" skill-training-room-group="401" type="skill-training-subject-complete" version="1" />
+	<record alias="1042_1_skill-training-subject-complete" id="1042" job="암살자" max-value="1" persistant="y" skill-training-room-group="402" type="skill-training-subject-complete" version="1" />
+	<record alias="1043_1_skill-training-subject-complete" id="1043" job="암살자" max-value="1" persistant="y" skill-training-room-group="403" type="skill-training-subject-complete" version="1" />
+	<record alias="1044_1_skill-training-subject-complete" id="1044" job="암살자" max-value="1" persistant="y" skill-training-room-group="404" type="skill-training-subject-complete" version="1" />
+	<record alias="1045_1_skill-training-subject-complete" id="1045" job="암살자" max-value="1" persistant="y" skill-training-room-group="411" type="skill-training-subject-complete" version="1" />
+	<record alias="1046_1_skill-training-subject-complete" id="1046" job="암살자" max-value="1" persistant="y" skill-training-room-group="412" type="skill-training-subject-complete" version="1" />
+	<record alias="1047_1_skill-training-subject-complete" id="1047" job="암살자" max-value="1" persistant="y" skill-training-room-group="413" type="skill-training-subject-complete" version="1" />
+	<record alias="1048_1_skill-training-subject-complete" id="1048" job="암살자" max-value="1" persistant="y" skill-training-room-group="414" type="skill-training-subject-complete" version="1" />
+	<record alias="1051_1_skill-training-subject-complete" id="1051" job="소환사" max-value="1" persistant="y" skill-training-room-group="501" type="skill-training-subject-complete" version="1" />
+	<record alias="1052_1_skill-training-subject-complete" id="1052" job="소환사" max-value="1" persistant="y" skill-training-room-group="502" type="skill-training-subject-complete" version="1" />
+	<record alias="1053_1_skill-training-subject-complete" id="1053" job="소환사" max-value="1" persistant="y" skill-training-room-group="503" type="skill-training-subject-complete" version="1" />
+	<record alias="1054_1_skill-training-subject-complete" id="1054" job="소환사" max-value="1" persistant="y" skill-training-room-group="504" type="skill-training-subject-complete" version="1" />
+	<record alias="1055_1_skill-training-subject-complete" id="1055" job="소환사" max-value="1" persistant="y" skill-training-room-group="511" type="skill-training-subject-complete" version="1" />
+	<record alias="1056_1_skill-training-subject-complete" id="1056" job="소환사" max-value="1" persistant="y" skill-training-room-group="512" type="skill-training-subject-complete" version="1" />
+	<record alias="1057_1_skill-training-subject-complete" id="1057" job="소환사" max-value="1" persistant="y" skill-training-room-group="513" type="skill-training-subject-complete" version="1" />
+	<record alias="1058_1_skill-training-subject-complete" id="1058" job="소환사" max-value="1" persistant="y" skill-training-room-group="514" type="skill-training-subject-complete" version="1" />
+	<record alias="1061_1_skill-training-subject-complete" id="1061" job="귀검사" max-value="1" persistant="y" skill-training-room-group="601" type="skill-training-subject-complete" version="1" />
+	<record alias="1062_1_skill-training-subject-complete" id="1062" job="귀검사" max-value="1" persistant="y" skill-training-room-group="602" type="skill-training-subject-complete" version="1" />
+	<record alias="1063_1_skill-training-subject-complete" id="1063" job="귀검사" max-value="1" persistant="y" skill-training-room-group="603" type="skill-training-subject-complete" version="1" />
+	<record alias="1064_1_skill-training-subject-complete" id="1064" job="귀검사" max-value="1" persistant="y" skill-training-room-group="604" type="skill-training-subject-complete" version="1" />
+	<record alias="1065_1_skill-training-subject-complete" id="1065" job="귀검사" max-value="1" persistant="y" skill-training-room-group="611" type="skill-training-subject-complete" version="1" />
+	<record alias="1066_1_skill-training-subject-complete" id="1066" job="귀검사" max-value="1" persistant="y" skill-training-room-group="612" type="skill-training-subject-complete" version="1" />
+	<record alias="1067_1_skill-training-subject-complete" id="1067" job="귀검사" max-value="1" persistant="y" skill-training-room-group="613" type="skill-training-subject-complete" version="1" />
+	<record alias="1068_1_skill-training-subject-complete" id="1068" job="귀검사" max-value="1" persistant="y" skill-training-room-group="614" type="skill-training-subject-complete" version="1" />
+	<record alias="1071_1_skill-training-subject-complete" id="1071" job="주술사" max-value="1" persistant="y" skill-training-room-group="701" type="skill-training-subject-complete" version="1" />
+	<record alias="1072_1_skill-training-subject-complete" id="1072" job="주술사" max-value="1" persistant="y" skill-training-room-group="702" type="skill-training-subject-complete" version="1" />
+	<record alias="1073_1_skill-training-subject-complete" id="1073" job="주술사" max-value="1" persistant="y" skill-training-room-group="703" type="skill-training-subject-complete" version="1" />
+	<record alias="1074_1_skill-training-subject-complete" id="1074" job="주술사" max-value="1" persistant="y" skill-training-room-group="704" type="skill-training-subject-complete" version="1" />
+	<record alias="1075_1_skill-training-subject-complete" id="1075" job="주술사" max-value="1" persistant="y" skill-training-room-group="711" type="skill-training-subject-complete" version="1" />
+	<record alias="1076_1_skill-training-subject-complete" id="1076" job="주술사" max-value="1" persistant="y" skill-training-room-group="712" type="skill-training-subject-complete" version="1" />
+	<record alias="1077_1_skill-training-subject-complete" id="1077" job="주술사" max-value="1" persistant="y" skill-training-room-group="713" type="skill-training-subject-complete" version="1" />
+	<record alias="1078_1_skill-training-subject-complete" id="1078" job="주술사" max-value="1" persistant="y" skill-training-room-group="714" type="skill-training-subject-complete" version="1" />
+	<record alias="1081_1_skill-training-subject-complete" id="1081" job="기권사" max-value="1" persistant="y" skill-training-room-group="801" type="skill-training-subject-complete" version="1" />
+	<record alias="1082_1_skill-training-subject-complete" id="1082" job="기권사" max-value="1" persistant="y" skill-training-room-group="802" type="skill-training-subject-complete" version="1" />
+	<record alias="1083_1_skill-training-subject-complete" id="1083" job="기권사" max-value="1" persistant="y" skill-training-room-group="803" type="skill-training-subject-complete" version="1" />
+	<record alias="1084_1_skill-training-subject-complete" id="1084" job="기권사" max-value="1" persistant="y" skill-training-room-group="804" type="skill-training-subject-complete" version="1" />
+	<record alias="1085_1_skill-training-subject-complete" id="1085" job="기권사" max-value="1" persistant="y" skill-training-room-group="811" type="skill-training-subject-complete" version="1" />
+	<record alias="1086_1_skill-training-subject-complete" id="1086" job="기권사" max-value="1" persistant="y" skill-training-room-group="812" type="skill-training-subject-complete" version="1" />
+	<record alias="1087_1_skill-training-subject-complete" id="1087" job="기권사" max-value="1" persistant="y" skill-training-room-group="813" type="skill-training-subject-complete" version="1" />
+	<record alias="1088_1_skill-training-subject-complete" id="1088" job="기권사" max-value="1" persistant="y" skill-training-room-group="814" type="skill-training-subject-complete" version="1" />
+	<record alias="902_1_BM_use-grocery" id="902" job="검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="902_1_KF_use-grocery" id="902" job="권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="902_1_DE_use-grocery" id="902" job="역사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="902_1_FM_use-grocery" id="902" job="기공사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="902_1_AS_use-grocery" id="902" job="암살자" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="902_1_SU_use-grocery" id="902" job="소환사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="902_1_SM_use-grocery" id="902" job="귀검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="902_1_WL_use-grocery" id="902" job="주술사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="902_1_SF_use-grocery" id="902" job="기권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="903_1_BM_use-grocery" id="903" job="검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="903_1_KF_use-grocery" id="903" job="권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="903_1_DE_use-grocery" id="903" job="역사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="903_1_FM_use-grocery" id="903" job="기공사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="903_1_AS_use-grocery" id="903" job="암살자" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="903_1_SU_use-grocery" id="903" job="소환사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="903_1_SM_use-grocery" id="903" job="귀검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="903_1_WL_use-grocery" id="903" job="주술사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="903_1_SF_use-grocery" id="903" job="기권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="906_1_BM_use-grocery" id="906" job="검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="906_1_KF_use-grocery" id="906" job="권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="906_1_DE_use-grocery" id="906" job="역사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="906_1_FM_use-grocery" id="906" job="기공사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="906_1_AS_use-grocery" id="906" job="암살자" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="906_1_SU_use-grocery" id="906" job="소환사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="906_1_SM_use-grocery" id="906" job="귀검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="906_1_WL_use-grocery" id="906" job="주술사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="906_1_SF_use-grocery" id="906" job="기권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="907_1_BM_use-grocery" id="907" job="검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="907_1_KF_use-grocery" id="907" job="권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="907_1_DE_use-grocery" id="907" job="역사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="907_1_FM_use-grocery" id="907" job="기공사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="907_1_AS_use-grocery" id="907" job="암살자" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="907_1_SU_use-grocery" id="907" job="소환사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="907_1_SM_use-grocery" id="907" job="귀검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="907_1_WL_use-grocery" id="907" job="주술사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="907_1_SF_use-grocery" id="907" job="기권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="909_1_BM_use-grocery" id="909" job="검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="909_1_KF_use-grocery" id="909" job="권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="909_1_DE_use-grocery" id="909" job="역사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="909_1_FM_use-grocery" id="909" job="기공사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="909_1_AS_use-grocery" id="909" job="암살자" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="909_1_SU_use-grocery" id="909" job="소환사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="909_1_SM_use-grocery" id="909" job="귀검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="909_1_WL_use-grocery" id="909" job="주술사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="909_1_SF_use-grocery" id="909" job="기권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="910_1_BM_use-grocery" id="910" job="검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="910_1_KF_use-grocery" id="910" job="권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="910_1_DE_use-grocery" id="910" job="역사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="910_1_FM_use-grocery" id="910" job="기공사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="910_1_AS_use-grocery" id="910" job="암살자" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="910_1_SU_use-grocery" id="910" job="소환사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="910_1_SM_use-grocery" id="910" job="귀검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="910_1_WL_use-grocery" id="910" job="주술사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="910_1_SF_use-grocery" id="910" job="기권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="911_1_BM_use-grocery" id="911" job="검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="911_1_KF_use-grocery" id="911" job="권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="911_1_DE_use-grocery" id="911" job="역사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="911_1_FM_use-grocery" id="911" job="기공사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="911_1_AS_use-grocery" id="911" job="암살자" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="911_1_SU_use-grocery" id="911" job="소환사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="911_1_SM_use-grocery" id="911" job="귀검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="911_1_WL_use-grocery" id="911" job="주술사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="911_1_SF_use-grocery" id="911" job="기권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="912_1_BM_use-grocery" id="912" job="검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="912_1_KF_use-grocery" id="912" job="권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="912_1_DE_use-grocery" id="912" job="역사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="912_1_FM_use-grocery" id="912" job="기공사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="912_1_AS_use-grocery" id="912" job="암살자" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="912_1_SU_use-grocery" id="912" job="소환사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="912_1_SM_use-grocery" id="912" job="귀검사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="912_1_WL_use-grocery" id="912" job="주술사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="912_1_SF_use-grocery" id="912" job="기권사" max-value="1" persistant="y" type="use-grocery" version="1" />
+	<record alias="547_1_kill-boss-npc" boss-npc="MH_WC_DesperadoIsland_0004" id="547" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="548_1_kill-boss-npc" boss-npc="MH_WC_DesperadoIsland_0004" id="548" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="549_1_use-gadget-to-npc" gadget="SpeargunA_In01" id="549" job="job-none" max-value="1000" npc="ME_WC_DesperadoIsland_0005" persistant="y" type="use-gadget-to-npc" version="1" />
+	<record alias="550_1_kill-boss-npc" boss-npc="MH_WC_DesperadoIsland_0004" id="550" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="551_1_kill-boss-npc" boss-npc="ME_WB_ElderEnt_0001" id="551" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="552_1_kill-boss-npc" boss-npc="ME_WB_ElderEnt_0001" id="552" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="553_1_kill-boss-npc" boss-npc="ME_WB_ElderEnt_0001" id="553" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="554_1_quest-complete" id="554" job="job-none" max-value="1" persistant="y" quest="q_epic_1657" type="quest-complete" version="1" />
+	<record alias="555_1_equip-item-brand-n" id="555" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="556_1_equip-item-brand-n" id="556" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="557_1_equip-item-brand-n" id="557" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="558_1_equip-item-brand-n" id="558" job="job-none" max-value="1" persistant="y" type="equip-item-brand-n" version="1" />
+	<record alias="559_1_kill-boss-npc" boss-npc="MH_WA_Hookcanyon_Boss_0001" id="559" job="job-none" max-value="1000" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="560_1_kill-boss-npc" boss-npc="MH_WA_Hookcanyon_Boss_0001" id="560" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="561_1_kill-boss-npc" boss-npc="MH_WA_Hookcanyon_Boss_0001" id="561" job="job-none" max-value="1" persistant="y" type="kill-boss-npc" version="1" />
+	<record alias="562_1_kill-npc" id="562" job="job-none" max-value="100" npc-1="ME_WC_KittyCats_0001" persistant="y" type="kill-npc" version="1" />
+	<record alias="563_1_kill-npc" id="563" job="job-none" max-value="100" npc-1="ME_WC_KittyCats_0002" persistant="y" type="kill-npc" version="1" />
+	<record alias="564_1_kill-npc" id="564" job="job-none" max-value="100" npc-1="ME_WC_KittyCats_0003" persistant="y" type="kill-npc" version="1" />
+</table>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1612.xml-->
+  <quest alias="q_epic_1612" broadcast-category="field" category="epic" completed-list="y" id="1612" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object="npc:ch_sb_gunmahye_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_1612_1" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="none" zone-1="Zone_Epic8_BuYuHamDae_D">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_wa_cheolmugoe_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1612_2" type="talk" />
+        <case object="zone:Zone_Epic8_BuYuHamDae_D" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1612_02" type="enter-zone" />
+        <case object="npc:ch_sb_gunmahye_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_1612_3" rollback="leave-zone" zone-1="Zone_Epic8_HwangHu">
+      <mission id="4" required-register-value="1">
+        <case object="npc:mh_wa_epic8_0009" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Epic8_HwangHu" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1612_03" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="Zone_Epic8_HwangHu" />
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1612_4" rollback="leave-zone" zone-1="Zone_Epic8_HwangHu">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ME_WA_Dummy_0032" party-broadcast="n" progress-mission="y" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="Zone_Epic8_HwangHu" />
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1612_5" rollback="leave-zone" zone-1="Zone_Epic8_HwangHu">
+      <mission id="6" required-register-value="30">
+        <case object2="npc:MH_WA_Epic8_HockRyuGo_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WA_Epic8_HockRyuGo_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WA_Epic8_HockRyuGo_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WA_Epic8_HockRyuGo_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="Zone_Epic8_HwangHu" />
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_1612_6" rollback="leave-zone" zone-1="Zone_Epic8_HwangHu">
+      <mission id="7" required-register-value="1">
+        <case convoy="epic_1638_con_2" object="npc:mh_wa_epic8_0009" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="Zone_Epic8_HwangHu" />
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_1612_7" rollback="leave-zone" zone-1="Zone_Epic8_HwangHu">
+      <mission id="8" required-register-value="1">
+        <case convoy="epic_1638_con_2" object="npc:mh_wa_epic8_0009" party-broadcast="n" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="Zone_Epic8_HwangHu" />
+    </mission-step>
+    <mission-step id="9" quest-decision="qd_1612_8" rollback="none" zone-1="Zone_Epic8_BuYuHamDae_D">
+      <mission id="9" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1612_final_set1">
+        <case object="npc:ch_wa_cheolmugoe_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Epic8_BuYuHamDae_D" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1612_08" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="2" zone="zone_GeonWon_BuYuHamDae_4_D">
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="9" zone-index="2" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_1638" />
+    </completion>
+    <mission-step hide="y" id="3" quest-decision="qd_1612_9" rollback="none" zone-1="Zone_Epic8_HwangHu">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ME_WA_Dummy_0059" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="npc:ch_wa_cheolmugoe_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1612_2" type="talk" />
+        <case object="zone:Zone_Epic8_BuYuHamDae_D" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1612_08" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

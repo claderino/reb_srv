@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1641.xml-->
+  <quest alias="q_epic_1641" broadcast-category="field" category="epic" completed-list="y" id="1641" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <completion>
+      <next-quest quest="q_epic_1642" />
+    </completion>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_ChungGak_0017" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="npc:MH_WA_Epic8_EunGwangIl_0011" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_ChungGak_0017" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="4">
+        <case object2="npc:ME_WA_Epic8_Bubgi_0015" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0014" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0013" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0012" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0011" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0010" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0009" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0008" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0007" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0006" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0005" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0004" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0003" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0002" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_Bubgi_0001" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:ME_WA_Epic8_0273" party-broadcast="y" progress-mission="y" progress-value="3" type="loot" />
+        <case object2="npc:ME_WA_Epic8_0272" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" rollback="leave-zone">
+      <mission id="6" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_DokGoGeom_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" zone-1="Zone_6505_BuYuHamDaeFalling" />
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone">
+      <mission id="7" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_ChinChin_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" zone-1="Zone_6505_BuYuHamDaeFalling" />
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_0080" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="npc:MH_WA_Epic8_BeonA_0010" party-broadcast="n" type="approach" />
+        <case object="npc:MH_WA_Epic8_BeonYang_0010" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="12">
+      <mission id="12" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_0080" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="13">
+      <mission id="13" required-register-value="1">
+        <case object="zone:Zone_6506_JaKyungDan_ChoSo" party-broadcast="n" progress-mission="y" quest-decision="qd_1641_010" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="14" rollback="leave-zone">
+      <mission id="14" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1641_final_set1">
+        <case object="npc:MH_WA_Epic8_EunGwangIl_0007" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="13" zone-1="Zone_6506_JaKyungDan_ChoSo" />
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="zone:Zone_6505_BuYuHamDaeFalling" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="Zone_6504_BuYuHamDaeFalling_Default">
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_EunGwangIl_0011" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_BeonA_0010" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:MH_WA_Epic8_BeonYang_0010" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="5">
+        <case object2="zoneenv2:e_chest_6501_flower_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object="npc:MH_WA_Epic8_BeonA_0010" party-broadcast="n" type="approach" />
+        <case object="npc:MH_WA_Epic8_BeonYang_0010" party-broadcast="n" type="approach" />
+        <case object2="zoneenv2:e_chest_6501_flower_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6501_flower_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6501_flower_04" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6501_flower_05" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6501_flower_06" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6501_flower_07" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6501_flower_08" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6501_flower_09" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_6501_flower_10" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case object="npc:MH_WA_Epic8_BeonA_0010" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:MH_WA_Epic8_BeonYang_0010" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

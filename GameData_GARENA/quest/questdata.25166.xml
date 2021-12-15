@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.25166.xml-->
+  <quest alias="q_sub_25166" attraction-1="raid-dungeon:raid_infinitychamberraid" broadcast-category="field" category="attraction" completed-list="n" id="25166" max-repeat="-1" save-type="nothing">
+    <acquisition level="50" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:me_wc_infinitychamberboss_0001" party-broadcast="n" progress-mission="y" team-broadcast="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="25166_final_set1">
+        <case fee="n" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

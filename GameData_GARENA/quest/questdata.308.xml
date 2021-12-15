@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.308.xml-->
+  <quest alias="q_epic_308" broadcast-category="field" category="epic" completed-list="y" district-1="jeryoungrim" id="308" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1" quest-decision="qd_308_1" zone-1="zone_mangjasup_dun_3">
+      <mission id="1" required-register-value="1">
+        <case object="npc:mh_nokrimdo_0016" object2="npc:mh_nokrimdo_0016" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_jakyoungdan_029" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_309" />
+    </completion>
+    <mission-step id="2" quest-decision="qd_308_2" rollback="leave-zone" zone-1="zone_mangjasup_dun_3">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CE_Paper_0002" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+      </mission>
+      <mission-step-fail zone-1="zone_mangjasup_dun_3" />
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1" reward-1="308_final_set1">
+        <case object="npc:ctzn_jinm_jakyungdan_yeokgisan_kff_001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_jakyoungdan_029" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

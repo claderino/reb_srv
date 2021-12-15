@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ItemData" release-side="server" type="market-register-amount-tax-rate" version="0.1">
+  <!--marketregisteramounttaxratedata.xml-->
+	<record max-amount="5" min-amount="1" tax-rate="0" />
+	<record max-amount="10" min-amount="6" tax-rate="1" />
+	<record max-amount="50" min-amount="11" tax-rate="2" />
+	<record max-amount="100" min-amount="51" tax-rate="3" />
+	<record max-amount="250" min-amount="101" tax-rate="5" />
+	<record max-amount="500" min-amount="251" tax-rate="7" />
+	<record max-amount="1000" min-amount="501" tax-rate="10" />
+</table>

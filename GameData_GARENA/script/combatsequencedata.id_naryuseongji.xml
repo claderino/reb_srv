@@ -1,0 +1,2454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.id_naryuseongji.xml-->
+
+	
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaKingAsura_0001_CS1" seq-start-social="1" transit-cond-1="manual">
+		
+		<normal combat-distance="1" id="1" special-1="1">
+
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Slap" type="use-skill" />
+			<action immune-breaker-disable="y" type="select">
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress1" type="use-skill" />
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress2" type="use-skill" />
+			</action>
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Area360" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Laser" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Clap" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" type="use-skill" />
+		</normal>
+
+		
+		
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="45000">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="NaryuSungJid_msg_22" type="do-social" />
+			
+			<action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action ground-pattern-1="pattern_49" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands" type="boss-multiground-attack" />
+			
+			
+			<action ground-pattern-1="pattern_50" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands2" type="boss-multiground-attack" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire1" type="boss-repeater-attack" />
+			
+			<action combo="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire2" type="boss-repeater-attack" />
+		</special>
+
+		
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+
+			
+			<action event-step="11" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target-area="6205_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_36" type="do-social" />
+
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness" type="use-skill" />
+
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal_End" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Judgement" type="use-skill" />
+
+			
+			
+			
+			<action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Berserk" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action event-step="14" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DispelFreeze" type="use-skill" />
+      
+			<action event-step="15" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="3" max-count="0">
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HateDown" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="4" max-count="1">
+      
+      <action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="5" max-count="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaKingAsura_0001_CS2" transit-cond-1="manual">
+		
+		<normal combat-distance="1" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Slap" type="use-skill" />
+			<action immune-breaker-disable="y" type="select">
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress1" type="use-skill" />
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress2" type="use-skill" />
+			</action>
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Area360" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Laser" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_WarpDash_Back" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Clap" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" type="use-skill" />
+		</normal>
+
+		
+		
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="45000">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="NaryuSungJid_msg_22" type="do-social" />
+			
+			<action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action ground-pattern-1="pattern_49" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands" type="boss-multiground-attack" />
+			
+			
+			<action ground-pattern-1="pattern_50" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands2" type="boss-multiground-attack" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire1" type="boss-repeater-attack" />
+			
+			<action combo="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire2" type="boss-repeater-attack" />
+		</special>
+
+		
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+
+			
+			<action event-step="11" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target-area="6205_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_36" type="do-social" />
+
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness" type="use-skill" />
+
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal_End" type="use-skill" />
+
+			
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Judgement" type="use-skill" />
+
+			
+			
+			
+			<action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Berserk" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action event-step="14" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DispelFreeze" type="use-skill" />
+			
+			<action event-step="16" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="3" max-count="0">
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HateDown" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="4" max-count="1">
+			
+			<action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="5" max-count="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaKingAsura_0001_CS3" transit-cond-1="manual">
+		
+		<normal combat-distance="1" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Slap" type="use-skill" />
+			<action immune-breaker-disable="y" type="select">
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress1" type="use-skill" />
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress2" type="use-skill" />
+			</action>
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Area360" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Laser" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_WarpDash_Back" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Clap" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" type="use-skill" />
+		</normal>
+
+		
+		
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="45000">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="NaryuSungJid_msg_22" type="do-social" />
+			
+			<action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action ground-pattern-1="pattern_49" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands" type="boss-multiground-attack" />
+			
+			
+			<action ground-pattern-1="pattern_50" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands2" type="boss-multiground-attack" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire1" type="boss-repeater-attack" />
+			
+			<action combo="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire2" type="boss-repeater-attack" />
+		</special>
+
+		
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+
+			
+			<action event-step="11" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target-area="6205_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_36" type="do-social" />
+
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness" type="use-skill" />
+
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal_End" type="use-skill" />
+
+			
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Judgement" type="use-skill" />
+
+			
+			
+			
+			<action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Berserk" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action event-step="14" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DispelFreeze" type="use-skill" />
+			
+			<action event-step="17" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="3" max-count="0">
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HateDown" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="4" max-count="1">
+			
+			<action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="5" max-count="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaKingAsura_0001_CS4" transit-cond-1="manual">
+		
+		<normal combat-distance="1" id="1" special-1="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Slap" type="use-skill" />
+			<action immune-breaker-disable="y" type="select">
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress1" type="use-skill" />
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress2" type="use-skill" />
+			</action>
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Area360" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Laser" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_WarpDash_Back" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Clap" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" type="use-skill" />
+		</normal>
+
+		
+		
+		<special combat-distance="7" id="1" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="NaryuSungJid_msg_22" type="do-social" />
+			
+			<action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action ground-pattern-1="pattern_49" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands" type="boss-multiground-attack" />
+			
+			
+			<action ground-pattern-1="pattern_50" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands2" type="boss-multiground-attack" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire1" type="boss-repeater-attack" />
+			
+			<action combo="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire2" type="boss-repeater-attack" />
+		</special>
+
+		
+		
+		<special combat-distance="7" id="2" max-count="0" min-delay="45000" start-delay="45000">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+
+			
+			<action event-step="11" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target-area="6205_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_36" type="do-social" />
+
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness" type="use-skill" />
+
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal_End" type="use-skill" />
+
+			
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Judgement" type="use-skill" />
+
+			
+			
+			
+			<action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Berserk" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action event-step="14" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DispelFreeze" type="use-skill" />
+			
+			<action event-step="27" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="3" max-count="0">
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HateDown" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="4" max-count="1">
+      
+      <action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="5" max-count="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaKingAsura_0001_CS5" transit-cond-1="manual">
+		
+		<normal combat-distance="1" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Slap" type="use-skill" />
+			<action immune-breaker-disable="y" type="select">
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress1" type="use-skill" />
+				
+				<action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress2" type="use-skill" />
+			</action>
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Area360" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Laser" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_WarpDash_Back" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Clap" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" type="use-skill" />
+		</normal>
+
+		
+		
+		<special combat-distance="7" id="1" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="NaryuSungJid_msg_22" type="do-social" />
+			
+			<action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action ground-pattern-1="pattern_49" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands" type="boss-multiground-attack" />
+			
+			
+			<action ground-pattern-1="pattern_50" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands2" type="boss-multiground-attack" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire1" type="boss-repeater-attack" />
+			
+			<action combo="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire2" type="boss-repeater-attack" />
+		</special>
+
+		
+		
+		<special combat-distance="7" id="2" max-count="0" min-delay="45000" start-delay="450000">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+
+			
+			<action event-step="11" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target-area="6205_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_36" type="do-social" />
+
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness" type="use-skill" />
+
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal_End" type="use-skill" />
+
+			
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Judgement" type="use-skill" />
+
+			
+			
+			
+			<action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Berserk" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action event-step="14" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DispelFreeze" type="use-skill" />
+			
+			<action event-step="27" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="3" max-count="0">
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HateDown" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="4" max-count="1">
+      
+      <action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+
+		
+		<special combat-distance="7" id="5" max-count="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaKingAsura_0001_Berserk_CS">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_28" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0205_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action ground-pattern-1="pattern_51" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands_Dummy" type="boss-multiground-attack" />
+            
+			<action combo="y" ground-pattern-1="pattern_53" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands_Dummy" type="boss-multiground-attack" />
+            
+			<action combo="y" ground-pattern-1="pattern_55" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands_Dummy" type="boss-multiground-attack" />
+			
+			<action combo="y" ground-pattern-1="pattern_57" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands_Dummy" type="boss-multiground-attack" />
+			
+		</normal>
+	</combat-sequence>
+
+
+	
+	<combat-sequence alias="ME_WB_AsuraEye_0001_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action social="Serveryaw" target="zonenpcsquad:s_6205_2:reg-1" type="do-social" />
+		</normal>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_AsuraEye_0003_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action social="Serveryaw" target="zonenpcsquad:s_6205_2:reg-2" type="do-social" />
+		</normal>
+	</combat-sequence>
+
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0200_CS1" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1">
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_JudgementGround_D" target="event:npc-combat-action:npc" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action event-step="99" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_JudgementGround_D_Explo" target="event:npc-combat-action:npc" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0204_CS1" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1">
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_JudgementGround_L" target="event:npc-combat-action:npc" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action event-step="99" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_JudgementGround_L_Explo" target="event:npc-combat-action:npc" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+
+	
+	
+	<combat-sequence alias="ME_WB_Dummy_0201_CS1" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DarkSeed_Tick" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action event-step="5" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Dummy_Hate" type="use-skill" />
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+			<action event-step="1" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+		
+		<special combat-distance="7" id="2" max-count="1">
+			
+			<action except-summoned="y" except-top-hate="y" gather-count="5" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_Dummy_0201_CS2" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DarkSeed_Tick" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action event-step="5" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Dummy_Hate" type="use-skill" />
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action event-step="2" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+		
+		<special combat-distance="7" id="2" max-count="1">
+			
+			<action except-summoned="y" except-top-hate="y" gather-count="5" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_Dummy_0201_CS3" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DarkSeed_Tick" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action event-step="5" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Dummy_Hate" type="use-skill" />
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="near" immune-breaker-disable="y" type="gather-targets" />
+			<action event-step="3" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+		
+		<special combat-distance="7" id="2" max-count="1">
+			
+			<action except-summoned="y" except-top-hate="y" gather-count="5" gather-rule="near" immune-breaker-disable="y" type="gather-targets" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_Dummy_0201_CS4" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DarkSeed_Tick" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action event-step="5" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Dummy_Hate" type="use-skill" />
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="min-hate" immune-breaker-disable="y" type="gather-targets" />
+			<action event-step="4" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+		
+		<special combat-distance="7" id="2" max-count="1">
+			
+			<action except-summoned="y" except-top-hate="y" gather-count="5" gather-rule="min-hate" immune-breaker-disable="y" type="gather-targets" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0199_CS1" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Dummy" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Dummy_Start" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0199_CS2" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Dummy_End" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0199_CS3" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			
+			<action event-step="99" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Dummy" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	
+	<combat-sequence alias="ME_WB_Dummy_0199_CS4" hide-seq-start="y" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			
+			<action event-step="99" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Dummy" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0206_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Dummy_Tick" type="use-skill" />
+		</normal>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0209_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" target="event:npc-combat-action:target" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False2" type="use-skill" />
+		</special>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_Dummy_0210_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" target="event:npc-combat-action:target" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False" type="use-skill" />
+		</special>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_Dummy_0211_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" target="event:npc-combat-action:target" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False" type="use-skill" />
+		</special>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_Dummy_0212_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" target="event:npc-combat-action:target" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False2" type="use-skill" />
+		</special>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_Dummy_0213_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" target="event:npc-combat-action:target" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False" type="use-skill" />
+		</special>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_Dummy_0214_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" target="event:npc-combat-action:target" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SelectWolf_False" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0215_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			<action duration="1000" target="event:npc-combat-action:target" type="stay" />
+		</normal>
+	</combat-sequence>
+
+
+	
+	<combat-sequence alias="ME_WB_AsuraEye_0002_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1" special-1="1" special-2="2">
+			<action social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_03" type="do-social" />
+			
+			<action repeat="1" skill3="ME_GWA_N1_AsuraEye_None_Watch_Show" type="use-skill" />
+			
+			<action event-step="1" repeat="1" skill3="ME_GWA_N1_AsuraEye_None_DarkExplosion_Show" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action event-step="2" repeat="1" skill3="ME_GWA_N1_AsuraEye_None_Watch_Show" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0198_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1">
+			
+			
+		</normal>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_AncientAdamantineMan_0001_CS1" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Smash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Area360" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="35000" start-delay="5000">
+			
+			<action event-step="3" immune-breaker-disable="y" social="NaryuSungJid_msg_41" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch1" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_42" type="do-social" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</special>
+		<special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="3">
+			
+			<action event-step="6" immune-breaker-disable="y" social="NaryuSungJid_msg_06" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+			
+			<action event-step="5" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Summon" type="use-skill" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Absorb" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_39" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainCurse" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+			
+			
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_34" type="do-social" />
+			<action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="4" max-count="1">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_43" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_AncientAdamantineMan_0001_CS2" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Smash_Fast" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Area360" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="35000" start-delay="5000">
+			
+			<action event-step="3" immune-breaker-disable="y" social="NaryuSungJid_msg_41" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch1" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_42" type="do-social" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</special>
+		<special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="3">
+			
+			<action event-step="6" immune-breaker-disable="y" social="NaryuSungJid_msg_06" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+			
+			<action event-step="5" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Summon" type="use-skill" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Absorb" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_39" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainCurse" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+			
+			
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_34" type="do-social" />
+			<action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="4" max-count="1">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_43" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_AncientAdamantineMan_0001_CS3" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Smash_Fast" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Smash_Fast" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Area360" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="35000" start-delay="5000">
+			
+			<action event-step="3" immune-breaker-disable="y" social="NaryuSungJid_msg_41" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch1" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_42" type="do-social" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</special>
+		<special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="3">
+			
+			<action event-step="7" immune-breaker-disable="y" social="NaryuSungJid_msg_06" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+			
+			<action event-step="5" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Summon" type="use-skill" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Absorb" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_39" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainCurse" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+			
+			
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_34" type="do-social" />
+			<action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="4" max-count="1">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_43" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_AncientAdamantineMan_0001_CS4" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Smash_Fast" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Smash_Fast" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Area360" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="35000" start-delay="5000">
+			
+			<action event-step="3" immune-breaker-disable="y" social="NaryuSungJid_msg_41" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch1" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_42" type="do-social" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</special>
+		<special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="3">
+			
+			<action event-step="7" immune-breaker-disable="y" social="NaryuSungJid_msg_06" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+			
+			<action event-step="5" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Summon" type="use-skill" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Absorb" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_39" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainCurse" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+			
+			
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_34" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="4" max-count="1">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_43" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_AncientAdamantineMan_0001_Berserk_CS">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_26" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaYacha_0002_CS1">
+		<normal combat-distance="1" id="1">
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha_None_Slash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			<action repeat="1" skill3="ME_GWA_B1_RuneMechaYacha_None_Explosion" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_AncientGolemLeader_0001_CS1" transit-cond-1="bleeding-70">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill="ME_GWA_N1_GolemLeader_None_SmashDown" skill3="ME_GWA_N1_GolemLeader_None_SmashDown" type="use-skill" />
+			
+			<action repeat="1" skill="ME_GolemLeader_None_GolemSpin" skill3="ME_GWA_N1_GolemLeader_None_GolemSpin" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill="ME_GWA_N1_GolemLeader_None_Dash" skill3="ME_GWA_N1_GolemLeader_None_Dash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="10000" start-delay="10000">
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_37" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill="ME_GWA_N1_GolemLeader_None_Stomp_1" skill3="ME_GWA_N1_GolemLeader_None_Stomp_1" type="use-skill" />
+		</special>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_AncientGolemLeader_0001_CS2">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" repeat="1" skill="ME_GWA_N1_GolemLeader_None_SmashDown" skill3="ME_GWA_N1_GolemLeader_None_SmashDown" type="use-skill" />
+			
+			<action repeat="1" skill="ME_GolemLeader_None_GolemSpin" skill3="ME_GWA_N1_GolemLeader_None_GolemSpin" type="use-skill" />
+		</normal>
+		<normal combat-distance="4" id="2" special-1="1">
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_40" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill="ME_GWA_N1_GolemLeader_None_Stomp_5" skill3="ME_GWA_N1_GolemLeader_None_Stomp_5" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_N1_GolemLeader_None_Dash" target-area="6204_4" type="use-ground-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="20000">
+			
+			<action event-step="1" immune-breaker-disable="y" social="NaryuSungJid_msg_40" type="do-social" />
+			<action immune-breaker-disable="y" social="ME_WB_AncientGolemLeader_0001_battle_01" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill="ME_GWA_N1_GolemLeader_None_Stomp_5" skill3="ME_GWA_N1_GolemLeader_None_Stomp_5" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_AncientGolem_0001_CS1" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_AncientGolem_0001_CS2" hide-seq-start="n" transit-action-1="burrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action repeat="1" skill="ME_GWA_N1_Golem_None_Heal" skill3="ME_GWA_N1_Golem_None_Heal" target="zonenpcspawn:a_6204_4" type="use-skill" />
+			<action duration="1000" event-step="1" immune-breaker-disable="y" type="stay" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_AncientGolem_0002_CS" hide-seq-start="n">
+		<normal combat-distance="1" id="1" special-1="1">
+			<action repeat="1" skill="ME_Golem_None_Jab" skill3="ME_Golem_None_Jab" type="use-skill" />
+			<action repeat="1" skill="ME_Golem_None_HeavyStrike" skill3="ME_Golem_None_HeavyStrike" type="use-skill" />
+			<action repeat="1" skill="ME_Golem_None_Smash" skill3="ME_Golem_None_Smash" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			<action repeat="1" skill="ME_Golem_None_Dash" skill3="ME_Golem_None_Dash" type="use-skill" />
+		</normal>
+		<special combat-distance="3" id="1" max-count="0" min-delay="10000">
+			<action repeat="1" skill="ME_Golem_None_RollSmash" skill3="ME_Golem_None_RollSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	
+	<combat-sequence alias="ME_WB_AncientMechDragon_0001_CS1" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TripleSmash" type="use-skill" />
+			<action immune-breaker-disable="y" type="select">
+				
+				<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_LightingBreath" type="use-skill" />
+				
+				<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TailSmash" type="use-skill" />
+			</action>
+			
+			<action repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_EMWave" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="20000">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Stomp" type="use-skill" />
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			
+			<action event-step="4" immune-breaker-disable="y" social="NaryuSungJid_msg_20" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder2" target="event:npc-combat-action:special-target:2" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder3" target="event:npc-combat-action:special-target:3" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_AncientMechDragon_0001_CS2" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="3">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="3">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="3" max-count="1">
+			
+			<action event-step="1" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Jump" target-area="6204_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_19" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action arrived-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Arrive" blocked-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill3="ME_GWA_B2_AncientMechDragon_None_BossRush" speed="125" type="boss-rush-attack" />
+			
+			<action event-step="3" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_AncientMechDragon_0001_CS3" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TripleSmash" type="use-skill" />
+			<action immune-breaker-disable="y" type="select">
+				
+				<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_LightingBreath" type="use-skill" />
+				
+				<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TailSmash" type="use-skill" />
+			</action>
+			
+			<action repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_EMWave" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="20000">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Stomp" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			
+			<action event-step="4" immune-breaker-disable="y" social="NaryuSungJid_msg_20" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:2" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder2" target="event:npc-combat-action:special-target:3" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder3" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_AncientMechDragon_0001_CS4" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="3">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="3">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="3" max-count="1">
+			
+			<action event-step="1" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Jump" target-area="6204_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_19" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action arrived-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Arrive" blocked-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill3="ME_GWA_B2_AncientMechDragon_None_BossRush" speed="125" type="boss-rush-attack" />
+			
+			<action event-step="3" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_AncientMechDragon_0001_CS5" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TripleSmash" type="use-skill" />
+			<action immune-breaker-disable="y" type="select">
+				
+				<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_LightingBreath" type="use-skill" />
+				
+				<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TailSmash" type="use-skill" />
+			</action>
+			
+			<action repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_EMWave" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="48000" start-delay="48000">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Stomp" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			
+			<action event-step="4" immune-breaker-disable="y" social="NaryuSungJid_msg_20" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:2" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder2" target="event:npc-combat-action:special-target:3" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder3" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_AncientMechDragon_0001_CS6" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="3">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="3">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="3" max-count="1">
+			
+			<action event-step="1" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Jump" target-area="6204_2" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_19" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action arrived-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Arrive" blocked-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill3="ME_GWA_B2_AncientMechDragon_None_BossRush" speed="125" type="boss-rush-attack" />
+			
+			<action event-step="3" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_AncientMechDragon_0001_CS7" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TripleSmash" type="use-skill" />
+			<action immune-breaker-disable="y" type="select">
+				
+				<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_LightingBreath" type="use-skill" />
+				
+				<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TailSmash" type="use-skill" />
+			</action>
+			
+			<action repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_EMWave" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="48000" start-delay="48000">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Stomp" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			
+			<action event-step="4" immune-breaker-disable="y" social="NaryuSungJid_msg_20" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:2" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder2" target="event:npc-combat-action:special-target:3" type="boss-simultaneous-ground-attack" />
+			<action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder3" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_AncientMechDragon_0001_Berserk_CS">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling_Berserk" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action immune-breaker-disable="y" social="NaryuSungJid_msg_27" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling_Berserk" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0195_CS1" hide-seq-start="y" transit-action-1="burrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1">
+			
+			
+
+		</normal>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_Dummy_0195_CS2" hide-seq-start="y" transit-action-1="burrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1">
+			
+			
+		</normal>
+	</combat-sequence>
+
+
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaYacha_0001_CS1">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha_None_Slash" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha_None_CrossSlash" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha_None_Spin" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha_None_VerticalCut" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-2="2">
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha_None_Rush" type="use-skill" />
+		</normal>
+		
+		<special combat-distance="3" condition-1="hp-50" id="1" max-count="1">
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha_None_SpecialBeam" type="use-skill" />
+		</special>
+		
+		<special combat-distance="3" condition-1="down" id="2" max-count="0">
+      		
+      		<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha_None_VerticalCut" type="use-skill" />
+		</special>
+
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaYacha2_0001_CS1">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha2_None_Spear" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha2_None_UpDownSpear" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha2_None_WindSmash" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha2_None_DownSmash" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha2_None_LongSpear" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="2">
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha2_None_LongSpear" type="use-skill" />
+		</normal>
+		
+		<special combat-distance="3" condition-1="hp-50" id="1" max-count="1">
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha2_None_SpecialBeam" type="use-skill" />
+		</special>
+		
+		<special combat-distance="3" condition-1="down" id="2" max-count="0">
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha2_None_DownSmash" type="use-skill" />
+		</special>
+
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaYacha3_0001_CS1">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_FastArrow" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_PierceArrow" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="2">
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_RainArrow" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_RainArrow" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_FastArrow" type="use-skill" />
+		</normal>
+		
+		<special combat-distance="3" condition-1="hp-50" id="1" max-count="1">
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_SpecialBeam" type="use-skill" />
+		</special>
+		
+		<special combat-distance="7" condition-1="down" id="2" max-count="0">
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_PierceArrow" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+
+
+
+	
+	<combat-sequence alias="ME_WB_RuneMechaYacha3_0002_CS1">
+		<normal combat-distance="1" id="1">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_BombArrow" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_FastArrow" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_N1_RuneMechaYacha3_None_PierceArrow" type="use-skill" />
+			
+			
+		</normal>
+		<normal combat-distance="2" id="2">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_N1_RuneMechaYacha3_None_PierceArrow" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_N1_RuneMechaYacha3_None_PierceArrow" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_N1_RuneMechaYacha3_None_PierceArrow" type="use-skill" />
+			
+			<action repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_RainArrow" type="use-skill" />
+		</normal>
+		
+		<special combat-distance="7" id="1" max-count="0">
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_BombArrow" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_BombArrow" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_BombArrow" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_BombArrow" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_BombArrow" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_R0_RuneMechaYacha3_None_BombArrow" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="PVE_AncientAdamantineMan_CS" />
+	<combat-sequence alias="PVE_AncientMechDragon_CS" />
+	<combat-sequence alias="PVE_RuneMechaKingAsura_CS" />
+
+  
+  
+  
+  
+  
+  
+  
+  <combat-sequence alias="ME_WB_AncientAdamantineMan_0001_CS1_Easy">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Smash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_TripleAttack" type="use-skill" />
+      
+      <action repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="hp-70" id="1" max-count="1">
+      
+      <action event-step="3" immune-breaker-disable="y" social="NaryuSungJid_msg_41" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch1" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_42" type="do-social" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+      
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      
+      <action event-step="6" immune-breaker-disable="y" social="NaryuSungJid_msg_06" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+      
+      <action event-step="5" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Summon" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Absorb" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_39" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainCurse" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />      
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_34" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Easy" type="use-skill" />      
+    </special>
+    <special combat-distance="7" condition-1="hp-30" id="2" max-count="1">
+      
+      <action event-step="3" immune-breaker-disable="y" social="NaryuSungJid_msg_41" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch1" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_42" type="do-social" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainPunch2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" type="use-skill" />
+      
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      
+      <action event-step="6" immune-breaker-disable="y" social="NaryuSungJid_msg_06" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+      
+      <action event-step="5" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Summon" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Absorb" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulSmash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_39" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_ChainCurse" target="zonenpcsquad:s_6203_21:reg-1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_SoulWind" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_34" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Easy" type="use-skill" />
+    </special>  
+    <special combat-distance="7" id="4" max-count="1">
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B1_AncientAdamantineMan_None_Dash_Front" target-area="6203_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_43" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B1_AncientAdamantineMan_None_Curse_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WB_AncientMechDragon_0001_CS1_Easy" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TripleSmash" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_LightingBreath" type="use-skill" />
+        
+        <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TailSmash" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_EMWave" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Stomp" type="use-skill" />
+      <action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="4" immune-breaker-disable="y" social="NaryuSungJid_msg_20" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder2" target="event:npc-combat-action:special-target:2" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder3" target="event:npc-combat-action:special-target:3" type="boss-simultaneous-ground-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_AncientMechDragon_0001_CS2_Easy" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="3">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="3">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Jump" target-area="6204_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_19" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action arrived-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Arrive" blocked-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill3="ME_GWA_B2_AncientMechDragon_None_BossRush" speed="125" type="boss-rush-attack" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_AncientMechDragon_0001_CS3_Easy" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TripleSmash" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_LightingBreath" type="use-skill" />
+        
+        <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TailSmash" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_EMWave" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Stomp" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="4" immune-breaker-disable="y" social="NaryuSungJid_msg_20" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:2" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder2" target="event:npc-combat-action:special-target:3" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder3" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_AncientMechDragon_0001_CS4_Easy" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="3">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="3">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Jump" target-area="6204_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_19" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning_Except" type="use-skill" />
+      <action except-summoned="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ChainLightning" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action arrived-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Arrive" blocked-effect="ME_GWA_B2_AncientMechDragon_None_BossRush_Parry" immune-breaker-disable="y" pass-through="y" skill3="ME_GWA_B2_AncientMechDragon_None_BossRush" speed="125" type="boss-rush-attack" />
+      
+      <action event-step="3" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_AncientMechDragon_0001_CS5_Easy">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TripleSmash" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_LightingBreath" type="use-skill" />
+        
+        <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_TailSmash" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_EMWave" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Stomp" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action event-step="4" immune-breaker-disable="y" social="NaryuSungJid_msg_20" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder_Exec" target="event:npc-combat-action:special-target:2" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder2" target="event:npc-combat-action:special-target:3" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_Thunder3" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_Howling" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" skill3="ME_GWA_B2_AncientMechDragon_None_MissileArea" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash_360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B2_AncientMechDragon_None_ImmelmannDash" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+
+  
+  <combat-sequence alias="ME_WB_RuneMechaKingAsura_0001_CS1_Easy" seq-start-social="1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Slap" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Area360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Laser" type="use-skill" />
+      
+      <action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Clap" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" type="use-skill" />
+    </normal>
+    
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="45000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="NaryuSungJid_msg_22" type="do-social" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_49" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands" type="boss-multiground-attack" />
+      
+      
+      <action ground-pattern-1="pattern_50" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands2" type="boss-multiground-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire1" type="boss-repeater-attack" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire2" type="boss-repeater-attack" />
+    </special>
+
+    
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+
+      
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target-area="6205_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_36" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness" type="use-skill" />
+
+      
+      <action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal_End" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Judgement" type="use-skill" />
+
+      
+      
+      
+      <action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Berserk" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+      <action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+      
+      <action event-step="14" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DispelFreeze" type="use-skill" />
+      
+      <action event-step="15" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HateDown" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="4" max-count="1">
+      
+      <action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="5" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_RuneMechaKingAsura_0001_CS2_Easy" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Slap" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Area360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Laser" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_WarpDash_Back" type="use-skill" />
+      
+      <action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Clap" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" type="use-skill" />
+    </normal>
+
+    
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="45000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="NaryuSungJid_msg_22" type="do-social" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_49" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands" type="boss-multiground-attack" />
+      
+      
+      <action ground-pattern-1="pattern_50" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands2" type="boss-multiground-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire1" type="boss-repeater-attack" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire2" type="boss-repeater-attack" />
+    </special>
+
+    
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+
+      
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target-area="6205_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_36" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness" type="use-skill" />
+
+      
+      <action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal_End" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Judgement" type="use-skill" />
+
+      
+      
+      
+      <action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Berserk" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+      <action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+      
+      <action event-step="14" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DispelFreeze" type="use-skill" />
+      
+      <action event-step="16" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HateDown" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="4" max-count="1">
+      
+      <action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="5" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_RuneMechaKingAsura_0001_CS3_Easy">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Slap" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress1" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HandsPress2" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Area360" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Laser" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_WarpDash_Back" type="use-skill" />
+      
+      <action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Clap" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" type="use-skill" />
+    </normal>
+
+    
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="45000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="NaryuSungJid_msg_22" type="do-social" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action ground-pattern-1="pattern_49" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands" type="boss-multiground-attack" />
+      
+      
+      <action ground-pattern-1="pattern_50" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_MultiHands2" type="boss-multiground-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire1" type="boss-repeater-attack" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_RepeatFire2" type="boss-repeater-attack" />
+    </special>
+
+    
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Wolf_Reset" type="use-skill" />
+
+      
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_SpaceWarp" target-area="6205_2" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="NaryuSungJid_msg_36" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness" type="use-skill" />
+
+      
+      <action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_GroundHeal_End" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Judgement" type="use-skill" />
+
+      
+      
+      
+      <action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb_Berserk" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+      <action repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+      
+      <action event-step="14" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_DispelFreeze" type="use-skill" />
+      
+      <action event-step="27" immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_HateDown" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="4" max-count="1">
+      
+      <action event-step="13" immune-breaker-disable="y" social="ME_WB_RuneMechaKingAsura_0001_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Absorb" target="zonenpcsquad:s_6205_2:reg-1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="5" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="ME_GWA_B3_RuneMechaKingAsura_None_Darkness_Explosion" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="99" skill3="ME_GWA_B3_RuneMechaKingAsura_None_FuryExplosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  
+</table>

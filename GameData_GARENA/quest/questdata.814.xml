@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.814.xml-->
+  <quest alias="q_sub_814" broadcast-category="field" category="normal" id="814" max-repeat="1" reset-type="none" save-type="all">
+    <acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_1439" preceding-quest-2="q_sub_813" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" completion-count="0" completion-count-op="ge" object="npc:CE_CT_ToGaJuk_0003" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="10">
+        <case object2="npc:MH_CT_JeGukGun_0603" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:MH_CT_JeGukGun_0601" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:MH_CT_JeGukGun_0600" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:MH_CT_JeGukGun_0599" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:MH_CT_JeGukGun_0598" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="814_final_set1">
+        <case completion-count="0" completion-count-op="ge" object="npc:CE_CT_ToGaJuk_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

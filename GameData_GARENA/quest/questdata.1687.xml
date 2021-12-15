@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1687.xml-->
+  <quest alias="q_sub_1687" broadcast-category="field" category="normal" completed-list="n" id="1687" max-repeat="1" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_epic_1641" preceding-quest-check="and" preceding-quest-mission-step-1="0">
+      <case acquire-quest="y" object="npc:MH_WA_Epic8_0083" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="5">
+        <case object2="npc:ME_WA_Epic8_0299" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1687_final_set1">
+        <case object="npc:MH_WA_Epic8_0083" party-broadcast="n" progress-mission="y" type="talk" />
+        <case party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

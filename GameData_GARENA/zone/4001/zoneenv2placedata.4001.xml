@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\4001\zoneenv2placedata.4001.xml-->
+	<record action-point="2005,-3682,289" action-radius="10" alias="e_chest_sinsibonginsek_01_place" manipulation-height-lower="10" manipulation-height-upper="10" manipulation-point="2005,-3682,289" manipulation-radius="10" tool-zone-1="4001" type="chest" use-manipulation-point="n" />
+	<record action-point="1187,-4200,292" action-radius="10" alias="e_chest_sinsibonginsek_02_place" manipulation-height-lower="10" manipulation-height-upper="10" manipulation-point="1187,-4200,292" manipulation-radius="10" tool-zone-1="4001" type="chest" use-manipulation-point="n" />
+	<record action-point="1387,-3530,322" action-radius="10" alias="e_chest_sinsibonginsek_03_place" manipulation-height-lower="10" manipulation-height-upper="10" manipulation-point="1387,-3530,322" manipulation-radius="10" tool-zone-1="4001" type="chest" use-manipulation-point="n" />
+	<record action-point="734,-4617,282" action-radius="0" alias="4001_ConvoyFinish_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="734,-4617,282" manipulation-radius="0" region-point-1="664,-4629,246" region-point-2="664,-4605,258" region-point-3="805,-4605,266" region-point-4="805,-4629,250" tool-zone-1="4001" type="foot-switch" use-manipulation-point="n" />
+	<record action-point="1109,-5790,437" alias="4001_Portal_place" region-point-1="1114,-6159,28966" region-point-2="1090,-5422,28966" region-point-3="1105,-5421,28966" region-point-4="1129,-6158,28966" tool-zone-1="4001" type="portal" />
+</table>

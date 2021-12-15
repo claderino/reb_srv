@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1654.xml-->
+  <quest alias="q_epic_1654" category="epic" completed-list="y" id="1654" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1" rollback="none">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_sb_woodman_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_sb_jeyeon_0004" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="none">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_sb_jeyeon_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_sb_woodfighter_0002" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="5">
+        <case object2="npc:me_sb_woodman_0005" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:me_sb_woodman_0004" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:me_sb_woodman_0003" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:me_sb_woodman_0002" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:me_sb_woodman_0001" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="zone:zone_MokInJok_Storage_D" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" rollback="none">
+      <mission id="5" required-register-value="1">
+        <case object2="zoneenv2:6557_foot_1" party-broadcast="n" progress-mission="y" quest-decision="qd_1654_1" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" rollback="none">
+      <mission id="6" required-register-value="1">
+        <case convoy="epic_1654_con_1" object="npc:ch_sb_jeyeon_0005" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_mokinjok_storage_d" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1654_50" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone">
+      <mission id="7" required-register-value="1">
+        <case convoy="epic_1654_con_1" object="zone:zone_MokInJok_Storage_D" party-broadcast="n" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail quest-decision="qd_1654_2" rollback-step-id="6" zone-1="zone_MokInJok_Storage_D">
+        <case convoy="epic_1654_con_1" object="npc:ch_sb_jeyeon_0005" party-broadcast="n" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="8" rollback="leave-zone">
+      <mission id="8" required-register-value="1">
+        <case object="npc:ch_sb_jeyeon_0005" party-broadcast="n" progress-mission="y" quest-decision="qd_1654_3" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="6" zone-1="zone_MokInJok_Storage_D" />
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object="zone:zone_MokInJok_PatriarchHouse_Epic8_2" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10" rollback="none">
+      <mission id="10" required-register-value="1">
+        <case object="npc:ch_sb_woodman_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_sb_jeyeon_0006" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="11" rollback="none">
+      <mission id="11" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1654_final_set1">
+        <case object="npc:ch_sb_jeyeon_0006" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1655" />
+    </completion>
+    <transit id="1" zone="zone_MokInJok_PatriarchHouse_D">
+      <destination mission-step-id="11" zone-index="2" />
+      <destination mission-step-id="10" zone-index="2" />
+      <destination mission-step-id="9" zone-index="2" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <transit id="2" zone="zone_SuchunVillage">
+      <destination mission-step-id="11" zone-index="3" />
+      <destination mission-step-id="10" zone-index="3" />
+      <destination mission-step-id="9" zone-index="3" />
+      <destination mission-step-id="8" zone-index="3" />
+      <destination mission-step-id="7" zone-index="3" />
+      <destination mission-step-id="6" zone-index="3" />
+      <destination mission-step-id="5" zone-index="3" />
+      <destination mission-step-id="4" zone-index="3" />
+      <destination mission-step-id="3" zone-index="3" />
+      <destination mission-step-id="2" zone-index="3" />
+      <destination mission-step-id="1" zone-index="3" />
+    </transit>
+    <transit id="3" zone="zone_chunguntree_d">
+      <destination mission-step-id="11" zone-index="6" />
+      <destination mission-step-id="10" zone-index="6" />
+      <destination mission-step-id="9" zone-index="6" />
+      <destination mission-step-id="8" zone-index="6" />
+      <destination mission-step-id="7" zone-index="6" />
+      <destination mission-step-id="6" zone-index="6" />
+      <destination mission-step-id="5" zone-index="6" />
+      <destination mission-step-id="4" zone-index="6" />
+      <destination mission-step-id="3" zone-index="6" />
+      <destination mission-step-id="2" zone-index="6" />
+      <destination mission-step-id="1" zone-index="6" />
+    </transit>
+  </quest>
+</table>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1005.xml-->
+  <quest alias="q_sub_1005" broadcast-category="field" category="normal" district-1="suwal" id="1005" max-repeat="1" save-type="all">
+    <acquisition level="36" preceding-quest-1="q_sub_1002" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_WolChon_0012" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="2">
+      <mission id="2" required-register-value="10">
+        <case object="npc:ME_Noctiluca_0014" object2="npc:ME_Noctiluca_0014" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:CH_WolChon_0008" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_Bounty Hunter_0003" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_Bounty Hunter_0002" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_Bounty Hunter_0001" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="npc:CH_Bounty Hunter_0018" party-broadcast="n" type="approach" />
+        <case object="npc:CH_Bounty Hunter_0017" party-broadcast="n" type="approach" />
+        <case object="npc:CH_Bounty Hunter_0016" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WolChon_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="3">
+        <case gadget-required="dont-care" object="zoneenv:e_chest_ghostrock_01" object2="zoneenv2:e_chest_ghostrock_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_ghostrock_02" object2="zoneenv2:e_chest_ghostrock_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_ghostrock_03" object2="zoneenv2:e_chest_ghostrock_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_ghostrock_04" object2="zoneenv2:e_chest_ghostrock_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_ghostrock_05" object2="zoneenv2:e_chest_ghostrock_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_ghostrock_06" object2="zoneenv2:e_chest_ghostrock_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zoneenv:e_chest_ghostrock_07" object2="zoneenv2:e_chest_ghostrock_07" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_WolChon_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1" reward-1="1005_final_set1">
+        <case object="npc:CH_ManGeumDang_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_ManGeumDang_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_Bounty Hunter_0018" party-broadcast="n" type="approach" />
+        <case object="npc:CH_Bounty Hunter_0017" party-broadcast="n" type="approach" />
+        <case object="npc:CH_Bounty Hunter_0016" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

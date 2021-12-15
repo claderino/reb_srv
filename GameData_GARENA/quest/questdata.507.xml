@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.507.xml-->
+  <quest alias="q_epic_507" category="epic" completed-list="y" district-1="deasamak" id="507" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_unguksoldier_007" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HealSpring" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_507_1" type="enter-zone" />
+        <case approach-social="q_507_m1_app_1" object="npc:ch_inspector_002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_unguksoldier_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HealSpring" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_507_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="5">
+        <case object2="npc:me_samagyo_047" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="100" type="loot" />
+        <case object="zone:zone_HealSpring" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_507_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_inspector_002" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="zone:zone_HealSpring" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_507_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_inspector_002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HealSpring" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_507_1" type="enter-zone" />
+        <case object="npc:ch_inspector_002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1" reset-teleport-recycle-time="y" reward-1="507_final_set1">
+        <case object="npc:ch_unguksoldier_0004" party-broadcast="n" progress-mission="y" quest-decision="qd_507_2" type="talk" />
+        <case object="zone:zone_HealSpring" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_507_1" type="enter-zone" />
+        <case object="npc:ch_inspector_002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_508" />
+    </completion>
+  </quest>
+</table>

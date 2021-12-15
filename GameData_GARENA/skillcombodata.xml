@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="skill-combo" version="0.5">
+  <!--skillcombodata.xml-->
+	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="10101" skill-id="10100" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="10102" skill-id="10101" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="10102" skill-id="10101" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="10102" skill-id="10101" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="10102" skill-id="10101" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="10102" skill-id="10101" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="10102" skill-id="10101" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="10304" skill-id="10303" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="10304" skill-id="10303" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="10304" skill-id="10303" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="10304" skill-id="10303" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="10304" skill-id="10303" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="10304" skill-id="10303" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="10305" skill-id="10304" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="10305" skill-id="10304" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="10305" skill-id="10304" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="10305" skill-id="10304" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="10305" skill-id="10304" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="10305" skill-id="10304" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="10501" skill-id="10500" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="10501" skill-id="10500" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="10501" skill-id="10500" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="10501" skill-id="10500" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="10501" skill-id="10500" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="10501" skill-id="10500" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="10502" skill-id="10501" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="10502" skill-id="10501" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="10502" skill-id="10501" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="10502" skill-id="10501" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="10502" skill-id="10501" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="10502" skill-id="10501" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="11101" skill-id="11100" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="11101" skill-id="11100" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="11101" skill-id="11100" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="11101" skill-id="11100" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="11101" skill-id="11100" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="11101" skill-id="11100" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="11127" skill-id="11101" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="11127" skill-id="11101" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="11127" skill-id="11101" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="11127" skill-id="11101" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="11127" skill-id="11101" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="11127" skill-id="11101" skill-result="perfect-parry" />
+	<record event-type="attack" skill-id="11127" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-2-4="11130" skill-id="11102" skill-result="hit" />
+	<record event-type="attack" next-combo-2-4="11130" skill-id="11102" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-2-4="11130" skill-id="11102" skill-result="parry" />
+	<record event-type="attack" next-combo-2-4="11135" skill-id="11134" skill-result="hit" />
+	<record event-type="attack" next-combo-2-4="11135" skill-id="11134" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-2-4="11115" skill-id="11135" skill-result="hit" />
+	<record event-type="attack" next-combo-2-4="11115" skill-id="11135" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-2-2="11111" next-combo-2-4="11130" next-combo-2-7="11205" next-combo-2-8="11110" skill-id="11104" skill-result="hit" />
+	<record event-type="attack" next-combo-2-2="11111" next-combo-2-4="11130" next-combo-2-7="11205" next-combo-2-8="11110" skill-id="11104" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-2-7="11205" skill-id="11106" skill-result="hit" />
+	<record event-type="attack" next-combo-2-7="11205" skill-id="11106" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="9911120" skill-id="11107" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="9911120" skill-id="11107" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="9911120" skill-id="11218" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="9911120" skill-id="11218" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="9911120" skill-id="11139" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="9911120" skill-id="11139" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="9911121" next-combo-1-2="9911122" skill-id="9911120" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="9911121" next-combo-1-2="9911122" skill-id="9911120" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="11224" skill-id="11400" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="11224" skill-id="11401" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="11201" skill-id="11200" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="11201" skill-id="11200" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="11201" skill-id="11200" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="11201" skill-id="11200" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="11201" skill-id="11200" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="11201" skill-id="11200" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="11202" skill-id="11201" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="11202" skill-id="11201" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="11202" skill-id="11201" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="11202" skill-id="11201" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="11202" skill-id="11201" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="11202" skill-id="11201" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-2-1="12240" skill-id="12241" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-2-1="12240" skill-id="12110" skill-result="critical-hit" />
+	<record event-type="attack" skill-id="14107" skill-result="hit" />
+	<record event-type="attack" skill-id="14107" skill-result="critical-hit" />
+	<record event-type="attack" skill-id="14107" skill-result="parry" />
+	<record event-type="attack" skill-id="14107" skill-result="dodge" />
+	<record event-type="attack" skill-id="14107" skill-result="miss" />
+	<record event-type="attack" skill-id="14107" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="14122" skill-id="14121" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="14122" skill-id="14121" skill-result="critical-hit" />
+	<record event-type="attacked" next-combo-1-2="14110" skill-id="14123" skill-result="bounce" />
+	<record event-type="attack" next-combo-1-2="14110" skill-id="14123" skill-result="bounce" />
+	<record event-type="attack" next-combo-2-3="14125" skill-id="14110" skill-result="hit" />
+	<record event-type="attack" next-combo-2-3="14125" skill-id="14110" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="14108" skill-id="14207" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="14108" skill-id="14207" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="14108" skill-id="14207" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="14108" skill-id="14207" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="14108" skill-id="14207" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="14108" skill-id="14207" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="14209" skill-id="14108" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="14209" skill-id="14108" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="14209" skill-id="14108" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="14209" skill-id="14108" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="14209" skill-id="14108" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="14209" skill-id="14108" skill-result="perfect-parry" />
+	<record event-type="attack" skill-id="14229" skill-result="hit" />
+	<record event-type="attack" skill-id="14229" skill-result="critical-hit" />
+	<record event-type="attacked" skill-id="14229" skill-result="hit" />
+	<record event-type="attacked" skill-id="14229" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-2="14132" skill-id="14131" skill-result="hit" />
+	<record event-type="attack" next-combo-1-2="14132" skill-id="14131" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-2="14132" skill-id="14131" skill-result="parry" />
+	<record event-type="attack" next-combo-1-2="14132" skill-id="14131" skill-result="dodge" />
+	<record event-type="attack" next-combo-2-7="14111" skill-id="14210" skill-result="hit" />
+	<record event-type="attack" next-combo-2-7="14111" skill-id="14210" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="15101" skill-id="15100" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="15101" skill-id="15100" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="15101" skill-id="15100" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="15101" skill-id="15100" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="15101" skill-id="15100" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="15101" skill-id="15100" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-1="15102" skill-id="15101" skill-result="hit" />
+	<record event-type="attack" next-combo-1-1="15102" skill-id="15101" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="15102" skill-id="15101" skill-result="parry" />
+	<record event-type="attack" next-combo-1-1="15102" skill-id="15101" skill-result="dodge" />
+	<record event-type="attack" next-combo-1-1="15102" skill-id="15101" skill-result="miss" />
+	<record event-type="attack" next-combo-1-1="15102" skill-id="15101" skill-result="perfect-parry" />
+	<record event-type="attack" next-combo-1-2="15005" skill-id="15203" skill-result="hit" />
+	<record event-type="attack" next-combo-1-2="15005" skill-id="15203" skill-result="critical-hit" />
+	<record event-type="attack" next-combo-1-1="16113" skill-id="16101" skill-result="critical-hit" />
+</table>

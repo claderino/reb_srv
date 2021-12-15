@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\4710\zoneenv2placedata.4710.xml-->
+	<record action-point="2818,8600,188" alias="4710_DongHea_Chungkakdan_4711_place" region-point-1="2683,8588,5653" region-point-2="2683,8612,5653" region-point-3="2953,8612,5600" region-point-4="2953,8588,5600" tool-zone-1="4710" tool-zone-2="4714" type="portal" />
+	<record action-point="2492,7107,209" alias="4710_DongHea_Chungkakdan_4709_place" region-point-1="2399,7095,6385" region-point-2="2399,7118,6385" region-point-3="2586,7118,6385" region-point-4="2586,7095,6385" tool-zone-1="4710" tool-zone-2="4714" type="portal" />
+	<record action-point="2916,7910,153" action-radius="20" alias="e_Chest_4714hartA_01_1_place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="2916,7910,153" manipulation-radius="20" tool-zone-1="4714" tool-zone-2="4710" type="chest" use-manipulation-point="n" />
+	<record action-point="2819,8483,153" action-radius="62" alias="e_gate_chungtwindoor_01_2_place" manipulation-height-lower="62" manipulation-height-upper="62" manipulation-point="2819,8483,153" manipulation-radius="62" tool-zone-1="4714" tool-zone-2="4710" type="gate" use-manipulation-point="n" />
+</table>

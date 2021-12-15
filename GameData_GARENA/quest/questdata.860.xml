@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.860.xml-->
+  <quest alias="q_sub_860" broadcast-category="field" category="normal" district-1="deasamak" id="860" max-repeat="1" save-type="all">
+    <acquisition level="33" preceding-quest-1="q_epic_533" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_blackmarket_0002" party-broadcast="n" type="talk" />
+      <case object="npc:ch_subfactioncostume_0007" party-broadcast="n" type="approach" />
+      <case object="npc:ch_shinryong_051" party-broadcast="n" type="approach" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_blackmarket_0003" party-broadcast="n" progress-mission="y" type="talk" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="12">
+        <case object="npc:me_wolf_0003" object2="npc:me_wolf_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_wolfbaby_0001" object2="npc:me_wolfbaby_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_wolf_0011" object2="npc:me_wolf_0011" party-broadcast="y" prob="100" progress-mission="y" type="killed" />
+        <case object="npc:me_wolf_0016" object2="npc:me_wolf_0016" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:ch_blackmarket_0003" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="860_final_set1">
+        <case object="npc:ch_blackmarket_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_blackmarket_0004" party-broadcast="n" type="approach" />
+        <case object="npc:ch_dojuksang_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

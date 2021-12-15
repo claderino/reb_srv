@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.tutorial.xml-->
+
+
+  
+  <act-sequence alias="jinyoung_221_m5_act" type="act">
+    <action social="tutorial_npc_act_001_soc" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="2" type="pause" />
+    <action pathway="1101_P1" type="pathway" />
+    <action social="tutorial_npc_act_028_soc" type="social" />
+    <action pathway="1101_P11" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_221_m6_act" type="act">
+    <action pathway="1101_P12" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_222_m1_act" type="act">
+    <action duration="500" type="stay" />
+    
+    
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_223_m1_act" type="act">
+    <action social="tutorial_npc_act_003_soc" type="social" />
+    
+    <action pathway="1101_P55" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_223_m3_act" type="act">
+    <action social="tutorial_npc_act_004_soc" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="500" type="stay" />
+    <action pathway="1101_P7" type="pathway" />
+    <action social="tutorial_npc_act_005_soc" type="social" />
+    
+    <action pathway="1101_P7_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_223_m3_1_act" type="act">
+    <action social="tutorial_npc_act_027_soc" type="social" />
+    <action pathway="1101_P7_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_223_m3_2_act" type="act">
+    <action social="tutorial_npc_act_006_soc" type="social" />
+    <action pathway="1101_P9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_224_m1_act" type="act">
+    <action duration="3500" type="stay" />
+    <action social="tutorial_npc_act_008_soc" type="social" />
+    <action pathway="1101_P53" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_224_m1_1_act" type="act">
+    <action social="tutorial_npc_act_021_soc" type="social" />
+    <action pathway="1101_P10" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_224_m3_act" type="act">
+    <action duration="5500" type="stay" />
+    <action social="tutorial_npc_act_023_soc" type="social" />
+    <action social="tutorial_npc_act_026_soc" type="social" />
+    <action duration="6000" type="stay" />
+    
+    <action step="1" type="pause" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="jinyoung_225_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1102_P52" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_225_m2_1_act" type="act">
+    <action pathway="1102_P2" type="pathway" />
+    <action social="tutorial_npc_act_016_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_228_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1103_P52" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_228_m2_1_act" type="act">
+    <action pathway="1103_P2" type="pathway" />
+    <action social="tutorial_npc_act_016_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_231_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1104_P52" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_231_m2_1_act" type="act">
+    <action pathway="1104_P2" type="pathway" />
+    <action social="tutorial_npc_act_016_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_234_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1105_P52" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_234_m2_1_act" type="act">
+    <action pathway="1105_P2" type="pathway" />
+    <action social="tutorial_npc_act_016_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_237_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1106_P52" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_237_m2_1_act" type="act">
+    <action pathway="1106_P2" type="pathway" />
+    <action social="tutorial_npc_act_016_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_245_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1107_P52" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_245_m2_1_act" type="act">
+    <action pathway="1107_P2" type="pathway" />
+    <action social="tutorial_npc_act_016_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_252_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1108_P52" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_252_m2_1_act" type="act">
+    <action pathway="1108_P2" type="pathway" />
+    <action social="tutorial_npc_act_016_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_1224_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1109_P52" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="jinyoung_328_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1111_P52" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="jinyoung_1224_m2_1_act" type="act">
+    <action pathway="1109_P2" type="pathway" />
+    <action social="tutorial_npc_act_016_soc" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="jinyoung_328_m2_1_act" type="act">
+    <action pathway="1111_P2" type="pathway" />
+    <action social="tutorial_npc_act_016_soc" type="social" />
+  </act-sequence>  
+  
+  
+  <act-sequence alias="hwajoong_221_m6_act" type="act">
+    <action pathway="1101_P2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_222_m1_act" type="act">
+    <action pathway="1101_P5" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_224_m3_act" type="act">
+    <action duration="5500" type="stay" />
+    <action social="tutorial_npc_act_025_soc" type="social" />
+    <action duration="9000" type="stay" />
+    
+    <action step="1" type="pause" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="hwajoong_225_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1102_P6" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_225_m2_1_act" type="act">
+    <action pathway="1102_P4" type="pathway" />
+    <action social="tutorial_npc_act_018_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_228_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1103_P6" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_228_m2_1_act" type="act">
+    <action pathway="1103_P4" type="pathway" />
+    <action social="tutorial_npc_act_018_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_231_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1104_P6" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_231_m2_1_act" type="act">
+    <action pathway="1104_P4" type="pathway" />
+    <action social="tutorial_npc_act_018_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_234_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1105_P6" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_234_m2_1_act" type="act">
+    <action pathway="1105_P4" type="pathway" />
+    <action social="tutorial_npc_act_018_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_237_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1106_P6" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_237_m2_1_act" type="act">
+    <action pathway="1106_P4" type="pathway" />
+    <action social="tutorial_npc_act_018_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_245_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1107_P6" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_245_m2_1_act" type="act">
+    <action pathway="1107_P4" type="pathway" />
+    <action social="tutorial_npc_act_018_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_252_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1108_P6" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_252_m2_1_act" type="act">
+    <action pathway="1108_P4" type="pathway" />
+    <action social="tutorial_npc_act_018_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_1224_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1109_P6" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="hwajoong_328_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1111_P6" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="hwajoong_1224_m2_1_act" type="act">
+    <action pathway="1109_P4" type="pathway" />
+    <action social="tutorial_npc_act_018_soc" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="hwajoong_328_m2_1_act" type="act">
+    <action pathway="1111_P4" type="pathway" />
+    <action social="tutorial_npc_act_018_soc" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="gilhong_222_m1_act" type="act">
+    <action social="tutorial_npc_act_002_soc" type="social" />
+    <action pathway="1101_P3" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_224_m3_act" type="act">
+    <action duration="5500" type="stay" />
+    <action social="tutorial_npc_act_024_soc" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="tutorial_npc_act_011_soc" type="social" />
+    <action duration="5000" type="stay" />
+    
+    <action step="1" type="pause" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="gilhong_225_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1102_P23" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_225_m2_1_act" type="act">
+    <action pathway="1102_P3" type="pathway" />
+    <action social="tutorial_npc_act_017_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_228_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1103_P23" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_228_m2_1_act" type="act">
+    <action pathway="1103_P3" type="pathway" />
+    <action social="tutorial_npc_act_017_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_231_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1104_P23" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_231_m2_1_act" type="act">
+    <action pathway="1104_P3" type="pathway" />
+    <action social="tutorial_npc_act_017_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_234_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1105_P23" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_234_m2_1_act" type="act">
+    <action pathway="1105_P3" type="pathway" />
+    <action social="tutorial_npc_act_017_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_237_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1106_P23" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_237_m2_1_act" type="act">
+    <action pathway="1106_P3" type="pathway" />
+    <action social="tutorial_npc_act_017_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_245_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1107_P23" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_245_m2_1_act" type="act">
+    <action pathway="1107_P3" type="pathway" />
+    <action social="tutorial_npc_act_017_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_252_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1108_P23" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_252_m2_1_act" type="act">
+    <action pathway="1108_P3" type="pathway" />
+    <action social="tutorial_npc_act_017_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_1224_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1109_P23" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="gilhong_328_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1111_P23" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="gilhong_1224_m2_1_act" type="act">
+    <action pathway="1109_P3" type="pathway" />
+    <action social="tutorial_npc_act_017_soc" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="gilhong_328_m2_1_act" type="act">
+    <action pathway="1111_P3" type="pathway" />
+    <action social="tutorial_npc_act_017_soc" type="social" />
+  </act-sequence>  
+
+  
+  <act-sequence alias="musung_224_m1_act" type="act">
+    <action social="tutorial_npc_act_007_soc" type="social" />
+    <action pathway="1101_P54" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="musung_224_m3_act" type="act">
+    <action duration="5500" type="stay" />
+    <action social="tutorial_npc_act_022_soc" type="social" />
+    <action duration="8000" type="stay" />
+    
+    <action step="1" type="pause" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="musung_225_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1102_P25" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="musung_225_m2_1_act" type="act">
+    <action pathway="1102_P5" type="pathway" />
+    <action social="tutorial_npc_act_015_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="musung_228_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1103_P25" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="musung_228_m2_1_act" type="act">
+    <action pathway="1103_P5" type="pathway" />
+    <action social="tutorial_npc_act_015_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="musung_231_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1104_P25" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="musung_231_m2_1_act" type="act">
+    <action pathway="1104_P5" type="pathway" />
+    <action social="tutorial_npc_act_015_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="musung_234_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1105_P25" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="musung_234_m2_1_act" type="act">
+    <action pathway="1105_P5" type="pathway" />
+    <action social="tutorial_npc_act_015_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="musung_237_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1106_P25" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="musung_237_m2_1_act" type="act">
+    <action pathway="1106_P5" type="pathway" />
+    <action social="tutorial_npc_act_015_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="musung_245_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1107_P25" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="musung_245_m2_1_act" type="act">
+    <action pathway="1107_P5" type="pathway" />
+    <action social="tutorial_npc_act_015_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="musung_252_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1108_P25" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="musung_252_m2_1_act" type="act">
+    <action pathway="1108_P5" type="pathway" />
+    <action social="tutorial_npc_act_015_soc" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="musung_1224_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1109_P25" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="musung_328_m2_act" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="1111_P25" type="pathway" />
+  </act-sequence>  
+
+  <act-sequence alias="musung_1224_m2_1_act" type="act">
+    <action pathway="1109_P5" type="pathway" />
+    <action social="tutorial_npc_act_015_soc" type="social" />
+  </act-sequence>
+
+    
+  <act-sequence alias="musung_328_m2_1_act" type="act">
+    <action pathway="1111_P5" type="pathway" />
+    <action social="tutorial_npc_act_015_soc" type="social" />
+  </act-sequence>  
+
+  
+  <act-sequence alias="musung_common_donggul_act" type="act">
+    <action social="tutorial_npc_act_033_soc" type="social" />
+    <action pathway="1110_P1" type="pathway" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="yungmook_224_m3_act" type="act">
+    <action duration="5500" type="stay" />
+    <action social="tutorial_npc_act_010_soc" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="tutorial_npc_act_038_soc" type="social" />
+    <action duration="3000" type="stay" />
+    
+    <action step="1" type="pause" />
+    
+  </act-sequence>
+
+  <act-sequence alias="yungmook_peace_default" type="peace">
+    <action duration="1000" type="stay" />
+    <action social="tutorial_npc_act_014_soc" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="youngmook_225_m3_act" type="act">
+    <action social="tutorial_npc_act_014_soc" type="social" />
+    <action social="tutorial_npc_act_031_soc" type="social" />
+    <action pathway="1102_P9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_228_m3_act" type="act">
+    <action social="tutorial_npc_act_014_soc" type="social" />
+    <action social="tutorial_npc_act_031_soc" type="social" />
+    <action pathway="1103_P9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_231_m3_act" type="act">
+    <action social="tutorial_npc_act_014_soc" type="social" />
+    <action social="tutorial_npc_act_031_soc" type="social" />
+    <action pathway="1104_P9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_234_m3_act" type="act">
+    <action social="tutorial_npc_act_014_soc" type="social" />
+    <action social="tutorial_npc_act_031_soc" type="social" />
+    <action pathway="1105_P9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_237_m3_act" type="act">
+    <action social="tutorial_npc_act_014_soc" type="social" />
+    <action social="tutorial_npc_act_031_soc" type="social" />
+    <action pathway="1106_P9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_245_m3_act" type="act">
+    <action social="tutorial_npc_act_014_soc" type="social" />
+    <action social="tutorial_npc_act_031_soc" type="social" />
+    <action pathway="1107_P9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_250_m3_act" type="act">
+    <action social="tutorial_npc_act_014_soc" type="social" />
+    <action social="tutorial_npc_act_031_soc" type="social" />
+    <action pathway="1108_P9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_1224_m3_act" type="act">
+    <action social="tutorial_npc_act_014_soc" type="social" />
+    <action social="tutorial_npc_act_031_soc" type="social" />
+    <action pathway="1109_P9" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="youngmook_328_m3_act" type="act">
+    <action social="tutorial_npc_act_014_soc" type="social" />
+    <action social="tutorial_npc_act_031_soc" type="social" />
+    <action pathway="1111_P9" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_227_m2_act" type="act">
+    <action social="tutorial_npc_act_019_soc" type="social" />
+    <action pathway="1102_P10" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_227_m2_1_act" type="act">
+    <action social="tutorial_npc_act_029_soc" type="social" />
+    <action pathway="1102_P10_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_227_m2_2_act" type="act">
+    <action social="tutorial_npc_act_034_soc" type="social" />
+    <action pathway="1102_P10_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_230_m2_act" type="act">
+    <action social="tutorial_npc_act_019_soc" type="social" />
+    <action pathway="1103_P10" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_230_m2_1_act" type="act">
+    <action social="tutorial_npc_act_029_soc" type="social" />
+    <action pathway="1103_P10_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_230_m2_2_act" type="act">
+    <action social="tutorial_npc_act_034_soc" type="social" />
+    <action pathway="1103_P10_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_233_m2_act" type="act">
+    <action social="tutorial_npc_act_019_soc" type="social" />
+    <action pathway="1104_P10" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_233_m2_1_act" type="act">
+    <action social="tutorial_npc_act_029_soc" type="social" />
+    <action pathway="1104_P10_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_233_m2_2_act" type="act">
+    <action social="tutorial_npc_act_034_soc" type="social" />
+    <action pathway="1104_P10_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_236_m2_act" type="act">
+    <action social="tutorial_npc_act_019_soc" type="social" />
+    <action pathway="1105_P10" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_236_m2_1_act" type="act">
+    <action social="tutorial_npc_act_029_soc" type="social" />
+    <action pathway="1105_P10_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_236_m2_2_act" type="act">
+    <action social="tutorial_npc_act_034_soc" type="social" />
+    <action pathway="1105_P10_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_239_m2_act" type="act">
+    <action social="tutorial_npc_act_019_soc" type="social" />
+    <action pathway="1106_P10" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_239_m2_1_act" type="act">
+    <action social="tutorial_npc_act_029_soc" type="social" />
+    <action pathway="1106_P10_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_239_m2_2_act" type="act">
+    <action social="tutorial_npc_act_034_soc" type="social" />
+    <action pathway="1106_P10_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_247_m2_act" type="act">
+    <action social="tutorial_npc_act_019_soc" type="social" />
+    <action pathway="1107_P10" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_247_m2_1_act" type="act">
+    <action social="tutorial_npc_act_029_soc" type="social" />
+    <action pathway="1107_P10_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_247_m2_2_act" type="act">
+    <action social="tutorial_npc_act_034_soc" type="social" />
+    <action pathway="1107_P10_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_252_m2_act" type="act">
+    <action social="tutorial_npc_act_019_soc" type="social" />
+    <action pathway="1108_P10" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_252_m2_1_act" type="act">
+    <action social="tutorial_npc_act_029_soc" type="social" />
+    <action pathway="1108_P10_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_252_m2_2_act" type="act">
+    <action social="tutorial_npc_act_034_soc" type="social" />
+    <action pathway="1108_P10_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_1224_m2_act" type="act">
+    <action social="tutorial_npc_act_019_soc" type="social" />
+    <action pathway="1109_P10" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="youngmook_334_m2_act" type="act">
+    <action social="tutorial_npc_act_019_soc" type="social" />
+    <action pathway="1111_P10" type="pathway" />
+  </act-sequence>  
+
+  <act-sequence alias="youngmook_1224_m2_1_act" type="act">
+    <action social="tutorial_npc_act_029_soc" type="social" />
+    <action pathway="1109_P10_1" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="youngmook_334_m2_1_act" type="act">
+    <action social="tutorial_npc_act_029_soc" type="social" />
+    <action pathway="1111_P10_1" type="pathway" />
+  </act-sequence>  
+
+  <act-sequence alias="youngmook_1224_m2_2_act" type="act">
+    <action social="tutorial_npc_act_034_soc" type="social" />
+    <action pathway="1109_P10_2" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="youngmook_334_m2_2_act" type="act">
+    <action social="tutorial_npc_act_034_soc" type="social" />
+    <action pathway="1111_P10_2" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="CH_WB_YoungMook_0001_1106_act_01" type="act">
+    <action duration="500" type="stay" />
+    <action pathway="1106_P8" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="youngmook_1106_p11_act" type="act">
+    <action pathway="1106_p11" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_1106_p8_act" type="act">
+    <action pathway="1106_p8" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_1102_p11_act" type="act">
+    <action pathway="1102_p11" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="youngmook_1102_p8_act" type="act">
+    <action pathway="1102_p8" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="Summoner_dec01_act" type="act">
+    <action duration="100" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="Summoner_dec02_act" type="act">
+    <action duration="100" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="Summoner_dec03_act" type="act">
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="sukkeun_224_m3_act" type="act">
+    <action social="tutorial_npc_act_009_soc" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="1101_P18" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="sukkeun_244_m2_1_act" type="act">
+    <action pathway="1101_P18_1" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="sukkeun_244_m7_1_act" type="act">
+    <action pathway="wp1107_area1" type="pathway" />
+    <action social="tutorial_npc_act_035_soc" type="social" />
+    <action step="1" type="pause" />
+    <action duration="1000" type="stay" />
+    <action social="tutorial_npc_act_036_soc" type="social" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="tutorial_pve_default" indexed-detect="1" type="peace">
+    <action area="1" max-idle-sec="8" max-move-count="3" min-idle-sec="4" min-move-count="1" type="indexed-movearound" />
+  </act-sequence>
+
+  <act-sequence alias="tutorial_pve_pattern_1" indexed-detect="1" type="peace">
+    <action duration="1500" type="stay" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="tutorial_peace_default" type="peace">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+
+  
+
+  
+  <act-sequence alias="CH_WC_Citizen_0005_act" type="act">
+    
+    <action social="CH_WC_Citizen_0004_soc_01" type="social" />
+  </act-sequence>
+  
+</table>

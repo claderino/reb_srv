@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
+  <!--skillcastcondition3data_npc_blademaster.xml-->
+	<record alias="MH_BladeMaster_Sword_take_wing_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" success-target-flag-1="midair-1" success-target-op="or" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_ascension_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" success-target-flag-1="midair-3" success-target-op="or" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_acceleration_Q_skill3" immune-caster-block-skill="y" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_batto_skill3" gather-range="PVE_Caster_Laser_CMax384_Width104_Dis504" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_batto_Q_Damage0_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_counterattack_LV1_skill3" gather-range="PVE_Target_T_CMax800_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_Crescent_Slash_LV1_skill3" gather-range="PVE_Caster_TF180_CMax384_RMin0_RMax304" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_full_moon_slash_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_full_moon_slash_Fast1_LV1_skill3" gather-range="PVE_Caster_T360_CMax2000_RMin0_RMax304" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_full_moon_slash_Fast2_LV1_skill3" gather-range="PVE_Caster_T360_CMax2000_RMin0_RMax304" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_full_moon_slash_LV1_skill3" gather-range="PVE_Caster_T360_CMax2000_RMin0_RMax304" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_full_moon_slash_LV1_Q_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_full_moon_slash_LV100_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_full_moon_slash_LV2_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_full_moon_slash_LV3_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_impact_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_impact_LV2_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_impact_LV3_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_light_of_velocity_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_light_of_velocity_Q_Damage0_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_mach_slash_skill3" gather-range="PVE_Caster_Laser_CMax384_Width104_Dis504" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_mach_slash_LV2_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_mach_slash_LV3_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_Pierce_Short_LV1_skill3" gather-range="PVE_Caster_Laser_CMax800_Width104_Dis800" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_rush_skill3" gather-range="PVE_Target_T_CMax2000_FMax2000_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_rush_Q_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_six_combo_air_LV1_skill3" gather-range="PVE_Chain_T_CMax2000_FMax2000_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_six_combo_slash_LV1_skill3" gather-range="PVE_Chain_T_CMax2000_FMax2000_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_Blank_skill3" gather-range="PVE_Caster_T_CMax2000_FMax10000_EMax10000" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_blocking_skill3" gather-range="PVE_Caster_T_CMax2000_FMax2000_EMax2000" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_blood_wind_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_blood_wind_Q_Damage0_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_blood_wind_TEST_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_crescent_slash_skill3" gather-range="PVE_Caster_TF180_CMax2000_RMin0_RMax304" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_crescent_slash_LV2_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_crescent_slash_LV3_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_crescent_slash_Q_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_flying_swallow_sword_Q_skill3" gather-range="PVE_Target_T_CMax2000_FMax2800_EMax10000" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_FrontKick_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_impact_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_Push_LV1_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_rush_LV1_skill3" gather-range="PVE_Target_T_CMax2000_FMax2000_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_Rushing_Wind_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_Rushing_Wind_Q_Damage0_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_Rushing_Wind_TEST_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_stab_hidden_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_stab_hidden_LV1111_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_stab_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_stab_TEST_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_stamp_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" success-target-flag-1="down" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_storm_wind_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_storm_wind_LV2_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_storm_wind_LV3_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_triple_slash_Q_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_turning_strike_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_upper_slash_LV2_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_upper_slash_LV3_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_crippling_cut_LV1_skill3" gather-range="PVE_Target_T360_CMax384_RMin0_RMax304" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" success-target-flag-1="down" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_back_dash_LV1_skill3" gather-range="PVE_Caster_T_CMax384_FMax10000_EMax10000" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_full_moon_slash_LV1_skill3" gather-range="PVE_Caster_T360_CMax384_RMin0_RMax304" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_counterattack_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1_skill3" gather-range="PVE_Caster_Laser_CMax384_Width104_Dis504" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_flying_swallow_sword_LV1_skill3" gather-range="PVE_Target_T_CMax2000_FMax1600_EMax2496" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_upper_slash_skill3" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_stamp_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" success-target-flag-1="down" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_back_dash_LV1_skill3" gather-range="PVE_Caster_T_CMax384_FMax10000_EMax10000" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_rush_LV1_skill3" gather-range="PVE_Target_T_CMax2000_FMax2000_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_crescent_slash_skill3" gather-range="PVE_Caster_TF180_CMax384_RMin0_RMax304" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="Test_Feedback_Common_skill3" gather-range="PVE_Target_T_CMax2000_FMax2000_EMax2000" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_None_SkyBlade_skill3" gather-range="PVE_Target_T_CMax2000_FMax2000_EMax2000" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_legslash_LV1_skill3" fail-caster-effect-attribute-1="거미줄" gather-range="PVE_Caster_TF180_CMax2000_RMin0_RMax304" immune-caster-block-skill="y" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_upper_slash_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_VitalSlash_LV1_skill3" gather-range="PVE_Caster_TF180_CMax384_RMin0_RMax304" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_WindyMoonSlash_LV1_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_turning_strike_LV3_skill3" gather-range="PVE_Caster_Laser_CMax384_Width64_Dis800" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_six_combo_slash_C_skill3" gather-range="PVE_Chain_T_CMax2000_FMax2000_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_mach_slash_C_skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_stab_Lv21_Skill3" gather-range="PVE_Caster_Laser_CMax3000_Width200_Dis800" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_None_SwordShot_Lv1_skill3" gather-range="PVE_Ground_T360_CMax3000_RMin0_RMax336" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_mach_slash_LV1_skill3" gather-range="PVE_Caster_Laser_CMax800_Width104_Dis800" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_rush_LV2_skill3" gather-range="PVE_Chain_T_CMax2000_FMax2000_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_None_SkySword" gather-range="PVE_Ground_T360_CMax8000_RMin0_RMax248" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_None_LowSlash" gather-range="PVE_Caster_TF180_CMax3000_RMin0_RMax496" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_None_SkyWave" gather-range="PVE_Caster_Laser_CMax3000_Width96_Dis600" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_None_SwordDance" gather-range="PVE_Chain_T_CMax8000_FMax8000_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_None_Dash" gather-range="PVE_Target_T_CMax8000_FMax8000_EMax304" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_None_SpecialSword_skill3" gather-range="PVE_Chain_T_CMax5000_FMax5000_EMax400" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_blocking_Lv3_kill3" gather-range="PVE_Caster_T_CMax2000_FMax2000_EMax2000" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_stab_hidden_LV31_Skill3" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-caster-flag-1="poundshort" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_stab_Lv31_skill3" gather-range="PVE_Caster_Laser_CMax384_Width64_Dis800" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_stab_Fast_Lv31_skill3" gather-range="PVE_Caster_Laser_CMax384_Width64_Dis800" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_turning_strike_LV2" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax512" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_rush_LV21" fail-target-effect-attribute-1="공중" gather-range="Common_Target_D1600_Dash" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_Upper_Hack_LV1_skill3" gather-range="PVE_Caster_Laser_CMax384_Width104_Dis504" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_VitalSlash_LV2" gather-range="PVE_Target_T_CMax384_FMax400_EMax400" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_Batto_Norm_Lv3" gather-range="PVE_Caster_Laser_CMax800_Width104_Dis800" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_VitalSlash_Batto_Lv1" gather-range="PVE_Caster_Laser_CMax384_Width104_Dis504" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_turning_strike_LV4" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax312" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_Backstep_rush_LV1" gather-range="PVE_Target_T_CMax2000_FMax2000_EMax1000" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Sword_StanceChange" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax312" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+	<record alias="MH_BladeMaster_Batto_StanceChange" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax312" move-type="free" success-target-dead-state="not-dead-restoration-exhaustion" target-type="all" />
+</table>

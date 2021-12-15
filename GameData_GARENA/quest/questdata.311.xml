@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.311.xml-->
+  <quest alias="q_epic_311" category="epic" completed-list="y" district-1="jeryoungrim" id="311" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_docheonpung_002" party-broadcast="n" progress-mission="y" quest-decision="qd_311_4" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject2="case:talked:pc" type="prop" value="10" />
+          </filter-set>
+        </case>
+        <case object="npc:ch_docheonpung_002" party-broadcast="n" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="9" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_jakyoungdan_023" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_huekummrim_dochunpung" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_311_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object2="npc:mh_ghost_0002" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_2200drycorpse_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_311_1" type="manipulate" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_2200drycorpse_02" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_311_2" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_dweller_026" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object2="zoneenv2:e_onoff_blackfiregrass_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_blackfiregrass_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_blackfiregrass_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_blackfiregrass_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_blackfiregrass_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_blackfiregrass_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zone:zone_HuekUmmRim_DoChunPung_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_311_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_Dweller_0014" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HuekUmmRim_DoChunPung_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_311_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_wionehong_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_311_6" type="talk" />
+        <case object="zone:zone_HuekUmmRim_DoChunPung_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_311_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_HuekUmmRim_DoChunPung_SP">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_312" />
+    </completion>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1" reward-1="311_final_set1">
+        <case object="npc:ch_dweller_026" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HuekUmmRim_DoChunPung_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_311_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

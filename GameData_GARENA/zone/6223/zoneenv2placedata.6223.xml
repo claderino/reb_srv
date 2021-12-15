@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\6223\zoneenv2placedata.6223.xml-->
+	<record action-point="-823,8237,2888" action-radius="25" alias="e_button_6223_yongmak_01_place" manipulation-height-lower="25" manipulation-height-upper="25" manipulation-point="-823,8237,2888" manipulation-radius="25" region-point-1="-825,8235,2868" region-point-2="-825,8239,2868" region-point-3="-821,8239,2868" region-point-4="-821,8235,2868" tool-zone-1="6221" tool-zone-2="6223" type="portal" use-manipulation-point="n" />
+	<record alias="e_airdash_6223_MokIn_City_01_a_place" duration="4600" end-pos="-2333,7625,2956" region-point-1="-3889,6617,2368" region-point-2="-3889,6665,2368" region-point-3="-3841,6665,2368" region-point-4="-3841,6617,3307" summon-end-pos="-2333,7625,2956" tool-zone-1="6221" tool-zone-2="6223" type="airdash" />
+	<record action-point="-2031,7885,2960" action-radius="20" alias="e_gate_6223_MokIn_City_01_Place" manipulation-height-lower="20" manipulation-height-upper="20" manipulation-point="-2031,7885,2960" manipulation-radius="20" tool-zone-1="6223" type="gate" use-manipulation-point="n" />
+	<record action-point="-4103,6424,2360" alias="6223_Portal_6224_place" region-point-1="-4073,6395,2292" region-point-2="-4142,6435,2292" region-point-3="-4132,6453,2334" region-point-4="-4063,6413,2338" tool-zone-1="6221" tool-zone-2="6223" type="portal" />
+	<record alias="6223_DMZ_01_place" height="0" region-point-1="-1672,7807,3212" region-point-2="-1724,8102,3275" region-point-3="-1409,8158,4701" region-point-4="-1357,7863,4701" tool-zone-1="6223" type="effect-region" />
+	<record action-point="-1899,7952,3002" action-radius="0" alias="6223_foot_1_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="-1899,7952,3002" manipulation-radius="0" region-point-1="-1942,7817,2953" region-point-2="-2033,7995,2958" region-point-3="-1855,8086,1486" region-point-4="-1764,7908,4702" tool-zone-1="6223" type="foot-switch" use-manipulation-point="n" />
+	<record alias="zone6223.falldeath_place" height="2000" type="fall-death" />
+</table>

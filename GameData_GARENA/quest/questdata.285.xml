@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.285.xml-->
+  <quest alias="q_epic_285" broadcast-category="field" category="epic" completed-list="n" id="285" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="zoneenv2:5292_Foot_1" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="zone:zone_BaekCheongPa_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_285_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:5292_Foot_2" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:5292_Foot_2_8" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:5292_Foot_2_7" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:5292_Foot_2_6" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:5292_Foot_2_5" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:5292_Foot_2_4" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:5292_Foot_2_3" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:5292_Foot_2_2" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object2="zoneenv2:5292_Foot_2_1" party-broadcast="n" progress-mission="y" type="env-entered" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" zone-1="zone_BiWalBong" />
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_285_2" zone-1="zone_BiWalBong_Phase">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_CT_ChunJinKwon_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BiWalBong_Phase" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_285_1" type="enter-zone" />
+        <case object="zone:zone_BiWalBong" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_285_4" type="enter-zone" />
+        <case object="zone:zone_BaekCheongPa_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_285_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_285_3" zone-1="zone_BiWalBong_Phase">
+      <mission id="5" required-register-value="1" reward-1="285_final_set1">
+        <case object="npc:CH_CT_BiWol_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BiWalBong_Phase" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_285_6" type="enter-zone" />
+        <case object="zone:zone_BaekCheongPa_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_285_7" type="enter-zone" />
+        <case object="zone:zone_BiWalBong" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_285_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_BiWalBong" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="zone:zone_BaekCheongPa_Epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_285_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_287" />
+    </completion>
+    <transit id="1" zone="zone_BaekCheongPa_Party">
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+    </transit>
+  </quest>
+</table>

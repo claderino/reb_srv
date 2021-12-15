@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\6439\zoneenv2placedata.6439.xml-->
+	<record action-point="-13506,8107,3519" action-radius="31" alias="e_gate_6439_01_Place" manipulation-height-lower="25" manipulation-height-upper="25" manipulation-point="-13506,8107,3519" manipulation-radius="25" tool-zone-1="6439" type="gate" use-manipulation-point="n" />
+	<record action-point="-13504,11643,3364" action-radius="25" alias="e_button_6439_yongmak_01_Place" manipulation-height-lower="25" manipulation-height-upper="25" manipulation-point="-13504,11643,3364" manipulation-radius="25" region-point-1="-13506,11641,3343" region-point-2="-13506,11645,3343" region-point-3="-13502,11645,3343" region-point-4="-13502,11641,3343" tool-zone-1="6439" type="portal" use-manipulation-point="n" />
+	<record action-point="-13517,6294,3582" alias="6439_portal_Exit_place" region-point-1="-13393,6274,8117" region-point-2="-13641,6274,7321" region-point-3="-13641,6314,7321" region-point-4="-13393,6314,8117" tool-zone-1="6438" tool-zone-2="6439" type="portal" />
+	<record action-point="-13040,6670,3485" action-radius="0" alias="6439_foot_1_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="-13040,6670,3485" manipulation-radius="0" region-point-1="-13119,6447,3476" region-point-2="-13119,6892,3474" region-point-3="-12960,6892,3474" region-point-4="-12960,6447,3477" tool-zone-1="6439" type="foot-switch" use-manipulation-point="n" />
+</table>

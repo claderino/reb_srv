@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="filter" version="0.61">
+  <!--filterdata.xml-->
+	<record alias="race_Kun" either="y" field="race" id="1" op="eq" type="race" value-1="건" weapon-type-1="none" />
+	<record alias="race_Gon" either="y" field="race" id="2" op="eq" type="race" value-1="곤" weapon-type-1="none" />
+	<record alias="race_Lyn" either="y" field="race" id="3" op="eq" type="race" value-1="린" weapon-type-1="none" />
+	<record alias="race_Jin" either="y" field="race" id="4" op="eq" type="race" value-1="진" weapon-type-1="none" />
+	<record alias="race_Normal" either="y" field="race" id="500" op="eq" type="race" value-1="건" value-2="곤" value-3="린" value-4="진" weapon-type-1="none" />
+	<record alias="race_Abnormal" either="n" field="race" id="501" op="eq" type="race" value-1="건" value-2="곤" value-3="린" value-4="진" weapon-type-1="none" />
+	<record alias="Job_Melee" either="y" field="job" id="600" op="eq" type="job" value-1="검사" value-2="권사" value-3="역사" weapon-type-1="none" />
+	<record alias="Job_Range" either="y" field="job" id="601" op="eq" type="job" value-1="격사" weapon-type-1="none" />
+	<record alias="Job_Force" either="y" field="job" id="602" op="eq" type="job" value-1="기공사" weapon-type-1="none" />
+	<record alias="sex_Male" either="y" field="sex" id="900" op="eq" type="sex" value-1="남" weapon-type-1="none" />
+	<record alias="sex_Female" either="y" field="sex" id="901" op="eq" type="sex" value-1="여" weapon-type-1="none" />
+	<record alias="sex_Neuter" either="y" field="sex" id="902" op="eq" type="sex" value-1="중" weapon-type-1="none" />
+	<record alias="job_BladeMaster" either="y" field="job" id="1000" op="eq" type="job" value-1="검사" weapon-type-1="none" />
+	<record alias="Stance_BladeMaster_Sword" either="y" field="stance" id="1100" op="eq" type="stance" value-1="천검세" weapon-type-1="none" />
+	<record alias="Stance_BladeMaster_Not_Sword" either="y" field="stance" id="1101" op="eq" type="stance" value-1="검령세" value-2="납도" weapon-type-1="none" />
+	<record alias="Stance_BladeMaster_Phantom" either="y" field="stance" id="1200" op="eq" type="stance" value-1="검령세" weapon-type-1="none" />
+	<record alias="Stance_BladeMaster_Not_Phantom" either="y" field="stance" id="1201" op="eq" type="stance" value-1="천검세" value-2="납도" weapon-type-1="none" />
+	<record alias="Stance_BladeMaster_Batto" either="y" field="stance" id="1300" op="eq" type="stance" value-1="납도" weapon-type-1="none" />
+	<record alias="Stance_BladeMaster_Not_Batto" either="y" field="stance" id="1301" op="eq" type="stance" value-1="천검세" value-2="검령세" weapon-type-1="none" />
+	<record alias="Stance_BladeMaster_Not_Sword2" either="y" field="stance" id="1900" op="eq" type="stance" value-1="검령세" value-2="납도" weapon-type-1="none" />
+	<record alias="job_KungFufighter" either="y" field="job" id="2000" op="eq" type="job" value-1="권사" weapon-type-1="none" />
+	<record alias="Stance_KungFufighter_Bighit" either="y" field="stance" id="2100" op="eq" type="stance" value-1="단타" weapon-type-1="none" />
+	<record alias="Stance_KungFufighter_Combo" either="y" field="stance" id="2200" op="eq" type="stance" value-1="연계" weapon-type-1="none" />
+	<record alias="Stance_KungFufighter_Mount" either="y" field="stance" id="2300" op="eq" type="stance" value-1="체술" weapon-type-1="none" />
+	<record alias="Stance_KungFufighter_Not_Bighit" either="y" field="stance" id="2900" op="eq" type="stance" value-1="연계" value-2="체술" weapon-type-1="none" />
+	<record alias="Stance_KungFufighter_Not_Combo" either="y" field="stance" id="2901" op="eq" type="stance" value-1="단타" value-2="체술" weapon-type-1="none" />
+	<record alias="Stance_KungFufighter_Not_Mount" either="y" field="stance" id="2902" op="eq" type="stance" value-1="단타" value-2="연계" weapon-type-1="none" />
+	<record alias="Stance_KungFufighter_Common" either="y" field="stance" id="2903" op="eq" type="stance" value-1="단타" value-2="연계" value-3="체술" weapon-type-1="none" />
+	<record alias="job_ForceMaster" either="y" field="job" id="3000" op="eq" type="job" value-1="기공사" weapon-type-1="none" />
+	<record alias="Stance_ForceMaster_Sort" either="y" field="stance" id="3100" op="eq" type="stance" value-1="경기공" weapon-type-1="none" />
+	<record alias="Stance_ForceMaster_Hard" either="y" field="stance" id="3200" op="eq" type="stance" value-1="연기공" weapon-type-1="none" />
+	<record alias="Stance_ForceMaster_Intensive" either="y" field="stance" id="3300" op="eq" type="stance" value-1="강기공" weapon-type-1="none" />
+	<record alias="job_Shooter" either="y" field="job" id="4000" op="eq" type="job" value-1="격사" weapon-type-1="none" />
+	<record alias="job_Destroyer" either="y" field="job" id="5000" op="eq" type="job" value-1="역사" weapon-type-1="none" />
+	<record alias="job_NOT_Destroyer" either="n" field="job" id="5001" op="eq" type="job" value-1="역사" weapon-type-1="none" />
+	<record alias="Stance_Destroyer_Destruction" either="y" field="stance" id="5100" op="eq" type="stance" value-1="파괴" weapon-type-1="none" />
+	<record alias="Stance_Destroyer_Protection" either="y" field="stance" id="5200" op="eq" type="stance" value-1="보호" weapon-type-1="none" />
+	<record alias="Stance_Destroyer_Hardwall" either="y" field="stance" id="5300" op="eq" type="stance" value-1="철벽" weapon-type-1="none" />
+	<record alias="Stance_Destroyer_Not_Hardwall" either="n" field="stance" id="5400" op="eq" type="stance" value-1="철벽" weapon-type-1="none" />
+	<record alias="job_Assassin" either="y" field="job" id="6000" op="eq" type="job" value-1="암살자" weapon-type-1="none" />
+	<record alias="job_NOT_Assassin" either="n" field="job" id="6001" op="eq" type="job" value-1="암살자" weapon-type-1="none" />
+	<record alias="Stance_Assassin_Assassinate" either="y" field="stance" id="6100" op="eq" type="stance" value-1="교란" weapon-type-1="none" />
+	<record alias="Stance_Assassin_Hide" either="y" field="stance" id="6200" op="eq" type="stance" value-1="은신" weapon-type-1="none" />
+	<record alias="job_Summoner" either="y" field="job" id="7000" op="eq" type="job" value-1="소환사" weapon-type-1="none" />
+	<record alias="Stance_Summoner_Summon" either="y" field="stance" id="7100" op="eq" type="stance" value-1="소환" weapon-type-1="none" />
+	<record alias="job_SwordMaster" either="y" field="job" id="7200" op="eq" type="job" value-1="귀검사" weapon-type-1="none" />
+	<record alias="job_Warlock" either="y" field="job" id="8000" op="eq" type="job" value-1="주술사" weapon-type-1="none" />
+	<record alias="job_SoulFighter" either="y" field="job" id="9000" op="eq" type="job" value-1="기권사" weapon-type-1="none" />
+	<record alias="weapon_sword" either="y" field="race" id="20000" op="eq" type="weapon-type" value-1="bare-hand" weapon-type-1="sword" />
+	<record alias="weapon_gauntlet" either="y" field="race" id="20001" op="eq" type="weapon-type" value-1="bare-hand" weapon-type-1="gauntlet" />
+	<record alias="weapon_aura-bangle" either="y" field="race" id="20002" op="eq" type="weapon-type" value-1="bare-hand" weapon-type-1="aura-bangle" />
+	<record alias="weapon_rifle" either="y" field="race" id="20003" op="eq" type="weapon-type" value-1="bare-hand" weapon-type-1="rifle" />
+	<record alias="weapon_pistol" either="y" field="race" id="20004" op="eq" type="weapon-type" value-1="bare-hand" weapon-type-1="pistol" />
+	<record alias="weapon_two-handed-axe" either="y" field="race" id="20005" op="eq" type="weapon-type" value-1="bare-hand" weapon-type-1="two-handed-axe" />
+	<record alias="weapon_dagger" either="y" field="race" id="20006" op="eq" type="weapon-type" value-1="bare-hand" weapon-type-1="dagger" />
+	<record alias="weapon_staff" either="y" field="race" id="20007" op="eq" type="weapon-type" value-1="bare-hand" weapon-type-1="staff" />
+	<record alias="Race_NPC" either="y" field="race" id="30000" op="eq" type="npc" value-1="none" weapon-type-1="none" />
+	<record alias="Race_Not_NPC" either="y" field="race" id="30001" op="eq" type="not-npc" value-1="none" weapon-type-1="none" />
+	<record alias="Faction_1" id="31000" op="eq" type="active-faction" value="1" />
+	<record alias="Faction_2" id="31001" op="eq" type="active-faction" value="2" />
+	<record alias="Not_Dead" either="y" field="dead" id="40000" op="neq" type="prop" value="1" value-1="none" />
+	<record alias="Mount_Linker" either="y" flag="y" flagtype="link" id="40001" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="TestDummy1" either="y" field="race" flag="y" id="40002" op="eq" type="prop-flag" value-1="none" weapon-type-1="none" />
+	<record alias="party-member" id="40003" op="eq" type="party-member" />
+	<record alias="Not_combat-mode" either="y" field="combat-mode" flag="n" id="40004" op="eq" type="prop-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Dead" either="y" field="dead" id="40005" op="eq" type="prop" value="1" value-1="none" />
+	<record alias="Race_PC" either="y" field="race" id="40006" op="eq" type="pc" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_0001" either="y" id="40007" op="eq" type="effect-attribute" value-1="진드기" />
+	<record alias="Attribute_0002" either="y" id="40008" op="eq" type="effect-attribute" value-1="행동불가" />
+	<record alias="Attribute_0003" either="y" id="40009" op="eq" type="effect-attribute" value-1="다운" />
+	<record alias="Attribute_0004" either="y" id="40010" op="eq" type="effect-attribute" value-1="출혈" />
+	<record alias="Attribute_0005" either="y" id="40011" op="eq" type="effect-attribute" value-1="속박" />
+	<record alias="Not_Attribute_0004" either="n" id="40012" op="eq" type="effect-attribute" value-1="출혈" />
+	<record alias="Not_Attribute_002" either="n" id="40013" op="eq" type="effect-attribute" value-1="행동불가" />
+	<record alias="combat-mode" either="y" field="combat-mode" flag="y" id="40014" op="eq" type="prop-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_0006" either="y" id="40015" op="eq" type="effect-attribute" value-1="기절" />
+	<record alias="Not_Attribute_0006" either="n" id="40016" op="eq" type="effect-attribute" value-1="기절" />
+	<record alias="casting" field="casting" flag="y" id="40017" op="eq" type="prop-flag" />
+	<record alias="Attribute_0007" either="y" id="40018" op="eq" type="effect-attribute" value-1="공중" />
+	<record alias="Not_Attribute_0007" either="n" id="40019" op="eq" type="effect-attribute" value-1="공중" />
+	<record alias="Attribute_0008" either="y" id="40020" op="eq" type="effect-attribute" value-1="감속" />
+	<record alias="Embers" flag="y" flagtype="embers" id="40021" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_0009" either="y" id="40022" op="eq" type="effect-attribute" value-1="가젯드랍" />
+	<record alias="Not_Attribute_0014" either="n" id="40023" op="eq" type="effect-attribute" value-1="제압" />
+	<record alias="Not_Attribute_0003" either="n" id="40024" op="eq" type="effect-attribute" value-1="다운" />
+	<record alias="Attribute_0010" either="y" id="40025" op="eq" type="effect-attribute" value-1="앞차기" />
+	<record alias="Not_Attribute_0010" either="n" id="40026" op="eq" type="effect-attribute" value-1="앞차기" />
+	<record alias="Attribute_0011" either="y" id="40027" op="eq" type="effect-attribute" value-1="그로기" />
+	<record alias="Not_Attribute_0011" either="n" id="40028" op="eq" type="effect-attribute" value-1="그로기" />
+	<record alias="Not_Attribute_0012" either="n" id="40029" op="eq" type="effect-attribute" value-1="혼절" />
+	<record alias="Attribute_0012" either="y" id="40030" op="eq" type="effect-attribute" value-1="혼절" />
+	<record alias="midair-1" flag="y" flagtype="midair-1" id="40031" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="midair-2" flag="y" flagtype="midair-2" id="40032" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="midair-3" flag="y" flagtype="midair-3" id="40033" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="wildfire-1" flag="y" flagtype="wildfire-1" id="40034" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="wildfire-2" flag="y" flagtype="wildfire-2" id="40035" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="wildfire-3" flag="y" flagtype="wildfire-3" id="40036" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="impregnability" flag="y" flagtype="impregnability" id="40037" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="kneel" flag="y" flagtype="kneel" id="40038" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_kneel" flag="n" flagtype="kneel" id="40039" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="defence" flag="y" flagtype="defence" id="40040" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_midair-2" flag="n" flagtype="midair-2" id="40041" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_0013" either="y" id="40042" op="eq" type="effect-attribute" value-1="무적" />
+	<record alias="Not_Attribute_0013" either="n" id="40043" op="eq" type="effect-attribute" value-1="무적" />
+	<record alias="Attribute_0014" either="y" id="40044" op="eq" type="effect-attribute" value-1="제압" />
+	<record alias="Attribute_0015" either="y" id="40045" op="eq" type="effect-attribute" value-1="얼음감옥" />
+	<record alias="Attribute_0016" either="y" id="40046" op="eq" type="effect-attribute" value-1="독" />
+	<record alias="frostbite" flag="y" flagtype="frostbite" id="40047" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_frostbite" flag="n" flagtype="frostbite" id="40048" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Exhaustion" field="dead" id="40049" op="neq" type="prop" value="2" />
+	<record alias="concentration" flag="y" flagtype="concentration" id="40050" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="poison" flag="y" flagtype="poison" id="40051" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_poison" flag="n" flagtype="poison" id="40052" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_0017" either="y" id="40053" op="eq" type="effect-attribute" value-1="얼음" />
+	<record alias="Attribute_0018" either="y" id="40054" op="eq" type="effect-attribute" value-1="투명" />
+	<record alias="stun" flag="y" flagtype="stun" id="40055" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_stun" flag="n" flagtype="stun" id="40056" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Down" flag="y" flagtype="down" id="40057" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Down" flag="n" flagtype="down" id="40058" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_midair-1" flag="n" flagtype="midair-1" id="40059" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="swoon" flag="y" flagtype="swoon" id="40060" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Hide" flag="n" flagtype="hide" id="40061" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Burrow" flag="n" flagtype="burrow" id="40062" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_swoon" flag="n" flagtype="swoon" id="40063" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_0019" either="y" id="40064" op="eq" type="effect-attribute" value-1="불" />
+	<record alias="soulblade-1" flag="y" flagtype="soulblade-1" id="40065" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="soulblade-2" flag="y" flagtype="soulblade-2" id="40066" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="soulblade-3" flag="y" flagtype="soulblade-3" id="40067" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_0020" either="y" id="40068" op="eq" type="effect-attribute" value-1="광기" />
+	<record alias="Not_Attribute_0020" either="n" id="40069" op="eq" type="effect-attribute" value-1="광기" />
+	<record alias="Not_Attribute_0018" either="n" id="40070" op="eq" type="effect-attribute" value-1="투명" />
+	<record alias="Not_defence" flag="n" flagtype="defence" id="40071" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="time-bomb" flag="y" flagtype="time-bomb" id="40072" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Attribute_0021" either="n" id="40073" op="eq" type="effect-attribute" value-1="기절" value-2="그로기" value-3="속박" />
+	<record alias="spider-web" flag="y" id="40074" op="eq" type="effect-attribute" value-1="거미줄" />
+	<record alias="Npc-state-3" flag="y" flagtype="npc-state-3" id="40075" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_npc-state-3" flag="n" flagtype="npc-state-3" id="40076" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Attribute_0023" either="n" id="40077" op="eq" type="effect-attribute" value-1="은사" />
+	<record alias="Not_time-bomb" flag="n" flagtype="time-bomb" id="40078" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_0021" either="y" id="40079" op="eq" type="effect-attribute" value-1="기절" value-2="그로기" value-3="속박" />
+	<record alias="Attribute_0023" either="y" id="40080" op="eq" type="effect-attribute" value-1="은사" />
+	<record alias="knockback" flag="y" flagtype="knockback" id="40082" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_knockback" flag="n" flagtype="knockback" id="40083" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_Block_Move" either="y" id="40084" op="eq" type="effect-attribute" value-1="이동불가" />
+	<record alias="Not_Attribute_Block_Move" either="n" id="40085" op="eq" type="effect-attribute" value-1="이동불가" />
+	<record alias="Not_Embers" flag="n" flagtype="embers" id="40086" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_Parry" either="y" id="40087" op="eq" type="effect-attribute" value-1="막기" />
+	<record alias="Not_Attribute_Parry" either="n" id="40088" op="eq" type="effect-attribute" value-1="막기" />
+	<record alias="Attribute_0024" either="y" id="40089" op="eq" type="effect-attribute" value-1="기절" value-2="그로기" value-3="다운" value-4="속박" />
+	<record alias="Not_Attribute_0024" either="n" id="40090" op="eq" type="effect-attribute" value-1="기절" value-2="그로기" value-3="다운" value-4="속박" />
+	<record alias="Attribute_0025" either="y" id="40091" op="eq" type="effect-attribute" value-1="독나방" />
+	<record alias="Not_Attribute_0025" either="n" id="40092" op="eq" type="effect-attribute" value-1="독나방" />
+	<record alias="landdragon" flag="y" flagtype="landdragon" id="40093" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_0094" either="y" id="40094" op="eq" type="effect-attribute" value-1="도발" />
+	<record alias="Not_Attribute_0095" either="n" id="40095" op="eq" type="effect-attribute" value-1="도발" />
+	<record alias="Not_Attribute_0096" either="n" id="40096" op="eq" type="effect-attribute" value-1="다운" value-2="공중" />
+	<record alias="Not_Attribute_0097" either="n" id="40097" op="eq" type="effect-attribute" value-1="치유" />
+	<record alias="Attribute_0098" either="y" id="40098" op="eq" type="effect-attribute" value-1="기절" value-2="그로기" value-3="다운" value-4="공중" />
+	<record alias="Not_Attribute_0099" either="n" id="40099" op="eq" type="effect-attribute" value-1="기절" value-2="그로기" value-3="다운" value-4="공중" />
+	<record alias="Attribute_BlockMove_Stun_Kneel" either="y" id="40100" op="eq" type="effect-attribute" value-1="이동불가" value-2="기절" value-3="그로기" />
+	<record alias="Not_Attribute_BlockMove_Stun_Kneel" either="n" id="40101" op="eq" type="effect-attribute" value-1="이동불가" value-2="기절" value-3="그로기" />
+	<record alias="prickblood" flag="y" flagtype="prickblood" id="40102" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_prickblood" flag="n" flagtype="prickblood" id="40103" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="DragonKick" flag="y" flagtype="DragonKick" id="40104" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Shadow" flag="y" flagtype="shadow" id="40200" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_Shadow" flag="n" flagtype="shadow" id="40201" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="PointBlood1" flag="y" flagtype="TargetHole1" id="40300" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="PointBlood2" flag="y" flagtype="TargetHole2" id="40301" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="PointBlood3" flag="y" flagtype="TargetHole3" id="40302" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="PointBlood4" flag="y" flagtype="MartialFullHit" id="40303" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_BlockMove_RtP" either="y" id="40304" op="eq" type="effect-attribute" value-1="위치바꾸기" value-2="행동불가" />
+	<record alias="hp_lt_percent_20" either="y" field="hp" id="50001" op="lt" type="prop-percent" value="20" value-1="none" weapon-type-1="none" />
+	<record alias="hp_lt_percent_30" either="y" field="hp" id="50002" op="lt" type="prop-percent" value="30" value-1="none" weapon-type-1="none" />
+	<record alias="Level_6" either="y" field="level" id="50003" op="le" type="prop" value="6" value-1="none" weapon-type-1="none" />
+	<record alias="Level_7" either="y" field="level" id="50004" op="le" type="prop" value="7" value-1="none" weapon-type-1="none" />
+	<record alias="Level_8" either="y" field="level" id="50005" op="le" type="prop" value="8" value-1="none" weapon-type-1="none" />
+	<record alias="Level_10" either="y" field="level" id="50006" op="le" type="prop" value="10" value-1="none" weapon-type-1="none" />
+	<record alias="Level_12" either="y" field="level" id="50007" op="le" type="prop" value="12" value-1="none" weapon-type-1="none" />
+	<record alias="Level_14" either="y" field="level" id="50008" op="le" type="prop" value="14" value-1="none" weapon-type-1="none" />
+	<record alias="Level_18" either="y" field="level" id="50009" op="le" type="prop" value="18" value-1="none" weapon-type-1="none" />
+	<record alias="Level_22" either="y" field="level" id="50010" op="le" type="prop" value="22" value-1="none" weapon-type-1="none" />
+	<record alias="Level_26" either="y" field="level" id="50011" op="le" type="prop" value="26" value-1="none" weapon-type-1="none" />
+	<record alias="Level_30" either="y" field="level" id="50012" op="le" type="prop" value="30" value-1="none" weapon-type-1="none" />
+	<record alias="Level_34" either="y" field="level" id="50013" op="le" type="prop" value="34" value-1="none" weapon-type-1="none" />
+	<record alias="Level_38" either="y" field="level" id="50014" op="le" type="prop" value="38" value-1="none" weapon-type-1="none" />
+	<record alias="Level_42" either="y" field="level" id="50015" op="le" type="prop" value="42" value-1="none" weapon-type-1="none" />
+	<record alias="Level_46" either="y" field="level" id="50016" op="le" type="prop" value="46" value-1="none" weapon-type-1="none" />
+	<record alias="Level_50" either="y" field="level" id="50017" op="le" type="prop" value="50" value-1="none" weapon-type-1="none" />
+	<record alias="Level_55" either="y" field="level" id="50018" op="le" type="prop" value="55" value-1="none" weapon-type-1="none" />
+	<record alias="Sp_gt_Value_0" either="y" field="sp" id="50019" op="gt" type="prop" value="0" value-1="none" weapon-type-1="none" />
+	<record alias="Exhaustion" field="dead" flag="y" id="50020" op="eq" type="prop" value="2" value-1="none" weapon-type-1="none" />
+	<record alias="Sp_gt_Value_40" either="y" field="sp" id="50021" op="gt" type="prop" value="40" value-1="none" weapon-type-1="none" />
+	<record alias="hp_eq_percent_100" either="y" field="hp" id="50023" op="lt" type="prop-percent" value="100" value-1="none" weapon-type-1="none" />
+	<record alias="Sp_ge_Value_40" either="y" field="sp" id="50024" op="ge" type="prop" value="40" value-1="none" weapon-type-1="none" />
+	<record alias="Sp_lt_Value_40" either="y" field="sp" id="50025" op="lt" type="prop" value="40" value-1="none" weapon-type-1="none" />
+	<record alias="Restoration" field="dead" flag="y" id="50026" op="eq" type="prop" value="3" value-1="none" weapon-type-1="none" />
+	<record alias="Not_DeadState" either="y" field="dead" id="50027" op="eq" type="prop" value="0" value-1="none" />
+	<record alias="NotRestoration" either="y" field="dead" id="50028" op="neq" type="prop" value="3" value-1="none" weapon-type-1="none" />
+	<record alias="DeadState" either="y" field="dead" id="50030" op="neq" type="prop" value="0" value-1="none" />
+	<record alias="Attribute_0022" either="y" id="50040" op="eq" type="effect-attribute" value-1="장악연계" />
+	<record alias="Not_Attribute_0022" either="n" id="50041" op="eq" type="effect-attribute" value-1="장악연계" />
+	<record alias="Race_Summoned" either="y" field="race" id="50042" op="eq" type="summoned" value-1="none" weapon-type-1="none" />
+	<record alias="hp_le_percent_20" either="y" field="hp" id="50043" op="le" type="prop-percent" value="20" value-1="none" weapon-type-1="none" />
+	<record alias="hp_le_percent_30" either="y" field="hp" id="50044" op="le" type="prop-percent" value="30" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Attribute_0045" either="n" id="50045" op="eq" type="effect-attribute" value-1="흡공" />
+	<record alias="hp_le_percent_50" either="y" field="hp" id="50046" op="le" type="prop-percent" value="50" value-1="none" weapon-type-1="none" />
+	<record alias="not_hp_le_percent_50" either="y" field="hp" id="50047" op="gt" type="prop-percent" value="50" value-1="none" weapon-type-1="none" />
+	<record alias="not_hp_le_percent_30" either="y" field="hp" id="50048" op="gt" type="prop-percent" value="30" value-1="none" weapon-type-1="none" />
+	<record alias="not_hp_le_percent_20" either="y" field="hp" id="50049" op="gt" type="prop-percent" value="20" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_axechopshort" flag="n" flagtype="axechopshort" id="50100" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="axechopshort" flag="y" flagtype="axechopshort" id="50101" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_swingstrikeshort" flag="n" flagtype="swingstrikeshort" id="50102" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="swingstrikeshort" flag="y" flagtype="swingstrikeshort" id="50103" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="link_type_normal" either="y" field="link-type" id="60001" op="eq" type="prop" value="1" value-1="none" weapon-type-1="none" />
+	<record alias="link_state_linker" either="y" field="link-state" id="60002" op="eq" type="prop" value="1" value-1="none" weapon-type-1="none" />
+	<record alias="link_stage_1" either="y" field="link-stage" id="60003" op="eq" type="prop" value="1" value-1="none" weapon-type-1="none" />
+	<record alias="link_stage_2" either="y" field="link-stage" id="60004" op="eq" type="prop" value="2" value-1="none" weapon-type-1="none" />
+	<record alias="link_type_mount" either="y" field="link-type" id="60005" op="eq" type="prop" value="1" value-1="none" weapon-type-1="none" />
+	<record alias="link_type_inhalation" either="y" field="link-type" id="60006" op="eq" type="prop" value="2" value-1="none" weapon-type-1="none" />
+	<record alias="link_state_linked" either="y" field="link-state" id="60007" op="eq" type="prop" value="2" value-1="none" weapon-type-1="none" />
+	<record alias="link_type_catch" either="y" field="link-type" id="60008" op="eq" type="prop" value="4" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_link_state_linker" either="y" field="link-state" id="60009" op="neq" type="prop" value="1" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_link_state" either="y" field="link-state" id="60010" op="eq" type="prop" value="0" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_link_state_linked" either="y" field="link-state" id="60011" op="neq" type="prop" value="2" value-1="none" weapon-type-1="none" />
+	<record alias="link_type_catch_giant" either="y" field="link-type" id="60012" op="eq" type="prop" value="5" value-1="none" weapon-type-1="none" />
+	<record alias="link_type_inhalation-catch" either="y" field="link-type" id="60013" op="eq" type="prop" value="7" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_link" flag="n" flagtype="link" id="60022" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="link" flag="y" flagtype="link" id="60023" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_link_type_mount" either="y" field="link-type" id="60024" op="neq" type="prop" value="1" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Casting" field="casting" flag="n" id="60030" op="eq" type="prop-flag" />
+	<record alias="provoke_timing" flag="y" flagtype="force-flag-1" id="60040" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_wildfire-1" flag="n" flagtype="wildfire-1" id="60041" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_Attribute_0015" either="n" id="60050" op="eq" type="effect-attribute" value-1="얼음감옥" />
+	<record alias="fast-freezing" flag="y" flagtype="fast-freezing" id="60051" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_fast-freezing" flag="n" flagtype="fast-freezing" id="60052" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_60053" either="y" id="60053" op="eq" type="effect-attribute" value-1="얼어붙음" weapon-type-1="none" />
+	<record alias="Not_Attribute_60054" either="n" id="60054" op="eq" type="effect-attribute" value-1="얼어붙음" weapon-type-1="none" />
+	<record alias="Attribute_60055" either="y" id="60055" op="eq" type="effect-attribute" value-1="멍해짐" weapon-type-1="none" />
+	<record alias="Not_Attribute_60056" either="n" id="60056" op="eq" type="effect-attribute" value-1="멍해짐" weapon-type-1="none" />
+	<record alias="Attribute_Boss_1" either="y" id="60057" op="eq" type="effect-attribute" value-1="보스-1" weapon-type-1="none" />
+	<record alias="Not_Attribute_Boss_1" either="n" id="60058" op="eq" type="effect-attribute" value-1="보스-1" weapon-type-1="none" />
+	<record alias="job_BladeMaster_KungFuFighter" either="y" field="job" id="60060" op="eq" type="job" value-1="검사" value-2="권사" weapon-type-1="none" />
+	<record alias="Chilblain" flag="y" flagtype="chilblain" id="60061" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_Chilblain" flag="n" flagtype="chilblain" id="60062" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_Stun_Kneel" either="y" id="60063" op="eq" type="effect-attribute" value-1="기절" value-2="그로기" />
+	<record alias="Not_Attribute_Stun_Kneel" either="n" id="60064" op="eq" type="effect-attribute" value-1="기절" value-2="그로기" />
+	<record alias="Npc-state-1" flag="y" flagtype="npc-state-1" id="60065" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_npc-state-1" flag="n" flagtype="npc-state-1" id="60066" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Npc-state-2" flag="y" flagtype="npc-state-2" id="60067" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Npc-state-2" flag="n" flagtype="npc-state-2" id="60068" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="hardwall-break" flag="y" flagtype="hardwall-break" id="60069" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_hardwall-break" flag="n" flagtype="hardwall-break" id="60070" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="justguard" flag="y" flagtype="justguard" id="60071" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_justguard" flag="n" flagtype="justguard" id="60072" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="flydragon" flag="y" flagtype="flydragon" id="60073" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_flydragon" flag="n" flagtype="flydragon" id="60074" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="poundshort" flag="y" flagtype="poundshort" id="60075" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_poundshort" flag="n" flagtype="poundshort" id="60076" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="dexterity" flag="y" flagtype="dexterity" id="60077" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_dexterity" flag="n" flagtype="dexterity" id="60078" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="hp_le_percent_10" either="y" field="hp" id="60079" op="le" type="prop-percent" value="10" value-1="none" weapon-type-1="none" />
+	<record alias="hp_gt_percent_10" either="y" field="hp" id="60080" op="gt" type="prop-percent" value="10" value-1="none" weapon-type-1="none" />
+	<record alias="hp_gt_percent_50" either="y" field="hp" id="60081" op="gt" type="prop-percent" value="50" value-1="none" weapon-type-1="none" />
+	<record alias="hp_gt_percent_30" either="y" field="hp" id="60082" op="gt" type="prop-percent" value="30" value-1="none" weapon-type-1="none" />
+	<record alias="hp_gt_percent_20" either="y" field="hp" id="60083" op="gt" type="prop-percent" value="20" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Attribute_down_swoon" either="n" id="60085" op="eq" type="effect-attribute" value-1="다운" value-2="혼절" />
+	<record alias="Summoner_Poison2" flag="y" flagtype="poison2" id="60090" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Attribute_ConditionCheck" either="n" id="60091" op="eq" type="effect-attribute" value-1="조건만족" />
+	<record alias="Attribute_ConditionCheck" either="y" id="60092" op="eq" type="effect-attribute" value-1="조건만족" />
+	<record alias="EmberFullStack" flag="y" flagtype="EmberFullStack" id="60093" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="TankingDrain" flag="y" flagtype="TankingDrain" id="60094" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_TankingDrain" flag="n" flagtype="TankingDrain" id="60095" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="FireBit" flag="y" flagtype="FireBit" id="60096" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_FireBit" flag="n" flagtype="FireBit" id="60097" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="FireBit2" flag="y" flagtype="FireBit2" id="60098" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_FireBit2" flag="n" flagtype="FireBit2" id="60099" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="FireBitFullStack" flag="y" flagtype="FireBitFullStack" id="60100" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_FireBitFullStack" flag="n" flagtype="FireBitFullStack" id="60101" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="IceBit" flag="y" flagtype="IceBit" id="60102" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_IceBit" flag="n" flagtype="IceBit" id="60103" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="IceBit2" flag="y" flagtype="IceBit2" id="60104" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_IceBit2" flag="n" flagtype="IceBit2" id="60105" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="IceBitFullStack" flag="y" flagtype="IceBitFullStack" id="60106" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_IceBitFullStack" flag="n" flagtype="IceBitFullStack" id="60107" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="MorningGlory" flag="y" flagtype="MorningGlory" id="60110" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_MorningGlory" flag="n" flagtype="MorningGlory" id="60111" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Poison2FullStack" flag="y" flagtype="Poison2FullStack" id="60112" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_Poison2FullStack" flag="n" flagtype="Poison2FullStack" id="60113" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="hp_ge_percent_11" either="y" field="hp" id="60120" op="ge" type="prop-percent" value="11" value-1="none" weapon-type-1="none" />
+	<record alias="hp_lt_percent_11" either="y" field="hp" id="60121" op="lt" type="prop-percent" value="11" value-1="none" weapon-type-1="none" />
+	<record alias="hp_ge_percent_21" either="y" field="hp" id="60122" op="ge" type="prop-percent" value="21" value-1="none" weapon-type-1="none" />
+	<record alias="hp_lt_percent_21" either="y" field="hp" id="60123" op="lt" type="prop-percent" value="21" value-1="none" weapon-type-1="none" />
+	<record alias="Hornet_Flag" flag="y" flagtype="Hornet" id="60124" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_Hornet_Flag" flag="n" flagtype="Hornet" id="60224" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_InstantHeartCount_Max" field="instant-heart-count" id="60125" op="le" type="prop-percent" value="100" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_BMHeartCount_Max" field="heart-count" id="60126" op="le" type="prop-percent" value="100" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_TankingZone_Check" either="y" id="60127" op="eq" type="effect-attribute" value-1="탱킹장판" />
+	<record alias="Attribute_MorningGlory2_Check" either="y" id="60128" op="eq" type="effect-attribute" value-1="소환사독" />
+	<record alias="hp_lt_percent_31" either="y" field="hp" id="60129" op="lt" type="prop-percent" value="31" value-1="none" weapon-type-1="none" />
+	<record alias="BloodFullStack" flag="y" flagtype="BloodFullStack" id="60130" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_BloodFullStack" flag="n" flagtype="BloodFullStack" id="60131" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="PoisonFullStack" flag="y" flagtype="PoisonFullStack" id="60132" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_PoisonFullStack" flag="n" flagtype="PoisonFullStack" id="60133" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_Infinity-shot" flag="n" flagtype="infinity-shot" id="60134" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_60135" either="y" id="60135" op="eq" type="effect-attribute" value-1="녹주석" weapon-type-1="none" />
+	<record alias="Not_Attribute_60136" either="n" id="60136" op="eq" type="effect-attribute" value-1="녹주석" weapon-type-1="none" />
+	<record alias="Not_Attribute_60137" either="n" id="60137" op="eq" type="effect-attribute" value-1="녹주석" value-2="홍옥" weapon-type-1="none" />
+	<record alias="Attribute_60138" either="y" id="60138" op="eq" type="effect-attribute" value-1="홍옥" weapon-type-1="none" />
+	<record alias="Not_Attribute_60139" either="n" id="60139" op="eq" type="effect-attribute" value-1="홍옥" weapon-type-1="none" />
+	<record alias="Attribute_60140" either="y" id="60140" op="eq" type="effect-attribute" value-1="보스저항-1" weapon-type-1="none" />
+	<record alias="Not_Attribute_60141" either="n" id="60141" op="eq" type="effect-attribute" value-1="보스저항-1" weapon-type-1="none" />
+	<record alias="Attribute_60142" either="y" id="60142" op="eq" type="effect-attribute" value-1="보스저항-2" weapon-type-1="none" />
+	<record alias="Not_Attribute_60143" either="n" id="60143" op="eq" type="effect-attribute" value-1="보스저항-2" weapon-type-1="none" />
+	<record alias="Not_Attribute_60144" either="n" id="60144" op="eq" type="effect-attribute" value-1="보스저항-1" value-2="홍옥" value-3="녹주석" weapon-type-1="none" />
+	<record alias="Not_Attribute_60145" either="n" id="60145" op="eq" type="effect-attribute" value-1="보스저항-1" value-2="홍옥" value-3="보스저항-2" weapon-type-1="none" />
+	<record alias="Not_Attribute_60146" either="n" id="60146" op="eq" type="effect-attribute" value-1="보스저항-1" value-2="홍옥" weapon-type-1="none" />
+	<record alias="Not_Attribute_60147" either="n" id="60147" op="eq" type="effect-attribute" value-1="보스저항-1" value-2="홍옥" value-3="보스저항-2" value-4="녹주석" weapon-type-1="none" />
+	<record alias="Attribute_60148" either="y" id="60148" op="eq" type="effect-attribute" value-1="보스저항-2" value-2="녹주석" weapon-type-1="none" />
+	<record alias="Attribute_0045" either="y" id="60149" op="eq" type="effect-attribute" value-1="흡공" />
+	<record alias="Attribute_Boss_2" either="y" id="60150" op="eq" type="effect-attribute" value-1="보스-2" weapon-type-1="none" />
+	<record alias="Not_Attribute_Boss_2" either="n" id="60151" op="eq" type="effect-attribute" value-1="보스-2" weapon-type-1="none" />
+	<record alias="Attribute_Boss_3" either="y" id="60152" op="eq" type="effect-attribute" value-1="보스-3" weapon-type-1="none" />
+	<record alias="Not_Attribute_Boss_3" either="n" id="60153" op="eq" type="effect-attribute" value-1="보스-3" weapon-type-1="none" />
+	<record alias="Attribute_Boss_1_2" either="y" id="60154" op="eq" type="effect-attribute" value-1="보스-1" value-2="보스-2" />
+	<record alias="Not_Attribute_Boss_1_2" either="n" id="60155" op="eq" type="effect-attribute" value-1="보스-1" value-2="보스-2" />
+	<record alias="Attribute_Boss_1_3" either="y" id="60156" op="eq" type="effect-attribute" value-1="보스-1" value-2="보스-3" />
+	<record alias="Not_Attribute_Boss_1_3" either="n" id="60157" op="eq" type="effect-attribute" value-1="보스-1" value-2="보스-3" />
+	<record alias="Attribute_Boss_2_3" either="y" id="60158" op="eq" type="effect-attribute" value-1="보스-2" value-2="보스-3" />
+	<record alias="Not_Attribute_Boss_2_3" either="n" id="60159" op="eq" type="effect-attribute" value-1="보스-2" value-2="보스-3" />
+	<record alias="Attribute_Masung_1" either="y" id="60160" op="eq" type="effect-attribute" value-1="마성-1" weapon-type-1="none" />
+	<record alias="Not_Attribute_Masung_1" either="n" id="60161" op="eq" type="effect-attribute" value-1="마성-1" weapon-type-1="none" />
+	<record alias="Attribute_Masung_2" either="y" id="60162" op="eq" type="effect-attribute" value-1="마성-2" weapon-type-1="none" />
+	<record alias="Not_Attribute_Masung_2" either="n" id="60163" op="eq" type="effect-attribute" value-1="마성-2" weapon-type-1="none" />
+	<record alias="Attribute_Masung_3" either="y" id="60164" op="eq" type="effect-attribute" value-1="마성-3" weapon-type-1="none" />
+	<record alias="Not_Attribute_Masung_3" either="n" id="60165" op="eq" type="effect-attribute" value-1="마성-3" weapon-type-1="none" />
+	<record alias="Attribute_Masung_4" either="y" id="60166" op="eq" type="effect-attribute" value-1="마성-4" weapon-type-1="none" />
+	<record alias="Not_Attribute_Masung_4" either="n" id="60167" op="eq" type="effect-attribute" value-1="마성-4" weapon-type-1="none" />
+	<record alias="accountused" either="y" id="60168" op="eq" type="effect-attribute" value-1="낙인저항-1" weapon-type-1="none" />
+	<record alias="Not_accountused" either="n" id="60169" op="eq" type="effect-attribute" value-1="낙인저항-1" weapon-type-1="none" />
+	<record alias="GhostX0" flag="y" flagtype="GhostX0" id="60170" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_GhostX0" flag="n" flagtype="GhostX0" id="60171" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="GhostX1" flag="y" flagtype="GhostX1" id="60172" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_GhostX1" flag="n" flagtype="GhostX1" id="60173" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="GhostX2" flag="y" flagtype="GhostX2" id="60174" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_GhostX2" flag="n" flagtype="GhostX2" id="60175" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="GhostX3" flag="y" flagtype="GhostX3" id="60176" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_GhostX3" flag="n" flagtype="GhostX3" id="60177" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_X123" either="y" id="60178" op="eq" type="effect-attribute" value-1="주술체" weapon-type-1="none" />
+	<record alias="Not_Attribute_X123" either="n" id="60179" op="eq" type="effect-attribute" value-1="주술체" weapon-type-1="none" />
+	<record alias="Attribute_60180" either="y" id="60180" op="eq" type="effect-attribute" value-1="낙인저항-4" />
+	<record alias="Not_Attribute_60181" either="n" id="60181" op="eq" type="effect-attribute" value-1="낙인저항-4" />
+	<record alias="frontdown_Flag" flag="y" flagtype="frontdown" id="60190" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_frontdown_Flag" flag="n" flagtype="frontdown" id="60191" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="BloodBurst_O" flag="y" flagtype="BloodBurst" id="60200" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_BloodBurst_X" flag="n" flagtype="BloodBurst" id="60201" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Attribute_NPC" either="n" id="60202" op="eq" type="effect-attribute" value-1="NPC-4" value-2="NPC-3" value-3="NPC-2" value-4="NPC-1" weapon-type-1="none" />
+	<record alias="Not_EmberFullStack" flag="n" flagtype="EmberFullStack" id="60203" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_NPC_1" either="y" id="60204" op="eq" type="effect-attribute" value-1="NPC-1" weapon-type-1="none" />
+	<record alias="Not_Attribute_NPC_1" either="n" id="60205" op="eq" type="effect-attribute" value-1="NPC-1" weapon-type-1="none" />
+	<record alias="Attribute_NPC_2" either="y" id="60206" op="eq" type="effect-attribute" value-1="NPC-2" weapon-type-1="none" />
+	<record alias="Not_Attribute_NPC_2" either="n" id="60207" op="eq" type="effect-attribute" value-1="NPC-2" weapon-type-1="none" />
+	<record alias="Attribute_NPC_3" either="y" id="60208" op="eq" type="effect-attribute" value-1="NPC-3" weapon-type-1="none" />
+	<record alias="Not_Attribute_NPC_3" either="n" id="60209" op="eq" type="effect-attribute" value-1="NPC-3" weapon-type-1="none" />
+	<record alias="Attribute_NPC_4" either="y" id="60210" op="eq" type="effect-attribute" value-1="NPC-4" weapon-type-1="none" />
+	<record alias="Not_Attribute_NPC_4" either="n" id="60211" op="eq" type="effect-attribute" value-1="NPC-4" weapon-type-1="none" />
+	<record alias="burn" flag="y" flagtype="burn" id="60212" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_burn" flag="n" flagtype="burn" id="60213" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Attribute_60214" either="n" id="60214" op="eq" type="effect-attribute" value-1="보스저항-1" value-2="낙인저항-5" value-3="낙인저항-6" />
+	<record alias="Not_Attribute_60215" either="n" id="60215" op="eq" type="effect-attribute" value-1="보스저항-1" value-2="낙인저항-5" />
+	<record alias="Attribute_60216" either="y" id="60216" op="eq" type="effect-attribute" value-1="낙인저항-6" />
+	<record alias="Not_Attribute_Boss_1_2_3" either="n" id="60217" op="eq" type="effect-attribute" value-1="보스-1" value-2="보스-2" value-3="보스-3" />
+	<record alias="Attribute_SwordShield" either="y" id="60218" op="eq" type="effect-attribute" value-1="검막" weapon-type-1="none" />
+	<record alias="Not_Attribute_SwordShield" either="n" id="60219" op="eq" type="effect-attribute" value-1="검막" weapon-type-1="none" />
+	<record alias="Attribute_Talisman" either="y" id="60220" op="eq" type="effect-attribute" value-1="부적" weapon-type-1="none" />
+	<record alias="Not_Attribute_Talisman" either="n" id="60221" op="eq" type="effect-attribute" value-1="부적" weapon-type-1="none" />
+	<record alias="Attribute_Class_1" either="y" id="60230" op="eq" type="effect-attribute" value-1="클래스-1" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_1" either="n" id="60231" op="eq" type="effect-attribute" value-1="클래스-1" weapon-type-1="none" />
+	<record alias="Attribute_Class_2" either="y" id="60232" op="eq" type="effect-attribute" value-1="클래스-2" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_2" either="n" id="60233" op="eq" type="effect-attribute" value-1="클래스-2" weapon-type-1="none" />
+	<record alias="Attribute_Class_3" either="y" id="60234" op="eq" type="effect-attribute" value-1="클래스-3" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_3" either="n" id="60235" op="eq" type="effect-attribute" value-1="클래스-3" weapon-type-1="none" />
+	<record alias="Attribute_Class_4" either="y" id="60236" op="eq" type="effect-attribute" value-1="클래스-4" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_4" either="n" id="60237" op="eq" type="effect-attribute" value-1="클래스-4" weapon-type-1="none" />
+	<record alias="Attribute_Class_5" either="y" id="60238" op="eq" type="effect-attribute" value-1="클래스-5" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_5" either="n" id="60239" op="eq" type="effect-attribute" value-1="클래스-5" weapon-type-1="none" />
+	<record alias="Attribute_Class_6" either="y" id="60240" op="eq" type="effect-attribute" value-1="클래스-6" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_6" either="n" id="60241" op="eq" type="effect-attribute" value-1="클래스-6" weapon-type-1="none" />
+	<record alias="Attribute_Class_7" either="y" id="60242" op="eq" type="effect-attribute" value-1="클래스-7" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_7" either="n" id="60243" op="eq" type="effect-attribute" value-1="클래스-7" weapon-type-1="none" />
+	<record alias="Attribute_Class_8" either="y" id="60244" op="eq" type="effect-attribute" value-1="클래스-8" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_8" either="n" id="60245" op="eq" type="effect-attribute" value-1="클래스-8" weapon-type-1="none" />
+	<record alias="Attribute_Class_9" either="y" id="60246" op="eq" type="effect-attribute" value-1="클래스-9" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_9" either="n" id="60247" op="eq" type="effect-attribute" value-1="클래스-9" weapon-type-1="none" />
+	<record alias="Attribute_Class_10" either="y" id="60248" op="eq" type="effect-attribute" value-1="클래스-10" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_10" either="n" id="60249" op="eq" type="effect-attribute" value-1="클래스-10" weapon-type-1="none" />
+	<record alias="Attribute_Class_13" either="y" id="60272" op="eq" type="effect-attribute" value-1="클래스-13" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_13" either="n" id="60273" op="eq" type="effect-attribute" value-1="클래스-13" weapon-type-1="none" />
+	<record alias="Attribute_Class_20" either="y" id="60274" op="eq" type="effect-attribute" value-1="클래스-20" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_20" either="n" id="60275" op="eq" type="effect-attribute" value-1="클래스-20" weapon-type-1="none" />
+	<record alias="LeafDodge" flag="y" flagtype="LeafDodge" id="60250" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_LeafDodge" flag="n" flagtype="LeafDodge" id="60251" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="FireWall3" flag="y" flagtype="FireWall3" id="60252" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_FireWall3" flag="n" flagtype="FireWall3" id="60253" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="force-flag-2" flag="y" flagtype="force-flag-2" id="60254" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_force-flag-2" flag="n" flagtype="force-flag-2" id="60255" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="HighKick" flag="y" flagtype="HighKick" id="60256" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_HighKick" flag="n" flagtype="HighKick" id="60257" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="pierce" flag="y" flagtype="pierce" id="60258" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_pierce" flag="n" flagtype="pierce" id="60259" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Attribute_60260" either="n" id="60260" op="eq" type="effect-attribute" value-1="얼어붙음" value-2="멍해짐" />
+	<record alias="joint" flag="y" flagtype="joint" id="60261" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_joint" flag="n" flagtype="joint" id="60262" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="ghost_mode" field="ghost" flag="y" id="60263" op="eq" type="prop-flag" />
+	<record alias="Not_ghost_mode" field="ghost" flag="n" id="60264" op="eq" type="prop-flag" />
+	<record alias="Neither_hide_nor_rapid_cooling" either="n" id="60265" op="eq" type="effect-attribute" value-1="은신" value-2="얼음감옥" weapon-type-1="none" />
+	<record alias="Hyperkick" flag="y" flagtype="Hyperkick" id="60266" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_Hyperkick" flag="n" flagtype="Hyperkick" id="60267" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="TargetHole1" flag="y" flagtype="TargetHole1" id="60268" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_TargetHole1" flag="n" flagtype="TargetHole1" id="60269" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="catchshield" flag="y" flagtype="catchshield" id="60270" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_catchshield" flag="n" flagtype="catchshield" id="60271" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_Class_15" either="y" id="60300" op="eq" type="effect-attribute" value-1="클래스-15" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_15" either="n" id="60301" op="eq" type="effect-attribute" value-1="클래스-15" weapon-type-1="none" />
+	<record alias="TargetHole3" flag="y" flagtype="TargetHole3" id="60276" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_TargetHole3" flag="n" flagtype="TargetHole3" id="60277" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Quest-1" either="y" id="60278" op="eq" type="effect-attribute" value-1="퀘스트-1" weapon-type-1="none" />
+	<record alias="NOT_Quest-1" either="n" id="60279" op="eq" type="effect-attribute" value-1="퀘스트-1" weapon-type-1="none" />
+	<record alias="Quest-2" either="y" id="60280" op="eq" type="effect-attribute" value-1="퀘스트-2" weapon-type-1="none" />
+	<record alias="NOT_Quest-2" either="n" id="60281" op="eq" type="effect-attribute" value-1="퀘스트-2" weapon-type-1="none" />
+	<record alias="Attribute_Class_18" either="y" id="60282" op="eq" type="effect-attribute" value-1="클래스-18" weapon-type-1="none" />
+	<record alias="Not_Attribute_Class_18" either="n" id="60283" op="eq" type="effect-attribute" value-1="클래스-18" weapon-type-1="none" />
+	<record alias="detection" flag="y" flagtype="detection" id="60284" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_detection" flag="n" flagtype="detection" id="60285" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Race_Summoned" either="y" field="race" id="60286" op="eq" type="not-summoned" value-1="none" weapon-type-1="none" />
+	<record alias="Not_Race_PC" either="n" field="race" id="60287" op="eq" type="pc" value-1="none" weapon-type-1="none" />
+	<record alias="Bubble" flag="y" flagtype="Bubble" id="60288" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_Bubble" flag="n" flagtype="Bubble" id="60289" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="Attribute_60290" either="y" id="60290" op="eq" type="effect-attribute" value-1="보스저항-5" weapon-type-1="none" />
+	<record alias="Not_Attribute_60290" either="n" id="60291" op="eq" type="effect-attribute" value-1="보스저항-5" weapon-type-1="none" />
+	<record alias="Kneel_Down_Air" either="y" id="60292" op="eq" type="effect-attribute" value-1="그로기" value-2="다운" value-3="공중" />
+	<record alias="Not_Kneel_Down_Air" either="n" id="60293" op="eq" type="effect-attribute" value-1="그로기" value-2="다운" value-3="공중" />
+	<record alias="Smash" flag="y" flagtype="Smash" id="60294" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+	<record alias="NOT_Smash" flag="n" flagtype="Smash" id="60295" op="eq" type="effect-flag" value-1="none" weapon-type-1="none" />
+</table>

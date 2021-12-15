@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.480.xml-->
+  <quest activated-faction="gang2_chungkak" alias="q_sub_480" broadcast-category="field" category="normal" district-1="jeryoungrim" id="480" max-repeat="1" reset-type="daily" retired="y" save-type="all">
+    <mission-step id="1">
+      <mission id="1" required-register-value="15">
+        <case object2="npc:ch_factiona_guard_0031" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_jakyeongdan_0003" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:CH_jakyeongDan_0002" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_jakyeongdan_0001" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_docheonpung_0004" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_jakyeongdan_0010" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_jakyeongdan_0009" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_jakyeongdan_0008" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_jakyeongdan_0007" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_jakyeongdan_0006" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_jakyeongdan_0005" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object2="npc:ch_jakyeongdan_0004" party-broadcast="y" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+        <case object="npc:ch_faction_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="480_final_set1" reward-2="480_final_set2">
+        <case object="npc:ch_faction_0004" party-broadcast="n" progress-mission="y" type="talk" visible-object="y">
+          <filter-set>
+            <filter subject2="case:talked:pc" type="active-faction" value="gang2_chungkak" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <acquisition check-tencent-vitality="n" level="18" preceding-quest-1="q_sub_479" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_faction_0004" party-broadcast="n" type="talk" visible-object="y">
+        <filter-set>
+          <filter subject2="case:talked:pc" type="active-faction" value="gang2_chungkak" />
+        </filter-set>
+      </case>
+    </acquisition>
+  </quest>
+</table>

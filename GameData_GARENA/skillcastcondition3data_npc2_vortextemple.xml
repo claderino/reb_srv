@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="SkillCastCondition3" version="1.30">
+  <!--skillcastcondition3data_npc2_vortextemple.xml-->
+	<record alias="GWD_VT_B1_Flazard_Fire_Inhalation" gather-range="ID_GWD_VT_B1_Flazard_Fire_Inhalation" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Flazard_Fire_CrossLaser" gather-range="ID_GWD_VT_B1_Flazard_Fire_CrossLaser" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Flazard_Fire_Jump" gather-range="ID_GWD_VT_B1_Flazard_Fire_Jump" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Flazard_Fire_SpikeAttack" gather-range="ID_GWD_VT_B1_Flazard_Fire_SpikeAttack" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Flazard_Ice_VerticalCut" gather-range="ID_GWD_VT_B1_Flazard_Ice_VerticalCut" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Flazard_Ice_Kick" gather-range="ID_GWD_VT_B1_Flazard_Ice_Kick" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Flazard_Ice_Inhalation" gather-range="ID_GWD_VT_B1_Flazard_Ice_Inhalation" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Flazard_Ice_Jump" gather-range="ID_GWD_VT_B1_Flazard_Ice_Jump" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Flazard_Ice_SpikeAttack" gather-range="ID_GWD_VT_B1_Flazard_Ice_SpikeAttack" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_FireMarble_Rush" gather-range="ID_GWD_VT_B1_FireMarble_Rush" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_IceMarble_Rush" gather-range="ID_GWD_VT_B1_IceMarble_Rush" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Dummy_None_FireChain" gather-range="PVE_Chain_T_CMax8000_FMax8000_EMax8000_RMax504" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B1_Dummy_None_IceChain" gather-range="PVE_Chain_T_CMax8000_FMax8000_EMax8000_RMax504" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_Fatman_Choke" fail-target-flag-1="npc-state-1" fail-target-flag-2="npc-state-2" fail-target-op="or" gather-range="ID_ME_BEA_B1_Fatman_None_Choke" link-stage="stage-1" link-state="link" link-type="inhalation" move-type="free" success-target-dead-state="not-dead-restoration" success-target-flag-1="link" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_Swing" gather-range="ID_ME_BEA_B1_Fatman_None_Swing_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_Area360" gather-range="ID_ME_BEA_B1_Fatman_None_Area360_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_Stab" gather-range="ID_ME_BEA_B1_Fatman_None_Stab_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_Fatman_Inhalation" gather-range="ID_ME_BEA_B1_Fatman_None_Inhalation" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_Throw" gather-range="ID_ME_BEA_B1_Fatman_None_Throw_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Throw" gather-range="ID_ME_BEA_B1_Fatman_None_Throw_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_Fatman_Jump" gather-range="ID_ME_BEA_B1_Fatman_None_Jump" immune-caster-block-skill="y" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_DownAttack" gather-range="ID_ME_BEA_B1_Fatman_None_DownAttack_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_Fatman_MultiChop" gather-range="ID_ME_BEA_B1_Fatman_None_MultiChop_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_Strike" gather-range="ID_ME_BEA_B1_Fatman_None_Strike_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Spin" gather-range="ID_ME_BEA_B1_Fatman_None_Spin_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Slap" gather-range="ID_ME_BEA_B1_Fatman_None_Slap_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_Social" gather-range="ID_ME_BEA_B1_Fatman_None_Social1" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Social" gather-range="ID_ME_BEA_B1_Fatman_None_Social2" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_Power" gather-range="ID_ME_BEA_B1_Fatman_None_Power_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Power" gather-range="ID_ME_BEA_B1_Fatman_None_Power_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_JumpAttack" gather-range="ID_ME_BEA_B1_Fatman_None_JumpAttack_G" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_Power_SP" gather-range="ID_ME_BEA_B1_Fatman_None_Power_G_SP" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Power_SP" gather-range="ID_ME_BEA_B1_Fatman_None_Power_S_SP" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Swing" gather-range="ID_ME_BEA_B1_Fatman_None_Swing_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Area360" gather-range="ID_ME_BEA_B1_Fatman_None_Area360_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Stab" gather-range="ID_ME_BEA_B1_Fatman_None_Stab_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanG_Power_Invin" gather-range="ID_ME_BEA_B1_Fatman_None_Power_G_Invin" immune-caster-block-skill="y" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_Power_Invin" gather-range="ID_ME_BEA_B1_Fatman_None_Power_S_Invin" immune-caster-block-skill="y" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_JumpAttack" gather-range="ID_ME_BEA_B1_Fatman_None_JumpAttack_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_FatmanS_DownAttack" gather-range="ID_ME_BEA_B1_Fatman_None_DownAttack_S" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_MultiAttack" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax872" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_RapidMultiAttack" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax872" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_HeavyAttack" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax976" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_RapidHeavyAttack" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax976" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_SpinAttack" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax1224" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_RapidSpinAttack" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax1224" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_FistBurst" gather-range="PVE_Caster_Laser_CMax4000_Width296_Dis1504" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_FistExplosion" gather-range="PVE_Caster_Laser_CMax4000_Width392_Dis3512" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_HellFire" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax10000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_BurnMadness_Boss" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax520" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_CoolDown" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax520" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_SnapSmash" fail-target-catch-linked="y" fail-target-mount-linked="y" gather-range="ID_Bagic_Target" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_Leap" gather-range="PVE_Ground_T360_CMax4000_RMin0_RMax432" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_Inhale" gather-range="ID_Bagic_Round_80M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_Exhale" gather-range="ID_Bagic_Round_80M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_Repel" gather-range="ID_ME_BEJ_B2_DemonEmpire_Repel" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_RisingAttack" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax1000_H3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_DemonEmpire_Repel_Counter" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax1000_H3000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Spurt" gather-range="PVE_Caster_Laser_CMax10000_Width400_Dis1800" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Evade" gather-range="PVE_Caster_Laser_CMax10000_Width400_BDis1800" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Warn" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax520" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Gaze" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax3600" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_DarkSector" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax2500" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_DarkSwirl" gather-range="ID_Bagic_Round_13M50" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_MultiSlice" gather-range="ID_Bagic_Round_13M50" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Execution" gather-range="PVE_Target_T_CMax10000_FMax10000_EMax10000_H4000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B2_SorcererBoss_RoundExplosion_M" fail-caster-flag-1="npc-state-1" gather-range="ID_GWD_VT_B2_SorcererBoss_RoundExplosion_M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B2_SorcererBoss_RoundExplosion_R" fail-caster-flag-1="npc-state-1" gather-range="ID_GWD_VT_B2_SorcererBoss_RoundExplosion_R" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B2_Dummy_None_Wave" gather-range="ID_GWD_VT_B2_Dummy_None_Wave" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Ambush" gather-range="PVE_Target_T_CMax10000_FMax10000_EMax10000_H4000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Erosion" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax520" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_ErosionBurst1" gather-range="ID_Bagic_Round_8M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_ErosionBurst2" gather-range="ID_Bagic_Round_8M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Extinction" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax9952" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Slaughter" gather-range="ID_Bagic_Target" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_Recover" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax800_H1104" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_ShockWave" gather-range="GWD_VT_B3_DemonJuria_ShockWave" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_DemonJuria_MultiBomb" gather-range="ID_Bagic_Round_5M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_ErosionBurst3" gather-range="ID_Bagic_Round_8M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_ChainBurst" gather-range="ID_Bagic_Round_10M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="Boss_LinkedLaser_Test" gather-range="PVE_LinkedLaser_CMax4000_Width8_H1000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_Range_BuffZone" gather-range="PVE_Caster_T360_CMax1000_RMin0_RMax504_Gather6" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_DebuffZone" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax1000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_ErosionBurst_TimeUP" gather-range="ID_Bagic_Round_10M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_R3_DemonJuriaSpider_Heal" gather-range="ID_Bagic_Target" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_R3_DemonJuriaSpider_Swing" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax600" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_R3_DemonJuriaSpider_Jump" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax600" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_R3_DemonJuriaSpiderM_Heal" gather-range="ID_Bagic_Target" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_R3_DemonJuriaSpiderM_Explode" gather-range="PVE_Caster_T360_CMax200_RMin0_RMax200" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_Deadline" gather-range="PVE_Caster_T360_CMax10000_RMin3104_RMax3704" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_R3_DemonJuriaSpider_JumpDash" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax1000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_R3_DemonJuriaSpider_PoisonSmash" gather-range="PVE_Caster_Laser_CMax3000_Width352_Dis1952" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_R3_DemonJuriaSpider_PoisonBlow" gather-range="PVE_Caster_TF120_CMax3000_RMin0_RMax1000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_Valak_LightningSpear" gather-range="ID_ME_BEA_B2_Valak_None_LightningDagger" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_Dummy_Reset" gather-range="ID_Bagic_Round_30M" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_LinkedLaser_P1_1" gather-range="PVE_LinkedLaser_CMax4000_Width8_H1104" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_LinkedLaser_P1_2" gather-range="PVE_LinkedLaser_CMax4000_Width8_H1104" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_LinkedLaser_P1_3" gather-range="PVE_LinkedLaser_CMax4000_Width8_H1104" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_LinkedLaser_P2_1" gather-range="PVE_LinkedLaser_CMax4000_Width8_H1104" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_B3_Dummy_LinkedLaser_P2_2" gather-range="PVE_LinkedLaser_CMax4000_Width8_H1104" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_MokuJinG_missile_Unique" gather-range="ID_Bagic_Target" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_MokuJinS_missile_Unique" gather-range="ID_Bagic_Target" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_Warlock_Summoned_MeleeAttack1" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax472" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N2_Warlock_Summoned_MeleeAttack2" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax472" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N1_AncientAdamantineMan_None_SoulSmash" gather-range="PVE_Caster_Laser_CMax8000_Width304_Dis3000" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_VT_N4_DemonKala_Capture" gather-range="PVE_Caster_T360_CMax10000_RMin0_RMax4000_Gather10" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_LR_SorcererBoss_RoundExplosion_M" fail-caster-flag-1="npc-state-1" gather-range="ID_GWD_LR_SorcererBoss_RoundExplosion_M" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_LR_SorcererBoss_RoundExplosion_R" fail-caster-flag-1="npc-state-1" gather-range="ID_GWD_LR_SorcererBoss_RoundExplosion_R" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_LR_Flazard_Fire_CrossLaser" gather-range="ID_GWD_VT_B1_Flazard_Fire_CrossLaser" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_LR_Flazard_Fire_Jump" gather-range="ID_GWD_VT_B1_Flazard_Fire_Jump" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_LR_Flazard_Ice_VerticalCut" gather-range="ID_GWD_VT_B1_Flazard_Ice_VerticalCut" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_LR_Flazard_Ice_Kick" gather-range="ID_GWD_VT_B1_Flazard_Ice_Kick" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_LR_Flazard_Ice_Jump" gather-range="ID_GWD_VT_B1_Flazard_Ice_Jump" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_LR_FireMarble_Rush" gather-range="ID_GWD_VT_B1_FireMarble_Rush" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="GWD_LR_IceMarble_Rush" gather-range="ID_GWD_VT_B1_IceMarble_Rush" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_LR_Flazard_None_Warp_Ground" gather-range="ID_ME_BEA_B3_Flazard_None_Warp_Ground" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_LR_Flazard_None_SummonFlower" gather-range="ID_ME_BEA_B3_Flazard_None_SummonFlower" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_LR_Flazard_None_MarbleRush" gather-range="ID_ME_BEA_B3_Flazard_None_MarbleRush" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_LR_Flazard_None_FlowerExplosion" gather-range="ID_ME_BEA_B3_Flazard_None_FlowerExplosion" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_LR_Flazard_None_FlowerTrasfer" gather-range="ID_ME_BEA_B3_Flazard_None_FlowerTrasfer" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_LR_Flazard_None_Warp" gather-range="ID_ME_BEA_B3_Flazard_None_Warp" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_LR_Flazard_None_MarbleExplosion" gather-range="ID_ME_BEA_B3_Flazard_None_MarbleExplosion" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_ME_LR_Flazard_None_Marble_Dispel" gather-range="ID_ME_BEA_B3_Flazard_None_Marble_Dispel" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_LR_Hades_None_NAtk1_skill3" gather-range="PVE_Caster_Laser_CMax3000_Width96_Dis360" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_LR_Hades_None_NAtk2_180" gather-range="PVE_Caster_TF180_CMax3000_RMin0_RMax352" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_LR_Hades_None_Jab_skill3" gather-range="PVE_Target_T_CMax376_FMax384_EMax384" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_LR_Hades_None_Laser2" gather-range="PVE_Caster_Laser_CMax3000_Width56_Dis360" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowManBoss_None_Swing" gather-range="ID_ME_BEB_B1_SnowManBoss_None_Swing" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowManBoss_None_Smash" gather-range="ID_ME_BEB_B1_SnowManBoss_None_Smash" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowManBoss_None_Uppercut" gather-range="ID_ME_BEB_B1_SnowManBoss_None_Uppercut" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowManBoss_None_Pratfall" gather-range="ID_ME_BEB_B1_SnowManBoss_None_Pratfall" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowManBoss_None_Backdash" gather-range="ID_ME_BEB_B1_SnowManBoss_None_Backdash" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowManBoss_None_BossDash" gather-range="ID_ME_BEB_B1_SnowManBoss_None_BossDash" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowManBoss_None_BelchOutCold" gather-range="ID_ME_BEB_B1_SnowManBoss_None_BelchOutCold" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowManBoss_None_IceQuake" gather-range="ID_ME_BEB_B1_SnowManBoss_None_IceQuake" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowManB_None_PeltSnowball" gather-range="ID_ME_BEB_N1_SnowManB_None_PeltSnowball" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowmanB_None_Dash_skill3" gather-range="PVE_Ground_T360_CMax3000_RMin0_RMax400" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowmanB_None_HeavyWave_skill3" gather-range="PVE_Caster_T360_CMax3000_RMin0_RMax400" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_GWD_LR_SnowmanB_None_Smash_skill3" gather-range="PVE_Caster_TF180_CMax3000_RMin0_RMax400" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_LR_Flazard_Inhalation" gather-range="ID_GWD_LR_Flazard_Inhalation" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="ME_TR_JinSeoYeonM_None_Center_skill3" gather-range="PVE_Ground_T360_CMax8000_RMin0_RMax1600" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+	<record alias="S3_MH_BladeMaster_Sword_rush_LV21_damage0" gather-range="PVE_Target_T_CMax10000_FMax10000_EMax10000_H4000" move-type="free" success-target-dead-state="not-dead-restoration" target-type="all" />
+</table>

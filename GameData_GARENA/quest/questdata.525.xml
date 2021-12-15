@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.525.xml-->
+  <quest alias="q_epic_525" category="epic" completed-list="y" district-1="deasamak" id="525" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_unguksoldier_0007" party-broadcast="n" progress-mission="y" type="talk" visible-object="y" />
+        <case object="npc:ch_jinsoa_0006" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_jinsoa_0006" party-broadcast="n" progress-mission="y" type="talk" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="zone:zone_HukChangToTem" party-broadcast="n" progress-mission="y" quest-decision="qd_525_1" type="enter-zone" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_525_2" zone-1="zone_hukchangtotem">
+      <mission id="4" required-register-value="1">
+        <case convoy="epic_525_con" object="npc:ch_orakdang_0001" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_HukChangToTem" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_525_1" type="enter-zone" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" rollback="leave-zone">
+      <mission id="5" required-register-value="1">
+        <case convoy="epic_525_con" object="zone:zone_HukChangToTem" party-broadcast="y" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" zone-1="zone_hukchangtotem">
+        <case convoy="epic_525_con" object="zone:zone_HukChangToTem" party-broadcast="n" progress-mission="reaction-only" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:ch_muun_0014" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HukChangToTem" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_525_6" type="enter-zone" />
+        <case object2="zoneenv2:e_destroy_hukcagedoor_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" zone-1="zone_hukchangjok">
+      <mission id="7" required-register-value="1" reward-1="525_final_set1">
+        <case object="npc:ch_unguksoldier_0007" party-broadcast="n" progress-mission="y" quest-decision="qd_525_8" type="talk" visible-object="y" />
+        <case object="npc:ch_muun_0012" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_526" />
+    </completion>
+  </quest>
+</table>

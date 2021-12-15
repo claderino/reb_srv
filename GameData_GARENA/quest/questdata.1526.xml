@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1526.xml-->
+  <quest alias="q_epic_1526" broadcast-category="field" category="epic" completed-list="y" id="1526" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="주술사" level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="1526_middle_set1">
+        <case object="npc:CH_WA_YungMook_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:StartZone_Simple_Deafult" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1526_1" type="enter-zone" />
+        <case object="npc:CH_WA_HongSukKeun_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_MuSung_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_JinYoung_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_GilHong_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_HwaJoong_0001" party-broadcast="n" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1526_final_set1">
+        <case object="npc:CH_WA_MuSung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1526_2" type="talk" />
+        <case object="zone:StartZone_Simple_Deafult" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1526_1" type="enter-zone" />
+        <case object="npc:CH_WA_YungMook_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_HongSukKeun_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_JinYoung_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_GilHong_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_HwaJoong_0001" party-broadcast="n" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="zone:StartZone_Simple_Deafult" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1526_1" type="enter-zone" />
+        <case object="zone:StartZone_Simple_Cave" party-broadcast="n" progress-mission="y" quest-decision="qd_1526_4" type="enter-zone" />
+        <case object="npc:CH_WA_JinYoung_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_YungMook_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_HongSukKeun_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_GilHong_0001" party-broadcast="n" type="talk" />
+        <case object="npc:CH_WA_HwaJoong_0001" party-broadcast="n" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_WA_MuSung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1526_3" type="talk" />
+        <case object="zone:StartZone_Simple_Cave" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1526_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_WA_MuSung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1526_5" type="talk" />
+        <case object="zone:StartZone_Simple_Cave" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1526_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1218" />
+    </completion>
+  </quest>
+</table>

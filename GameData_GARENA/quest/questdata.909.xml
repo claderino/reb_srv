@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.909.xml-->
+  <quest alias="q_epic_909" category="epic" completed-list="y" district-1="suwal" id="909" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_pungjeohoe_0003" progress-mission="y" type="talk" />
+        <case object="npc:ch_jegukgun_0012" party-broadcast="n" progress-mission="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_gyeongchunmaeng_0031" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_jegukgun_0012" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="3">
+        <case object2="npc:me_samyojeong_0006" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:ch_jegukgun_0012" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_jegukgun_0012" progress-mission="y" type="talk" />
+        <fixed-reward slot-1="item:quest_scroll_soowolpyungwon_0011" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case item="quest_scroll_soowolpyungwon_0011" party-broadcast="n" progress-mission="y" type="talk-to-item" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case grocery="quest_scroll_soowolpyungwon_0011" object="npc:ch_pungjeohoe_0003" progress-mission="y" required-item-1="quest_scroll_soowolpyungwon_0011" required-item-depot="bag" required-item-loss="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ch_pungjeohoe_0027" party-broadcast="n" progress-mission="y" quest-decision="qd_909_2" type="npc-manipulate" />
+        <case object="zone:zone_JeKukGubYangDae_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_909_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_910" />
+    </completion>
+    <mission-step id="8" rollback="leave-zone">
+      <mission id="8" required-register-value="1">
+        <case convoy="epic_909_con" object="npc:ch_pungjeohoe_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail quest-decision="qd_909_3" rollback-step-id="7" zone-1="zone_JeKukGubYangDae_epic" />
+    </mission-step>
+    <mission-step id="9" rollback="leave-zone">
+      <mission id="9" required-register-value="1">
+        <case convoy="epic_909_con" object="zone:zone_JeKukGubYangDae_epic" party-broadcast="n" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail quest-decision="qd_909_3" rollback-step-id="7" zone-1="zone_JeKukGubYangDae_epic">
+        <case convoy="epic_909_con" object="zone:zone_JeKukGubYangDae_epic" party-broadcast="n" progress-mission="reaction-only" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="10" rollback="leave-zone">
+      <mission id="10" required-register-value="1">
+        <case object="npc:ch_pungjeohoe_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_909_4" type="talk" />
+      </mission>
+      <mission-step-fail quest-decision="qd_909_3" rollback-step-id="7" zone-1="zone_JeKukGubYangDae_epic" />
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1">
+        <case object="npc:ce_hongdonjok_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_JeKukGubYangDae_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_909_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="12" rollback="leave-zone">
+      <mission id="12" required-register-value="1">
+        <case object2="npc:ce_hongdonjok_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_909_6" type="pc-social" />
+      </mission>
+      <mission-step-fail rollback-step-id="11" zone-1="zone_JeKukGubYangDae_epic" />
+    </mission-step>
+    <mission-step id="13" rollback="leave-zone">
+      <mission id="13" required-register-value="1">
+        <case object="npc:ch_baekmoon_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="11" zone-1="zone_JeKukGubYangDae_epic" />
+    </mission-step>
+    <mission-step id="14">
+      <mission id="14" required-register-value="1" reward-1="909_final_set1">
+        <case object="npc:ch_gyeongchunmaeng_0004" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_jekukgubyangdae">
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+    </transit>
+  </quest>
+</table>

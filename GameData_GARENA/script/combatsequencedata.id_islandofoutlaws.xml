@@ -1,0 +1,1741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.id_islandofoutlaws.xml-->
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0011_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      <action skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      <action skill3="MH_BladeMaster_Sword_storm_wind" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0012_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      <action skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      <action skill3="MH_KungfuMaster_Attack_PowerAttack_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="MH_WC_DesperadoIsland_0014_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      <action skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      <action skill3="MH_KungfuMaster_Attack_PowerAttack_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0013_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action skill3="MH_Destroyer_Protection_Judgement_Lv1" type="use-skill" />
+      <action skill3="MH_Destroyer_Protection_Destruction_Lv1" type="use-skill" />
+      <action skill3="MH_Destroyer_Protection_Nemesis_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="MH_WC_DesperadoIsland_0015_CS">
+    <normal combat-distance="7" id="1">
+      <action skill3="MH_Destroyer_Protection_Judgement_Lv1" type="use-skill" />
+      <action skill3="MH_Destroyer_Protection_Destruction_Lv1" type="use-skill" />
+      <action skill3="MH_Destroyer_Protection_Nemesis_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0010_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0009_CS">
+    
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200" type="use-skill" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo1" type="use-skill" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo2" type="use-skill" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo3" type="use-skill" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo4" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="15000">
+      
+      <action social="CH_WC_DesperadosIsland_0010_soc_18" type="do-social" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0" min-delay="15000" start-delay="7500">
+      
+      <action social="CH_WC_DesperadosIsland_0010_soc_19" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="1">
+      <action skill3="SW_IO_B1_SoulFighter_Attack_RightstepPunch" type="use-skill" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_LeftstepPunch" type="use-skill" />
+      
+      <action social="CH_WC_DesperadosIsland_0010_soc_20" type="do-social" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_RightstepPunch" type="use-skill" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_LeftstepPunch" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0017_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      <action skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_PigTribeC_0005_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action skill3="ME_PigTribeA_None_Jab" type="use-skill" />
+      <action skill3="ME_PigTribeA_None_Jab" type="use-skill" />
+      <action skill3="ME_PigTribeA_None_MadSmash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0016_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action skill3="MH_Destroyer_Protection_Judgement_Lv1" type="use-skill" />
+      <action skill3="MH_Destroyer_Protection_Destruction_Lv1" type="use-skill" />
+      <action skill3="MH_Destroyer_Protection_Nemesis_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_CrocodileSharkTribeC_0001_CS">
+    
+    <normal combat-distance="7" id="1">
+      <action skill3="ME_CrocodileSharkTribeC_None_Jab" type="use-skill" />
+      <action skill3="ME_CrocodileSharkTribeC_None_Jab" type="use-skill" />
+      <action skill3="ME_CrocodileSharkTribeC_None_Smash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_KittyCats_0004_CS">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_BurningFist" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack3" type="use-skill" />
+      <action skill3="SW_IO_B5_Cat_HammerSpin" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_BurningFist" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack3" type="use-skill" />
+      <action skill3="SW_IO_B5_Cat_HammerImpact" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="7" id="2">
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_Tackle" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" condition-1="hp-70" condition-subscription-1="event:npc-combat-action:npc" id="1" max-count="1">
+      <action skill3="SW_IO_B5_Cat_DanceAttack" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0001_CS">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_RightstepPunch" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftstepPunch" type="use-skill" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_Earthwave" type="use-skill" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_EnergyPunch" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_RightstepPunch" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftstepPunch" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_SoulStance" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        <action prob="50" skill3="SW_IO_B1_SoulFighter_Force_Frostspread" type="use-skill" />
+        <action prob="50" skill3="SW_IO_B1_SoulFighter_Force_Pushattack" type="use-skill" />
+      </action>
+      <action skill3="SW_IO_B1_SoulFighter_Attack_EnergyPunch" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="7" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="30" skill3="SW_IO_B1_SoulFighter_Force_Coldblast" type="use-skill" />
+        <action duration="5000" immune-breaker-disable="y" prob="70" skill3="SW_IO_B1_SoulFighter_Force_FrostGround" type="boss-simultaneous-ground-attack" />
+      </action>
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftSmashdash_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_MidAir_Lv1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action event-step="11" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_battle_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_dragon_force" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_dragon_force_NotAir" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_dragon_force_NotAir" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action event-step="1" immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_battle_04" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Commandskill_Right" target-area="6431_2" type="use-ground-skill" />
+      
+      <action event-step="13" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_msg_02" type="do-social" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_Forcebuff" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_battle_03" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftSmashdash_Lv1" type="use-skill" />
+      
+      <action event-step="14" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Nukeattack" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftSmashdash_Lv1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo3" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo4" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="0">
+      
+      <action event-step="1" immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Commandskill_Right" target-area="6431_2" type="use-ground-skill" />
+      
+      <action event-step="13" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_msg_02" type="do-social" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_Forcebuff" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_battle_06" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftSmashdash_Lv1" type="use-skill" />
+      
+      <action event-step="14" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action duration="3000" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_FrostEnergyball" type="boss-simultaneous-ground-attack" />
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftSmashdash_Lv1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo3" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo4" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="5" max-count="0">
+      
+      <action event-step="1" immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Commandskill_Right" target-area="6431_2" type="use-ground-skill" />
+      
+      <action event-step="13" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_msg_02" type="do-social" />
+      <action skill3="SW_IO_B1_SoulFighter_Attack_Forcebuff" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_battle_02" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftSmashdash_Lv1" type="use-skill" />
+      
+      <action event-step="14" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action duration="3000" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_FrostEnergyball" type="boss-simultaneous-ground-attack" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftSmashdash_Lv1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Nukeattack" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_LeftSmashdash_Lv1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo3" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Violently_0200_combo4" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0001_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_msg_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_SoulStance" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_Commandskill_Right" target-area="6431_2" type="use-ground-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0001_battle_05" type="do-social" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_dragon_force_Berserk" target="zonenpcsquad:s_6431_2:reg-1" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_dragon_force_NotAir_Berserk" target="zonenpcsquad:s_6431_2:reg-1" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_dragon_force_NotAir_Berserk" target="zonenpcsquad:s_6431_2:reg-1" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_dragon_force_Berserk" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_dragon_force_NotAir_Berserk" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B1_SoulFighter_Attack_dragon_force_NotAir_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0002_CS1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PowerfulAttack" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PierceAttack" type="use-skill" />
+      
+      <action duration="1000" immune-breaker-disable="y" type="stay" />     
+      
+      <action skill3="SW_IO_B2_YukSonFich_Lowkick" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_TakeDown" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Choke" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_RearDash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PowerfulAttack" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_Counter" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_BackDash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_15" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_JumpAttack" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action event-step="8" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action event-step="78" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_CatchToAir" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action event-step="79" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_AirKick" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_14" type="do-social" />
+      
+      <action event-step="79" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_FlyTakeDown" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_11" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_msg_01" type="do-social" />
+      
+      <action event-step="9" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_Awakening1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action duration="0" event-step="1" immune-breaker-disable="y" stance="2" type="change-set" weapon="2" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_Throw" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+      
+      <action event-step="2" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    
+    <special combat-distance="1" id="4" max-count="0">
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_FireBreath" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_13" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_Bounce_Counter" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_FireBreath" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_FireBreath" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_13" type="do-social" />
+      
+      <action duration="0" immune-breaker-disable="y" stance="1" type="change-set" weapon="1" />
+      
+      <action event-step="4" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0002_CS2" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PowerfulAttack" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PierceAttack" type="use-skill" />
+      
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_Lowkick" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_TakeDown" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Choke" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_RearDash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PowerfulAttack" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_Counter" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_BackDash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_15" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_JumpAttack" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action event-step="8" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action event-step="78" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_CatchToAir" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action event-step="79" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_AirKick" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_14" type="do-social" />
+      
+      <action event-step="79" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_FlyTakeDown" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action event-step="99" immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_12" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_msg_02" type="do-social" />
+      
+      <action event-step="10" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_Awakening1" type="use-skill" />
+      
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    
+    <special combat-distance="1" id="4" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action duration="0" immune-breaker-disable="y" stance="2" type="change-set" weapon="2" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_Fists1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_Fists2" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_Fists2" type="use-skill" />
+      
+      <action event-step="97" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="5" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_16" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_ChainDash" type="use-skill" />
+      
+      <action combo="y" event-step="1" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_CatchToAir" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_AirKick" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_FlyTakeDown" type="use-skill" />
+      
+      <action combo="y" event-step="1" immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_14" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Drunken_Out" type="use-skill" />
+      
+      <action duration="0" event-step="1" immune-breaker-disable="y" stance="1" type="change-set" weapon="1" />
+      
+      <action event-step="7" immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_09" type="do-social" />
+      
+      <action event-step="96" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0002_CS3" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PowerfulAttack" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PierceAttack" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_ForceAttack" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_Lowkick" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_TakeDown" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_Choke" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_RearDash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_HeavyPunch" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PowerfulAttack" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_HeavyPunch" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_Counter" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_ForceAttack" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_BackDash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_15" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_MartialDance" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="3" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action event-step="8" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action event-step="78" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_CatchToAir" type="use-skill" />
+    </special>
+    
+    <special combat-distance="3" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action event-step="79" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_AirKick" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_14" type="do-social" />
+      
+      <action event-step="79" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_FlyTakeDown" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_JumpGround" target-area="6432_2" type="use-ground-skill" />
+      <action event-step="1" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action event-step="6" immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_10" type="do-social" />
+      
+      <action event-step="11" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action event-step="95" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_IceExplosion" type="use-skill" />
+    </special>
+    
+    <special combat-distance="1" id="4" max-count="0">
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_HeavyPunch" type="use-skill" />
+      
+      <action event-step="6" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PierceAttack" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_ForceAttack" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_Counter" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_HeavyPunch" type="use-skill" />
+      
+      <action event-step="6" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_PierceAttack" type="use-skill" />
+      
+      <action event-step="94" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_ForceAttack" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="5" max-count="0">
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+      
+      <action event-step="7" immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_MartialDance" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0002_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_msg_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0002_battle_06" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+      
+      <action duration="0" event-step="1" stance="1" type="change-set" weapon="1" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action event-step="1" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_MartialDance_Berserk" target="zonenpcsquad:s_6432_23:reg-1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B2_YukSonFich_MartialDance_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0367_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action skill3="SW_IO_B2_YukSonFich_IcicleDrop" type="use-skill" />
+      
+      <action skill3="SW_IO_B2_YukSonFich_IceSmog" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0005_CS1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_MultiSmash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_ChungGakABoss_0001_battle_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="20000">
+      <action skill3="SW_IO_B3_FishmanCBoss_LightningExplosion" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_FinSmashPower" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0005_CS2" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1" special-1="1" special-2="5">
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+      <action arrived-effect="SW_IO_B3_FishmanCBoss_Rush_Arrived" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanCBoss_Rush" speed="126" type="boss-rush-attack" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_ChungGakABoss_0001_battle_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0005_msg_02" type="do-social" />
+      <action event-step="11" immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_EquipArmour" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0005_battle_02" type="do-social" />
+      <action arrived-effect="SW_IO_B3_FishmanCBoss_Rush_Arrived" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanCBoss_HeavyRush" speed="126" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_68" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action arrived-effect="SW_IO_B3_FishmanCBoss_Rush_Arrived" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanCBoss_HeavyRush" speed="126" type="boss-rush-attack" />
+      <action event-step="2" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+      <action event-step="3" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_ChungGakABoss_0001_battle_03" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="10" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+      <action event-step="99" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="5" max-count="1" start-delay="100000">
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_ChungGakABoss_0001_battle_03" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="10" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+      <action event-step="99" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0005_CS3" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_MultiSmash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_ChungGakABoss_0001_battle_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0005_battle_01" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Torpedo" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="20000">
+      <action skill3="SW_IO_B3_FishmanCBoss_LightningExplosion" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_FinSmashPower" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0005_CS4" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1" special-2="5">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+      <action arrived-effect="SW_IO_B3_FishmanCBoss_Rush_Arrived" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanCBoss_Rush" speed="126" type="boss-rush-attack" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0005_battle_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0005_msg_02" type="do-social" />
+      <action event-step="11" immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_EquipArmour" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0005_battle_05" type="do-social" />
+      <action arrived-effect="SW_IO_B3_FishmanCBoss_Rush_Arrived" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanCBoss_HeavyRush" speed="126" type="boss-rush-attack" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_68" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action arrived-effect="SW_IO_B3_FishmanCBoss_Rush_Arrived" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanCBoss_HeavyRush" speed="126" type="boss-rush-attack" />
+      <action event-step="2" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+      <action event-step="3" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="1">
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_ChungGakABoss_0001_battle_03" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="10" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+      <action event-step="99" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="5" max-count="1" start-delay="100000">
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_ChungGakABoss_0001_battle_03" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump3" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="10" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+      <action event-step="99" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0005_CS5">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_MultiSmash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_ChungGakABoss_0001_battle_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0005_battle_04" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Torpedo" target="event:npc-combat-action:target" type="boss-repeater-attack" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="20000">
+      <action skill3="SW_IO_B3_FishmanCBoss_LightningExplosion" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_FinSmashPower" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0005_Berserk_CS">
+    
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0005_msg_03" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump3" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" repeat="10" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+      <action event-step="99" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0006_CS1" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanC_Rush" speed="126" target-area="6433_10" type="boss-rush-attack" />
+      <action event-step="99" immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      <action event-step="2" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanC_Rush" speed="126" target-area="6433_22" type="boss-rush-attack" />
+      <action event-step="99" immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0006_CS2" hide-seq-start="y">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0007_CS1" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanC_Rush" speed="126" target-area="6433_8" type="boss-rush-attack" />
+      <action event-step="99" immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      <action immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanC_Rush" speed="126" target-area="6433_12" type="boss-rush-attack" />
+      <action event-step="99" immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WC_DesperadoIsland_0007_CS2" hide-seq-start="y">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0372_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="99" pass-through="y" skill3="SW_IO_B3_Dummy_HighWave" speed="48" target="event:npc-combat-action:npc:npc-party:4" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_WC_Dummy_0374_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="99" pass-through="y" skill3="SW_IO_B3_Dummy_HighWave" speed="48" target="event:npc-combat-action:npc:npc-party:4" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0373_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="99" pass-through="y" skill3="SW_IO_B3_Dummy_LowWave" speed="80" target="zonenpcspawn:a_6433_2_2" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0375_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="2">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action duration="300000" is-target-skill-gather="n" skill3="SW_IO_B3_Dummy_FishingGut" target-from="zonenpcsquad:s_6433_2:reg-2" target-to="zonenpcspawn:a_6433_2" terminate-cond-1="distance-max" terminate-value-1="8000" type="boss-link-laser-attack" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0003_CS1" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_EarthPunch" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_CrossPunch" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_AerialAttack" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_BackStep" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_BackStep2" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_KickDash" type="use-skill" />
+      <action skill3="SW_IO_B4_DongJinA_Natk1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_ChargeShot" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_ChargeShot2" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_BombThrow" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_BombThrow2" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_ChargeShot" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_ChargeShot2_nocast" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_ChargeShot2" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_AerialAttack2" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_Sliding" type="use-skill" />
+      </action>
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="20000">
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="33" social="MH_WC_DesperadoIsland_0003_combatstart_02" type="do-social" />
+        
+        <action immune-breaker-disable="y" prob="33" social="MH_WC_DesperadoIsland_0003_battle_01" type="do-social" />
+        <action immune-breaker-disable="y" prob="34" social="Common_wait_100" type="do-social" />
+      </action>
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action event-step="13" immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_ShootingSpree" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_EarthPunch" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B4_DongJinA_CrossPunch" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_AerialAttack2" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="4000">
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0003_battle_04" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_AirFire" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding_NoMargin" target="zonenpcspawn:a_6434_2_1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0003_msg_01" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_FireFlash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      
+      <action event-step="11" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      
+      <action event-step="9" immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_ChargeShot" type="use-skill" />
+      <action event-step="9" immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_ChargeShot2_nocast" type="use-skill" />
+      <action event-step="9" immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_ChargeShot2" type="use-skill" />
+      <action event-step="9" immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_BombThrow2" type="use-skill" />
+      <action event-step="9" immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_BombThrow2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+      <action event-step="9" immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_BombThrow2" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0003_CS2">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0003_battle_06" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding_shoot_Berserk" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding" target="zonenpcsquad:s_6434_2:reg-4" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0003_battle_06" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding_shoot_Berserk" target="zonenpcsquad:s_6434_2:reg-4" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding_shoot_Berserk" type="use-skill" />
+      <action event-step="99" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0003_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0003_battle_06" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding_shoot_Berserk" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding_NoMargin" target="zonenpcspawn:a_6434_2_1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0003_msg_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0003_battle_03" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action event-step="2" immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_FireFlash" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding" target="zonenpcsquad:s_6434_2:reg-4" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0003_battle_06" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_63" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding_shoot_Berserk" target="zonenpcsquad:s_6434_2:reg-4" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="CH_WC_DesperadosIsland_0003_msg_62" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SW_IO_B4_DongJinA_Sliding_shoot_Berserk" type="use-skill" />
+      <action event-step="99" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0370_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="99" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0004_CS1" transit-action-1="burrow" transit-cond-1="manual" transit-social-1="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RapidFire" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_SpinFire" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RapidFire2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_FrontFire" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B5_YeonHwaLin_Counter" type="use-skill" />
+        <action prob="50" skill3="SW_IO_B5_YeonHwaLin_Bind" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_Sweep" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="7" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" social="MH_WC_DesperadoIsland_0004_combatstart_02" type="do-social" />
+        <action immune-breaker-disable="y" prob="50" social="Common_wait_100" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_Throw" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_02" type="do-social" />
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_BackStep" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_AnchorThrow" type="use-skill" />
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_13" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_BlindFireA" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-90" id="2" max-count="1">
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_07" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_TurretThrow" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_TurretThrow" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_TurretThrow" type="use-skill" />
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_HeelStamp" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RapidFire2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RapidFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0004_CS2" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual" transit-social-1="2">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="4" social="Common_wait_100" type="do-social" />
+      <action duration="4000" event-step="11" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_12" type="do-social" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      
+      <action duration="5000" event-step="5" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_08" type="do-social" />
+      
+      <action duration="7700" event-step="6" type="stay" />
+      <action duration="6000" event-step="11" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_12" type="do-social" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action duration="5000" event-step="5" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_08" type="do-social" />
+      <action duration="7700" event-step="6" type="stay" />
+      <action duration="6000" event-step="11" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_12" type="do-social" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action duration="5000" event-step="5" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_08" type="do-social" />
+      <action duration="7700" event-step="6" type="stay" />
+      <action duration="2000" event-step="11" type="stay" />
+      <action event-step="92" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0004_CS3" transit-action-1="burrow" transit-cond-1="manual" transit-social-1="1">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B5_YeonHwaLin_RapidFire" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B5_YeonHwaLin_RapidFire2" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_BlindFireB" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_FrontFire" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_Sweep" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_SpinFire" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="7" id="2" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" social="MH_WC_DesperadoIsland_0004_combatstart_02" type="do-social" />
+        <action immune-breaker-disable="y" prob="50" social="Common_wait_100" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_Throw" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_02" type="do-social" />
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_BackStep" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_AnchorThrow" type="use-skill" />
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="25" social="MH_WC_DesperadoIsland_0004_soc_01" type="do-social" />
+        
+        <action immune-breaker-disable="y" prob="25" social="MH_WC_DesperadoIsland_0004_soc_02" type="do-social" />
+        <action immune-breaker-disable="y" prob="50" social="Common_wait_100" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B5_YeonHwaLin_Counter" type="use-skill" />
+        <action prob="50" skill3="SW_IO_B5_YeonHwaLin_Bind" type="use-skill" />
+      </action>
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-40" id="2" max-count="1">
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_msg_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_07" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_TurretThrow" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_TurretThrow" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_TurretThrow" type="use-skill" />
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_09" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_HeelStamp" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RapidFire2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RapidFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0004_CS4" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual" transit-social-1="2">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="4" social="Common_wait_100" type="do-social" />
+      <action duration="4000" event-step="11" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_12" type="do-social" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action duration="5000" event-step="5" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_08" type="do-social" />
+      <action duration="7700" event-step="6" type="stay" />
+      <action duration="6000" event-step="11" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_12" type="do-social" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action duration="5000" event-step="5" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_08" type="do-social" />
+      <action duration="7700" event-step="6" type="stay" />
+      <action duration="6000" event-step="11" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_12" type="do-social" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action duration="5000" event-step="5" type="stay" />
+      
+      <action social="MH_WC_DesperadoIsland_0004_battle_08" type="do-social" />
+      <action duration="7700" event-step="6" type="stay" />
+      <action duration="2000" event-step="11" type="stay" />
+      <action event-step="94" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0004_CS5">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B5_YeonHwaLin_BlindFireA" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B5_YeonHwaLin_BlindFireB" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_HeelStamp" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RapidFire2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RapidFire" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_FrontFire" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_Sweep" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_SpinFire" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="7" id="2" special-1="1">
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" social="MH_WC_DesperadoIsland_0004_combatstart_02" type="do-social" />
+        <action immune-breaker-disable="y" prob="50" social="Common_wait_100" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_Throw" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_02" type="do-social" />
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_BackStep" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_AnchorThrow" type="use-skill" />
+      <action event-step="98" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="25" social="MH_WC_DesperadoIsland_0004_soc_01" type="do-social" />
+        
+        <action immune-breaker-disable="y" prob="25" social="MH_WC_DesperadoIsland_0004_soc_02" type="do-social" />
+        <action immune-breaker-disable="y" prob="50" social="Common_wait_100" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="SW_IO_B5_YeonHwaLin_Counter" type="use-skill" />
+        <action prob="50" skill3="SW_IO_B5_YeonHwaLin_Bind" type="use-skill" />
+      </action>
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIsland_0004_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="97" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_05" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_msg_03" type="do-social" />
+      <action event-step="99" immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_Berserk" type="use-skill" />
+      <action event-step="99" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WC_DesperadoIsland_0004_burrow_out" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_battle_05" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="MH_WC_DesperadoIsland_0004_msg_03" type="do-social" />
+      <action event-step="99" immune-breaker-disable="y" skill3="SW_IO_B5_YeonHwaLin_Berserk" type="use-skill" />
+      <action event-step="99" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0351_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action skill3="SW_IO_B5_Dummy_HeelStamp_explosion_1" type="use-skill" />
+      <action skill3="SW_IO_B5_Dummy_HeelStamp_explosion_2" type="use-skill" />
+      <action skill3="SW_IO_B5_Dummy_HeelStamp_explosion_3" type="use-skill" />
+      <action event-step="99" social="Common_wait_100" type="do-social" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action skill3="SW_IO_B5_Dummy_HeelStamp_explosion_1" type="use-skill" />
+      <action skill3="SW_IO_B5_Dummy_HeelStamp_explosion_2" type="use-skill" />
+      <action skill3="SW_IO_B5_Dummy_HeelStamp_explosion_3" type="use-skill" />
+      
+      <action event-step="99" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0352_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="99" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0353_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action pass-through="y" skill3="SW_IO_B5_Dummy_AnchorRush" speed="96" type="boss-rush-attack" />
+      <action pass-through="y" skill3="SW_IO_B5_Dummy_AnchorRush" speed="96" type="boss-rush-attack" />
+      <action event-step="99" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_RuneMechaTurret_0001_CS1">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action skill3="ME_RuneMechaBTurret_None_Start" type="use-skill" />
+      <action skill3="SW_IO_B5_RuneMechaBTurret_PowerShot" type="use-skill" />
+      <action skill3="SW_IO_B5_RuneMechaBTurret_PowerShot" type="use-skill" />
+      <action skill3="SW_IO_B5_RuneMechaBTurret_PowerShot" type="use-skill" />
+      <action skill3="SW_IO_B5_RuneMechaBTurret_PowerShot" type="use-skill" />
+      <action skill3="SW_IO_B5_RuneMechaBTurret_PowerShot" type="use-skill" />
+      <action event-step="99" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WC_KittyCats_0001_CS">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action skill3="SW_IO_B5_Cat_RearDash" type="use-skill" />
+      <action skill3="SW_IO_B5_Cat_UpperCut" type="use-skill" />
+      <action skill3="SW_IO_B5_Cat_RearDash" type="use-skill" />
+      <action skill3="SW_IO_B5_Cat_TurningSlash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action skill3="SW_IO_B5_Cat_BombThrow" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_Flap" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_Press" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_KittyCats_0002_CS1" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      
+      <action skill3="SW_IO_B5_Cat_Heal" target="zonenpcspawn:a_6435_9" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" condition-1="hp-60" condition-subscription-1="zonenpcspawn:a_6435_7" id="1" max-count="1">
+      <action skill3="SW_IO_B5_Cat_Heal" target="zonenpcspawn:a_6435_7" type="use-skill" />
+      <action skill3="SW_IO_B5_Cat_Heal" target="zonenpcspawn:a_6435_7" type="use-skill" />
+      <action skill3="SW_IO_B5_Cat_Heal" target="zonenpcspawn:a_6435_7" type="use-skill" />
+    </special>
+    <special combat-distance="7" condition-1="hp-30" condition-subscription-1="zonenpcspawn:a_6435_7" id="2" max-count="0">
+      <action skill3="SW_IO_B5_Cat_Heal" target="zonenpcspawn:a_6435_7" type="use-skill" />
+      <action skill3="SW_IO_B5_Cat_Heal" target="zonenpcspawn:a_6435_7" type="use-skill" />
+      <action skill3="SW_IO_B5_Cat_Heal" target="zonenpcspawn:a_6435_7" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WC_KittyCats_0002_CS2" transit-cond-1="manual">
+    <normal combat-distance="7" id="1">
+      
+      <action skill3="SW_IO_B5_Cat_Heal" target="zonenpcspawn:a_6435_7" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WC_KittyCats_0002_CS3">
+    
+    <normal combat-distance="1" id="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack3" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_KittyCats_0003_CS">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack1" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack2" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_NormalAttack3" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        <action prob="34" skill3="SW_IO_B5_Cat_BurningFist" type="use-skill" />
+        <action prob="33" skill3="SW_IO_B5_Cat_HammerSpin" type="use-skill" />
+        <action prob="33" skill3="SW_IO_B5_Cat_HammerImpact" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="7" id="2" special-1="2">
+      <action immune-breaker-disable="y" skill3="SW_IO_B5_Cat_Tackle" type="use-skill" />
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" condition-1="hp-80" condition-subscription-1="event:npc-combat-action:npc" id="1" max-count="1">
+      <action skill3="SW_IO_B5_Cat_DanceAttack" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-40" condition-subscription-1="event:npc-combat-action:npc" id="2" max-count="1">
+      <action skill3="SW_IO_B5_Cat_Crouch" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIslandTest_0001_CS">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIslandTest_0002_CS">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_DesperadoIslandTest_0005_CS1" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_MultiSmash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_LightningExplosion" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_FinSmashPower" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Dash" type="use-skill" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_BoilingWater1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WC_DesperadoIslandTest_0005_CS2" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action arrived-effect="SW_IO_B3_FishmanCBoss_Rush_Arrived" blocked-effect="SW_IO_B3_FishmanCBoss_Rush_Flag" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanCBoss_HeavyRush" speed="126" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="1">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_EquipArmour" type="use-skill" />
+      <action arrived-effect="SW_IO_B3_FishmanCBoss_Rush_Arrived" blocked-effect="SW_IO_B3_FishmanCBoss_Rush_Flag" immune-breaker-disable="y" pass-through="y" skill3="SW_IO_B3_FishmanCBoss_HeavyRush" speed="126" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_Jump2" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1" start-delay="120000">
+      <action event-step="92" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="ME_WC_DesperadoIslandTest_0005_CS3">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" immune-breaker-disable="y" type="stay" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_LightningFire" target="zonenpcspawn:a_6433_22_4_1" type="use-skill" />
+      <action event-step="22" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action duration="7200" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_LightningFire" target="zonenpcspawn:a_6433_8_4_1" type="use-skill" />
+      <action event-step="8" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action duration="7200" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" skill3="SW_IO_B3_FishmanCBoss_LightningFire" target="zonenpcspawn:a_6433_7_4_1" type="use-skill" />
+      <action event-step="7" immune-breaker-disable="y" social="Common_wait_100" type="do-social" />
+      <action duration="12200" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIslandTest_0003_CS">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WC_DesperadoIslandTest_0004_CS1" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_TurretThrow" type="use-skill" />
+      <action duration="1000" type="stay" />
+      <action skill3="SW_IO_B5_YeonHwaLin_TurretThrow" type="use-skill" />
+      <action duration="1000" type="stay" />
+      <action skill3="SW_IO_B5_YeonHwaLin_TurretThrow" type="use-skill" />
+
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_Counter" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_CounterBlast" type="use-skill" />
+
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_Bind" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_Sweep" type="use-skill" />
+      
+      <action event-step="4" skill3="SW_IO_B5_YeonHwaLin_FrontFire" type="use-skill" />
+
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_BackStep" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_AnchorThrow" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_Throw" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_RearDash" type="use-skill" />
+
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_HeelStamp" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_RapidFire2" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_RapidFire" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_SpinFire" type="use-skill" />
+
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      <action skill3="SW_IO_B5_YeonHwaLin_QuickSnipe_NoCast" type="use-skill" />
+      
+      <action duration="1000" event-step="5" type="stay" />
+      <action duration="7000" event-step="6" type="stay" />
+      <action duration="2000" event-step="11" type="stay" />
+
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+  <combat-sequence alias="MH_WC_DesperadoIslandTest_0004_CS2">
+    <normal combat-distance="7" id="1">
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_Counter" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_BlindFireA" type="use-skill" />
+      
+      <action skill3="SW_IO_B5_YeonHwaLin_BlindFireB" type="use-skill" />
+    </normal>
+  </combat-sequence>
+</table>

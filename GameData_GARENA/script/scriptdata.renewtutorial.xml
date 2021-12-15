@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.renewtutorial.xml-->
+  
+  <script alias="StartZone_Simple_Deafult_ai">
+    
+    <quest-decision alias="qd_1214_6">
+      <reaction-set>
+        <reaction text="qd_1214_6 -tekim" type="debug-trace" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_3" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_9" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_11" type="despawn-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_1150_2" type="set-npc-number" />
+
+        <reaction enable="n" target="zoneenv:1150_footswitch_1" target2="zoneenv2spawn:1150_footswitch_1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1150_footswitch_2" target2="zoneenv2spawn:1150_footswitch_2_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1150_footswitch_3" target2="zoneenv2spawn:1150_footswitch_3_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_4" target2="zoneenv2spawn:1150_footswitch_4_spawn" type="set-env-enable" />
+
+        <reaction enable="n" target="zoneenv:1150_footswitch_5" target2="zoneenv2spawn:1150_footswitch_5_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1150_footswitch_6" target2="zoneenv2spawn:1150_footswitch_6_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1150_footswitch_7" target2="zoneenv2spawn:1150_footswitch_7_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1214_2">
+      <reaction-set>
+        <reaction text="qd_1214_2 -tekim" type="debug-trace" />
+        <reaction cinematic="E_SJ02" to="event:mission-step-completed:pc" type="play-cinematic" />
+        <reaction area="5" target="event:mission-step-completed:pc" type="warp" zone="StartZone_Simple_Deafult" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1214_3">
+      <reaction-set>
+        
+        <reaction text="qd_1214_3 -tekim" type="debug-trace" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_9" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_11" type="despawn-npc" />
+        <reaction spawn-1="a_1150_4" type="spawn-npc" />
+        <reaction spawn-1="a_1150_3" type="spawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:1150_footswitch_3" target2="zoneenv2spawn:1150_footswitch_3_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1214_5">
+      <reaction-set>
+        <reaction text="qd_1214_5 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1150_3" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_9" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_11" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+
+    <quest-decision alias="qd_1215_1">
+      <reaction-set>
+        <reaction text="qd_1215_1 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1150_9" type="spawn-npc" />
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_3" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_4" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+
+    
+    <quest-decision alias="qd_1216_1">
+      <reaction-set>
+        <reaction text="qd_1216_1 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1150_9" type="spawn-npc" />
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_3" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_4" type="despawn-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_1150_2" type="set-npc-number" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1521_1">
+      <reaction-set>
+        <reaction text="qd_1216_1 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1150_9" type="spawn-npc" />
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_3" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_4" type="despawn-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_1150_2" type="set-npc-number" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1522_1">
+      <reaction-set>
+        <reaction text="qd_1216_1 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1150_9" type="spawn-npc" />
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_3" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_4" type="despawn-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_1150_2" type="set-npc-number" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1523_1">
+      <reaction-set>
+        <reaction text="qd_1216_1 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1150_9" type="spawn-npc" />
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_3" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_4" type="despawn-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_1150_2" type="set-npc-number" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1524_1">
+      <reaction-set>
+        <reaction text="qd_1216_1 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1150_9" type="spawn-npc" />
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_3" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_4" type="despawn-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_1150_2" type="set-npc-number" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1525_1">
+      <reaction-set>
+        <reaction text="qd_1216_1 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1150_9" type="spawn-npc" />
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_3" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_4" type="despawn-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_1150_2" type="set-npc-number" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1526_1">
+      <reaction-set>
+        <reaction text="qd_1216_1 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1150_9" type="spawn-npc" />
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_2" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_3" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1150_4" type="despawn-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcspawn:a_1150_2" type="set-npc-number" />
+      </reaction-set>
+    </quest-decision>
+
+
+  </script>
+
+  
+  <script alias="StartZone_Simple_Cave_ai">
+    
+    
+    
+    <quest-decision alias="qd_1216_4">
+      <reaction-set>
+        <reaction text="qd_1216_4 -tekim" type="debug-trace" />        
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />        
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1521_4">
+      <reaction-set>
+        <reaction text="qd_1216_4 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1522_4">
+      <reaction-set>
+        <reaction text="qd_1216_4 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1523_4">
+      <reaction-set>
+        <reaction text="qd_1216_4 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1524_4">
+      <reaction-set>
+        <reaction text="qd_1216_4 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1525_4">
+      <reaction-set>
+        <reaction text="qd_1216_4 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1526_4">
+      <reaction-set>
+        <reaction text="qd_1216_4 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+
+    <quest-decision alias="qd_1217_2">
+      <reaction-set>
+        <reaction text="qd_1217_2 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />
+        
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1217_3">
+      <reaction-set>
+        <reaction text="qd_1217_3 -tekim" type="debug-trace" />        
+        <reaction spawn-1="a_1151_3" spawn-2="a_1151_4" spawn-3="a_1151_5" spawn-4="a_1151_6" spawn-5="a_1151_7" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1217_9">
+      <reaction-set>
+        <reaction text="qd_1217_9 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />
+        <reaction spawn-1="a_1151_3" spawn-2="a_1151_4" spawn-3="a_1151_5" spawn-4="a_1151_6" spawn-5="a_1151_7" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1217_11">
+      <reaction-set>
+        <reaction text="qd_1217_11 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="StartZone_Simple_Cinema1_ai">
+
+    
+    <quest-decision alias="qd_1218_3">
+      <reaction-set>
+        <reaction text="qd_1218_3 -tekim" type="debug-trace" />              
+      </reaction-set>
+    </quest-decision>
+        
+  </script>
+  
+  
+  <script alias="StartZone_Simple_Cinema2_ai">
+    
+    <quest-decision alias="qd_1218_4">
+      <reaction-set>
+        <reaction text="qd_1218_4 -tekim" type="debug-trace" />        
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+    
+  <script alias="1150_footswitch_1_ai">
+      <decision event="env-entered">
+        <filter-set>
+          <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+                    
+          
+        </filter-set>
+        <reaction-set>
+          <reaction text="1150_footswitch_1_ai -tekim" type="debug-trace" />
+          
+          
+          <reaction enable="y" target="zoneenv:1150_footswitch_2" target2="zoneenv2spawn:1150_footswitch_2_spawn" type="set-env-enable" />
+          
+          <reaction seq="CH_WA_JinYoung_0001_act_02" target="zonenpcspawn:a_1150_2" type="set-npc-act" />
+          <reaction enable="n" target="zoneenv:1150_footswitch_1" target2="zoneenv2spawn:1150_footswitch_1_spawn" type="set-env-enable" />
+        </reaction-set>
+      </decision>
+    </script>
+    <script alias="1150_footswitch_2_ai">
+      <decision event="env-entered">
+        <filter-set>
+          <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />          
+        </filter-set>
+        <reaction-set>
+          <reaction text="1150_footswitch_2_ai -tekim" type="debug-trace" />
+          
+          
+          <reaction enable="y" target="zoneenv:1150_footswitch_3" target2="zoneenv2spawn:1150_footswitch_3_spawn" type="set-env-enable" />
+          
+          <reaction seq="CH_WA_JinYoung_0001_act_03" target="zonenpcspawn:a_1150_2" type="set-npc-act" />
+          <reaction enable="n" target="zoneenv:1150_footswitch_2" target2="zoneenv2spawn:1150_footswitch_2_spawn" type="set-env-enable" />
+        </reaction-set>
+      </decision>
+    </script>
+  
+    
+    <script alias="1150_footswitch_5_ai">
+      <decision event="env-entered">
+        <filter-set>
+          <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+        </filter-set>
+        <reaction-set>
+          <reaction text="무성동굴이동_footswitch_5_ai -tekim" type="debug-trace" />          
+          <reaction enable="y" target="zoneenv:1150_footswitch_6" target2="zoneenv2spawn:1150_footswitch_6_spawn" type="set-env-enable" />          
+          <reaction seq="CH_WA_MuSung_0001_act_03" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+          <reaction enable="n" target="zoneenv:1150_footswitch_5" target2="zoneenv2spawn:1150_footswitch_5_spawn" type="set-env-enable" />
+        </reaction-set>
+      </decision>
+    </script>
+  <script alias="1150_footswitch_6_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />        
+      </filter-set>
+      <reaction-set>
+        <reaction text="무성동굴이동_footswitch_6_ai -tekim" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_7" target2="zoneenv2spawn:1150_footswitch_7_spawn" type="set-env-enable" />        
+        <reaction seq="CH_WA_MuSung_0001_act_04" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+        <reaction enable="n" target="zoneenv:1150_footswitch_6" target2="zoneenv2spawn:1150_footswitch_6_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="1150_footswitch_7_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />        
+      </filter-set>
+      <reaction-set>
+        <reaction text="무성동굴이동_footswitch_7_ai -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_MuSung_0001_act_05" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+        <reaction enable="n" target="zoneenv:1150_footswitch_7" target2="zoneenv2spawn:1150_footswitch_7_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="1152_footswitch_1_ai">
+    <quest-decision alias="qd_1218_1">
+      <reaction-set>
+        <reaction text="qd_1218_1 cinema2 -tekim" type="debug-trace" />                
+        <reaction leave-cinematic="E_SJ03" pc-spawn="1" target="case:env-entered:pc" type="warp" zone="StartZone_Simple_Cinema2" />                
+      </reaction-set>
+    </quest-decision>
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="1152_footswitch_1_ai -tekim" type="debug-trace" />
+        
+                
+        
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="1153_footswitch_1_ai">
+    <quest-decision alias="qd_1218_5">
+      <reaction-set>
+        <reaction text="qd_1218_2 footswitch_1 -tekim" type="debug-trace" />
+        <reaction enter-cinematic="namsmeet" leave-cinematic="E_SJ04" pc-spawn="1" target="case:env-entered:pc" type="warp" zone="zone_ChRyoungCHN_Doctor_start" />        
+        <reaction enable="n" target="zoneenv:1153_footswitch_1" target2="zoneenv2spawn:1153_footswitch_1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_2" target2="zoneenv2spawn:1153_footswitch_2_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_3" target2="zoneenv2spawn:1153_footswitch_3_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_4" target2="zoneenv2spawn:1153_footswitch_4_spawn" type="set-env-enable" />        
+      </reaction-set>
+    </quest-decision>    
+  </script>
+
+  <script alias="1153_footswitch_2_ai">
+    <quest-decision alias="qd_1218_6">
+      <reaction-set>
+        <reaction text="qd_1218_2 footswitch_2 -tekim" type="debug-trace" />
+        <reaction enter-cinematic="namsmeet" leave-cinematic="E_SJ04" pc-spawn="1" target="case:env-entered:pc" type="warp" zone="zone_ChRyoungCHN_Doctor_start" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_1" target2="zoneenv2spawn:1153_footswitch_1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_2" target2="zoneenv2spawn:1153_footswitch_2_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_3" target2="zoneenv2spawn:1153_footswitch_3_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_4" target2="zoneenv2spawn:1153_footswitch_4_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  <script alias="1153_footswitch_3_ai">
+    <quest-decision alias="qd_1218_7">
+      <reaction-set>
+        <reaction text="qd_1218_2 footswitch_3 -tekim" type="debug-trace" />
+        <reaction enter-cinematic="namsmeet" leave-cinematic="E_SJ04" pc-spawn="1" target="case:env-entered:pc" type="warp" zone="zone_ChRyoungCHN_Doctor_start" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_1" target2="zoneenv2spawn:1153_footswitch_1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_2" target2="zoneenv2spawn:1153_footswitch_2_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_3" target2="zoneenv2spawn:1153_footswitch_3_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_4" target2="zoneenv2spawn:1153_footswitch_4_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  <script alias="1153_footswitch_4_ai">
+    <quest-decision alias="qd_1218_8">
+      <reaction-set>
+        <reaction text="qd_1218_2 footswitch_4 -tekim" type="debug-trace" />
+        <reaction enter-cinematic="namsmeet" leave-cinematic="E_SJ04" pc-spawn="1" target="case:env-entered:pc" type="warp" zone="zone_ChRyoungCHN_Doctor_start" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_1" target2="zoneenv2spawn:1153_footswitch_1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_2" target2="zoneenv2spawn:1153_footswitch_2_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_3" target2="zoneenv2spawn:1153_footswitch_3_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:1153_footswitch_4" target2="zoneenv2spawn:1153_footswitch_4_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+
+
+  
+  
+  
+  
+  <script alias="CH_WA_JinYoung_0001_ai">
+    <quest-decision alias="qd_1214_1">
+      <reaction-set>
+        <reaction text="qd_1214_1 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_JinYoung_0001_act_01" target="zonenpcspawn:a_1150_2" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_1" target2="zoneenv2spawn:1150_footswitch_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_JinYoung_0001_act_04" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />
+        <reaction spawn-1="a_1150_9" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction text="JinYoung_0001_act_04 act-finished" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_WA_HwaJoong_0001_ai">    
+  </script>
+  
+  <script alias="CH_WA_MuSung_0001_ai">    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="CH_WA_MuSung_0001_ai undying" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <quest-decision alias="qd_1214_4">
+      <reaction-set>
+        <reaction text="qd_1214_4 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_JinYoung_0001_act_04" target="zonenpcspawn:a_1150_2" type="set-npc-act" />
+        <reaction seq="CH_WA_JinYoung_0001_act_04" target="zonenpcspawn:a_1150_3" type="set-npc-act" />
+        <reaction seq="CH_WA_MuSung_0001_act_01" target="zonenpcspawn:a_1150_4" type="set-npc-act" />
+        
+        <reaction spawn-1="a_1150_11" type="spawn-npc" />        
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1216_2">
+      <reaction-set>
+        <reaction text="qd_1216_2 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_MuSung_0001_act_02" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_5" target2="zoneenv2spawn:1150_footswitch_5_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1521_2">
+      <reaction-set>
+        <reaction text="qd_1216_2 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_MuSung_0001_act_02" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_5" target2="zoneenv2spawn:1150_footswitch_5_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1522_2">
+      <reaction-set>
+        <reaction text="qd_1216_2 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_MuSung_0001_act_02" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_5" target2="zoneenv2spawn:1150_footswitch_5_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1523_2">
+      <reaction-set>
+        <reaction text="qd_1216_2 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_MuSung_0001_act_02" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_5" target2="zoneenv2spawn:1150_footswitch_5_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1524_2">
+      <reaction-set>
+        <reaction text="qd_1216_2 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_MuSung_0001_act_02" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_5" target2="zoneenv2spawn:1150_footswitch_5_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1525_2">
+      <reaction-set>
+        <reaction text="qd_1216_2 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_MuSung_0001_act_02" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_5" target2="zoneenv2spawn:1150_footswitch_5_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1526_2">
+      <reaction-set>
+        <reaction text="qd_1216_2 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_MuSung_0001_act_02" target="zonenpcspawn:a_1150_11" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:1150_footswitch_5" target2="zoneenv2spawn:1150_footswitch_5_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1216_3">
+      <reaction-set>
+        <reaction text="qd_1216_3 무성 브레인 체인지 -tekim" type="debug-trace" />
+        
+        <reaction flag="n" target="case:talked:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction spawn-1="a_1151_12" spawn-radius="50" spawn-target="case:talked:pc" type="spawn-npc" />
+        <reaction special-id="1" target="case:talked:npc" type="npc-fire-special" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1151_12" target="case:talked:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1521_3">
+      <reaction-set>
+        <reaction text="qd_1216_3 무성 브레인 체인지 -tekim" type="debug-trace" />
+        
+        <reaction flag="n" target="case:talked:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction spawn-1="a_1151_12" spawn-radius="50" spawn-target="case:talked:pc" type="spawn-npc" />
+        <reaction special-id="1" target="case:talked:npc" type="npc-fire-special" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1151_12" target="case:talked:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1522_3">
+      <reaction-set>
+        <reaction text="qd_1216_3 무성 브레인 체인지 -tekim" type="debug-trace" />
+        
+        <reaction flag="n" target="case:talked:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction spawn-1="a_1151_12" spawn-radius="50" spawn-target="case:talked:pc" type="spawn-npc" />
+        <reaction special-id="1" target="case:talked:npc" type="npc-fire-special" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1151_12" target="case:talked:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1523_3">
+      <reaction-set>
+        <reaction text="qd_1216_3 무성 브레인 체인지 -tekim" type="debug-trace" />
+        
+        <reaction flag="n" target="case:talked:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction spawn-1="a_1151_12" spawn-radius="50" spawn-target="case:talked:pc" type="spawn-npc" />
+        <reaction special-id="1" target="case:talked:npc" type="npc-fire-special" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1151_12" target="case:talked:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1524_3">
+      <reaction-set>
+        <reaction text="qd_1216_3 무성 브레인 체인지 -tekim" type="debug-trace" />
+        
+        <reaction flag="n" target="case:talked:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction spawn-1="a_1151_12" spawn-radius="50" spawn-target="case:talked:pc" type="spawn-npc" />
+        <reaction special-id="1" target="case:talked:npc" type="npc-fire-special" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1151_12" target="case:talked:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1525_3">
+      <reaction-set>
+        <reaction text="qd_1216_3 무성 브레인 체인지 -tekim" type="debug-trace" />
+        
+        <reaction flag="n" target="case:talked:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction spawn-1="a_1151_12" spawn-radius="50" spawn-target="case:talked:pc" type="spawn-npc" />
+        <reaction special-id="1" target="case:talked:npc" type="npc-fire-special" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1151_12" target="case:talked:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1526_3">
+      <reaction-set>
+        <reaction text="qd_1216_3 무성 브레인 체인지 -tekim" type="debug-trace" />
+        
+        <reaction flag="n" target="case:talked:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction spawn-1="a_1151_12" spawn-radius="50" spawn-target="case:talked:pc" type="spawn-npc" />
+        <reaction special-id="1" target="case:talked:npc" type="npc-fire-special" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1151_12" target="case:talked:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </quest-decision>
+    
+    
+    
+    <quest-decision alias="qd_1216_5">
+      <reaction-set>
+        <reaction text="qd_1216_5 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_MuSung_0001_act_06" target="zonenpcspawn:a_1151_2" type="set-npc-act" />        
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1521_5">
+      <reaction-set>
+        <reaction text="qd_1216_5 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_MuSung_0001_act_06" target="zonenpcspawn:a_1151_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1522_5">
+      <reaction-set>
+        <reaction text="qd_1216_5 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_MuSung_0001_act_06" target="zonenpcspawn:a_1151_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1523_5">
+      <reaction-set>
+        <reaction text="qd_1216_5 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_MuSung_0001_act_06" target="zonenpcspawn:a_1151_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1524_5">
+      <reaction-set>
+        <reaction text="qd_1216_5 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_MuSung_0001_act_06" target="zonenpcspawn:a_1151_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1525_5">
+      <reaction-set>
+        <reaction text="qd_1216_5 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_MuSung_0001_act_06" target="zonenpcspawn:a_1151_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1526_5">
+      <reaction-set>
+        <reaction text="qd_1216_5 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_MuSung_0001_act_06" target="zonenpcspawn:a_1151_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    
+    
+    
+    
+    
+    
+    <quest-decision alias="qd_1217_1">
+      <reaction-set>
+        <reaction text="qd_1216_2 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_1151_3" spawn-2="a_1151_4" spawn-3="a_1151_5" spawn-4="a_1151_6" spawn-5="a_1151_7" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1217_10">
+      <reaction-set>
+        <reaction text="qd_1217_10 무성 브레인 체인지 -tekim" type="debug-trace" />
+        
+        <reaction flag="n" target="case:talked:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction spawn-1="a_1151_12" spawn-radius="50" spawn-target="case:talked:pc" type="spawn-npc" />
+        <reaction special-id="1" target="case:talked:npc" type="npc-fire-special" />
+        <reaction amount="1000" opponent="zonenpcspawn:a_1151_12" target="case:talked:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1217_12">
+      <reaction-set>
+        <reaction text="qd_1217_12 -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_MuSung_0001_act_06" target="zonenpcspawn:a_1151_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_1150_11" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MuSung_0001 a_1150_11 spawn -tekim" type="debug-trace" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter spawn="a_1151_2" subject="event:npc-special:npc" subject2="event:npc-special:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="무성 npc-special" type="debug-trace" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1151_12" type="despawn-npc" />
+        <reaction target="event:npc-special:npc" type="reset-npc-all-hate" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-special:npc" type="set-npc-brain" />
+        <reaction flag="y" target="zonenpcspawn:a_1151_2" type="set-npc-interactive" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>        
+        <filter spawn="a_1151_2" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="npc-combat-end -tekim" type="debug-trace" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_1151_12" type="despawn-npc" />
+        <reaction target="event:npc-combat-end:npc" type="reset-npc-all-hate" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-combat-end:npc" type="set-npc-brain" />
+        <reaction flag="y" target="zonenpcspawn:a_1151_2" type="set-npc-interactive" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="ME_WA_MuilDummy_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_WA_MuilDummy_0001_ai spawn -tekim" type="debug-trace" />
+        
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction amount="10000" opponent="event:npc-spawn:npc" target="zonenpcspawn:a_1151_2" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="zonenpcspawn:a_1151_2" target="event:npc-spawn:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="ME_WA_MuilDummy_0001_ai killed -tekim" type="debug-trace" />
+        <reaction cinematic="E_SJ03" to="event:killed:attacker" type="play-cinematic" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+</table>

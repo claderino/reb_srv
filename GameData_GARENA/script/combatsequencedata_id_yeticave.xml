@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata_id_yeticave.xml-->
+
+  
+  
+  
+
+  
+  
+  <combat-sequence alias="ME_C3_YettyCaveBoss_0002_CS_1" seq-start-social="1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Swing" skill3="ME_BEB_B1_SnowManBoss_None_Swing" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Smash" skill3="ME_BEB_B1_SnowManBoss_None_Smash" type="use-skill" />
+      <action type="select">
+        
+        <action prob="60" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Pratfall" skill3="ME_BEB_B1_SnowManBoss_None_Pratfall" type="use-skill" />
+        
+        <action prob="40" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Backdash" skill3="ME_BEB_B1_SnowManBoss_None_Backdash" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Uppercut" skill3="ME_BEB_B1_SnowManBoss_None_Uppercut" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_BossDash" skill3="ME_BEB_B1_SnowManBoss_None_BossDash" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="2" min-delay="20000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" target-area="5911_19" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle_13" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle" type="do-social" />
+      
+      <action event-step="15" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_AbsorbHeat" skill3="ME_BEB_B1_SnowManBoss_None_AbsorbHeat" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Snatch" skill3="ME_BEB_B1_SnowManBoss_None_Snatch" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_CramHeat" skill3="ME_BEB_B1_SnowManBoss_None_CramHeat" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" type="use-skill" />
+      
+      <action duration="1000" event-step="12" immune-breaker-disable="y" type="stay" />
+      
+      <action event-step="16" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_IceQuake" skill3="ME_BEB_B1_SnowManBoss_None_IceQuake" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" condition-1="hp-50" id="2" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" target-area="5911_19" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle_13" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle" type="do-social" />
+      
+      <action event-step="15" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_AbsorbHeat" skill3="ME_BEB_B1_SnowManBoss_None_AbsorbHeat" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" type="use-skill" />
+      
+      <action duration="1000" event-step="12" immune-breaker-disable="y" type="stay" />
+      
+      <action event-step="16" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_IceQuake" skill3="ME_BEB_B1_SnowManBoss_None_IceQuake" type="use-skill" />
+      
+      <action duration="1000" event-step="20" immune-breaker-disable="y" type="stay" />
+    </special>
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_YettyCaveBoss_0002_CS_2">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Swing" skill3="ME_BEB_B1_SnowManBoss_None_Swing" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Smash" skill3="ME_BEB_B1_SnowManBoss_None_Smash" type="use-skill" />
+      <action type="select">
+        
+        <action prob="60" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Pratfall" skill3="ME_BEB_B1_SnowManBoss_None_Pratfall" type="use-skill" />
+        
+        <action prob="40" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Backdash" skill3="ME_BEB_B1_SnowManBoss_None_Backdash" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Uppercut" skill3="ME_BEB_B1_SnowManBoss_None_Uppercut" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_BossDash" skill3="ME_BEB_B1_SnowManBoss_None_BossDash" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" condition-1="hp-40" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" target-area="5911_19" type="use-ground-skill" />
+      
+      <action event-step="11" immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle_14" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle_01" type="do-social" />
+      
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_AbsorbCold" skill3="ME_BEB_B1_SnowManBoss_None_AbsorbCold" type="use-skill" />
+      
+      <action event-step="14" immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle_11" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_BelchOutCold" skill3="ME_BEB_B1_SnowManBoss_None_BelchOutCold" type="use-skill" />
+      
+      <action duration="1000" event-step="12" immune-breaker-disable="y" type="stay" />
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_IceQuake" skill3="ME_BEB_B1_SnowManBoss_None_IceQuake" type="use-skill" />
+      
+      <action duration="1000" event-step="10" immune-breaker-disable="y" type="stay" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Roar" skill3="ME_BEB_B1_SnowManBoss_None_Roar" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" condition-1="hp-30" id="2" max-count="0" min-delay="20000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" target-area="5911_19" type="use-ground-skill" />
+      
+      <action event-step="11" immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle_14" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle_01" type="do-social" />
+      
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_AbsorbCold" skill3="ME_BEB_B1_SnowManBoss_None_AbsorbCold" type="use-skill" />
+      
+      <action event-step="14" immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle_11" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_BelchOutCold" skill3="ME_BEB_B1_SnowManBoss_None_BelchOutCold" type="use-skill" />
+      
+      <action combo="y" event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_None_ColdWave1" type="use-skill" />
+      
+      <action combo="y" event-step="3" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_ColdWave2" skill3="ME_BEB_B1_SnowManBoss_None_ColdWave2" type="use-skill" />
+      
+      <action combo="y" event-step="4" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_None_ColdWave1" type="use-skill" />
+      
+      <action combo="y" event-step="5" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_ColdWave2" skill3="ME_BEB_B1_SnowManBoss_None_ColdWave2" type="use-skill" />
+      
+      <action combo="y" event-step="6" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_None_ColdWave1" type="use-skill" />
+      
+      <action combo="y" event-step="7" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_ColdWave2" skill3="ME_BEB_B1_SnowManBoss_None_ColdWave2" type="use-skill" />
+      
+      <action combo="y" event-step="8" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_ColdWave1" skill3="ME_BEB_B1_SnowManBoss_None_ColdWave1" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_ColdWave2" skill3="ME_BEB_B1_SnowManBoss_None_ColdWave2" type="use-skill" />
+      
+      <action duration="1000" event-step="12" immune-breaker-disable="y" type="stay" />
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_IceQuake" skill3="ME_BEB_B1_SnowManBoss_None_IceQuake" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Roar" skill3="ME_BEB_B1_SnowManBoss_None_Roar" type="use-skill" />
+    </special>
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_YettyCaveBoss_0002_CS_Berserk">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action event-step="13" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_AbsorbHeat2" skill3="ME_BEB_B1_SnowManBoss_None_AbsorbHeat2" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_IceQuake2" skill3="ME_BEB_B1_SnowManBoss_None_IceQuake2" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_C3_YettyCaveBoss_0002_battle_15" type="do-social" />
+      
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_BEB_B1_SnowManBoss_None_Jump" skill3="ME_BEB_B1_SnowManBoss_None_Jump" target-area="5911_19" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_Dummy_0144_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1" special-2="3">
+      <action repeat="1" skill="ME_BEB_R0_Dummy_None_IceSmog" skill3="ME_BEB_R0_Dummy_None_IceSmog" type="use-skill" />
+      <action repeat="1" skill="ME_BEB_R0_Dummy_None_IceSmog" skill3="ME_BEB_R0_Dummy_None_IceSmog" type="use-skill" />
+      <action repeat="1" skill="ME_BEB_R0_Dummy_None_IceSmog" skill3="ME_BEB_R0_Dummy_None_IceSmog" type="use-skill" />
+      <action repeat="1" skill="ME_BEB_R0_Dummy_None_IceSmog" skill3="ME_BEB_R0_Dummy_None_IceSmog" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" repeat="1" skill="ME_BEB_R0_Dummy_None_IcicleDrop" skill3="ME_BEB_R0_Dummy_None_IcicleDrop" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      <action type="select">
+        <action prob="30" repeat="1" skill="ME_BEB_R0_Dummy_None_AbsorbedCold" skill3="ME_BEB_R0_Dummy_None_AbsorbedCold" target="event:npc-combat-action:npc:npc-party:1" type="use-skill" />
+        <action prob="30" repeat="1" skill="ME_BEB_R0_Dummy_None_AbsorbedCold2" skill3="ME_BEB_R0_Dummy_None_AbsorbedCold2" target="event:npc-combat-action:npc:npc-party:1" type="use-skill" />
+        <action prob="40" repeat="1" skill="ME_BEB_R0_Dummy_None_AbsorbedCold3" skill3="ME_BEB_R0_Dummy_None_AbsorbedCold3" target="event:npc-combat-action:npc:npc-party:1" type="use-skill" />
+      </action>
+      <action duration="1000" event-step="2" type="stay" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0" min-delay="60000" start-delay="60000">
+      <action event-step="1" repeat="1" skill="ME_BEB_R0_Dummy_None_IceSmog" skill3="ME_BEB_R0_Dummy_None_IceSmog" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_C3_Dummy_0145_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" repeat="1" skill="ME_BEB_R0_Dummy_None_GeyserSteam" skill3="ME_BEB_R0_Dummy_None_GeyserSteam" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_C3_Yetty_0001_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_SnowmanA_None_Claw" skill3="ME_SnowmanA_None_Claw" type="use-skill" />
+      <action type="select">
+        <action repeat="80" skill="ME_SnowmanA_None_Claw" skill3="ME_SnowmanA_None_Claw" type="use-skill" />
+        <action prob="20" repeat="1" skill="ME_SnowmanA_None_IceBlow" skill3="ME_SnowmanA_None_IceBlow" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_SnowmanA_None_IceBall" skill3="ME_SnowmanA_None_IceBall" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_Yetty_0003_CS_1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_WhipWorm_None_CasterHeal" skill3="ME_WhipWorm_None_CasterHeal" target="event:npc-combat-action:npc" type="use-skill" />
+      <action duration="3000" type="stay" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_BEB_N1_SnowManB_None_PeltSnowball" skill3="ME_BEB_N1_SnowManB_None_PeltSnowball" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_C3_Yetty_0003_CS_2">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_SnowmanB_None_Claw" skill3="ME_SnowmanB_None_Claw" type="use-skill" />
+      <action repeat="1" skill="ME_SnowmanB_None_Smash" skill3="ME_SnowmanB_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_SnowmanB_None_HeavyWave" skill3="ME_SnowmanB_None_HeavyWave" type="use-skill" />
+      <action repeat="1" skill="ME_SnowmanB_None_Uppercut" skill3="ME_SnowmanB_None_Uppercut" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_SnowmanB_None_Dash" skill3="ME_SnowmanB_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="20000">
+      <action repeat="1" skill="ME_SnowmanB_None_Yell" skill3="ME_SnowmanB_None_Yell" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_Bear_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_Bear_None_Jab" skill3="ME_Bear_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_Bear_None_Smash" skill3="ME_Bear_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_Bear_None_SmashDown" skill3="ME_Bear_None_SmashDown" type="use-skill" />
+      <action repeat="1" skill="ME_Bear_None_MultiSmash" skill3="ME_Bear_None_MultiSmash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_Bear_None_Rush" skill3="ME_Bear_None_Rush" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="20000">
+      <action repeat="1" skill="ME_Bear_None_HeavySmash" skill3="ME_Bear_None_HeavySmash" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_SilverSabelTiger_0002_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_SilverSabelTiger_None_Jab" skill3="ME_SilverSabelTiger_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_SilverSabelTiger_None_Smash" skill3="ME_SilverSabelTiger_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_SilverSabelTiger_None_Strike" skill3="ME_SilverSabelTiger_None_Strike" type="use-skill" />
+      <action repeat="1" skill="ME_SilverSabelTiger_None_HeavyBite" skill3="ME_SilverSabelTiger_None_HeavyBite" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action repeat="1" skill="ME_SilverSabelTiger_None_Dash" skill3="ME_SilverSabelTiger_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="20000">
+      <action repeat="1" skill="ME_SilverSabelTiger_None_Howl" skill3="ME_SilverSabelTiger_None_Howl" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_MudSoldierBoss_0003_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_DEA_N6_MudSoldier_None_NAtk1" skill3="ME_DEA_N6_MudSoldier_None_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DEA_N6_MudSoldier_None_NAtk2" skill3="ME_DEA_N6_MudSoldier_None_NAtk2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DEA_N6_MudSoldier_None_Laser" skill3="ME_DEA_N6_MudSoldier_None_Laser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_MudSoldierBoss_None_Laser" skill3="ME_MudSoldierBoss_None_Laser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DEA_N6_MudSoldier_None_Area360" skill3="ME_DEA_N6_MudSoldier_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_DEA_N6_MudSoldier_None_Jumppunch" skill3="ME_DEA_N6_MudSoldier_None_Jumppunch" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000">
+      
+      <action repeat="1" skill="ME_DEA_N6_MudSoldier_None_Jumppunch" skill3="ME_DEA_N6_MudSoldier_None_Jumppunch" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_N3_MudSoldierBoss_None_BakuretsuPunch" skill3="ME_SUC_N3_MudSoldierBoss_None_BakuretsuPunch" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_N3_MudSoldierBoss_None_DuelSwing" skill3="ME_SUC_N3_MudSoldierBoss_None_DuelSwing" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_GolemB_0001_CS">
+    <normal combat-distance="1" id="1">
+
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_Haetae_0003_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_Haetae_None_Jab" skill3="ME_Haetae_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Haetae_None_NAtk1" skill3="ME_Haetae_None_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Haetae_None_Laser" skill3="ME_Haetae_None_Laser" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_Haetae_None_Dash" skill3="ME_Haetae_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="20000">
+      
+      <action repeat="1" skill="ME_Haetae_None_LaserFire" skill3="ME_Haetae_None_LaserFire" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_Yetty_0002_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BabaC_None_IceBomb" skill3="ME_BabaC_None_IceBomb" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaC_None_IcIcle" skill3="ME_BabaC_None_IcIcle" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaC_None_IceExplosion" skill3="ME_BabaC_None_IceExplosion" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaC_None_SelfIce" skill3="ME_BabaC_None_SelfIce" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_KangSiFat_0003_CS">
+    
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEC_B3_KangSiFat_None_Jab" skill3="ME_BEC_B3_KangSiFat_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_B3_KangSiFat_None_HardSmash" skill3="ME_BEC_B3_KangSiFat_None_HardSmash" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_B3_KangSiFat_None_DarkBlow" skill3="ME_BEC_B3_KangSiFat_None_DarkBlow" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_B3_KangSiFat_None_Capture" skill3="ME_BEC_B3_KangSiFat_None_Capture" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_B3_KangSiFat_None_DevilGround" skill3="ME_BEC_B3_KangSiFat_None_DevilGround" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_B3_KangSiFat_None_BloodySmash" skill3="ME_BEC_B3_KangSiFat_None_BloodySmash" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_BEC_B3_KangSiFat_None_Inhalation" skill3="ME_BEC_B3_KangSiFat_None_Inhalation" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_B3_KangSiFat_None_SkyJump" skill3="ME_BEC_B3_KangSiFat_None_SkyJump" type="use-skill" />
+      <action repeat="1" skill="ME_BEC_B3_KangSiFat_None_SkyJump" skill3="ME_BEC_B3_KangSiFat_None_SkyJump" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_GolemLeaderIce_0001_CS">
+    <normal combat-distance="1" id="1">
+
+    </normal>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="MH_C3_YettyCaveBoss_0001_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUA_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_chain_cold_storm" skill3="MH_SUA_R0_ForceMaster_Deal_chain_cold_storm" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_cold_blast" skill3="MH_SUA_R0_ForceMaster_Deal_cold_blast" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" skill3="MH_SUA_R0_ForceMaster_Deal_fast_energy_missile" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_energy_cyclone_instant" skill3="MH_SUA_R0_ForceMaster_Deal_energy_cyclone_instant" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_chain_cold_storm" skill3="MH_SUA_R0_ForceMaster_Deal_chain_cold_storm" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_energy_cyclone" skill3="MH_SUA_R0_ForceMaster_Deal_energy_cyclone" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_HolyMushroom_0001_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk1" skill3="ME_HolyMushroom_None_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk2" skill3="ME_HolyMushroom_None_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      
+      
+      <action repeat="1" skill="ME_BEB_R0_HolyMushroom_None_Capture" skill3="ME_BEB_R0_HolyMushroom_None_Capture" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_HolyMushroom_0002_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk1" skill3="ME_HolyMushroom_None_NAtk1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk2" skill3="ME_HolyMushroom_None_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      
+      
+      <action repeat="1" skill="ME_BEB_R0_HolyMushroom_None_Capture" skill3="ME_BEB_R0_HolyMushroom_None_Capture" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_C3_BabaA_0001_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BaBaA_None_Jab" skill3="ME_BaBaA_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BaBaA_None_Smash" skill3="ME_BaBaA_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BaBaA_None_HeavySmash" skill3="ME_BaBaA_None_HeavySmash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BaBaA_None_HeavySmashDash" skill3="ME_BaBaA_None_HeavySmashDash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_BabaB_0001_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BaBaB_None_Smash" skill3="ME_BaBaB_None_Smash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BaBaB_None_IceThrow" skill3="ME_BaBaB_None_IceThrow" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_BabaB2_0001_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BabaB2_None_BaBaSpear" skill3="ME_BabaB2_None_BaBaSpear" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaB2_None_HeavySmash" skill3="ME_BabaB2_None_HeavySmash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaB2_None_Counter" skill3="ME_BabaB2_None_Counter" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BabaB2_None_Dash" skill3="ME_BabaB2_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_BabaC_0001_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BabaC_None_IcIcle" skill3="ME_BabaC_None_IcIcle" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaC_None_IceExplosion" skill3="ME_BabaC_None_IceExplosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BabaC_None_IceBomb" skill3="ME_BabaC_None_IceBomb" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_BabaLeader_0001_CS_1" transit-cond-1="bleeding-20">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BabaLeader_None_Smash_Leader" skill3="ME_BabaLeader_None_Smash_Leader" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaLeader_None_MultiSwing_Leader" skill3="ME_BabaLeader_None_MultiSwing_Leader" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BabaLeader_None_Howl_Leader" skill3="ME_BabaLeader_None_Howl_Leader" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BabaLeader_None_HeavyDash_Leader" skill3="ME_BabaLeader_None_HeavyDash_Leader" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_C3_BabaLeader_0001_CS_2">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_BabaLeader_None_Dash_Leader" skill3="ME_BabaLeader_None_Dash_Leader" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="ME_BabaLeader_None_Change_Leader" skill3="ME_BabaLeader_None_Change_Leader" type="use-skill" />
+      
+      <action duration="1000" stance="1" type="change-set" weapon="2" />
+    </special>
+    <special combat-distance="3" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action repeat="1" skill="ME_BabaLeader_None_DownStep_Leader" skill3="ME_BabaLeader_None_DownStep_Leader" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_C3_Icewing_0001_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_Icewing_None_Smash" skill3="ME_Icewing_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Icewing_None_ShortWind" skill3="ME_Icewing_None_ShortWind" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Icewing_None_Smash" skill3="ME_Icewing_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Icewing_None_IceWind" skill3="ME_Icewing_None_IceWind" type="use-skill" />
+      
+      <action repeat="1" skill="ME_Icewing_None_BackStep" skill3="ME_Icewing_None_BackStep" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_Icewing_None_Dash" skill3="ME_Icewing_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_SnowBall_0003_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action arrived-effect="ME_BEA_R0_Snow_None_Rush_Arrived" pass-through="y" skill="ME_BEB_R0_SnowBall_None_Snowballing" skill3="ME_BEB_R0_SnowBall_None_Snowballing" speed="126" target="event:npc-combat-action:npc:npc-party:1" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_C3_SnowBall_0004_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action arrived-effect="ME_BEA_R0_Snow_None_Rush_Arrived" pass-through="y" skill="ME_BEB_R0_SnowBall_None_Snowballing" skill3="ME_BEB_R0_SnowBall_None_Snowballing" speed="126" target="event:npc-combat-action:npc:npc-party:1" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_Dummy_0146_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="MH_BEC_R0_Common_HateUp" skill3="MH_BEC_R0_Common_HateUp" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_C3_Dummy_0170_CS" hide-seq-start="y">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BEB_R0_Dummy_None_IcicleDrop2" skill3="ME_BEB_R0_Dummy_None_IcicleDrop2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  
+  
+  
+  
+
+
+  
+  <combat-sequence alias="ME_C3_DemonShadowBoss_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="2" skill="Event_ME_DemonShadow_None_Jab" skill3="Event_ME_DemonShadow_None_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Smash" skill3="Event_ME_DemonShadow_None_Smash" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Laser" skill3="Event_ME_DemonShadow_None_Laser" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="2" skill="Event_ME_DemonShadow_None_Jab" skill3="Event_ME_DemonShadow_None_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Smash" skill3="Event_ME_DemonShadow_None_Smash" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" skill="Event_ME_DemonShadow_None_Laser" skill3="Event_ME_DemonShadow_None_Laser" type="use-skill" />
+        <action prob="50" skill="Event_ME_DemonShadow_None_Spin" skill3="Event_ME_DemonShadow_None_Spin" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="2" skill="Event_ME_DemonShadow_None_Jab" skill3="Event_ME_DemonShadow_None_Jab" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Smash" skill3="Event_ME_DemonShadow_None_Smash" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" skill="Event_ME_DemonShadow_None_Laser" skill3="Event_ME_DemonShadow_None_Laser" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" skill="Event_ME_DemonShadow_None_Explosion" skill3="Event_ME_DemonShadow_None_Explosion" type="use-skill" />
+      </action>
+    </normal>
+
+    <normal combat-distance="7" id="2" special-1="1">
+      
+      <action duration="30000" immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_DemonFire" skill3="Event_ME_DemonShadow_None_DemonFire" type="boss-simultaneous-ground-attack" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="40000" start-delay="40000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="Event_ME_DemonShadow_None_Inhalation" skill3="Event_ME_DemonShadow_None_Inhalation" type="use-skill" />
+      <action duration="30000" immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_DemonFire" skill3="Event_ME_DemonShadow_None_DemonFire" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="30000" immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_DemonFire" skill3="Event_ME_DemonShadow_None_DemonFire" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="0" start-delay="0">
+      
+      <action event-step="1" immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_259" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_C3_DemonShadowBoss_0001_battle_msg_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="2" skill="Event_ME_DemonShadow_None_Meteor" skill3="Event_ME_DemonShadow_None_Meteor" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Explosion" skill3="Event_ME_DemonShadow_None_Explosion" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_263" type="use-ground-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0" min-delay="0" start-delay="0">
+      
+      <action event-step="2" immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_262" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_C3_DemonShadowBoss_0001_battle_msg_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="2" skill="Event_ME_DemonShadow_None_Meteor" skill3="Event_ME_DemonShadow_None_Meteor" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Explosion" skill3="Event_ME_DemonShadow_None_Explosion" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_263" type="use-ground-skill" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="0" min-delay="0" start-delay="0">
+      
+      <action event-step="3" immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_261" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_C3_DemonShadowBoss_0001_battle_msg_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="2" skill="Event_ME_DemonShadow_None_Meteor" skill3="Event_ME_DemonShadow_None_Meteor" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Explosion" skill3="Event_ME_DemonShadow_None_Explosion" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_263" type="use-ground-skill" />
+    </special>
+
+    <special combat-distance="7" id="5" max-count="0" min-delay="0" start-delay="0">
+      
+      <action event-step="4" immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_260" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_C3_DemonShadowBoss_0001_battle_msg_01" type="do-social" />
+      <action immune-breaker-disable="y" repeat="2" skill="Event_ME_DemonShadow_None_Meteor" skill3="Event_ME_DemonShadow_None_Meteor" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Explosion" skill3="Event_ME_DemonShadow_None_Explosion" type="use-skill" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_263" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_C3_DemonShadowBoss_0001_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_DemonShot" skill3="Event_ME_DemonShadow_None_DemonShot" target-area="5911_263" type="use-ground-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="ME_C3_DemonShadowBoss_0001_msg_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_SA_Valak_0001_soc_01" type="do-social" />
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="25" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_259" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_262" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_261" type="use-ground-skill" />
+        <action immune-breaker-disable="y" prob="25" skill="Event_ME_DemonShadow_None_Teleport" skill3="Event_ME_DemonShadow_None_Teleport" target-area="5911_260" type="use-ground-skill" />
+      </action>
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_DemonShot" skill3="Event_ME_DemonShadow_None_DemonShot" target-area="5911_263" type="use-ground-skill" />
+      <action duration="1000" event-step="6" immune-breaker-disable="y" type="stay" />
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_DemonShot" skill3="Event_ME_DemonShadow_None_DemonShot" target-area="5911_263" type="use-ground-skill" />
+      <action duration="1000" event-step="6" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_C3_Dummy_0334_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" immune-breaker-disable="y" type="stay" />
+    </normal>
+
+    <normal combat-distance="7" id="2" special-1="1">
+      <action duration="100" immune-breaker-disable="y" type="stay" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Meteor_Dummy" skill3="Event_ME_DemonShadow_None_Meteor_Dummy" target="event:npc-combat-action:npc" type="use-skill" />
+      <action event-step="1" immune-breaker-disable="y" skill="Event_ME_DemonShadow_None_Meteor_Dummy" skill3="Event_ME_DemonShadow_None_Meteor_Dummy" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+</table>

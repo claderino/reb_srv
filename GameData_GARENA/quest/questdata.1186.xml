@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1186.xml-->
+  <quest alias="q_sub_1186" broadcast-category="field" category="normal" district-1="suwal" id="1186" max-repeat="1" save-type="all">
+    <acquisition level="39" preceding-quest-1="q_epic_915" preceding-quest-check="and" preceding-quest-mission-step-1="5">
+      <case acquire-quest="y" object="npc:ce_scroll_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case gadget="q_stonea" gadget-required="carry-and-remove" object-1="zoneenv:e_pot_well_01" object2-1="zoneenv2:e_pot_well_01" party-broadcast="n" progress-mission="y" skill="gadget_q_stonea" skill3="gadget_q_stonea" type="skill" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_chest_pilestone_01" object2="zoneenv2:e_chest_pilestone_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="10">
+        <case object="npc:me_dokebi_0001" object2="npc:me_dokebi_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_dokebigon_0004" object2="npc:me_dokebigon_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_dokebiassassin_0004" object2="npc:me_dokebiassassin_0004" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="4" required-register-value="10">
+        <case object="npc:me_generalworldb_0003" object2="npc:me_generalworldb_0003" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_jangeaegyo_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="6" required-register-value="1">
+        <case object="npc:ce_scroll_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1186_2" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="7" required-register-value="1">
+        <case object="npc:me_dokebi_0002" object2="npc:me_dokebi_0002" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="npc:ce_scroll_0001" party-broadcast="n" type="approach" />
+        <case object="zone:zone_hunuhouse" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1186_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="8" required-register-value="1" reward-1="1186_final_set1">
+        <case object="npc:ch_taesangmun_0008" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ce_scroll_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_jangeaegyo_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

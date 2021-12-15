@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1675.xml-->
+  <quest alias="q_sub_1675" category="normal" id="1675" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition level="55" preceding-quest-1="q_epic_1657" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_WA_Hookcanyon_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="2">
+        <case object2="zoneenv2:e_gate_6601_Door_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_gate_6601_Door_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1675_final_set1" reward-2="1675_final_set2">
+        <case party-broadcast="n" progress-mission="y" type="talk-to-self" />
+        <case object="npc:CH_WA_Hookcanyon_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

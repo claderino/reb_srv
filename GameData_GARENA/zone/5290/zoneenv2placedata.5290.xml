@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5290\zoneenv2placedata.5290.xml-->
+	<record action-point="1901,1287,4537" action-radius="25" alias="e_button_5290yongmak_place" tool-zone-1="5290" type="button" />
+	<record action-point="-2307,411,4220" alias="5290_Portal_place" region-point-1="-2504,1256,5478" region-point-2="-2485,1260,5507" region-point-3="-2110,-433,4018" region-point-4="-2129,-438,4054" tool-zone-1="5290" type="portal" />
+	<record action-point="-1325,639,4322" action-radius="0" alias="5290_Foot_1_place" region-point-1="-1304,467,4301" region-point-2="-1370,806,4567" region-point-3="-1347,810,4298" region-point-4="-1281,472,4298" tool-zone-1="5290" type="foot-switch" />
+	<record alias="5290_Damage_Blizard_place" height="0" region-point-1="-319,469,30186" region-point-2="-463,1212,30186" region-point-3="-341,1235,3947" region-point-4="-198,492,4094" tool-zone-1="5290" type="effect-region" />
+	<record alias="5290_Damage_Blizard_2_place" height="0" region-point-1="1653,662,-363" region-point-2="1432,1791,-363" region-point-3="1717,1847,-305" region-point-4="1939,718,-363" tool-zone-1="5290" type="effect-region" />
+	<record alias="zone5290.falldeath_place" height="0" type="fall-death" />
+</table>

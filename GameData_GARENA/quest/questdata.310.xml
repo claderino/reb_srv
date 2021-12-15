@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.310.xml-->
+  <quest alias="q_epic_310" category="epic" completed-list="y" district-1="jeryoungrim" id="310" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_citizen_0013" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="5">
+        <case object2="npc:me_zombiea_0050" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_zombiea_0049" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_citizen_0007" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_citizen_0006" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_citizen_0005" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_310_1" zone-1="zone_huekummrim_uchn_phase">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_dochunpung_0003" party-broadcast="n" progress-mission="y" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_citizen_0009" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_citizen_0007" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_jakyoungdan_0032" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object2="zoneenv2:2632_foot_1" party-broadcast="n" progress-mission="y" quest-decision="qd_310_5" type="env-entered" />
+        <case object="zone:zone_buryejinechn_dun_1_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_310_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case convoy="epic_310_con" drop-gadget="y" object="npc:ch_dochunpung_0004" party-broadcast="n" progress-mission="y" quest-decision="qd_310_6" type="talk" />
+        <case object="zone:zone_buryejinechn_dun_1_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_310_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="9" quest-decision="qd_310_2" rollback="leave-world" zone-1="zone_buryejinechn_dun_1_epic">
+      <mission id="9" required-register-value="1">
+        <case convoy="epic_310_con" object="zone:zone_buryejinechn_dun_1_epic" party-broadcast="n" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail rollback-step-id="8" zone-1="zone_buryejinechn_dun_1_epic">
+        <case convoy="epic_310_con" object="zone:zone_buryejinechn_dun_1_epic" party-broadcast="n" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1" reward-1="310_final_set1">
+        <case object="npc:ch_dochunpung_0005" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_HuekUmmRim_UCHN">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+    </transit>
+    <transit id="2" zone="zone_BuryejinECHN_Dun_1">
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_311" />
+    </completion>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object2="npc:me_golem_0073" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:zone_buryejinechn_dun_1_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_310_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

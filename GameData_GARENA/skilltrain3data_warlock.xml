@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="SkillTrain3" version="1.18">
+  <!--skilltrain3data_warlock.xml-->
+	<record alias="WL_SummonedActive_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28800" variation-index="11" />
+	<record alias="WL_SummonedActive_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28800" variation-index="12" />
+	<record alias="WL_SummonedActive_13" attribute="attr1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28800" variation-index="13" />
+	<record alias="WL_SummonedActive_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28800" variation-index="21" />
+	<record alias="WL_SummonedActive_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28800" variation-index="22" />
+	<record alias="WL_SummonedActive_23" attribute="attr2" max-variation-level="3" pc-job="주술사" train-skill-id-1="28800" variation-index="23" />
+	<record alias="WL_Summon_Advent_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28500" variation-index="11" />
+	<record alias="WL_Summon_Advent_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28500" variation-index="21" />
+	<record alias="WL_CounterAT_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28030" variation-index="11" />
+	<record alias="WL_CounterAT_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28030" variation-index="12" />
+	<record alias="WL_CounterAT_13" attribute="attr1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28030" variation-index="13" />
+	<record alias="WL_CounterAT_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28030" variation-index="21" />
+	<record alias="WL_CounterAT_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28030" variation-index="22" />
+	<record alias="WL_CounterAT_23" attribute="attr2" max-variation-level="3" pc-job="주술사" train-skill-id-1="28030" variation-index="23" />
+	<record alias="WL_DrainSoul_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28011" variation-index="11" />
+	<record alias="WL_DrainSoul_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28011" variation-index="21" />
+	<record alias="WL_EventTarget_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28220" variation-index="11" />
+	<record alias="WL_EventTarget_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28220" variation-index="21" />
+	<record alias="WL_BackwardRoll_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28320" variation-index="11" />
+	<record alias="WL_BackwardRoll_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28320" variation-index="21" />
+	<record alias="WL_Counter_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28020" variation-index="11" />
+	<record alias="WL_Counter_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28020" variation-index="21" />
+	<record alias="WL_Rise_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28330" variation-index="11" />
+	<record alias="WL_Rise_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28330" variation-index="21" />
+	<record alias="WL_Linked_escape_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28340" variation-index="11" />
+	<record alias="WL_Linked_escape_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28340" variation-index="21" />
+	<record alias="WL_MoveBlock_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28170" variation-index="11" />
+	<record alias="WL_MoveBlock_51" attribute="attr1" complete-achievement-id="907" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28170" variation-index="51" />
+	<record alias="WL_MoveBlock_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28170" variation-index="12" />
+	<record alias="WL_MoveBlock_52" attribute="attr1" complete-achievement-id="907" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28170" variation-index="52" />
+	<record alias="WL_MoveBlock_13" attribute="attr1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28170" variation-index="13" />
+	<record alias="WL_MoveBlock_53" attribute="attr1" complete-achievement-id="906" complete-achievement-step-min="1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28170" variation-index="53" />
+	<record alias="WL_MoveBlock_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28170" variation-index="21" />
+	<record alias="WL_MoveBlock_61" attribute="attr2" complete-achievement-id="907" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28170" variation-index="61" />
+	<record alias="WL_MoveBlock_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28170" variation-index="22" />
+	<record alias="WL_MoveBlock_62" attribute="attr2" complete-achievement-id="907" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28170" variation-index="62" />
+	<record alias="WL_MoveBlock_23" attribute="attr2" max-variation-level="3" pc-job="주술사" train-skill-id-1="28170" variation-index="23" />
+	<record alias="WL_MoveBlock_63" attribute="attr2" complete-achievement-id="906" complete-achievement-step-min="1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28170" variation-index="63" />
+	<record alias="WL_Escape_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28310" variation-index="11" />
+	<record alias="WL_Escape_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28310" variation-index="21" />
+	<record alias="WL_GroundAttack_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28060" variation-index="11" />
+	<record alias="WL_GroundAttack_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28060" variation-index="12" />
+	<record alias="WL_GroundAttack_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28060" variation-index="21" />
+	<record alias="WL_GroundAttack_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28060" variation-index="22" />
+	<record alias="WL_GroundAttack_51" attribute="attr1" complete-quest="q_sub_891" max-variation-level="1" pc-job="주술사" train-skill-id-1="28060" variation-index="51" />
+	<record alias="WL_GroundAttack_52" attribute="attr1" complete-quest="q_sub_891" max-variation-level="2" pc-job="주술사" train-skill-id-1="28060" variation-index="52" />
+	<record alias="WL_GroundAttack_61" attribute="attr2" complete-quest="q_sub_891" max-variation-level="1" pc-job="주술사" train-skill-id-1="28060" variation-index="61" />
+	<record alias="WL_GroundAttack_62" attribute="attr2" complete-quest="q_sub_891" max-variation-level="2" pc-job="주술사" train-skill-id-1="28060" variation-index="62" />
+	<record alias="WL_Link_Attack_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28335" variation-index="11" />
+	<record alias="WL_Link_Attack_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28335" variation-index="21" />
+	<record alias="WL_Escape_Swarp_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28350" variation-index="11" />
+	<record alias="WL_Escape_Swarp_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28350" variation-index="21" />
+	<record alias="WL_Nuke_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28090" variation-index="11" />
+	<record alias="WL_Nuke_51" attribute="attr1" complete-achievement-id="903" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28090" variation-index="51" />
+	<record alias="WL_Nuke_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28090" variation-index="12" />
+	<record alias="WL_Nuke_52" attribute="attr1" complete-achievement-id="902" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28090" variation-index="52" />
+	<record alias="WL_Nuke_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28090" variation-index="21" />
+	<record alias="WL_Nuke_61" attribute="attr2" complete-achievement-id="903" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28090" variation-index="61" />
+	<record alias="WL_Nuke_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28090" variation-index="22" />
+	<record alias="WL_Nuke_62" attribute="attr2" complete-achievement-id="902" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28090" variation-index="62" />
+	<record alias="WL_LB_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28035" variation-index="11" />
+	<record alias="WL_LB_51" attribute="attr1" complete-achievement-id="911" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28035" variation-index="51" />
+	<record alias="WL_LB_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28035" variation-index="12" />
+	<record alias="WL_LB_52" attribute="attr1" complete-achievement-id="912" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28035" variation-index="52" />
+	<record alias="WL_LB_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28035" variation-index="21" />
+	<record alias="WL_LB_61" attribute="attr2" complete-achievement-id="911" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28035" variation-index="61" />
+	<record alias="WL_LB_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28035" variation-index="22" />
+	<record alias="WL_LB_62" attribute="attr2" complete-achievement-id="912" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28035" variation-index="62" />
+	<record alias="WL_Rcombo_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28001" train-skill-id-2="28005" variation-index="11" />
+	<record alias="WL_Rcombo_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28001" train-skill-id-2="28005" variation-index="21" />
+	<record alias="WL_SoulDash_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28520" variation-index="11" />
+	<record alias="WL_SoulDash_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28520" variation-index="21" />
+	<record alias="WL_TargetBeam_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28450" variation-index="11" />
+	<record alias="WL_TargetBeam_51" attribute="attr1" complete-achievement-id="909" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28450" variation-index="51" />
+	<record alias="WL_TargetBeam_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28450" variation-index="12" />
+	<record alias="WL_TargetBeam_52" attribute="attr1" complete-achievement-id="909" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28450" variation-index="52" />
+	<record alias="WL_TargetBeam_13" attribute="attr1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28450" variation-index="13" />
+	<record alias="WL_TargetBeam_53" attribute="attr1" complete-achievement-id="910" complete-achievement-step-min="1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28450" variation-index="53" />
+	<record alias="WL_TargetBeam_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28450" variation-index="21" />
+	<record alias="WL_TargetBeam_61" attribute="attr2" complete-achievement-id="909" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28450" variation-index="61" />
+	<record alias="WL_TargetBeam_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28450" variation-index="22" />
+	<record alias="WL_TargetBeam_62" attribute="attr2" complete-achievement-id="910" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28450" variation-index="62" />
+	<record alias="WL_TargetBeam_SoulMask_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28457" variation-index="11" />
+	<record alias="WL_TargetBeam_SoulMask_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28457" variation-index="21" />
+	<record alias="WL_Aura_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28660" variation-index="11" />
+	<record alias="WL_Aura_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28660" variation-index="12" />
+	<record alias="WL_Aura_13" attribute="attr1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28660" variation-index="13" />
+	<record alias="WL_Aura_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28660" variation-index="21" />
+	<record alias="WL_Aura_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28660" variation-index="22" />
+	<record alias="WL_Aura_23" attribute="attr2" max-variation-level="3" pc-job="주술사" train-skill-id-1="28660" variation-index="23" />
+	<record alias="WL_SummonedNuke_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28630" variation-index="11" />
+	<record alias="WL_SummonedNuke_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28630" variation-index="12" />
+	<record alias="WL_SummonedNuke_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28630" variation-index="21" />
+	<record alias="WL_SummonedNuke_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28630" variation-index="22" />
+	<record alias="WL_SummonedMeleeAttack_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28620" variation-index="11" />
+	<record alias="WL_SummonedMeleeAttack_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28620" variation-index="21" />
+	<record alias="WL_SummonedNormalAttack_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28610" variation-index="11" />
+	<record alias="WL_SummonedNormalAttack_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28610" variation-index="21" />
+	<record alias="WL_SummonedDash_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28710" variation-index="11" />
+	<record alias="WL_SummonedDash_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28710" variation-index="21" />
+	<record alias="WL_SummonedRecall_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28700" variation-index="11" />
+	<record alias="WL_SummonedRecall_22" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28700" variation-index="21" />
+	<record alias="WL_Backstep_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28300" variation-index="11" />
+	<record alias="WL_Backstep_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28300" variation-index="21" />
+	<record alias="WL_Adefense_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28070" variation-index="11" />
+	<record alias="WL_Adefense_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28070" variation-index="21" />
+	<record alias="WL_RangeCC_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28050" variation-index="11" />
+	<record alias="WL_RangeCC_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28050" variation-index="12" />
+	<record alias="WL_RangeCC_13" attribute="attr1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28050" variation-index="13" />
+	<record alias="WL_RangeCC_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28050" variation-index="21" />
+	<record alias="WL_RangeCC_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28050" variation-index="22" />
+	<record alias="WL_RangeCC_23" attribute="attr2" max-variation-level="3" pc-job="주술사" train-skill-id-1="28050" variation-index="23" />
+	<record alias="WL_GroundSup_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28230" variation-index="11" />
+	<record alias="WL_GroundSup_51" attribute="attr1" complete-achievement-id="901" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28230" variation-index="51" />
+	<record alias="WL_GroundSup_12" attribute="attr1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28230" variation-index="12" />
+	<record alias="WL_GroundSup_52" attribute="attr1" complete-achievement-id="901" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28230" variation-index="52" />
+	<record alias="WL_GroundSup_13" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28230" variation-index="13" />
+	<record alias="WL_GroundSup_53" attribute="attr1" complete-achievement-id="901" complete-achievement-step-min="1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28230" variation-index="53" />
+	<record alias="WL_GroundSup_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28230" variation-index="21" />
+	<record alias="WL_GroundSup_61" attribute="attr2" complete-achievement-id="901" complete-achievement-step-min="1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28230" variation-index="61" />
+	<record alias="WL_GroundSup_22" attribute="attr2" max-variation-level="3" pc-job="주술사" train-skill-id-1="28230" variation-index="22" />
+	<record alias="WL_GroundSup_62" attribute="attr2" complete-achievement-id="901" complete-achievement-step-min="1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28230" variation-index="62" />
+	<record alias="WL_GroundSup_23" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28230" variation-index="23" />
+	<record alias="WL_GroundSup_63" attribute="attr2" complete-achievement-id="901" complete-achievement-step-min="1" max-variation-level="3" pc-job="주술사" train-skill-id-1="28230" variation-index="63" />
+	<record alias="WL_Laser_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28040" variation-index="11" />
+	<record alias="WL_Laser_12" attribute="attr1" max-variation-level="2" pc-job="주술사" train-skill-id-1="28040" variation-index="12" />
+	<record alias="WL_Laser_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28040" variation-index="21" />
+	<record alias="WL_Laser_22" attribute="attr2" max-variation-level="2" pc-job="주술사" train-skill-id-1="28040" variation-index="22" />
+	<record alias="WL_MasterSkill_1_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28400" variation-index="11" />
+	<record alias="WL_MasterSkill_1_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28400" variation-index="21" />
+	<record alias="WL_MasterSkill_2_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="28430" variation-index="11" />
+	<record alias="WL_MasterSkill_2_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="28430" variation-index="21" />
+	<record alias="WL_65001_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65001" variation-index="11" />
+	<record alias="WL_65001_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65001" variation-index="21" />
+	<record alias="WL_65002_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65002" variation-index="11" />
+	<record alias="WL_65002_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65002" variation-index="21" />
+	<record alias="WL_65003_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65003" variation-index="11" />
+	<record alias="WL_65003_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65003" variation-index="21" />
+	<record alias="WL_65004_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65004" variation-index="11" />
+	<record alias="WL_65004_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65004" variation-index="21" />
+	<record alias="WL_65005_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65005" variation-index="11" />
+	<record alias="WL_65005_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65005" variation-index="21" />
+	<record alias="WL_65006_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65006" variation-index="11" />
+	<record alias="WL_65006_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65006" variation-index="21" />
+	<record alias="WL_65007_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65007" variation-index="11" />
+	<record alias="WL_65007_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65007" variation-index="21" />
+	<record alias="WL_65008_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65008" variation-index="11" />
+	<record alias="WL_65008_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65008" variation-index="21" />
+	<record alias="WL_65009_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65009" variation-index="11" />
+	<record alias="WL_65009_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65009" variation-index="21" />
+	<record alias="WL_65010_11" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65010" variation-index="11" />
+	<record alias="WL_65010_12" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65010" variation-index="12" />
+	<record alias="WL_65010_13" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65010" variation-index="13" />
+	<record alias="WL_65010_14" attribute="attr1" max-variation-level="1" pc-job="주술사" train-skill-id-1="65010" variation-index="14" />
+	<record alias="WL_65010_21" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65010" variation-index="21" />
+	<record alias="WL_65010_22" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65010" variation-index="22" />
+	<record alias="WL_65010_23" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65010" variation-index="23" />
+	<record alias="WL_65010_24" attribute="attr2" max-variation-level="1" pc-job="주술사" train-skill-id-1="65010" variation-index="24" />
+</table>

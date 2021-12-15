@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1007.xml-->
+  <quest alias="q_sub_1007" broadcast-category="field" category="normal" district-1="suwal" id="1007" max-repeat="1" save-type="all">
+    <acquisition level="36" preceding-quest-1="q_sub_1001" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_IlMiMun_0009" party-broadcast="n" type="talk" visible-object="n" />
+    </acquisition>
+    <mission-step id="2" quest-decision="qd_1007_5" zone-1="zone_DlsoSeosicji">
+      <mission id="2" required-register-value="1">
+        <case object="zoneenv:e_pot_liquorjug_02" object2="zoneenv2:e_pot_liquorjug_02" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="zone:zone_DlsoSeosicji" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1007_3" type="enter-zone" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object="zoneenv:e_pot_liquorjug_01" object2="zoneenv2:e_pot_liquorjug_01" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="zone:zone_DlsoSeosicji" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1007_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="4" required-register-value="1" reward-1="1007_final_set1">
+        <case object="npc:CE_PotAxPartyB_0003" party-broadcast="n" progress-mission="y" type="talk" visible-object="n" />
+        <case object="npc:CE_PotAxPartyA_0004" party-broadcast="n" type="approach" visible-object="n" />
+        <case object="zone:zone_DlsoSeosicji" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1007_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CE_PotAxPartyB_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_DlsoSeosicji" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1007_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

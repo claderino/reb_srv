@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.925.xml-->
+  <quest alias="q_epic_925" category="epic" completed-list="y" district-1="suwal" id="925" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <completion>
+      <next-quest quest="q_epic_927" />
+    </completion>
+    <transit id="1" zone="zone_bimilyeanguso">
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+    </transit>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_gyeongchunmaeng_0038" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject2="case:talked:pc" type="prop" value="43" />
+          </filter-set>
+        </case>
+        <case object="npc:ch_gyeongchunmaeng_0038" party-broadcast="n" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="42" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="8">
+        <case object2="npc:mh_jegukgun_0098" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0097" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0164" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0163" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0162" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0362" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_cannonfighter_0010" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0358" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0357" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0356" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0160" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0158" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0157" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_gyeongchunmaeng_0040" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="zone:zone_bimilyeanguso_epic" party-broadcast="n" progress-mission="y" quest-decision="qd_925_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_baekmoon_0012" party-broadcast="n" progress-mission="y" quest-decision="qd_925_2" type="talk" />
+        <case object="zone:zone_bimilyeanguso_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_925_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ch_gyeongchunmaeng_0041" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" zone-1="zone_bimilyeanguso_epic" />
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="8">
+        <case object2="npc:me_jegukgun_0368" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0146" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0144" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0361" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0360" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0359" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_runemechabattle_0006" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_cannonfighter_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0108" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0244" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0107" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0117" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0118" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0119" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0383" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0382" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0466" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0467" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:mh_jegukgun_0468" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="9" required-register-value="1">
+        <case object2="zoneenv2:e_pot_tied_bignail_03" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="zoneenv2:e_pot_tied_bignail_02" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="zoneenv2:e_pot_tied_bignail_01" party-broadcast="y" progress-mission="y" type="killed" />
+        <case gadget="q_ironhammera_2" gadget-required="carry" object2-1="zoneenv2:e_pot_tied_bignail_01" object2-2="zoneenv2:e_pot_tied_bignail_02" object2-3="zoneenv2:e_pot_tied_bignail_03" object2-4="zoneenv2:e_pot_jaegukbomb_01" object2-5="zoneenv2:e_pot_explosive_01" object2-6="zoneenv2:e_pot_explosive_02" object2-7="zoneenv2:e_pot_explosive_03" object2-8="zoneenv2:e_pot_explosive_04" party-broadcast="n" progress-mission="reaction-only" skill="gadget_q_ironhammera_2" skill3="gadget_q_ironhammera_2" type="skill" />
+        <case drop-gadget="y" gadget="q_ironhammera_2" gadget-required="not-a" object2="npc:me_rewardbox_0010" party-broadcast="y" progress-mission="reaction-only" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="10" required-register-value="1" reward-1="925_final_set1">
+        <case object="npc:ch_gyeongchunmaeng_0040" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" rollback="leave-zone">
+      <mission id="6" required-register-value="1">
+        <case object2="zoneenv2:4506_foot_1" party-broadcast="n" progress-mission="y" type="env-entered" />
+      </mission>
+      <mission-step-fail rollback-step-id="5" zone-1="zone_bimilyeanguso_epic" />
+    </mission-step>
+  </quest>
+</table>

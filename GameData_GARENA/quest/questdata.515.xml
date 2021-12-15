@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.515.xml-->
+  <quest alias="q_epic_515" category="epic" completed-list="y" district-1="deasamak" id="515" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_jinsoa_0001" party-broadcast="n" progress-mission="y" type="talk" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:e_onoff_hunterbag_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_hunterbag_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_hunterbag_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_hunterbag_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_hunterbag_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_hunterbag_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_hunterbag_07" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_onoff_hunterbag_08" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:ch_jinsoa_0001" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1" reward-1="515_final_set1">
+        <case object="npc:ch_jinsoa_0013" party-broadcast="n" progress-mission="y" type="talk" visible-object="y" />
+        <case object="npc:ch_jinsoa_0001" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_516" />
+    </completion>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_treasurehunter_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_unguksoldier_025" party-broadcast="n" type="approach" visible-object="y" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

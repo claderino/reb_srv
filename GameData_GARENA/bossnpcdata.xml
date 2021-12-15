@@ -1,0 +1,1736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="BossNpc" version="0.16">
+  <!--bossnpcdata.xml-->
+	<record alias="ME_GuGuBung_0003_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_GuGuBung_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_FireGorilla_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_BladeMaster_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0040_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_BokGonPe_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_BokGonPe_0025_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_BokGonPe_0026_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_BokGonPe_0027_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_PotAxParty_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_JunoBoss_001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_IronTurtle_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_HongUn_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SukSamJa_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_DarkCrazyTribe_0034_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_MudSoldier_012_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakABoss_0001_BossNPC" berserk-sequence="ME_ChungGakABoss_0001_8_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakABoss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakABoss_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakABoss_0004_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_ChungGakABoss_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakBBoss_0001_BossNPC" berserk-sequence="ME_ChungGakBBoss_0001_CS_8" berserk-sequence-invoke-time="300000" boss-brain-type="boss" rising-attack-invoke-time="1000" use-bleeding="n" />
+	<record alias="ME_ChungGakBBoss_0004_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_SUB_B4_KungfuMaster_Attack_DownCounter" use-bleeding="n" />
+	<record alias="ME_ChungGakBBoss_0005_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_SUB_B3_KungfuMaster_Attack_Windmill" use-bleeding="n" />
+	<record alias="ME_ChungGakBBoss_0006_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" use-bleeding="n" />
+	<record alias="MH_KangSiTall_001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_AdamantineMan_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Scorpion_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_PotAxParty_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_BarbarianSpearBow_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_HyeolPung_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_GolemLeader_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JungYun_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_KungfuMaster_Attack_Windmill_Lv1" use-bleeding="n" />
+	<record alias="ME_DokebiGonNamed_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SpiderQueen_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_KangSiFat_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SinSi_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_RuneMechaFireGorillaA_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_RuneMechaFireGorillaA_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0225_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Nucleus_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_NakWonDaeSung_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_FishmanC_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_FishmanC_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0177_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0201_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0202_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0203_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0204_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0205_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0240_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0241_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0251_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0252_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0253_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0254_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0255_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="Mob_Hmn_2LegR_MLnd_Spctr_DeadSwordMan_Q_003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CrocodileSharkTribeC2_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0024_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Nucleus_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_DoCheonPung_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_ChungGak_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_MuRimMaeng_0028_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_HonChunGyo_0026_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_Yoeukgisan_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JinSoA_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_Dangyeowol_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_Namhak_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_Woojin_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_TeacherBladeMaster_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_TeacherForceMaster_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_TeacherKungfuFighter_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_Teacher_Assassin_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakBBoss_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Fishman_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_IronTurtle_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_DarkCrazyTribe_0047_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_PotAxParty_0029_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_BoneMaskBigALeader_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_DarkCrazyTribeCLeader_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_GyeongChunMaeng_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0369_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0486_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0487_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0488_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0489_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0490_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0491_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0492_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0493_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0494_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_DongCheonHong_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_DongCheonHong_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_RuneMechaBattle_0010_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_BaeYiDo_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_BaeYiDo_0002_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_SUC_B3_KillerMachine_None_Reactivate" use-bleeding="n" />
+	<record alias="ME_BaeYiDo_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Minowoo_0001_BossNpc" berserk-sequence="ME_Minowoo_0001_cs_9" berserk-sequence-invoke-time="400000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_NaHanThunder_0001_BossNpc" berserk-sequence="ME_NaHanThunder_0001_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_SUC_B1_NaHanThunder_None_Thunderwave" use-bleeding="n" />
+	<record alias="ME_NaHanWind_0001_BossNpc" berserk-sequence="ME_NaHanWind_0001_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_SUC_B2_NaHanWind_None_WindWheelKick" use-bleeding="n" />
+	<record alias="MH_ChungGak_0134_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0135_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0120_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_FishmanCBoss_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0290_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_FishmanC_0011_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_FishmanC_0012_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0293_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0294_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0297_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0298_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0303_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0308_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0309_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0310_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0317_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_GatlingGunWoman_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_GeoGeoBoong_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0329_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0330_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CrocodileSharkTribeC2ScaleUp1_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SeaMonsterBoss_0001_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" use-bleeding="n" />
+	<record alias="ME_CrocodileSharkTribeB_0029_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_IronTurtleBig_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGak_0304_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_MusinTower_0001_BossNpc" berserk-sequence="MH_MuSinTower_0001_Berserk_CS" berserk-sequence-invoke-time="150000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_MusinTower_0002_BossNpc" berserk-sequence="MH_MusinTower_0002_Berserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_BladeMaster_Sword_legslash_LV1" use-bleeding="n" />
+	<record alias="MH_MuSinTower_0003_BossNpc" berserk-sequence="MH_MuSinTower_0003_Berserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_MuSin_None_Windmill" use-bleeding="n" />
+	<record alias="ME_MuSinTower2_GeumGangYukSa_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0349_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_NaHanWindTornado_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_NaHanElectricBall_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0513_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0514_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0515_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_IronTurtleBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_GolemLeader_0015_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_PestBig_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB3Boss_0002_BossNPC" berserk-sequence="ME_ChungGakB3Boss_0002_Berserk_CS" berserk-sequence-invoke-time="540000" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="MH_ChungGakB2Boss_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGakB2Boss_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_ChungGakB3Boss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CrocodileSharkTrabeA_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_MuSinTowerDummy_0026_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_MuSinTower_0004_BossNPC" berserk-sequence="ME_MuSinTower_0004_Berserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_MuSin_None_Windmill" use-bleeding="n" />
+	<record alias="ME_MuSinTower_0005_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_MuSin_None_Windmill" use-bleeding="n" />
+	<record alias="ME_MuSinTowerDummy_0023_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB2Boss_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CrocodileSharkTrabeA_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_RuneMechaMine_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_ChungGakB3Boss_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_JunoBoss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0155_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0156_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0374_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Minowoo_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0369_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_FishmanC_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_FishmanC_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0359_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0381_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_RuneMechaBattle_0020_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0394_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0395_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0396_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0397_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0398_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0399_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0400_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Dummy_0401_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_RuneMechaFireGorillaA_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_RuneMechaFireGorillaA_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_NaHanWind_0002_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_SUC_B2_NaHanWind_None_WindWheelKick" use-bleeding="n" />
+	<record alias="ME_Dummy_0402_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Golem_0074_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Golem_0075_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_Golem_0076_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CheonYoungBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_DokebiGonNamed_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0504_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_JeGukGun_0508_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_KangSiTall_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_KangSiFat_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_PigTribeC_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_PigTribeC_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_MudSoldierBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_PotAxPartyA_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_YettyCaveBoss_0002_BossNPC" berserk-sequence="ME_C3_YettyCaveBoss_0002_CS_Berserk" berserk-sequence-invoke-time="400000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEB_B1_SnowManBoss_None_Handspring" use-bleeding="n" />
+	<record alias="ME_C3_SeolOkGungBoss_0001_BossNPC" berserk-sequence="ME_C3_SeolOkGungBoss_0001_berserk_CS" berserk-sequence-invoke-time="420000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEA_B1_Fatman_None_DownAttack_G" use-bleeding="n" />
+	<record alias="ME_C3_SeolOkGungBoss_0002_BossNPC" berserk-sequence="ME_C3_SeolOkGungBoss_0002_berserk_CS" berserk-sequence-invoke-time="420000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEA_B1_Fatman_None_DownAttack_S" use-bleeding="n" />
+	<record alias="ME_C3_SeolOkGungBoss_0003_BossNPC" berserk-sequence="ME_C3_SeolOkGungBoss_0003_berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SeolOkGungBoss_0005_BossNPC" berserk-sequence="ME_C3_SeolOkGungBoss_0005_berserk_CS" berserk-sequence-invoke-time="500000" boss-brain-type="boss" mysterious-store-spawn="a_5913_36" mysterious-store-spawn-prob="10" use-bleeding="n" />
+	<record alias="ME_BearNamed_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SeaMonsterLeader_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_UnbalanceZombie_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_SeolOkGungBoss_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SeolOkGungBoss_0008_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DesertDragon_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DesertDragon_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_JunoBoss_0001_BossNPC" berserk-sequence="ME_CT_JunoBoss_0001_berserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_JunoBoss_0002_BossNPC" berserk-sequence="ME_CT_JunoBoss_0002_berserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_UryongLeader_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SnowBall_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SeolOkGungBoss_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_UryongLeader_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_KangSiFat_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SinSi_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_GalMaWang_0001_BossNPC" berserk-sequence="ME_C3_GalMaWang_0001_berserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SeolOkGungBoss_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SeolOkGungBoss_0014_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_RuneMechaBattle_0021_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Minowoo_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DesertDragon_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_RuneMechaBattle_0026_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_SnakeSoldier_0001_BossNPC" berserk-sequence="ME_CT_SnakeSoldier_0001_Berserk_CS" berserk-sequence-invoke-time="210000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_SnakeQueen_0001_BossNPC" berserk-sequence="ME_CT_SnakeQueen_0001_Berserk_CS" berserk-sequence-invoke-time="210000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_BaBaJok_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_ChuAngKa_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_BaBaJok_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_SnowmanC_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_BabaBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_SnakeWoman_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_SnowmanC_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Hades_0004_BossNPC" berserk-sequence="ME_CT_Hades_0004_berserk_CS" berserk-sequence-invoke-time="230000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_MamMoSu_0003_BossNPC" berserk-sequence="ME_CT_MamMoSu_0003_berserk_CS" berserk-sequence-invoke-time="230000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_PotAxPartyLeader_001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_DarkCrazyTribe_011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_HeukMaSinJo_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_BoneMask_001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_BarbarianBow_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_JeGukGun_0368_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DeadSwordManBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_NokLimDo_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0329_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0330_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0331_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0332_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0333_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Minowoo_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Valak_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Valak_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_BaekCheongPa_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0139_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_GuardStone_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0148_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_DemonShadowCBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_GuardStone_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0149_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_DemonShadowCBig_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_GuardStone_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0150_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_DemonShadowCBig_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0151_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_JunoBoss_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_JunoBoss_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_JunoBoss_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_JunoBoss_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SnowBall_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SnowBall_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DesertDragon_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DesertDragon_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DesertDragon_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DesertDragon_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DesertDragon_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_DesertDragon_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_GeoGeoBung_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_HyeolPung_0015_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_HaOBanng_0148_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_FrogTribeCLeader_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_NokLimDo_0177_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_JeGukGun_0572_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_HaOBang_0092_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_GuardStone_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_GeoGeoBoong_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_JeGukGun_0573_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_JeGukGun_0571_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_JunoBoss_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0155_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0156_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0157_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0158_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0159_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0160_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0161_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0162_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0163_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0164_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0338_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0165_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_HaOBanng_0147_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_NokLimDo_0191_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_GeoGeoBung_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_EunGangYukSa_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_EunGangYukSa_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_RewardBox_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SnowWoman_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_SeolOkGung_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_SeolOkGung_0019_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_SeolOkGung_0025_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_SeolOkGung_0028_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_SeolOkGung_0035_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_SeolOkGung_0036_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0167_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_UnGaek_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_UryongLeader_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_SnowmanC_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_SnowWoman_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_JinSeoYeon_0003_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_JinSeoYeon_None_LowSlash" use-bleeding="n" />
+	<record alias="ME_CT_JinSeoYeonM_0001_BossNPC" berserk-sequence="ME_CT_JinSeoYeonM_0001_beserk_CS" berserk-sequence-invoke-time="420000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0301_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0302_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0303_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0304_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0305_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0306_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_ChuAngKa_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0169_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0172_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_MokuJin_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_MokuJin_0015_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0307_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0308_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_YuRanM_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_YuRanM_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_YuRanM_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_YuRanM_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_HonChunGyo_0040_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_HongSam_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_Dummy_0369_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_HaOBanng_0091_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_PVE_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_MusinTower_SImHwa_0002_BossNPC" berserk-sequence="ME_CT_MusinTower_SImHwa_0002_beserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_MusinTower_SImHwa_0003_BossNPC" berserk-sequence="ME_CT_MusinTower_SImHwa_0003_beserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_MusinTower_SImHwa_0004_BossNPC" berserk-sequence="MH_CT_MusinTower_SImHwa_0004_beserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_MusinTower_SImHwa_0005_BossNPC" berserk-sequence="ME_CT_MusinTower_SImHwa_0005_beserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_SUC_B2_NaHanWind_None_WindWheelKick" use-bleeding="n" />
+	<record alias="ME_CT_MusinTower_SImHwa_0006_BossNPC" berserk-sequence="ME_CT_MusinTower_SImHwa_0006_beserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_SUC_B1_NaHanThunder_None_Thunderwave" use-bleeding="n" />
+	<record alias="ME_CT_MusinTower_SImHwa_0010_BossNPC" berserk-sequence="ME_CT_MusinTower_SImHwa_0010_beserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_MusinTower_SImHwa_0016_BossNPC" berserk-sequence="ME_CT_MusinTower_SImHwa_0016_beserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RuneMechaTransform_None_DownAttack" use-bleeding="n" />
+	<record alias="ME_CT_MusinTower_SImHwa_0017_BossNPC" berserk-sequence="ME_CT_MusinTower_SImHwa_0016_beserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RuneMechaTransform_None_DownAttack" use-bleeding="n" />
+	<record alias="MH_CT_MusinTower_SImHwa_0018_BossNPC" berserk-sequence="MH_CT_MusinTower_SImHwa_0018_beserk_CS" berserk-sequence-invoke-time="330000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_YukSon_Drunken_Windmill" use-bleeding="n" />
+	<record alias="ME_CT_MusinTower_SImHwa_0020_BossNPC" berserk-sequence="ME_CT_MusinTower_SImHwa_0020_beserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_SnowBall_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_HonCheonGyo_0094_BossNPC" berserk-sequence="MH_CT_HonCheonGyo_0094_berserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_SUB_B3_KungfuMaster_Attack_Windmill" use-bleeding="n" />
+	<record alias="MH_CT_MuRimMaeng_0137_BossNPC" berserk-sequence="MH_CT_MuRimMaeng_0137_berserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_Destroyer_Protection_Down_Raging_Wind_Lv1" use-bleeding="n" />
+	<record alias="MH_C3_JeGukGun_0037_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_JeGukGun_0040_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_JeGukGun_0041_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Nucleus_0013_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_DokkebiGonB_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_KangSiFat_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_GolemLeaderIce_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SeaMonsterBoss_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_PileBunkerEmpire_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_CrocodileSharkTribeC_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_BabaBoss_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_GeoGeoBoong_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_GeoGeoBoong_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_FatManGold_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_FatManSilver_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_NoGongGu_0001_BossNpc" berserk-sequence="MH_C3_NoGongGu_0001_cs_Berserk" berserk-sequence-invoke-time="360000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_BaeYiDoMachine_0001_BossNpc" berserk-sequence="ME_C3_BaeYiDoMachine_0001_cs_Berserk" berserk-sequence-invoke-time="480000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BED_B2_KillerMachine_None_Reactivate" use-bleeding="n" />
+	<record alias="ME_C3_NoGongGu_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_BaeYiDoMachine_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SuradoBoss_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SuradoBoss_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SuradoBoss_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SuradoBoss_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SuradoBoss_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SuradoBoss_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_SuradoBoss_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0297_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_NoGongGu_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_NoGongGu_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_NoGongGu_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0173_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Minowoo_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_KangSiFat_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_BaeYiDo_0004_BossNpc" boss-brain-type="boss" mysterious-store-spawn="a_5918_501" mysterious-store-spawn-prob="5" use-bleeding="n" />
+	<record alias="ME_CT_NaHanWindTornado_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_NaHanElectricBall_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_RuneMechaTransform_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_NakWon_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_HyeolPung_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_DokebiGonNamed_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_DokebiGonNamed_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0306_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_JeGukGun_0046_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_JR_KingFrog_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_RuneMechaBattle_0014_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0320_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0312_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_PotAxParty_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_BaeYiDoMachine_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_JeGukGun_0045_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_DemonShadowCBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0317_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0318_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_DemonShadowBoss_0001_BossNPC" berserk-sequence="ME_SA_DemonShadowBoss_0001_Berserk_CS" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_UnbalanceZombieBScaleUp1_0001_BossNPC" berserk-sequence="ME_SA_UnbalanceZombieBScaleUp1_0001_Berserk_CS" boss-brain-type="boss" skill-spawn-attack-target="nearest-target" skill-spawn-group="s_7200_52" use-bleeding="n" />
+	<record alias="ME_SA_YuRanM_0001_BossNPC" berserk-sequence="ME_SA_YuRanM_0001_Berserk_CS" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_DemonShadowCBig_0002_BossNPC" berserk-sequence="ME_SA_DemonShadowCBig_0002_Berserk_CS" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Valak_0001_BossNPC" berserk-sequence="ME_SA_Valak_0001_Berserk_CS" boss-brain-type="boss" rising-attack-invoke-time="1000" use-bleeding="n" />
+	<record alias="ME_SA_SpiderQueen_0001_BossNPC" berserk-sequence="ME_SA_SpiderQueen_0001_Berserk_CS" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_FireGorillaA_0001_BossNPC" berserk-sequence="ME_SA_FireGorillaA_0001_Berserk_CS" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonGorilla_0001_BossNpc" berserk-sequence="ME_WB_DemonGorilla_0001_Berserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" mysterious-store-spawn="a_4738_319" mysterious-store-spawn-prob="0" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEE_B1_FireGorillaA_None_DownAttack" use-bleeding="n" />
+	<record alias="ME_SA_SinSiBoss_0001_BossNPC" berserk-sequence="ME_SA_SinSiBoss_0001_Berserk_CS" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Valak_0003_BossNPC" berserk-sequence="ME_WB_Valak_0003_BossNPC_Berserk_CS" berserk-sequence-invoke-time="600000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_Valak_None_Rise_HuekChang" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A1_Nmd_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A1_Nmd_0002_BossNpc" berserk-sequence="ME_WA_Whanmadan_A1_Nmd_0002_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A1_Boss_0001_BossNpc" berserk-sequence="ME_WA_Whanmadan_A1_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A2_Boss_0001_BossNpc" berserk-sequence="ME_WA_Whanmadan_A2_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="540000" boss-brain-type="boss" mysterious-store-spawn="a_4744_36" mysterious-store-spawn-prob="10" use-bleeding="n" />
+	<record alias="ME_WC_RaidBossTest_0001_BossNpc" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidBossTest_0004_BossNpc" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidBossTest_0005_BossNpc" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidBossTest_0007_BossNpc" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_SA_Ins_Valak2_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Valak_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_JunoBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_PaCheonBoss_0001_BossNPC" berserk-sequence="ME_WC_PaCheonBoss_0001_Berserk_CS" berserk-sequence-invoke-time="650000" boss-brain-type="raid-boss" use-bleeding="y" />
+	<record alias="ME_WC_PaCheonBoss_0002_BossNPC" berserk-sequence="ME_WC_PaCheonBoss_0002_Berserk_CS" berserk-sequence-invoke-time="650000" boss-brain-type="raid-boss" use-bleeding="y" />
+	<record alias="ME_WC_PaCheonBoss_0003_BossNPC" berserk-sequence="ME_WC_PaCheonBoss_0003_Berserk_CS" berserk-sequence-invoke-time="610000" boss-brain-type="raid-boss" use-bleeding="y" />
+	<record alias="ME_WC_PaCheonBoss_0004_BossNPC" berserk-sequence="ME_WC_PaCheonBoss_0004_Berserk_CS" berserk-sequence-invoke-time="860000" boss-brain-type="raid-boss" use-bleeding="y" />
+	<record alias="ME_WC_RaidBossTest_0002_BossNPC" boss-brain-type="raid-boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B3_UnbalancedZombieB_None_DownAttack" use-bleeding="n" />
+	<record alias="ME_WC_PaCheonBoss_0007_BossNPC" boss-brain-type="raid-boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B3_UnbalancedZombieB_None_DownAttack" use-bleeding="n" />
+	<record alias="ME_WC_RaidBossTest_0011_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_PaCheonBoss_0012_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A1_Boss_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A1_Dummy_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidBossTest_0008_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0065_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_BabaTotem_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_BabaTotem_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_BabaTotem_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Valak_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonShadowCBig_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Hades_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonShadowCBig_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea1_0015_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="MH_WA_Whanmadan_A2_Nmd_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Whanmadan_A2_Nmd_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Whanmadan_A2_Nmd_0008_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Whanmadan_A2_Nmd_0010_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Whanmadan_A2_Nmd_0012_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea1_0001_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea1_0002_BossNPC" berserk-sequence="ME_WC_RaidArea1_0002_beserk_CS" berserk-sequence-invoke-time="420000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea2_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea2_0002_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea2_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea3_0001_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea3_0002_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_SA_CrocodileSharkTribeC2_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WB_ChungGak_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0058_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0060_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0061_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DarkCrazyTribeBigA_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0075_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0008_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonShadow_0024_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonShadow_0026_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonShadow_0022_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea2_0036_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea2_0037_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="MH_SA_HockRyuGo_0045_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WB_ChungGak_0038_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A1_Boss_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DarkAura_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DarkAura_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DarkAura_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A1_Boss_0001_BossNpc" berserk-sequence="ME_WA_Heajuk_A1_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A1_Boss_0002_BossNpc" berserk-sequence="ME_WA_Heajuk_A1_Boss_0002_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A2_Nmd_0005_BossNpc" berserk-sequence="ME_WA_Heajuk_A2_Nmd_0005_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A2_Boss_0001_BossNpc" berserk-sequence="ME_WA_Heajuk_A2_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="540000" boss-brain-type="boss" skill-spawn-attack-target="none" skill-spawn-group="s_4752_3" use-bleeding="y" />
+	<record alias="ME_WB_DemonShadowCBig_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonShadowCBig_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0079_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0080_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0081_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0082_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGakABoss_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0081_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0082_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0083_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGakABoss_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0015_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0016_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0017_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_ChungGak_0067_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_UnbalanceZombieBScaleUp1_0001_BossNPC" berserk-sequence="ME_WA_UnbalanceZombieBScaleUp1_0001_Berserk_CS" berserk-sequence-invoke-time="120000" boss-brain-type="boss" skill-spawn-attack-target="nearest-target" skill-spawn-group="s_7200_52" use-bleeding="n" />
+	<record alias="ME_WA_YuRanM_0001_BossNPC" berserk-sequence="ME_WA_YuRanM_0001_Berserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_DemonShadowCBig_0001_BossNPC" berserk-sequence="ME_WA_DemonShadowCBig_0001_Berserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Valak_0001_BossNPC" berserk-sequence="ME_WA_Valak_0001_Berserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" rising-attack-invoke-time="1000" use-bleeding="n" />
+	<record alias="ME_WA_SpiderQueen_0001_BossNPC" berserk-sequence="ME_WA_SpiderQueen_0001_Berserk_CS" berserk-sequence-invoke-time="120000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_FireGorillaA_0001_BossNPC" berserk-sequence="ME_WA_FireGorillaA_0001_Berserk_CS" berserk-sequence-invoke-time="120000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SinSiBoss_0001_BossNPC" berserk-sequence="ME_WA_SinSiBoss_0001_Berserk_CS" berserk-sequence-invoke-time="120000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JunoBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_DemonShadowBoss_0001_BossNPC" berserk-sequence="ME_WA_DemonShadowBoss_0001_Berserk_CS" berserk-sequence-invoke-time="270000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Dummy_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Dummy_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Dummy_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Heajuk_A1_Nmd_0014_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Heajuk_A1_Nmd_0015_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A1_Nmd_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A1_Nmd_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_RewardBox_0017_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_AdamantineMan_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0073_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0074_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A1_Dummy_0010_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A1_Dummy_0011_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_ChungGakB2Boss_0001_BossNPC" boss-brain-type="boss" mysterious-store-spawn="a_4734_13" mysterious-store-spawn-prob="10" use-bleeding="n" />
+	<record alias="ME_C3_ChungGakB3Boss_0001_BossNPC" berserk-sequence="ME_C3_ChungGakB3Boss_0001_Berserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_C3_CrocodileSharkTrabeA_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_ChungGakB2Boss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_CrocodileSharkTrabeA_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_RuneMechaMine_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_ChungGakB3Boss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0330_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0105_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0106_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0107_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0108_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0109_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0110_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0111_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0112_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0102_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0103_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0104_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_SnakeSoldier_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonShadow_0029_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0119_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0120_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0121_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0068_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0069_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0070_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0071_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0072_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0075_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0076_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0077_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0078_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGak_0079_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WB_ChungGak_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WB_ChungGak_0014_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_UnbalanceZombieB_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WB_Dummy_0113_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0114_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0115_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0116_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0117_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0118_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_YuRanM_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_GuGuBung_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_JR_KingFrog_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A2_Nmd_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_GuGuBung_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_GuGuBung_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_SpiderQueen_0001_BossNPC" berserk-sequence="ME_WB_SpiderQueen_0001_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_ChungGakABoss_0008_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0126_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Nucleus_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Nucleus_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_Scholar_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_ChungGak_0051_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0018_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0019_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonShadowBoss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_FireGorilla_0001_BossNpc" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0018_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0019_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0020_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0021_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0099_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0022_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_GrassBeastBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0142_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_SnakeSoldier_0002_BossNPC" boss-brain-type="boss" skill-spawn-attack-target="none" skill-spawn-group="s_4432_73" use-bleeding="y" />
+	<record alias="ME_WB_SnakeSoldier_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_SnakeSoldier_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A2_Boss_0002_BossNPC" berserk-sequence="ME_WA_Heajuk_A2_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="310000" boss-brain-type="boss" skill-spawn-attack-target="none" skill-spawn-group="s_4752_13" use-bleeding="y" />
+	<record alias="ME_WA_Heajuk_A2_Nmd_0022_BossNPC" berserk-sequence="ME_WA_Heajuk_A2_Nmd_0005_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_GatlingGunWoman_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="CH_WB_ChungGak_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_UnbalanceZombieBScaleUp1_0002_BossNPC" berserk-sequence="ME_WA_UnbalanceZombieBScaleUp1_0002_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_ChungGakBBoss_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" use-bleeding="n" />
+	<record alias="ME_C3_ChungGakBBoss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_C3_ChungGakBBoss_0003_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_SUB_B4_KungfuMaster_Attack_DownCounter" use-bleeding="n" />
+	<record alias="MH_C3_ChungGakBBoss_0004_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_SUB_B3_KungfuMaster_Attack_Windmill" use-bleeding="n" />
+	<record alias="ME_C3_ChungGakBBoss_0005_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" use-bleeding="n" />
+	<record alias="CH_WB_ChungGak_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" use-bleeding="n" />
+	<record alias="ME_WB_GolemLeader_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WB_Dummy_0141_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_UnbalanceZombie_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_ScorpionBig_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0143_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0144_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0145_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0027_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0153_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0154_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0155_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0028_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0029_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WB_Dummy_0030_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A2_0026_BossNPC" boss-brain-type="boss" mysterious-store-spawn="a_4752_npc" mysterious-store-spawn-prob="0" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A2_Nmd_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A2_Nmd_0023_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A2_Nmd_0024_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A2_Nmd_0025_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_BFF_HoncheonBunTaJu_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_BFF_MuRimBunTaJu_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonFactionBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimFactionBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_WildBoarFieldBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_WildBoarFieldBoss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_DemonShadowBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_C3_Dummy_0335_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_UnbalanceZombie_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_UnbalanceZombie_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_UnbalanceZombie_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SnakeSoldier_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SnakeSoldier_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SnakeSoldier_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea1_0049_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea1_0050_BossNPC" berserk-sequence="ME_WC_RaidArea1_0050_Berserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonChainKnuckleBandit_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="ME_SA_BFF_MuRimChainKnuckleBandit_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="ME_SA_BFF_HoncheonCrocodileSharkTribeC2_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimCrocodileSharkTribeC2_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonPigTribeC_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimPigTribeC_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_SA_CheonJinGwon_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SA_Toad_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_UnbalanceZombie_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_UnbalanceZombie_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_UnbalanceZombie_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SnakeSoldier_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SnakeSoldier_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SnakeSoldier_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_InsectTribeStagBeetle_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonCrocodileSharkTribeC2_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimCrocodileSharkTribeC2_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonBoneMaskBigALeader_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimBoneMaskBigALeader_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonPigTribeC_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimPigTribeC_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NpcTest_0024_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NpcTest_0027_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_UnbalanceZombieB_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_UnbalanceZombieB_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_UnbalanceZombieB_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SnakeSoldier_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SnakeSoldier_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SnakeSoldier_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_ChungGakBBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Heajuk_A2_Boss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SeolOkGungBoss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_CrocodileSharkTribeC2ScaleUp1_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_AdamantineMan_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_FrogTribeCLeader_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_IronTurtleBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_CrocodileSharkTribeC_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_UryongLeader_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea3_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea3_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea3_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Toad_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_JeGukGun_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_JeGukGun_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_NaHanThunderMusin_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_NaHanWindMusin_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_AdamantineManA_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BaBaJok_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_Musin_0002_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="MH_SA_Musin_0003_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_MuSin_None_Traning_Windmill" use-bleeding="y" />
+	<record alias="MH_SA_Musin_0004_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_MuSin_None_Traning_Windmill" use-bleeding="y" />
+	<record alias="ME_SA_Dummy_0046_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MurimNucleus_W_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MurimNucleus_E_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MurimNucleus_N_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HonCheonNucleus_W_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HonCheonNucleus_E_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HonCheonNucleus_N_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_BFF_HonCheonFlagCenter_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_BFF_HonCheonFlagOutside_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_BFF_HonCheonFlagOutside_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_BFF_HonCheonFlagOutside_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_BFF_MurimFlagCenter_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_BFF_MurimFlagOutside_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_BFF_MurimFlagOutside_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_BFF_MurimFlagOutside_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_Dummy_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_Dummy_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_Dummy_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_Dummy_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_Dummy_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_Dummy_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonRuneMechaFireGorillaA_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonRuneMechaFireGorillaA_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimRuneMechaFireGorillaA_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimRuneMechaFireGorillaA_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_SnowmanBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_AdamantineManA_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_NeutralNucleus_W_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_NeutralNucleus_E_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_NeutralNucleus_N_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_Dummy_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0064_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0065_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DarkCrazyTribeA_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_AdamantineManA_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_MusinTower_SImHwa_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0059_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0060_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0061_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0062_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NokLimDo_0035_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NokLimDo_0036_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NokLimDo_0037_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_JeGukGun_0083_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SA_MuSinTowerDummy_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_MuSinTowerDummy_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NaHanWindTornado_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NaHanWindTornado_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NaHanWindTornado_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_P_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_P_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_P_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_P_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_T_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_T_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_T_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_T_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_F_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_F_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_F_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_WindTornado_F_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_SA_Dummy_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_HoncheonPileBunkerEmpire_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_MurimPileBunkerEmpire_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_NaHanWindMusin_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_NaHanThunderMusin_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_NaHanWindMusin_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_NaHanThunderMusin_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_FireGorillaA_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_DokebiGonNamed_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_PotAxPartyLeader_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_SpiderQueen_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_JunoBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Test_InsectTribeStagBeetle_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Test_IORak_Pistol_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Test_SoYangSang_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_DesertDragon_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea3_0028_BossNPC" berserk-sequence="ME_WC_RaidArea3_0028_berserk" berserk-sequence-invoke-time="180000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RaidArea3_0029_BossNPC" berserk-sequence="ME_WC_RaidArea3_0029_berserk" berserk-sequence-invoke-time="180000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0063_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0066_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0067_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0068_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_FireGorillaA_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_DokebiGonNamed_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_PotAxPartyLeader_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_SpiderQueen_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_JunoBoss_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_BFF_MurimMiner_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="MH_SA_BFF_MurimMiner_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="MH_SA_BFF_HonCheonMiner_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="MH_SA_BFF_HonCheonMiner_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="ME_SA_PigBaby_0021_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_HaOBang_0044_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonChainKnuckleBandit_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="ME_SA_BFF_MuRimChainKnuckleBandit_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="ME_SA_BFF_DesertDragon_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_HoncheonBoneMaskBigALeader_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_MuRimBoneMaskBigALeader_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_HoncheonBoneMaskBigALeader_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_MuRimBoneMaskBigALeader_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_HoncheonBoneMaskBigALeader_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_MuRimBoneMaskBigALeader_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonPigTribeC_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimPigTribeC_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonCrocodileSharkTribeC2_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimCrocodileSharkTribeC2_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A2_0014_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A2_0015_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Whanmadan_A2_0016_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_CrocodileSharkTribeC_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_PigTribeA_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_SA_DoCheonPung_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_SA_EnAnk_0008_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_SA_GwangJik_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_SA_NamGung_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_SA_TaeGwang_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_SA_TeacherBladeMaster_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="Default_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0034_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0035_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_BeakChung_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_SA_BeakMuGi_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0070_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0071_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0072_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0073_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0074_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0036_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0037_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0038_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0039_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0040_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0041_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0042_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0043_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0044_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_InsectTribeStagBeetle_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_SeaMonsterBoss_0001_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_SeaMonster_None_DownAttack_Lake" use-bleeding="n" />
+	<record alias="ME_SA_bff_HoncheonPileBunkerEmpire_0001_BossNPC" berserk-sequence="ME_SA_BFF_HonCheonPileBunkerEmpire_0001_Berserk_CS" berserk-sequence-invoke-time="450000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_MuRimPileBunkerEmpire_0001_BossNPC" berserk-sequence="ME_SA_BFF_MurimPileBunkerEmpire_0001_Berserk_CS" berserk-sequence-invoke-time="450000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_pigbaby_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_GolemLeader_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_PestBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_ScorpionBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_MuRimCrocodileSharkTribeC2_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_MuRimBoneMaskBigALeader_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_bff_MuRimPigTribeC_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_pigbaby_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_GolemLeader_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_PestBig_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_ScorpionBig_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0049_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0050_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_MuSinTowerDummy_0018_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_MuSinTowerDummy_0025_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_PungEmpire_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_UnbalanceZombieBScaleUp1_0002_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="CE_SA_Dummy_0053_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0054_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0055_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0056_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0057_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0058_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0059_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0060_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0061_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0062_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0063_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0064_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0065_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0066_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0067_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0068_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0069_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0070_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonPileBunkerEmpire_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MurimPileBunkerEmpire_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_GunHyang_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0071_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_HockRyuGo_0029_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_HockRyuGo_0031_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_HockRyuGo_0032_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_HockRyuGo_0035_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_HockRyuGo_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_MusinTower_SImHwa_0004_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RuneMechaTransform_None_DownAttack" use-bleeding="y" />
+	<record alias="CE_SA_Dummy_0072_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0073_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0074_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0075_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0076_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0077_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0078_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0079_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0080_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_Prisoner_0012_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_SUB_B4_KungfuMaster_Attack_DownCounter" use-bleeding="n" />
+	<record alias="MH_SA_Prisoner_0013_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="MH_SUB_B3_KungfuMaster_Attack_Windmill" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0099_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0100_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0101_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0076_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0081_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0082_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HoncheonBoneMaskBigALeader_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MuRimBoneMaskBigALeader_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_GeoGeoBoong_0001_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SA_Dummy_0102_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0051_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0052_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_Dummy_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BF_WildBoarFieldBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_Prisoner_0024_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="CE_SA_Dummy_0083_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_GeumGangYukSa_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_JinSeoYeon_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SA_NokLimDo_0008_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0103_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0104_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0080_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0081_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_SnakeSoldier_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_SnakeSoldier_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BF_JunoBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0086_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0087_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0088_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0089_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0090_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0091_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_GrassBeastBig_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_GolemLeader_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_WildBoarFieldBoss_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BF_SnowmanBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_BFF_HonCheonMiner_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="MH_SA_BFF_HonCheonMiner_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_BFF_MurimMiner_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" use-hp-zone-broadcast="y" />
+	<record alias="MH_SA_BFF_MurimMiner_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_TreasureHunter_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0092_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0093_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0094_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0095_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_SA_Dummy_0096_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_TreasureRat_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_CT_BokUn_0018_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0117_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_SA_Dummy_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_SA_Dummy_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_SA_Dummy_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_GeoGeoBoong_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_NokLimDo_0049_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_SA_NokLimDo_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="CH_SA_HaoBang_0006_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="CH_SA_HaoBang_0017_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SA_Dummy_0118_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0119_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0120_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0121_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0122_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_Dummy_0123_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NokLimDo_0022_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_NokLimDo_0098_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_FireGorilla_0001_BossNpc" berserk-sequence="ME_WB_FireGorilla_0001_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEH_B3_FireGorillaA_None_DownAttack" use-bleeding="n" />
+	<record alias="MH_WB_BokGonPe_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_BokGonPe_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_BokGonPe_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_BokGonPe_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_ChuAngKa_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_ChungGakB3Boss_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0008_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0010_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0011_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0012_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0013_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0014_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0015_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0016_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0017_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0018_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0019_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0020_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0021_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0022_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0023_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0024_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0025_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0026_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_PileBunkerEmpire_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_YuRanM_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SnowmanC_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_DemonShadowBoss_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_HolyMushroom_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0027_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0028_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0029_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0030_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0031_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0032_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0033_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0034_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0035_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0036_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0038_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0039_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0040_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0041_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Valak_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SpiderQueen_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_SoraCrab_0003_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WB_CrocodileSharkTribeC2_0001_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="CE_WC_Dummy_0052_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0053_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0054_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0055_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0056_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0057_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0063_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0064_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_UnbalanceZombie_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Toad_0001_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WC_HolyMushroom_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_GunMaYeom_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_HockRyuGo_0057_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0065_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0066_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0001_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0002_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0003_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0004_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0005_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0006_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0007_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0008_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0009_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0010_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0011_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0012_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0013_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0014_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0015_BossNpc" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0016_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0017_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0018_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0019_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0020_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0021_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0022_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0023_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0024_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0025_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0026_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0027_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0028_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0029_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_0030_BossNpc" berserk-sequence="ME_WA_NightWindPlain_Boss_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" disable-contribution-reward-range-check="y" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_NightWindPlain_Boss_Mid_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0008_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0010_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0011_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0012_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0013_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0014_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0015_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0019_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0020_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_CT_MeiOne_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0023_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0187_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0188_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0024_BossNpc" berserk-sequence="MH_WB_JeGukGun_0024_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="MH_WB_JeGukGun_0025_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0026_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0027_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransform_0001_BossNpc" berserk-sequence="ME_WB_RuneMechaTransform_0001_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEH_B2_RuneMechaTransform_None_DownAttack" use-bleeding="n" />
+	<record alias="ME_WB_FireGorilla_0002_BossNpc" berserk-sequence="ME_WB_FireGorilla_0002_Berserk_CS" berserk-sequence-invoke-time="500000" boss-brain-type="boss" mysterious-store-spawn="a_5927_174" mysterious-store-spawn-prob="10" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEH_B3_FireGorillaA_None_DownAttack" use-bleeding="y" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0021_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0023_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0024_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0025_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0026_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0027_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0028_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0029_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0030_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0031_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0032_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0033_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_DemonShadowC_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0004_BossNpc" boss-brain-type="boss" skill-spawn-attack-target="nearest-target" skill-spawn-group="s_5925_11" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0005_BossNpc" boss-brain-type="boss" skill-spawn-attack-target="nearest-target" skill-spawn-group="s_5925_49" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0014_BossNpc" boss-brain-type="boss" skill-spawn-attack-target="nearest-target" skill-spawn-group="s_5925_65" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaSiren_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaSiren_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0042_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0043_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0044_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0045_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0046_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Boss_Mid_0047_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0025_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0026_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0027_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SoulNPCTest_Boss_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SoulNPCTest_Boss_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SoulNPCTest_Boss_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SoulNPCTest_Boss_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SoulNPCTest_Boss_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SoulNPCTest_Boss_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SoulNPCTest_Boss_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SoulNPCTest_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_MurimGeoGeoBoong_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SA_BFF_HonCheonGeoGeoBoong_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_JinSeoYeon_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_JinSeoYeonM_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_TaiKan_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_TaiKan_0002_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SA_DemonShadowCBig_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SA_HockRyuGo_0080_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_GhostModeTest_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_GhostModeTest_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SizeTest5_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SizeTest15_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SizeTest20_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SizeTest25_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SizeTest30_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SizeTest50_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Heajuk_A1_Dummy_0022_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_GhostModeTest_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0008_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0014_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0015_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0016_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0190_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0017_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_ElectricBall_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_ElectricBall_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_DemonTwins_0001_BossNPC" berserk-sequence="MH_WC_DemonTwins_0001_CS_Berserk" berserk-sequence-invoke-time="368000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B4_DemonChungGak_DownAttack" use-bleeding="y" />
+	<record alias="MH_WC_DemonTwins_0002_BossNPC" berserk-sequence="MH_WC_DemonTwins_0002_CS_Berserk" berserk-sequence-invoke-time="368000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B4_DemonChungGak_DownAttack" use-bleeding="y" />
+	<record alias="MH_WC_DemonTwins_0003_BossNPC" berserk-sequence="MH_WC_DemonTwins_0003_CS_Berserk" berserk-sequence-invoke-time="368000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B4_DemonChungGak_DownAttack" use-bleeding="y" />
+	<record alias="MH_WC_DemonTwins_0004_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B4_DemonChungGak_DownAttack" use-bleeding="y" />
+	<record alias="MH_WC_HockRyuGo_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_HockRyuGo_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BulDoJang_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0028_BossNpc" boss-brain-type="boss" skill-spawn-attack-target="nearest-target" skill-spawn-group="s_5926_18" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0029_BossNpc" boss-brain-type="boss" skill-spawn-attack-target="nearest-target" skill-spawn-group="s_5926_37" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaGuard_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaGuard_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_DemonEmpire_0002_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEJ_B2_DemonEmpire_RisingAttack" use-bleeding="y" />
+	<record alias="ME_WB_Dummy_0194_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_HockRyuGo_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaBattleScaleUp_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaBattleScaleUp_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaTransformScaleDown_0018_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0026_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0027_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WC_Citizen_0031_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0068_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0069_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0070_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_RedMoKuJin_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_BlueMokuJin_0012BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_MokuJin_0061_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_MokuJin_0062_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_BlueMokuJin_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_RedMoKuJin_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_BlueMokuJin_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_MokuJin_0057_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_RedMoKuJin_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_RedMoKuJin_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_AncientAdamantineMan_0001_BossNpc" berserk-sequence="ME_WB_AncientAdamantineMan_0001_Berserk_CS" berserk-sequence-invoke-time="450000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_AncientMechDragon_0001_BossNpc" berserk-sequence="ME_WB_AncientMechDragon_0001_Berserk_CS" berserk-sequence-invoke-time="420000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaKingAsura_0001_BossNpc" berserk-sequence="ME_WB_RuneMechaKingAsura_0001_Berserk_CS" berserk-sequence-invoke-time="600000" boss-brain-type="boss" mysterious-store-spawn="a_6205_26" mysterious-store-spawn-prob="10" rising-attack-invoke-time="1000" rising-attack-skill3="ME_GWA_B3_RuneMechaKingAsura_None_Halo_Down" use-bleeding="n" />
+	<record alias="ME_WC_DemonGorila_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_DemonTwins_0005_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B4_DemonChungGak_DownAttack" use-bleeding="n" />
+	<record alias="MH_WC_HockRyuGo_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SkullB_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_HockRyuGo_0017_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_PileBunkerEmpire_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_BC_Citizen_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_DemonEmpire_0003_BossNpc" berserk-sequence="ME_WC_DemonEmpire_0003_Berserk_CS" berserk-sequence-invoke-time="600000" boss-brain-type="boss" mysterious-store-spawn="a_4444_62" mysterious-store-spawn-prob="10" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEJ_B2_DemonEmpire_RisingAttack" use-bleeding="y" />
+	<record alias="ME_WC_EnergyOrb_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_DemonTwins_0006_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B4_DemonChungGak_DownAttack" use-bleeding="n" />
+	<record alias="MH_WC_DemonTwins_0007_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B4_DemonChungGak_DownAttack" use-bleeding="n" />
+	<record alias="MH_WC_DemonTwins_0008_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B4_DemonChungGak_DownAttack" use-bleeding="n" />
+	<record alias="MH_WC_DemonTwins_0009_BossNpc" berserk-sequence="MH_WC_DemonTwins_0009_CS_Berserk" berserk-sequence-invoke-time="60000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RD_B4_DemonChungGak_DownAttack" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0036_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0037_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0038_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0039_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0040_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0041_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0042_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0043_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0044_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0045_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0047_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0048_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Yetty_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_ItemBox_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_YettyCaveBoss_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_SnowmanA_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_YettyCaveBoss_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_DemonShadowE_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_HockRyuGo_0038_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SnowmanCBig_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0075_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0076_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0077_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0078_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0079_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0080_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0081_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0082_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0083_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0084_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0085_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0086_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0087_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0088_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0089_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0090_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0091_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0092_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0093_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0094_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0095_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0096_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_EnergyOrb_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_NightWindPlain_Boss_Mid_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_PaCheonBoss_0013_BossNpc" berserk-sequence="ME_WC_PaCheonBoss_0003_Berserk_CS" berserk-sequence-invoke-time="60000" boss-brain-type="raid-boss" use-bleeding="y" />
+	<record alias="ME_WC_Dummy_0021_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0022_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_PileBunkerEmpire_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_DemonShadowBoss_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_RuneMechaTransform_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_DemonShadowBoss_0004_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WC_DemonShadowBoss_0005_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="MH_WC_MooSung_0002_BossNpc" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="MH_WC_MooSung_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_MooSung_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0080_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0081_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0084_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0085_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0087_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0088_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0090_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0091_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0094_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0095_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0111_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0112_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0114_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0115_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0117_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0118_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_PaCheonBoss_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0100_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0102_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0097_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_Dummy_0098_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0132_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_MuSeong_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_IceFireMarble_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SnowmanCBig_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0151_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_GuGuBung_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_BC_KangSiFat_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_BC_RuneMechaBattle_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_BC_RuneMechaBattle_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_GatlingGunWoman_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SnakeSoldier_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_GeoGeoBoong_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_BC_MeiOne_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_AncientGolemLeader_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WA_BFF_MurimFactionBoss_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NightWindPlain_Dummy_0062_BossNpc" boss-brain-type="boss" skill-spawn-attack-target="none" skill-spawn-group="s_6131_15" use-bleeding="n" />
+	<record alias="MH_WC_GiganToad_0001_BossNPC" berserk-sequence="MH_WC_GiganToad_0001_Berserk_CS" berserk-sequence-invoke-time="800000" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="MH_WC_SnakeSoldierBoss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_KuJiKan_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0162_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0163_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0166_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0168_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0170_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0173_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_FireGorillaA_0001_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WC_GatlingGunWoman_0003_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WC_PileBunkerEmpire_0007_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WC_PileBunkerEmpire_0008_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WC_KangSiFat_0001_BossNpc" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="MH_WC_RaidArea2Field_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0176_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0177_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_GateKeeper_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Chawoonhang_Heukok_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_PileBunkerEmpire_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="PVE_AncientAdamantineMan_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="PVE_AncientMechDragon_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="PVE_RuneMechaKingAsura_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_JinTaePyeong_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WC_CheonJinGwon4F_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_JinTaePyeong_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_JinTaePyeong_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_JinTaePyeong_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_HongDon_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WC_RangSisters_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WC_RangSisters_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WC_YuRan_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_BlackDragonBall_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WC_RangSisters_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WC_RangSisters_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_HongDon_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CE_WC_HongDon_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0198_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0199_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0200_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_AsuraEye_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_AsuraEye_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_AsuraEye_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_JunoTropicalBird_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_CrocodileSharkTribeC2_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_BlackDragon_0086_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_SnowmanCBig_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_DemonShadow_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0186_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0187_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Musin_extend_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Musin_extend_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Musin_extend_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Musin_extend_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Musin_extend_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Musin_extend_0006_BossNpc" berserk-sequence="MH_WA_Musin_extend_0006_Berserk_CS" berserk-sequence-invoke-time="360000" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="MH_WA_Musin_extend_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Musin_extend_0008_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Musin_extend_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Musin_extend_0011_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Musin_extend_0012_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Musin_extend_0013_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Musin_extend_0014_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0201_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0205_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Chawoonhang_0030_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WA_BFF_MurimFactionBoss_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="CH_WA_Chawoonhang_0024_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_BlackDragon_0017_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_FishmanC_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_FishmanC_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_FishmanC_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_FishmanC_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_FishmanC_0008_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_FishmanC_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_FishmanC_0010_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_FishmanC_0011_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TX12_BigFoot_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TX12_BigFootDummy_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0188_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TX12_GlacialDummy_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Zakan_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RuneMechaYacha3_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Dummy_0024_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Dummy_0025_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Dummy_0026_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Dummy_0027_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0209_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0210_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0211_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0212_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0213_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0214_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TX12_GlacialDummy_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0193_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Bubki_Boss_0001_BossNpc" berserk-sequence="MH_WA_Bubki_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="670000" boss-brain-type="boss" mysterious-store-spawn="a_6354_210" mysterious-store-spawn-prob="10" use-bleeding="n" />
+	<record alias="ME_WA_Bubki_Boss_0002_BossNpc" berserk-sequence="ME_WA_Bubki_Boss_0002_Berserk_CS" berserk-sequence-invoke-time="440000" boss-brain-type="boss" skill-spawn-attack-target="none" skill-spawn-group="s_6353_33" use-bleeding="n" />
+	<record alias="ME_WC_ChainKnuckleBandit_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_CrocodileSharkTribeC2_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_GaneSha_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0003_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0006_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0007_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0008_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0009_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0010_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0002_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_BubkiRuneMechaTransform_0001_BossNpc" berserk-sequence="ME_WA_BubkiRuneMechaTransform_0001_Berserk_CS" berserk-sequence-invoke-time="210000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_RuneMechaTransform_None_DownAttack" use-bleeding="n" />
+	<record alias="ME_WC_SeaMonster_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SeaMonster_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SeaMonster_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SeaMonster_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SeaMonster_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SeaMonster_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_BalGulDanNamed_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Bubki_0017_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Bubki_0058_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Bubki_0059_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Bubki_0060_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_NoGongGu_0001_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_AncientMechDragon_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_AncientGolemLeader_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_PileBunkerEmpire_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_BalGulDanNamed_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_JeGukGun_0030_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Bubki_0062_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Bubki_0042_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonSnakeBishop_0001_BossNPC" berserk-sequence="ME_WB_DemonSnakeBishop_0001_Berserk_CS" berserk-sequence-invoke-time="480000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonJinTaePyeong_0001_BossNPC" berserk-sequence="ME_WB_DemonJinTaePyeong_0001_Berserk_CS" berserk-sequence-invoke-time="600000" boss-brain-type="boss" mysterious-store-spawn="a_6213_130" mysterious-store-spawn-prob="10" rising-attack-invoke-time="1000" rising-attack-skill3="ME_GWE_B2_DemonJinTaePyeong_SpaceTwist" use-bleeding="n" />
+	<record alias="MH_WB_SoulFighter_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_DemonKala_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0027_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_SoulFighter_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_AdamantineMan_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTempleTest_0001_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTempleTest_0002_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTempleTest_0003_BossNPC" boss-brain-type="raid-boss" rising-attack-invoke-time="1000" rising-attack-skill3="GWD_VT_B2_SorcererBoss_DarknessLight" use-bleeding="n" />
+	<record alias="ME_WC_StormTempleTest_0004_BossNPC" boss-brain-type="raid-boss" rising-attack-invoke-time="1000" rising-attack-skill3="GWD_VT_B3_DemonJuria_Recover" use-bleeding="y" />
+	<record alias="ME_WC_DemonEmpire_0004_BossNPC" berserk-sequence="ME_WC_DemonEmpire_0004_berserk_CS" berserk-sequence-invoke-time="210000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_DemonEmpire_0005_BossNPC" berserk-sequence="ME_WC_DemonEmpire_0005_berserk_CS" berserk-sequence-invoke-time="210000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_DemonEmpire_0006_BossNPC" berserk-sequence="ME_WC_DemonEmpire_0006_berserk_CS" berserk-sequence-invoke-time="210000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_SeolOkGungBoss_0003_BossNPC" berserk-sequence="ME_WC_SeolOkGungBoss_0003_berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="raid-boss" rising-attack-invoke-time="1000" rising-attack-skill3="GWD_VT_N1_FatmanG_DownAttack" use-bleeding="n" />
+	<record alias="ME_WC_SeolOkGungBoss_0004_BossNPC" berserk-sequence="ME_WC_SeolOkGungBoss_0004_berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="raid-boss" rising-attack-invoke-time="1000" rising-attack-skill3="GWD_VT_N1_FatmanS_DownAttack" use-bleeding="n" />
+	<record alias="ME_WC_StormTempleNamed_0001_BossNPC" berserk-sequence="ME_WC_StormTempleNamed_0001_berserk_CS" berserk-sequence-invoke-time="645000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTempleNamed_0002_BossNPC" berserk-sequence="ME_WC_StormTempleNamed_0002_berserk_CS" berserk-sequence-invoke-time="645000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTempleNamed_0003_BossNPC" berserk-sequence="ME_WC_StormTempleNamed_0003_berserk_CS" berserk-sequence-invoke-time="600000" boss-brain-type="raid-boss" rising-attack-invoke-time="100" rising-attack-skill3="GWD_VT_B2_SorcererBoss_DarknessLight" use-bleeding="n" />
+	<record alias="ME_WC_StormTempleNamed_0004_BossNPC" berserk-sequence="ME_WC_StormTempleNamed_0004_Berserk_CS" berserk-sequence-invoke-time="780000" boss-brain-type="raid-boss" rising-attack-invoke-time="100" rising-attack-skill3="GWD_VT_B3_DemonJuria_Recover" use-bleeding="y" />
+	<record alias="ME_SB_Toad_0001_BossNPC" berserk-sequence="ME_SB_Toad_0001_Berserk_CS" berserk-sequence-invoke-time="600000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_FrogTribeCLeader_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0008_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Boss_0001_BossNPC" berserk-sequence="ME_WA_JeokpaewangRaid_Boss_0001_Berserk_CS" berserk-sequence-invoke-time="800000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Nmd_0001_BossNPC" berserk-sequence="ME_WA_JeokpaewangRaid_Nmd_0001_Berserk_CS" berserk-sequence-invoke-time="180000" boss-brain-type="raid-boss" use-bleeding="y" />
+	<record alias="ME_WA_JeokpaewangRaid_Nmd_0002_BossNPC" berserk-sequence="ME_WA_JeokpaewangRaid_Nmd_0002_Berserk_CS" berserk-sequence-invoke-time="180000" boss-brain-type="raid-boss" use-bleeding="y" />
+	<record alias="ME_WA_JeokpaewangRaid_Nmd_0003_BossNPC" berserk-sequence="ME_WA_JeokpaewangRaid_Nmd_0003_Berserk_CS" berserk-sequence-invoke-time="180000" boss-brain-type="raid-boss" use-bleeding="y" />
+	<record alias="ME_WA_JeokpaewangRaid_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0270_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0273_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WB_Zakan_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WB_BlackDragonBall_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_sub_0001_BossNPC" berserk-sequence="ME_WA_JeokpaewangRaid_sub_0001_Berserk_CS" berserk-sequence-invoke-time="55000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_sub_0002_BossNPC" berserk-sequence="ME_WA_JeokpaewangRaid_sub_0002_Berserk_CS" berserk-sequence-invoke-time="55000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0260_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0261_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0262_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTemple_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTemple_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0020_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0294_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0295_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0296_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0297_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0298_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0299_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0300_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0301_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0302_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0014_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0015_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0016_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0017_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0018_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0019_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0020_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0021_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0022_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0023_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0024_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0025_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0026_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0027_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0028_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0029_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0030_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0031_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Tornado_0032_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_BlackDragon_0138_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_BlackDragon_0139_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_JinTaePyeong_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0303_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0304_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0305_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0306_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Toad_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Toad_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0032_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0033_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0034_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0035_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0036_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0008_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0009_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0010_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0012_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0013_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0015_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0016_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0307_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0308_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0309_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0310_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0313_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0314_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0021_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0022_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0023_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0024_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0025_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0026_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0027_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0028_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0029_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0030_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0031_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0032_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0033_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0034_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0035_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0036_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTemple_0017_BossNPC" berserk-sequence="ME_WC_StormTemple_0017_Berserk_CS" berserk-sequence-invoke-time="180000" boss-brain-type="raid-boss" rising-attack-invoke-time="1000" rising-attack-skill3="GWD_VT_N1_Valak_LightningRise" use-bleeding="n" />
+	<record alias="MH_WC_StormTemple_0012_BossNPC" berserk-sequence="MH_WC_StormTemple_0012_Berserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0004_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Nmd_0004_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_sub_0003_BossNPC" berserk-sequence="ME_WA_JeokpaewangRaid_sub_0003_Berserk_CS" berserk-sequence-invoke-time="55000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_sub_0004_BossNPC" berserk-sequence="ME_WA_JeokpaewangRaid_sub_0004_Berserk_CS" berserk-sequence-invoke-time="55000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0037_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0038_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0039_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0040_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_0041_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTemple_0022_BossNPC" berserk-sequence="ME_WC_StormTemple_0022_Berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="raid-boss" use-bleeding="y" />
+	<record alias="ME_WA_JeokpaewangRaid_Dummy_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_JeokpaewangRaid_Nmd_0005_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="MH_WC_StormTemple_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0321_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0322_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0320_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_AncientAdamantineMan_0002_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WA_NaHanWindTornado_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_NaHanElectricBall_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_MongJungYoWha_0001_BossNPC" berserk-sequence="ME_WC_StormTempleNamed_0005_berserk_CS" berserk-sequence-invoke-time="210000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0340_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0343_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0344_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0345_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0346_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0347_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0348_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0349_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0350_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_StormTemple_0026_BossNPC" berserk-sequence="MH_WC_StormTemple_0026_berserk_CS" berserk-sequence-invoke-time="60000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="MH_WC_StormTemple_0027_BossNPC" berserk-sequence="MH_WC_StormTemple_0027_berserk_CS" berserk-sequence-invoke-time="60000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0327_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTemple_0028_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_StormTemple_0029_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0271_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0278_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0279_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0325_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0326_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0328_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0329_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_SB_BadBoy_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SB_BadBoy_0002_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SB_Dummy_0042_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0043_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0044_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0045_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0046_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0047_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0048_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0049_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0050_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0051_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0052_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0053_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0054_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0055_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0056_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0057_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0060_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_DesperadoIsland_0001_BossNPC" berserk-sequence="MH_WC_DesperadoIsland_0001_Berserk_CS" berserk-sequence-invoke-time="180000" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WC_DesperadoIsland_0002_BossNPC" berserk-sequence="ME_WC_DesperadoIsland_0002_Berserk_CS" berserk-sequence-invoke-time="240000" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="MH_WC_DesperadoIsland_0003_BossNPC" berserk-sequence="MH_WC_DesperadoIsland_0003_Berserk_CS" berserk-sequence-invoke-time="180000" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="MH_WC_DesperadoIsland_0004_BossNPC" berserk-sequence="MH_WC_DesperadoIsland_0004_Berserk_CS" berserk-sequence-invoke-time="420000" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WC_DesperadoIsland_0005_BossNPC" berserk-sequence="ME_WC_DesperadoIsland_0005_Berserk_CS" berserk-sequence-invoke-time="320000" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="SW_IO_B3_FishmanCBoss_DownAttack" use-bleeding="y" />
+	<record alias="MH_WC_DesperadoIslandTest_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_DesperadoIslandTest_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_DesperadoIslandTest_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WC_DesperadoIslandTest_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_DesperadoIslandTest_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_LightRaidSuRaKing_0001_BossNPC" berserk-sequence="ME_WC_LightRaidSuRaKing_0001_berserk_CS" berserk-sequence-invoke-time="300000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_LightRaidChoMaRyung_0001_BossNPC" berserk-sequence="ME_WC_InfinityChamberBoss_0001_berserk_CS" berserk-sequence-invoke-time="720000" boss-brain-type="raid-boss" rising-attack-invoke-time="100" rising-attack-skill3="GWD_LR_SorcererBoss_DarknessLight" use-bleeding="n" />
+	<record alias="ME_WC_SecretRoomBoss_0001_BossNPC" berserk-sequence="ME_WC_SecretRoomBoss_0001_berserk_CS" berserk-sequence-invoke-time="720000" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_InfinityChamberBoss_0001_BossNPC" berserk-sequence="ME_WC_InfinityChamberBoss_0001_berserk_CS" berserk-sequence-invoke-time="720000" boss-brain-type="raid-boss" rising-attack-invoke-time="100" rising-attack-skill3="GWD_LR_SorcererBoss_DarknessLight" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0361_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0362_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0363_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0364_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="ME_WC_SecretRoomYetty_0001_BossNPC" boss-brain-type="raid-boss" use-bleeding="n" />
+	<record alias="MH_WC_SeoBangSak_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Hades_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Hades_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_DesperadoIsland_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_DesperadoIsland_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0351_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0352_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0353_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SecretRoom_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SecretRoom_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0365_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0366_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SecretRoom_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0367_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Epic8_0219_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Epic8_Demon_0021_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0370_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0372_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0373_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Epic8_0216_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Epic8_MuSin_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Executioner_0001_BossNPC" berserk-sequence="ME_WB_Executioner_0001_berserk_CS" berserk-sequence-invoke-time="480000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_ElderEnt_0001_BossNPC" berserk-sequence="ME_WB_ElderEnt_0001_berserk_CS" berserk-sequence-invoke-time="600000" boss-brain-type="boss" mysterious-store-spawn="a_6223_2" mysterious-store-spawn-prob="10" use-bleeding="n" />
+	<record alias="ME_WB_SpiderQueen_0003_BossNPC" berserk-sequence="ME_WB_SpiderQueen_0003_berserk_CS" berserk-sequence-invoke-time="420000" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_Dummy_0059_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SecretRoom_0006_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_SecretRoom_0007_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRGuGuBung_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRFireGorilla_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRPoWhaRan_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRHaeMuJin_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRCheonRyong_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SC_TRNaHanThunder_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_SUC_B1_NaHanThunder_None_Thunderwave" use-bleeding="n" />
+	<record alias="ME_SC_TRNaHanWind_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_SUC_B2_NaHanWind_None_WindWheelKick" use-bleeding="n" />
+	<record alias="ME_SC_TRGalMaWang_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRYettyCaveBoss_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BED_B2_KillerMachine_None_Reactivate" use-bleeding="n" />
+	<record alias="ME_SC_TRIRuGa_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRSuRaWang_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SC_TRBaeYiDo_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRDemonEmpire_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEJ_B2_DemonEmpire_RisingAttack" use-bleeding="y" />
+	<record alias="ME_SC_TRCheonDokRyong_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SC_TRDemonTwinsG_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRDemonTwinsP_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRDemonTwinsY_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRDemonTwinsW_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRMoSoonSpear_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SC_TRMoSoonShield_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SC_TRChokMaWang_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SC_TRTaikan_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_SC_TRZaKan_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_SC_TRYungCheol_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRNightWindPlain_Boss_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRDemonJinTaePyeong_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_GWE_B2_DemonJinTaePyeong_SpaceTwist" use-bleeding="n" />
+	<record alias="ME_SC_TRAman_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_GWA_TR_RuneMechaKingAsura_None_Halo_Down" use-bleeding="n" />
+	<record alias="ME_SC_TRBaWoo_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEE_B1_FireGorillaA_None_DownAttack" use-bleeding="n" />
+	<record alias="ME_SC_TRBerserkGorilla_0001_BossNPC" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BEH_B3_FireGorillaA_None_DownAttack" use-bleeding="y" />
+	<record alias="ME_SC_TRJinSeoYeonM_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRYoMaWang_0001_BossNPC" boss-brain-type="boss" use-bleeding="y" />
+	<record alias="ME_WC_Dummy_0374_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRGadura_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRGuGuBung_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRGuGuBung_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRGuGuBung_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRFireGorilla_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRFireGorilla_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RestrictionSphere_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RestrictionSphere_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RestrictionSphere_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RestrictionSphere_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0241_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0242_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_Dummy_0243_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRCheonGongHo_0001_BossNpc" boss-brain-type="boss" rising-attack-invoke-time="1000" rising-attack-skill3="ME_BED_B2_KillerMachine_None_Reactivate" use-bleeding="n" />
+	<record alias="ME_SB_BirdManLeader_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SB_SkyGuardLeader_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRCheonRyong_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRCheonRyongDummy_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRNaHanElectricBall_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRNaHanWindTornado_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRDarkAura_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRSeolOkGungBoss_0003_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRBerserkGorillaElectricBall_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRMoSoonShieldDummy_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRMoSoonShieldDummy_0005_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="MH_WA_Hookcanyon_Boss_0001_BossNpc" berserk-sequence="MH_WA_Hookcanyon_Boss_0001_berserk_CS" berserk-sequence-invoke-time="480000" boss-brain-type="boss" mysterious-store-spawn="A_6601_17" mysterious-store-spawn-prob="10" use-bleeding="n" />
+	<record alias="ME_SC_TRFireGorilla_0004_BossNpc" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_Dummy_0375_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WB_RestrictionSphere_0005_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_Dummy_0004_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Epic8_0079_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WA_Epic8_Zombie_0011_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRAncientAdamantineMan_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_SC_TRDemonSnakeBishop_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_TRFireZakan_0001_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+	<record alias="ME_WC_TRDummy_0002_BossNPC" boss-brain-type="boss" use-bleeding="n" />
+</table>

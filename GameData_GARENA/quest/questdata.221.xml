@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.221.xml-->
+  <quest alias="q_epic_221" category="epic" completed-list="y" district-1="startzone" id="221" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_jinyoung_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:ch_jinyoung_0001" party-broadcast="n" type="approach" />
+        <case object="npc:ch_yungmook_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_jinyoung_0001" party-broadcast="n" type="talk" />
+        <case loot-item="quest_costum_dress_1010" object2="zoneenv2:e_onoff_uniformbox_re_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:ch_yungmook_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_jinyoung_0001" party-broadcast="n" type="talk" />
+        <tutorial-case progress-mission="y" type="equip-item" />
+        <case object="npc:ch_yungmook_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_jinyoung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_221_m4_1" type="talk" />
+        <case object="npc:ch_yungmook_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="5">
+      <mission id="5" required-register-value="1">
+        <case object2="zoneenv2:1101_foot_1" party-broadcast="n" progress-mission="y" quest-decision="qd_221_m5_1" type="env-entered" />
+        <case object="zone:startzone_renew_all" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_221_m5_exc" type="enter-zone" />
+        <case object="npc:ch_yungmook_0001" party-broadcast="n" type="approach" />
+        <case object="npc:ch_jinyoung_0001" party-broadcast="n" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="6">
+      <mission id="6" required-register-value="1">
+        <case object2="zoneenv2:e_onoff_stbed_re_01" party-broadcast="n" progress-mission="y" quest-decision="qd_221_m6_1" type="manipulate" />
+        <case object="zone:startzone_renew_all" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_221_m6_exc" type="enter-zone" />
+        <case object="npc:ch_jinyoung_0001" party-broadcast="n" type="talk" />
+        <case object="npc:ch_yungmook_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ch_gilhong_0003" party-broadcast="n" progress-mission="y" quest-decision="qd_221_m7_1" type="talk" />
+        <case object="zone:startzone_renew_all" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_221_m7_exc" type="enter-zone" />
+        <case object="npc:ch_yungmook_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_222" />
+    </completion>
+  </quest>
+</table>

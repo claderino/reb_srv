@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1059.xml-->
+  <quest alias="q_epic_1059" broadcast-category="field" category="epic" id="1059" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:StartZone_Simple_Deafult" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1214" />
+    </completion>
+  </quest>
+</table>

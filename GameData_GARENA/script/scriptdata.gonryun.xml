@@ -1,0 +1,3228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.gonryun.xml-->
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <script alias="CH_SB_JeongHaDo_0005_ai">
+    
+    <quest-decision alias="qd_1617_1">
+      <reaction-set>
+        <reaction text="qd_1617_1 talked -freeplay5791" type="debug-trace" />
+        
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_JinSoA_0004_ai">
+    
+    <quest-decision alias="qd_1618_9">
+      <reaction-set>
+        <reaction text="qd_1618_9 talked -freeplay5791" type="debug-trace" />
+        <reaction social="Juria_JinsoA_AirDash_01" to="case:talked:pc" type="play-surround-social" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+
+  <script alias="5629_foot_1_ai">
+    
+    <quest-decision alias="qd_1617_11">
+      <reaction-set>
+        <reaction text="qd_1617_11 env-enter -freeplay5629" type="debug-trace" />
+        <reaction seq="CH_SB_EnAnk_0007_act_01" target="zonenpcspawn:a_5629_51" type="set-npc-act" />
+        <reaction flag="n" target="zonenpcspawn:a_5629_50" type="set-npc-interactive" />
+        <reaction enable="n" target2="case:env-entered:env" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_EnAnk_0007_ai">
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_EnAnk_0007_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_EnAnk_0007_act_01 finished -freeplay5629" type="debug-trace" />
+        <reaction seq="CH_SB_GunHyang_0016_act_01" target="zonenpcspawn:a_5629_50" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GunHyang_0016_ai">
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GunHyang_0016_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GunHyang_0016_act_01 finished -freeplay5629" type="debug-trace" />
+        <reaction flag="y" target="event:act-finished:npc" type="set-npc-interactive" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  <script alias="zone_GeonWon_ChaeUnHang_ai">
+    <decision event="enter-zone">
+      <filter-set>
+        <filter field="x" op="lt" subject="event:enter-zone:pc" subject2="event:enter-zone:pc" type="prop" value="941" />
+        <filter field="x" op="ge" subject="event:enter-zone:pc" subject2="event:enter-zone:pc" type="prop" value="-1106" />
+        <filter field="y" op="ge" subject="event:enter-zone:pc" subject2="event:enter-zone:pc" type="prop" value="-3327" />
+        <filter field="y" op="lt" subject="event:enter-zone:pc" subject2="event:enter-zone:pc" type="prop" value="-2493" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="zone_GeonWon_ChaeUnHang_ai enter-zone -freeplay6110" type="debug-trace" />
+        <reaction pc-spawn="1" target="event:enter-zone:pc" type="warp" zone="zone_GeonWon_ChaeUnHang" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+
+  <script alias="zone_GW_ChaeUnHang_HeukRyong_Juria_sub1_ai">
+    
+    <quest-decision alias="qd_1617_5">
+      <reaction-set>
+        <reaction text="qd_1617_5 complete -freeplay6136" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6136_2" type="set-npc-brain" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6136_2_1" type="set-npc-brain" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6136_2_2" type="set-npc-brain" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1617_8">
+      <reaction-set>
+        <reaction text="qd_1617_8 complete -freeplay6136" type="debug-trace" />
+        <reaction spawn-1="a_6136_29" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1617_51">
+      <reaction-set>
+        <reaction text="qd_1617_51 enter-zone -freeplay6136" type="debug-trace" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6136_10" target-2="zonenpcspawn:a_6136_11" target-3="zonenpcspawn:a_6136_12" target-4="zonenpcspawn:a_6136_13" target-5="zonenpcspawn:a_6136_14" target-6="zonenpcspawn:a_6136_15" target-7="zonenpcspawn:a_6136_16" type="despawn-npc" />
+        <reaction attackable="y" brain="monster" hate-on="y" spawn-1="a_6136_10" spawn-2="a_6136_11" spawn-3="a_6136_12" spawn-4="a_6136_13" spawn-5="a_6136_14" spawn-6="a_6136_15" spawn-7="a_6136_16" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6136_2" type="despawn-npc" />
+        <reaction attackable="y" brain="monster" hate-on="y" spawn-1="a_6136_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1617_52">
+      <reaction-set>
+        <reaction text="qd_1617_52 enter-zone -freeplay6136" type="debug-trace" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6136_10" target-2="zonenpcspawn:a_6136_11" target-3="zonenpcspawn:a_6136_12" target-4="zonenpcspawn:a_6136_13" target-5="zonenpcspawn:a_6136_14" target-6="zonenpcspawn:a_6136_15" target-7="zonenpcspawn:a_6136_16" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6136_2" target-2="zonenpcspawn:a_6136_2_1" type="despawn-npc" />
+        <reaction attackable="n" brain="citizen" hate-on="n" spawn-1="a_6136_2_1" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1617_53">
+      <reaction-set>
+        <reaction text="qd_1617_53 enter-zone -freeplay6136" type="debug-trace" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6136_10" target-2="zonenpcspawn:a_6136_11" target-3="zonenpcspawn:a_6136_12" target-4="zonenpcspawn:a_6136_13" target-5="zonenpcspawn:a_6136_14" target-6="zonenpcspawn:a_6136_15" target-7="zonenpcspawn:a_6136_16" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6136_2" target-2="zonenpcspawn:a_6136_2_1" type="despawn-npc" />
+        <reaction attackable="y" brain="monster" hate-on="y" spawn-1="a_6136_2_1" type="spawn-npc" />
+        
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_01_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_02_spawn" type="set-env-state" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6136_21" group-2="zonenpcsquad:s_6136_27" group-3="zonenpcsquad:s_6136_28" group-4="zonenpcsquad:s_6136_32" group-5="zonenpcsquad:s_6136_33" group-6="zonenpcsquad:s_6136_38" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_6136_21" group-2="zonenpcsquad:s_6136_27" group-3="zonenpcsquad:s_6136_28" group-4="zonenpcsquad:s_6136_32" group-5="zonenpcsquad:s_6136_33" group-6="zonenpcsquad:s_6136_38" type="spawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_6136_29" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1617_54">
+      <reaction-set>
+        <reaction text="qd_1617_54 enter-zone -freeplay6136" type="debug-trace" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6136_10" target-2="zonenpcspawn:a_6136_11" target-3="zonenpcspawn:a_6136_12" target-4="zonenpcspawn:a_6136_13" target-5="zonenpcspawn:a_6136_14" target-6="zonenpcspawn:a_6136_15" target-7="zonenpcspawn:a_6136_16" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6136_2" target-2="zonenpcspawn:a_6136_2_1" target-3="zonenpcspawn:a_6136_2_2" type="despawn-npc" />
+        <reaction attackable="y" brain="monster" hate-on="y" spawn-1="a_6136_2_2" type="spawn-npc" />
+        
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_01_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_02_spawn" type="set-env-state" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6136_21" group-2="zonenpcsquad:s_6136_27" group-3="zonenpcsquad:s_6136_28" group-4="zonenpcsquad:s_6136_32" group-5="zonenpcsquad:s_6136_33" group-6="zonenpcsquad:s_6136_38" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_6136_29" type="despawn-npc" />
+        <reaction spawn-1="a_6136_29" spawn-delay="5000" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1617_55">
+      <reaction-set>
+        <reaction text="qd_1617_55 enter-zone -freeplay6136" type="debug-trace" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6136_10" target-2="zonenpcspawn:a_6136_11" target-3="zonenpcspawn:a_6136_12" target-4="zonenpcspawn:a_6136_13" target-5="zonenpcspawn:a_6136_14" target-6="zonenpcspawn:a_6136_15" target-7="zonenpcspawn:a_6136_16" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6136_2" target-2="zonenpcspawn:a_6136_2_1" target-3="zonenpcspawn:a_6136_2_2" type="despawn-npc" />
+        <reaction attackable="n" brain="citizen" hate-on="n" spawn-1="a_6136_2_2" type="spawn-npc" />
+        
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_01_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_02_spawn" type="set-env-state" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6136_21" group-2="zonenpcsquad:s_6136_27" group-3="zonenpcsquad:s_6136_28" group-4="zonenpcsquad:s_6136_32" group-5="zonenpcsquad:s_6136_33" group-6="zonenpcsquad:s_6136_38" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction target-1="zonenpcspawn:a_6136_29" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="CH_SB_BlackDragon_0001_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="1" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1617_3">
+      <reaction-set>
+        <reaction text="qd_1617_3 talked -freeplay6136" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6136_10" target="case:talked:pc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6136_11" target="case:talked:pc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6136_12" target="case:talked:pc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6136_13" target="case:talked:pc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6136_14" target="case:talked:pc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6136_15" target="case:talked:pc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6136_16" target="case:talked:pc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" spawn-1="a_6136_2" spawn-delay="2000" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_BlackDragon_0002_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="1" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_SB_BlackDragon_0003_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="CH_SB_BlackDragon_0004_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="CH_SB_BlackDragon_0005_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="MH_SB_BlackDragon_0124_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="MH_SB_BlackDragon_0125_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="MH_SB_BlackDragon_0126_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="MH_SB_BlackDragon_0127_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="MH_SB_BlackDragon_0128_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="MH_SB_BlackDragon_0129_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="MH_SB_BlackDragon_0130_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="MH_SB_BlackDragon_0131_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  <script alias="MH_SB_BlackDragon_0132_ai" parent="CH_SB_BlackDragon_0002_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-bleeding" forward="y" />
+  </script>
+  
+  
+  <script alias="CH_SB_JinSoA_0005_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6136_2_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-brain" value="monster" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_JinSoA_0005_path_02" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6136_2" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_JinSoA_0005_path_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_pathway1_default" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_JinSoA_0005_ai pathway1 -freeplay6136" type="debug-trace" />
+        <reaction from="event:act-finished:npc" social="CH_SB_JinSoA_0005_soc_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1617_6">
+      <reaction-set>
+        <reaction text="qd_1617_6 talked -freeplay6136" type="debug-trace" />
+        <reaction enable="y" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_02_spawn" type="set-env-enable" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_JinSoA_0005_path_02" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1617_10">
+      <reaction-set>
+        <reaction text="qd_1617_10 talked -freeplay6136" type="debug-trace" />
+        <reaction target-1="case:talked:npc" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="e_Gate_6136_HeukRyong_01_ai">
+    <decision event="env-manipulated">
+      
+      <reaction-set>
+        <reaction text="e_Gate_6136_HeukRyong_01_ai manipulated -freeplay6136" type="debug-trace" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_02_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_Gate_6136_HeukRyong_02_ai">
+    <decision event="env-manipulated">
+      
+      <reaction-set>
+        <reaction text="e_Gate_6136_HeukRyong_02_ai manipulated -freeplay6136" type="debug-trace" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6136_HeukRyong_01_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="6136_foot_1_ai">
+    
+    <quest-decision alias="qd_1617_7">
+      <reaction-set>
+        <reaction text="qd_1617_7 env-enter -freeplay6136" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_6136_2" social="HuckRyongGyo_Kismet_on" type="play-surround-social" />
+        <reaction from="zonenpcspawn:a_6136_2_1" social="HuckRyongGyo_Kismet_on" type="play-surround-social" />
+        <reaction from="zonenpcspawn:a_6136_2_2" social="HuckRyongGyo_Kismet_on" type="play-surround-social" />
+        <reaction enable="n" target2="case:env-entered:env" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="ME_SB_BlackDragon_0139_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="ME_SB_BlackDragon_0139_ai killed -freeplay6136" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6136_2" type="set-npc-brain" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6136_2_1" type="set-npc-brain" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6136_2_2" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="1" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="3" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+
+  <script alias="zone_GW_BimilDongGul_Juria_sub2_ai">
+    
+    <quest-decision alias="qd_1618_6">
+      <reaction-set>
+        <reaction text="qd_1618_6 complete -freeplay6138" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6138_2" type="set-npc-brain" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6138_2_1" type="set-npc-brain" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1618_51">
+      <reaction-set>
+        <reaction text="qd_1618_51 enter-zone -freeplay6138" type="debug-trace" />
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_Chest_6138_Lever_01_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_Chest_6138_Lever_02_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_Gate_6138_Storage_01_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_Chest_6138_Lever_01_spawn" type="set-env-enable" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_2" type="despawn-npc" />
+        <reaction spawn-1="a_6138_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1618_56">
+      <reaction-set>
+        <reaction text="qd_1618_56 enter-zone -freeplay6138" type="debug-trace" />
+        
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_01_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_02_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6138_Storage_01_spawn" type="set-env-state" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_2" type="despawn-npc" />
+        <reaction attackable="y" brain="monster" hate-on="y" spawn-1="a_6138_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1618_52">
+      <reaction-set>
+        <reaction text="qd_1618_52 enter-zone -freeplay6138" type="debug-trace" />
+        
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_01_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_02_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6138_Storage_01_spawn" type="set-env-state" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_2" type="despawn-npc" />
+        <reaction attackable="y" brain="monster" hate-on="y" spawn-1="a_6138_2_1" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_10" target-2="zonenpcspawn:a_6138_11" target-3="zonenpcspawn:a_6138_12" type="despawn-npc" />
+        <reaction spawn-1="a_6138_10" spawn-2="a_6138_11" spawn-3="a_6138_12" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1618_53">
+      <reaction-set>
+        <reaction text="qd_1618_53 enter-zone -freeplay6138" type="debug-trace" />
+        
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_01_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_02_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6138_Storage_01_spawn" type="set-env-state" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_2" type="despawn-npc" />
+        <reaction spawn-1="a_6138_2_1" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_10" target-2="zonenpcspawn:a_6138_11" target-3="zonenpcspawn:a_6138_12" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1618_54">
+      <reaction-set>
+        <reaction text="qd_1618_54 enter-zone -freeplay6138" type="debug-trace" />
+        
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_01_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_02_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6138_Storage_01_spawn" type="set-env-state" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_2" type="despawn-npc" />
+        <reaction spawn-1="a_6138_2_2" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_10" target-2="zonenpcspawn:a_6138_11" target-3="zonenpcspawn:a_6138_12" type="despawn-npc" />
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6138_Portrait_01_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6138_Portrait_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1618_55">
+      <reaction-set>
+        <reaction text="qd_1618_55 enter-zone -freeplay6138" type="debug-trace" />
+        
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_01_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_02_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6138_Storage_01_spawn" type="set-env-state" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_2" type="despawn-npc" />
+        <reaction spawn-1="a_6138_2_2" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_10" target-2="zonenpcspawn:a_6138_11" target-3="zonenpcspawn:a_6138_12" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6138_3" type="despawn-npc" />
+        <reaction spawn-1="a_6138_3" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="e_Chest_6138_Lever_01_ai">
+    
+    <decision event="env-manipulate-start">
+      <reaction-set>
+        <reaction text="e_Chest_6138_Lever_01_ai manipulate-start -freeplay6138" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_6138_2" social="CH_SB_JinSoA_0007_soc_02" type="play-social" />
+        <reaction seq="CH_SB_JinSoA_0007_peace_01" target="zonenpcspawn:a_6138_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1618_2">
+      <reaction-set>
+        <reaction text="qd_1618_2 manipulate -freeplay6138" type="debug-trace" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Chest_6138_Lever_02_spawn" type="set-env-state" />
+        <reaction state2="open" target2="zoneenv2spawn:e_Gate_6138_Storage_01_spawn" type="set-env-state" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6138_2" type="set-npc-brain" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6138_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    
+  </script>
+  <script alias="e_Chest_6138_Lever_02_ai">
+    
+    
+  </script>
+  
+  <script alias="6138_foot_1_ai">
+    
+    <quest-decision alias="qd_1618_7">
+      <reaction-set>
+        <reaction text="qd_1618_7 env-enter -freeplay6138" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_6138_10" social="Epic7_HuckRyongGyo_Kismet_on" type="play-surround-social" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="MH_SB_BlackDragon_0133_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="1" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SB_BlackDragon_0134_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="1" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SB_BlackDragon_0135_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="1" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="2" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-bleeding:npc" social="3" type="play-indexed-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_SB_JinSoA_0007_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6138_2" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-brain" value="monster" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_JinSoA_0007_path_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1618_8">
+      <reaction-set>
+        <reaction text="qd_1618_8 talked -freeplay6138" type="debug-trace" />
+        <reaction seq="CH_SB_JinSoA_0007_path_03" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_JinSoA_0007_path_03" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_JinSoA_0007_path_03 finished -freeplay6181" type="debug-trace" />
+        <reaction from="event:act-finished:npc" social="CH_SB_JinSoA_0007_soc_02" type="play-social" />
+        <reaction seq="CH_SB_JinSoA_0007_peace_01" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1618_5">
+      <reaction-set>
+        <reaction text="qd_1618_5 talked -freeplay6138" type="debug-trace" />
+        <reaction seq="CH_SB_JinSoA_0007_path_02" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="e_Chest_6138_Portrait_01_ai">
+    
+    <quest-decision alias="qd_1618_3">
+      <reaction-set>
+        <reaction text="qd_1618_3 manipulate -freeplay6138" type="debug-trace" />
+        <reaction spawn-1="a_6138_3" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="CH_SB_SonGwon_0001_ai">
+    
+    <quest-decision alias="qd_1618_4">
+      <reaction-set>
+        <reaction text="qd_1618_4 talked -freeplay6138" type="debug-trace" />
+        <reaction pc-spawn="1" phase-zone-enter-cinematic-1="E_0724" phase-zone-leave-cinematic-1="E_0723" phase-zone-pc-spawn-1="1" target="case:talked:pc" type="warp" zone="zone_GW_GonLyunJeolByeok_D" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1618_99">
+      <reaction-set>
+        <reaction text="qd_1618_99 talked -freeplay6138" type="debug-trace" />
+        <reaction pc-spawn="1" phase-zone-pc-spawn-1="1" target="case:talked:pc" type="warp" zone="zone_GW_GonLyunJeolByeok_D" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_99">
+      <reaction-set>
+        <reaction text="qd_1620_99 talked -freeplay6138" type="debug-trace" />
+        <reaction pc-spawn="1" phase-zone-pc-spawn-1="1" target="case:talked:pc" type="warp" zone="zone_GW_GonLyunJeolByeok_D2" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+
+  <script alias="zone_GW_GonLyunJeolByeok_Juria_sub3_1_ai">
+    
+    <quest-decision alias="qd_1619_12">
+      <reaction-set>
+        <reaction text="qd_1619_12 talked -freeplay6181" type="debug-trace" />
+        <reaction seq="CH_SB_Juria_0002_path_04" target="zonenpcspawn:a_6181_2" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_path_04" target="zonenpcspawn:a_6181_2_1" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_path_04" target="zonenpcspawn:a_6181_2_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_51">
+      <reaction-set>
+        <reaction text="qd_1619_51 enter-zone -freeplay6181" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2" target-2="zonenpcspawn:a_6181_2_1" type="despawn-npc" />
+        <reaction spawn-1="a_6181_2_1" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_52">
+      <reaction-set>
+        <reaction text="qd_1619_52 enter-zone -freeplay6181" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2" target-2="zonenpcspawn:a_6181_2_1" target-3="zonenpcspawn:a_6181_2_2" type="despawn-npc" />
+        <reaction spawn-1="a_6181_2_2" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_24" target-2="zonenpcspawn:a_6181_25" target-3="zonenpcspawn:a_6181_26" target-4="zonenpcspawn:a_6181_27" target-5="zonenpcspawn:a_6181_28" target-6="zonenpcspawn:a_6181_29" target-7="zonenpcspawn:a_6181_30" type="despawn-npc" />
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_01_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_02_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_03_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_04_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_05_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_06_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_07_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_08_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_09_spawn" type="set-env-state" />
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6181_Herb_10_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_02_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_03_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_04_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_05_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_06_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_07_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_08_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_09_spawn" type="set-env-enable" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6181_Herb_10_spawn" type="set-env-enable" />
+        
+        <reaction enable="y" target2="zoneenv2spawn:6181_foot_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_53">
+      <reaction-set>
+        <reaction text="qd_1619_53 enter-zone -freeplay6181" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2" target-2="zonenpcspawn:a_6181_2_1" target-3="zonenpcspawn:a_6181_2_2" target-4="zonenpcspawn:a_6181_2_3" type="despawn-npc" />
+        <reaction spawn-1="a_6181_2_3" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_3" target-2="zonenpcspawn:a_6181_4" target-3="zonenpcspawn:a_6181_13" target-4="zonenpcspawn:a_6181_14" target-5="zonenpcspawn:a_6181_7" target-6="zonenpcspawn:a_6181_8" type="despawn-npc" />
+        <reaction spawn-1="a_6181_7" spawn-2="a_6181_8" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_13" target-2="zonenpcspawn:a_6181_14" target-3="zonenpcspawn:a_6181_15" target-4="zonenpcspawn:a_6181_16" type="despawn-npc" />
+        <reaction spawn-1="a_6181_15" spawn-2="a_6181_16" type="spawn-npc" />      
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_54">
+      <reaction-set>
+        <reaction text="qd_1619_54 enter-zone -freeplay6181" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2" target-2="zonenpcspawn:a_6181_2_1" target-3="zonenpcspawn:a_6181_2_2" target-4="zonenpcspawn:a_6181_2_3" type="despawn-npc" />
+        <reaction spawn-1="a_6181_2_3" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_3" target-2="zonenpcspawn:a_6181_4" target-3="zonenpcspawn:a_6181_13" target-4="zonenpcspawn:a_6181_14" target-5="zonenpcspawn:a_6181_7" target-6="zonenpcspawn:a_6181_8" target-7="zonenpcspawn:a_6181_5" type="despawn-npc" />
+        <reaction spawn-1="a_6181_7" spawn-2="a_6181_5" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_13" target-2="zonenpcspawn:a_6181_14" target-3="zonenpcspawn:a_6181_15" target-4="zonenpcspawn:a_6181_16" type="despawn-npc" />
+        <reaction spawn-1="a_6181_15" spawn-2="a_6181_16" type="spawn-npc" />      
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_55">
+      <reaction-set>
+        <reaction text="qd_1619_55 enter-zone -freeplay6181" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2" target-2="zonenpcspawn:a_6181_2_1" target-3="zonenpcspawn:a_6181_2_2" target-4="zonenpcspawn:a_6181_2_3" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_3" target-2="zonenpcspawn:a_6181_4" target-3="zonenpcspawn:a_6181_13" target-4="zonenpcspawn:a_6181_14" target-5="zonenpcspawn:a_6181_7" target-6="zonenpcspawn:a_6181_8" target-7="zonenpcspawn:a_6181_5" type="despawn-npc" />
+        
+        <reaction spawn-1="a_6181_7" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2_4" target-2="zonenpcspawn:a_6181_5_1" type="despawn-npc" />
+        <reaction spawn-1="a_6181_2_4" spawn-2="a_6181_5_1" type="spawn-npc" />
+        
+        <reaction enable="y" target2="zoneenv2spawn:6181_foot_2_spawn" type="set-env-enable" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_13" target-2="zonenpcspawn:a_6181_14" target-3="zonenpcspawn:a_6181_15" target-4="zonenpcspawn:a_6181_16" type="despawn-npc" />
+        <reaction spawn-1="a_6181_15" spawn-2="a_6181_16" type="spawn-npc" />      
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_56">
+      <reaction-set>
+        <reaction text="qd_1619_56 enter-zone -freeplay6181" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2" target-2="zonenpcspawn:a_6181_2_1" target-3="zonenpcspawn:a_6181_2_2" target-4="zonenpcspawn:a_6181_2_3" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_3" target-2="zonenpcspawn:a_6181_4" target-3="zonenpcspawn:a_6181_13" target-4="zonenpcspawn:a_6181_14" target-5="zonenpcspawn:a_6181_7" target-6="zonenpcspawn:a_6181_8" target-7="zonenpcspawn:a_6181_5" type="despawn-npc" />
+        
+        <reaction spawn-1="a_6181_7" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2_4" target-2="zonenpcspawn:a_6181_5_1" type="despawn-npc" />
+        <reaction spawn-1="a_6181_2_4" spawn-2="a_6181_5_1" type="spawn-npc" />
+        
+        <reaction enable="n" target2="zoneenv2spawn:6181_foot_2_spawn" type="set-env-enable" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_11" target-2="zonenpcspawn:a_6181_12" type="despawn-npc" />
+        <reaction attackable="y" brain="monster" hate-on="y" spawn-1="a_6181_11" spawn-2="a_6181_12" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_17" type="despawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_6181_11" spawn-1="a_6181_17" spawn-delay="3000" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_13" target-2="zonenpcspawn:a_6181_14" target-3="zonenpcspawn:a_6181_15" target-4="zonenpcspawn:a_6181_16" type="despawn-npc" />
+        <reaction spawn-1="a_6181_15" spawn-2="a_6181_16" type="spawn-npc" />      
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_57">
+      <reaction-set>
+        <reaction text="qd_1619_57 enter-zone -freeplay6181" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2" target-2="zonenpcspawn:a_6181_2_1" target-3="zonenpcspawn:a_6181_2_2" target-4="zonenpcspawn:a_6181_2_3" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_3" target-2="zonenpcspawn:a_6181_4" target-3="zonenpcspawn:a_6181_13" target-4="zonenpcspawn:a_6181_14" target-5="zonenpcspawn:a_6181_7" target-6="zonenpcspawn:a_6181_8" target-7="zonenpcspawn:a_6181_5" type="despawn-npc" />
+        
+        <reaction spawn-1="a_6181_7" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2_4" target-2="zonenpcspawn:a_6181_5_1" target-3="zonenpcspawn:a_6181_2_5" target-4="zonenpcspawn:a_6181_5_2" type="despawn-npc" />
+        <reaction spawn-1="a_6181_2_5" spawn-2="a_6181_5_2" type="spawn-npc" />
+        
+        <reaction enable="n" target2="zoneenv2spawn:6181_foot_2_spawn" type="set-env-enable" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_11" target-2="zonenpcspawn:a_6181_12" target-3="zonenpcspawn:a_6181_11_1" target-4="zonenpcspawn:a_6181_12_1" type="despawn-npc" />
+        <reaction spawn-1="a_6181_11_1" spawn-2="a_6181_12_1" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_17" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_13" target-2="zonenpcspawn:a_6181_14" target-3="zonenpcspawn:a_6181_15" target-4="zonenpcspawn:a_6181_16" type="despawn-npc" />
+        <reaction spawn-1="a_6181_15" spawn-2="a_6181_16" type="spawn-npc" />      
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_98">
+      <reaction-set>
+        <reaction text="qd_1619_98 enter-zone -freeplay6181" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2" target-2="zonenpcspawn:a_6181_2_1" target-3="zonenpcspawn:a_6181_2_2" target-4="zonenpcspawn:a_6181_2_3" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_3" target-2="zonenpcspawn:a_6181_4" target-3="zonenpcspawn:a_6181_13" target-4="zonenpcspawn:a_6181_14" target-5="zonenpcspawn:a_6181_7" target-6="zonenpcspawn:a_6181_8" target-7="zonenpcspawn:a_6181_5" type="despawn-npc" />
+        
+        <reaction spawn-1="a_6181_7" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_2_4" target-2="zonenpcspawn:a_6181_5_1" target-3="zonenpcspawn:a_6181_2_5" target-4="zonenpcspawn:a_6181_5_2" type="despawn-npc" />
+        
+        <reaction enable="n" target2="zoneenv2spawn:6181_foot_2_spawn" type="set-env-enable" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_11" target-2="zonenpcspawn:a_6181_12" target-3="zonenpcspawn:a_6181_11_1" target-4="zonenpcspawn:a_6181_12_1" target-5="zonenpcspawn:a_6181_11_2" target-6="zonenpcspawn:a_6181_12_2" type="despawn-npc" />
+        <reaction spawn-1="a_6181_11_2" spawn-2="a_6181_12_2" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_17" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6181_13" target-2="zonenpcspawn:a_6181_14" target-3="zonenpcspawn:a_6181_15" target-4="zonenpcspawn:a_6181_16" type="despawn-npc" />
+        <reaction spawn-1="a_6181_15" spawn-2="a_6181_16" type="spawn-npc" />      
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_Juria_0002_ai">
+    
+    <quest-decision alias="qd_1619_1">
+      <reaction-set>
+        <reaction text="qd_1619_1 talked -freeplay6181" type="debug-trace" />
+        <reaction seq="CH_SB_Juria_0002_path_01" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_8">
+      <reaction-set>
+        <reaction text="qd_1619_8 talked -freeplay6181" type="debug-trace" />
+        <reaction seq="CH_SB_Juria_0002_act_00" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_Juria_0002_act_00" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0002_act_00 finished -freeplay6181" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_6181_5" social="CH_SB_JinSeoYeon_0012_soc_02" type="play-social" />
+        <reaction seq="CH_SB_Juria_0002_path_02" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction seq="CH_SB_JinSeoYeon_0012_path_01" target="zonenpcspawn:a_6181_5" type="set-npc-act" />
+        <reaction seq="CH_SB_JinSeoYeon_0012_path_01" target="zonenpcspawn:a_6181_5_1" type="set-npc-act" />
+        <reaction seq="CH_SB_JinSeoYeon_0012_path_01" target="zonenpcspawn:a_6181_5_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_Juria_0002_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0002_act_01 finished -freeplay6181" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_6181_5" social="CH_SB_JinSeoYeon_0012_soc_03" type="play-social" />
+        <reaction from="zonenpcspawn:a_6181_5_1" social="CH_SB_JinSeoYeon_0012_soc_03" type="play-social" />
+        <reaction from="zonenpcspawn:a_6181_5_2" social="CH_SB_JinSeoYeon_0012_soc_03" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_Juria_0002_act_02" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0002_act_02 finished -freeplay6181" type="debug-trace" />
+        <reaction seq="CH_SB_GonRyun_0020_path_02" target="zonenpcspawn:a_6181_11" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0020_path_02" target="zonenpcspawn:a_6181_11_1" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0021_path_02" target="zonenpcspawn:a_6181_12" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0021_path_02" target="zonenpcspawn:a_6181_12_1" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_path_05" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction seq="CH_SB_JinSeoYeon_0012_path_02" target="zonenpcspawn:a_6181_5" type="set-npc-act" />
+        <reaction seq="CH_SB_JinSeoYeon_0012_path_02" target="zonenpcspawn:a_6181_5_1" type="set-npc-act" />
+        <reaction seq="CH_SB_JinSeoYeon_0012_path_02" target="zonenpcspawn:a_6181_5_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_SB_GonRyun_0016_ai">
+    
+    <quest-decision alias="qd_1619_10">
+      <reaction-set>
+        <reaction text="qd_1619_10 talked -freeplay6181" type="debug-trace" />
+        <reaction seq="CH_SB_GonRyun_0016_path_01" target="case:talked:npc" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_path_03" target="zonenpcspawn:a_6181_2" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_path_03" target="zonenpcspawn:a_6181_2_1" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_path_03" target="zonenpcspawn:a_6181_2_2" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_2">
+      <reaction-set>
+        <reaction text="qd_1619_2 talked -freeplay6181" type="debug-trace" />
+        <reaction seq="CH_SB_GonRyun_0016_act_01" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0016_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0016_act_01 finished -freeplay6181" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_6181_8" type="despawn-npc" />
+        <reaction spawn-1="a_6181_5" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="6181_foot_1_ai">
+    
+    <quest-decision alias="qd_1619_11">
+      <reaction-set>
+        <reaction text="qd_1619_11 env-enter -freeplay6181" type="debug-trace" />
+        <reaction enable="n" target="case:env-entered:env" target2="case:env-entered:env" type="set-env-enable" />
+        <reaction target-1="zonenpcspawn:a_6181_3" target-2="zonenpcspawn:a_6181_4" target-3="zonenpcspawn:a_6181_13" target-4="zonenpcspawn:a_6181_14" type="despawn-npc" />
+        <reaction spawn-1="a_6181_7" spawn-2="a_6181_8" spawn-3="a_6181_15" spawn-4="a_6181_16" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="e_chest_6181_Herb_04_ai">
+    
+    <quest-decision alias="qd_1619_21">
+      <reaction-set>
+        <reaction text="qd_1619_21 manipulate -freeplay6181" type="debug-trace" />
+        <reaction attack-target="case:manipulated:pc" spawn-1="a_6181_24" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="e_chest_6181_Herb_05_ai">
+    
+    <quest-decision alias="qd_1619_13">
+      <reaction-set>
+        <reaction text="qd_1619_13 manipulate -freeplay6181" type="debug-trace" />
+        <reaction attack-target="case:manipulated:pc" spawn-1="a_6181_25" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="e_chest_6181_Herb_06_ai">
+    
+    <quest-decision alias="qd_1619_14">
+      <reaction-set>
+        <reaction text="qd_1619_14 manipulate -freeplay6181" type="debug-trace" />
+        <reaction attack-target="case:manipulated:pc" spawn-1="a_6181_26" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="e_chest_6181_Herb_07_ai">
+    
+    <quest-decision alias="qd_1619_15">
+      <reaction-set>
+        <reaction text="qd_1619_15 manipulate -freeplay6181" type="debug-trace" />
+        <reaction attack-target="case:manipulated:pc" spawn-1="a_6181_27" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="e_chest_6181_Herb_08_ai">
+    
+    <quest-decision alias="qd_1619_16">
+      <reaction-set>
+        <reaction text="qd_1619_16 manipulate -freeplay6181" type="debug-trace" />
+        <reaction attack-target="case:manipulated:pc" spawn-1="a_6181_28" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="e_chest_6181_Herb_09_ai">
+    
+    <quest-decision alias="qd_1619_17">
+      <reaction-set>
+        <reaction text="qd_1619_17 manipulate -freeplay6181" type="debug-trace" />
+        <reaction attack-target="case:manipulated:pc" spawn-1="a_6181_29" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="e_chest_6181_Herb_10_ai">
+    
+    <quest-decision alias="qd_1619_18">
+      <reaction-set>
+        <reaction text="qd_1619_18 manipulate -freeplay6181" type="debug-trace" />
+        <reaction attack-target="case:manipulated:pc" spawn-1="a_6181_30" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="ME_SB_GrassBeast_0003_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6181_30" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_SB_GrassBeast_0003_ai a_6181_30 spawn -freeplay6181" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_6181_2" social="CH_SB_Juria_0002_soc_04" type="play-social" />
+        <reaction from="zonenpcspawn:a_6181_2_1" social="CH_SB_Juria_0002_soc_04" type="play-social" />
+        <reaction from="zonenpcspawn:a_6181_2_2" social="CH_SB_Juria_0002_soc_04" type="play-social" />
+        <reaction from="zonenpcspawn:a_6181_2_3" social="CH_SB_Juria_0002_soc_04" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="6181_foot_2_ai">
+    
+    <quest-decision alias="qd_1619_7">
+      <reaction-set>
+        <reaction text="qd_1619_7 env-enter -freeplay6181" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6181_11" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6181_12" type="set-npc-brain" />
+        <reaction attack-target="zonenpcspawn:a_6181_11" spawn-1="a_6181_17" type="spawn-npc" />
+        <reaction seq="CH_SB_Juria_0002_act_01" target="zonenpcspawn:a_6181_2" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_act_01" target="zonenpcspawn:a_6181_2_1" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_act_01" target="zonenpcspawn:a_6181_2_2" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_act_01" target="zonenpcspawn:a_6181_2_3" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="ME_SB_Spider_0002_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="1" reg="1" target="zonenpcspawn:a_6181_11" type="set-npc-number" />
+        <reaction amount="1" reg="1" target="zonenpcspawn:a_6181_12" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="ME_SB_Spider_0002_ai start -freeplay6181" type="debug-trace" />
+        <reaction amount="10000" opponent="event:npc-combat-start:npc" target="zonenpcspawn:a_6181_11" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="event:npc-combat-start:npc" target="zonenpcspawn:a_6181_12" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_6181_11" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_6181_12" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1619_19">
+      <reaction-set>
+        <reaction text="qd_1619_19 killed -freeplay6181" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6181_11" type="set-npc-brain" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6181_12" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_0020_path_01" target="zonenpcspawn:a_6181_11" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0021_path_01" target="zonenpcspawn:a_6181_12" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_GonRyun_0020_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0020_path_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0020_path_01 finished -freeplay6181" type="debug-trace" />
+        
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1619_20">
+      <reaction-set>
+        <reaction text="qd_1619_20 talked -freeplay6181" type="debug-trace" />
+        <reaction seq="CH_SB_Juria_0002_act_02" target="zonenpcspawn:a_6181_2" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_act_02" target="zonenpcspawn:a_6181_2_1" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_act_02" target="zonenpcspawn:a_6181_2_2" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_act_02" target="zonenpcspawn:a_6181_2_3" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_act_02" target="zonenpcspawn:a_6181_2_4" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0002_act_02" target="zonenpcspawn:a_6181_2_5" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0021_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+
+  <script alias="zone_GW_GonLyunJeolByeok_Juria_sub3_2_ai">
+    
+    <quest-decision alias="qd_1619_7">
+      <reaction-set>
+        <reaction text="qd_1619_7 enter-zone -freeplay6182" type="debug-trace" />
+        <reaction spawn-1="a_6182_2" spawn-2="a_6182_3" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_58">
+      <reaction-set>
+        <reaction text="qd_1619_58 enter-zone -freeplay6182" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_2" target-2="zonenpcspawn:a_6182_4" type="despawn-npc" />
+        <reaction spawn-1="a_6182_4" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_3" target-2="zonenpcspawn:a_6182_5" type="despawn-npc" />
+        <reaction spawn-1="a_6182_5" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_20" type="despawn-npc" />
+        <reaction spawn-1="a_6182_20" spawn-target="zonenpcspawn:a_6182_4" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_59">
+      <reaction-set>
+        <reaction text="qd_1619_59 enter-zone -freeplay6182" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_2" target-2="zonenpcspawn:a_6182_4" type="despawn-npc" />
+        <reaction spawn-1="a_6182_4" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_3" target-2="zonenpcspawn:a_6182_5" type="despawn-npc" />
+        <reaction spawn-1="a_6182_5" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_20" type="despawn-npc" />
+        
+        <reaction spawn-1="a_6182_10" spawn-2="a_6182_11" spawn-3="a_6182_12" spawn-4="a_6182_13" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_60">
+      <reaction-set>
+        <reaction text="qd_1619_60 enter-zone -freeplay6182" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_2" target-2="zonenpcspawn:a_6182_4" target-3="zonenpcspawn:a_6182_6" type="despawn-npc" />
+        <reaction spawn-1="a_6182_6" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_3" target-2="zonenpcspawn:a_6182_5" target-3="zonenpcspawn:a_6182_7" type="despawn-npc" />
+        <reaction spawn-1="a_6182_7" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_20" type="despawn-npc" />
+        
+        <reaction spawn-1="a_6182_10" spawn-2="a_6182_11" spawn-3="a_6182_12" spawn-4="a_6182_13" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1619_61">
+      <reaction-set>
+        <reaction text="qd_1619_61 enter-zone -freeplay6182" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_2" target-2="zonenpcspawn:a_6182_4" target-3="zonenpcspawn:a_6182_6" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_3" target-2="zonenpcspawn:a_6182_5" target-3="zonenpcspawn:a_6182_7" type="despawn-npc" />
+        <reaction spawn-1="a_6182_7" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_20" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_10" target-2="zonenpcspawn:a_6182_11" target-3="zonenpcspawn:a_6182_12" target-4="zonenpcspawn:a_6182_13" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_98">
+      <reaction-set>
+        <reaction text="qd_1620_98 enter-zone -freeplay6182" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_2" target-2="zonenpcspawn:a_6182_4" target-3="zonenpcspawn:a_6182_6" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_3" target-2="zonenpcspawn:a_6182_5" target-3="zonenpcspawn:a_6182_7" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_20" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6182_10" target-2="zonenpcspawn:a_6182_11" target-3="zonenpcspawn:a_6182_12" target-4="zonenpcspawn:a_6182_13" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="ME_SB_SaintWildboar_0001_ai">
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="npc-id" value="CH_SB_Juria_0009" />
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_SB_SaintWildboar_0001_ai start -freeplay6182" type="debug-trace" />
+        <reaction flag="n" target="event:npc-combat-start:npc" type="set-npc-interactive" />
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-combat-start:npc" type="invoke-effect" />
+        <reaction target="event:npc-combat-start:npc" type="set-undying" undying="y" />
+        <reaction special-id="1" target="event:npc-combat-start:npc" type="npc-fire-special" />
+        <reaction amount="10000" opponent="event:npc-combat-start:target" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_6182_20:reg-1" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="pc" />
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="summoned" />
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+        <reaction target="event:npc-combat-start:npc" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1619_4">
+      <reaction-set>
+        <reaction text="qd_1619_4 killed -freeplay6182" type="debug-trace" />
+        <reaction spawn-1="a_6182_10" spawn-2="a_6182_11" spawn-3="a_6182_12" spawn-4="a_6182_13" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_SB_SaintWildboar_0001_ai special1 -freeplay6182" type="debug-trace" />
+        <reaction flag="y" target="event:npc-special:npc" type="set-npc-interactive" />
+        <reaction target="event:npc-special:npc" type="dispel-buff" />
+        <reaction amount="10000" opponent="zonenpcsquad:s_6182_20:reg-1" target="event:npc-special:npc" type="diff-npc-hate" />
+        <reaction amount="1" reg="1" target="event:npc-special:npc" type="set-npc-number" />
+        <reaction target="event:npc-special:npc" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_SB_Juria_0009_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6182_2" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="act_pathway1_default" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_pathway1_default" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0009_ai pathway1 -freeplay6182" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1619_3">
+      <reaction-set>
+        <reaction text="qd_1619_3 talked -freeplay6182" type="debug-trace" />
+        <reaction attack-target="case:talked:npc" spawn-1="a_6182_20" type="spawn-npc" />
+        <reaction attackable="y" brain="monster" hate-on="n" npc="case:talked:npc" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="n" npc="zonenpcspawn:a_6182_3" type="set-npc-brain" />
+        <reaction object="case:talked:pc" reg="1" target="zonenpcsquad:s_6182_20" type="set-party-object" />
+      </reaction-set>
+    </quest-decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0009_ai attacked -freeplay6182" type="debug-trace" />
+        <reaction from="event:attacked:defender" social="CH_SB_Juria_0002_soc_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_Epic7_ME_SaintWildboar_None_Rush_hon_Knockback" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0009_ai invoked -freeplay6182" type="debug-trace" />
+        <reaction spawn-1="a_6182_4" spawn-delay="0" spawn-radius="0" spawn-target="event:invoked-effect:npc" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_SB_JinSeoYeon_0016_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6182_3" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="act_pathway1_default" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_pathway1_default" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_JinSeoYeon_0016_ai pathway1 -freeplay6182" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction text="CH_SB_JinSeoYeon_0016_ai attacked -freeplay6182" type="debug-trace" />
+        <reaction from="event:attacked:defender" social="CH_SB_JinSeoYeon_0012_soc_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Quest_Epic7_ME_SaintWildboar_None_Rush_hon_Knockback" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_JinSeoYeon_0016_ai invoked -freeplay6182" type="debug-trace" />
+        <reaction spawn-1="a_6182_5" spawn-delay="0" spawn-radius="0" spawn-target="event:invoked-effect:npc" type="spawn-npc" />
+        <reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_SB_Juria_0003_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction from="event:npc-spawn:npc" social="CH_SB_Juria_0003_soc_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_JinSeoYeon_0013_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction from="event:npc-spawn:npc" social="CH_SB_JinSeoYeon_0013_soc_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_SonGwon_0002_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0002_ai spawn -freeplay6182" type="debug-trace" />
+        <reaction from="event:npc-spawn:npc" social="CH_SB_SonGwon_0002_soc_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_SonGwon_0002_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0002_act_01 finished -freeplay6182" type="debug-trace" />
+        <reaction seq="act_pathway2_despawn" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0002_despawn" target="zonenpcspawn:a_6182_11" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0003_despawn" target="zonenpcspawn:a_6182_12" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0004_despawn" target="zonenpcspawn:a_6182_13" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0004_path_02" target="zonenpcspawn:a_6182_6" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1619_5">
+      <reaction-set>
+        <reaction text="qd_1619_5 talked -freeplay6182" type="debug-trace" />
+        <reaction seq="CH_SB_GonRyun_0002_act_02" target="zonenpcspawn:a_6182_11" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0004_act_01" target="zonenpcspawn:a_6182_13" type="set-npc-act" />
+        <reaction spawn-1="a_6182_6" spawn-2="a_6182_7" spawn-delay="0" type="spawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6182_4" target-2="zonenpcspawn:a_6182_5" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0002_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0002_ai spawn -freeplay6182" type="debug-trace" />
+        <reaction seq="CH_SB_GonRyun_0002_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0002_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0002_act_01 finished -freeplay6182" type="debug-trace" />
+        <reaction from="event:act-finished:npc" social="CH_SB_GonRyun_0002_soc_05" type="play-social" />
+        <reaction seq="CH_SB_GonRyun_0002_peace_01" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction from="zonenpcspawn:a_6182_4" social="CH_SB_Juria_0003_soc_02" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0002_act_02" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0002_act_02 finished -freeplay6182" type="debug-trace" />
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0004_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0002_ai spawn -freeplay6182" type="debug-trace" />
+        <reaction from="event:npc-spawn:npc" social="CH_SB_GonRyun_0004_soc_04" type="play-social" />
+        <reaction seq="CH_SB_GonRyun_0004_peace_01" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction from="zonenpcspawn:a_6182_5" social="CH_SB_JinSeoYeon_0013_soc_02" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0004_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0004_act_01 finished -freeplay6182" type="debug-trace" />
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_Juria_0004_ai">
+    
+    <quest-decision alias="qd_1619_6">
+      <reaction-set>
+        <reaction text="qd_1619_6 talked -freeplay6182" type="debug-trace" />
+        <reaction seq="CH_SB_SonGwon_0002_act_01" target="zonenpcspawn:a_6182_10" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_JinSeoYeon_0014_ai">
+    
+    <quest-decision alias="qd_1619_9">
+      <reaction-set>
+        <reaction text="qd_1619_9 talked -freeplay6182" type="debug-trace" />
+        <reaction seq="CH_SB_JinSeoYeon_0014_path_02" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+
+  <script alias="zone_GW_GonLyunPa_Juria_sub4_1_ai">
+    
+    <quest-decision alias="qd_1620_15">
+      <reaction-set>
+        <reaction text="qd_1620_15 enter-zone -freeplay6184" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_6184_10" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6184_2" target-2="zonenpcspawn:a_6184_3" target-3="zonenpcspawn:a_6184_4" target-4="zonenpcspawn:a_6184_5" target-5="zonenpcspawn:a_6184_6" target-6="zonenpcspawn:a_6184_7" target-7="zonenpcspawn:a_6184_8" target-8="zonenpcspawn:a_6184_9" target-9="zonenpcspawn:a_6184_11" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6184_12" target-2="zonenpcspawn:a_6184_13" target-3="zonenpcspawn:a_6184_14" target-4="zonenpcspawn:a_6184_15" target-5="zonenpcspawn:a_6184_16" target-6="zonenpcspawn:a_6184_17" target-7="zonenpcspawn:a_6184_18" target-8="zonenpcspawn:a_6184_19" target-9="zonenpcspawn:a_6184_20" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6184_21" target-2="zonenpcspawn:a_6184_22" target-3="zonenpcspawn:a_6184_23" type="despawn-npc" />
+        <reaction spawn-1="a_6184_2_1" spawn-2="a_6184_3_1" spawn-3="a_6184_4_1" spawn-4="a_6184_5_1" spawn-5="a_6184_6_1" spawn-6="a_6184_7_1" spawn-7="a_6184_8_1" spawn-8="a_6184_9_1" spawn-9="a_6184_11_1" type="spawn-npc" />
+        <reaction spawn-1="a_6184_12_1" spawn-2="a_6184_13_1" spawn-3="a_6184_14_1" spawn-4="a_6184_15_1" spawn-5="a_6184_16_1" spawn-6="a_6184_17_1" spawn-7="a_6184_18_1" spawn-8="a_6184_19_1" spawn-9="a_6184_20_1" type="spawn-npc" />
+        <reaction spawn-1="a_6184_21_1" spawn-2="a_6184_22_1" spawn-3="a_6184_23_1" type="spawn-npc" />
+        <reaction state2="empty" target2="zoneenv2spawn:e_chest_6185_GonLyunMaRyeong_01_spawn" type="set-env-state" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  <script alias="6184_foot_1_ai">
+    
+    <quest-decision alias="qd_1620_16">
+      <reaction-set>
+        <reaction text="qd_1620_16 env-entered -freeplay6184" type="debug-trace" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_2" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_3" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_4" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_5" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_6" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_7" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_8" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_9" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_11" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_12" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_13" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_14" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_15" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_16" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_17" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_18" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_19" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_20" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_21" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_22" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:a_6184_23" type="set-npc-act" />
+        <reaction enable="n" target2="case:env-entered:env" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_SonGwon_0003_ai">
+    
+    <quest-decision alias="qd_1620_1">
+      <reaction-set>
+        <reaction text="qd_1620_1 talked -freeplay6184" type="debug-trace" />
+        <reaction seq="act_pathway1_despawn" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  
+  <script alias="zone_GW_GonLyunPa_JuriaRoom_sub4_1_ai">
+    
+    <quest-decision alias="qd_1620_17">
+      <reaction-set>
+        <reaction text="qd_1620_17 enter-zone -freeplay6186" type="debug-trace" />
+        <reaction brain="monster" spawn-1="a_6186_2" spawn-2="a_6186_3" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+
+  <script alias="zone_GW_GonLyunPa_JuriaRoom_sub4_2_ai">
+    
+    <quest-decision alias="qd_1620_52">
+      <reaction-set>
+        <reaction text="qd_1620_52 talked -freeplay6187" type="debug-trace" />
+        
+        <reaction spawn-1="a_6187_4" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_JinSeoYeon_0015_ai">
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_JinSeoYeon_0015_act_00" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_JinSeoYeon_0015_act_00 finished -freeplay6186" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6186_2" type="set-npc-brain" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6186_3" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1620_2">
+      <reaction-set>
+        <reaction text="qd_1620_2 talked -freeplay6187" type="debug-trace" />
+        <reaction spawn-1="a_6187_4" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="CH_SB_Juria_0005_ai">
+    
+        <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6186_2" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0005_ai spawn-a_6186_2 -freeplay6186" type="debug-trace" />
+        <reaction seq="CH_SB_Juria_0005_act_00" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_Juria_0005_act_00" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0005_act_00 finished -freeplay6186" type="debug-trace" />
+        <reaction seq="CH_SB_JinSeoYeon_0015_act_00" target="zonenpcspawn:a_6186_3" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1620_3">
+      <reaction-set>
+        <reaction text="qd_1620_3 talked -freeplay6187" type="debug-trace" />
+        <reaction seq="CH_SB_GonRyun_0015_act_01" target="zonenpcspawn:a_6187_4" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_Juria_0005_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0005_act_01 finished -freeplay6187" type="debug-trace" />
+        <reaction seq="CH_SB_JinSeoYeon_0015_path_despawn" target="zonenpcspawn:a_6187_3" type="set-npc-act" />
+        <reaction seq="CH_SB_Juria_0005_path_01" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_SB_GonRyun_0015_ai">
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_pathway1_default" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0015_ai pathway1 -freeplay6187" type="debug-trace" />
+        <reaction from="event:act-finished:npc" social="CH_SB_GonRyun_0015_soc_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0015_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0015_act_01 finished -freeplay6187" type="debug-trace" />
+        <reaction seq="CH_SB_Juria_0005_act_01" target="zonenpcspawn:a_6187_2" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0015_path_02" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+
+  <script alias="zone_GW_GonLyunPa_JeonGak_sub4_1_ai">
+    
+    <quest-decision alias="qd_1620_97">
+      <reaction-set>
+        <reaction text="qd_1620_97 enter-zone -freeplay6188" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6188_3" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  <script alias="6188_foot_1_ai">
+    
+    <quest-decision alias="qd_1620_8">
+      <reaction-set>
+        <reaction text="qd_1620_8 talked -freeplay6188" type="debug-trace" />
+        <reaction seq="CH_SB_BackCheongPa_0001_despawn" target="zonenpcspawn:a_6188_3" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  
+  <script alias="zone_GW_GonLyunPa_JeonGak_sub4_2_ai">
+    
+    <quest-decision alias="qd_1620_7">
+      <reaction-set>
+        <reaction text="qd_1620_7 enter-zone -freeplay6189" type="debug-trace" />
+        <reaction brain="citizen" spawn-1="a_6189_5" spawn-2="a_6189_6" spawn-3="a_6189_7" spawn-4="a_6189_8" spawn-delay="0" type="spawn-npc" />
+        <reaction seq="CH_SB_SonGwon_0004_act_00" target="zonenpcspawn:a_6189_2" type="set-npc-act" />
+        <reaction object="case:enter-zone:pc" reg="1" target="zonenpcsquad:s_6189_4" type="set-party-object" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_96">
+      <reaction-set>
+        <reaction text="qd_1620_96 enter-zone -freeplay6189" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6189_2" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_SonGwon_0004_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0004_ai start -freeplay6189" type="debug-trace" />
+        <reaction amount="10000" opponent="event:npc-combat-start:npc" target="zonenpcspawn:a_6189_4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0004_ai attacked -freeplay6189" type="debug-trace" />
+        <reaction special-id="2" target="event:attacked:defender" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_SonGwon_0004_act_00" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0004_act_00 finished -freeplay6189" type="debug-trace" />
+        <reaction seq="MH_SB_JinSeoYun_0001_act_01" target="zonenpcspawn:a_6189_4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_SonGwon_0004_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0004_act_01 finished -freeplay6189" type="debug-trace" />
+        <reaction target="zonenpcspawn:a_6189_2" type="dispel-debuff" />
+        <reaction target="zonenpcspawn:a_6189_3" type="dispel-debuff" />
+        <reaction target="zonenpcspawn:a_6189_2" type="dispel-buff" />
+        <reaction target="zonenpcspawn:a_6189_3" type="dispel-buff" />
+        <reaction effect="Quest_Epic7_Warlock_Spell_AbsoluteDefense_Lv1_buff_dispel" target="zonenpcspawn:a_6189_2" type="invoke-effect" />
+        <reaction effect="Quest_Epic7_Warlock_Spell_AbsoluteDefense_Lv1_buff_dispel" target="zonenpcspawn:a_6189_3" type="invoke-effect" />
+        <reaction seq="CH_SB_Juria_0006_act_01" target="zonenpcspawn:a_6189_3" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_SB_Juria_0006_ai">
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_Juria_0006_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_Juria_0006_act_01 finished -freeplay6189" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6189_4" type="set-npc-brain" />
+        <reaction attack-target="zonenpcspawn:a_6189_4" attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_6189_2" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="MH_SB_JinSeoYun_0001_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SB_JinSeoYun_0001_ai start -freeplay6189" type="debug-trace" />
+        <reaction from="event:npc-combat-start:npc" social="MH_SB_JinSeoYun_0001_soc_03" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_SB_JinSeoYun_0001_act_01" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SB_JinSeoYun_0001_act_01 finished -freeplay6189" type="debug-trace" />
+        <reaction target="zonenpcspawn:a_6189_5" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6189_6" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6189_7" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6189_8" type="set-undying" undying="n" />
+        <reaction seq="MH_SB_JinSeoYun_0001_act_02" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction spawn-1="a_6189_10" spawn-delay="2500" type="spawn-npc" />
+        <reaction attackable="y" brain="monster" hate-on="n" npc="zonenpcspawn:a_6189_5" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="n" npc="zonenpcspawn:a_6189_6" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="n" npc="zonenpcspawn:a_6189_7" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="n" npc="zonenpcspawn:a_6189_8" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_SB_JinSeoYun_0001_act_02" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SB_JinSeoYun_0001_act_02 finished -freeplay6189" type="debug-trace" />
+        <reaction effect="Quest_Epic7_Warlock_Spell_AbsoluteDefense_Lv1_buff" target="zonenpcspawn:a_6189_2" type="invoke-effect" />
+        <reaction effect="Quest_Epic7_Warlock_Spell_AbsoluteDefense_Lv1_buff" target="zonenpcspawn:a_6189_3" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SB_JinSeoYun_0001_act_01 attacked -freeplay6189" type="debug-trace" />
+        <reaction spawn-1="a_6189_9" spawn-target="zonenpcsquad:s_6189_4:reg-1" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_Dummy_0041_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_SB_Dummy_0041_ai spawn -freeplay6189" type="debug-trace" />
+        <reaction seq="CH_SB_SonGwon_0004_act_01" target="zonenpcspawn:a_6189_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CE_SB_Dummy_0001_ai">
+    
+    <quest-decision alias="qd_1620_5">
+      <reaction-set>
+        <reaction text="qd_1620_5 approach -freeplay6189" type="debug-trace" />
+        <reaction pc-spawn="1" phase-zone-leave-cinematic-2="E_0725" phase-zone-pc-spawn-2="1" target="case:approached:pc" type="warp" zone="zone_GW_BimilDongGul_D" />
+        <reaction effect-type="Modify-Ability-137" target="case:approached:pc" type="dispel-by-type" />
+        <reaction brain="citizen" npc="zonenpcspawn:a_6189_2" type="set-npc-brain" />
+        <reaction brain="citizen" npc="zonenpcspawn:a_6189_4" type="set-npc-brain" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  
+  <script alias="zone_GW_GonLyunPa_Juria_sub4_2_ai">
+    
+    <quest-decision alias="qd_1620_14">
+      <reaction-set>
+        <reaction text="qd_1620_14 enter-zone -freeplay6185" type="debug-trace" />
+        
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_13">
+      <reaction-set>
+        <reaction text="qd_1620_13 complete -freeplay6185" type="debug-trace" />
+        <reaction brain="monster" npc="zonenpcspawn:a_6185_8" type="set-npc-brain" />
+        <reaction seq="CH_SB_SonGwon_0007_act_01" target="zonenpcspawn:a_6185_8" type="set-npc-act" />
+        <reaction target="zonenpcspawn:a_6185_42_1" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_43_1" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_44_1" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_45_1" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_46_1" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_47_1" type="set-undying" undying="n" />
+        <reaction target2="zonenpcspawn:a_6185_42_1" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_43_1" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_44_1" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_45_1" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_46_1" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_47_1" type="kill" />
+        <reaction target-1="zonenpcspawn:a_6185_18" target-2="zonenpcspawn:a_6185_16" type="despawn-npc" />
+        <reaction spawn-1="a_6185_22" spawn-2="a_6185_20" spawn-delay="0" type="spawn-npc" />
+        <reaction brain="monster" npc="zonenpcspawn:a_6185_23" type="set-npc-brain" />
+        <reaction brain="monster" npc="zonenpcspawn:a_6185_24" type="set-npc-brain" />
+        <reaction brain="monster" npc="zonenpcspawn:a_6185_23_1" type="set-npc-brain" />
+        <reaction brain="monster" npc="zonenpcspawn:a_6185_24_1" type="set-npc-brain" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_23" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_24" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_23_1" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_24_1" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_18">
+      <reaction-set>
+        <reaction text="qd_1620_18 complete -freeplay6185" type="debug-trace" />
+        <reaction target="zonenpcspawn:a_6185_42" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_43" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_44" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_45" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_46" type="set-undying" undying="n" />
+        <reaction target="zonenpcspawn:a_6185_47" type="set-undying" undying="n" />
+        <reaction target2="zonenpcspawn:a_6185_42" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_43" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_44" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_45" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_46" type="kill" />
+        <reaction target2="zonenpcspawn:a_6185_47" type="kill" />
+        <reaction target-1="zonenpcspawn:a_6185_17" target-2="zonenpcspawn:a_6185_15" type="despawn-npc" />
+        <reaction spawn-1="a_6185_21" spawn-2="a_6185_19" spawn-delay="0" type="spawn-npc" />
+        <reaction seq="CH_SB_GonRyun_0029_path_02" target="zonenpcspawn:a_6185_23" type="set-npc-act" />
+        <reaction seq="CH_SB_GonRyun_0044_path_02" target="zonenpcspawn:a_6185_24" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_53">
+      <reaction-set>
+        <reaction text="qd_1620_53 enter-zone -freeplay6185" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_2" target-2="zonenpcspawn:a_6185_3" target-3="zonenpcspawn:a_6185_4" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_5" target-2="zonenpcspawn:a_6185_6" target-3="zonenpcspawn:a_6185_7" type="despawn-npc" />
+        <reaction brain="citizen" spawn-1="a_6185_5_1" spawn-2="a_6185_6_1" spawn-3="a_6185_7_1" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_42" target-2="zonenpcspawn:a_6185_43" target-3="zonenpcspawn:a_6185_44" target-4="zonenpcspawn:a_6185_45" target-5="zonenpcspawn:a_6185_46" target-6="zonenpcspawn:a_6185_47" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_23" target-2="zonenpcspawn:a_6185_24" target-3="zonenpcspawn:a_6185_23_1" target-4="zonenpcspawn:a_6185_24_1" type="despawn-npc" />
+        <reaction brain="citizen" spawn-1="a_6185_23_1" spawn-2="a_6185_24_1" spawn-delay="0" type="spawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_17" target-2="zonenpcspawn:a_6185_15" type="despawn-npc" />
+        <reaction spawn-1="a_6185_21" spawn-2="a_6185_19" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_54">
+      <reaction-set>
+        <reaction text="qd_1620_54 enter-zone -freeplay6185" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_2" target-2="zonenpcspawn:a_6185_3" target-3="zonenpcspawn:a_6185_4" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_5" target-2="zonenpcspawn:a_6185_6" target-3="zonenpcspawn:a_6185_7" target-4="zonenpcspawn:a_6185_5_1" target-5="zonenpcspawn:a_6185_6_1" target-6="zonenpcspawn:a_6185_7_1" type="despawn-npc" />
+        <reaction brain="citizen" spawn-1="a_6185_5_1" spawn-2="a_6185_6_1" spawn-3="a_6185_7_1" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_42" target-2="zonenpcspawn:a_6185_43" target-3="zonenpcspawn:a_6185_44" target-4="zonenpcspawn:a_6185_45" target-5="zonenpcspawn:a_6185_46" target-6="zonenpcspawn:a_6185_47" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_42_1" target-2="zonenpcspawn:a_6185_43_1" target-3="zonenpcspawn:a_6185_44_1" target-4="zonenpcspawn:a_6185_45_1" target-5="zonenpcspawn:a_6185_46_1" target-6="zonenpcspawn:a_6185_47_1" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_9" target-2="zonenpcspawn:a_6185_10" target-3="zonenpcspawn:a_6185_11" type="despawn-npc" />
+        <reaction spawn-1="a_6185_9" spawn-2="a_6185_10" spawn-3="a_6185_11" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_12" target-2="zonenpcspawn:a_6185_13" target-3="zonenpcspawn:a_6185_14" type="despawn-npc" />
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_6185_GonLyunMaRyeong_01_spawn" type="set-env-state" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_23" target-2="zonenpcspawn:a_6185_24" target-3="zonenpcspawn:a_6185_23_1" target-4="zonenpcspawn:a_6185_24_1" type="despawn-npc" />
+        <reaction brain="citizen" spawn-1="a_6185_23_1" spawn-2="a_6185_24_1" spawn-delay="0" type="spawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_17" target-2="zonenpcspawn:a_6185_15" target-3="zonenpcspawn:a_6185_21" target-4="zonenpcspawn:a_6185_19" type="despawn-npc" />
+        <reaction spawn-1="a_6185_21" spawn-2="a_6185_19" spawn-delay="0" type="spawn-npc" />
+        
+        <reaction spawn-1="a_6185_42_1" spawn-2="a_6185_43_1" spawn-3="a_6185_44_1" spawn-4="a_6185_45_1" spawn-5="a_6185_46_1" spawn-6="a_6185_47_1" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_55">
+      <reaction-set>
+        <reaction text="qd_1620_55 enter-zone -freeplay6185" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_2" target-2="zonenpcspawn:a_6185_3" target-3="zonenpcspawn:a_6185_4" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_5" target-2="zonenpcspawn:a_6185_6" target-3="zonenpcspawn:a_6185_7" target-4="zonenpcspawn:a_6185_5_1" target-5="zonenpcspawn:a_6185_6_1" target-6="zonenpcspawn:a_6185_7_1" type="despawn-npc" />
+        <reaction brain="citizen" spawn-1="a_6185_5_1" spawn-2="a_6185_6_1" spawn-3="a_6185_7_1" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_42" target-2="zonenpcspawn:a_6185_43" target-3="zonenpcspawn:a_6185_44" target-4="zonenpcspawn:a_6185_45" target-5="zonenpcspawn:a_6185_46" target-6="zonenpcspawn:a_6185_47" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_42_1" target-2="zonenpcspawn:a_6185_43_1" target-3="zonenpcspawn:a_6185_44_1" target-4="zonenpcspawn:a_6185_45_1" target-5="zonenpcspawn:a_6185_46_1" target-6="zonenpcspawn:a_6185_47_1" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_9" target-2="zonenpcspawn:a_6185_10" target-3="zonenpcspawn:a_6185_11" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_12" target-2="zonenpcspawn:a_6185_13" target-3="zonenpcspawn:a_6185_14" target-4="zonenpcspawn:a_6185_12_1" target-5="zonenpcspawn:a_6185_13_1" target-6="zonenpcspawn:a_6185_14_1" type="despawn-npc" />
+        <reaction spawn-1="a_6185_12_1" spawn-2="a_6185_13_1" spawn-3="a_6185_14_1" type="spawn-npc" />
+        
+        <reaction state2="empty" target2="zoneenv2spawn:e_chest_6185_GonLyunMaRyeong_01_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6185_GonLyunMaRyeong_02_spawn" type="set-env-enable" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_23" target-2="zonenpcspawn:a_6185_24" target-3="zonenpcspawn:a_6185_23_1" target-4="zonenpcspawn:a_6185_24_1" type="despawn-npc" />
+        <reaction brain="citizen" spawn-1="a_6185_23_1" spawn-2="a_6185_24_1" spawn-delay="0" type="spawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_17" target-2="zonenpcspawn:a_6185_15" target-3="zonenpcspawn:a_6185_21" target-4="zonenpcspawn:a_6185_19" type="despawn-npc" />
+        <reaction spawn-1="a_6185_21" spawn-2="a_6185_19" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_56">
+      <reaction-set>
+        <reaction text="qd_1620_56 enter-zone -freeplay6185" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_2" target-2="zonenpcspawn:a_6185_3" target-3="zonenpcspawn:a_6185_4" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_5" target-2="zonenpcspawn:a_6185_6" target-3="zonenpcspawn:a_6185_7" target-4="zonenpcspawn:a_6185_5_1" target-5="zonenpcspawn:a_6185_6_1" target-6="zonenpcspawn:a_6185_7_1" type="despawn-npc" />
+        <reaction brain="monster" spawn-1="a_6185_5_1" spawn-2="a_6185_6_1" spawn-3="a_6185_7_1" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_42" target-2="zonenpcspawn:a_6185_43" target-3="zonenpcspawn:a_6185_44" target-4="zonenpcspawn:a_6185_45" target-5="zonenpcspawn:a_6185_46" target-6="zonenpcspawn:a_6185_47" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_42_1" target-2="zonenpcspawn:a_6185_43_1" target-3="zonenpcspawn:a_6185_44_1" target-4="zonenpcspawn:a_6185_45_1" target-5="zonenpcspawn:a_6185_46_1" target-6="zonenpcspawn:a_6185_47_1" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_9" target-2="zonenpcspawn:a_6185_10" target-3="zonenpcspawn:a_6185_11" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_12" target-2="zonenpcspawn:a_6185_13" target-3="zonenpcspawn:a_6185_14" target-4="zonenpcspawn:a_6185_12_1" target-5="zonenpcspawn:a_6185_13_1" target-6="zonenpcspawn:a_6185_14_1" type="despawn-npc" />
+        <reaction brain="monster" spawn-1="a_6185_12_1" spawn-2="a_6185_13_1" spawn-3="a_6185_14_1" spawn-delay="0" type="spawn-npc" />
+        
+        <reaction state2="empty" target2="zoneenv2spawn:e_chest_6185_GonLyunMaRyeong_01_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_6185_GonLyunMaRyeong_02_spawn" type="set-env-enable" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_23" target-2="zonenpcspawn:a_6185_24" target-3="zonenpcspawn:a_6185_23_1" target-4="zonenpcspawn:a_6185_24_1" type="despawn-npc" />
+        <reaction brain="monster" spawn-1="a_6185_23_1" spawn-2="a_6185_24_1" spawn-delay="0" type="spawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_17" target-2="zonenpcspawn:a_6185_15" target-3="zonenpcspawn:a_6185_21" target-4="zonenpcspawn:a_6185_19" type="despawn-npc" />
+        <reaction spawn-1="a_6185_21" spawn-2="a_6185_19" spawn-delay="0" type="spawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_18" target-2="zonenpcspawn:a_6185_16" target-3="zonenpcspawn:a_6185_22" target-4="zonenpcspawn:a_6185_20" type="despawn-npc" />
+        <reaction spawn-1="a_6185_22" spawn-2="a_6185_20" spawn-delay="0" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_8" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_57">
+      <reaction-set>
+        <reaction text="qd_1620_57 enter-zone -freeplay6185" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_2" target-2="zonenpcspawn:a_6185_3" target-3="zonenpcspawn:a_6185_4" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_42" target-2="zonenpcspawn:a_6185_43" target-3="zonenpcspawn:a_6185_44" target-4="zonenpcspawn:a_6185_45" target-5="zonenpcspawn:a_6185_46" target-6="zonenpcspawn:a_6185_47" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_42_1" target-2="zonenpcspawn:a_6185_43_1" target-3="zonenpcspawn:a_6185_44_1" target-4="zonenpcspawn:a_6185_45_1" target-5="zonenpcspawn:a_6185_46_1" target-6="zonenpcspawn:a_6185_47_1" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_9" target-2="zonenpcspawn:a_6185_10" target-3="zonenpcspawn:a_6185_11" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_12" target-2="zonenpcspawn:a_6185_13" target-3="zonenpcspawn:a_6185_14" type="despawn-npc" />
+        <reaction spawn-1="a_6185_12" spawn-2="a_6185_13" spawn-3="a_6185_14" type="spawn-npc" />
+        
+        <reaction state2="empty" target2="zoneenv2spawn:e_chest_6185_GonLyunMaRyeong_01_spawn" type="set-env-state" />
+        <reaction enable="n" target2="zoneenv2spawn:e_chest_6185_GonLyunMaRyeong_02_spawn" type="set-env-enable" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_23" target-2="zonenpcspawn:a_6185_24" target-3="zonenpcspawn:a_6185_23_1" target-4="zonenpcspawn:a_6185_24_1" type="despawn-npc" />
+        <reaction brain="citizen" spawn-1="a_6185_23_1" spawn-2="a_6185_24_1" type="spawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_17" target-2="zonenpcspawn:a_6185_15" target-3="zonenpcspawn:a_6185_21" target-4="zonenpcspawn:a_6185_19" type="despawn-npc" />
+        <reaction spawn-1="a_6185_21" spawn-2="a_6185_19" spawn-delay="0" type="spawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6185_18" target-2="zonenpcspawn:a_6185_16" target-3="zonenpcspawn:a_6185_22" target-4="zonenpcspawn:a_6185_20" type="despawn-npc" />
+        <reaction spawn-1="a_6185_22" spawn-2="a_6185_20" spawn-delay="0" type="spawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_6185_8" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_SonGwon_0007_ai">
+    
+    <quest-decision alias="qd_1620_19">
+      <reaction-set>
+        <reaction text="qd_1620_19 talked -freeplay6185" type="debug-trace" />
+        <reaction spawn-1="a_6185_42_1" spawn-2="a_6185_43_1" spawn-3="a_6185_44_1" spawn-4="a_6185_45_1" spawn-5="a_6185_46_1" spawn-6="a_6185_47_1" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_9">
+      <reaction-set>
+        <reaction text="qd_1620_9 talked -freeplay6185" type="debug-trace" />
+        <reaction seq="act_pathway1_despawn" target="case:talked:npc" type="set-npc-act" />
+        
+        
+      </reaction-set>
+    </quest-decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_SonGwon_0007_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0007_act_01 finished -freeplay6185" type="debug-trace" />
+        <reaction state2="empty" target2="zoneenv2spawn:e_chest_6185_GonLyunMaRyeong_01_spawn" type="set-env-state" />
+        <reaction seq="CH_SB_SonGwon_0007_act_02" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_SonGwon_0007_act_02" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_SonGwon_0007_act_02 finished -freeplay6185" type="debug-trace" />
+        <reaction brain="monster" npc="a_6185_12" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_13" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_14" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_19" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_20" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_21" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_22" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_23" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_24" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_5_1" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_6_1" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_7_1" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_23_1" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_24_1" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_12_1" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_13_1" type="set-npc-brain" />
+        <reaction brain="monster" npc="a_6185_14_1" type="set-npc-brain" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_12" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_13" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_14" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_19" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_20" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_21" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_22" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_23" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_24" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_5_1" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_6_1" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_7_1" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_23_1" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_24_1" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_12_1" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_13_1" type="set-npc-act" />
+        <reaction seq="peace_fix_default" target="zonenpcspawn:a_6185_14_1" type="set-npc-act" />
+        <reaction brain="citizen" npc="event:act-finished:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="e_chest_6185_GonLyunMaRyeong_01_ai">
+    <decision event="env-enable-change">
+      <filter-set>
+        <filter op="eq" subject2="event:env-enable-change:enable" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="e_chest_6185_GonLyunMaRyeong_01_ai enable -freeplay6185" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_SB_GonRyun_0022_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_5_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-brain" value="citizen" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0022_path_01" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0022_path_01 finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0023_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_6_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-brain" value="citizen" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="10">
+        <reaction from="event:attack:attacker" social="1" type="play-indexed-social" />
+      </reaction-set>
+      <reaction-set probability="90" />
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0023_path_01" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0023_path_01 finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0026_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_7_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-brain" value="citizen" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="10">
+        <reaction from="event:attack:attacker" social="1" type="play-indexed-social" />
+      </reaction-set>
+      <reaction-set probability="90" />
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0026_path_01" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0026_path_01 finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0029_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_23_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_GonRyun_0029_path_02" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="10">
+        <reaction from="event:attack:attacker" social="1" type="play-indexed-social" />
+      </reaction-set>
+      <reaction-set probability="90" />
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0029_path_01" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0029_path_01 finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0029_path_02" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0029_path_02 finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0044_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_24_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_GonRyun_0044_path_02" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="10">
+        <reaction from="event:attack:attacker" social="1" type="play-indexed-social" />
+      </reaction-set>
+      <reaction-set probability="90" />
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0044_path_01" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0044_path_01 finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SB_GonRyun_0044_path_02" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0044_path_02 finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_WarlockSummoned_0002_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction immediately="y" target="event:attacked:defender" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6185_42" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="a_6185_42 killed -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6185_23" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_0029_path_01" target="zonenpcspawn:a_6185_23" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6185_45" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="a_6185_45 killed -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6185_24" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_0044_path_01" target="zonenpcspawn:a_6185_24" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_WarlockSummoned_0003_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction immediately="y" target="event:attacked:defender" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="10">
+        <reaction from="event:attack:attacker" social="1" type="play-indexed-social" />
+      </reaction-set>
+      <reaction-set probability="90" />
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6185_46" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="a_6185_46 killed -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6185_5" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_0022_path_01" target="zonenpcspawn:a_6185_5" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6185_43" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="a_6185_43 killed -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6185_6" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_0023_path_01" target="zonenpcspawn:a_6185_6" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_SB_WarlockSummoned_0004_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction immediately="y" target="event:attacked:defender" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter spawn="a_6185_44" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="a_6185_46 killed -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6185_7" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_0026_path_01" target="zonenpcspawn:a_6185_7" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0035_ai">
+    
+    <quest-decision alias="qd_1620_10">
+      <reaction-set>
+        <reaction text="qd_1620_10 npc-manipulate -freeplay6185" type="debug-trace" />
+        <reaction target-1="case:npc-manipulate:npc" type="despawn-npc" />
+        <reaction spawn-1="a_6185_12" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0024_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_12_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-brain" value="citizen" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_12" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="act_pathway1_default" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_pathway1_default" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0024_ai path01-finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0036_ai">
+    
+    <quest-decision alias="qd_1620_11">
+      <reaction-set>
+        <reaction text="qd_1620_11 npc-manipulate -freeplay6185" type="debug-trace" />
+        <reaction target-1="case:npc-manipulate:npc" type="despawn-npc" />
+        <reaction spawn-1="a_6185_13" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0025_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_13_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-brain" value="citizen" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_13" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="act_pathway1_default" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_pathway1_default" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0025_ai path01-finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0037_ai">
+    
+    <quest-decision alias="qd_1620_12">
+      <reaction-set>
+        <reaction text="qd_1620_12 npc-manipulate -freeplay6185" type="debug-trace" />
+        <reaction target-1="case:npc-manipulate:npc" type="despawn-npc" />
+        <reaction spawn-1="a_6185_14" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0027_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_14_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-brain" value="citizen" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6185_14" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="act_pathway1_default" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="act_pathway1_default" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SB_GonRyun_0027_ai path01-finished -freeplay6185" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction seq="CH_SB_GonRyun_revival" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0028_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0030_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0031_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SB_GonRyun_0032_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  <script alias="zone_GW_BimilDongGul_Juria_sub5_ai">
+    
+    <quest-decision alias="qd_1621_2">
+      <reaction-set>
+        <reaction text="qd_1621_2 enter-zone -freeplay6139" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_6139_2" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1620_58">
+      <reaction-set>
+        <reaction text="qd_1620_58 enter-zone -freeplay6139" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_6139_2" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SB_JinSoA_0006_ai">
+    
+    <quest-decision alias="qd_1620_6">
+      <reaction-set>
+        <reaction text="qd_1620_6 talked -freeplay6139" type="debug-trace" />
+        <reaction seq="act_pathway1_despawn" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+</table>

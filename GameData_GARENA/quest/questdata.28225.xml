@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.28225.xml-->
+	<quest alias="sq_28225" category="tendency-simple" id="28225" max-repeat="-1" save-type="except-completion-and-logout-save">
+		<mission-step id="1">
+			<mission id="1" required-attraction="tendency-field:CheonSangBunJi" tendency-id="3" variation-required-field-play-point-1="0" variation-required-field-play-point-2="3000" variation-required-field-play-point-3="5000" variation-required-field-play-point-4="8000" variation-required-field-play-point-5="10000" variation-required-field-play-point-6="13000" variation-required-field-play-point-7="17000" variation-required-field-play-point-8="20000" variation-required-register-value-1="10" variation-required-register-value-2="12" variation-required-register-value-3="15" variation-required-register-value-4="17" variation-required-register-value-5="20" variation-required-register-value-6="22" variation-required-register-value-7="25" variation-required-register-value-8="30" variation-reward-field-play-point-1="94" variation-reward-field-play-point-2="113" variation-reward-field-play-point-3="141" variation-reward-field-play-point-4="160" variation-reward-field-play-point-5="188" variation-reward-field-play-point-6="207" variation-reward-field-play-point-7="235" variation-reward-field-play-point-8="282" variation-reward-tendency-score-1="94" variation-reward-tendency-score-2="113" variation-reward-tendency-score-3="141" variation-reward-tendency-score-4="160" variation-reward-tendency-score-5="188" variation-reward-tendency-score-6="207" variation-reward-tendency-score-7="235" variation-reward-tendency-score-8="282">
+				<case multi-object-1="npc:ME_WC_RuneMechaYacha_0005" multi-object-2="npc:ME_WC_RuneMechaYacha3_0005" party-broadcast="y" progress-mission="y" type="loot" />
+			</mission>
+		</mission-step>
+	</quest>
+</table>

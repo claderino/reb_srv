@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.270.xml-->
+  <quest alias="q_epic_270" broadcast-category="field" category="epic" completed-list="n" id="270" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" progress-mission="y" quest-decision="qd_270_2" type="talk" />
+        <case object="zone:Zone_JoJangWon_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_270_1" type="enter-zone" />
+        <case object="npc:CH_CT_JeGukGun_0026" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_SungBae_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BokUn_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BokUn_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_BokUn_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CE_CT_ThiefCat_0010" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="2" required-register-value="1">
+        <case object2="zoneenv2:5171_footswitch_01" party-broadcast="n" progress-mission="y" quest-decision="qd_270_3" type="env-entered" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="3" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="4" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="4" required-register-value="1">
+        <case gadget-required="dont-care" object2="zoneenv2:e_chest_latchout_01" party-broadcast="n" progress-mission="y" quest-decision="qd_270_4" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" progress-mission="reaction-only" type="talk" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="5" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="5" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" progress-mission="y" quest-decision="qd_270_10" type="talk" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="6" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="6" required-register-value="1">
+        <case drop-gadget="n" gadget="Q_Body_0001" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_bigstake_01" party-broadcast="n" progress-mission="y" quest-decision="qd_270_5" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" progress-mission="reaction-only" type="talk" />
+        <case drop-gadget="y" gadget-required="dont-care" object="npc:CH_CT_Guard_0003" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case gadget-required="dont-care" object="npc:MH_CT_JoJangWon_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="7" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_270_6" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="8" required-register-value="2">
+        <case object2="zoneenv2:e_chest_lodhing_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" progress-mission="reaction-only" type="talk" />
+        <case object2="zoneenv2:e_chest_lodhing_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="9" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="10" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="10" required-register-value="1">
+        <case object2="zoneenv2:e_pot_bigflame_01" party-broadcast="n" progress-mission="y" quest-decision="qd_270_7" type="killed" />
+        <case drop-gadget="y" gadget="Q_Rifle_0006" gadget-required="not-a" object2="npc:ME_CT_RewardBox_0009" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="11" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="11" required-register-value="1">
+        <case object2="zoneenv2:e_gate_bigbarngate_01" party-broadcast="n" progress-mission="y" quest-decision="qd_270_8" type="manipulate" />
+        <case object="npc:MH_CT_JoJangWon_0004" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="12" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="12" required-register-value="1" reward-1="270_final_set1">
+        <case object="npc:CH_CT_JeGukGun_0027" party-broadcast="n" progress-mission="y" quest-decision="qd_270_9" type="talk" />
+        <case object="npc:MH_CT_JoJangWon_0004" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_270_10" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_271" />
+    </completion>
+    <transit id="1" zone="Zone_JoJangWon">
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

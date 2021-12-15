@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.280.xml-->
+  <quest alias="q_epic_280" broadcast-category="field" category="epic" completed-list="n" id="280" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_CT_PungEmpire_0030" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="zone:Zone_ChunMyungJiWii_p1" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CH_CT_PungEmpire_0030" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_CT_PungEmpire_0031" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" rollback="none">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_CT_Slave_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_Slave_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_PungEmpire_0031" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" rollback="none" time-limit-type="none">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_CT_DoDanHa_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_PungEmpire_0032" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_GoBong_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" rollback="none">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_CT_PungEmpire_0060" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" rollback="none">
+      <mission id="7" required-register-value="1" reward-1="280_final_set1">
+        <case object="npc:CH_CT_JeGukGun_0052" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0257" party-broadcast="y" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0256" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_PungEmpire_0060" party-broadcast="y" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="Zone_ChunMyungJiWii">
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_281" />
+    </completion>
+  </quest>
+</table>

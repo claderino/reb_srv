@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.871.xml-->
+  <quest alias="q_sub_871" broadcast-category="field" category="normal" district-1="deasamak" id="871" max-repeat="1" save-type="all">
+    <acquisition level="34" preceding-quest-1="q_epic_534" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ce_bonemask_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="10">
+        <case object="npc:me_bonemaskbiga_001" object2="npc:me_bonemaskbiga_001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:me_bonemask_0005" object2="npc:me_bonemask_0005" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="871_final_set1">
+        <case object="npc:ce_bonemask_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

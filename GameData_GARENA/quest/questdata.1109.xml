@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1109.xml-->
+  <quest alias="q_sub_1109" broadcast-category="field" category="normal" district-1="suwal" id="1109" max-repeat="1" save-type="all">
+    <acquisition level="37" preceding-quest-1="q_epic_910" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_pigfarm_0012" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="5">
+        <case object="npc:mh_chunggak_0196" object2="npc:mh_chunggak_0196" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_chunggak_0195" object2="npc:mh_chunggak_0195" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="2" required-register-value="5">
+        <case object="npc:mh_chunggak_0194" object2="npc:mh_chunggak_0194" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_chunggak_0193" object2="npc:mh_chunggak_0193" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="3" required-register-value="5">
+        <case object="npc:me_fishmanbcannon_0004" object2="npc:me_fishmanbcannon_0004" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="4" required-register-value="1" reward-1="1109_final_set1">
+        <case object="npc:ch_pigfarm_0023" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

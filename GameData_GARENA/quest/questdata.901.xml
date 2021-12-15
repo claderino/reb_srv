@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.901.xml-->
+  <quest alias="q_epic_901" broadcast-category="field" category="epic" completed-list="y" district-1="suwal" id="901" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_teachershaman_0002" progress-mission="y" quest-decision="qd_901_2" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="36" />
+          </filter-set>
+        </case>
+        <case object="zone:zone_muchon_sul_2" progress-mission="reaction-only" quest-decision="qd_901_1" type="enter-zone" />
+        <case object="npc:ch_jinsoa_0015" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:ch_teachershaman_0002" party-broadcast="n" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="35" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_yeonglin_0033" progress-mission="y" quest-decision="qd_901_4" type="talk" />
+        <case object="zone:zone_youngrinbong_5" progress-mission="reaction-only" quest-decision="qd_901_3" type="enter-zone" />
+        <case object="zone:zone_muchon_sul_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_901_1" type="enter-zone" />
+        <case object="npc:ch_teachershaman_0002" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_901_2" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone">
+      <mission id="3" required-register-value="2">
+        <case object="npc:MH_JeGukGun_0141" object2="npc:MH_JeGukGun_0141" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_jegukgun_0142" object2="npc:mh_jegukgun_0142" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:ch_yeonglin_0055" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" />
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_yeonglin_0055" progress-mission="y" quest-decision="qd_901_5" type="talk" />
+        <case object="zone:zone_youngrinbong_5" progress-mission="reaction-only" quest-decision="qd_901_40" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="2">
+        <case object="npc:mh_jegukgun_0068" object2="npc:mh_jegukgun_0068" progress-mission="y" type="killed" />
+        <case object="npc:mh_jegukgun_0067" object2="npc:mh_jegukgun_0067" progress-mission="y" type="killed" />
+        <case object="zone:zone_youngrinbong_5" progress-mission="reaction-only" quest-decision="qd_901_6" type="enter-zone" />
+        <case object="npc:ch_yeonglin_0055" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case convoy="epic_901_con" object="npc:ch_yeonglin_0057" progress-mission="y" quest-decision="qd_901_41" type="talk" />
+        <case object="zone:zone_youngrinchn__night" progress-mission="reaction-only" quest-decision="qd_901_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" rollback="leave-world">
+      <mission id="7" required-register-value="1">
+        <case convoy="epic_901_con" object="zone:zone_youngrinchn__night" progress-mission="y" type="convoy-arrived" />
+      </mission>
+      <mission-step-fail rollback-step-id="6">
+        <case convoy="epic_901_con" object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:ch_yeonglin_0056" progress-mission="y" quest-decision="qd_901_9" type="talk" />
+        <case object="zone:zone_youngrinchn__night" progress-mission="reaction-only" quest-decision="qd_901_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="9" quest-decision="qd_901_22" zone-1="zone_youngrinchn__night">
+      <mission id="9" required-register-value="1">
+        <case object="zoneenv:4419_footswitch_3" object2="zoneenv2:4419_footswitch_3" progress-mission="y" type="env-entered" />
+        <case object="zone:zone_youngrinchn__night" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_901_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case convoy="epic_901_con_3" object="npc:ch_yeonglin_0036" progress-mission="y" type="talk" />
+        <case object="zone:zone_youngrinchn__night" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_901_11" type="enter-zone" />
+        <case drop-gadget="y" gadget-required="empty" object="zoneenv:e_chest_waterbucket_01" object2="zoneenv2:e_chest_waterbucket_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="Q_WaterPotA_3" gadget-required="carry-and-remove" object="zoneenv:e_pot_ricestraw_01" object2="zoneenv2:e_pot_ricestraw_01" party-broadcast="y" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_902" />
+    </completion>
+    <mission-step id="11" rollback="leave-world">
+      <mission id="11" required-register-value="1">
+        <case convoy="epic_901_con_3" gadget-required="dont-care" object="zone:zone_youngrinchn__night" party-broadcast="n" progress-mission="y" type="convoy-arrived" />
+        <case object="npc:ch_yeonglin_0009" party-broadcast="n" type="approach" />
+        <case object="npc:ch_yeonglin_0021" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail rollback-step-id="10">
+        <case convoy="epic_901_con_3" object="zone:zone_youngrinchn__night" party-broadcast="n" progress-mission="reaction-only" type="convoy-failed" />
+      </mission-step-fail>
+    </mission-step>
+    <mission-step id="12">
+      <mission id="12" required-register-value="1">
+        <case object="npc:ch_yeonglin_0009" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_youngrinchn__night" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_901_23" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="13" quest-decision="qd_901_24" zone-1="zone_youngrinchn__night">
+      <mission id="13" required-register-value="1">
+        <case object="npc:CH_YeongLin_0072" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_youngrinchn__night" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_901_23" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="14">
+      <mission id="14" required-register-value="1" reward-1="901_final_set1">
+        <case object="npc:CH_YeongLin_0073" party-broadcast="n" progress-mission="y" quest-decision="qd_901_28" type="talk" />
+        <case object="zone:zone_youngrinchn__night" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_901_24" type="enter-zone" />
+        <case object="npc:ch_yeonglin_0009" party-broadcast="n" type="approach" />
+        <case object="npc:ch_yeonglin_0021" party-broadcast="n" type="approach" />
+        <case object="npc:ch_yeonglin_0023" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="3" zone="zone_YoungRinBong_6">
+      <destination mission-step-id="11" zone-index="5" />
+      <destination mission-step-id="10" zone-index="5" />
+      <destination mission-step-id="9" zone-index="5" />
+      <destination mission-step-id="8" zone-index="5" />
+      <destination mission-step-id="7" zone-index="5" />
+      <destination mission-step-id="6" zone-index="5" />
+      <destination mission-step-id="5" zone-index="5" />
+      <destination mission-step-id="4" zone-index="5" />
+      <destination mission-step-id="3" zone-index="5" />
+      <destination mission-step-id="2" zone-index="5" />
+      <destination mission-step-id="12" zone-index="5" />
+      <destination mission-step-id="13" zone-index="5" />
+      <destination mission-step-id="14" zone-index="5" />
+    </transit>
+    <transit id="2" zone="zone_muchon_sul_1">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+    </transit>
+    <transit id="1" zone="zone_youngrinchn">
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="13" zone-index="1" />
+      <destination mission-step-id="14" zone-index="1" />
+    </transit>
+  </quest>
+</table>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.28106.xml-->
+	<quest alias="sq_28106" category="tendency-simple" id="28106" max-repeat="-1" save-type="except-completion-and-logout-save">
+		<mission-step id="1">
+			<mission id="1" required-attraction="tendency-field:CheonSangBunJi" tendency-id="3" variation-required-field-play-point-1="0" variation-required-field-play-point-2="3000" variation-required-field-play-point-3="5000" variation-required-field-play-point-4="8000" variation-required-field-play-point-5="10000" variation-required-field-play-point-6="13000" variation-required-field-play-point-7="17000" variation-required-field-play-point-8="20000" variation-required-register-value-1="5" variation-required-register-value-2="7" variation-required-register-value-3="10" variation-required-register-value-4="12" variation-required-register-value-5="15" variation-required-register-value-6="17" variation-required-register-value-7="20" variation-required-register-value-8="22" variation-reward-field-play-point-1="127" variation-reward-field-play-point-2="178" variation-reward-field-play-point-3="254" variation-reward-field-play-point-4="304" variation-reward-field-play-point-5="380" variation-reward-field-play-point-6="431" variation-reward-field-play-point-7="507" variation-reward-field-play-point-8="557" variation-reward-tendency-score-1="127" variation-reward-tendency-score-2="178" variation-reward-tendency-score-3="254" variation-reward-tendency-score-4="304" variation-reward-tendency-score-5="380" variation-reward-tendency-score-6="431" variation-reward-tendency-score-7="507" variation-reward-tendency-score-8="557">
+				<case multi-object-1="npc:ME_WC_AnthroElephantB_0010" party-broadcast="y" progress-mission="y" type="loot" />
+			</mission>
+		</mission-step>
+	</quest>
+</table>

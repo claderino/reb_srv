@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZonePathway" version="1.50">
+  <!--zone\6000\zonepathwaydata.6000.xml-->
+	<record alias="6000_P55" id="1" move-type="walk" pos="8974,-9951,169" sync="0" waypoint="1" zone="6000" />
+	<record id="1" move-type="walk" pos="8815,-9756,159" sync="0" waypoint="2" zone="6000" />
+	<record id="1" move-type="walk" pos="8794,-9502,157" sync="0" waypoint="3" zone="6000" />
+	<record id="1" move-type="walk" pos="8760,-9346,142" sync="0" waypoint="4" zone="6000" />
+	<record id="1" move-type="walk" pos="8794,-9500,157" sync="0" waypoint="5" zone="6000" />
+	<record id="1" move-type="walk" pos="8816,-9756,158" sync="0" waypoint="6" zone="6000" />
+	<record id="1" move-type="walk" pos="9001,-9984,177" sync="0" waypoint="7" zone="6000" />
+	<record alias="6000_P83" id="2" move-type="walk" pos="7212,-8980,181" sync="0" waypoint="1" zone="6000" />
+	<record id="2" move-type="walk" pos="7129,-8885,192" sync="0" waypoint="2" zone="6000" />
+	<record id="2" move-type="walk" pos="7231,-9002,177" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P81" id="3" move-type="walk" pos="7310,-9205,193" sync="0" waypoint="1" zone="6000" />
+	<record id="3" move-type="walk" pos="7395,-9295,179" sync="0" waypoint="2" zone="6000" />
+	<record id="3" move-type="walk" pos="7291,-9185,197" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P395" id="4" move-type="run" pos="7711,-9231,222" sync="0" waypoint="1" zone="6000" />
+	<record id="4" move-type="run" pos="7323,-9193,152" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P394" id="5" move-type="run" pos="7708,-9293,224" sync="0" waypoint="1" zone="6000" />
+	<record id="5" move-type="run" pos="7312,-9261,151" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P165" id="6" move-type="walk" pos="11002,-9661,347" sync="1" waypoint="1" zone="6000" />
+	<record id="6" move-type="walk" pos="11343,-9455,317" sync="2" waypoint="2" zone="6000" />
+	<record id="6" move-type="walk" pos="10973,-9679,349" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P164" id="7" move-type="walk" pos="10933,-9703,350" sync="1" waypoint="1" zone="6000" />
+	<record id="7" move-type="walk" pos="11274,-9497,322" sync="2" waypoint="2" zone="6000" />
+	<record id="7" move-type="walk" pos="10902,-9721,351" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P163" id="8" move-type="walk" pos="10976,-9705,351" sync="1" waypoint="1" zone="6000" />
+	<record id="8" move-type="walk" pos="11318,-9498,318" sync="2" waypoint="2" zone="6000" />
+	<record id="8" move-type="walk" pos="10946,-9722,351" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P162" id="9" move-type="walk" pos="10954,-9665,348" sync="1" waypoint="1" zone="6000" />
+	<record id="9" move-type="walk" pos="11296,-9458,322" sync="2" waypoint="2" zone="6000" />
+	<record id="9" move-type="walk" pos="10924,-9683,349" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P41" id="10" move-type="walk" pos="7399,-9780,173" sync="0" waypoint="1" zone="6000" />
+	<record id="10" move-type="walk" pos="7399,-9423,171" sync="0" waypoint="2" zone="6000" />
+	<record id="10" move-type="walk" pos="7398,-9831,173" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P42" id="11" move-type="walk" pos="7352,-9792,189" sync="0" waypoint="1" zone="6000" />
+	<record id="11" move-type="walk" pos="7353,-9686,179" sync="0" waypoint="2" zone="6000" />
+	<record id="11" move-type="walk" pos="7351,-9809,189" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P230" id="12" move-type="walk" pos="10385,-12371,416" sync="1" waypoint="1" zone="6000" />
+	<record id="12" move-type="walk" pos="10207,-12190,426" sync="2" waypoint="2" zone="6000" />
+	<record id="12" move-type="walk" pos="10403,-12389,416" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P229" id="13" move-type="walk" pos="10363,-12395,415" sync="1" waypoint="1" zone="6000" />
+	<record id="13" move-type="walk" pos="10185,-12213,426" sync="2" waypoint="2" zone="6000" />
+	<record id="13" move-type="walk" pos="10380,-12413,414" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P186" id="14" move-type="walk" pos="10383,-8855,282" sync="0" waypoint="1" zone="6000" />
+	<record id="14" move-type="walk" pos="10411,-9088,283" sync="0" waypoint="2" zone="6000" />
+	<record id="14" move-type="walk" pos="10403,-9291,283" sync="0" waypoint="3" zone="6000" />
+	<record id="14" move-type="walk" pos="10447,-9344,282" sync="0" waypoint="4" zone="6000" />
+	<record id="14" move-type="walk" pos="10591,-9362,293" sync="0" waypoint="5" zone="6000" />
+	<record id="14" move-type="walk" pos="10676,-9479,312" sync="0" waypoint="6" zone="6000" />
+	<record id="14" move-type="walk" pos="10823,-9728,369" sync="0" waypoint="7" zone="6000" />
+	<record id="14" move-type="walk" pos="10809,-10038,408" sync="0" waypoint="8" zone="6000" />
+	<record id="14" move-type="walk" pos="10801,-10343,404" sync="0" waypoint="9" zone="6000" />
+	<record id="14" move-type="walk" pos="10613,-10698,336" sync="0" waypoint="10" zone="6000" />
+	<record id="14" move-type="walk" pos="10547,-10879,328" sync="0" waypoint="11" zone="6000" />
+	<record id="14" move-type="walk" pos="10517,-11069,327" sync="0" waypoint="12" zone="6000" />
+	<record id="14" move-type="walk" pos="10581,-11146,343" sync="0" waypoint="13" zone="6000" />
+	<record id="14" move-type="walk" pos="10627,-11305,364" sync="0" waypoint="14" zone="6000" />
+	<record id="14" move-type="walk" pos="10827,-11387,392" sync="0" waypoint="15" zone="6000" />
+	<record id="14" move-type="walk" pos="11131,-11464,409" sync="0" waypoint="16" zone="6000" />
+	<record id="14" move-type="walk" pos="11380,-11555,436" sync="0" waypoint="17" zone="6000" />
+	<record id="14" move-type="walk" pos="11738,-11620,453" sync="0" waypoint="18" zone="6000" />
+	<record id="14" move-type="walk" pos="12059,-11763,493" sync="0" waypoint="19" zone="6000" />
+	<record id="14" move-type="walk" pos="11737,-11619,453" sync="0" waypoint="20" zone="6000" />
+	<record id="14" move-type="walk" pos="11399,-11568,438" sync="0" waypoint="21" zone="6000" />
+	<record id="14" move-type="walk" pos="11256,-11519,425" sync="0" waypoint="22" zone="6000" />
+	<record id="14" move-type="walk" pos="10891,-11402,397" sync="0" waypoint="23" zone="6000" />
+	<record id="14" move-type="walk" pos="10621,-11303,363" sync="0" waypoint="24" zone="6000" />
+	<record id="14" move-type="walk" pos="10599,-11215,353" sync="0" waypoint="25" zone="6000" />
+	<record id="14" move-type="walk" pos="10580,-11145,341" sync="0" waypoint="26" zone="6000" />
+	<record id="14" move-type="walk" pos="10513,-11052,325" sync="0" waypoint="27" zone="6000" />
+	<record id="14" move-type="walk" pos="10529,-10913,327" sync="0" waypoint="28" zone="6000" />
+	<record id="14" move-type="walk" pos="10621,-10675,338" sync="0" waypoint="29" zone="6000" />
+	<record id="14" move-type="walk" pos="10794,-10356,401" sync="0" waypoint="30" zone="6000" />
+	<record id="14" move-type="walk" pos="10812,-10037,408" sync="0" waypoint="31" zone="6000" />
+	<record id="14" move-type="walk" pos="10824,-9766,375" sync="0" waypoint="32" zone="6000" />
+	<record id="14" move-type="walk" pos="11064,-9602,360" sync="0" waypoint="33" zone="6000" />
+	<record id="14" move-type="walk" pos="11239,-9545,348" sync="0" waypoint="34" zone="6000" />
+	<record id="14" move-type="walk" pos="11586,-9620,352" sync="0" waypoint="35" zone="6000" />
+	<record id="14" move-type="walk" pos="11962,-9858,357" sync="0" waypoint="36" zone="6000" />
+	<record id="14" move-type="walk" pos="12200,-9883,357" sync="0" waypoint="37" zone="6000" />
+	<record id="14" move-type="walk" pos="12324,-9799,347" sync="0" waypoint="38" zone="6000" />
+	<record id="14" move-type="walk" pos="12400,-9706,347" sync="0" waypoint="39" zone="6000" />
+	<record id="14" move-type="walk" pos="12409,-9615,346" sync="0" waypoint="40" zone="6000" />
+	<record id="14" move-type="walk" pos="12326,-9553,333" sync="0" waypoint="41" zone="6000" />
+	<record id="14" move-type="walk" pos="12182,-9477,320" sync="0" waypoint="42" zone="6000" />
+	<record id="14" move-type="walk" pos="11940,-9393,318" sync="0" waypoint="43" zone="6000" />
+	<record id="14" move-type="walk" pos="11889,-9340,318" sync="0" waypoint="44" zone="6000" />
+	<record id="14" move-type="walk" pos="11858,-9246,318" sync="0" waypoint="45" zone="6000" />
+	<record id="14" move-type="walk" pos="11895,-9097,315" sync="0" waypoint="46" zone="6000" />
+	<record id="14" move-type="walk" pos="11856,-8899,319" sync="0" waypoint="47" zone="6000" />
+	<record id="14" move-type="walk" pos="11860,-8727,317" sync="0" waypoint="48" zone="6000" />
+	<record id="14" move-type="walk" pos="11826,-8661,318" sync="0" waypoint="49" zone="6000" />
+	<record id="14" move-type="walk" pos="11737,-8617,331" sync="0" waypoint="50" zone="6000" />
+	<record id="14" move-type="walk" pos="11602,-8601,333" sync="0" waypoint="51" zone="6000" />
+	<record id="14" move-type="walk" pos="11422,-8492,330" sync="0" waypoint="52" zone="6000" />
+	<record id="14" move-type="walk" pos="11265,-8458,333" sync="0" waypoint="53" zone="6000" />
+	<record id="14" move-type="walk" pos="11144,-8477,328" sync="0" waypoint="54" zone="6000" />
+	<record id="14" move-type="walk" pos="10982,-8533,317" sync="0" waypoint="55" zone="6000" />
+	<record id="14" move-type="walk" pos="10815,-8652,290" sync="0" waypoint="56" zone="6000" />
+	<record id="14" move-type="walk" pos="10673,-8747,285" sync="0" waypoint="57" zone="6000" />
+	<record id="14" move-type="walk" pos="10545,-8751,282" sync="0" waypoint="58" zone="6000" />
+	<record id="14" move-type="walk" pos="10459,-8774,282" sync="0" waypoint="59" zone="6000" />
+	<record id="14" move-type="walk" pos="10389,-8806,282" sync="0" waypoint="60" zone="6000" />
+	<record alias="6000_P390_2" id="15" move-type="run" pos="7582,-10063,161" sync="0" waypoint="1" zone="6000" />
+	<record id="15" move-type="run" pos="7649,-10233,125" sync="0" waypoint="2" zone="6000" />
+	<record id="15" move-type="run" pos="7649,-10264,125" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P388_2" id="16" move-type="run" pos="7551,-10101,156" sync="0" waypoint="1" zone="6000" />
+	<record id="16" move-type="run" pos="7610,-10246,125" sync="0" waypoint="2" zone="6000" />
+	<record id="16" move-type="run" pos="7610,-10308,127" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P59" id="17" move-type="walk" pos="6927,-9774,72" sync="0" waypoint="1" zone="6000" />
+	<record id="17" move-type="walk" pos="6669,-9799,75" sync="0" waypoint="2" zone="6000" />
+	<record id="17" move-type="walk" pos="6965,-9771,71" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P158" id="18" move-type="walk" pos="12288,-9861,329" sync="1" waypoint="1" zone="6000" />
+	<record id="18" move-type="walk" pos="12550,-9542,330" sync="2" waypoint="2" zone="6000" />
+	<record id="18" move-type="walk" pos="12266,-9887,329" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P157" id="19" move-type="walk" pos="12253,-9836,331" sync="1" waypoint="1" zone="6000" />
+	<record id="19" move-type="walk" pos="12515,-9517,337" sync="2" waypoint="2" zone="6000" />
+	<record id="19" move-type="walk" pos="12232,-9863,330" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P159" id="20" move-type="walk" pos="12288,-9829,330" sync="1" waypoint="1" zone="6000" />
+	<record id="20" move-type="walk" pos="12549,-9510,331" sync="2" waypoint="2" zone="6000" />
+	<record id="20" move-type="walk" pos="12265,-9855,329" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P160" id="21" move-type="walk" pos="12257,-9866,329" sync="1" waypoint="1" zone="6000" />
+	<record id="21" move-type="walk" pos="12518,-9545,333" sync="2" waypoint="2" zone="6000" />
+	<record id="21" move-type="walk" pos="12235,-9892,329" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P389_2" id="22" move-type="run" pos="7498,-10078,164" sync="0" waypoint="1" zone="6000" />
+	<record id="22" move-type="run" pos="7571,-10238,125" sync="0" waypoint="2" zone="6000" />
+	<record id="22" move-type="run" pos="7571,-10263,125" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P63" id="23" move-type="walk" pos="7006,-9442,57" sync="0" waypoint="1" zone="6000" />
+	<record id="23" move-type="walk" pos="7077,-9569,58" sync="0" waypoint="2" zone="6000" />
+	<record id="23" move-type="walk" pos="7075,-9678,58" sync="0" waypoint="3" zone="6000" />
+	<record id="23" move-type="walk" pos="7076,-9568,59" sync="0" waypoint="4" zone="6000" />
+	<record id="23" move-type="walk" pos="6989,-9412,58" sync="0" waypoint="5" zone="6000" />
+	<record alias="6000_P187" id="24" move-type="walk" pos="11117,-8624,320" sync="0" waypoint="1" zone="6000" />
+	<record id="24" move-type="walk" pos="11318,-8460,317" sync="0" waypoint="2" zone="6000" />
+	<record id="24" move-type="walk" pos="11385,-8284,321" sync="0" waypoint="3" zone="6000" />
+	<record id="24" move-type="walk" pos="11477,-8187,347" sync="0" waypoint="4" zone="6000" />
+	<record id="24" move-type="walk" pos="11638,-8153,393" sync="0" waypoint="5" zone="6000" />
+	<record id="24" move-type="walk" pos="11723,-8166,405" sync="0" waypoint="6" zone="6000" />
+	<record id="24" move-type="walk" pos="11637,-8152,394" sync="0" waypoint="7" zone="6000" />
+	<record id="24" move-type="walk" pos="11478,-8188,347" sync="0" waypoint="8" zone="6000" />
+	<record id="24" move-type="walk" pos="11385,-8283,321" sync="0" waypoint="9" zone="6000" />
+	<record id="24" move-type="walk" pos="11318,-8460,317" sync="0" waypoint="10" zone="6000" />
+	<record id="24" move-type="walk" pos="11078,-8656,318" sync="0" waypoint="11" zone="6000" />
+	<record alias="6000_P398" id="25" move-type="run" pos="7100,-8953,159" sync="0" waypoint="1" zone="6000" />
+	<record id="25" move-type="run" pos="7366,-9240,176" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P35" id="26" move-type="walk" pos="7795,-9261,229" sync="0" waypoint="1" zone="6000" />
+	<record id="26" move-type="walk" pos="7600,-9261,206" sync="0" waypoint="2" zone="6000" />
+	<record id="26" move-type="walk" pos="7824,-9260,228" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P438" id="27" move-type="warp" pos="10833,-10974,713" sync="0" warp-social="HukChang_SaGalMan_AirDash_01" waypoint="1" zone="6000" />
+	<record id="27" move-type="warp" pos="10296,-11428,300" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P400" id="28" move-type="run" pos="7394,-9502,169" sync="0" waypoint="1" zone="6000" />
+	<record id="28" move-type="run" pos="7396,-9134,166" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P402" id="29" move-type="run" pos="7422,-9548,171" sync="0" waypoint="1" zone="6000" />
+	<record id="29" move-type="run" pos="7431,-9134,166" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P404" id="30" move-type="walk" pos="7415,-9327,169" sync="0" waypoint="1" zone="6000" />
+	<record id="30" move-type="walk" pos="7382,-9207,165" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P397" id="31" move-type="run" pos="7148,-8955,163" sync="0" waypoint="1" zone="6000" />
+	<record id="31" move-type="run" pos="7385,-9216,176" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P317" id="33" move-type="walk" pos="7011,-9167,107" sync="0" waypoint="1" zone="6000" />
+	<record id="33" move-type="walk" pos="7047,-9008,131" sync="0" waypoint="2" zone="6000" />
+	<record id="33" move-type="walk" pos="6974,-9323,83" sync="0" waypoint="3" zone="6000" />
+	<record id="33" move-type="walk" pos="7002,-9203,101" sync="0" waypoint="4" zone="6000" />
+	<record alias="6000_P122" id="34" move-type="walk" pos="10710,-9530,303" sync="0" waypoint="1" zone="6000" />
+	<record id="34" move-type="walk" pos="10573,-9333,268" sync="0" waypoint="2" zone="6000" />
+	<record id="34" move-type="walk" pos="10532,-9203,267" sync="0" waypoint="3" zone="6000" />
+	<record id="34" move-type="walk" pos="10574,-9333,268" sync="0" waypoint="4" zone="6000" />
+	<record id="34" move-type="walk" pos="10731,-9562,308" sync="0" waypoint="5" zone="6000" />
+	<record alias="6000_P150" id="35" move-type="walk" pos="12586,-9750,340" sync="1" waypoint="1" zone="6000" />
+	<record id="35" move-type="walk" pos="12509,-9703,325" sync="2" waypoint="2" zone="6000" />
+	<record id="35" move-type="walk" pos="12500,-9699,322" sync="3" waypoint="3" zone="6000" />
+	<record id="35" move-type="walk" pos="12598,-9758,342" sync="4" waypoint="4" zone="6000" />
+	<record id="35" move-type="walk" pos="12592,-9754,341" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P151" id="36" move-type="walk" pos="12593,-9717,331" sync="1" waypoint="1" zone="6000" />
+	<record id="36" move-type="walk" pos="12600,-9705,331" sync="2" waypoint="2" zone="6000" />
+	<record id="36" move-type="walk" pos="12562,-9770,330" sync="3" waypoint="3" zone="6000" />
+	<record id="36" move-type="walk" pos="12554,-9782,330" sync="4" waypoint="4" zone="6000" />
+	<record id="36" move-type="walk" pos="12590,-9722,330" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P152" id="37" move-type="walk" pos="12543,-9759,331" sync="1" waypoint="1" zone="6000" />
+	<record id="37" move-type="walk" pos="12536,-9771,331" sync="2" waypoint="2" zone="6000" />
+	<record id="37" move-type="walk" pos="12574,-9707,330" sync="3" waypoint="3" zone="6000" />
+	<record id="37" move-type="walk" pos="12582,-9694,330" sync="4" waypoint="4" zone="6000" />
+	<record id="37" move-type="walk" pos="12546,-9754,330" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P153" id="38" move-type="walk" pos="12555,-9696,331" sync="1" waypoint="1" zone="6000" />
+	<record id="38" move-type="walk" pos="12563,-9682,331" sync="2" waypoint="2" zone="6000" />
+	<record id="38" move-type="walk" pos="12524,-9747,330" sync="3" waypoint="3" zone="6000" />
+	<record id="38" move-type="walk" pos="12517,-9761,330" sync="4" waypoint="4" zone="6000" />
+	<record id="38" move-type="walk" pos="12552,-9699,330" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P154" id="39" move-type="walk" pos="12505,-9736,331" sync="1" waypoint="1" zone="6000" />
+	<record id="39" move-type="walk" pos="12498,-9749,331" sync="2" waypoint="2" zone="6000" />
+	<record id="39" move-type="walk" pos="12536,-9685,330" sync="3" waypoint="3" zone="6000" />
+	<record id="39" move-type="walk" pos="12544,-9672,330" sync="4" waypoint="4" zone="6000" />
+	<record id="39" move-type="walk" pos="12508,-9733,330" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P319" id="40" move-type="walk" pos="7626,-10447,141" sync="0" waypoint="1" zone="6000" />
+	<record id="40" move-type="walk" pos="7663,-10419,140" sync="0" waypoint="2" zone="6000" />
+	<record id="40" move-type="walk" pos="7674,-10375,140" sync="0" waypoint="3" zone="6000" />
+	<record id="40" move-type="walk" pos="7653,-10333,140" sync="0" waypoint="4" zone="6000" />
+	<record id="40" move-type="walk" pos="7611,-10316,139" sync="0" waypoint="5" zone="6000" />
+	<record id="40" move-type="walk" pos="7568,-10329,140" sync="0" waypoint="6" zone="6000" />
+	<record id="40" move-type="walk" pos="7543,-10367,141" sync="0" waypoint="7" zone="6000" />
+	<record id="40" move-type="walk" pos="7548,-10412,141" sync="0" waypoint="8" zone="6000" />
+	<record id="40" move-type="walk" pos="7581,-10444,141" sync="0" waypoint="9" zone="6000" />
+	<record alias="6000_P293" id="41" move-type="walk" pos="12032,-11717,478" sync="1" waypoint="1" zone="6000" />
+	<record id="41" move-type="walk" pos="11824,-11645,456" sync="2" waypoint="2" zone="6000" />
+	<record id="41" move-type="walk" pos="12061,-11726,480" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P294" id="42" move-type="walk" pos="12025,-11745,481" sync="1" waypoint="1" zone="6000" />
+	<record id="42" move-type="walk" pos="11816,-11674,454" sync="2" waypoint="2" zone="6000" />
+	<record id="42" move-type="walk" pos="12054,-11755,481" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P66" id="43" move-type="walk" pos="9113,-9881,168" sync="0" waypoint="1" zone="6000" />
+	<record id="43" move-type="walk" pos="9228,-9790,190" sync="0" waypoint="2" zone="6000" />
+	<record id="43" move-type="walk" pos="9100,-9893,167" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P269" id="44" move-type="walk" pos="10628,-11433,359" sync="1" waypoint="1" zone="6000" />
+	<record id="44" move-type="walk" pos="10648,-11477,363" sync="2" waypoint="2" zone="6000" />
+	<record id="44" move-type="walk" pos="10693,-11493,368" sync="3" waypoint="3" zone="6000" />
+	<record id="44" move-type="walk" pos="10736,-11473,370" sync="4" waypoint="4" zone="6000" />
+	<record id="44" move-type="walk" pos="10752,-11429,366" sync="5" waypoint="5" zone="6000" />
+	<record id="44" move-type="walk" pos="10733,-11385,360" sync="6" waypoint="6" zone="6000" />
+	<record id="44" move-type="walk" pos="10688,-11369,356" sync="7" waypoint="7" zone="6000" />
+	<record id="44" move-type="walk" pos="10645,-11389,356" sync="8" waypoint="8" zone="6000" />
+	<record alias="6000_P270" id="45" move-type="walk" pos="10693,-11493,368" sync="1" waypoint="1" zone="6000" />
+	<record id="45" move-type="walk" pos="10736,-11473,370" sync="2" waypoint="2" zone="6000" />
+	<record id="45" move-type="walk" pos="10753,-11429,366" sync="3" waypoint="3" zone="6000" />
+	<record id="45" move-type="walk" pos="10732,-11385,360" sync="4" waypoint="4" zone="6000" />
+	<record id="45" move-type="walk" pos="10688,-11369,356" sync="5" waypoint="5" zone="6000" />
+	<record id="45" move-type="walk" pos="10645,-11389,356" sync="6" waypoint="6" zone="6000" />
+	<record id="45" move-type="walk" pos="10628,-11434,359" sync="7" waypoint="7" zone="6000" />
+	<record id="45" move-type="walk" pos="10648,-11477,363" sync="8" waypoint="8" zone="6000" />
+	<record alias="6000_P271" id="46" move-type="walk" pos="10752,-11429,366" sync="1" waypoint="1" zone="6000" />
+	<record id="46" move-type="walk" pos="10732,-11385,360" sync="2" waypoint="2" zone="6000" />
+	<record id="46" move-type="walk" pos="10688,-11369,356" sync="3" waypoint="3" zone="6000" />
+	<record id="46" move-type="walk" pos="10644,-11389,356" sync="4" waypoint="4" zone="6000" />
+	<record id="46" move-type="walk" pos="10628,-11434,359" sync="5" waypoint="5" zone="6000" />
+	<record id="46" move-type="walk" pos="10648,-11477,363" sync="6" waypoint="6" zone="6000" />
+	<record id="46" move-type="walk" pos="10693,-11493,368" sync="7" waypoint="7" zone="6000" />
+	<record id="46" move-type="walk" pos="10736,-11473,370" sync="8" waypoint="8" zone="6000" />
+	<record alias="6000_P272" id="47" move-type="walk" pos="10688,-11369,356" sync="1" waypoint="1" zone="6000" />
+	<record id="47" move-type="walk" pos="10644,-11389,356" sync="2" waypoint="2" zone="6000" />
+	<record id="47" move-type="walk" pos="10628,-11434,359" sync="3" waypoint="3" zone="6000" />
+	<record id="47" move-type="walk" pos="10649,-11477,363" sync="4" waypoint="4" zone="6000" />
+	<record id="47" move-type="walk" pos="10693,-11493,368" sync="5" waypoint="5" zone="6000" />
+	<record id="47" move-type="walk" pos="10736,-11473,370" sync="6" waypoint="6" zone="6000" />
+	<record id="47" move-type="walk" pos="10753,-11428,366" sync="7" waypoint="7" zone="6000" />
+	<record id="47" move-type="walk" pos="10732,-11385,360" sync="8" waypoint="8" zone="6000" />
+	<record alias="6000_P219" id="48" move-type="walk" pos="10931,-11257,389" sync="0" waypoint="1" zone="6000" />
+	<record id="48" move-type="walk" pos="10737,-11312,360" sync="0" waypoint="2" zone="6000" />
+	<record id="48" move-type="walk" pos="10616,-11269,343" sync="0" waypoint="3" zone="6000" />
+	<record id="48" move-type="walk" pos="10591,-11152,328" sync="0" waypoint="4" zone="6000" />
+	<record id="48" move-type="walk" pos="10509,-11100,308" sync="0" waypoint="5" zone="6000" />
+	<record id="48" move-type="walk" pos="10184,-11068,351" sync="0" waypoint="6" zone="6000" />
+	<record id="48" move-type="walk" pos="10509,-11098,307" sync="0" waypoint="7" zone="6000" />
+	<record id="48" move-type="walk" pos="10592,-11153,326" sync="0" waypoint="8" zone="6000" />
+	<record id="48" move-type="walk" pos="10618,-11270,341" sync="0" waypoint="9" zone="6000" />
+	<record id="48" move-type="walk" pos="10737,-11312,361" sync="0" waypoint="10" zone="6000" />
+	<record id="48" move-type="walk" pos="10952,-11250,394" sync="0" waypoint="11" zone="6000" />
+	<record alias="6000_P401" id="49" move-type="run" pos="7356,-9547,152" sync="0" waypoint="1" zone="6000" />
+	<record id="49" move-type="run" pos="7364,-9135,149" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P388_3" id="50" move-type="run" pos="7640,-10363,127" sync="0" waypoint="1" zone="6000" />
+	<record id="50" move-type="run" pos="7901,-10748,174" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P389_3" id="51" move-type="run" pos="7578,-10311,138" sync="0" waypoint="1" zone="6000" />
+	<record id="51" move-type="run" pos="7848,-10742,179" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P178" id="52" move-type="walk" pos="11634,-9108,327" sync="1" waypoint="1" zone="6000" />
+	<record id="52" move-type="walk" pos="11425,-9298,344" sync="2" waypoint="2" zone="6000" />
+	<record id="52" move-type="walk" pos="11654,-9090,326" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P179" id="53" move-type="walk" pos="11671,-9148,317" sync="1" waypoint="1" zone="6000" />
+	<record id="53" move-type="walk" pos="11462,-9338,336" sync="2" waypoint="2" zone="6000" />
+	<record id="53" move-type="walk" pos="11689,-9131,316" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P180" id="54" move-type="walk" pos="11592,-9147,329" sync="1" waypoint="1" zone="6000" />
+	<record id="54" move-type="walk" pos="11383,-9336,343" sync="2" waypoint="2" zone="6000" />
+	<record id="54" move-type="walk" pos="11612,-9129,328" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P177" id="55" move-type="walk" pos="11631,-9147,323" sync="1" waypoint="1" zone="6000" />
+	<record id="55" move-type="walk" pos="11420,-9337,339" sync="2" waypoint="2" zone="6000" />
+	<record id="55" move-type="walk" pos="11649,-9131,322" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P181" id="56" move-type="walk" pos="11628,-9187,321" sync="1" waypoint="1" zone="6000" />
+	<record id="56" move-type="walk" pos="11420,-9376,340" sync="2" waypoint="2" zone="6000" />
+	<record id="56" move-type="walk" pos="11647,-9170,319" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P238" id="57" move-type="walk" pos="9990,-11706,322" sync="1" waypoint="1" zone="6000" />
+	<record id="57" move-type="walk" pos="9571,-11553,310" sync="2" waypoint="2" zone="6000" />
+	<record id="57" move-type="walk" pos="10013,-11715,325" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P239" id="58" move-type="walk" pos="10008,-11744,324" sync="1" waypoint="1" zone="6000" />
+	<record id="58" move-type="walk" pos="9587,-11590,314" sync="2" waypoint="2" zone="6000" />
+	<record id="58" move-type="walk" pos="10029,-11752,326" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P240" id="59" move-type="walk" pos="10025,-11692,326" sync="1" waypoint="1" zone="6000" />
+	<record id="59" move-type="walk" pos="9605,-11539,312" sync="2" waypoint="2" zone="6000" />
+	<record id="59" move-type="walk" pos="10048,-11701,329" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P390_3" id="60" move-type="run" pos="7651,-10311,157" sync="0" waypoint="1" zone="6000" />
+	<record id="60" move-type="run" pos="7914,-10697,135" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P185" id="61" move-type="walk" pos="12065,-9399,320" sync="0" waypoint="1" zone="6000" />
+	<record id="61" move-type="walk" pos="11936,-9391,320" sync="0" waypoint="2" zone="6000" />
+	<record id="61" move-type="walk" pos="11879,-9326,320" sync="0" waypoint="3" zone="6000" />
+	<record id="61" move-type="walk" pos="11856,-9232,321" sync="0" waypoint="4" zone="6000" />
+	<record id="61" move-type="walk" pos="11904,-9090,317" sync="0" waypoint="5" zone="6000" />
+	<record id="61" move-type="walk" pos="11855,-8877,321" sync="0" waypoint="6" zone="6000" />
+	<record id="61" move-type="walk" pos="11865,-8723,319" sync="0" waypoint="7" zone="6000" />
+	<record id="61" move-type="walk" pos="11829,-8655,320" sync="0" waypoint="8" zone="6000" />
+	<record id="61" move-type="walk" pos="11755,-8622,330" sync="0" waypoint="9" zone="6000" />
+	<record id="61" move-type="walk" pos="11608,-8614,335" sync="0" waypoint="10" zone="6000" />
+	<record id="61" move-type="walk" pos="11421,-8466,332" sync="0" waypoint="11" zone="6000" />
+	<record id="61" move-type="walk" pos="11261,-8439,333" sync="0" waypoint="12" zone="6000" />
+	<record id="61" move-type="walk" pos="10976,-8522,320" sync="0" waypoint="13" zone="6000" />
+	<record id="61" move-type="walk" pos="10669,-8737,287" sync="0" waypoint="14" zone="6000" />
+	<record id="61" move-type="walk" pos="10460,-8773,284" sync="0" waypoint="15" zone="6000" />
+	<record id="61" move-type="walk" pos="10394,-8884,284" sync="0" waypoint="16" zone="6000" />
+	<record id="61" move-type="walk" pos="10411,-9087,285" sync="0" waypoint="17" zone="6000" />
+	<record id="61" move-type="walk" pos="10403,-9290,286" sync="0" waypoint="18" zone="6000" />
+	<record id="61" move-type="walk" pos="10446,-9344,284" sync="0" waypoint="19" zone="6000" />
+	<record id="61" move-type="walk" pos="10591,-9363,295" sync="0" waypoint="20" zone="6000" />
+	<record id="61" move-type="walk" pos="10700,-9504,321" sync="0" waypoint="21" zone="6000" />
+	<record id="61" move-type="walk" pos="10823,-9728,371" sync="0" waypoint="22" zone="6000" />
+	<record id="61" move-type="walk" pos="10801,-10339,407" sync="0" waypoint="23" zone="6000" />
+	<record id="61" move-type="walk" pos="10591,-10719,336" sync="0" waypoint="24" zone="6000" />
+	<record id="61" move-type="walk" pos="10525,-10907,330" sync="0" waypoint="25" zone="6000" />
+	<record id="61" move-type="walk" pos="10519,-11074,330" sync="0" waypoint="26" zone="6000" />
+	<record id="61" move-type="walk" pos="10580,-11145,351" sync="0" waypoint="27" zone="6000" />
+	<record id="61" move-type="walk" pos="10606,-11246,359" sync="0" waypoint="28" zone="6000" />
+	<record id="61" move-type="walk" pos="10627,-11313,370" sync="0" waypoint="29" zone="6000" />
+	<record id="61" move-type="walk" pos="10823,-11374,393" sync="0" waypoint="30" zone="6000" />
+	<record id="61" move-type="walk" pos="11051,-11454,406" sync="0" waypoint="31" zone="6000" />
+	<record id="61" move-type="walk" pos="11372,-11558,438" sync="0" waypoint="32" zone="6000" />
+	<record id="61" move-type="walk" pos="11737,-11620,457" sync="0" waypoint="33" zone="6000" />
+	<record id="61" move-type="walk" pos="12062,-11754,495" sync="0" waypoint="34" zone="6000" />
+	<record id="61" move-type="walk" pos="11720,-11609,453" sync="0" waypoint="35" zone="6000" />
+	<record id="61" move-type="walk" pos="11382,-11566,439" sync="0" waypoint="36" zone="6000" />
+	<record id="61" move-type="walk" pos="11275,-11526,429" sync="0" waypoint="37" zone="6000" />
+	<record id="61" move-type="walk" pos="10819,-11371,392" sync="0" waypoint="38" zone="6000" />
+	<record id="61" move-type="walk" pos="10626,-11311,369" sync="0" waypoint="39" zone="6000" />
+	<record id="61" move-type="walk" pos="10605,-11242,358" sync="0" waypoint="40" zone="6000" />
+	<record id="61" move-type="walk" pos="10580,-11144,349" sync="0" waypoint="41" zone="6000" />
+	<record id="61" move-type="walk" pos="10524,-11077,331" sync="0" waypoint="42" zone="6000" />
+	<record id="61" move-type="walk" pos="10524,-10903,330" sync="0" waypoint="43" zone="6000" />
+	<record id="61" move-type="walk" pos="10613,-10690,338" sync="0" waypoint="44" zone="6000" />
+	<record id="61" move-type="walk" pos="10804,-10349,406" sync="0" waypoint="45" zone="6000" />
+	<record id="61" move-type="walk" pos="10822,-9775,378" sync="0" waypoint="46" zone="6000" />
+	<record id="61" move-type="walk" pos="11074,-9610,362" sync="0" waypoint="47" zone="6000" />
+	<record id="61" move-type="walk" pos="11240,-9557,351" sync="0" waypoint="48" zone="6000" />
+	<record id="61" move-type="walk" pos="11575,-9620,354" sync="0" waypoint="49" zone="6000" />
+	<record id="61" move-type="walk" pos="11975,-9869,359" sync="0" waypoint="50" zone="6000" />
+	<record id="61" move-type="walk" pos="12203,-9871,357" sync="0" waypoint="51" zone="6000" />
+	<record id="61" move-type="walk" pos="12322,-9785,349" sync="0" waypoint="52" zone="6000" />
+	<record id="61" move-type="walk" pos="12399,-9684,349" sync="0" waypoint="53" zone="6000" />
+	<record id="61" move-type="walk" pos="12398,-9621,346" sync="0" waypoint="54" zone="6000" />
+	<record id="61" move-type="walk" pos="12336,-9554,336" sync="0" waypoint="55" zone="6000" />
+	<record id="61" move-type="walk" pos="12184,-9472,321" sync="0" waypoint="56" zone="6000" />
+	<record id="61" move-type="walk" pos="12114,-9412,320" sync="0" waypoint="57" zone="6000" />
+	<record alias="6000_P388" id="62" move-type="run" pos="6979,-8391,196" sync="0" waypoint="1" zone="6000" />
+	<record id="62" move-type="run" pos="7068,-8618,180" sync="0" waypoint="2" zone="6000" />
+	<record id="62" move-type="run" pos="7114,-8880,139" sync="0" waypoint="3" zone="6000" />
+	<record id="62" move-type="run" pos="7173,-9004,129" sync="0" waypoint="4" zone="6000" />
+	<record id="62" move-type="run" pos="7339,-9181,129" sync="0" waypoint="5" zone="6000" />
+	<record alias="6000_P399" id="63" move-type="run" pos="7143,-8903,165" sync="0" waypoint="1" zone="6000" />
+	<record id="63" move-type="run" pos="7403,-9193,178" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P389" id="64" move-type="run" pos="6917,-8313,201" sync="0" waypoint="1" zone="6000" />
+	<record id="64" move-type="run" pos="7041,-8624,181" sync="0" waypoint="2" zone="6000" />
+	<record id="64" move-type="run" pos="7086,-8887,138" sync="0" waypoint="3" zone="6000" />
+	<record id="64" move-type="run" pos="7152,-9027,115" sync="0" waypoint="4" zone="6000" />
+	<record id="64" move-type="run" pos="7277,-9164,127" sync="0" waypoint="5" zone="6000" />
+	<record alias="6000_P390" id="65" move-type="run" pos="6971,-8291,203" sync="0" waypoint="1" zone="6000" />
+	<record id="65" move-type="run" pos="7092,-8610,182" sync="0" waypoint="2" zone="6000" />
+	<record id="65" move-type="run" pos="7142,-8875,141" sync="0" waypoint="3" zone="6000" />
+	<record id="65" move-type="run" pos="7193,-8989,118" sync="0" waypoint="4" zone="6000" />
+	<record id="65" move-type="run" pos="7323,-9115,129" sync="0" waypoint="5" zone="6000" />
+	<record alias="6000_P234" id="66" move-type="walk" pos="11638,-12301,500" sync="1" waypoint="1" zone="6000" />
+	<record id="66" move-type="walk" pos="11906,-12059,492" sync="2" waypoint="2" zone="6000" />
+	<record id="66" move-type="walk" pos="11620,-12318,499" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P236" id="67" move-type="walk" pos="11612,-12298,498" sync="1" waypoint="1" zone="6000" />
+	<record id="67" move-type="walk" pos="11877,-12058,491" sync="2" waypoint="2" zone="6000" />
+	<record id="67" move-type="walk" pos="11591,-12317,498" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P235" id="68" move-type="walk" pos="11609,-12270,497" sync="1" waypoint="1" zone="6000" />
+	<record id="68" move-type="walk" pos="11877,-12028,490" sync="2" waypoint="2" zone="6000" />
+	<record id="68" move-type="walk" pos="11591,-12287,497" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P237" id="69" move-type="walk" pos="11649,-12264,498" sync="1" waypoint="1" zone="6000" />
+	<record id="69" move-type="walk" pos="11915,-12024,491" sync="2" waypoint="2" zone="6000" />
+	<record id="69" move-type="walk" pos="11628,-12283,498" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P244" id="70" move-type="walk" pos="11929,-11703,478" sync="0" waypoint="1" zone="6000" />
+	<record id="70" move-type="walk" pos="11703,-11605,448" sync="0" waypoint="2" zone="6000" />
+	<record id="70" move-type="walk" pos="11388,-11568,436" sync="0" waypoint="3" zone="6000" />
+	<record id="70" move-type="walk" pos="11251,-11516,423" sync="0" waypoint="4" zone="6000" />
+	<record id="70" move-type="walk" pos="10888,-11402,395" sync="0" waypoint="5" zone="6000" />
+	<record id="70" move-type="walk" pos="10624,-11310,363" sync="0" waypoint="6" zone="6000" />
+	<record id="70" move-type="walk" pos="10605,-11246,355" sync="0" waypoint="7" zone="6000" />
+	<record id="70" move-type="walk" pos="10580,-11146,342" sync="0" waypoint="8" zone="6000" />
+	<record id="70" move-type="walk" pos="10517,-11066,325" sync="0" waypoint="9" zone="6000" />
+	<record id="70" move-type="walk" pos="10519,-10965,322" sync="0" waypoint="10" zone="6000" />
+	<record id="70" move-type="walk" pos="10628,-10654,339" sync="0" waypoint="11" zone="6000" />
+	<record id="70" move-type="walk" pos="10798,-10347,402" sync="0" waypoint="12" zone="6000" />
+	<record id="70" move-type="walk" pos="10813,-10037,406" sync="0" waypoint="13" zone="6000" />
+	<record id="70" move-type="walk" pos="10823,-9721,366" sync="0" waypoint="14" zone="6000" />
+	<record id="70" move-type="walk" pos="10695,-9506,317" sync="0" waypoint="15" zone="6000" />
+	<record id="70" move-type="walk" pos="10592,-9366,292" sync="0" waypoint="16" zone="6000" />
+	<record id="70" move-type="walk" pos="10445,-9343,280" sync="0" waypoint="17" zone="6000" />
+	<record id="70" move-type="walk" pos="10403,-9291,282" sync="0" waypoint="18" zone="6000" />
+	<record id="70" move-type="walk" pos="10410,-9085,281" sync="0" waypoint="19" zone="6000" />
+	<record id="70" move-type="walk" pos="10395,-8885,280" sync="0" waypoint="20" zone="6000" />
+	<record id="70" move-type="walk" pos="10457,-8774,280" sync="0" waypoint="21" zone="6000" />
+	<record id="70" move-type="walk" pos="10546,-8756,280" sync="0" waypoint="22" zone="6000" />
+	<record id="70" move-type="walk" pos="10670,-8744,283" sync="0" waypoint="23" zone="6000" />
+	<record id="70" move-type="walk" pos="10865,-8601,297" sync="0" waypoint="24" zone="6000" />
+	<record id="70" move-type="walk" pos="10988,-8515,318" sync="0" waypoint="25" zone="6000" />
+	<record id="70" move-type="walk" pos="11262,-8451,331" sync="0" waypoint="26" zone="6000" />
+	<record id="70" move-type="walk" pos="11420,-8478,329" sync="0" waypoint="27" zone="6000" />
+	<record id="70" move-type="walk" pos="11615,-8606,332" sync="0" waypoint="28" zone="6000" />
+	<record id="70" move-type="walk" pos="11767,-8627,324" sync="0" waypoint="29" zone="6000" />
+	<record id="70" move-type="walk" pos="11827,-8659,317" sync="0" waypoint="30" zone="6000" />
+	<record id="70" move-type="walk" pos="11865,-8729,315" sync="0" waypoint="31" zone="6000" />
+	<record id="70" move-type="walk" pos="11858,-8886,317" sync="0" waypoint="32" zone="6000" />
+	<record id="70" move-type="walk" pos="11902,-9090,314" sync="0" waypoint="33" zone="6000" />
+	<record id="70" move-type="walk" pos="11857,-9220,317" sync="0" waypoint="34" zone="6000" />
+	<record id="70" move-type="walk" pos="11876,-9331,317" sync="0" waypoint="35" zone="6000" />
+	<record id="70" move-type="walk" pos="11942,-9385,317" sync="0" waypoint="36" zone="6000" />
+	<record id="70" move-type="walk" pos="12188,-9467,318" sync="0" waypoint="37" zone="6000" />
+	<record id="70" move-type="walk" pos="12332,-9558,333" sync="0" waypoint="38" zone="6000" />
+	<record id="70" move-type="walk" pos="12400,-9621,343" sync="0" waypoint="39" zone="6000" />
+	<record id="70" move-type="walk" pos="12394,-9698,345" sync="0" waypoint="40" zone="6000" />
+	<record id="70" move-type="walk" pos="12251,-9862,354" sync="0" waypoint="41" zone="6000" />
+	<record id="70" move-type="walk" pos="12198,-9881,355" sync="0" waypoint="42" zone="6000" />
+	<record id="70" move-type="walk" pos="11959,-9866,356" sync="0" waypoint="43" zone="6000" />
+	<record id="70" move-type="walk" pos="11587,-9624,351" sync="0" waypoint="44" zone="6000" />
+	<record id="70" move-type="walk" pos="11235,-9556,348" sync="0" waypoint="45" zone="6000" />
+	<record id="70" move-type="walk" pos="11065,-9609,359" sync="0" waypoint="46" zone="6000" />
+	<record id="70" move-type="walk" pos="10822,-9771,374" sync="0" waypoint="47" zone="6000" />
+	<record id="70" move-type="walk" pos="10813,-10036,406" sync="0" waypoint="48" zone="6000" />
+	<record id="70" move-type="walk" pos="10797,-10348,401" sync="0" waypoint="49" zone="6000" />
+	<record id="70" move-type="walk" pos="10614,-10682,335" sync="0" waypoint="50" zone="6000" />
+	<record id="70" move-type="walk" pos="10523,-10962,323" sync="0" waypoint="51" zone="6000" />
+	<record id="70" move-type="walk" pos="10520,-11068,326" sync="0" waypoint="52" zone="6000" />
+	<record id="70" move-type="walk" pos="10585,-11152,343" sync="0" waypoint="53" zone="6000" />
+	<record id="70" move-type="walk" pos="10627,-11312,363" sync="0" waypoint="54" zone="6000" />
+	<record id="70" move-type="walk" pos="10825,-11375,389" sync="0" waypoint="55" zone="6000" />
+	<record id="70" move-type="walk" pos="11123,-11470,407" sync="0" waypoint="56" zone="6000" />
+	<record id="70" move-type="walk" pos="11375,-11555,434" sync="0" waypoint="57" zone="6000" />
+	<record id="70" move-type="walk" pos="11697,-11603,448" sync="0" waypoint="58" zone="6000" />
+	<record id="70" move-type="walk" pos="12063,-11762,492" sync="0" waypoint="59" zone="6000" />
+	<record alias="6000_P245" id="71" move-type="walk" pos="11136,-12425,462" sync="1" waypoint="1" zone="6000" />
+	<record id="71" move-type="walk" pos="10751,-12424,454" sync="2" waypoint="2" zone="6000" />
+	<record id="71" move-type="walk" pos="11164,-12425,461" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P246" id="72" move-type="walk" pos="11136,-12354,460" sync="1" waypoint="1" zone="6000" />
+	<record id="72" move-type="walk" pos="10752,-12352,459" sync="2" waypoint="2" zone="6000" />
+	<record id="72" move-type="walk" pos="11164,-12354,459" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P248" id="73" move-type="walk" pos="11313,-12460,502" sync="0" waypoint="1" zone="6000" />
+	<record id="73" move-type="walk" pos="11232,-12460,498" sync="0" waypoint="2" zone="6000" />
+	<record id="73" move-type="walk" pos="11155,-12389,497" sync="0" waypoint="3" zone="6000" />
+	<record id="73" move-type="walk" pos="10974,-12388,479" sync="0" waypoint="4" zone="6000" />
+	<record id="73" move-type="walk" pos="11154,-12387,497" sync="0" waypoint="5" zone="6000" />
+	<record id="73" move-type="walk" pos="11232,-12459,497" sync="0" waypoint="6" zone="6000" />
+	<record id="73" move-type="walk" pos="11386,-12460,509" sync="0" waypoint="7" zone="6000" />
+	<record id="73" move-type="walk" pos="11483,-12410,519" sync="0" waypoint="8" zone="6000" />
+	<record id="73" move-type="walk" pos="11384,-12459,509" sync="0" waypoint="9" zone="6000" />
+	<record alias="6000_P247" id="74" move-type="walk" pos="10642,-12423,438" sync="0" waypoint="1" zone="6000" />
+	<record id="74" move-type="walk" pos="10432,-12425,430" sync="0" waypoint="2" zone="6000" />
+	<record id="74" move-type="walk" pos="10690,-12424,444" sync="0" waypoint="3" zone="6000" />
+	<record id="74" move-type="walk" pos="10760,-12389,457" sync="0" waypoint="4" zone="6000" />
+	<record id="74" move-type="walk" pos="10902,-12388,473" sync="0" waypoint="5" zone="6000" />
+	<record id="74" move-type="walk" pos="10761,-12388,457" sync="0" waypoint="6" zone="6000" />
+	<record id="74" move-type="walk" pos="10690,-12425,444" sync="0" waypoint="7" zone="6000" />
+	<record alias="6000_P194" id="75" move-type="walk" pos="11403,-8767,328" sync="1" waypoint="1" zone="6000" />
+	<record id="75" move-type="walk" pos="11294,-8664,318" sync="2" waypoint="2" zone="6000" />
+	<record id="75" move-type="walk" pos="11431,-8793,331" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P195" id="76" move-type="walk" pos="11436,-8733,326" sync="1" waypoint="1" zone="6000" />
+	<record id="76" move-type="walk" pos="11331,-8630,311" sync="2" waypoint="2" zone="6000" />
+	<record id="76" move-type="walk" pos="11461,-8758,331" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P196" id="77" move-type="walk" pos="11359,-8725,319" sync="1" waypoint="1" zone="6000" />
+	<record id="77" move-type="walk" pos="11251,-8623,318" sync="2" waypoint="2" zone="6000" />
+	<record id="77" move-type="walk" pos="11386,-8753,324" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P197" id="78" move-type="walk" pos="11394,-8692,316" sync="1" waypoint="1" zone="6000" />
+	<record id="78" move-type="walk" pos="11289,-8590,308" sync="2" waypoint="2" zone="6000" />
+	<record id="78" move-type="walk" pos="11418,-8717,322" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P193" id="79" move-type="walk" pos="11398,-8730,322" sync="1" waypoint="1" zone="6000" />
+	<record id="79" move-type="walk" pos="11292,-8630,312" sync="2" waypoint="2" zone="6000" />
+	<record id="79" move-type="walk" pos="11424,-8755,326" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P262" id="80" move-type="walk" pos="9570,-11751,262" sync="1" waypoint="1" zone="6000" />
+	<record id="80" move-type="walk" pos="9607,-11782,264" sync="2" waypoint="2" zone="6000" />
+	<record id="80" move-type="walk" pos="9654,-11777,265" sync="3" waypoint="3" zone="6000" />
+	<record id="80" move-type="walk" pos="9685,-11740,265" sync="4" waypoint="4" zone="6000" />
+	<record id="80" move-type="walk" pos="9680,-11693,263" sync="5" waypoint="5" zone="6000" />
+	<record id="80" move-type="walk" pos="9643,-11662,261" sync="6" waypoint="6" zone="6000" />
+	<record id="80" move-type="walk" pos="9596,-11667,261" sync="7" waypoint="7" zone="6000" />
+	<record id="80" move-type="walk" pos="9566,-11704,261" sync="8" waypoint="8" zone="6000" />
+	<record alias="6000_P263" id="81" move-type="walk" pos="9654,-11777,262" sync="1" waypoint="1" zone="6000" />
+	<record id="81" move-type="walk" pos="9685,-11740,264" sync="2" waypoint="2" zone="6000" />
+	<record id="81" move-type="walk" pos="9680,-11692,265" sync="3" waypoint="3" zone="6000" />
+	<record id="81" move-type="walk" pos="9643,-11662,265" sync="4" waypoint="4" zone="6000" />
+	<record id="81" move-type="walk" pos="9596,-11667,263" sync="5" waypoint="5" zone="6000" />
+	<record id="81" move-type="walk" pos="9565,-11704,261" sync="6" waypoint="6" zone="6000" />
+	<record id="81" move-type="walk" pos="9570,-11751,261" sync="7" waypoint="7" zone="6000" />
+	<record id="81" move-type="walk" pos="9607,-11782,261" sync="8" waypoint="8" zone="6000" />
+	<record alias="6000_P264" id="82" move-type="walk" pos="9680,-11693,262" sync="1" waypoint="1" zone="6000" />
+	<record id="82" move-type="walk" pos="9643,-11663,264" sync="2" waypoint="2" zone="6000" />
+	<record id="82" move-type="walk" pos="9595,-11667,265" sync="3" waypoint="3" zone="6000" />
+	<record id="82" move-type="walk" pos="9565,-11704,265" sync="4" waypoint="4" zone="6000" />
+	<record id="82" move-type="walk" pos="9570,-11752,263" sync="5" waypoint="5" zone="6000" />
+	<record id="82" move-type="walk" pos="9607,-11782,261" sync="6" waypoint="6" zone="6000" />
+	<record id="82" move-type="walk" pos="9654,-11777,261" sync="7" waypoint="7" zone="6000" />
+	<record id="82" move-type="walk" pos="9685,-11740,261" sync="8" waypoint="8" zone="6000" />
+	<record alias="6000_P265" id="83" move-type="walk" pos="9595,-11667,262" sync="1" waypoint="1" zone="6000" />
+	<record id="83" move-type="walk" pos="9565,-11704,264" sync="2" waypoint="2" zone="6000" />
+	<record id="83" move-type="walk" pos="9570,-11752,265" sync="3" waypoint="3" zone="6000" />
+	<record id="83" move-type="walk" pos="9608,-11782,265" sync="4" waypoint="4" zone="6000" />
+	<record id="83" move-type="walk" pos="9655,-11776,263" sync="5" waypoint="5" zone="6000" />
+	<record id="83" move-type="walk" pos="9685,-11739,261" sync="6" waypoint="6" zone="6000" />
+	<record id="83" move-type="walk" pos="9680,-11692,261" sync="7" waypoint="7" zone="6000" />
+	<record id="83" move-type="walk" pos="9643,-11662,261" sync="8" waypoint="8" zone="6000" />
+	<record alias="6000_P166" id="84" move-type="walk" pos="12746,-8981,491" sync="0" waypoint="1" zone="6000" />
+	<record id="84" move-type="walk" pos="12650,-9251,470" sync="0" waypoint="2" zone="6000" />
+	<record id="84" move-type="walk" pos="12763,-8935,504" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P109" id="85" move-type="walk" pos="10725,-8704,296" sync="1" waypoint="1" zone="6000" />
+	<record id="85" move-type="walk" pos="11009,-8498,334" sync="2" waypoint="2" zone="6000" />
+	<record id="85" move-type="walk" pos="10711,-8715,296" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P110" id="86" move-type="walk" pos="10717,-8738,296" sync="1" waypoint="1" zone="6000" />
+	<record id="86" move-type="walk" pos="11001,-8531,330" sync="2" waypoint="2" zone="6000" />
+	<record id="86" move-type="walk" pos="10703,-8749,296" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P111" id="87" move-type="walk" pos="10694,-8703,296" sync="1" waypoint="1" zone="6000" />
+	<record id="87" move-type="walk" pos="10978,-8494,334" sync="2" waypoint="2" zone="6000" />
+	<record id="87" move-type="walk" pos="10679,-8713,296" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P419" id="88" move-type="run" pos="10425,-11615,285" sync="0" waypoint="1" zone="6000" />
+	<record id="88" move-type="run" pos="10304,-11503,273" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P54" id="89" move-type="walk" pos="8699,-9268,143" sync="0" waypoint="1" zone="6000" />
+	<record id="89" move-type="walk" pos="8505,-9185,116" sync="0" waypoint="2" zone="6000" />
+	<record id="89" move-type="walk" pos="8723,-9278,143" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P141" id="90" move-type="walk" pos="11668,-9844,382" sync="0" waypoint="1" zone="6000" />
+	<record id="90" move-type="walk" pos="11782,-9808,356" sync="0" waypoint="2" zone="6000" />
+	<record id="90" move-type="walk" pos="11854,-9799,351" sync="0" waypoint="3" zone="6000" />
+	<record id="90" move-type="walk" pos="11940,-9853,349" sync="0" waypoint="4" zone="6000" />
+	<record id="90" move-type="walk" pos="11612,-9638,346" sync="0" waypoint="5" zone="6000" />
+	<record id="90" move-type="walk" pos="11785,-9748,351" sync="0" waypoint="6" zone="6000" />
+	<record id="90" move-type="walk" pos="11783,-9806,356" sync="0" waypoint="7" zone="6000" />
+	<record id="90" move-type="walk" pos="11602,-9865,392" sync="0" waypoint="8" zone="6000" />
+	<record id="90" move-type="walk" pos="11613,-9847,386" sync="0" waypoint="9" zone="6000" />
+	<record alias="6000_P418" id="91" move-type="run" pos="10125,-11346,282" sync="0" waypoint="1" zone="6000" />
+	<record id="91" move-type="run" pos="10244,-11451,273" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P304" id="92" move-type="walk" pos="10943,-11421,380" sync="1" waypoint="1" zone="6000" />
+	<record id="92" move-type="walk" pos="11057,-11460,386" sync="2" waypoint="2" zone="6000" />
+	<record id="92" move-type="walk" pos="11072,-11465,381" sync="3" waypoint="3" zone="6000" />
+	<record id="92" move-type="walk" pos="10935,-11419,380" sync="4" waypoint="4" zone="6000" />
+	<record id="92" move-type="walk" pos="10920,-11414,380" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P305" id="93" move-type="walk" pos="11054,-11416,384" sync="1" waypoint="1" zone="6000" />
+	<record id="93" move-type="walk" pos="11057,-11409,384" sync="2" waypoint="2" zone="6000" />
+	<record id="93" move-type="walk" pos="11031,-11484,387" sync="3" waypoint="3" zone="6000" />
+	<record id="93" move-type="walk" pos="11026,-11500,387" sync="4" waypoint="4" zone="6000" />
+	<record id="93" move-type="walk" pos="11052,-11424,384" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P306" id="94" move-type="walk" pos="10998,-11482,384" sync="1" waypoint="1" zone="6000" />
+	<record id="94" move-type="walk" pos="10996,-11490,384" sync="2" waypoint="2" zone="6000" />
+	<record id="94" move-type="walk" pos="11021,-11414,383" sync="3" waypoint="3" zone="6000" />
+	<record id="94" move-type="walk" pos="11027,-11398,382" sync="4" waypoint="4" zone="6000" />
+	<record id="94" move-type="walk" pos="11001,-11474,384" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P307" id="95" move-type="walk" pos="10994,-11396,381" sync="1" waypoint="1" zone="6000" />
+	<record id="95" move-type="walk" pos="10996,-11388,381" sync="2" waypoint="2" zone="6000" />
+	<record id="95" move-type="walk" pos="10971,-11464,382" sync="3" waypoint="3" zone="6000" />
+	<record id="95" move-type="walk" pos="10966,-11479,382" sync="4" waypoint="4" zone="6000" />
+	<record id="95" move-type="walk" pos="10991,-11403,381" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P308" id="96" move-type="walk" pos="10938,-11461,380" sync="1" waypoint="1" zone="6000" />
+	<record id="96" move-type="walk" pos="10935,-11469,380" sync="2" waypoint="2" zone="6000" />
+	<record id="96" move-type="walk" pos="10961,-11393,380" sync="3" waypoint="3" zone="6000" />
+	<record id="96" move-type="walk" pos="10966,-11378,380" sync="4" waypoint="4" zone="6000" />
+	<record id="96" move-type="walk" pos="10940,-11454,380" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P114" id="97" move-type="walk" pos="11138,-8428,287" sync="1" waypoint="1" zone="6000" />
+	<record id="97" move-type="walk" pos="11149,-8418,287" sync="2" waypoint="2" zone="6000" />
+	<record id="97" move-type="walk" pos="11097,-8471,285" sync="3" waypoint="3" zone="6000" />
+	<record id="97" move-type="walk" pos="11087,-8481,284" sync="4" waypoint="4" zone="6000" />
+	<record id="97" move-type="walk" pos="11133,-8434,287" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P115" id="98" move-type="walk" pos="11111,-8485,285" sync="1" waypoint="1" zone="6000" />
+	<record id="98" move-type="walk" pos="11101,-8495,284" sync="2" waypoint="2" zone="6000" />
+	<record id="98" move-type="walk" pos="11153,-8443,287" sync="3" waypoint="3" zone="6000" />
+	<record id="98" move-type="walk" pos="11163,-8432,287" sync="4" waypoint="4" zone="6000" />
+	<record id="98" move-type="walk" pos="11117,-8480,285" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P116" id="99" move-type="walk" pos="11167,-8457,287" sync="1" waypoint="1" zone="6000" />
+	<record id="99" move-type="walk" pos="11178,-8446,287" sync="2" waypoint="2" zone="6000" />
+	<record id="99" move-type="walk" pos="11126,-8499,284" sync="3" waypoint="3" zone="6000" />
+	<record id="99" move-type="walk" pos="11116,-8510,283" sync="4" waypoint="4" zone="6000" />
+	<record id="99" move-type="walk" pos="11162,-8462,287" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P113" id="100" move-type="walk" pos="11082,-8457,285" sync="1" waypoint="1" zone="6000" />
+	<record id="100" move-type="walk" pos="11072,-8467,285" sync="2" waypoint="2" zone="6000" />
+	<record id="100" move-type="walk" pos="11124,-8414,287" sync="3" waypoint="3" zone="6000" />
+	<record id="100" move-type="walk" pos="11134,-8404,287" sync="4" waypoint="4" zone="6000" />
+	<record id="100" move-type="walk" pos="11088,-8451,286" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P112" id="101" move-type="walk" pos="11094,-8426,287" sync="1" waypoint="1" zone="6000" />
+	<record id="101" move-type="walk" pos="11157,-8488,286" sync="2" waypoint="2" zone="6000" />
+	<record id="101" move-type="walk" pos="11168,-8499,286" sync="3" waypoint="3" zone="6000" />
+	<record id="101" move-type="walk" pos="11083,-8416,287" sync="4" waypoint="4" zone="6000" />
+	<record id="101" move-type="walk" pos="11088,-8421,287" sync="5" waypoint="5" zone="6000" />
+	<record alias="6000_P274" id="102" move-type="walk" pos="10583,-10805,294" sync="1" waypoint="1" zone="6000" />
+	<record id="102" move-type="walk" pos="10538,-10944,288" sync="2" waypoint="2" zone="6000" />
+	<record id="102" move-type="walk" pos="10591,-10779,294" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P277" id="103" move-type="walk" pos="10620,-10785,296" sync="1" waypoint="1" zone="6000" />
+	<record id="103" move-type="walk" pos="10576,-10920,288" sync="2" waypoint="2" zone="6000" />
+	<record id="103" move-type="walk" pos="10630,-10758,295" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P278" id="104" move-type="walk" pos="10567,-10761,294" sync="1" waypoint="1" zone="6000" />
+	<record id="104" move-type="walk" pos="10521,-10898,293" sync="2" waypoint="2" zone="6000" />
+	<record id="104" move-type="walk" pos="10577,-10734,293" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P276" id="105" move-type="walk" pos="10592,-10873,294" sync="1" waypoint="1" zone="6000" />
+	<record id="105" move-type="walk" pos="10556,-10978,282" sync="2" waypoint="2" zone="6000" />
+	<record id="105" move-type="walk" pos="10610,-10817,295" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P275" id="106" move-type="walk" pos="10538,-10850,294" sync="1" waypoint="1" zone="6000" />
+	<record id="106" move-type="walk" pos="10501,-10957,289" sync="2" waypoint="2" zone="6000" />
+	<record id="106" move-type="walk" pos="10557,-10792,294" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P266" id="107" move-type="walk" pos="11661,-11606,480" sync="1" waypoint="1" zone="6000" />
+	<record id="107" move-type="walk" pos="11353,-11561,460" sync="2" waypoint="2" zone="6000" />
+	<record id="107" move-type="walk" pos="11687,-11609,479" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P267" id="108" move-type="walk" pos="11684,-11638,479" sync="1" waypoint="1" zone="6000" />
+	<record id="108" move-type="walk" pos="11373,-11592,465" sync="2" waypoint="2" zone="6000" />
+	<record id="108" move-type="walk" pos="11709,-11642,479" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P268" id="109" move-type="walk" pos="11691,-11585,480" sync="1" waypoint="1" zone="6000" />
+	<record id="109" move-type="walk" pos="11384,-11540,462" sync="2" waypoint="2" zone="6000" />
+	<record id="109" move-type="walk" pos="11715,-11589,479" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P87" id="110" move-type="walk" pos="8963,-10265,215" sync="1" waypoint="1" zone="6000" />
+	<record id="110" move-type="walk" pos="9009,-10137,192" sync="2" waypoint="2" zone="6000" />
+	<record id="110" move-type="walk" pos="8955,-10286,219" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P327" id="112" move-type="walk" pos="11682,-8802,300" sync="0" waypoint="1" zone="6000" />
+	<record id="112" move-type="walk" pos="11682,-9031,292" sync="0" waypoint="2" zone="6000" />
+	<record id="112" move-type="walk" pos="11682,-8756,301" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P368" id="113" move-type="run" pos="7405,-9246,158" sync="0" waypoint="1" zone="6000" />
+	<record id="113" move-type="run" pos="7317,-9157,150" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P86" id="114" move-type="walk" pos="8978,-10150,193" sync="1" waypoint="1" zone="6000" />
+	<record id="114" move-type="walk" pos="8932,-10278,215" sync="2" waypoint="2" zone="6000" />
+	<record id="114" move-type="walk" pos="8986,-10129,188" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P389_1" id="115" move-type="run" pos="7307,-9195,154" sync="0" waypoint="1" zone="6000" />
+	<record id="115" move-type="run" pos="7411,-9225,158" sync="0" waypoint="2" zone="6000" />
+	<record id="115" move-type="run" pos="7441,-9322,160" sync="0" waypoint="3" zone="6000" />
+	<record id="115" move-type="run" pos="7357,-9535,163" sync="0" waypoint="4" zone="6000" />
+	<record id="115" move-type="run" pos="7355,-9834,174" sync="0" waypoint="5" zone="6000" />
+	<record id="115" move-type="run" pos="7441,-9989,170" sync="0" waypoint="6" zone="6000" />
+	<record id="115" move-type="run" pos="7468,-10001,163" sync="0" waypoint="7" zone="6000" />
+	<record id="115" move-type="run" pos="7476,-10020,171" sync="0" waypoint="8" zone="6000" />
+	<record alias="6000_P390_1" id="116" move-type="run" pos="7354,-9146,155" sync="0" waypoint="1" zone="6000" />
+	<record id="116" move-type="run" pos="7431,-9219,160" sync="0" waypoint="2" zone="6000" />
+	<record id="116" move-type="run" pos="7460,-9320,164" sync="0" waypoint="3" zone="6000" />
+	<record id="116" move-type="run" pos="7415,-9433,163" sync="0" waypoint="4" zone="6000" />
+	<record id="116" move-type="run" pos="7421,-9827,172" sync="0" waypoint="5" zone="6000" />
+	<record id="116" move-type="run" pos="7513,-9966,165" sync="0" waypoint="6" zone="6000" />
+	<record id="116" move-type="run" pos="7552,-9986,160" sync="0" waypoint="7" zone="6000" />
+	<record id="116" move-type="run" pos="7559,-10007,168" sync="0" waypoint="8" zone="6000" />
+	<record alias="6000_P388_1" id="117" move-type="run" pos="7366,-9202,129" sync="0" waypoint="1" zone="6000" />
+	<record id="117" move-type="run" pos="7406,-9242,155" sync="0" waypoint="2" zone="6000" />
+	<record id="117" move-type="run" pos="7426,-9317,158" sync="0" waypoint="3" zone="6000" />
+	<record id="117" move-type="run" pos="7383,-9425,157" sync="0" waypoint="4" zone="6000" />
+	<record id="117" move-type="run" pos="7386,-9830,146" sync="0" waypoint="5" zone="6000" />
+	<record id="117" move-type="run" pos="7483,-9981,141" sync="0" waypoint="6" zone="6000" />
+	<record id="117" move-type="run" pos="7526,-10019,136" sync="0" waypoint="7" zone="6000" />
+	<record id="117" move-type="run" pos="7539,-10075,145" sync="0" waypoint="8" zone="6000" />
+	<record alias="6000_P38" id="118" move-type="walk" pos="7927,-9288,188" sync="0" waypoint="1" zone="6000" />
+	<record id="118" move-type="walk" pos="8068,-9284,150" sync="0" waypoint="2" zone="6000" />
+	<record id="118" move-type="walk" pos="8150,-9244,193" sync="0" waypoint="3" zone="6000" />
+	<record id="118" move-type="walk" pos="8067,-9284,149" sync="0" waypoint="4" zone="6000" />
+	<record id="118" move-type="walk" pos="7912,-9289,174" sync="0" waypoint="5" zone="6000" />
+	<record alias="6000_P75" id="119" move-type="walk" pos="8183,-10560,198" sync="0" waypoint="1" zone="6000" />
+	<record id="119" move-type="walk" pos="8304,-10531,209" sync="0" waypoint="2" zone="6000" />
+	<record id="119" move-type="walk" pos="8423,-10529,222" sync="0" waypoint="3" zone="6000" />
+	<record id="119" move-type="walk" pos="8304,-10530,208" sync="0" waypoint="4" zone="6000" />
+	<record id="119" move-type="walk" pos="8185,-10561,200" sync="0" waypoint="5" zone="6000" />
+	<record id="119" move-type="walk" pos="8134,-10537,170" sync="0" waypoint="6" zone="6000" />
+	<record id="119" move-type="walk" pos="8042,-10318,149" sync="0" waypoint="7" zone="6000" />
+	<record id="119" move-type="walk" pos="8134,-10533,174" sync="0" waypoint="8" zone="6000" />
+	<record alias="6000_P79" id="120" move-type="walk" pos="8519,-10537,231" sync="0" waypoint="1" zone="6000" />
+	<record id="120" move-type="walk" pos="8747,-10540,247" sync="0" waypoint="2" zone="6000" />
+	<record id="120" move-type="walk" pos="8494,-10535,230" sync="0" waypoint="3" zone="6000" />
+	<record alias="6000_P393" id="122" move-type="run" pos="7660,-9256,214" sync="0" waypoint="1" zone="6000" />
+	<record id="122" move-type="run" pos="7318,-9224,157" sync="0" waypoint="2" zone="6000" />
+	<record alias="6000_P95" id="123" move-type="walk" pos="11621,-8624,347" sync="1" waypoint="1" zone="6000" />
+	<record id="123" move-type="walk" pos="11325,-8357,317" sync="2" waypoint="2" zone="6000" />
+	<record id="123" move-type="walk" pos="11647,-8646,349" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P96" id="124" move-type="walk" pos="11660,-8658,350" sync="1" waypoint="1" zone="6000" />
+	<record id="124" move-type="walk" pos="11363,-8391,322" sync="2" waypoint="2" zone="6000" />
+	<record id="124" move-type="walk" pos="11686,-8682,351" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P97" id="125" move-type="walk" pos="11658,-8624,351" sync="1" waypoint="1" zone="6000" />
+	<record id="125" move-type="walk" pos="11361,-8357,318" sync="2" waypoint="2" zone="6000" />
+	<record id="125" move-type="walk" pos="11683,-8648,351" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P98" id="126" move-type="walk" pos="11627,-8657,348" sync="1" waypoint="1" zone="6000" />
+	<record id="126" move-type="walk" pos="11329,-8390,322" sync="2" waypoint="2" zone="6000" />
+	<record id="126" move-type="walk" pos="11652,-8680,349" sync="3" waypoint="3" zone="6000" />
+	<record alias="6000_P326" id="127" move-type="walk" pos="12062,-9143,293" sync="0" waypoint="1" zone="6000" />
+	<record id="127" move-type="walk" pos="12084,-9122,296" sync="0" waypoint="2" zone="6000" />
+	<record id="127" move-type="walk" pos="12077,-9086,298" sync="0" waypoint="3" zone="6000" />
+	<record id="127" move-type="walk" pos="12044,-9075,296" sync="0" waypoint="4" zone="6000" />
+	<record id="127" move-type="walk" pos="12019,-9099,293" sync="0" waypoint="5" zone="6000" />
+	<record id="127" move-type="walk" pos="12027,-9137,293" sync="0" waypoint="6" zone="6000" />
+	<record id="127" move-type="walk" pos="12046,-9145,292" sync="0" waypoint="7" zone="6000" />
+</table>

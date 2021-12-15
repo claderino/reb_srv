@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5927\zoneenv2placedata.5927.xml-->
+	<record alias="e_AirDash_SacrificeGrave_03_a_1_place" duration="5100" end-pos="16799,6686,-2661" region-point-1="12865,9500,-1393" region-point-2="12865,9548,-1394" region-point-3="12913,9548,-1396" region-point-4="12913,9500,-1396" summon-end-pos="16799,6686,-2661" tool-zone-1="5924" tool-zone-2="5927" type="airdash" />
+	<record alias="e_AirDash_SacrificeGrave_04_a_1_place" duration="5100" end-pos="12788,9925,-1228" region-point-1="16778,6594,-2670" region-point-2="16778,6642,-2670" region-point-3="16826,6642,-2670" region-point-4="16826,6594,-2670" summon-end-pos="12788,9925,-1228" tool-zone-1="5924" tool-zone-2="5927" type="airdash" />
+	<record action-point="17953,6288,-2655" action-radius="15" alias="e_chest_5927_switch_01_Place" tool-zone-1="5927" type="chest" />
+	<record action-point="16407,5014,-2903" action-radius="20" alias="e_Chest_5927hartA_01_place" tool-zone-1="5927" type="chest" />
+	<record action-point="15864,5229,-2882" action-radius="25" alias="e_button_5927yongmak_01_place" region-point-1="15862,5227,-2910" region-point-2="15862,5231,-2910" region-point-3="15866,5231,-2910" region-point-4="15866,5227,-2910" tool-zone-1="5924" tool-zone-2="5927" type="portal" />
+	<record action-point="14508,9575,-1151" alias="5927_HeaSangMuDom_5923_place" region-point-1="14645,9581,-1009" region-point-2="14645,9568,-1009" region-point-3="14370,9568,-1100" region-point-4="14370,9581,-1100" tool-zone-1="5924" tool-zone-2="5927" type="portal" />
+	<record action-point="17399,5245,-2448" action-radius="0" alias="e_5927_footswitch_01_place" region-point-1="17179,5074,-2216" region-point-2="17179,5416,-2216" region-point-3="17619,5416,-2216" region-point-4="17619,5074,-2216" tool-zone-1="5927" type="foot-switch" />
+	<record alias="5927_DMZ_02_place" height="0" region-point-1="16670,6153,-2197" region-point-2="16670,6479,-2197" region-point-3="16879,6479,-2460" region-point-4="16879,6153,-2197" tool-zone-1="5927" type="effect-region" />
+	<record alias="5927_DMZ_01_place" height="0" region-point-1="17125,5099,-1600" region-point-2="17125,5382,-1600" region-point-3="17639,5382,-2488" region-point-4="17639,5099,-2488" tool-zone-1="5927" type="effect-region" />
+	<record alias="5927_DMZ_07_place" height="0" region-point-1="16880,6097,-2255" region-point-2="16880,6479,-2460" region-point-3="17074,6479,-2255" region-point-4="17074,6097,-2255" tool-zone-1="5927" type="effect-region" />
+	<record action-point="12789,10141,-1146" action-radius="0" alias="5927_foot_03_place" region-point-1="12677,10227,-1030" region-point-2="12905,10223,-1030" region-point-3="12902,10054,-126" region-point-4="12673,10059,-126" tool-zone-1="5927" type="foot-switch" />
+	<record alias="zone5927.falldeath_place" height="-2105" type="fall-death" />
+</table>

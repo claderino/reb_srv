@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.924.xml-->
+  <quest alias="q_epic_924" category="epic" completed-list="y" district-1="suwal" id="924" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="zoneenv2:4511_foot_4" party-broadcast="n" progress-mission="y" type="env-entered" />
+        <case object="zone:zone_kyoungcheneastkiji_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_924_1" type="enter-zone" />
+        <case object="npc:ch_geongchunmaeng_0010" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="none">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_kyeongchunmaeng_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_924_2" type="talk" />
+        <case object="zone:zone_kyoungcheneastkiji_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_924_16" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" rollback="none">
+      <mission id="3" required-register-value="1">
+        <case object="zone:zone_kyoungcheneastkiji_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_924_3" type="enter-zone" />
+        <case drop-gadget="y" gadget-required="empty" object2="zoneenv2:e_chest_riflestand_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="RifleA_Lv42" gadget-required="carry-and-remove" object2-1="zoneenv2:e_pot_explosive_05" party-broadcast="n" progress-mission="y" skill="Gadget_RifleA_Lv42" skill3="Gadget_RifleA_Lv42" type="skill" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" rollback="none">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_kyeongchunmaeng_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_kyoungcheneastkiji_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_924_14" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_924_15" rollback="leave-zone" zone-1="zone_kyoungcheneastkiji_epic">
+      <mission id="5" required-register-value="1">
+        <case object2="zoneenv2:e_chest_bookbunch_02" party-broadcast="n" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_chest_bookbunch_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" zone-1="zone_kyoungcheneastkiji_epic" />
+    </mission-step>
+    <mission-step id="6" rollback="leave-zone">
+      <mission id="6" required-register-value="1">
+        <case object2="npc:mh_jegukgun_0214" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="zoneenv2:4511_foot_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_924_6" type="env-entered" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" zone-1="zone_kyoungcheneastkiji_epic" />
+    </mission-step>
+    <mission-step id="7" rollback="none">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ch_kyeongchunmaeng_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_924_9" type="talk" />
+        <case object="zone:zone_kyoungcheneastkiji_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_924_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" rollback="leave-zone">
+      <mission id="8" required-register-value="1">
+        <case object2="zoneenv2:4511_foot_2" party-broadcast="n" progress-mission="y" quest-decision="qd_924_11" type="env-entered" />
+      </mission>
+      <mission-step-fail rollback-step-id="7" zone-1="zone_kyoungcheneastkiji_epic" />
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1" reset-teleport-recycle-time="y" reward-1="924_final_set1">
+        <case object="npc:ch_gyeongchunmaeng_0030" party-broadcast="n" progress-mission="y" quest-decision="qd_924_13" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject2="case:talked:pc" type="prop" value="43" />
+          </filter-set>
+        </case>
+        <case object="zone:zone_kyoungcheneastkiji_epic" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_924_12" type="enter-zone" />
+        <case object="npc:ch_gyeongchunmaeng_0030" party-broadcast="n" progress-mission="y" quest-decision="qd_924_13" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="42" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_925" />
+    </completion>
+    <transit id="1" zone="zone_kyoungcheneastkiji">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+    </transit>
+  </quest>
+</table>

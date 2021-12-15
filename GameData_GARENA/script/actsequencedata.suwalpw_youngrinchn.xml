@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.suwalpw_youngrinchn.xml-->
+
+  
+  
+  <act-sequence alias="CH_YeongLin_0033_pathway_01" type="act">
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0033_pathway_02" type="act">
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0033_pathway_03" type="act">
+    <action pathway="3" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0055_pathway_02" type="act">
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0055_pathway_03" type="act">
+    <action pathway="3" type="indexed-pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0055_pathway_04" type="act">
+    <action pathway="4" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_YeongLin_0056_pathway_01" type="act">
+    <action social="CH_YeongLin_0056_run_1_soc" type="social" />
+    <action pathway="4419_pathway_area25_a" type="pathway" />
+    <action step="1" type="pause" />
+    <action social="CH_YeongLin_0056_run_2_soc" type="social" />
+    <action step="2" type="pause" />
+    <action pathway="4419_pathway_area25_b" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_YeongLin_0057_pathway_01" type="act">
+    <action social="CH_YeongLin_0057_run_soc" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="4419_pathway_cheongpung" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0057_con_arrived_act" type="act">
+    <action social="CH_YeongLin_0057_con_arrived" type="social" />
+    <action pathway="4419_p18" type="pathway" />
+    <action social="CH_YeongLin_0057_help_soc" type="social" />
+  </act-sequence>
+  
+  
+  
+  <act-sequence alias="CH_YeongLin_0071_con_start_act" type="act">
+    <action step="1" type="pause" />
+    <action social="CH_YeongLin_0071_con_start_soc" type="social" />
+    <action pathway="4419_p15" type="pathway" />
+    <action step="2" type="pause" />
+    <action pathway="4419_p3" type="pathway" />
+    <action step="3" type="pause" />
+    <action pathway="4419_p4" type="pathway" />
+    <action social="CH_YeongLin_0071_con_soc_03" type="social" />
+    <action pathway="4419_p6" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0071_con_arrived_act" type="act">
+    <action social="CH_YeongLin_0071_con_arrived_soc" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0071_con_failed_act" type="act">
+    <action social="CH_YeongLin_0071_con_failed_soc" type="social" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_YeongLin_0073_act_01" type="act">
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_YeongLin_0074_act_01" type="act">
+    <action social="CH_YeongLin_0074_letsgo_soc" type="social" />
+    <action step="1" type="pause" />                             
+    <action duration="3000" type="stay" />
+    <action step="2" type="pause" />                             
+    <action pathway="4422_p20" type="pathway" />
+    <action social="CH_YeongLin_0074_hawro_soc" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0075_act_01" type="act">
+    <action pathway="4422_p21" type="pathway" />
+    <action social="CH_YeongLin_0075_hawro_soc" type="social" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_YeongLin_0074_act_02" type="act">
+    <action social="CH_YeongLin_0074_anger_soc" type="social" />
+    <action pathway="4422_p22" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0075_act_02" type="act">
+    <action social="CH_YeongLin_0075_anger_soc" type="social" />
+    <action pathway="4422_p23" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_JinSeoYeon_0007_act_01" detect="none" type="act">
+    <action step="1" type="pause" />                             
+    <action social="CH_JinSeoYeon_0007_spawn_soc" type="social" />
+    <action pathway="4422_p25" type="pathway" />
+    <action social="CH_JinSeoYeon_0007_soc_1" type="social" />
+    <action step="2" type="pause" />                             
+    <action social="CH_JinSeoYeon_0007_soc_2" type="social" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_JinSeoYeon_0007_act_02" detect="none" type="act">
+    <action social="CH_JinSeoYeon_0007_soc_3" type="social" />
+    <action pathway="4422_p24" type="pathway" />
+    <action social="CH_JinSeoYeon_0007_soc_4" type="social" />
+    <action social="CH_JinSeoYeon_0007_soc_5" type="social" />
+    <action social="CH_JinSeoYeon_0007_soc_6" type="social" />
+    <action step="4" type="pause" />                             
+    <action pathway="4422_p54" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0023_act_01" type="peace"><action duration="3000" type="stay" /><action social="CH_YeongLin_0023_durebak_1_soc" type="social" /><action duration="7000" type="stay" /></act-sequence>
+  <act-sequence alias="CH_YeongLin_0023_act_02" type="peace"><action duration="3000" type="stay" /><action social="CH_YeongLin_0023_durebak_2_soc" type="social" /><action duration="7000" type="stay" /></act-sequence>
+  <act-sequence alias="CH_YeongLin_0023_act_03" type="peace"><action duration="3000" type="stay" /><action social="CH_YeongLin_0023_durebak_3_soc" type="social" /><action duration="7000" type="stay" /></act-sequence>
+
+  
+  
+  
+  
+  
+  <act-sequence alias="MH_JeGukGun_0170_act_01" indexed-detect="1" type="peace">
+    <action duration="500" type="stay" />
+    
+  </act-sequence>    
+
+  
+  <act-sequence alias="MH_JeGukGun_0171_act_01" indexed-detect="1" type="peace">
+    <action duration="500" type="stay" />
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_JeGukGun_0172_act_01" type="act">
+    <action pathway="4500_p1" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_JeGukGun_0173_act_01" type="act">
+    <action pathway="4500_p2" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0041_act_01" type="act">
+    <action social="CH_YeongLin_0041_soc_1" type="social" />
+    <action duration="100" type="stay" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="CH_YeongLin_0014_act_01" type="act">
+    <action duration="500" type="stay" />
+    <action social="CH_YeongLin_0014_soc_1" type="social" />
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+
+  
+  <act-sequence alias="CH_YeongLin_0042_act_01" type="act">
+    <action duration="500" type="stay" />
+    <action social="CH_YeongLin_0042_soc_1" type="social" />
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0014_act_03" type="act">
+    <action social="CH_YeongLin_0014_soc_3" type="social" />
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0041_act_02" type="act">
+    <action duration="600" type="stay" />
+    <action social="CH_YeongLin_0041_soc_2" type="social" />
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0042_act_02" type="act">
+    <action duration="600" type="stay" />
+    <action social="CH_YeongLin_0042_soc_2" type="social" />
+    <action duration="100" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+  
+  
+  <act-sequence alias="MH_JeGukGun_0176_act_01" indexed-detect="1" type="peace">
+    <action social="MH_JeGukGun_0176_combat_peace_1" type="social" />
+    <action duration="10000" type="stay" />
+    <action social="MH_JeGukGun_0176_combat_peace_2" type="social" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+  
+  
+  <act-sequence alias="CH_YeongLin_0019_01" type="act">
+    <action social="CH_YeongLin_0019_soc_1" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="CH_YeongLin_0019_soc_2" type="social" />
+    <action pathway="4420_p27" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0046_01" type="act">
+    <action pathway="4420_p24" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0047_01" type="act">
+    <action pathway="4420_p25" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0048_01" type="act">
+    <action pathway="4420_p23" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0049_01" type="act">
+    <action pathway="4420_p26" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_JeGukGun_0179_01" type="act">
+    <action pathway="4420_p6" type="pathway" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_JeGukGun_0179_02" type="act">
+    <action pathway="4420_p7" type="pathway" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_JeGukGun_0179_03" type="act">
+    <action pathway="4420_p8" type="pathway" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+
+  
+  <act-sequence alias="CH_YeongLin_0051_01" type="act">
+    <action pathway="4420_p34" type="pathway" />
+    <action social="CH_YeongLin_0051_soc_3" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0051_02" type="act">
+    <action social="CH_YeongLin_0051_soc_1" type="social" />
+  </act-sequence>
+    
+  
+  
+  
+
+  
+  <act-sequence alias="CH_YeongLin_0085_con_start_act" detect="npc-360" type="act">
+    <action step="1" type="pause" />                                     
+    <action social="CH_YeongLin_0085_combat_soc_1" type="social" />
+    <action pathway="4420_p83" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0085_con_arrived_act" detect="npc-360" type="act">
+    <action social="CH_YeongLin_0085_combat_soc_2" type="social" />
+    <action social="CH_YeongLin_0085_combat_soc_3" type="social" />
+    <action pathway="4420_p42" type="pathway" />
+    <action social="CH_YeongLin_0085_combat_soc_4" type="social" />
+    <action social="CH_YeongLin_0085_combat_soc_5" type="social" />
+    <action pathway="4420_p43" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0085_con_failed_act" type="act">
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0085_act_01" type="act">
+    <action social="CH_YeongLin_0085_soc_1" type="social" />
+    <action pathway="4420_p44" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="qd_903_act_01_01" type="act"><action social="CH_WolGwangHoe_0008_soc_3" type="social" /></act-sequence>
+  <act-sequence alias="qd_903_act_01_02" type="act"><action social="CH_YeongLin_0085_soc_2" type="social" /></act-sequence>
+  <act-sequence alias="qd_903_act_01_03" type="act"><action social="CH_WolGwangHoe_0008_soc_4" type="social" /></act-sequence>
+  <act-sequence alias="qd_903_act_01_04" type="act"><action social="CH_YeongLin_0085_soc_3" type="social" /></act-sequence>
+  <act-sequence alias="qd_903_act_01_05" type="act"><action social="CH_YeongLin_0085_soc_4" type="social" /><action pathway="4420_p45" type="pathway" /><action respawn="n" type="despawn" /></act-sequence>
+  <act-sequence alias="qd_903_act_01_06" type="act"><action duration="5000" type="stay" /><action social="CH_WolGwangHoe_0008_soc_5" type="social" /></act-sequence>
+  
+  
+  <act-sequence alias="CH_WolGwangHoe_0034_act_01" type="act">
+    <action social="CH_WolGwangHoe_0034_battle_3" type="social" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0011_act_00" type="act">
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0011_peace_01" type="peace">
+    <action duration="4000" type="stay" />
+    <action social="CH_YeongLin_0011_soc_1" type="social" />
+    <action duration="8000" type="stay" />
+    <action social="CH_YeongLin_0011_soc_2" type="social" />
+    <action duration="8000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0011_act_02" type="act">
+    <action social="CH_YeongLin_0011_soc_4" type="social" />
+    <action social="CH_YeongLin_0011_soc_5" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0011_act_01" type="act">
+    <action social="CH_YeongLin_0011_soc_7" type="social" />
+    <action social="CH_YeongLin_0011_soc_8" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="qd_903_act_02_01" type="act"><action social="CH_YeongLin_0010_soc_1" type="social" /></act-sequence>
+  <act-sequence alias="qd_903_act_02_02" type="act"><action social="CH_YeongLin_0001_soc_1" type="social" /></act-sequence>
+  <act-sequence alias="qd_903_act_02_03" type="act"><action social="CH_YeongLin_0010_soc_2" type="social" /></act-sequence>
+  <act-sequence alias="qd_903_act_02_04" type="act"><action social="CH_YeongLin_0001_soc_2" type="social" /><action pathway="4414_p1" type="pathway" /></act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0004_act_01" detect="npc-360" type="act">
+    <action social="CH_YeongLin_0004_battle_1" type="social" />
+    <action pathway="4411_p2" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0004_act_02" detect="npc-360" type="act">
+    <action social="CH_YeongLin_0004_battle_3" type="social" />
+    <action pathway="4411_p4" type="pathway" />
+    <action social="CH_YeongLin_0004_battle_6" type="social" />
+  </act-sequence>
+  <act-sequence alias="CH_YeongLin_0004_act_03" detect="npc-360" type="act">
+    <action pathway="4411_p9" type="pathway" />
+    <action social="CH_YeongLin_0004_battle_5" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_YeongLin_0002_despawn_act_001" indexed-detect="1" type="act">
+    <action social="CH_YeongLin_0002_despawn" type="social" />
+    <action pathway="4415_p1" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+
+  
+
+  
+  <act-sequence alias="MH_GeongChunMaeng_0006_act_01" type="act">
+    <action social="MH_GeongChunMaeng_0006_combat_soc_01" type="social" />
+    <action social="MH_GeongChunMaeng_0006_combat_soc_02" type="social" />
+  </act-sequence>
+  <act-sequence alias="MH_GeongChunMaeng_0006_act_02" type="act">
+    <action social="MH_GeongChunMaeng_0006_combat_soc_03" type="social" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_GeongChunMaeng_0004_act_01" type="act">
+    <action duration="1000" type="stay" />
+    <action social="MH_GeongChunMaeng_0004_combat_soc_01" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="4418_p2" type="pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  <act-sequence alias="MH_GeongChunMaeng_0064_act_01" type="act">
+    <action duration="500" type="stay" />
+    <action social="MH_GeongChunMaeng_0064_combat_soc_01" type="social" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="MH_GeongChunMaeng_0004_path_act" indexed-detect="1" type="act">
+    <action pathway="4418_p2" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_GeongChunMaeng_0021_act_01" indexed-detect="1" type="act">
+    <action pathway="4418_p1" type="pathway" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="MH_GeongChunMaeng_0005_Path_Act" indexed-detect="1" type="act">
+    <action social="MH_GeongChunMaeng_0005_soc" type="social" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_GeongChunMaeng_0021_Soc_Act" indexed-detect="1" type="act">
+    <action social="CH_GeongChunMaeng_0021_soc" type="social" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_GeongChunMaeng_0021_Path_Act" indexed-detect="1" type="act">
+    <action pathway="4418_p24" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="CH_GeongChunMaeng_0021_Path_Act_02" indexed-detect="1" type="act">
+    <action pathway="4418_p41" type="pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="MH_GeongChunMaeng_0018_Path_Act" indexed-detect="1" type="act">
+    <action pathway="4418_p25" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="MH_GeongChunMaeng_0019_Path_Act" indexed-detect="1" type="act">
+    <action pathway="4418_p27" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_WolGwangHoe_0006_Path_Act" indexed-detect="1" type="act">
+    <action pathway="4418_p26" type="pathway" />
+  </act-sequence>
+  <act-sequence alias="CH_WolGwangHoe_0007_Path_Act" indexed-detect="1" type="act">
+    <action pathway="4418_p28" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ch_gyeongchunmaeng_0009_Path_Act" indexed-detect="1" type="act">
+    
+    <action pathway="4412_p1" type="pathway" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="qd_928_act_01_01" type="act">
+    <action duration="100" type="stay" />
+    <action social="MH_JinSeoYeon_0002_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="qd_928_act_01_02" type="act"><action social="MH_JinSeoYeon_0002_soc_02" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_01_03" type="act"><action social="CH_GyeongChunMaeng_0026_soc_01" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_01_04" type="act"><action social="MH_JinSeoYeon_0002_soc_03" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_01_05" type="act"><action social="MH_JinSeoYeon_0002_soc_04" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_01_06" type="act"><action social="CH_GyeongChunMaeng_0011_soc_01" type="social" /></act-sequence>
+  
+  <act-sequence alias="qd_928_act_01_08" type="act"><action social="MH_JinSeoYeon_0002_soc_05" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_01_09" type="act"><action social="MH_JinSeoYeon_0002_soc_06" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_01_10" type="act"><action social="CH_GyeongChunMaeng_0026_soc_02" type="social" /></act-sequence>
+  
+  <act-sequence alias="qd_928_act_01_12" type="act"><action duration="3000" type="stay" /><action social="MH_JinSeoYeon_0002_soc_08" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_01_13" type="act"><action social="MH_JinSeoYeon_0002_soc_09" type="social" /></act-sequence>
+
+  
+  <act-sequence alias="qd_928_act_02_01" type="act">
+    <action duration="3000" type="stay" />
+    <action social="CH_GyeongChunMaeng_0010_combat_soc_03" type="social" />
+  </act-sequence>
+  <act-sequence alias="qd_928_act_02_02" type="act"><action duration="3000" type="stay" /><action social="CH_GyeongChunMaeng_0025_combat_soc_02" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_02_03" type="act"><action duration="3000" type="stay" /><action social="CH_BarkMun_0005_combat_soc_02" type="social" /><action duration="13000" type="stay" /></act-sequence>
+
+  
+  <act-sequence alias="qd_928_act_03_01" type="act">
+    <action duration="3000" type="stay" />
+    <action social="MH_JinSeoYeon_0002_combat_soc_01" type="social" />
+  </act-sequence>
+  <act-sequence alias="qd_928_act_03_02" type="act"><action duration="2000" type="stay" /><action social="MH_JinSeoYeon_0002_combat_soc_02" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_03_03" type="act"><action duration="2000" type="stay" /><action social="ME_GeoGeoBung_0001_combat_soc_01" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_03_04" type="act"><action duration="2000" type="stay" /><action social="CH_GyeongChunMaeng_0011_combat_soc_01" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_03_05" type="act"><action duration="2000" type="stay" /><action social="CH_GyeongChunMaeng_0026_combat_soc_01" type="social" /></act-sequence>
+  <act-sequence alias="qd_928_act_03_06" type="act"><action duration="2000" type="stay" /><action social="CH_GyeongChunMaeng_0026_combat_soc_02" type="social" /><action duration="13000" type="stay" /></act-sequence>
+
+  
+  
+  
+  <act-sequence alias="CH_CheonJinGwon_0002_act_01" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_CheonJinGwon_0002_soc_01" type="social" /><action duration="500" type="stay" /><action pathway="4423_p1" type="pathway" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_CheonJinGwon_0002_act_02" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_CheonJinGwon_0002_soc_02" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_CheonJinGwon_0002_act_03" indexed-detect="1" type="act"><action duration="500" type="stay" /><action pathway="4423_p2" type="pathway" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_CheonJinGwon_0002_act_04" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_CheonJinGwon_0002_soc_03" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_CheonJinGwon_0002_act_05" indexed-detect="1" type="act"><action duration="500" type="stay" /><action pathway="4423_p3" type="pathway" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_CheonJinGwon_0002_act_06" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_CheonJinGwon_0002_soc_04" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_CheonJinGwon_0002_act_07" indexed-detect="1" type="act"><action duration="500" type="stay" /><action pathway="4423_p4" type="pathway" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_CheonJinGwon_0002_act_08" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_CheonJinGwon_0002_soc_05" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_CheonJinGwon_0002_act_09" indexed-detect="1" type="act"><action duration="500" type="stay" /></act-sequence>
+
+  <act-sequence alias="CH_CheonJinGwon_0002_con_start_act" indexed-detect="1" type="act" />
+  <act-sequence alias="CH_CheonJinGwon_0002_con_failed_act" indexed-detect="1" type="act" />
+  <act-sequence alias="CH_CheonJinGwon_0002_con_arrived_act" indexed-detect="1" type="act" />
+
+
+  
+  <act-sequence alias="CH_HwaJoong_0005_act_01" indexed-detect="1" type="act"><action duration="5000" type="stay" /><action social="CH_HwaJoong_0005_soc_01" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_HwaJoong_0005_act_02" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_HwaJoong_0005_soc_02" type="social" /><action duration="500" type="stay" /></act-sequence>
+
+  
+  <act-sequence alias="CH_JinYoung_0004_act_01" indexed-detect="1" type="act"><action duration="5000" type="stay" /><action social="CH_JinYoung_0004_soc_01" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_JinYoung_0004_act_02" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_JinYoung_0004_soc_02" type="social" /><action duration="500" type="stay" /></act-sequence>
+
+  
+  <act-sequence alias="CH_YoungMook_0014_act_01" indexed-detect="1" type="act"><action duration="5000" type="stay" /><action social="CH_YoungMook_0014_soc_01" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_GilHong_0008_act_01" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_GilHong_0008_soc_01" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_YoungMook_0014_act_02" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_YoungMook_0014_soc_02" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_GilHong_0008_act_02" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_GilHong_0008_soc_02" type="social" /><action duration="500" type="stay" /></act-sequence>
+
+  
+  <act-sequence alias="CH_HongSukKeun_0004_act_01" indexed-detect="1" type="act"><action duration="5000" type="stay" /><action social="CH_HongSukKeun_0004_soc_01" type="social" /><action duration="500" type="stay" /></act-sequence>
+  <act-sequence alias="CH_HongSukKeun_0004_act_02" indexed-detect="1" type="act"><action duration="500" type="stay" /><action social="CH_HongSukKeun_0004_soc_02" type="social" /><action duration="500" type="stay" /></act-sequence>
+
+
+</table>

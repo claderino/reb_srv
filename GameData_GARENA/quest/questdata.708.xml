@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.708.xml-->
+  <quest alias="q_sub_708" category="normal" id="708" max-repeat="1" save-type="all">
+    <acquisition level="43" preceding-quest-1="q_epic_928" preceding-quest-check="and">
+      <case acquire-quest="y" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_muyeongdan_0007" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

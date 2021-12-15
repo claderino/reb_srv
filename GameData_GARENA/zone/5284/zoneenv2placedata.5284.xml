@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5284\zoneenv2placedata.5284.xml-->
+	<record action-point="-8049,-9238,2610" action-radius="25" alias="e_5284_Gate_icedoor_ep5_01_1_place" tool-zone-1="5282" tool-zone-2="5283" tool-zone-3="5284" type="wall" />
+	<record action-point="-7035,-9341,2611" action-radius="25" alias="e_5284_Gate_icedoor_ep5_02_1_place" tool-zone-1="5282" tool-zone-2="5283" tool-zone-3="5284" type="wall" />
+	<record action-point="-8130,-9099,2612" action-radius="25" alias="e_5284_Gate_icedoor_ep5_08_1_place" tool-zone-1="5282" tool-zone-2="5283" tool-zone-3="5284" type="wall" />
+	<record action-point="-8191,-9244,2610" action-radius="25" alias="e_5284_Gate_icedoor_ep5_07_1_place" tool-zone-1="5282" tool-zone-2="5283" tool-zone-3="5284" type="wall" />
+	<record action-point="-8276,-9109,2610" action-radius="25" alias="e_5284_Gate_icedoor_ep5_06_1_place" tool-zone-1="5282" tool-zone-2="5283" tool-zone-3="5284" type="wall" />
+	<record action-point="-7140,-9463,2610" action-radius="25" alias="e_5284_Gate_icedoor_ep5_05_1_place" tool-zone-1="5282" tool-zone-2="5283" tool-zone-3="5284" type="wall" />
+	<record action-point="-7168,-9308,2610" action-radius="25" alias="e_5284_Gate_icedoor_ep5_04_1_place" tool-zone-1="5282" tool-zone-2="5283" tool-zone-3="5284" type="wall" />
+	<record action-point="-6999,-9500,2610" action-radius="25" alias="e_5284_Gate_icedoor_ep5_03_1_place" tool-zone-1="5282" tool-zone-2="5283" tool-zone-3="5284" type="wall" />
+	<record action-point="-8960,-10106,2760" action-radius="25" alias="e_button_5284yongmak_place" tool-zone-1="5282" tool-zone-2="5283" tool-zone-3="5284" type="button" />
+	<record action-point="-8364,-10074,2726" action-radius="20" alias="e_Chest_5284hartA_01_Place" tool-zone-1="5283" tool-zone-2="5284" type="chest" />
+	<record action-point="-7644,-9623,2635" action-radius="62" alias="e_Gate_5284_sealeddoor_01_place" tool-zone-1="5283" tool-zone-2="5284" type="gate" />
+	<record action-point="-7851,-10137,2686" action-radius="0" alias="5284_foot_1_place" region-point-1="-8011,-10297,3922" region-point-2="-8011,-9977,3388" region-point-3="-7691,-9977,3234" region-point-4="-7691,-10297,3402" tool-zone-1="5283" tool-zone-2="5284" type="foot-switch" />
+	<record action-point="-7610,-9128,2686" action-radius="0" alias="5284_foot_2_place" region-point-1="-7829,-9222,2600" region-point-2="-7775,-8956,3162" region-point-3="-7391,-9034,3181" region-point-4="-7444,-9300,3203" tool-zone-1="5283" tool-zone-2="5284" type="foot-switch" />
+	<record alias="5284_dmz_1_place" height="0" region-point-1="-7646,-9266,2601" region-point-2="-7646,-9262,2601" region-point-3="-7642,-9262,2601" region-point-4="-7642,-9266,2601" tool-zone-1="5283" tool-zone-2="5284" type="effect-region" />
+	<record alias="5284_dmz_2_place" height="0" region-point-1="-7606,-8651,30129" region-point-2="-7372,-8681,2998" region-point-3="-7407,-8949,3124" region-point-4="-7641,-8918,3098" tool-zone-1="5283" tool-zone-2="5284" type="effect-region" />
+	<record action-point="-6727,-8522,2809" alias="5284_potal_5225_place" region-point-1="-6881,-8548,30129" region-point-2="-6883,-8516,30129" region-point-3="-6573,-8496,30816" region-point-4="-6571,-8528,30816" tool-zone-1="5281" tool-zone-2="5283" tool-zone-3="5284" type="portal" />
+	<record alias="zone5284.falldeath_place" height="0" type="fall-death" />
+</table>

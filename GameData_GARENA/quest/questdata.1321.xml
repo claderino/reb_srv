@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1321.xml-->
+  <quest alias="q_sub_1321" category="normal" id="1321" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition level="50" mastery-level="1">
+      <case acquire-quest="y" object="npc:CE_WA_Board_0002" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" object="npc:CE_WA_Board_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case party-battle-result="win" party-battle-type="occupation-war" party-broadcast="n" progress-mission="y" type="party-battle" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1321_final_set1" reward-2="1321_final_set2">
+        <case fee="n" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,2074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.baekchung_bloodwindd.xml-->
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  <script alias="5500_Murim_SubMinerGuardian_parrent_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter leader="y" subject2="event:npc-spawn:npc" type="npc-party" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-spawn:npc" type="invoke-effect" />
+        
+        <reaction group-1="event:npc-spawn:npc:npc-party" spawn-delay="5000" type="spawn-npc-groups" />
+        
+        <reaction seq="5500_Murim_SubMinerGuardian_Start_Act" target="event:npc-spawn:npc" type="set-npc-act" />
+        
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc:npc-party" type="set-party-number" />
+        
+        <reaction amount="0" reg="2" target="event:npc-spawn:npc:npc-party" type="set-party-number" />        
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="hp" op="ge" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+		  
+		  <reaction seq="5500_Murim_SubMiner_Start_Act1" target="event:act-paused:npc:npc-party:2" type="set-npc-act" />
+		  <reaction seq="5500_Murim_SubMiner_Start_Act2" target="event:act-paused:npc:npc-party:3" type="set-npc-act" />
+		  <reaction seq="5500_Murim_SubMiner_Start_Act3" target="event:act-paused:npc:npc-party:4" type="set-npc-act" />
+		  
+		  <reaction effect-type="invincible" target="event:act-paused:npc:npc-party:1" type="dispel-by-type" />
+		  <reaction effect-type="invincible" target="event:act-paused:npc:npc-party:2" type="dispel-by-type" />
+		  <reaction effect-type="invincible" target="event:act-paused:npc:npc-party:3" type="dispel-by-type" />
+		  <reaction effect-type="invincible" target="event:act-paused:npc:npc-party:4" type="dispel-by-type" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMinerGuardian_Start_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Murim_SubMinerGuardian_Arrived_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked">
+      <filter-set>
+        <filter subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="5500_Murim_SubMiner_parrent_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-spawn:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="hp" op="ge" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject2="event:act-paused:npc:npc-party:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction flag="n" target="event:act-paused:npc" type="set-npc-hate-on" />
+        <reaction amount="1" reg="1" target="event:act-paused:npc:npc-party" type="set-party-number" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction flag="n" target="event:act-paused:npc" type="set-npc-hate-on" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked">
+      <filter-set>
+        <filter subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_MurimSubGuardian_0001_ai" parent="5500_Murim_SubMinerGuardian_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="zonenpcsquad:s_5500_225:2" group="zonenpcsquad:s_5500_226" index-1="1" spawn-target="zonenpcsquad:s_5500_225:2" type="spawn-npc-index" />
+        <reaction attack-target="zonenpcsquad:s_5500_225:3" group="zonenpcsquad:s_5500_226" index-1="2" spawn-delay="300" spawn-target="zonenpcsquad:s_5500_225:3" type="spawn-npc-index" />
+        <reaction attack-target="zonenpcsquad:s_5500_225:4" group="zonenpcsquad:s_5500_226" index-1="3" spawn-delay="600" spawn-target="zonenpcsquad:s_5500_225:4" type="spawn-npc-index" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:num" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMinerGuardian_Staying_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Murim_SubMinerGuardian_Return_Act" target="event:act-finished:npc" type="set-npc-act" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_226" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMinerGuardian_Arrived_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Murim_SubMinerGuardian_Staying_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMinerGuardian_Staying_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Murim_SubMinerGuardian_Staying_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject2="event:killed:defender" type="npc-party" />
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="n" group="event:killed:defender:npc-party" index-1="2" index-2="3" index-4="4" type="despawn-npc-index" />
+        
+                
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_MurimSubMiner_0001_ai" parent="5500_Murim_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act1" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_02_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_02_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_02_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_02_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_02_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_02_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_02_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_02_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_226" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_MurimSubMiner_0002_ai" parent="5500_Murim_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act2" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_01_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_01_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_01_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_01_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_01_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_01_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_01_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_01_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_226" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_MurimSubMiner_0003_ai" parent="5500_Murim_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act3" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_03_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_03_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_03_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_03_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_03_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_03_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_03_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_03_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_226" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_MurimSubGuardian_0002_ai" parent="5500_Murim_SubMinerGuardian_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="zonenpcsquad:s_5500_231:2" group="zonenpcsquad:s_5500_232" index-1="1" spawn-target="zonenpcsquad:s_5500_231:2" type="spawn-npc-index" />
+        <reaction attack-target="zonenpcsquad:s_5500_231:3" group="zonenpcsquad:s_5500_232" index-1="2" spawn-delay="300" spawn-target="zonenpcsquad:s_5500_231:3" type="spawn-npc-index" />
+        <reaction attack-target="zonenpcsquad:s_5500_231:4" group="zonenpcsquad:s_5500_232" index-1="3" spawn-delay="600" spawn-target="zonenpcsquad:s_5500_231:4" type="spawn-npc-index" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:num" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMinerGuardian_Staying_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Murim_SubMinerGuardian_Return_Act" target="event:act-finished:npc" type="set-npc-act" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_232" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMinerGuardian_Arrived_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Murim_SubMinerGuardian_Staying_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMinerGuardian_Staying_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Murim_SubMinerGuardian_Staying_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject2="event:killed:defender" type="npc-party" />
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="n" group="event:killed:defender:npc-party" index-1="2" index-2="3" index-4="4" type="despawn-npc-index" />
+        
+                
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_MurimSubMiner_0004_ai" parent="5500_Murim_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act1" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_13_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_13_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_13_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_13_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_13_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_13_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_13_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_13_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_232" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_MurimSubMiner_0005_ai" parent="5500_Murim_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act2" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_12_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_12_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_12_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_12_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_12_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_12_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_12_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_12_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_232" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_MurimSubMiner_0006_ai" parent="5500_Murim_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act3" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_11_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_11_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_11_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_11_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_11_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_11_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Murim_SubMiner_Arrived_Act3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_11_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_11_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_232" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="5500_Honcheon_SubMinerGuardian_parrent_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter leader="y" subject2="event:npc-spawn:npc" type="npc-party" />
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-spawn:npc" type="invoke-effect" />
+        
+        <reaction group-1="event:npc-spawn:npc:npc-party" spawn-delay="5000" type="spawn-npc-groups" />
+        
+        <reaction seq="5500_Honcheon_SubMinerGuardian_Start_Act" target="event:npc-spawn:npc" type="set-npc-act" />
+        
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc:npc-party" type="set-party-number" />
+        
+        <reaction amount="0" reg="2" target="event:npc-spawn:npc:npc-party" type="set-party-number" />
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="hp" op="ge" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+		  
+		  <reaction seq="5500_HonCheon_SubMiner_Start_Act1" target="event:act-paused:npc:npc-party:2" type="set-npc-act" />
+		  <reaction seq="5500_HonCheon_SubMiner_Start_Act2" target="event:act-paused:npc:npc-party:3" type="set-npc-act" />
+		  <reaction seq="5500_HonCheon_SubMiner_Start_Act3" target="event:act-paused:npc:npc-party:4" type="set-npc-act" />
+		  
+		  <reaction effect-type="invincible" target="event:act-paused:npc:npc-party:1" type="dispel-by-type" />
+		  <reaction effect-type="invincible" target="event:act-paused:npc:npc-party:2" type="dispel-by-type" />
+		  <reaction effect-type="invincible" target="event:act-paused:npc:npc-party:3" type="dispel-by-type" />
+		  <reaction effect-type="invincible" target="event:act-paused:npc:npc-party:4" type="dispel-by-type" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Honcheon_SubMinerGuardian_Start_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Honcheon_SubMinerGuardian_Arrived_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked">
+      <filter-set>
+        <filter subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="5500_Honcheon_SubMiner_parrent_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-spawn:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+        <filter field="hp" op="ge" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject2="event:act-paused:npc:npc-party:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction flag="n" target="event:act-paused:npc" type="set-npc-hate-on" />
+        <reaction amount="1" reg="1" target="event:act-paused:npc:npc-party" type="set-party-number" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction flag="n" target="event:act-paused:npc" type="set-npc-hate-on" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked">
+      <filter-set>
+        <filter subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_HonCheonSubGuardian_0001_ai" parent="5500_Honcheon_SubMinerGuardian_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="zonenpcsquad:s_5500_237:2" group="zonenpcsquad:s_5500_238" index-1="1" spawn-target="zonenpcsquad:s_5500_237:2" type="spawn-npc-index" />
+        <reaction attack-target="zonenpcsquad:s_5500_237:3" group="zonenpcsquad:s_5500_238" index-1="2" spawn-delay="300" spawn-target="zonenpcsquad:s_5500_237:3" type="spawn-npc-index" />
+        <reaction attack-target="zonenpcsquad:s_5500_237:4" group="zonenpcsquad:s_5500_238" index-1="3" spawn-delay="600" spawn-target="zonenpcsquad:s_5500_237:4" type="spawn-npc-index" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:num" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Honcheon_SubMinerGuardian_Staying_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_HonCheon_SubMinerGuardian_Return_Act" target="event:act-finished:npc" type="set-npc-act" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_238" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Honcheon_SubMinerGuardian_Arrived_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Honcheon_SubMinerGuardian_Staying_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Honcheon_SubMinerGuardian_Staying_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Honcheon_SubMinerGuardian_Staying_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject2="event:killed:defender" type="npc-party" />
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="n" group="event:killed:defender:npc-party" index-1="2" index-2="3" index-4="4" type="despawn-npc-index" />
+        
+                
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_HonCheonSubMiner_0001_ai" parent="5500_Honcheon_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act1" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_08_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_08_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_08_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_08_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_08_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_08_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_08_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_08_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_238" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_HonCheonSubMiner_0002_ai" parent="5500_Honcheon_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act2" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_10_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_10_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_10_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_10_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_10_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_10_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_10_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_10_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_238" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_HonCheonSubMiner_0003_ai" parent="5500_Honcheon_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act3" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_09_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_09_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_09_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_09_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_09_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_09_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_09_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_09_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_238" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_HonCheonSubGuardian_0002_ai" parent="5500_Honcheon_SubMinerGuardian_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+
+    <decision event="act-paused">
+      <filter-set>
+        <filter subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="zonenpcsquad:s_5500_243:2" group="zonenpcsquad:s_5500_244" index-1="1" spawn-target="zonenpcsquad:s_5500_243:2" type="spawn-npc-index" />
+        <reaction attack-target="zonenpcsquad:s_5500_243:3" group="zonenpcsquad:s_5500_244" index-1="2" spawn-delay="300" spawn-target="zonenpcsquad:s_5500_243:3" type="spawn-npc-index" />
+        <reaction attack-target="zonenpcsquad:s_5500_243:4" group="zonenpcsquad:s_5500_244" index-1="3" spawn-delay="600" spawn-target="zonenpcsquad:s_5500_243:4" type="spawn-npc-index" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:num" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Honcheon_SubMinerGuardian_Staying_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_HonCheon_SubMinerGuardian_Return_Act" target="event:act-finished:npc" type="set-npc-act" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_244" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Honcheon_SubMinerGuardian_Arrived_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Honcheon_SubMinerGuardian_Staying_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_Honcheon_SubMinerGuardian_Staying_Act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="5500_Honcheon_SubMinerGuardian_Staying_Act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject2="event:killed:defender" type="npc-party" />
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="n" group="event:killed:defender:npc-party" index-1="2" index-2="3" index-4="4" type="despawn-npc-index" />
+        
+                
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_HonCheonSubMiner_0004_ai" parent="5500_Honcheon_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act1" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_20_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_20_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_20_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_20_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_20_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_20_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_20_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_20_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act1" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_244" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_HonCheonSubMiner_0005_ai" parent="5500_Honcheon_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act2" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_18_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_18_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_18_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_18_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_18_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_18_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_18_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_18_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act2" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_244" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_BFF_HonCheonSubMiner_0006_ai" parent="5500_Honcheon_SubMiner_parrent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="npc-combat-end" forward="y" />
+    <decision event="act-paused" forward="y" />
+    <decision event="act-finished" forward="y" />
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:act-finished:npc:npc-party:reg-1" type="number" value="1" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act3" />
+      </filter-set>
+      <reaction-set probability="60">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_19_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_19_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_19_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_19_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="20">
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_19_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_19_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction group="" index-1="" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+        <filter subject2="event:act-finished:seq" type="act-sequence" value="5500_HonCheon_SubMiner_Arrived_Act3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state2="close" target2="zoneenv2spawn:e_chest_5500hiddenstone_19_spawn" type="set-env-state" />
+        <reaction enable="y" target2="zoneenv2spawn:e_chest_5500hiddenstone_19_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="event:act-finished:npc:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Return_Act3" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="2" target="event:killed:defender:npc-party" type="set-party-number" />
+        
+        <reaction despawn-force="y" group="event:killed:defender:npc-party" index-1="1" type="despawn-npc-index" />
+        <reaction group="event:killed:defender:npc-party" index-1="1" spawn-delay="1200000" type="spawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5500_244" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-2" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="2" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_225:1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_225:2" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_225:3" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_225:4" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_231:1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_231:2" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_231:3" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_231:4" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_237:1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_237:2" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_237:3" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_237:4" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_243:1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_243:2" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_243:3" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcsquad:s_5500_243:4" target="event:npc-spawn:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attack">
+      <filter-set>
+        <filter subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:defender" target="event:attack:attacker:npc-party:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:defender" target="event:attack:attacker:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:defender" target="event:attack:attacker:npc-party:3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attacked">
+      <filter-set>
+        <filter subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="MH_SA_MurimAssassin_0001_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_237:2" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_237:3" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_237:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_MurimAssassin_0002_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_237:2" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_237:3" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_237:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_MurimAssassin_0003_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_237:2" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_237:3" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_237:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_MurimAssassin_0004_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_243:2" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_243:3" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_243:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_MurimAssassin_0005_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_243:2" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_243:3" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_243:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_MurimAssassin_0006_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_243:2" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_243:3" type="set-npc-act" />
+        <reaction seq="5500_HonCheon_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_243:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_HonCheonAssassin_0001_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_225:2" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_225:3" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_225:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_HonCheonAssassin_0002_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_225:2" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_225:3" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_225:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_HonCheonAssassin_0003_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_225:2" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_225:3" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_225:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_HonCheonAssassin_0004_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_231:2" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_231:3" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_231:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_HonCheonAssassin_0005_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_231:2" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_231:3" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_231:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_HonCheonAssassin_0006_ai" parent="5500_assassin_mine_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="eq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender:npc-party" type="set-party-number" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act1" target="zonenpcsquad:s_5500_231:2" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act2" target="zonenpcsquad:s_5500_231:3" type="set-npc-act" />
+        <reaction seq="5500_Murim_SubMiner_Arrived_Act3" target="zonenpcsquad:s_5500_231:4" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    <decision event="killed">
+      <filter-set>
+        <filter subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter op="neq" subject2="event:killed:defender:npc-party:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:killed:defender:npc-party" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="MH_SA_BFF_SubMiner_Test_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="5500_Murim_SubMiner_Return_Act2" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+	
+	
+	
+
+
+	
+	<script alias="ME_SA_BFF_TreasureRat_0001_ai" parent="Boss_Immune_Slow_MoveBlock_Stun_ai">
+		<decision event="invoked-effect" forward="y" />
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="attacked">
+			<filter-set>
+				<filter subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+				
+				<filter op="eq" subject2="event:attacked:defender:reg-1" type="number" value="20" />
+			</filter-set>
+			
+			<reaction-set probability="34">
+				<reaction from="event:attacked:defender" social="ME_SA_bff_TreasureRat_0001_soc_01" type="play-social" />
+				
+				<reaction amount="0" reg="1" target="event:attacked:defender" type="set-npc-number" />
+			</reaction-set>
+			<reaction-set probability="33">
+				<reaction from="event:attacked:defender" social="ME_SA_bff_TreasureRat_0001_soc_02" type="play-social" />
+				
+				<reaction amount="0" reg="1" target="event:attacked:defender" type="set-npc-number" />
+			</reaction-set>
+			<reaction-set probability="33">
+				<reaction from="event:attacked:defender" social="ME_SA_bff_TreasureRat_0001_soc_03" type="play-social" />
+				
+				<reaction amount="0" reg="1" target="event:attacked:defender" type="set-npc-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="attacked">
+			<filter-set>
+				<filter subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set probability="20">
+				
+				<reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+			</reaction-set>
+		</decision>
+	</script>
+
+  
+  <script alias="CH_SA_Test_Yuran_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="5500_Test_Yuran_Act1" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+</table>

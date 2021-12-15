@@ -1,0 +1,2273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.baekchung_takmagul.xml-->
+
+  
+  
+  
+  
+  <script alias="5097_footswitch_01_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" value="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0008_01_act" target="zonenpcspawn:a_5097_127" type="set-npc-act" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_CT_CuteVoice_0008_ai" />
+  
+  
+  
+  <script alias="CH_CT_Scholar_0008_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_5097_153" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0008_04_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_5097_157" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0008_05_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="MH_CT_Mokujin_0071_01_act" target="zonenpcspawn:a_5097_2" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="zonenpcspawn:a_5097_2" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0008_02_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0008_01_peace" target="event:act-finished:npc" type="set-npc-act" />
+        
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_2" target="zonenpcspawn:a_5097_11" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction seq="MH_CT_Mokujin_0071_02_act" target="zonenpcspawn:a_5097_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="MH_CT_Mokujin_0071_06_act" target="zonenpcspawn:a_5097_2" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_CT_Scholar_0009_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0009_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_121" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="5" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction group="zonenpcsquad:s_5097_55" index-1="1" index-2="2" spawn-delay="5000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55" index-1="3" index-2="4" spawn-delay="9000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55" index-1="5" index-2="6" spawn-delay="12000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_1" index-1="1" index-2="2" spawn-delay="15000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_1" index-1="3" index-2="4" spawn-delay="18000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_1" index-1="5" index-2="6" spawn-delay="21000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_2" index-1="1" index-2="2" spawn-delay="24000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_2" index-1="3" index-2="4" spawn-delay="27000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_2" index-1="5" index-2="6" spawn-delay="30000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_8" index-1="1" index-2="2" index-3="3" index-4="4" index-5="6" index-6="6" spawn-delay="42000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_9" index-1="1" index-2="2" index-3="3" index-4="4" index-5="6" index-6="6" spawn-delay="53000" type="spawn-npc-index" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0009_01_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_5097_2" social="ME_SA_TakMaGul_0001_soc_39" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_121" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="5" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction group="zonenpcsquad:A_5097_55_5" index-1="1" index-2="2" index-3="3" index-4="4" index-5="6" index-6="6" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_6" index-1="1" index-2="2" index-3="3" index-4="4" index-5="6" index-6="6" spawn-delay="10000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_7" index-1="1" index-2="2" index-3="3" index-4="4" index-5="6" index-6="6" spawn-delay="17000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_8" index-1="1" index-2="2" index-3="3" index-4="4" index-5="6" index-6="6" spawn-delay="25000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_55_9" index-1="1" index-2="2" index-3="3" index-4="4" index-5="6" index-6="6" spawn-delay="33000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0009_02_act" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_121" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="5" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        
+        <reaction group="zonenpcsquad:s_5097_50" index-1="1" index-2="2" spawn-delay="6000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_50" index-1="3" index-2="4" index-3="5" spawn-delay="7000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_50" index-1="6" index-2="7" index-3="8" spawn-delay="8000" type="spawn-npc-index" />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_52_2" index-1="1" index-2="2" index-3="4" spawn-delay="15000" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_52_2" index-1="5" index-2="6" index-3="7" spawn-delay="25000" type="spawn-npc-index" />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_62_8" index-1="2" index-2="4" index-3="7" spawn-delay="35000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_64_9" index-1="1" spawn-delay="45000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_64_9" index-1="2" index-2="3" spawn-delay="50000" type="spawn-npc-index" />
+        
+        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0009_03_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_5097_2" social="ME_SA_TakMaGul_0001_soc_40" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_121" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="5" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        
+        <reaction group="zonenpcsquad:s_5097_50_5" index-1="1" index-2="2" index-3="3" spawn-delay="6000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_50_5" index-1="4" index-2="5" spawn-delay="7000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_50_5" index-1="6" index-2="7" spawn-delay="8000" type="spawn-npc-index" />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_84_7" index-1="2" spawn-delay="26000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_84_7" index-1="3" index-2="4" spawn-delay="27000" type="spawn-npc-index" />
+        
+        
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_62_8" index-1="2" index-2="4" index-3="7" spawn-delay="37000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_62_8" index-1="5" index-2="6" spawn-delay="38000" type="spawn-npc-index" />
+        
+        
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_64_9" index-1="2" index-2="3" spawn-delay="51000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_64_9" index-1="4" index-2="5" spawn-delay="55000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0009_04_act" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_121" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="5" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        
+        <reaction group="zonenpcsquad:s_5097_59" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" spawn-delay="6000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_59_2" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" spawn-delay="6000" type="spawn-npc-index" />
+        
+        
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_59_5" index-1="1" index-2="2" index-3="3" spawn-delay="20000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_59_5" index-1="4" index-2="5" index-3="6" index-4="7" spawn-delay="35000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_59_5" index-1="8" index-2="9" index-3="10" spawn-delay="45000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0009_05_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_5097_2" social="ME_SA_TakMaGul_0001_soc_43" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_121" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="5" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        
+        <reaction group="zonenpcsquad:s_5097_59_2" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" spawn-delay="6000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_59_2" index-1="7" index-2="8" index-3="9" index-4="10" spawn-delay="25000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_59_5" index-1="1" index-2="2" index-3="3" spawn-delay="30000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_59_5" index-1="4" index-2="5" index-3="6" index-4="7" spawn-delay="34000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_59_5" index-1="8" index-2="9" index-3="10" spawn-delay="40000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0009_06_act" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="7" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_121" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="5" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        
+        <reaction group="zonenpcsquad:s_5097_134" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" spawn-delay="6000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_134" index-1="7" index-2="8" spawn-delay="22000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_134" index-1="9" spawn-delay="25000" type="spawn-npc-index" />
+        
+        
+        
+        
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_134_4" index-1="4" index-2="5" index-3="6" spawn-delay="35000" type="spawn-npc-index" />
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_134_5" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" spawn-delay="40000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_134_5" index-1="7" index-2="8" spawn-delay="50000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0009_07_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_5097_2" social="ME_SA_TakMaGul_0001_soc_41" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="8" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_121" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="5" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        
+        <reaction group="zonenpcsquad:s_5097_134_2" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" spawn-delay="6000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_134_2" index-1="1" index-2="2" spawn-delay="13000" type="spawn-npc-index" />
+        
+        
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_134_4" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" spawn-delay="26000" type="spawn-npc-index" />
+        
+        
+        
+        <reaction group="zonenpcsquad:s_5097_134_5" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" spawn-delay="40000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_5097_134_5" index-1="7" index-2="8" spawn-delay="50000" type="spawn-npc-index" />
+        
+        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0009_08_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_5097_2" social="ME_SA_TakMaGul_0001_soc_42" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0009_09_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction spawn-1="a_5097_12" type="spawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_CT_Scholar_0007_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction seq="MH_CT_Mokujin_0071_04_1_act" target="zonenpcspawn:a_5097_2" type="set-npc-act" />
+        <reaction seq="CH_CT_Scholar_0007_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0007_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0007_02_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="MH_CT_Mokujin_0071_04_act" target="zonenpcspawn:a_5097_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_CT_Scholar_0007_02_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+        
+        <reaction seq="MH_CT_Mokujin_0071_05_act" target="zonenpcspawn:a_5097_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_CT_KangSiFat_0002_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-combat-start">
+      <reaction-set>
+        
+        
+        
+        <reaction enable="n" target="zoneenv:e_Chest_5097hartA_01" target2="zoneenv2spawn:e_Chest_5097hartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-bleeding:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction special-id="5" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-bleeding:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction special-id="5" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="10000" opponent="event:npc-special:npc" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="4" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction text="5097 만령강시 컴뱃변경" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_104:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_104:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_104:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_104:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_108:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_108:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_108:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_108:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_113:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_113:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_113:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_113:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_117:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_117:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_117:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5097_117:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set probability="25">
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_108" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_117" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_104" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="25">
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_117" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_104" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_113" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="25">
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_108" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_104" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_113" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="25">
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_108" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_117" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_113" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set probability="33">
+        
+        <reaction special-id="4" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_137" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_140" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_145" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="34">
+        <reaction special-id="2" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_140" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_145" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_147" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="33">
+        <reaction special-id="3" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_137" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_140" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5097_147" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction state="open" state2="open" target="zoneenv:e_chest_5097seal_01" target2="zoneenv2spawn:e_chest_5097seal_01_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_5097seal_02" target2="zoneenv2spawn:e_chest_5097seal_02_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_5097seal_03" target2="zoneenv2spawn:e_chest_5097seal_03_spawn" type="set-env-state" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5097_10" type="despawn-npc" />
+        
+        <reaction spawn-1="a_5097_126" type="spawn-npc" />
+        
+        <reaction spawn-1="a_5097_153" spawn-target="event:killed:defender" type="spawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_button_5097yongmak" target2="zoneenv2spawn:e_button_5097yongmak_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_108" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_117" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_104" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_113" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_137" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_140" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_145" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_147" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_158" index-1="1" type="despawn-npc-index" />
+        <reaction enable="n" target="zoneenv:5097_damage_4" target2="zoneenv2spawn:5097_damage_4_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_108" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_117" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_104" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_113" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_137" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_140" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_145" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_147" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_158" index-1="1" type="despawn-npc-index" />
+        <reaction enable="n" target="zoneenv:5097_damage_4" target2="zoneenv2spawn:5097_damage_4_spawn" type="set-env-enable" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_5097hartA_01" target2="zoneenv2spawn:e_Chest_5097hartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Nucleus_0012_ai" />
+  
+  <script alias="ME_CT_RuneMechaBattle_0020_ai">
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_RuneMechaBattle_0021_ai">
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="10000" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:1" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="10000" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_RuneMechaMine_0005_ai" />
+  
+  <script alias="ME_CT_RuneMechaBattle_0026_ai">
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="kill" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction target="event:killed:defender:npc-party:1" target2="event:killed:defender:npc-party:1" type="kill" />
+        <reaction target="event:killed:defender:npc-party:2" target2="event:killed:defender:npc-party:2" type="kill" />
+        <reaction target="event:killed:defender:npc-party:3" target2="event:killed:defender:npc-party:3" type="kill" />
+        <reaction target="event:killed:defender:npc-party:4" target2="event:killed:defender:npc-party:4" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="MH_CT_Mokujin_0071_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill-id" value="ME_RuneMechaBattle_None_AdvanceTripleHit" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill-id" value="ME_KangSiFat_None_BloodySmash" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill-id" value="ME_RuneMechaBattle_None_AdvanceTripleHit" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill-id" value="ME_KangSiFat_None_BloodySmash" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="ME_RuneMechaBattle_None_AdvanceTripleHit" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="ME_KangSiFat_None_BloodySmash" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="ME_RuneMechaBattle_None_AdvanceTripleHit" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="ME_KangSiFat_None_BloodySmash" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction text="5097 양철통 중앙이동" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction spawn-1="a_5097_92" spawn-2="a_5097_92_1" spawn-3="a_5097_92_2" spawn-4="a_5097_92_3" spawn-5="a_5097_93" spawn-6="a_5097_94" spawn-radius="300" spawn-target="event:npc-special:npc" type="spawn-npc" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" spawn-1="a_5097_98" spawn-radius="100" spawn-target="event:npc-special:npc" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0008_02_act" target="zonenpcspawn:a_5097_130" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction seq="CH_CT_CuteVoice_0009_01_act" target="zonenpcspawn:a_5097_126" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_CT_Mokujin_0071_01_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction target="zonenpcspawn:a_5097_130" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_CT_Mokujin_0071_02_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction spawn-1="a_5097_124" type="spawn-npc" />
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_CT_Mokujin_0071_03_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_CT_Mokujin_0071_04_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="zonenpcspawn:a_5097_12" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_CT_Mokujin_0071_05_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state="open" state2="open" target="zoneenv:e_chest_5097gangsicoffin_01" target2="zoneenv2spawn:e_chest_5097gangsicoffin_01_spawn" type="set-env-state" />
+        
+        <reaction attack-target="event:act-finished:npc" spawn-1="a_5097_91" type="spawn-npc" />
+        
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_5097_2" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_CT_Mokujin_0071_06_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" target-2="zonenpcspawn:a_5097_126" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_5097_2:reg-1" subject2="zonenpcsquad:s_5097_2:reg-1" type="number" value="1" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5097_10" target-2="zonenpcspawn:a_5097_130" target-3="zonenpcspawn:a_5097_91" type="despawn-npc" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_4" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_29" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_31" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_33" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_37" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_41" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_46" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_47" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_48" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_128" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134_4" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_50" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_50_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_50_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_52_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_4" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_6" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_7" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_8" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_9" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_59" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_59_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_59_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_59_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_60_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_62_6" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_62_8" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_64_9" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_65_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_60_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_84_7" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction spawn-1="a_5097_157" spawn-delay="3000" type="spawn-npc" />
+        
+        <reaction spawn-1="a_5097_90" spawn-delay="3000" type="spawn-npc" />
+        <reaction text="5097 웨이브를 끝내고 리트라이" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        <filter op="neq" subject="zonenpcsquad:s_5097_2:reg-1" subject2="zonenpcsquad:s_5097_2:reg-1" type="number" value="1" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5097_10" target-2="zonenpcspawn:a_5097_130" target-3="zonenpcspawn:a_5097_91" type="despawn-npc" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_4" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_29" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_31" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_33" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_37" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_41" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_46" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_47" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_48" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_128" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134_4" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_134_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_50" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_50_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_50_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_52_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_4" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_6" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_7" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_8" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_55_9" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_59" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_59_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_59_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_59_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_60_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_62_6" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_62_8" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_64_9" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_65_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_60_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_84_7" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction spawn-1="a_5097_157" spawn-delay="3000" type="spawn-npc" />
+        <reaction text="5097 웨이브를 끝내지 못함" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Nucleus_0011_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_121" target="event:npc-spawn:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="MH_CT_Mokujin_0078_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter op="eq" subject="event:npc-spawn:npc:npc-party:reg-1" subject2="event:npc-spawn:npc:npc-party:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_5097_2" social="ME_SA_TakMaGul_0001_soc_38" type="play-social" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_5097_92" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="MH_CT_Mokujin_0079_ai" />
+  
+  <script alias="MH_CT_Mokujin_0080_ai" />
+  
+  <script alias="CE_CT_LumberJack_0006_ai" />
+  
+  <script alias="CE_CT_LumberJack_0007_ai" />
+  
+  
+  
+  
+  <script alias="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_2" target="event:npc-combat-start:npc" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-combat-start:npc" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="le" subject="event:attack:attacker:reg-1" subject2="event:attack:attacker:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attack:attacker" type="diff-npc-number" />
+        <reaction amount="1" opponent="event:attack:attacker" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter op="le" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction amount="1" opponent="event:attacked:defender" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter party="zonenpcsquad:s_5097_55_3" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter op="eq" subject="event:killed:defender:npc-party:num" subject2="event:killed:defender:npc-party:num" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0009_02_act" target="zonenpcspawn:a_5097_124" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter party="zonenpcsquad:s_5097_55_9" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter op="eq" subject="event:killed:defender:npc-party:num" subject2="event:killed:defender:npc-party:num" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0009_03_act" target="zonenpcspawn:a_5097_124" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter party="zonenpcsquad:s_5097_60_3" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter op="eq" subject="event:killed:defender:npc-party:num" subject2="event:killed:defender:npc-party:num" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0009_04_act" target="zonenpcspawn:a_5097_124" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter party="zonenpcsquad:s_5097_64_9" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter op="eq" subject="event:killed:defender:npc-party:num" subject2="event:killed:defender:npc-party:num" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0009_05_act" target="zonenpcspawn:a_5097_124" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter party="zonenpcsquad:s_5097_59_1" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter op="eq" subject="event:killed:defender:npc-party:num" subject2="event:killed:defender:npc-party:num" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0009_06_act" target="zonenpcspawn:a_5097_124" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter party="zonenpcsquad:s_5097_59_5" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter op="eq" subject="event:killed:defender:npc-party:num" subject2="event:killed:defender:npc-party:num" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0009_07_act" target="zonenpcspawn:a_5097_124" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter party="zonenpcsquad:s_5097_65_1" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter op="eq" subject="event:killed:defender:npc-party:num" subject2="event:killed:defender:npc-party:num" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0009_08_act" target="zonenpcspawn:a_5097_124" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter party="zonenpcsquad:s_5097_134_5" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter op="eq" subject="event:killed:defender:npc-party:num" subject2="event:killed:defender:npc-party:num" type="number" value="0" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_CT_Scholar_0009_09_act" target="zonenpcspawn:a_5097_124" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_Wolf_0037_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_CT_DemonShadow_0009_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="MH_CT_Mokujin_0075_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="MH_CT_Mokujin_0076_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="MH_CT_Mokujin_0077_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_CT_RuneMechaMine_0006_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_CT_RuneMechaBattle_0024_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_CT_RuneMechaBattle_0025_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_CT_RuneMechaB_0005_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_CT_SkullFighter_0021_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_CT_SkullSorcery_0014_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  <script alias="ME_CT_SkullCaptain_0013_ai" parent="takmagul_wave_monster_parent_decision">
+    <decision event="npc-combat-start" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="killed" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="ME_CT_RuneMechaBattle_0022_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-combat-start">
+      <reaction-set>
+        
+        <reaction special-id="5" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="event:npc-special:npc" target="zonenpcspawn:a_5097_2" type="diff-npc-hate" />
+        <reaction special-id="3" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_34:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_34:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_34:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_34:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_31:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_31:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_31:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_31:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_29:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_29:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_29:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_29:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_37:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_37:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_37:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:npc-special:target" target="zonenpcsquad:s_5097_37:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="zonenpcspawn:a_5097_2" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_29" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_31" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_34" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_37" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_29" index-1="1" index-2="2" index-3="3" index-4="4" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_31" index-1="1" index-2="2" index-3="3" index-4="4" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_34" index-1="1" index-2="2" index-3="3" index-4="4" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5097_37" index-1="1" index-2="2" index-3="3" index-4="4" type="spawn-npc-index" />
+      	
+        <reaction amount="1" opponent="zonenpcspawn:a_5097_2" target="zonenpcspawn:a_5097_11" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_29" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_31" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_34" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5097_37" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        
+        <reaction seq="CH_CT_Scholar_0008_03_act" target="zonenpcspawn:a_5097_130" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_RuneMechaBattle_0023_ai" />
+  
+  <script alias="ME_CT_RuneMechaB_0004_ai">
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction attack-target="event:npc-combat-start:target" group="event:npc-combat-start:npc:npc-party" index-1="2" index-2="3" index-3="4" index-4="5" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:5" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_5097_41:reg-1" subject2="zonenpcsquad:s_5097_41:reg-1" type="number" value="2" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_5097_41:reg-1" subject2="zonenpcsquad:s_5097_41:reg-1" type="number" value="1" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:killed:attacker" target="zonenpcspawn:a_5097_41" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:killed:attacker" target="zonenpcspawn:a_5097_47" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:killed:attacker" target="zonenpcspawn:a_5097_48" type="diff-npc-hate" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_5097_41" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="lt" subject="zonenpcsquad:s_5097_41:reg-1" subject2="zonenpcsquad:s_5097_41:reg-1" type="number" value="2" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_5097_41" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_CT_RuneMechaBTurret_0001_ai">
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction special-id="5" target="event:npc-combat-start:npc" type="npc-fire-special" />
+        <reaction attack-target="event:npc-combat-start:target" group="event:npc-combat-start:npc:npc-party" index-1="2" index-2="3" index-3="4" index-4="5" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="event:attacked:defender:npc-party:5" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="MH_CT_Mokujin_0072_ai" />
+  
+  <script alias="MH_CT_Mokujin_0073_ai" />
+  
+  <script alias="MH_CT_Mokujin_0074_ai" />
+  
+  <script alias="ME_CT_ZombieA_0057_ai" />
+  
+  <script alias="ME_CT_SkullB_0014_ai" />
+  
+  <script alias="ME_CT_KangSiTall_0011_ai" />
+  
+  <script alias="ME_CT_KangSi_0016_ai" />
+  
+  <script alias="ME_CT_Dummy_0316_ai" />
+  
+  <script alias="ME_CT_Dummy_0317_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_CT_Dummy_0317_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state="close" state2="close" target="zoneenv:e_chest_5097gangsicoffin_01" target2="zoneenv2spawn:e_chest_5097gangsicoffin_01_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_5097_2" spawn-target="event:act-paused:npc" type="spawn-npc" />
+        
+        <reaction spawn-1="a_5097_10" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction spawn-1="a_5097_12" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_CT_Dummy_0317_act" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_button_5097yongmak_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction target="event:env-manipulated:pc" type="warp-to-reentrance" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+
+  
+  <script alias="CH_BC_Mokujin_0001_ai">
+    
+    <quest-decision alias="qd_1424_16">
+      <reaction-set>
+        <reaction text="CH_BC_Mokujin_0001_ai qd_1424_16 talked -freeplay5094" type="debug-trace" />
+        <reaction pc-spawn="1" target="case:talked:pc" type="warp" zone="zone_TakMaGul_Epic" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="5094_footswitch_01_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" value="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_BC_Scholar_0002_01_act" target="zonenpcspawn:a_5094_127" type="set-npc-act" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="zone_TakMaGul_Epic_ai">
+    
+    <quest-decision alias="qd_1424_13">
+      <reaction-set>
+        <reaction text="아이와 대화 완료 술사 디스폰 시키기 -anseokhee" type="debug-trace" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_5094_2" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  
+  
+  
+  <script alias="CH_BC_Scholar_0002_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_5094_153" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_BC_Scholar_0002_04_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_5094_157" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_BC_Scholar_0002_05_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="MH_BC_Mokujin_0001_01_act" target="zonenpcspawn:a_5094_2" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="zonenpcspawn:a_5094_2" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_BC_Scholar_0002_02_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_BC_Scholar_0002_01_peace" target="event:act-finished:npc" type="set-npc-act" />
+        
+        <reaction amount="1" opponent="zonenpcspawn:a_5094_2" target="zonenpcspawn:a_5094_11" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction seq="MH_BC_Mokujin_0001_02_act" target="zonenpcspawn:a_5094_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="MH_BC_Mokujin_0001_06_act" target="zonenpcspawn:a_5094_2" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_BC_Scholar_0002_03_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+        
+        <reaction seq="MH_BC_Mokujin_0001_05_act" target="zonenpcspawn:a_5094_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_BC_Scholar_0003_ai" />
+
+  
+  
+  
+  <script alias="CH_BC_Scholar_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction seq="MH_BC_Mokujin_0001_04_1_act" target="zonenpcspawn:a_5094_2" type="set-npc-act" />
+        <reaction seq="CH_BC_Scholar_0001_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_BC_Scholar_0001_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_BC_Scholar_0001_02_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="MH_BC_Mokujin_0001_04_act" target="zonenpcspawn:a_5094_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_BC_Scholar_0001_02_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+        
+        <reaction seq="MH_BC_Mokujin_0001_05_act" target="zonenpcspawn:a_5094_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_BC_KangSiFat_0001_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-bleeding:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction special-id="5" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-bleeding:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction special-id="5" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="10000" opponent="event:npc-special:npc" target="zonenpcspawn:a_5094_2" type="diff-npc-hate" />
+        <reaction special-id="4" target="zonenpcspawn:a_5094_2" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction text="5094 만령강시 컴뱃변경" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_104:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_104:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_104:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_104:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_108:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_108:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_108:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_108:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_113:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_113:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_113:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_113:4" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_117:1" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_117:2" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_117:3" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:attacker" target="zonenpcsquad:s_5094_117:4" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set probability="25">
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_108" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_117" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_104" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="25">
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_117" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_104" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_113" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="25">
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_108" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_104" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_113" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="25">
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_108" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_117" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_113" index-1="1" index-2="2" index-3="3" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set probability="33">
+        
+        <reaction special-id="4" target="zonenpcspawn:a_5094_2" type="npc-fire-special" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_137" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_140" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_145" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="34">
+        <reaction special-id="2" target="zonenpcspawn:a_5094_2" type="npc-fire-special" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_140" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_145" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_147" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="33">
+        <reaction special-id="3" target="zonenpcspawn:a_5094_2" type="npc-fire-special" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_137" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_140" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_5094_147" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="1000" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction state="open" state2="open" target="zoneenv:e_chest_5097seal_01_1" target2="zoneenv2spawn:e_chest_5097seal_01_1_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_5097seal_02_1" target2="zoneenv2spawn:e_chest_5097seal_02_1_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_chest_5097seal_03_1" target2="zoneenv2spawn:e_chest_5097seal_03_1_spawn" type="set-env-state" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5094_10" type="despawn-npc" />
+        
+        <reaction spawn-1="a_5094_126" type="spawn-npc" />
+        
+        <reaction spawn-1="a_5094_153" spawn-target="event:killed:defender" type="spawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_button_5097yongmak_1" target2="zoneenv2spawn:e_button_5097yongmak_1_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_108" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_117" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_104" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_113" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_137" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_140" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_145" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_147" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_158" index-1="1" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_108" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_117" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_104" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_113" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_137" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_140" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_145" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_147" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_158" index-1="1" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_BC_Nucleus_0002_ai" />
+  
+  <script alias="ME_BC_RuneMechaBattle_0001_ai">
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_BC_RuneMechaBattle_0002_ai">
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_BC_RuneMechaBattle_0007_ai">
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-special:npc" target2="event:npc-special:npc" type="kill" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction target="event:killed:defender:npc-party:1" target2="event:killed:defender:npc-party:1" type="kill" />
+        <reaction target="event:killed:defender:npc-party:2" target2="event:killed:defender:npc-party:2" type="kill" />
+        <reaction target="event:killed:defender:npc-party:3" target2="event:killed:defender:npc-party:3" type="kill" />
+        <reaction target="event:killed:defender:npc-party:4" target2="event:killed:defender:npc-party:4" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="MH_BC_Mokujin_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill-id" value="ME_RuneMechaBattle_None_AdvanceTripleHit" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill-id" value="ME_KangSiFat_None_BloodySmash" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill-id" value="ME_RuneMechaBattle_None_AdvanceTripleHit" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill-id" value="ME_KangSiFat_None_BloodySmash" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="ME_RuneMechaBattle_None_AdvanceTripleHit" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="ME_KangSiFat_None_BloodySmash" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="ME_RuneMechaBattle_None_AdvanceTripleHit" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+        
+        <filter op="eq" subject="event:attacked:skill" subject2="event:attacked:skill" type="skill3-id" value="ME_KangSiFat_None_BloodySmash" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction text="5094 양철통 중앙이동" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" spawn-1="a_5094_98" spawn-radius="100" spawn-target="event:npc-special:npc" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_BC_Scholar_0002_02_act" target="zonenpcspawn:a_5094_130" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction seq="CH_CT_CuteVoice_0009_01_act" target="zonenpcspawn:a_5094_126" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_BC_Mokujin_0001_01_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction target="zonenpcspawn:a_5094_130" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_BC_Mokujin_0001_03_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="peace_fix_default" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_BC_Mokujin_0001_04_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="zonenpcspawn:a_5094_12" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_BC_Mokujin_0001_05_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state="open" state2="open" target="zoneenv:e_chest_5097gangsicoffin_01_1" target2="zoneenv2spawn:e_chest_5097gangsicoffin_01_1_spawn" type="set-env-state" />
+        
+        <reaction attack-target="event:act-finished:npc" spawn-1="a_5094_91" type="spawn-npc" />
+        
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_5094_2" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_BC_Mokujin_0001_06_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" target-2="zonenpcspawn:a_5094_126" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="killed">
+      <filter-set>
+        
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_5094_10" target-2="zonenpcspawn:a_5094_130" target-3="zonenpcspawn:a_5094_91" type="despawn-npc" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_4" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_29" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_31" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_33" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_37" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_41" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_46" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_47" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_48" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_128" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_134" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_134_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_134_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_134_4" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_134_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_50" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_50_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_50_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_52_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55_4" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55_6" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55_7" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55_8" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_55_9" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_59" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_59_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_59_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_59_5" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_60_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_62_6" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_62_8" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_64_9" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_65_1" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_60_3" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5094_84_7" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction spawn-1="a_5094_157" spawn-delay="3000" type="spawn-npc" />
+        
+        <reaction spawn-1="a_5094_90" spawn-delay="3000" type="spawn-npc" />
+        <reaction text="5094 웨이브를 끝내고 리트라이" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    
+  </script>
+  
+  <script alias="ME_BC_Nucleus_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction amount="1" opponent="zonenpcspawn:a_5094_121" target="event:npc-spawn:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  <script alias="ME_BC_RuneMechaBattle_0003_ai" parent="Boss_Immune_Slow_MoveBlock_ai">
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-combat-start">
+      <reaction-set>
+        
+        <reaction special-id="5" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="event:npc-special:npc" target="zonenpcspawn:a_5094_2" type="diff-npc-hate" />
+        <reaction special-id="3" target="zonenpcspawn:a_5094_2" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="zonenpcspawn:a_5094_2" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="1" opponent="zonenpcspawn:a_5094_2" target="zonenpcspawn:a_5094_11" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction seq="CH_BC_Scholar_0002_03_act" target="zonenpcspawn:a_5094_130" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_BC_RuneMechaBattle_0004_ai" />
+  
+  <script alias="ME_BC_RuneMechaB_0001_ai">
+    <decision event="npc-combat-start">
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_5094_41:reg-1" subject2="zonenpcsquad:s_5094_41:reg-1" type="number" value="2" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_5094_41:reg-1" subject2="zonenpcsquad:s_5094_41:reg-1" type="number" value="1" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" opponent="event:killed:attacker" target="zonenpcspawn:a_5094_41" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:killed:attacker" target="zonenpcspawn:a_5094_47" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:killed:attacker" target="zonenpcspawn:a_5094_48" type="diff-npc-hate" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_5094_41" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="lt" subject="zonenpcsquad:s_5094_41:reg-1" subject2="zonenpcsquad:s_5094_41:reg-1" type="number" value="2" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_5094_41" type="diff-party-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_BC_RuneMechaBTurret_0001_ai">
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction special-id="5" target="event:npc-combat-start:npc" type="npc-fire-special" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_BC_Dummy_0003_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_BC_Dummy_0003_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction state="close" state2="close" target="zoneenv:e_chest_5097gangsicoffin_01_1" target2="zoneenv2spawn:e_chest_5097gangsicoffin_01_1_spawn" type="set-env-state" />
+        
+        <reaction spawn-1="a_5094_2" spawn-target="event:act-paused:npc" type="spawn-npc" />
+        
+        <reaction spawn-1="a_5094_10" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction spawn-1="a_5094_12" type="spawn-npc" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_BC_Dummy_0003_act" />
+      </filter-set>
+      <reaction-set>
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_button_5097yongmak_1_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction target="event:env-manipulated:pc" type="warp-to-reentrance" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+</table>

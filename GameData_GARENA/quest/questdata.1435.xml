@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1435.xml-->
+  <quest alias="q_epic_1435" category="epic" completed-list="y" id="1435" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:Zone_Pungrimre_p1" party-broadcast="n" progress-mission="y" quest-decision="qd_1435_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1435_4" rollback="none" zone-1="Zone_Pungrimre_p1">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_sa_pungrim_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Pungrimre_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1435_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1435_13" rollback="leave-zone" zone-1="Zone_Pungrimre_p1">
+      <mission id="3" required-register-value="3">
+        <case object="npc:ch_sa_pungrim_0017" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_sa_pungrim_0006" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_sa_pungrim_0005" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_sa_pungrim_0004" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_sa_pungrim_0003" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_sa_pungrim_0002" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+      </mission>
+      <mission-step-fail rollback-step-id="2" zone-1="Zone_Pungrimre_p1" />
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_1435_5" rollback="none" zone-1="Zone_Pungrimre_p1">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_SA_TeacherShaman_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Pungrimre_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1435_14" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1435_6" rollback="leave-zone" zone-1="Zone_Pungrimre_p1">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_SA_TeacherShaman_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Pungrimre_p1" party-broadcast="n" progress-mission="reaction-only" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" zone-1="Zone_Pungrimre_p1" />
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1435_7" rollback="leave-zone" zone-1="Zone_Pungrimre_p1">
+      <mission id="6" required-register-value="5">
+        <case object2="npc:MH_SA_JeGukGun_0005" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" zone-1="Zone_Pungrimre_p1" />
+    </mission-step>
+    <mission-step id="7" rollback="leave-zone">
+      <mission id="7" required-register-value="1">
+        <case object2="npc:MH_SA_UnbalanceZombieBScaleUp1_0002" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail rollback-step-id="4" zone-1="Zone_Pungrimre_p1" />
+    </mission-step>
+    <mission-step id="8" rollback="none">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_SA_Iorak_0005" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Pungrimre_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1435_9" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="9" quest-decision="qd_1435_11" rollback="none" zone-1="Zone_Pungrimre_p1">
+      <mission id="9" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1435_final_set1">
+        <case object="npc:CH_SA_TeacherShaman_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_Pungrimre_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1435_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1436" />
+    </completion>
+    <transit id="1" zone="Zone_Pungrimre">
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

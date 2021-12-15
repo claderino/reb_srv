@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1592.xml-->
+  <quest alias="q_sub_1592" broadcast-category="field" category="normal" id="1592" max-repeat="1" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_epic_1511" preceding-quest-2="q_sub_1591">
+      <case acquire-quest="y" object="npc:ch_wa_chawoonhang_0217" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case gadget="Geonwon_Food_01" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_chawoonhangtable_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Geonwon_Food_01" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_chawoonhangtable_01_1" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Geonwon_Food_01" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_chawoonhangtable_01_2" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="y" gadget="Geonwon_Food_01" gadget-required="not-a" object2="zoneenv2:e_chest_chawoonhangfood_01" party-broadcast="y" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Geonwon_Food_01" gadget-required="not-a" object2="zoneenv2:e_chest_chawoonhangfood_01_1" party-broadcast="y" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Geonwon_Food_01" gadget-required="not-a" object2="zoneenv2:e_chest_chawoonhangfood_01_2" party-broadcast="y" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case gadget="Geonwon_Food_02" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_chawoonhangtable_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Geonwon_Food_02" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_chawoonhangtable_02_1" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="Geonwon_Food_02" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_chawoonhangtable_02_2" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case drop-gadget="y" gadget="Geonwon_Food_02" gadget-required="not-a" object2="zoneenv2:e_chest_chawoonhangfood_02" party-broadcast="y" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Geonwon_Food_02" gadget-required="not-a" object2="zoneenv2:e_chest_chawoonhangfood_02_1" party-broadcast="y" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" gadget="Geonwon_Food_02" gadget-required="not-a" object2="zoneenv2:e_chest_chawoonhangfood_02_2" party-broadcast="y" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_wa_chawoonhang_0217" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_wa_chawoonhang_0223" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="5" required-register-value="4">
+        <case object="npc:ch_wa_chawoonhang_0265" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_wa_chawoonhang_0264" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_wa_chawoonhang_0263" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:ch_wa_chawoonhang_0262" party-broadcast="n" progress-mission="y" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="6" required-register-value="1" reward-1="1592_final_set1">
+        <case object="npc:ch_wa_chawoonhang_0223" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_GeonWon_DockYard_D">
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+    </transit>
+  </quest>
+</table>

@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<table release-module="QuestData" release-side="server" type="quest" version="1.262">
-  <!--quest\questdata.176.xml-->
-  <quest alias="q_sub_176" broadcast-category="always" category="normal" district-1="suwal" id="176" max-repeat="1" retired="y" save-type="all" tutorial="y">
-    <acquisition level="11" production-exp="0" production-id="gathering-type-4" reward-1="176_final_set1">
-      <case acquire-quest="y" object="zoneenv:e_button_4000animalcorpse_01" object2="zoneenv2:e_button_4000animalcorpse_01" progress-mission="y" type="manipulate" />
-    </acquisition>
-  </quest>
-</table>

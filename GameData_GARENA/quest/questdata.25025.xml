@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.25025.xml-->
+  <quest alias="q_sub_25025" broadcast-category="field" category="dungeon" dungeon="Dungeon_LakeDg" id="25025" max-repeat="1" progress-difficulty-type-1="n" progress-difficulty-type-3="n" reset-type="none" save-type="nothing">
+    <acquisition level="1" mastery-level="50" preceding-quest-check="and">
+      <case acquire-quest="y" object2="zoneenv2:3010_LakeDg_3113" party-broadcast="n" type="enter-portal" />
+      <case acquire-quest="y" object2="zoneenv2:912_Potal_3079" party-broadcast="n" type="enter-portal" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_DS_RewardBox_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_LakeDg_1_Default">
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

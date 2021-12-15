@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.278.xml-->
+  <quest alias="q_epic_278" broadcast-category="field" category="epic" completed-list="n" id="278" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_CT_HyunDam_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BaekRimSa_An1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="zone:zone_BaekRimSa_An1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_1" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_2" type="enter-zone" />
+        <case object="npc:CH_CT_JinSoA_0021" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JinSoA_0022" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="zone:zone_BaekRimSa_An1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_1" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_12" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_Byul1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_5" type="enter-zone" />
+        <case object="npc:CH_CT_YeHaRang_0007" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_YeHaRang_0008" party-broadcast="n" progress-mission="y" quest-decision="qd_278_16" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_278_10" zone-1="zone_BaekRimSa_Byul2">
+      <mission id="7" required-register-value="1">
+        <case object="zone:zone_BaekRimSa_An1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_1" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_12" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_Byul1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_13" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_Byul2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_9" type="enter-zone" />
+        <case object="npc:CH_CT_JeongHaDo_0007" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeongHaDo_0008" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1" reward-1="278_final_set1">
+        <case object="npc:CH_CT_HyunDam_0005" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_12" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_Byul1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_13" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_Byul2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_11" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_279" />
+    </completion>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_CT_ORakDang_0015" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_ORakDang_0016" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BaekRimSa_An1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_1" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_14" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_CT_SoYangSang_0003" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_CT_SoYangSang_0004" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BaekRimSa_An1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_1" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_Byul1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_15" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_12" type="enter-zone" />
+        <case object="npc:CH_CT_YeHaRang_0011" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="zone:zone_BaekRimSa_BonDang" party-broadcast="n" progress-mission="y" quest-decision="qd_278_14" type="enter-zone" />
+        <case object="zone:zone_BaekRimSa_An1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_278_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

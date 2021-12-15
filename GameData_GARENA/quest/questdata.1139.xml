@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1139.xml-->
+  <quest alias="q_sub_1139" broadcast-category="field" category="normal" district-1="suwal" id="1139" max-repeat="1" save-type="all">
+    <acquisition level="38" preceding-quest-1="q_epic_911" preceding-quest-check="and" preceding-quest-mission-step-1="0" reward-1="1139_final_set1">
+      <case acquire-quest="y" object="npc:CE_PotAxPartyC_0004" party-broadcast="n" quest-decision="qd_1139_1" type="talk" />
+    </acquisition>
+  </quest>
+</table>

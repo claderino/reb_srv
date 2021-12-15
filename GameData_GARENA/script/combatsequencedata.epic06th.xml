@@ -1,0 +1,2179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.epic06th.xml-->
+
+  
+  
+  
+
+  
+
+  
+  <combat-sequence alias="ME_WB_Mushroom_0001_CS1" transit-cond-1="manual">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_HolyMushroom_None_Capture" skill3="ME_HolyMushroom_None_Capture" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_Mushroom_0001_CS2">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk1" skill3="ME_HolyMushroom_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk2" skill3="ME_HolyMushroom_None_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_HolyMushroom_None_Capture" skill3="ME_HolyMushroom_None_Capture" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Mushroom_0002_CS1" transit-cond-1="manual">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_HolyMushroom_None_Capture" skill3="ME_HolyMushroom_None_Capture" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_Mushroom_0002_CS2">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk1" skill3="ME_HolyMushroom_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_HolyMushroom_None_NAtk2" skill3="ME_HolyMushroom_None_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_HolyMushroom_None_Capture" skill3="ME_HolyMushroom_None_Capture" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_GrassBeastBig_0001_CS1" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_GrassBeastBig_headbutt" skill3="ME_GrassBeastBig_headbutt" type="use-skill" />
+      
+      <action social="ME_WB_GrassBeastBig_0001_battle_01" type="do-social" />
+      
+      <action repeat="1" skill="ME_GrassBeastBig_360" skill3="ME_GrassBeastBig_360" type="use-skill" />
+      
+      <action repeat="1" skill="ME_GrassBeastBig_jump" skill3="ME_GrassBeastBig_jump" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_GrassBeastBig_jump" skill3="ME_GrassBeastBig_jump" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <combat-sequence alias="CH_WB_Ryu_0002_CS_01" transit-cond-1="manual">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_rush_LV1" skill3="MH_BladeMaster_Sword_rush_LV1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WB_Ryu_0002_CS_02" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" skill3="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_mach_slash" skill3="MH_BladeMaster_Batto_mach_slash" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_full_moon_slash_LV1" skill3="MH_BladeMaster_Sword_full_moon_slash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_VitalSlash_LV1" skill3="MH_BladeMaster_Batto_VitalSlash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_counterattack_LV1" skill3="MH_BladeMaster_Sword_counterattack_LV1" type="use-skill" />
+      
+      <action social="CH_WB_Ryu_0002_battle_01" type="do-social" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_turning_strike_LV1" skill3="MH_BladeMaster_Sword_turning_strike_LV1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_rush_LV1" skill3="MH_BladeMaster_Sword_rush_LV1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action social="CH_WB_Ryu_0002_battle_02" type="do-social" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_crippling_cut_LV1" skill3="MH_BladeMaster_Sword_crippling_cut_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_TrainingWood_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_BurstAbdomen_Lv1" skill3="MH_KungfuMaster_Attack_BurstAbdomen_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Heavypunch_Lv2" skill3="MH_KungfuMaster_Attack_Heavypunch_Lv2" type="use-skill" />
+      
+      <action social="MH_WB_TrainingWood_0001_battle_01" type="do-social" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Defend_Crushground_Lv1_stun" skill3="MH_KungfuMaster_Defend_Crushground_Lv1_stun" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action social="MH_WB_TrainingWood_0001_battle_02" type="do-social" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Finalattack_Lv1_hidden" skill3="MH_KungfuMaster_Attack_Finalattack_Lv1_hidden" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_KungfuMaster_Attack_Triplekick_Lv1" skill3="MH_KungfuMaster_Attack_Triplekick_Lv1" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_KungfuMaster_Attack_BurstBlow_Named" skill3="MH_KungfuMaster_Attack_BurstBlow_Named" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_BeonYang_0003_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_BeonA_0003_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_cold_blast_Lv1" skill3="MH_ForceMaster_Deal_cold_blast_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_ChinChin_0005_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="0" min-delay="10000" start-delay="10000">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Lowkick_Lv1" skill3="MH_KungfuMaster_Attack_Lowkick_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0008_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="2" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Explosion" skill3="ME_DemonShadowCBig_None_Explosion" type="use-skill" />
+    </normal>
+    <normal combat-distance="4" id="2" special-1="1">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Capture1" skill3="ME_DemonShadowCBig_None_Capture1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="10000" start-delay="10000">
+      <action event-step="1" repeat="1" skill="ME_DemonShadowCBig_None_Summon" skill3="ME_DemonShadowCBig_None_Summon" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="1" id="1" max-count="5">
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_Zombie_None_Explosion_Lv2" skill3="ME_Zombie_None_Explosion_Lv2" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_SkullB_0002_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WB_SkullB_0003_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DarkAura_0002_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_AkMong_Range" skill3="ME_AkMong_Range" target="event:npc-combat-action:npc" type="use-skill" />
+      <action duration="100" type="stay" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      <action event-step="99" immune-breaker-disable="y" repeat="1" skill="Q_DarkAura_None_TakgiExplosion" skill3="Q_DarkAura_None_TakgiExplosion" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0025_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Dash" skill3="ME_DemonShadowD_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DemonShadowBoss_0002_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="2" skill="ME_DemonShadow_None_Jab_Q" skill3="ME_DemonShadow_None_Jab_Q" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DemonShadow_None_Smash_Q" skill3="ME_DemonShadow_None_Smash_Q" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DemonShadow_None_Laser" skill3="ME_DemonShadow_None_Laser" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DemonShadow_None_Spin_Q" skill3="ME_DemonShadow_None_Spin_Q" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DemonShadow_None_Explosion" skill3="ME_DemonShadow_None_Explosion" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DemonShadow_None_Inhalation" skill3="ME_DemonShadow_None_Inhalation" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      
+      <action duration="30000" skill="ME_DemonShadow_None_DemonFire" skill3="ME_DemonShadow_None_DemonFire" type="boss-simultaneous-ground-attack" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill="ME_DemonShadow_None_DemonShot" skill3="ME_DemonShadow_None_DemonShot" type="use-ground-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_DemonShadow_None_Teleport" skill3="ME_DemonShadow_None_Teleport" target-area="4429_41" type="use-ground-skill" />
+      
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_DemonShadow_None_Meteor" skill3="ME_DemonShadow_None_Meteor" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_DemonShadow_None_Inhalation" skill3="ME_DemonShadow_None_Inhalation" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Valak_0002_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_Valak_None_Smash_Epic6" skill3="ME_Valak_None_Smash_Epic6" type="use-skill" />
+      <action repeat="1" skill="ME_Valak_None_MultiSmash_Epic6" skill3="ME_Valak_None_MultiSmash_Epic6" type="use-skill" />
+      <action repeat="1" skill="ME_Valak_None_Blow_Epic6" skill3="ME_Valak_None_Blow_Epic6" type="use-skill" />
+      <action repeat="1" skill="ME_Valak_None_Inhalation_Epic6" skill3="ME_Valak_None_Inhalation_Epic6" type="use-skill" />
+      <action repeat="1" skill="ME_Valak_None_IcePrison_Epic6" skill3="ME_Valak_None_IcePrison_Epic6" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_Valak_None_IceThrow_Epic6" skill3="ME_Valak_None_IceThrow_Epic6" type="use-skill" />
+      
+    </normal>
+    <special combat-distance="7" id="2" max-count="1">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_Jump_Epic6" skill3="ME_Valak_None_Jump_Epic6" target-area="4429_41" type="use-ground-skill" />
+      <action event-step="2" immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_IcePrison_Epic6" skill3="ME_Valak_None_IcePrison_Epic6" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Valak_None_Inhalation_Epic6" skill3="ME_Valak_None_Inhalation_Epic6" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0023_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_NAtk2" skill3="ME_DemonShadowCBig_None_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="4" id="2" special-1="1">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Missile" skill3="ME_DemonShadowCBig_None_Missile" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action repeat="1" skill="ME_DemonShadowCBig_None_Summon" skill3="ME_DemonShadowCBig_None_Summon" type="use-skill" />
+      <action duration="4000" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Dummy_0075_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="1" repeat="1" skill="ME_Dummy_None_Meteofall_sim1" skill3="ME_Dummy_None_Meteofall_sim1" target="event:npc-combat-action:npc" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+
+  
+  <combat-sequence alias="CH_WB_ChungGak_0003_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowDance_Lv1" skill3="MH_Assassin_Disturb_ShadowDance_Lv1" type="use-skill" />
+      
+      <action combo="y" skill="MH_Assassin_Disturb_ShadowSlash_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_AirBomb_Lv1" skill3="MH_Assassin_Disturb_AirBomb_Lv1" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_Assassin_Hide_SpineStab_Lv1" skill3="MH_Assassin_Hide_SpineStab_Lv1" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_Assassin_Assassinate_Decapitation_Lv1" skill3="MH_Assassin_Assassinate_Decapitation_Lv1" type="use-skill" />
+      
+      <action combo="y" skill="MH_Assassin_Disturb_ShadowSlash_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Mine_Lv1" skill3="MH_Assassin_Disturb_Mine_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_LightningDagger_Lv1" skill3="MH_Assassin_Hide_LightningDagger_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoveParry_Lv1" skill3="MH_Assassin_Disturb_MoveParry_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shuriken_Poison_Lv1" skill3="MH_Assassin_Disturb_Shuriken_Poison_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shunpo3_Lv1" skill3="MH_Assassin_Disturb_Shunpo3_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Mine_0001_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="ME_Mine_None_Explosion_Lv1" skill3="ME_Mine_None_Explosion_Lv1" type="use-skill" />
+      <action duration="100" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_ChungGak_0004_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_R0_ForceMaster_Deal_fire_blast" skill3="MH_SUA_R0_ForceMaster_Deal_fire_blast" type="use-skill" />
+      
+      <action skill="MH_ForceMaster_Deal_heat_wave_Lv3" skill3="MH_ForceMaster_Deal_heat_wave_Lv3" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_bit_missile_Lv1" skill3="MH_ForceMaster_Deal_fire_bit_missile_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_breakaway_fire_target_Lv1" skill3="MH_ForceMaster_Deal_breakaway_fire_target_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_missile_Lv1" skill3="MH_ForceMaster_Deal_fire_missile_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_B3_ForceMaster_Deal_embers_spread" skill3="MH_SUA_B3_ForceMaster_Deal_embers_spread" type="use-skill" />
+      
+      <action duration="3300" immune-breaker-disable="y" repeat="1" skill="MH_SUA_B3_ForceMaster_Deal_grenade_Epic6" skill3="MH_SUA_B3_ForceMaster_Deal_grenade_Epic6" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="MH_SUA_B3_ForceMaster_Deal_fire_blast_Epic6" skill3="MH_SUA_B3_ForceMaster_Deal_fire_blast_Epic6" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_B3_ForceMaster_Deal_fire_bomb" skill3="MH_SUA_B3_ForceMaster_Deal_fire_bomb" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_B3_ForceMaster_None_SummonFire" skill3="MH_SUA_B3_ForceMaster_None_SummonFire" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action duration="3300" immune-breaker-disable="y" repeat="1" skill="MH_SUA_B3_ForceMaster_Deal_grenade_Epic6" skill3="MH_SUA_B3_ForceMaster_Deal_grenade_Epic6" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_SUA_B3_ForceMaster_Deal_embers_spread_Epic6" skill3="MH_SUA_B3_ForceMaster_Deal_embers_spread_Epic6" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUA_B3_ForceMaster_Deal_fire_blast_Epic6" skill3="MH_SUA_B3_ForceMaster_Deal_fire_blast_Epic6" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Dummy_0069_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action repeat="1" skill="MH_ForceMaster_Deal_heat_wave_Epic6" skill3="MH_ForceMaster_Deal_heat_wave_Epic6" target="event:npc-combat-action:npc" type="use-skill" />
+      <action duration="100" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CE_WB_ChungGak_0051_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump1_Q" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunDash" skill3="ME_SUA_B4_GatlingGunWoman_None_GunDash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1" type="boss-simultaneous-ground-attack" />
+      
+      <action combo="y" duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      <action combo="y" duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      <action combo="y" duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" type="use-skill" />
+      
+      
+    </normal>
+    
+    <special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1_Q" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="20000">
+      
+      <action immune-breaker-disable="y" skill="ME_SUA_B4_GatlingGunWoman_None_BulletJumping" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletJumping" type="use-skill" />
+      
+      <action combo="y" skill="ME_SUA_B4_GatlingGunWoman_None_GunDivingFire" skill3="ME_SUA_B4_GatlingGunWoman_None_GunDivingFire" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action combo="y" skill="ME_SUA_B4_GatlingGunWoman_None_AirDash" skill3="ME_SUA_B4_GatlingGunWoman_None_AirDash" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Epic6" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Epic6" target-area="4429_2" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WB_DarkCrazyTribeBigB_0008_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Area360" skill3="ME_DarkCrazyTribeBigA_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Rush" skill3="ME_DarkCrazyTribeBigA_None_Rush" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DarkCrazyTribeBigB_0009_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Area360" skill3="ME_DarkCrazyTribeBigA_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Rush" skill3="ME_DarkCrazyTribeBigA_None_Rush" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0024_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEC_R0_Zombie_None_Explosion" skill3="ME_BEC_R0_Zombie_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_ChungGak_0041_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" skill="Quest_ForceMaster_Deal_fire_missile" skill3="Quest_ForceMaster_Deal_fire_missile" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" skill="Quest_ForceMaster_Deal_fire_missile" skill3="Quest_ForceMaster_Deal_fire_missile" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DemonShadow_0022_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEC_R0_Zombie_None_Explosion" skill3="ME_BEC_R0_Zombie_None_Explosion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WB_DarkCrazyTribeBigB_0001_CS_01" transit-cond-1="manual">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigB_None_Pull" skill3="ME_DarkCrazyTribeBigB_None_Pull" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_WB_DarkCrazyTribeBigB_0001_CS_02" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserShort" skill3="ME_DarkCrazyTribeBigA_None_LaserShort" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Area360" skill3="ME_DarkCrazyTribeBigA_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Rush" skill3="ME_DarkCrazyTribeBigA_None_Rush" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DarkCrazyTribeBigB_0010_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Area360" skill3="ME_DarkCrazyTribeBigA_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Rush" skill3="ME_DarkCrazyTribeBigA_None_Rush" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_DarkCrazyTribeBigA_0001_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserShort" skill3="ME_DarkCrazyTribeBigA_None_LaserShort" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_Area360" skill3="ME_DarkCrazyTribeBigA_None_Area360" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_NAtk1" skill3="ME_DarkCrazyTribeBigA_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="ME_DarkCrazyTribeBigA_None_LaserLong" skill3="ME_DarkCrazyTribeBigA_None_LaserLong" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        <action prob="40" repeat="1" skill="ME_DarkCrazyTribeBigA_None_Pull_Lv1" skill3="ME_DarkCrazyTribeBigA_None_Pull_Lv1" type="use-skill" />
+        <action prob="60" repeat="1" skill="ME_DarkCrazyTribeBigA_None_Rush" skill3="ME_DarkCrazyTribeBigA_None_Rush" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_ChungGak_0012_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" type="use-skill" />
+      
+      <action duration="3000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1" type="boss-simultaneous-ground-attack" />
+      
+      <action combo="y" duration="3000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      <action combo="y" duration="3000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      <action combo="y" duration="3000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action duration="3000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1" type="boss-simultaneous-ground-attack" />
+      
+      <action combo="y" duration="3000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      <action combo="y" duration="3000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      <action combo="y" duration="3000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" type="use-skill" />
+      
+      <action duration="5000" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletBomb" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletBomb" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_GunFire1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1_Q" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_BladeMaster" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" skill3="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stamp_LV1" skill3="MH_BladeMaster_Sword_stamp_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_WindyMoonSlash_LV1" skill3="MH_BladeMaster_Sword_WindyMoonSlash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_FrontKick_LV1" skill3="MH_BladeMaster_Sword_FrontKick_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_rush_LV1" skill3="MH_BladeMaster_Sword_rush_LV1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_Destroyer" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Judgement_Lv1" skill3="MH_Destroyer_Protection_Judgement_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Destruction_Finish" skill3="MH_Destroyer_Protection_Destruction_Finish" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Raging_Wind_Ember" skill3="MH_Destroyer_Protection_Raging_Wind_Ember" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Earthquake_Lv1" skill3="MH_Destroyer_Protection_Earthquake_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_KungfuFighter" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Trampledown_Lv1" skill3="MH_KungfuMaster_Attack_Trampledown_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerAttack_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Defend_Crushground_Lv1" skill3="MH_KungfuMaster_Defend_Crushground_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGakABoss_0008_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Destroyer_Protection_Raging_Wind_Ember" skill3="MH_Destroyer_Protection_Raging_Wind_Ember" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_ChargeDash_Lv1" skill3="MH_Destroyer_Protection_ChargeDash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Destruction_LowRagingWind_Lv1" skill3="MH_Destroyer_Destruction_LowRagingWind_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_KickKnockback_Lv1" skill3="MH_Destroyer_Protection_KickKnockback_Lv1" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_Destroyer_Protection_CounterUppercut_Lv1" skill3="MH_Destroyer_Protection_CounterUppercut_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Earthquake_Lv1" skill3="MH_Destroyer_Protection_Earthquake_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-70" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_AnkleCutOff_Lv1" skill3="MH_Destroyer_Protection_AnkleCutOff_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_DestructionCircle_Lv1" skill3="MH_Destroyer_Protection_DestructionCircle_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+    </special>
+    <special combat-distance="3" condition-1="hp-30" id="2" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Destroyer_Protection_RageChange" skill3="MH_Destroyer_Protection_RageChange" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_HardWall_Lv1" skill3="MH_Destroyer_Protection_HardWall_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Dummy_0126_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <normal combat-distance="7" id="2" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action duration="100" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0068_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" skill3="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stamp_LV1" skill3="MH_BladeMaster_Sword_stamp_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_WindyMoonSlash_LV1" skill3="MH_BladeMaster_Sword_WindyMoonSlash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_FrontKick_LV1" skill3="MH_BladeMaster_Sword_FrontKick_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_rush_LV1" skill3="MH_BladeMaster_Sword_rush_LV1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_full_moon_slash_LV1" skill3="MH_BladeMaster_Sword_full_moon_slash_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0069_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_AirBomb_Lv1" skill3="MH_Assassin_Disturb_AirBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_PoisonBreath_Lv1" skill3="MH_Assassin_Disturb_PoisonBreath_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shuriken_Poison_Lv1" skill3="MH_Assassin_Disturb_Shuriken_Poison_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_TimeBomb_Lv1" skill3="MH_Assassin_Hide_TimeBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" skill3="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0070_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_fire_blast_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="4" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+    </special>
+    <special combat-distance="3" condition-1="defence" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="4000">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_fire_blast_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+      </action>
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0071_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Judgement_Lv1" skill3="MH_Destroyer_Protection_Judgement_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Destruction_Finish" skill3="MH_Destroyer_Protection_Destruction_Finish" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Raging_Wind_Ember" skill3="MH_Destroyer_Protection_Raging_Wind_Ember" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Earthquake_Lv1" skill3="MH_Destroyer_Protection_Earthquake_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_AnkleCutOff_Lv1" skill3="MH_Destroyer_Protection_AnkleCutOff_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_DestructionCircle_Lv1" skill3="MH_Destroyer_Protection_DestructionCircle_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0072_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowPenetration_Lv1" skill3="MH_Assassin_Disturb_ShadowPenetration_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_HideKick_Lv1" skill3="MH_Assassin_Hide_HideKick_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_HeartStab_Lv1" skill3="MH_Assassin_Disturb_HeartStab_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Dash_Lv1" skill3="MH_Assassin_Disturb_Dash_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_SpineStab_Lv1" skill3="MH_Assassin_Hide_SpineStab_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Assassinate_Decapitation_Lv1" skill3="MH_Assassin_Assassinate_Decapitation_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0075_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_AirBomb_Lv1" skill3="MH_Assassin_Disturb_AirBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_PoisonBreath_Lv1" skill3="MH_Assassin_Disturb_PoisonBreath_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shuriken_Poison_Lv1" skill3="MH_Assassin_Disturb_Shuriken_Poison_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_TimeBomb_Lv1" skill3="MH_Assassin_Hide_TimeBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" skill3="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0076_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" skill3="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stamp_LV1" skill3="MH_BladeMaster_Sword_stamp_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_WindyMoonSlash_LV1" skill3="MH_BladeMaster_Sword_WindyMoonSlash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_FrontKick_LV1" skill3="MH_BladeMaster_Sword_FrontKick_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_rush_LV1" skill3="MH_BladeMaster_Sword_rush_LV1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_full_moon_slash_LV1" skill3="MH_BladeMaster_Sword_full_moon_slash_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0077_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_AirBomb_Lv1" skill3="MH_Assassin_Disturb_AirBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_PoisonBreath_Lv1" skill3="MH_Assassin_Disturb_PoisonBreath_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shuriken_Poison_Lv1" skill3="MH_Assassin_Disturb_Shuriken_Poison_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_TimeBomb_Lv1" skill3="MH_Assassin_Hide_TimeBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" skill3="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0078_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_fire_blast_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="4" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+    </special>
+    <special combat-distance="3" condition-1="defence" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="4000">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_fire_blast_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+      </action>
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0079_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Judgement_Lv1" skill3="MH_Destroyer_Protection_Judgement_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Destruction_Finish" skill3="MH_Destroyer_Protection_Destruction_Finish" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Raging_Wind_Ember" skill3="MH_Destroyer_Protection_Raging_Wind_Ember" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Earthquake_Lv1" skill3="MH_Destroyer_Protection_Earthquake_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_AnkleCutOff_Lv1" skill3="MH_Destroyer_Protection_AnkleCutOff_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_DestructionCircle_Lv1" skill3="MH_Destroyer_Protection_DestructionCircle_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel_Range" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_DoDanHa_0002_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Lowkick" skill3="MH_SUA_R0_KungfuMaster_Attack_Lowkick" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_KungfuMaster_Defend_Crushground_Lv1_stun" skill3="MH_KungfuMaster_Defend_Crushground_Lv1_stun" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden_ice" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden_ice" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_SUB_B4_KungfuMaster_Attack_Heavypunch2" skill3="MH_SUB_B4_KungfuMaster_Attack_Heavypunch2" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="MH_SUB_B4_KungfuMaster_Attack_Heavypunch" skill3="MH_SUB_B4_KungfuMaster_Attack_Heavypunch" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden_ice" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden_ice" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Finalattack_Lv1" skill3="MH_KungfuMaster_Attack_Finalattack_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUB_B3_KungfuMaster_Defend_AbdomenAttack" skill3="MH_SUB_B3_KungfuMaster_Defend_AbdomenAttack" type="use-skill" />
+      
+      <action repeat="1" skill="Quest_DoDanHa_Martialdance" skill3="Quest_DoDanHa_Martialdance" type="use-skill" />
+      <action type="select">
+        
+        <action prob="80" repeat="1" skill="MH_SUB_B4_KungfuMaster_Defend_Heavyattack" skill3="MH_SUB_B4_KungfuMaster_Defend_Heavyattack" type="use-skill" />
+        
+        <action prob="20" repeat="1" skill="MH_SUB_B4_KungfuMaster_Attack_Heavypunch2" skill3="MH_SUB_B4_KungfuMaster_Attack_Heavypunch2" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUB_B4_KungfuMaster_Defend_LeftCounter_dash" skill3="MH_SUB_B4_KungfuMaster_Defend_LeftCounter_dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_SUB_B3_KungfuMaster_Attack_FlyTakedown" skill3="MH_SUB_B3_KungfuMaster_Attack_FlyTakedown" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_KungfuMaster_Attack_Pounding_First_Lv1" skill3="MH_KungfuMaster_Attack_Pounding_First_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_DoDanHa_0003_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_SUA_R0_KungfuMaster_Attack_Lowkick" skill3="MH_SUA_R0_KungfuMaster_Attack_Lowkick" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_KungfuMaster_Defend_Crushground_Lv1_stun" skill3="MH_KungfuMaster_Defend_Crushground_Lv1_stun" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden_ice" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden_ice" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_SUB_B4_KungfuMaster_Attack_Heavypunch2" skill3="MH_SUB_B4_KungfuMaster_Attack_Heavypunch2" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="MH_SUB_B4_KungfuMaster_Attack_Heavypunch" skill3="MH_SUB_B4_KungfuMaster_Attack_Heavypunch" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden_ice" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_hidden_ice" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Finalattack_Lv1" skill3="MH_KungfuMaster_Attack_Finalattack_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_SUB_B3_KungfuMaster_Defend_AbdomenAttack" skill3="MH_SUB_B3_KungfuMaster_Defend_AbdomenAttack" type="use-skill" />
+      
+      <action repeat="1" skill="Quest_DoDanHa_Martialdance" skill3="Quest_DoDanHa_Martialdance" type="use-skill" />
+      <action type="select">
+        
+        <action prob="80" repeat="1" skill="MH_SUB_B4_KungfuMaster_Defend_Heavyattack" skill3="MH_SUB_B4_KungfuMaster_Defend_Heavyattack" type="use-skill" />
+        
+        <action prob="20" repeat="1" skill="MH_SUB_B4_KungfuMaster_Attack_Heavypunch2" skill3="MH_SUB_B4_KungfuMaster_Attack_Heavypunch2" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUB_B4_KungfuMaster_Defend_LeftCounter_dash" skill3="MH_SUB_B4_KungfuMaster_Defend_LeftCounter_dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_SUB_B3_KungfuMaster_Attack_FlyTakedown" skill3="MH_SUB_B3_KungfuMaster_Attack_FlyTakedown" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_KungfuMaster_Attack_Pounding_First_Lv1" skill3="MH_KungfuMaster_Attack_Pounding_First_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_Uhun_0002_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" skill3="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stamp_LV1" skill3="MH_BladeMaster_Sword_stamp_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_WindyMoonSlash_LV1" skill3="MH_BladeMaster_Sword_WindyMoonSlash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_FrontKick_LV1" skill3="MH_BladeMaster_Sword_FrontKick_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_full_moon_slash_LV1" skill3="MH_BladeMaster_Sword_full_moon_slash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blocking" skill3="MH_BladeMaster_Sword_blocking" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_turning_strike_LV1" skill3="MH_BladeMaster_Sword_turning_strike_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_crippling_cut_LV1" skill3="MH_BladeMaster_Sword_crippling_cut_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_SunJun_0002_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" skill3="MH_BladeMaster_Sword_Upper_ShoulderCharge_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stamp_LV1" skill3="MH_BladeMaster_Sword_stamp_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_WindyMoonSlash_LV1" skill3="MH_BladeMaster_Sword_WindyMoonSlash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_FrontKick_LV1" skill3="MH_BladeMaster_Sword_FrontKick_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_BackDash_Rush_LV1" skill3="MH_BladeMaster_Batto_BackDash_Rush_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_full_moon_slash_LV1" skill3="MH_BladeMaster_Sword_full_moon_slash_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blocking" skill3="MH_BladeMaster_Sword_blocking" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_turning_strike_LV1" skill3="MH_BladeMaster_Sword_turning_strike_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_crippling_cut_LV1" skill3="MH_BladeMaster_Sword_crippling_cut_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGak_0002_CS_01" seq-start-social="1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_fire_blast_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="4" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+    </special>
+    <special combat-distance="3" condition-1="defence" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="4000">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_fire_blast_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+      </action>
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="MH_WB_ChungGak_0002_CS_02" seq-start-social="1">
+    <normal combat-distance="7" id="1" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action social="MH_WB_ChungGak_0002_soc_01" type="do-social" />
+      
+      <action event-step="1" repeat="1" skill="Quest_178_Inhalation" skill3="Quest_178_Inhalation" type="use-skill" />
+      
+      <action event-step="2" repeat="1" skill="Quest_178_kneel" skill3="Quest_178_kneel" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGakABoss_0005_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_magnetic_seal_Lv1" skill3="MH_ForceMaster_Deal_magnetic_seal_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_cold_blast_Lv1" skill3="MH_ForceMaster_Deal_cold_blast_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_cold_missile_Lv2" skill3="MH_ForceMaster_Deal_cold_missile_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_magnetic_energy_Lv1" skill3="MH_ForceMaster_Deal_magnetic_energy_Lv1" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_frost_explosion_Lv1" skill3="MH_ForceMaster_Deal_frost_explosion_Lv1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" condition-1="hp-30" id="2" max-count="1">
+      
+      <action immune-breaker-disable="y" skill="MH_SUA_R0_ForceMaster_Deal_freeze_splinter_Epic6" skill3="MH_SUA_R0_ForceMaster_Deal_freeze_splinter_Epic6" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="MH_SUA_R0_ForceMaster_Deal_freeze_burst_Epic6" skill3="MH_SUA_R0_ForceMaster_Deal_freeze_burst_Epic6" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_ChungGakABoss_0006_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Raging_Wind_Ember" skill3="MH_Destroyer_Protection_Raging_Wind_Ember" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_ChargeDash_Lv1" skill3="MH_Destroyer_Protection_ChargeDash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Destruction_LowRagingWind_Lv1" skill3="MH_Destroyer_Destruction_LowRagingWind_Lv1" type="use-skill" />
+      
+      <action event-step="1" repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Kneel" skill3="MH_Destroyer_Protection_Axe_Chop_Kneel" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_SUA_R0_Destroyer_Hardwall_IronCannon_Epic6" skill3="MH_SUA_R0_Destroyer_Hardwall_IronCannon_Epic6" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="1" condition-1="hp-60" id="1" max-count="1" min-delay="0">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" skill3="MH_Destroyer_Protection_ChargeDash_Lv2_stun_1000ms" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_Destroyer_Protection_DestructionCircle_Lv1" skill3="MH_Destroyer_Protection_DestructionCircle_Lv1" type="use-skill" />
+    </special>
+    
+    <special combat-distance="1" condition-1="hp-30" id="2" max-count="1" min-delay="0">
+      
+      <action immune-breaker-disable="y" social="MH_ChungGak_0161_combatstart_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="MH_Destroyer_Destruction_LowRagingWind_Lv1" skill3="MH_Destroyer_Destruction_LowRagingWind_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="MH_Destroyer_Protection_DestructionCircle_Lv1" skill3="MH_Destroyer_Protection_DestructionCircle_Lv1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill="MH_Destroyer_Protection_Swing_Strike_Short" skill3="MH_Destroyer_Protection_Swing_Strike_Short" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CE_WB_Dummy_0009_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="1" id="1" max-count="0">
+      <action duration="100" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ChungGak_0067_CS1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_Gun1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_Gun1_Q" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" skill="ME_SUA_B4_GatlingGunWoman_None_BulletJumping" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletJumping" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" skill="ME_SUA_B4_GatlingGunWoman_None_AirDash" skill3="ME_SUA_B4_GatlingGunWoman_None_AirDash" target-area="2073_33" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_ChungGak_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump1_Q" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletFireJump2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunDash" skill3="ME_SUA_B4_GatlingGunWoman_None_GunDash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunLowFire_Q" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire1" type="boss-simultaneous-ground-attack" />
+      
+      <action combo="y" duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      <action combo="y" duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      <action combo="y" duration="20000" immune-breaker-disable="y" repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletDoubleFire2" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunFire1_Q" type="use-skill" />
+      
+      
+    </normal>
+    
+    <special combat-distance="7" condition-1="midair-1" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="0">
+      
+      <action repeat="1" skill="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1_Q" skill3="ME_SUA_B4_GatlingGunWoman_None_GunAirFire1_Q" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="20000">
+      
+      <action immune-breaker-disable="y" skill="ME_SUA_B4_GatlingGunWoman_None_BulletJumping" skill3="ME_SUA_B4_GatlingGunWoman_None_BulletJumping" type="use-skill" />
+      
+      <action combo="y" skill="ME_SUA_B4_GatlingGunWoman_None_GunDivingFire" skill3="ME_SUA_B4_GatlingGunWoman_None_GunDivingFire" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action combo="y" skill="ME_SUA_B4_GatlingGunWoman_None_AirDash" skill3="ME_SUA_B4_GatlingGunWoman_None_AirDash" target="event:npc-combat-action:npc:nearest-target" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action event-step="1" immune-breaker-disable="y" skill="ME_SUA_B4_GatlingGunWoman_None_Jump_Epic6" skill3="ME_SUA_B4_GatlingGunWoman_None_Jump_Epic6" target-area="2073_33" type="use-ground-skill" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="CH_WB_DoDanHa_0004_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" />
+    <normal combat-distance="2" id="2" special-1="1" />
+    <special combat-distance="7" id="1">
+      <action duration="100" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_Dummy_0156_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" />
+    <normal combat-distance="2" id="2" special-1="1" />
+    <special combat-distance="7" id="1">
+      <action duration="100" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="CH_WB_BaekRim_KungfuFighter_01" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerAttack_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_BaekRim_BladeMaster_01" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_flying_swallow_sword_LV1" skill3="MH_BladeMaster_Sword_flying_swallow_sword_LV1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_BlackDragon_Assassin_01" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_AirBomb_Lv1" skill3="MH_Assassin_Disturb_AirBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_PoisonBreath_Lv1" skill3="MH_Assassin_Disturb_PoisonBreath_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shuriken_Poison_Lv1" skill3="MH_Assassin_Disturb_Shuriken_Poison_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_BlackDragon_KungfuFighter_01" seq-start-social="1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="MH_WB_BlackDragon_KungfuFighter_02" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Trampledown_Lv1" skill3="MH_KungfuMaster_Attack_Trampledown_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerAttack_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Counterenemy_Lv1" skill3="MH_KungfuMaster_Attack_Counterenemy_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_BurstAbdomen_Lv1" skill3="MH_KungfuMaster_Attack_BurstAbdomen_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Lv1" skill3="MH_KungfuMaster_Attack_Jumppunch_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_BlackDragon_ForceMaster_01" seq-start-social="1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="MH_WB_BlackDragon_ForceMaster_02" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_fire_blast_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="MH_WB_BlackDragon_0046_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_fire_blast_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="4" condition-1="hp-60" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+    </special>
+    <special combat-distance="3" condition-1="defence" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="4000">
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_fire_blast_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_fire_bomb_Lv1" skill3="MH_ForceMaster_Deal_fire_bomb_Lv1" type="use-skill" />
+      </action>
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_BlackDragon_0047_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_cold_blast_Lv1" skill3="MH_ForceMaster_Deal_cold_blast_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="4" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0" min-delay="4000">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_frost_explosion_Lv1" skill3="MH_ForceMaster_Deal_frost_explosion_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_cold_missile_Lv1" skill3="MH_ForceMaster_Deal_cold_missile_Lv1" type="use-skill" />
+    </special>
+    <special combat-distance="3" condition-1="defence" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0" min-delay="4000">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_cold_missile_Lv1" skill3="MH_ForceMaster_Deal_cold_missile_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_BlackDragon_0074_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1_poison" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_AirBomb_Lv1" skill3="MH_Assassin_Disturb_AirBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_PoisonBreath_Lv1" skill3="MH_Assassin_Disturb_PoisonBreath_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shuriken_Poison_Lv1" skill3="MH_Assassin_Disturb_Shuriken_Poison_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_TimeBomb_Lv1" skill3="MH_Assassin_Hide_TimeBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Stun_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" skill3="MH_Assassin_Disturb_BackStepPoisonBreath_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_BlackDragon_0075_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowPenetration_Lv1" skill3="MH_Assassin_Disturb_ShadowPenetration_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_HideKick_Lv1" skill3="MH_Assassin_Hide_HideKick_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_HeartStab_Lv1" skill3="MH_Assassin_Disturb_HeartStab_Lv1" type="use-skill" />
+    </normal>
+    <normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Dash_Lv1" skill3="MH_Assassin_Disturb_Dash_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="hp-60" id="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_SpineStab_Lv1" skill3="MH_Assassin_Hide_SpineStab_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Assassinate_Decapitation_Lv1" skill3="MH_Assassin_Assassinate_Decapitation_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_AdamantineMan_0001_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="Quest_AdamantineMan_None_NAtk1" skill3="Quest_AdamantineMan_None_NAtk1" type="use-skill" />
+      <action repeat="1" skill="Quest_AdamantineMan_None_NAtk2" skill3="Quest_AdamantineMan_None_NAtk2" type="use-skill" />
+      
+      <action repeat="1" skill="ME_AdamantineMan_None_Area360_Lv1" skill3="ME_AdamantineMan_None_Area360_Lv1" type="use-skill" />
+      
+      <action repeat="2" skill="Quest_AdamantineMan_None_Laser_Lv1" skill3="Quest_AdamantineMan_None_Laser_Lv1" type="use-skill" />
+      
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_AdamantineMan_None_Area360_Lv1" skill3="ME_AdamantineMan_None_Area360_Lv1" type="use-skill" />
+        <action prob="25" repeat="1" skill="Quest_AdamantineMan_None_NAtk1" skill3="Quest_AdamantineMan_None_NAtk1" type="use-skill" />
+        <action prob="25" repeat="1" skill="Quest_AdamantineMan_None_NAtk2" skill3="Quest_AdamantineMan_None_NAtk2" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="Quest_AdamantineMan_None_Laser2_Lv1" skill3="Quest_AdamantineMan_None_Laser2_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="Quest_AdamantineMan_None_NAtk2" skill3="Quest_AdamantineMan_None_NAtk2" type="use-skill" />
+      
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_AdamantineMan_None_Area360_Lv1" skill3="ME_AdamantineMan_None_Area360_Lv1" type="use-skill" />
+        <action prob="25" repeat="1" skill="Quest_AdamantineMan_None_NAtk2" skill3="Quest_AdamantineMan_None_NAtk2" type="use-skill" />
+        <action prob="25" repeat="1" skill="Quest_AdamantineMan_None_NAtk1" skill3="Quest_AdamantineMan_None_NAtk1" type="use-skill" />
+      </action>
+      
+      <action repeat="2" skill="Quest_AdamantineMan_None_Laser2_Lv1" skill3="Quest_AdamantineMan_None_Laser2_Lv1" type="use-skill" />
+      
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_AdamantineMan_None_Area360_Lv1" skill3="ME_AdamantineMan_None_Area360_Lv1" type="use-skill" />
+        <action prob="50" repeat="1" skill="Quest_AdamantineMan_None_NAtk1" skill3="Quest_AdamantineMan_None_NAtk1" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="Quest_AdamantineMan_None_NAtk2" skill3="Quest_AdamantineMan_None_NAtk2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_AdamantineMan_None_Dash" skill3="ME_AdamantineMan_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_NamGung_0001_CS">
+    <normal combat-distance="1" id="1" special-1="2" special-2="3">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_cold_blast_Lv1" skill3="MH_ForceMaster_Deal_Named_cold_blast_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_heat_wave_Lv3" skill3="MH_ForceMaster_Deal_Named_heat_wave_Lv3" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_fire_blast_Lv1" skill3="MH_ForceMaster_Deal_Named_fire_blast_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_ice_bit_missile_Lv1" skill3="MH_ForceMaster_Deal_Named_ice_bit_missile_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_ice_bit_missile_Lv1" skill3="MH_ForceMaster_Deal_Named_ice_bit_missile_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="2" special-2="3">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_fire_bit_missile_Lv1" skill3="MH_ForceMaster_Deal_Named_fire_bit_missile_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_fire_missile_Lv2" skill3="MH_ForceMaster_Deal_Named_fire_missile_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_fire_missile_Lv2" skill3="MH_ForceMaster_Deal_Named_fire_missile_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_fire_ball_Lv2" skill3="MH_ForceMaster_Deal_Named_fire_ball_Lv2" type="use-skill" />
+    </normal>
+    <special combat-distance="4" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_cold_missile_Lv2" skill3="MH_ForceMaster_Deal_Named_cold_missile_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_cold_missile_Lv2" skill3="MH_ForceMaster_Deal_Named_cold_missile_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_frost_explosion_Lv1" skill3="MH_ForceMaster_Deal_Named_frost_explosion_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_bit_missile_Lv1" skill3="MH_ForceMaster_Deal_Named_bit_missile_Lv1" type="use-skill" />
+    </special>
+    <special combat-distance="3" condition-1="frostbite" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action social="CH_WB_NamGung_0001_battle_01" type="do-social" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_fast_energy_missile_Lv3" skill3="MH_ForceMaster_Deal_Named_fast_energy_missile_Lv3" type="use-skill" />
+    </special>
+    <special combat-distance="4" condition-1="hp-25" id="3" max-count="1">
+      
+      <action social="CH_WB_NamGung_0001_battle_02" type="do-social" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_cold_missile_Lv2" skill3="MH_ForceMaster_Deal_Named_cold_missile_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_cold_missile_Lv2" skill3="MH_ForceMaster_Deal_Named_cold_missile_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_frost_explosion_Lv1" skill3="MH_ForceMaster_Deal_Named_frost_explosion_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_bit_missile_Lv1" skill3="MH_ForceMaster_Deal_Named_bit_missile_Lv1" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="4" max-count="1">
+      
+      <action event-step="1" social="CH_WB_NamGung_0001_soc_01" type="do-social" />
+      
+      <action repeat="1" skill="Quest_193_Inhalation" skill3="Quest_193_Inhalation" type="use-skill" />
+      
+      <action event-step="2" repeat="1" skill="Quest_193_kneel" skill3="Quest_193_kneel" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WB_EnAnk_0001_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_HeartStab_Lv1" skill3="MH_Assassin_Disturb_HeartStab_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_SideStep_Lv2" skill3="MH_Assassin_Disturb_SideStep_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowPenetration_Lv2" skill3="MH_Assassin_Disturb_ShadowPenetration_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_BackStepShunpo3_Lv1" skill3="MH_Assassin_Disturb_BackStepShunpo3_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_cool_Lv1" skill3="MH_Assassin_Disturb_MistSlash_cool_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_cool_Lv1" skill3="MH_Assassin_Disturb_DewSlash_cool_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_cool_Lv1" skill3="MH_Assassin_Disturb_MoonlightSlash_cool_Lv1" type="use-skill" />
+      
+      <action social="CH_WB_EnAnk_0001_battle_01" type="do-social" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_WoodBlock_Lv1" skill3="MH_Assassin_Disturb_WoodBlock_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Hide_TimeBomb_Lv2" skill3="MH_Assassin_Hide_TimeBomb_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_ShadowSlash_Down_Lv1" skill3="MH_Assassin_Disturb_ShadowSlash_Down_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_AirBomb_Lv1" skill3="MH_Assassin_Disturb_AirBomb_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_AirBomb_Lv1" skill3="MH_Assassin_Disturb_AirBomb_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_Shunpo3_Lv1" skill3="MH_Assassin_Disturb_Shunpo3_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action immune-breaker-disable="y" social="CH_WB_EnAnk_0001_combat_04" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="Quest_Assassin_Flashbang_Epic6" skill3="Quest_Assassin_Flashbang_Epic6" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="CH_WB_TaeGwang_0001_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_TigerPunch1_Named" skill3="MH_KungfuMaster_Attack_TigerPunch1_Named" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_TigerPunch2_Named" skill3="MH_KungfuMaster_Attack_TigerPunch2_Named" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_TigerPunch3_Named" skill3="MH_KungfuMaster_Attack_TigerPunch3_Named" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_TigerPunch4_Named" skill3="MH_KungfuMaster_Attack_TigerPunch4_Named" type="use-skill" />
+      
+      <action social="CH_WB_TaeGwang_0001_battle_01" type="do-social" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Heavypunch_Lv3_8Laser" skill3="MH_KungfuMaster_Attack_Heavypunch_Lv3_8Laser" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Commandskill_Right_Named" skill3="MH_KungfuMaster_Attack_Commandskill_Right_Named" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_FlameKick_Named_Lv2" skill3="MH_KungfuMaster_Attack_FlameKick_Named_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_FinalAttack_Named" skill3="MH_KungfuMaster_Attack_FinalAttack_Named" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Defend_LeftCounter_Named" skill3="MH_KungfuMaster_Defend_LeftCounter_Named" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_HighKick_Lv1" skill3="MH_KungfuMaster_Attack_HighKick_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_JumpPunch_Named_Lv2" skill3="MH_KungfuMaster_Attack_JumpPunch_Named_Lv2" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_TurnKick_Named_Lv2" skill3="MH_KungfuMaster_Attack_TurnKick_Named_Lv2" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_JumpPunch2_Named" skill3="MH_KungfuMaster_Attack_JumpPunch2_Named" type="use-skill" />
+    </normal>
+    <special combat-distance="3" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action social="CH_WB_TaeGwang_0001_battle_02" type="do-social" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_BurstBlow_Named" skill3="MH_KungfuMaster_Attack_BurstBlow_Named" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Defend_CrushGround_Named_Lv2" skill3="MH_KungfuMaster_Defend_CrushGround_Named_Lv2" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CE_WB_Dummy_0022_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action duration="100" event-step="1" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_WB_Dummy_0146_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action repeat="1" skill="MH_Common_GroundHateDown" skill3="MH_Common_GroundHateDown" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_BeonYang_0014_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_BeonA_0008_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_instant_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_energy_cyclone_Lv1" skill3="MH_ForceMaster_Deal_energy_cyclone_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_cold_blast_Lv1" skill3="MH_ForceMaster_Deal_cold_blast_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_ChinChin_0016_CS">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    <special combat-distance="3" id="1" max-count="0" min-delay="10000" start-delay="10000">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Lowkick_Lv1" skill3="MH_KungfuMaster_Attack_Lowkick_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="MH_WB_YuRanM_0002_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_YuRanM_None_Jab" skill3="ME_YuRanM_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YuRanM_None_Smash" skill3="ME_YuRanM_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YuRanM_None_SmashDown" skill3="ME_YuRanM_None_SmashDown" type="use-skill" />
+      <action type="select">
+        
+        <action prob="70" repeat="1" skill="ME_YuRanM_None_Smash" skill3="ME_YuRanM_None_Smash" type="use-skill" />
+        
+        <action prob="30" repeat="1" skill="ME_YuRanM_None_SmashTornado_Lv1" skill3="ME_YuRanM_None_SmashTornado_Lv1" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="15000">
+      
+      <action repeat="1" skill="ME_YuRanM_None_SmashTornado_Lv1" skill3="ME_YuRanM_None_SmashTornado_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="ME_YuRanM_None_HeavySmashDown" skill3="ME_YuRanM_None_HeavySmashDown" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0" min-delay="9000" start-delay="9000">
+      
+      <action repeat="1" skill="Quest_Common_GroundHateDown" skill3="Quest_Common_GroundHateDown" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action repeat="1" skill="Q_YuRanM_None_CaptureSlash" skill3="Q_YuRanM_None_CaptureSlash" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WB_Ryu_0009_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Batto_mach_slash" skill3="MH_BladeMaster_Batto_mach_slash" type="use-skill" />
+      
+      <action type="select">
+        <action prob="5" social="CH_WB_Ryu_0009_combat_01" type="do-social" />
+        <action prob="5" social="CH_WB_Ryu_0009_combat_02" type="do-social" />
+        <action prob="5" social="CH_WB_Ryu_0009_combat_03" type="do-social" />
+        <action prob="5" social="CH_WB_Ryu_0009_combat_04" type="do-social" />
+        <action prob="80" repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_counterattack_LV1" skill3="MH_BladeMaster_Sword_counterattack_LV1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_turning_strike_LV1" skill3="MH_BladeMaster_Sword_turning_strike_LV1" type="use-skill" />
+    </normal>
+    <special combat-distance="7" condition-1="down" condition-subscription-1="event:npc-combat-action:target" id="1" max-count="0">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_crippling_cut_LV1" skill3="MH_BladeMaster_Sword_crippling_cut_LV1" type="use-skill" />
+    </special>
+    <special combat-distance="7" condition-1="stun" condition-subscription-1="event:npc-combat-action:target" id="2" max-count="0">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_upper_slash" skill3="MH_BladeMaster_Sword_upper_slash" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_take_wing_LV1" skill3="MH_BladeMaster_Sword_take_wing_LV1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_SkullB_0007_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WB_SkullB_0009_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WB_SkullB_0010_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WB_SkullB_0011_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WB_SkullB_0012_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WB_DemonShadow_0027_CS">
+    <normal combat-distance="1" id="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk1" skill3="ME_Zombie_None_NAtk1" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="50" repeat="1" skill="ME_Zombie_None_NAtk2" skill3="ME_Zombie_None_NAtk2" type="use-skill" />
+        <action prob="50" repeat="1" skill="ME_Zombie_None_Pierce" skill3="ME_Zombie_None_Pierce" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_WN_DemonShadowD_0002_CS1" hide-seq-start="y" transit-action-1="Unburrow" transit-cond-1="manual">
+    <normal combat-distance="7" id="1">
+      <action type="select">
+        <action prob="90" repeat="1" skill="ME_DemonShadowD_Range_Epic6" skill3="ME_DemonShadowD_Range_Epic6" type="use-skill" />
+        <action duration="1500" prob="10" type="stay" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WB_WN_DemonShadowD_0002_CS2">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_DemonShadowD_None_Jab" skill3="ME_DemonShadowD_None_Jab" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Dash" skill3="ME_DemonShadowD_None_Dash" type="use-skill" />
+      <action repeat="1" skill="ME_DemonShadowD_None_Feather" skill3="ME_DemonShadowD_None_Feather" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+</table>

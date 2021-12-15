@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.402.xml-->
+  <quest alias="q_sub_402" broadcast-category="field" category="normal" district-1="jeryoungrim" id="402" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="17" preceding-quest-1="q_epic_318" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:CH_JaKyoungDan_0023" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CH_JaKyoungDan_0023" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:ce_board_0012" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:mh_chunggak_0080" object2="npc:mh_chunggak_0080" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_chunggak_0081" object2="npc:mh_chunggak_0081" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_chunggak_0082" object2="npc:mh_chunggak_0082" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:mh_chunggak_0083" object2="npc:mh_chunggak_0083" party-broadcast="y" progress-mission="y" type="killed" />
+        <case gadget="q_drumsticka" gadget-required="carry-and-remove" object="zoneenv:e_destroy_chunggakdrum_01" object2="zoneenv2:e_destroy_chunggakdrum_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case drop-gadget="y" object="npc:MH_ChungGak_0077" object2="npc:MH_ChungGak_0077" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case gadget="q_drumsticka" gadget-required="carry-and-remove" object="zoneenv:e_destroy_chunggakdrum_02" object2="zoneenv2:e_destroy_chunggakdrum_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case gadget="q_drumsticka" gadget-required="carry-and-remove" object="zoneenv:e_destroy_chunggakdrum_03" object2="zoneenv2:e_destroy_chunggakdrum_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1" reward-1="402_final_set1" reward-2="402_final_set2">
+        <case completion-count="1" completion-count-op="lt" object="npc:CH_JaKyoungDan_0023" progress-mission="y" type="talk" />
+        <case completion-count="1" object="npc:CH_JaKyoungDan_0023" party-broadcast="n" progress-mission="y" type="talk" />
+        <case completion-count="0" fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

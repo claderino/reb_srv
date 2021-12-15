@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1689.xml-->
+  <quest alias="q_sub_1689" broadcast-category="field" category="normal" completed-list="n" id="1689" max-repeat="1" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_epic_1641" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:MH_WA_Epic8_0081" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="5">
+        <case object2="zoneenv2:e_Chest_6501_fireherb_10" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_6501_fireherb_09" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_6501_fireherb_08" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_6501_fireherb_07" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_6501_fireherb_06" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_6501_fireherb_05" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_6501_fireherb_04" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_6501_fireherb_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_6501_fireherb_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case object2="zoneenv2:e_Chest_6501_fireherb_1" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1689_final_set1">
+        <case object="npc:MH_WA_Epic8_0081" party-broadcast="n" progress-mission="y" type="talk" />
+        <case party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

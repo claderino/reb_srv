@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.25041.xml-->
+  <quest alias="q_sub_25041" broadcast-category="sextet" category="dungeon" dungeon="Dungeon_DongHae_chungkak_B_mini" id="25041" max-repeat="1" progress-difficulty-type-2="n" progress-difficulty-type-3="n" reset-by-acquire-time="none" save-type="nothing">
+    <acquisition level="1" preceding-quest-1="q_sub_1122" preceding-quest-2="q_sub_1508" preceding-quest-check="or">
+      <case acquire-quest="y" object="zoneenv:4113_portal_4729" object2="zoneenv2:4113_portal_4729" party-broadcast="n" type="enter-portal" />
+      <case acquire-quest="y" object="zoneenv:805_Portal_4729" object2="zoneenv2:805_Portal_4729" party-broadcast="n" type="enter-portal" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ME_ChungGakB3Boss_0002" object2="npc:ME_ChungGakB3Boss_0002" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_DongHae_chungkak_B_mini_Default">
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

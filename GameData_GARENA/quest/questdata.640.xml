@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.640.xml-->
+  <quest alias="q_sub_640" broadcast-category="field" category="normal" district-1="deasamak" id="640" max-repeat="1" save-type="all">
+    <acquisition level="28" preceding-quest-1="q_sub_639" preceding-quest-2="q_epic_516" preceding-quest-check="and">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="640_final_set1">
+        <case grocery="General_Grocery_Quest_0013" grocery-count="1" object="npc:ce_dokchogeosa_0005" party-broadcast="n" progress-mission="y" remove-grocery="y" required-item-1="General_Grocery_Quest_0013" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:CH_DS_BeonYang_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_DS_BeonYang_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_640_1" remove-grocery="n" type="approach" />
+        <case object="npc:CH_DS_BeonA_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

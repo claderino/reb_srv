@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.900.xml-->
+  <quest alias="q_sub_900" broadcast-category="field" category="normal" id="900" max-repeat="1" reset-type="none" save-type="all">
+    <acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_1439" preceding-quest-2="q_sub_815" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:CH_CT_Citizen_0506" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="10">
+        <case object2="npc:ME_CT_Wolf_0027" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+      <mission id="2" required-register-value="7">
+        <case object2="npc:ME_CT_Wolf_0028" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1" reward-1="900_final_set1">
+        <case completion-count="1" completion-count-op="lt" object="npc:CH_CT_Mercenary_0005" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

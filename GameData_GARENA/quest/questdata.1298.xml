@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1298.xml-->
+  <quest alias="q_sub_1298" broadcast-category="field" category="normal" id="1298" max-repeat="1" reset-type="weekly" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_sub_1294" preceding-quest-2="q_sub_1372" preceding-quest-check="or">
+      <case acquire-quest="y" completion-count-op="ge" object="npc:CH_WC_HoBeopoe_0032" party-broadcast="n" progress-mission="y" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_WC_PaCheonBoss_0004" party-broadcast="y" progress-mission="y" team-broadcast="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reset-teleport-recycle-time="y" reward-1="1298_final_set1" reward-2="1298_final_set2">
+        <case object="npc:CH_WC_HoBeopoe_0032" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

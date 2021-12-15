@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1632.xml-->
+  <quest alias="q_sub_1632" broadcast-category="field" category="normal" id="1632" max-repeat="1" reset-type="weekly" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_sub_1631" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:CH_WA_JukPaeWang_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_WA_JeokpaewangRaid_Boss_0001" party-broadcast="n" progress-mission="y" team-broadcast="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1632_final_set1" reward-2="1632_final_set2">
+        <case object="npc:CH_WA_JukPaeWang_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

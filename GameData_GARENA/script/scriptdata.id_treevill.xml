@@ -1,0 +1,3544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.id_treevill.xml-->
+
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<script alias="ME_WB_Executioner_0001_ai" parent="Boss_Immune_ai">
+		
+		<decision event="invoked-effect" forward="y" />
+
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction text="성난가지 스폰 : 액트 시작 - azer" type="debug-trace" />
+				<reaction seq="ME_WB_Executioner_0001_peace1" target="event:npc-spawn:npc" type="set-npc-act" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6222_100" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 전투 시작 - azer" type="debug-trace" />
+				
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_Executioner_0001_battle_01" type="play-social" />
+				
+				<reaction enable="y" target="zoneenv:6222_DMZ_01" target2="zoneenv2spawn:6222_DMZ_01_spawn" type="set-env-enable" />
+				<reaction spawn-1="a_6222_200" spawn-delay="0" type="spawn-npc" />
+				
+				<reaction enable="n" target="zoneenv:e_airdash_6222_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6222_MokIn_City_01_a_spawn" type="set-env-enable" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 PC에게 사망 - azer" type="debug-trace" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6222_MokIn_City_02_a" target2="zoneenv2spawn:e_airdash_6222_MokIn_City_02_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6222_DMZ_01" target2="zoneenv2spawn:6222_DMZ_01_spawn" type="set-env-enable" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_200" type="despawn-npc" />
+				
+				<reaction target="zonenpcspawn:a_6222_7" target2="zonenpcspawn:a_6222_7" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_18" target2="zonenpcspawn:a_6222_18" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_21" target2="zonenpcspawn:a_6222_21" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_22" target2="zonenpcspawn:a_6222_22" type="kill" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_101" type="despawn-npc" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6222_100" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+				<filter subject="event:killed:attacker" subject2="event:killed:attacker" type="summoned" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 소환수에게 사망 - azer" type="debug-trace" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6222_MokIn_City_02_a" target2="zoneenv2spawn:e_airdash_6222_MokIn_City_02_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6222_DMZ_01" target2="zoneenv2spawn:6222_DMZ_01_spawn" type="set-env-enable" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_200" type="despawn-npc" />
+				
+				<reaction target="zonenpcspawn:a_6222_7" target2="zonenpcspawn:a_6222_7" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_18" target2="zonenpcspawn:a_6222_18" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_21" target2="zonenpcspawn:a_6222_21" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_22" target2="zonenpcspawn:a_6222_22" type="kill" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_101" type="despawn-npc" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6222_100" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-end">
+			<filter-set>
+				<filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 전투 종료 - azer" type="debug-trace" />
+				
+				<reaction target="event:npc-combat-end:npc" type="reset-npc-all-hate" />
+				
+				<reaction enable="n" target="zoneenv:6222_DMZ_01" target2="zoneenv2spawn:6222_DMZ_01_spawn" type="set-env-enable" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_200" type="despawn-npc" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6222_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6222_MokIn_City_01_a_spawn" type="set-env-enable" />
+				
+				<reaction target="zonenpcspawn:a_6222_7" target2="zonenpcspawn:a_6222_7" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_18" target2="zonenpcspawn:a_6222_18" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_21" target2="zonenpcspawn:a_6222_21" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_22" target2="zonenpcspawn:a_6222_22" type="kill" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_101" type="despawn-npc" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6222_100" type="set-party-number" />
+				
+				<reaction text="성난가지 스폰 : 액트 시작 - azer" type="debug-trace" />
+				<reaction seq="ME_WB_Executioner_0001_peace2" target="event:npc-combat-end:npc" type="set-npc-act" />
+				<reaction state="close" state2="close" target="zoneenv:e_chest_6222_MokIn_body_01" target2="zoneenv2spawn:e_chest_6222_MokIn_body_01_spawn" type="set-env-state" />
+			</reaction-set>
+		</decision>
+
+		
+		
+		<decision event="npc-bleeding">
+			<filter-set>
+				<filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 HP 90% -azer" type="debug-trace" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+				
+				<reaction special-id="2" target="event:npc-bleeding:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="99" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 페이즈 전환 -azer" type="debug-trace" />
+				<reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Social_Caster" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="시체 더미 제거 - azer" type="debug-trace" />
+				<reaction state="open" state2="open" target="zoneenv:e_chest_6222_MokIn_body_01" target2="zoneenv2spawn:e_chest_6222_MokIn_body_01_spawn" type="set-env-state" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Summon_Caster" />
+				<filter op="eq" subject="zonenpcsquad:s_6222_100:reg-1" subject2="zonenpcsquad:s_6222_100:reg-1" type="number" value="0" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="블리딩 속박구 2개 소환 - azer" type="debug-trace" />
+				<reaction attack-target="zonenpcspawn:a_6222_100:top-hate-target" end="2" group="zonenpcsquad:s_6222_7" max="2" min="2" spawn-delay="0" spawn-radius="200" spawn-target="event:invoked-effect:npc" start="1" type="spawn-random-npc" />
+				<reaction amount="1" reg="1" target="zonenpcsquad:s_6222_100" type="diff-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Summon_Caster" />
+				<filter op="eq" subject="zonenpcsquad:s_6222_100:reg-1" subject2="zonenpcsquad:s_6222_100:reg-1" type="number" value="1" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="블리딩 속박구 3개 소환 - azer" type="debug-trace" />
+				<reaction attack-target="zonenpcspawn:a_6222_100:top-hate-target" end="3" group="zonenpcsquad:s_6222_7" max="3" min="3" spawn-delay="0" spawn-radius="200" spawn-target="event:invoked-effect:npc" start="1" type="spawn-random-npc" />
+				<reaction amount="1" reg="1" target="zonenpcsquad:s_6222_100" type="diff-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Summon_Caster" />
+				<filter op="eq" subject="zonenpcsquad:s_6222_100:reg-1" subject2="zonenpcsquad:s_6222_100:reg-1" type="number" value="2" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="블리딩 속박구 4개 소환 - azer" type="debug-trace" />
+				<reaction attack-target="zonenpcspawn:a_6222_100:top-hate-target" end="4" group="zonenpcsquad:s_6222_7" max="4" min="4" spawn-delay="0" spawn-radius="200" spawn-target="event:invoked-effect:npc" start="1" type="spawn-random-npc" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 1번 목표 참수 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch_Target2" target="event:npc-special:special-target:1" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 2번 목표 참수 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch_Target2" target="event:npc-special:special-target:2" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 3번 목표 참수 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch_Target2" target="event:npc-special:special-target:3" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 4번 목표 참수 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch_Target2" target="event:npc-special:special-target:4" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="5" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 주시 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch" target="event:npc-special:special-target:1" type="invoke-effect" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch" target="event:npc-special:special-target:2" type="invoke-effect" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch" target="event:npc-special:special-target:3" type="invoke-effect" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch" target="event:npc-special:special-target:4" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="시간스페셜 진격 전용 더미 스폰 - azer" type="debug-trace" />
+				<reaction spawn-1="a_6222_101" spawn-delay="0" spawn-target="event:npc-special:npc" type="spawn-npc" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="시간스페셜 진격 전용 더미 디스폰 - azer" type="debug-trace" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_101" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<decision event="npc-special">
+		<filter-set>
+			<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+			<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+		</filter-set>
+		<reaction-set>
+			<reaction text="성난가지 스페셜 면역 처리" type="debug-trace" />
+			<reaction effect="ME_Common_None_Unlink" target="event:npc-special:npc" type="invoke-effect" />
+			<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-special:npc" type="invoke-effect" />
+		</reaction-set>
+	</decision>
+
+	
+	<script alias="ME_WB_RestrictionSphere_0001_ai">
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 1 스폰 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6222_7:reg-1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_BossRush_Parry_End" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 1 막기에 의해 사망 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Order_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구1 자폭 - azer" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction special-id="2" target="event:invoked-effect:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_Boom_Despawn_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구1 자폭 후 킬 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구1 벽 도착 헤이트 갱신 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6222_7:reg-1" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_RestrictionSphere_0002_ai">
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 2 스폰 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6222_7:reg-2" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_BossRush_Parry_End" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 2 막기에 의해 사망 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Order_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구2 자폭 - azer" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction special-id="2" target="event:invoked-effect:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_Boom_Despawn_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구2 자폭 후 킬 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구2 벽 도착 헤이트 갱신 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6222_7:reg-2" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_RestrictionSphere_0003_ai">
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 3 스폰 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6222_7:reg-3" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_BossRush_Parry_End" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 3 막기에 의해 사망 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Order_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구3 자폭 - azer" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction special-id="2" target="event:invoked-effect:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_Boom_Despawn_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구3 자폭 후 킬 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구3 벽 도착 헤이트 갱신 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6222_7:reg-3" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_RestrictionSphere_0004_ai">
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 4 스폰 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6222_7:reg-4" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_BossRush_Parry_End" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 4 막기에 의해 사망 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Order_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구4 자폭 - azer" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction special-id="2" target="event:invoked-effect:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_Boom_Despawn_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구4 자폭 후 킬 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구4 벽 도착 헤이트 갱신 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6222_7:reg-4" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_RestrictionSphere_0005_ai">
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 5 스폰 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcspawn:a_6222_100:top-hate-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_BossRush_Parry_End" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구 5 막기에 의해 사망 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Order_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구5 자폭 - azer" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction special-id="2" target="event:invoked-effect:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_RootBall_Boom_Despawn_Flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구5 자폭 후 킬 - azer" type="debug-trace" />
+				<reaction target="event:invoked-effect:npc" target2="event:invoked-effect:npc" type="kill" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="속박구5 벽 도착 헤이트 갱신 - azer" type="debug-trace" />
+				<reaction amount="100" opponent="zonenpcspawn:a_6222_100:top-hate-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:min-hate-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:last-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:farthest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="zonenpcspawn:a_6222_100:nearest-target" target="event:npc-special:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+	</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script alias="ME_WB_ElderEnt_0001_ai" parent="Boss_Immune_ai">
+    
+    <decision event="invoked-effect" forward="y" />
+
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="대장로 스폰 : 액트 시작 -kongming" type="debug-trace" />
+        <reaction seq="ME_WB_ElderEnt_0001_peace" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="n" target="zoneenv:e_airdash_6223_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6223_MokIn_City_01_a_spawn" type="set-env-enable" />
+        
+        <reaction enable="y" target="zoneenv:6223_DMZ_01" target2="zoneenv2spawn:6223_DMZ_01_spawn" type="set-env-enable" />
+        
+        <reaction spawn-1="a_6223_200" spawn-delay="0" type="spawn-npc" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_6223_100" type="set-party-number" />
+     
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction enable="y" target="zoneenv:e_button_6223_yongmak_01" target2="zoneenv2spawn:e_button_6223_yongmak_01_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6223_DMZ_01" target2="zoneenv2spawn:6223_DMZ_01_spawn" type="set-env-enable" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6223_200" type="despawn-npc" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6223_141" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6223_101" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6223_111" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="killed">
+      <filter-set>
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+        <filter subject="event:killed:attacker" subject2="event:killed:attacker" type="summoned" />
+      </filter-set>
+      <reaction-set>
+				
+				<reaction enable="y" target="zoneenv:e_button_6223_yongmak_01" target2="zoneenv2spawn:e_button_6223_yongmak_01_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6223_DMZ_01" target2="zoneenv2spawn:6223_DMZ_01_spawn" type="set-env-enable" />
+				
+		  <reaction despawn-force="y" target-1="zonenpcspawn:a_6223_200" type="despawn-npc" />
+		  
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6223_141" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6223_101" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6223_111" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6223_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6223_MokIn_City_01_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6223_DMZ_01" target2="zoneenv2spawn:6223_DMZ_01_spawn" type="set-env-enable" />
+				
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_6223_100" type="set-party-number" />
+        
+		  <reaction despawn-force="y" target-1="zonenpcspawn:a_6223_200" type="despawn-npc" />
+		  
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6223_141" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6223_101" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6223_111" type="despawn-npc-groups" />
+      </reaction-set>
+    </decision>
+
+
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="대장로 80% 블리딩시작 -kongming" type="debug-trace" />
+        <reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+        <reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+        
+        <reaction special-id="2" target="zonenpcspawn:a_6223_100" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="99" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="다음 페이즈로 전환!! -kongming" type="debug-trace" />
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="블리딩 스페셜용 Unlink-Dispel -kongming" type="debug-trace" />
+        <reaction effect="ME_Common_None_Unlink" target="event:npc-special:npc" type="invoke-effect" />
+        <reaction effect="ME_Common_None_DispelDebuff" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="시간스페셜 시작 - 멀티더미 스폰 -kongming" type="debug-trace" />     
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_141" spawn-delay="400" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_142" spawn-delay="1000" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_143" spawn-delay="1200" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_144" spawn-delay="800" type="spawn-npc" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_145" spawn-delay="1600" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="생명꽃_셋트 스폰 -kongming" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" end="4" group="zonenpcsquad:s_6223_101" max="4" min="4" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set probability="50">
+        <reaction text="둔주꽃_셋트2-1 스폰 -kongming" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" group="zonenpcsquad:s_6223_111" index-1="1" index-2="3" spawn-delay="0" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="50">
+        <reaction text="둔주꽃_셋트2-2 스폰 -kongming" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" group="zonenpcsquad:s_6223_111" index-1="2" index-2="4" spawn-delay="0" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="둔주꽃_셋트3 스폰 -kongming" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" end="4" group="zonenpcsquad:s_6223_111" max="3" min="3" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="둔주꽃_셋트4 스폰 -kongming" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" end="4" group="zonenpcsquad:s_6223_111" max="4" min="4" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B2_AnthroEntFinalBoss_Absorb_FireFlower" />
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="생명꽃 보스에게 스킬 사용해라 -kongming" type="debug-trace" />
+        <reaction special-id="1" target="zonenpcspawn:a_6223_101" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_6223_111" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_6223_121" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_6223_131" type="npc-fire-special" />
+        <reaction text="둔주꽃 보스에게 스킬 사용해라 -kongming" type="debug-trace" />
+        <reaction special-id="1" target="zonenpcspawn:a_6223_101_2" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_6223_111_2" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_6223_121_2" type="npc-fire-special" />
+        <reaction special-id="1" target="zonenpcspawn:a_6223_131_2" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B2_DunjuFlower_Absorb_CountFlag" />
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="꽃 1회 중첩 -kongming" type="debug-trace" />
+        
+        <reaction from="event:invoked-effect:npc" social="ME_WB_ElderEnt_0001_msg_HL_08" type="play-social" />
+        
+        <reaction effect="ME_Common_None_Unlink" target="event:invoked-effect:npc" type="invoke-effect" />
+        <reaction effect="ME_Common_None_DispelDebuff" target="event:invoked-effect:npc" type="invoke-effect" />
+        
+        <reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B2_AnthroEntFinalBoss_Entangle_CastStart" />
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="원거리 사용했다 -kongming" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_6223_100" social="ME_WB_ElderEnt_0001_battle_05" type="play-social" />
+      </reaction-set>
+    </decision>
+
+  </script>
+
+  
+  <script alias="ME_WB_Dummy_0241_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="멀티더미 스폰 -kongming" type="debug-trace" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="멀티더미 전투시작 - 스페셜1 파이어 -kongming" type="debug-trace" />
+        <reaction special-id="1" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+        
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="멀티더미 스페셜1 사용 후 디스폰 -kongming" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+
+  
+  <script alias="ME_WB_LifeFlower_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="생명꽃 1 스폰 -kongming" type="debug-trace" />
+      </reaction-set>
+    </decision>
+
+
+    
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+        <filter subject="event:attack:defender" subject2="event:attack:defender" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="생명꽃1 공격했다! -kongming" type="debug-trace" />
+        <reaction amount="1000" opponent="event:attack:defender" target="event:attack:attacker" type="diff-npc-hate" />
+        <reaction special-id="2" target="event:attack:attacker" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+ 
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="생명꽃1 보스에게 전달했다! 디스폰 -kongming" type="debug-trace" />
+        <reaction despawn-force="y" despawn-social-1="ME_WB_LifeFlower_0001_despawn" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="11" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="생명꽃1 디스폰 -kongming" type="debug-trace" />
+        <reaction despawn-force="y" despawn-social-1="ME_WB_LifeFlower_0001_despawn" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+  </script>
+
+  
+  <script alias="ME_WB_WarpFlower_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="둔주꽃 1 스폰 -kongming" type="debug-trace" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+        <filter subject="event:attack:defender" subject2="event:attack:defender" type="pc" />
+        <filter flag="n" flagtype="npc-state-3" subject="event:attack:defender" subject2="event:attack:defender" type="effect-flag" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="둔주꽃-일반 공격했다! -kongming" type="debug-trace" />
+        <reaction special-id="2" target="event:attack:attacker" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+
+    <decision event="attack">
+      <filter-set>
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+        <filter subject="event:attack:defender" subject2="event:attack:defender" type="pc" />
+        <filter flag="y" flagtype="npc-state-3" subject="event:attack:defender" subject2="event:attack:defender" type="effect-flag" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="둔주꽃-후유증PC 공격했다! -kongming" type="debug-trace" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B2_DunjuFlower_Warp_KillFlag" />
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="둔주꽃 둔주사용 완료. 디스폰 -kongming" type="debug-trace" />
+        <reaction despawn-force="y" despawn-social-1="ME_WB_DunjuFlower_0001_despawn" target-1="event:invoked-effect:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+
+
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="둔주꽃1 보스에게 발사 완료. 디스폰 -kongming" type="debug-trace" />
+        <reaction despawn-force="y" despawn-social-1="ME_WB_DunjuFlower_0001_despawn" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="6223_foot_1_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="6223 풋스위치 -kongming" type="debug-trace" />
+        <reaction cinematic="I_0801" sight="party" to="event:env-entered:creature" type="play-cinematic" />
+        <reaction enable="n" target="zoneenv:6223_foot_1_spawn" target2="zoneenv2spawn:6223_foot_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<script alias="ME_WB_SpiderQueen_0003_ai" parent="Boss_Immune_ai">
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 스폰 - Lunaru" type="debug-trace" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 전투 시작 - Lunaru" type="debug-trace" />
+				
+				<reaction enable="n" target="zoneenv:e_airdash_6225_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6225_MokIn_City_01_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="y" target="zoneenv:6225_DMZ_01" target2="zoneenv2spawn:6225_DMZ_01_spawn" type="set-env-enable" />
+				<reaction spawn-1="a_6225_100" spawn-delay="0" type="spawn-npc" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-end">
+			<filter-set>
+				<filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction text="여왕거미 전투 종료 - Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield_Dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6225_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6225_MokIn_City_01_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6225_DMZ_01" target2="zoneenv2spawn:6225_DMZ_01_spawn" type="set-env-enable" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6225_100" type="despawn-npc" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_17" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_18" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_19" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_96" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_72" type="despawn-npc-groups" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+				<filter subject="event:killed:attacker" subject2="event:killed:attacker" type="summoned" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 소환수에게 사망 - Lunaru" type="debug-trace" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6225_MokIn_City_02_a" target2="zoneenv2spawn:e_airdash_6225_MokIn_City_02_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6225_DMZ_01" target2="zoneenv2spawn:6225_DMZ_01_spawn" type="set-env-enable" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6225_100" type="despawn-npc" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_17" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_18" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_19" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_96" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_72" type="despawn-npc-groups" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 PC에게 사망 - Lunaru" type="debug-trace" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6225_MokIn_City_02_a" target2="zoneenv2spawn:e_airdash_6225_MokIn_City_02_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6225_DMZ_01" target2="zoneenv2spawn:6225_DMZ_01_spawn" type="set-env-enable" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6225_100" type="despawn-npc" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_17" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_18" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_19" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_20" respawn-after-despawn="n" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_96" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_72" type="despawn-npc-groups" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="HP : 80% 버로우 시작 -Lunaru" type="debug-trace" />
+				<reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 광폭화1 -Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderQueen_Burrow_Bomb_Signal" />
+				<filter flag="y" flagtype="burrow" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="화염구슬 피격 -Lunaru" type="debug-trace" />
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction effect="SRA_N1_SpiderQueen_Gadget_Damage" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction effect="SRA_N1_SpiderQueen_CasterSkillBlock" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction effect="SRA_N1_SpiderQueen_Unlink" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction effect="SRA_N1_SpiderQueen_Burrow_Bomb_Show" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction effect="SRA_N1_SpiderQueen_Burrow_Bomb" target="event:invoked-effect:npc" type="invoke-effect" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_72" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_96" type="despawn-npc-groups" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderQueen_None_SpiderWeb_Lv2_Spawn" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="시간 스페셜 새끼거미 스폰 -Lunaru" type="debug-trace" />
+				<reaction end="6" group="zonenpcsquad:s_6225_17" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction end="6" group="zonenpcsquad:s_6225_18" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction end="6" group="zonenpcsquad:s_6225_19" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction end="6" group="zonenpcsquad:s_6225_20" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+			</reaction-set>
+		</decision>
+		
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="HP : 30% 버로우 시작 -Lunaru" type="debug-trace" />
+				<reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 광폭화2 -Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="attack">
+			<filter-set>
+				<filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="SRA_N1_SpiderQueen_None_Watch" />
+				<filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set probability="9">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="1번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction spawn-1="a_6225_28_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_49" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_50" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="2번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction spawn-1="a_6225_28" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_49_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_50" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="3번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction spawn-1="a_6225_28" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_49" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_50_1" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="9">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="4번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_29_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_55" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_56" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="5번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_29" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_55_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_56" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="6번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_29" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_55" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_56_1" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="9">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="7번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_30_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_53" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_54" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="8번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_30" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_53_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_54" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="9번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_30" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_53" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_54_1" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="9">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="10번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_31_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_51" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_52" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="11번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_31" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_51_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_52" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="12번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_31" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_51" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_52_1" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="사냥시 알 디스폰 -Lunaru" type="debug-trace" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="5" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="시간광폭화 버로우 -Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 어그로 추가 -Lunaru" type="debug-trace" />
+				<reaction amount="1" opponent="event:npc-special:special-target:1" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:2" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:3" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:4" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:5" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:6" target="event:npc-special:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 스페셜 면역 처리" type="debug-trace" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-special:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderQueen_Watch_Death" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="주시대상 죽음, 광폭화 -Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="2" type="transit-npc-combat" />
+			</reaction-set>
+		</decision>
+	</script>
+		
+
+	
+	
+	<script alias="ME_WB_TreeVill_0017_ai">
+	</script>
+
+	
+	
+	<script alias="ME_WB_TreeVill_0019_ai">
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="1번 폭탄거미 스폰  -Lunaru" type="debug-trace" />
+				<reaction end="1" group="zonenpcsquad:S_6225_96" max="1" min="1" spawn-delay="1000" spawn-radius="0" spawn-target="event:killed:defender" start="1" type="spawn-random-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	<script alias="ME_WB_TreeVill_0021_ai">
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="2번 폭탄거미 스폰  -Lunaru" type="debug-trace" />
+				<reaction end="2" group="zonenpcsquad:S_6225_96" max="2" min="2" spawn-delay="1000" spawn-radius="0" spawn-target="event:killed:defender" start="2" type="spawn-random-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0022_ai">
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="3번 폭탄거미 스폰  -Lunaru" type="debug-trace" />
+				<reaction end="3" group="zonenpcsquad:S_6225_96" max="3" min="3" spawn-delay="1000" spawn-radius="0" spawn-target="event:killed:defender" start="3" type="spawn-random-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0023_ai">
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="4번 폭탄거미 스폰  -Lunaru" type="debug-trace" />
+				<reaction end="4" group="zonenpcsquad:S_6225_96" max="4" min="4" spawn-delay="1000" spawn-radius="0" spawn-target="event:killed:defender" start="4" type="spawn-random-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0028_ai">
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="꽝!  -Lunaru" type="debug-trace" />
+			</reaction-set>
+		</decision>	</script>
+
+	
+	
+	<script alias="ME_WB_TreeVill_0018_ai">
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="알 거미 : 스폰 완료 - Lunaru" type="debug-trace" />
+				<reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+			</reaction-set>
+		</decision>
+		<decision event="npc-bleeding">
+			<filter-set>
+				<filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 자폭 - Lunaru" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderSmall_None_Suicide_acidic_signal" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 디스폰 - Lunaru" type="debug-trace" />
+				<reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+	
+	
+	<script alias="ME_WB_TreeVill_0032_ai">
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 스폰 완료 - Lunaru" type="debug-trace" />
+				<reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6225_21:reg-1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		<decision event="npc-bleeding">
+			<filter-set>
+				<filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 자폭 - Lunaru" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderSmall_None_Suicide_acidic_signal" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 디스폰 - Lunaru" type="debug-trace" />
+				<reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	<script alias="ME_WB_TreeVill_0033_ai">
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 스폰 완료 - Lunaru" type="debug-trace" />
+				<reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6225_21:reg-1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		<decision event="npc-bleeding">
+			<filter-set>
+				<filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 자폭 - Lunaru" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderSmall_None_Suicide_acidic_signal" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 디스폰 - Lunaru" type="debug-trace" />
+				<reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0034_ai">
+	</script>
+	
+	
+	
+	<script alias="ME_WB_TreeVill_0020_ai">
+	</script>
+	<script alias="ME_WB_TreeVill_0024_ai">
+	</script>
+	<script alias="ME_WB_TreeVill_0025_ai">
+	</script>
+	<script alias="ME_WB_TreeVill_0026_ai">
+	</script>
+	<script alias="ME_WB_TreeVill_0027_ai">
+	</script>
+	<script alias="ME_WB_TreeVill_0029_ai">
+	</script>
+	<script alias="ME_WB_TreeVill_0030_ai">
+	</script>
+	<script alias="ME_WB_TreeVill_0031_ai">
+	</script>
+
+	
+	<script alias="ME_WB_Dummy_0234_ai">
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 1-1 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_17" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 1-2 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_17" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 1-3 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_17" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 1-4 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_17" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_Dummy_0238_ai">
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="11" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 2-1 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_18" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="12" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 2-2 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_18" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="13" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 2-3 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_18" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="14" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 2-4 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_18" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_Dummy_0239_ai">
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="21" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 3-1 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_19" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="22" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 3-2 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_19" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="23" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 3-3 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_19" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="24" />
+				<filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 3-4 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_19" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_Dummy_0240_ai">
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="31" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 4-1 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_20" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="32" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 4-2 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_20" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="33" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 4-3 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_20" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+		<decision event="act-paused">
+			<filter-set>
+				<filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="34" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼거미 4-4 스폰 -Lunaru" type="debug-trace" />
+				<reaction attack-target="zonenpcsquad:s_6225_21:reg-1" end="5" group="zonenpcsquad:s_6225_20" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction target="event:act-paused:npc" type="act-resume" />
+			</reaction-set>
+		</decision>
+	</script>
+	
+	
+	
+	
+
+	
+	
+	<script alias="ME_WB_TreeVill_0001_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0001_soc_02" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0002_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0017_battle_01" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0003_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0011_battle_02" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0004_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter spawn="a_6222_3" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0019_battle_01" type="play-social" />
+			</reaction-set>
+		</decision>
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set probability="40">
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0019_battle_01" type="play-social" />
+			</reaction-set>
+			<reaction-set probability="60">
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_FireGorilla_0002_msg_04" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0005_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0021_battle_01" type="play-social" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_10" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_11" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_12" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_13" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_14" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_20" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_57" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_105" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_106" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_107" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="attacked">
+			<filter-set>
+				<filter field="hp" op="ge" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+				<filter subject="event:attacked:defender" subject2="event:attacked:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="경비병 헤이트 공유 -azer" type="debug-trace" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_10" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_11" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_12" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_13" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_14" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_20" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_57" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_105" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_106" type="diff-npc-hate" />
+				<reaction amount="100" opponent="event:npc-combat-start:target" target="zonenpcspawn:a_6223_107" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter spawn="a_6223_19" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="문지기 사망 후 3번문 개방 -Lunaru" type="debug-trace" />
+				<reaction state="open" state2="open" target="zoneenv:e_gate_6223_Mokin_City_01" target2="zoneenv2spawn:e_gate_6223_Mokin_City_01_spawn" type="set-env-state" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0006_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0005_battle_01" type="play-social" />
+			</reaction-set>
+		</decision>
+		
+		
+		<decision event="killed">
+			<filter-set>
+				<filter spawn="a_6222_10" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="문지기 사망 후 문 개방 -Lunaru" type="debug-trace" />
+				<reaction state="open" state2="open" target="zoneenv:e_gate_6222_Mokin_City_01" target2="zoneenv2spawn:e_gate_6222_Mokin_City_01_spawn" type="set-env-state" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0007_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set probability="40">
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0009_battle_01" type="play-social" />
+			</reaction-set>
+			<reaction-set probability="60">
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_FireGorilla_0002_msg_04" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0008_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set probability="40">
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0009_battle_01" type="play-social" />
+			</reaction-set>
+			<reaction-set probability="60">
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_FireGorilla_0002_msg_04" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0009_ai">
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0010_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0003_battle_01" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0011_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0024_battle_01" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0012_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter spawn="a_6223_14" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0024_battle_02" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0013_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0007_battle_01" type="play-social" />
+			</reaction-set>
+		</decision>
+		
+		<decision event="killed">
+			<filter-set>
+				<filter spawn="a_6222_25" subject="event:killed:defender" subject2="event:killed:defender" type="npc-spawn" />
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="문지기 사망 후 2번문 개방 -Lunaru" type="debug-trace" />
+				<reaction state="open" state2="open" target="zoneenv:e_gate_6222_Mokin_City_02" target2="zoneenv2spawn:e_gate_6222_Mokin_City_02_spawn" type="set-env-state" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0014_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter spawn="a_6223_20" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_TreeVill_0023_battle_01" type="play-social" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0015_ai">
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0016_ai">
+	</script>
+
+	
+	<script alias="ME_WB_Dummy_0244_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 1번 더미 전투 시작  -Lunaru" type="debug-trace" />
+				<reaction target="event:npc-combat-start:npc" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_Dummy_0245_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 2번 더미 전투 시작  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" group-1="zonenpcsquad:s_6225_3" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction target="event:npc-combat-start:npc" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_Dummy_0246_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 3번 더미 전투 시작  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" group-1="zonenpcsquad:s_6225_5" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction target="event:npc-combat-start:npc" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+
+	
+	<script alias="ME_WB_TreeVill_0038_ai">
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 1번 거미 알 전투시작, 새끼거미 소환  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" spawn-1="a_6225_17" spawn-delay="1000" type="spawn-npc" />
+				<reaction target="event:npc-combat-start:target" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0039_ai">
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 2번 거미 알 전투시작, 새끼거미 소환  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" spawn-1="a_6225_18" spawn-delay="1000" type="spawn-npc" />
+				<reaction target="event:npc-combat-start:target" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0040_ai">
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 3번 거미 알 전투시작, 새끼거미 소환  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" spawn-1="a_6225_19" spawn-delay="1000" type="spawn-npc" />
+				<reaction target="event:npc-combat-start:target" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0041_ai">
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 4번 거미 알 전투시작, 새끼거미 소환  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" spawn-1="a_6225_20" spawn-delay="1000" type="spawn-npc" />
+				<reaction target="event:npc-combat-start:target" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0042_ai">
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 5번 거미 알 전투시작, 새끼거미 소환  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" spawn-1="a_6225_87" spawn-delay="1000" type="spawn-npc" />
+				<reaction target="event:npc-combat-start:target" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0043_ai">
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 6번 거미 알 전투시작, 새끼거미 소환  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" spawn-1="a_6225_88" spawn-delay="1000" type="spawn-npc" />
+				<reaction target="event:npc-combat-start:target" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0044_ai">
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 7번 거미 알 전투시작, 새끼거미 소환  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" spawn-1="a_6225_89" spawn-delay="1000" type="spawn-npc" />
+				<reaction target="event:npc-combat-start:target" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="ME_WB_TreeVill_0045_ai">
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="광장 8번 거미 알 전투시작, 새끼거미 소환  -Lunaru" type="debug-trace" />
+				<reaction attack-target="event:npc-combat-start:target" spawn-1="a_6225_90" spawn-delay="1000" type="spawn-npc" />
+				<reaction target="event:npc-combat-start:target" target2="event:npc-combat-start:npc" type="kill" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	<script alias="ME_WB_TreeVill_0035_ai">
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 스폰 완료 - Lunaru" type="debug-trace" />
+				<reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6225_21:reg-1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		<decision event="npc-bleeding">
+			<filter-set>
+				<filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 자폭 - Lunaru" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderSmall_None_Suicide_acidic_signal" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 디스폰 - Lunaru" type="debug-trace" />
+				<reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	<script alias="ME_WB_TreeVill_0036_ai">
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 스폰 완료 - Lunaru" type="debug-trace" />
+				<reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6225_21:reg-1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		<decision event="npc-bleeding">
+			<filter-set>
+				<filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 자폭 - Lunaru" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderSmall_None_Suicide_acidic_signal" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 디스폰 - Lunaru" type="debug-trace" />
+				<reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	<script alias="ME_WB_TreeVill_0037_ai">
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 스폰 완료 - Lunaru" type="debug-trace" />
+				<reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+				<reaction amount="100" opponent="zonenpcsquad:s_6225_21:reg-1" target="event:npc-spawn:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+		<decision event="npc-bleeding">
+			<filter-set>
+				<filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 자폭 - Lunaru" type="debug-trace" />
+				<reaction effect="MH_common_CasterSkillBlock" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction special-id="1" target="event:npc-bleeding:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderSmall_None_Suicide_acidic_signal" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="새끼 거미 : 디스폰 - Lunaru" type="debug-trace" />
+				<reaction despawn-force="y" target-1="event:invoked-effect:npc" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+	</script>
+
+
+
+	
+	
+	
+
+	
+	<script alias="ME_WB_SpiderQueen_0004_ai" parent="Boss_Immune_ai">
+		<decision event="npc-combat-start">
+			<reaction-set>
+				<reaction immediately="y" target="event:npc-combat-start:npc" transit-cond-idx="1" type="transit-npc-combat" />
+			</reaction-set>
+		</decision>
+	</script>
+
+
+	
+	
+	
+
+	
+	<script alias="zone_SR_TreeVill_D1_ai">
+		<decision event="enter-zone">
+			<reaction-set>
+				<reaction text="2구역 디폴트 존(6220) Env 제어 -Lunaru" type="debug-trace" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="zone_SR_TreeVill_S1_ai">
+		<decision event="enter-zone">
+			<reaction-set>
+				<reaction text="2구역 셋업 존(6222) Env 제어 -Lunaru" type="debug-trace" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="zone_SR_TreeVill_D2_ai">
+		<decision event="enter-zone">
+			<reaction-set>
+				<reaction text="2구역 디폴트 존(6221) Env 제어 -Lunaru" type="debug-trace" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="zone_SR_TreeVill_S2_ai">
+		<decision event="enter-zone">
+			<reaction-set>
+				<reaction text="2구역 셋업 존(6223) Env 제어 -Lunaru" type="debug-trace" />
+			</reaction-set>
+		</decision>
+	</script>
+
+
+	
+	<script alias="zone_SR_TreeVill_D3_ai">
+		<decision event="enter-zone">
+			<reaction-set>
+				<reaction text="3구역 디폴트 존(6221) Env 제어 -Lunaru" type="debug-trace" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	<script alias="zone_SR_TreeVill_S3_ai">
+		<decision event="enter-zone">
+			<reaction-set>
+				<reaction text="3구역 셋업 존(6223) Env 제어 -Lunaru" type="debug-trace" />
+			</reaction-set>
+		</decision>
+	</script>
+
+	
+	
+	
+
+	
+	
+	
+
+	<script alias="ME_WB_Executioner_0001_ai_Easy" parent="Boss_Immune_ai">
+		
+		<decision event="invoked-effect" forward="y" />
+
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction text="성난가지-이지 스폰 : 액트 시작 - azer" type="debug-trace" />
+				<reaction seq="ME_WB_Executioner_0001_peace1" target="event:npc-spawn:npc" type="set-npc-act" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6222_100" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 전투 시작 - azer" type="debug-trace" />
+				
+				<reaction from="event:npc-combat-start:npc" social="ME_WB_Executioner_0001_battle_01" type="play-social" />
+				
+				<reaction enable="y" target="zoneenv:6222_DMZ_01" target2="zoneenv2spawn:6222_DMZ_01_spawn" type="set-env-enable" />
+				<reaction spawn-1="a_6222_200" spawn-delay="0" type="spawn-npc" />
+				
+				<reaction enable="n" target="zoneenv:e_airdash_6222_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6222_MokIn_City_01_a_spawn" type="set-env-enable" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 PC에게 사망 - azer" type="debug-trace" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6222_MokIn_City_02_a" target2="zoneenv2spawn:e_airdash_6222_MokIn_City_02_a_spawn" type="set-env-enable" />
+				
+				<reaction target="zonenpcspawn:a_6222_7" target2="zonenpcspawn:a_6222_7" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_18" target2="zonenpcspawn:a_6222_18" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_21" target2="zonenpcspawn:a_6222_21" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_22" target2="zonenpcspawn:a_6222_22" type="kill" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6222_100" type="set-party-number" />
+				
+				<reaction enable="n" target="zoneenv:6222_DMZ_01" target2="zoneenv2spawn:6222_DMZ_01_spawn" type="set-env-enable" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_200" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+				<filter subject="event:killed:attacker" subject2="event:killed:attacker" type="summoned" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 소환수에게 사망 - azer" type="debug-trace" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6222_MokIn_City_02_a" target2="zoneenv2spawn:e_airdash_6222_MokIn_City_02_a_spawn" type="set-env-enable" />
+				
+				<reaction target="zonenpcspawn:a_6222_7" target2="zonenpcspawn:a_6222_7" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_18" target2="zonenpcspawn:a_6222_18" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_21" target2="zonenpcspawn:a_6222_21" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_22" target2="zonenpcspawn:a_6222_22" type="kill" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6222_100" type="set-party-number" />
+				
+				<reaction enable="n" target="zoneenv:6222_DMZ_01" target2="zoneenv2spawn:6222_DMZ_01_spawn" type="set-env-enable" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_200" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-end">
+			<filter-set>
+				<filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 전투 종료 - azer" type="debug-trace" />
+				
+				<reaction target="event:npc-combat-end:npc" type="reset-npc-all-hate" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6222_100" type="set-party-number" />
+				
+				<reaction target="zonenpcspawn:a_6222_7" target2="zonenpcspawn:a_6222_7" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_18" target2="zonenpcspawn:a_6222_18" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_21" target2="zonenpcspawn:a_6222_21" type="kill" />
+				<reaction target="zonenpcspawn:a_6222_22" target2="zonenpcspawn:a_6222_22" type="kill" />
+				
+				<reaction enable="n" target="zoneenv:6222_DMZ_01" target2="zoneenv2spawn:6222_DMZ_01_spawn" type="set-env-enable" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_200" type="despawn-npc" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6222_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6222_MokIn_City_01_a_spawn" type="set-env-enable" />
+				
+				<reaction text="성난가지-이지 스폰 : 액트 시작 - azer" type="debug-trace" />
+				<reaction seq="ME_WB_Executioner_0001_peace2" target="event:npc-combat-end:npc" type="set-npc-act" />
+				<reaction state="close" state2="close" target="zoneenv:e_chest_6222_MokIn_body_01" target2="zoneenv2spawn:e_chest_6222_MokIn_body_01_spawn" type="set-env-state" />
+			</reaction-set>
+		</decision>
+
+		
+		
+		<decision event="npc-bleeding">
+			<filter-set>
+				<filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 HP 70% -azer" type="debug-trace" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+				
+				<reaction special-id="2" target="event:npc-bleeding:npc" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="99" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 페이즈 전환 -azer" type="debug-trace" />
+				<reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction amount="1" reg="1" target="zonenpcsquad:s_6222_100" type="diff-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Social_Caster" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="이지 시체 더미 제거 - azer" type="debug-trace" />
+				<reaction state="open" state2="open" target="zoneenv:e_chest_6222_MokIn_body_01" target2="zoneenv2spawn:e_chest_6222_MokIn_body_01_spawn" type="set-env-state" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B1_AnthroEntMiddleBoss_Summon_Caster" />
+				<filter op="eq" subject="zonenpcsquad:s_6222_100:reg-1" subject2="zonenpcsquad:s_6222_100:reg-1" type="number" value="1" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="블리딩 속박구 2개 소환 - azer" type="debug-trace" />
+				<reaction attack-target="zonenpcspawn:a_6222_100:top-hate-target" end="2" group="zonenpcsquad:s_6222_7" max="2" min="2" spawn-delay="0" spawn-radius="200" spawn-target="event:invoked-effect:npc" start="1" type="spawn-random-npc" />
+			</reaction-set>
+		</decision>
+		
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 1번 목표 참수 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch_Target2" target="event:npc-special:special-target:1" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 2번 목표 참수 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch_Target2" target="event:npc-special:special-target:2" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 3번 목표 참수 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch_Target2" target="event:npc-special:special-target:3" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 4번 목표 참수 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch_Target2" target="event:npc-special:special-target:4" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="5" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지-이지 주시 - azer" type="debug-trace" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch" target="event:npc-special:special-target:1" type="invoke-effect" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch" target="event:npc-special:special-target:2" type="invoke-effect" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch" target="event:npc-special:special-target:3" type="invoke-effect" />
+				<reaction effect="SRA_B1_AnthroEntMiddleBoss_Watch" target="event:npc-special:special-target:4" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="이지 시간스페셜 진격 전용 더미 스폰 - azer" type="debug-trace" />
+				<reaction spawn-1="a_6222_101" spawn-delay="0" spawn-target="event:npc-special:npc" type="spawn-npc" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="이지 시간스페셜 진격 전용 더미 디스폰 - azer" type="debug-trace" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6222_101" type="despawn-npc" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="성난가지 스페셜 면역 처리" type="debug-trace" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-special:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+	</script>
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	<script alias="ME_WB_ElderEnt_0001_ai_Easy" parent="Boss_Immune_ai">
+		
+		<decision event="invoked-effect" forward="y" />
+
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="대장로 스폰 : 액트 시작 -kongming" type="debug-trace" />
+				<reaction seq="ME_WB_ElderEnt_0001_peace" target="event:npc-spawn:npc" type="set-npc-act" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction enable="n" target="zoneenv:e_airdash_6223_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6223_MokIn_City_01_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="y" target="zoneenv:6223_DMZ_01" target2="zoneenv2spawn:6223_DMZ_01_spawn" type="set-env-enable" />
+				
+				<reaction spawn-1="a_6223_200" spawn-delay="0" type="spawn-npc" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6223_100" type="set-party-number" />
+
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction enable="y" target="zoneenv:e_button_6223_yongmak_01" target2="zoneenv2spawn:e_button_6223_yongmak_01_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6223_DMZ_01" target2="zoneenv2spawn:6223_DMZ_01_spawn" type="set-env-enable" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6223_200" type="despawn-npc" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6223_141" type="despawn-npc-groups" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6223_101" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6223_111" type="despawn-npc-groups" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+				<filter subject="event:killed:attacker" subject2="event:killed:attacker" type="summoned" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction enable="y" target="zoneenv:e_button_6223_yongmak_01" target2="zoneenv2spawn:e_button_6223_yongmak_01_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6223_DMZ_01" target2="zoneenv2spawn:6223_DMZ_01_spawn" type="set-env-enable" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6223_200" type="despawn-npc" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6223_141" type="despawn-npc-groups" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6223_101" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6223_111" type="despawn-npc-groups" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-end">
+			<filter-set>
+				<filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6223_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6223_MokIn_City_01_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6223_DMZ_01" target2="zoneenv2spawn:6223_DMZ_01_spawn" type="set-env-enable" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6223_100" type="set-party-number" />
+				
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6223_200" type="despawn-npc" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6223_141" type="despawn-npc-groups" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6223_101" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6223_111" type="despawn-npc-groups" />
+			</reaction-set>
+		</decision>
+
+
+		
+		<decision event="npc-bleeding">
+			<filter-set>
+				<filter subject="event:npc-bleeding:npc" subject2="event:npc-bleeding:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="대장로 70% 블리딩시작 -kongming" type="debug-trace" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-bleeding:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-bleeding:npc" type="invoke-effect" />
+				
+				<reaction special-id="2" target="zonenpcspawn:a_6223_100" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="99" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="다음 페이즈로 전환!! -kongming" type="debug-trace" />
+				
+				<reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+			</reaction-set>
+		</decision>
+
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="블리딩 스페셜용 Unlink-Dispel -kongming" type="debug-trace" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-special:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="시간스페셜 시작 - 멀티더미 스폰 -kongming" type="debug-trace" />
+				<reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_141" spawn-delay="400" type="spawn-npc" />
+				<reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_142" spawn-delay="1000" type="spawn-npc" />
+				<reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_143" spawn-delay="1200" type="spawn-npc" />
+				<reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_144" spawn-delay="800" type="spawn-npc" />
+				<reaction attack-target="zonenpcspawn:a_6223_100:last-target" spawn-1="a_6223_145" spawn-delay="1600" type="spawn-npc" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction text="생명꽃_셋트 스폰 -kongming" type="debug-trace" />
+				<reaction attack-target="zonenpcspawn:a_6223_100:last-target" end="4" group="zonenpcsquad:s_6223_101" max="4" min="4" spawn-delay="0" start="1" type="spawn-random-npc" />
+			</reaction-set>
+		</decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+      </filter-set>
+      <reaction-set probability="50">
+        <reaction text="둔주꽃_셋트2-1 스폰 -kongming" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" group="zonenpcsquad:s_6223_111" index-1="1" index-2="3" spawn-delay="0" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="50">
+        <reaction text="둔주꽃_셋트2-2 스폰 -kongming" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" group="zonenpcsquad:s_6223_111" index-1="2" index-2="4" spawn-delay="0" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+
+  
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="둔주꽃_셋트4 스폰 -kongming" type="debug-trace" />
+        <reaction attack-target="zonenpcspawn:a_6223_100:last-target" end="4" group="zonenpcsquad:s_6223_111" max="4" min="4" spawn-delay="0" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B2_AnthroEntFinalBoss_Absorb_FireFlower" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="생명꽃 보스에게 스킬 사용해라 -kongming" type="debug-trace" />
+				<reaction special-id="1" target="zonenpcspawn:a_6223_101" type="npc-fire-special" />
+				<reaction special-id="1" target="zonenpcspawn:a_6223_111" type="npc-fire-special" />
+				<reaction special-id="1" target="zonenpcspawn:a_6223_121" type="npc-fire-special" />
+				<reaction special-id="1" target="zonenpcspawn:a_6223_131" type="npc-fire-special" />
+				<reaction text="둔주꽃 보스에게 스킬 사용해라 -kongming" type="debug-trace" />
+				<reaction special-id="1" target="zonenpcspawn:a_6223_101_2" type="npc-fire-special" />
+				<reaction special-id="1" target="zonenpcspawn:a_6223_111_2" type="npc-fire-special" />
+				<reaction special-id="1" target="zonenpcspawn:a_6223_121_2" type="npc-fire-special" />
+				<reaction special-id="1" target="zonenpcspawn:a_6223_131_2" type="npc-fire-special" />
+			</reaction-set>
+		</decision>
+
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B2_DunjuFlower_Absorb_CountFlag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="꽃 1회 중첩 -kongming" type="debug-trace" />
+        
+        <reaction from="event:invoked-effect:npc" social="ME_WB_ElderEnt_0001_msg_HL_08" type="play-social" />
+				
+				<reaction effect="ME_Common_None_Unlink" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:invoked-effect:npc" type="invoke-effect" />
+				
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+			</reaction-set>
+		</decision>
+
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_B2_AnthroEntFinalBoss_Entangle_CastStart" />
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="원거리 사용했다 -kongming" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_6223_100" social="ME_WB_ElderEnt_0001_battle_05" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+	</script>
+
+
+
+	
+	
+	
+	
+	
+	
+
+	<script alias="ME_WB_SpiderQueen_0003_ai_Easy" parent="Boss_Immune_ai">
+		
+		<decision event="npc-spawn">
+			<filter-set>
+				<filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 스폰 - Lunaru" type="debug-trace" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-start">
+			<filter-set>
+				<filter subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 전투 시작 - Lunaru" type="debug-trace" />
+				
+				<reaction enable="n" target="zoneenv:e_airdash_6225_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6225_MokIn_City_01_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="y" target="zoneenv:6225_DMZ_01" target2="zoneenv2spawn:6225_DMZ_01_spawn" type="set-env-enable" />
+				<reaction spawn-1="a_6225_100" spawn-delay="0" type="spawn-npc" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-combat-end">
+			<filter-set>
+				<filter subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				
+				<reaction text="여왕거미 전투 종료 - Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield_Dispel" target="event:npc-combat-end:npc" type="invoke-effect" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6225_MokIn_City_01_a" target2="zoneenv2spawn:e_airdash_6225_MokIn_City_01_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6225_DMZ_01" target2="zoneenv2spawn:6225_DMZ_01_spawn" type="set-env-enable" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6225_100" type="despawn-npc" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_17" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_18" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_19" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_20" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_96" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_72" type="despawn-npc-groups" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+				<filter subject="event:killed:attacker" subject2="event:killed:attacker" type="summoned" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 소환수에게 사망 - Lunaru" type="debug-trace" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6225_MokIn_City_02_a" target2="zoneenv2spawn:e_airdash_6225_MokIn_City_02_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6225_DMZ_01" target2="zoneenv2spawn:6225_DMZ_01_spawn" type="set-env-enable" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6225_100" type="despawn-npc" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_17" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_18" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_19" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_20" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_96" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_72" type="despawn-npc-groups" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="killed">
+			<filter-set>
+				<filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 PC에게 사망 - Lunaru" type="debug-trace" />
+				
+				<reaction enable="y" target="zoneenv:e_airdash_6225_MokIn_City_02_a" target2="zoneenv2spawn:e_airdash_6225_MokIn_City_02_a_spawn" type="set-env-enable" />
+				
+				<reaction enable="n" target="zoneenv:6225_DMZ_01" target2="zoneenv2spawn:6225_DMZ_01_spawn" type="set-env-enable" />
+				<reaction despawn-force="y" target-1="zonenpcspawn:a_6225_100" type="despawn-npc" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_17" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_18" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_19" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_20" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_96" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_72" type="despawn-npc-groups" />
+				
+				<reaction amount="0" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-number" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="HP : 80% 버로우 시작 -Lunaru" type="debug-trace" />
+				<reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 광폭화1 -Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderQueen_Burrow_Bomb_Signal" />
+				<filter flag="y" flagtype="burrow" subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="effect-flag" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="화염구슬 피격 -Lunaru" type="debug-trace" />
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction effect="SRA_N1_SpiderQueen_Gadget_Damage" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction effect="SRA_N1_SpiderQueen_CasterSkillBlock" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction effect="SRA_N1_SpiderQueen_Unlink" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction effect="SRA_N1_SpiderQueen_Burrow_Bomb_Show" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction effect="SRA_N1_SpiderQueen_Burrow_Bomb" target="event:invoked-effect:npc" type="invoke-effect" />
+				
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_72" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_96" type="despawn-npc-groups" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderQueen_None_SpiderWeb_Lv2_Spawn" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="시간 스페셜 새끼거미 스폰 -Lunaru" type="debug-trace" />
+				<reaction end="6" group="zonenpcsquad:s_6225_17" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction end="6" group="zonenpcsquad:s_6225_18" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction end="6" group="zonenpcsquad:s_6225_19" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+				<reaction end="6" group="zonenpcsquad:s_6225_20" max="2" min="2" spawn-delay="0" start="1" type="spawn-random-npc" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="HP : 30% 버로우 시작 -Lunaru" type="debug-trace" />
+				<reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="4" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 광폭화2 -Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="attack">
+			<filter-set>
+				<filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="SRA_N1_SpiderQueen_None_Watch" />
+				<filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set probability="9">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="1번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction spawn-1="a_6225_28_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_49" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_50" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="2번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction spawn-1="a_6225_28" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_49_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_50" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="3번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction spawn-1="a_6225_28" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_49" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_50_1" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="9">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="4번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_29_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_55" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_56" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="5번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_29" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_55_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_56" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="6번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_29" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_55" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_56_1" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="9">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="7번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_30_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_53" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_54" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="8번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_30" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_53_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_54" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="9번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_30" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_53" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_54_1" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_14" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="9">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="10번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_31_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_51" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_52" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="11번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_31" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_51_1" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_52" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+			<reaction-set probability="8">
+				
+				<reaction object="event:attack:defender" reg="1" target="zonenpcsquad:s_6225_21" type="set-party-object" />
+				<reaction text="12번 거미알에 폭탄거미 세팅 -Lunaru" type="debug-trace" />
+				<reaction group-1="zonenpcsquad:s_6225_11" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_12" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction group-1="zonenpcsquad:s_6225_13" spawn-delay="0" type="spawn-npc-groups" />
+				<reaction spawn-1="a_6225_31" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_51" spawn-delay="0" type="spawn-npc" />
+				<reaction spawn-1="a_6225_52_1" spawn-delay="0" type="spawn-npc" />
+				<reaction group-1="zonenpcsquad:s_6225_72" spawn-delay="0" type="spawn-npc-groups" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+			</filter-set>
+			<reaction-set>
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_11" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_12" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_13" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_14" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_15" type="despawn-npc-groups" />
+				<reaction despawn-force="y" group-1="zonenpcsquad:s_6225_16" type="despawn-npc-groups" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="5" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="시간광폭화 버로우 -Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 어그로 추가 -Lunaru" type="debug-trace" />
+				<reaction amount="1" opponent="event:npc-special:special-target:1" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:2" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:3" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:4" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:5" target="event:npc-special:npc" type="diff-npc-hate" />
+				<reaction amount="1" opponent="event:npc-special:special-target:6" target="event:npc-special:npc" type="diff-npc-hate" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="npc-special">
+			<filter-set>
+				<filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+				<filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="여왕거미 스페셜 면역 처리" type="debug-trace" />
+				<reaction effect="ME_Common_None_Unlink" target="event:npc-special:npc" type="invoke-effect" />
+				<reaction effect="ME_Common_None_DispelDebuff" target="event:npc-special:npc" type="invoke-effect" />
+			</reaction-set>
+		</decision>
+
+		
+		<decision event="invoked-effect">
+			<filter-set>
+				<filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="SRA_N1_SpiderQueen_Watch_Death" />
+				<filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+			</filter-set>
+			<reaction-set>
+				<reaction text="주시대상 죽음, 광폭화 -Lunaru" type="debug-trace" />
+				<reaction effect="SRA_N1_SpiderQueen_Shield" target="event:invoked-effect:npc" type="invoke-effect" />
+				<reaction immediately="y" target="event:invoked-effect:npc" transit-cond-idx="2" type="transit-npc-combat" />
+			</reaction-set>
+		</decision>
+	</script>
+</table>

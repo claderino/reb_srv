@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.845.xml-->
+  <quest alias="q_sub_845" broadcast-category="field" category="normal" district-1="deasamak" id="845" max-repeat="1" save-type="all">
+    <acquisition level="35" preceding-quest-1="q_epic_538" preceding-quest-2="q_sub_879" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_wangjoyeon_0001" party-broadcast="n" type="talk" />
+      <fixed-reward item-count-2="1" item-count-3="1" item-count-4="1" race-3="race-none" sex-3="sex-none" slot-1="item:quest_845_1" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1" reward-1="845_final_set1">
+        <case grocery="quest_845_1" item="quest_845_1" party-broadcast="n" progress-mission="y" required-item-1="quest_845_1" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+      </mission>
+    </mission-step>
+    <giveup-loss item-1="quest_845_1" item-count-1="0" />
+  </quest>
+</table>

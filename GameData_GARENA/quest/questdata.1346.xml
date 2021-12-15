@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1346.xml-->
+  <quest alias="q_sub_1346" broadcast-category="field" category="job" district-1="jeryoungrim" id="1346" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="귀검사" level="6" preceding-quest-1="q_epic_306" preceding-quest-2="q_sub_1345" preceding-quest-check="and">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1" quest-decision="qd_1346_1" zone-1="zone_MangJa_ClassQ_3_C7">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_HwaJung_0063" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_MangJa_ClassQ_3_C7" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1346_2" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1346_9" zone-1="zone_MangJa_ClassQ_3_C7">
+      <mission id="2" required-register-value="3">
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_3" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <case object="zone:zone_MangJa_ClassQ_3_C7" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1346_6" type="enter-zone" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_4" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_5" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_3" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_4" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_5" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_3" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_4" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_5" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_3" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_4" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+        <tutorial-case progress-mission="y" quest-decision="qd_1346_5" type="skill-sequence" zone="zone_MangJa_ClassQ_3_C7" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1346_7" zone-1="zone_MangJa_ClassQ_3_C7">
+      <mission id="3" required-register-value="1" reward-1="1346_final_set1">
+        <case object="npc:CH_HwaJung_0063" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_MangJa_ClassQ_3_C7" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1346_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_MangJa_ClassQ_3_SP">
+      <destination mission-step-id="3" zone-index="7" />
+      <destination mission-step-id="2" zone-index="7" />
+      <destination mission-step-id="1" zone-index="7" />
+    </transit>
+  </quest>
+</table>

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.id_gangtaegong_event.xml-->
+
+  
+  
+  
+  
+  
+  
+  <act-sequence alias="ME_SB_Toad_0001_act_01" indexed-detect="1" type="act">
+    <action duration="8000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="8000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="8000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="8000" type="stay" />
+    <action step="4" type="pause" />
+  </act-sequence>
+
+  <act-sequence alias="ME_SB_Toad_0001_act_02" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_Toad_0001_peace" indexed-detect="1" type="peace">
+    
+    <action duration="7000" type="stay" />
+    <action enter_prob="100" type="select">
+      <action prob="50" social="ME_SB_Toad_0001_soc_01" type="social" />
+      <action prob="50" social="ME_SB_Toad_0001_soc_02" type="social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_FrogTribeCLeader_0001_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    <action pathway="wp4578_89_1" type="pathway" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_SB_FrogTribeCLeader_0001_act_02" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    <action pathway="wp4578_89_2" type="pathway" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_SB_FrogTribeCLeader_0001_act_03" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    <action pathway="wp4578_89_3" type="pathway" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="ME_SB_FrogTribeC_0001_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    
+    <action social="ME_SB_FrogTribeC_0001_Soc_01" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_SmallFrog_0001_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    
+    <action social="ME_SB_SmallFrog_0001_Soc_01" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_SmallFrog_0002_act_01" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SB_SmallFrog_0002_Soc_01" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_SmallFrog_0003_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_SmallFrog_0003_peace_01" indexed-detect="1" type="peace">
+    
+    <action duration="7000" type="stay" />
+    <action enter_prob="100" type="select">
+      <action duration="1000" prob="20" type="stay" />
+      <action duration="2000" prob="20" type="stay" />
+      <action duration="3000" prob="20" type="stay" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_FrogTribeC_0002_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    
+    <action social="ME_SB_FrogTribeC_0002_Soc_01" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_SmallFrog_0011_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    
+    <action social="ME_SB_SmallFrog_0011_Soc_01" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_SmallFrog_0012_act_01" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SB_SmallFrog_0012_Soc_01" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_FrogTribeC_0003_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    
+    <action social="ME_SB_FrogTribeC_0002_Soc_01" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_SmallFrog_0021_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+    
+    <action social="ME_SB_SmallFrog_0021_Soc_01" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_SmallFrog_0022_act_01" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    
+    <action social="ME_SB_SmallFrog_0022_Soc_01" type="social" />
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_SB_Dummy_0030_act_01" indexed-detect="1" type="act">
+    <action duration="500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_Dummy_0031_act_01" indexed-detect="1" type="act">
+    <action duration="30000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_SB_JeoRyang_0001_peace_01" indexed-detect="1" type="peace">
+    
+    <action social="CE_SB_JeoRyang_0001_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SB_Fisher_0001_peace_01" indexed-detect="1" type="peace">
+    
+    <action social="CH_SB_Fisher_0001_soc_01" type="social" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="CH_SB_Fisher_0002_peace_01" indexed-detect="1" type="peace">
+    
+    <action social="CH_SB_Fisher_0002_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_SB_PotAxPartyA_0001_peace_01" indexed-detect="1" type="peace">
+    
+    <action social="CE_SB_PotAxPartyA_0001_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_SB_PotAxPartyB_0001_peace_01" indexed-detect="1" type="peace">
+    
+    <action social="CE_SB_PotAxPartyB_0001_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_SB_PotAxPartyC_0001_peace_01" indexed-detect="1" type="peace">
+    
+    <action social="CE_SB_PotAxPartyC_0001_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_SB_Juno_0001_peace_01" indexed-detect="1" type="peace">
+    
+    <action social="CE_SB_Juno_0001_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CE_SB_SoraCrab_0001_peace_01" indexed-detect="1" type="peace">
+    
+    <action social="CE_SB_SoraCrab_0001_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_Dummy_0033_act_01" type="act">
+    
+    <action duration="5000" type="stay" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_SB_Dummy_0037_act_01" type="act">
+    
+    <action duration="15000" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+  
+
+</table>

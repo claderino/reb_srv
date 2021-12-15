@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\2623\zoneenv2placedata.2623.xml-->
+	<record action-point="8846,10672,198" action-radius="0" alias="2623_FS_Play1_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="8846,10672,198" manipulation-radius="0" region-point-1="8803,10527,1579" region-point-2="8836,10824,1564" region-point-3="8888,10818,1660" region-point-4="8855,10521,1631" tool-zone-1="2623" type="foot-switch" use-manipulation-point="n" />
+	<record action-point="9939,10983,245" action-radius="0" alias="2623_FS_Play2_place" manipulation-height-lower="0" manipulation-height-upper="0" manipulation-point="9939,10983,245" manipulation-radius="0" region-point-1="9781,10955,1807" region-point-2="9781,11012,1718" region-point-3="10098,11012,2431" region-point-4="10098,10955,2474" tool-zone-1="2623" type="foot-switch" use-manipulation-point="n" />
+	<record action-point="8976,11718,241" action-radius="15" alias="e_onoff_2618tbox_01_1_place" manipulation-height-lower="15" manipulation-height-upper="15" manipulation-point="8976,11718,241" manipulation-radius="15" tool-zone-1="2618" tool-zone-2="2623" type="chest" use-manipulation-point="n" />
+	<record action-point="7576,10377,200" alias="portal_SuRyenGol_Dun_dokcho_out_place" region-point-1="7560,10272,357" region-point-2="7560,10482,357" region-point-3="7591,10482,357" region-point-4="7591,10272,357" tool-zone-1="2623" type="portal" />
+	<record alias="2623_DMZ_1_place" height="0" region-point-1="9523,10343,1929" region-point-2="9523,10548,2069" region-point-3="9579,10548,187" region-point-4="9579,10343,1916" tool-zone-1="2623" type="effect-region" />
+	<record alias="2623_DMZ_2_place" height="0" region-point-1="9853,11764,1033" region-point-2="10045,11893,844" region-point-3="10095,11820,1056" region-point-4="9902,11691,1087" tool-zone-1="2623" type="effect-region" />
+</table>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.995.xml-->
+  <quest alias="q_epic_995" category="epic" completed-list="y" id="995" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="2">
+        <case object="npc:CH_WB_BaekRim_0033" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_WB_BaekRim_0034" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_WB_BaekRim_0035" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="npc:CH_WB_BaekRim_0036" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+      </mission>
+      <mission id="5" required-register-value="6">
+        <case object2="npc:MH_WB_BlackDragon_0064" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0065" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0066" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0067" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0068" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0069" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0070" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0071" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0072" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:CH_WB_BaekRim_0033" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_WB_BaekRim_0034" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_WB_BaekRim_0035" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+        <case object="npc:CH_WB_BaekRim_0036" party-broadcast="n" progress-mission="reaction-only" type="npc-manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="10" required-register-value="1">
+        <case object="npc:CH_WB_TaeGwang_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_995_4" type="talk" />
+        <case object="zone:zone_SooRyunGool_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_995_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10" quest-decision="qd_995_6" zone-1="zone_SooRyunGool_Act6">
+      <mission id="11" required-register-value="2">
+        <case idx="3" object="npc:CH_WB_TaeGwang_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_995_8" type="npc-bleeding-occured" />
+        <case idx="3" object="npc:CH_WB_NamGung_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_995_10" type="npc-bleeding-occured" />
+        <case object="zone:zone_SooRyunGool_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_995_13" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="zone:zone_BaekRimSa_Act6" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WB_Citizen_0096" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_SooRyunGool_Act6" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="7" required-register-value="1">
+        <case object2="zoneenv2:e_chest_5301neverfire_01" party-broadcast="n" progress-mission="y" quest-decision="qd_995_1" type="manipulate" />
+        <case object2="npc:MH_WB_BlackDragon_0043" party-broadcast="n" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0044" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0045" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0074" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0075" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0076" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0046" party-broadcast="n" progress-mission="n" type="killed" />
+        <case object2="npc:MH_WB_BlackDragon_0047" party-broadcast="n" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_995_3" rollback="none" zone-1="zone_SooRyunGool_Act6">
+      <mission id="9" required-register-value="1">
+        <case object2="zoneenv2:e_chest_5301sryongoolbulsang_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_995_12" type="manipulate" />
+        <case object="zone:zone_SooRyunGool_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_995_11" type="enter-zone" />
+        <case loot-item="Quest_Grocery_BackChung_0019" object2="zoneenv2:e_chest_5301guchun_01" party-broadcast="n" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="8" required-register-value="1">
+        <case object="zone:zone_SooRyunGool_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_995_2" type="enter-zone" />
+        <case object2="npc:ME_WB_AdamantineMan_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <transit id="2" zone="zone_SooRyunGool_Daily">
+      <destination mission-step-id="10" zone-index="2" />
+      <destination mission-step-id="9" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="11" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+    </transit>
+    <transit id="4" zone="StartZone_Default">
+      <destination mission-step-id="10" zone-index="5" />
+      <destination mission-step-id="9" zone-index="5" />
+      <destination mission-step-id="8" zone-index="5" />
+      <destination mission-step-id="7" zone-index="5" />
+      <destination mission-step-id="6" zone-index="5" />
+      <destination mission-step-id="5" zone-index="5" />
+      <destination mission-step-id="4" zone-index="5" />
+      <destination mission-step-id="3" zone-index="5" />
+      <destination mission-step-id="2" zone-index="5" />
+      <destination mission-step-id="1" zone-index="5" />
+      <destination mission-step-id="11" zone-index="5" />
+      <destination mission-step-id="12" zone-index="5" />
+      <destination mission-step-id="13" zone-index="5" />
+    </transit>
+    <completion>
+      <next-quest quest="q_epic_946" />
+    </completion>
+    <mission-step id="11">
+      <mission id="12" required-register-value="1">
+        <case object="zone:zone_BaekRimSa" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="zone:zone_SooRyunGool_Act6" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_995_14" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="12">
+      <mission id="13" required-register-value="1">
+        <case object="npc:CH_WB_Citizen_0100" party-broadcast="n" progress-mission="y" quest-decision="qd_995_7" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="13">
+      <mission id="14" required-register-value="1" reward-1="995_final_set1">
+        <case object2="zoneenv2:e_chest_5302burner_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_995_9" type="manipulate" />
+        <case object="npc:CH_WB_Citizen_0101" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_BaekRimSa_BonDang_Act6_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_995_8" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_BaekRimSa">
+      <destination mission-step-id="2" zone-index="3" />
+      <destination mission-step-id="3" zone-index="3" />
+      <destination mission-step-id="4" zone-index="3" />
+      <destination mission-step-id="5" zone-index="3" />
+      <destination mission-step-id="6" zone-index="3" />
+      <destination mission-step-id="7" zone-index="3" />
+      <destination mission-step-id="8" zone-index="3" />
+      <destination mission-step-id="9" zone-index="3" />
+      <destination mission-step-id="10" zone-index="3" />
+    </transit>
+    <transit id="3" zone="zone_BaekRimSa_BonDang">
+      <destination mission-step-id="13" zone-index="2" />
+    </transit>
+  </quest>
+</table>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData1" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\1260\zoneenv2placedata.1260.xml-->
+	<record action-point="-1805,9441,705" action-radius="20" alias="e_Chest_1260_tiger_01_Place" tool-zone-1="1260" type="chest" />
+	<record action-point="-1862,9471,697" alias="1260_portal1_place" region-point-1="-1832,9489,19293" region-point-2="-1877,9441,19293" region-point-3="-1891,9453,19293" region-point-4="-1846,9502,19293" tool-zone-1="1260" type="portal" />
+	<record action-point="-1770,9465,695" alias="1260_portal2_place" region-point-1="-1792,9499,19293" region-point-2="-1735,9444,19293" region-point-3="-1748,9431,696" region-point-4="-1805,9485,703" tool-zone-1="1260" type="portal" />
+	<record action-point="-1824,9420,612" action-radius="0" alias="1260_footswitch_1_place" region-point-1="-1828,9356,19293" region-point-2="-1888,9413,19293" region-point-3="-1819,9485,19293" region-point-4="-1760,9428,19293" tool-zone-1="1260" type="foot-switch" />
+	<record alias="zone1260.falldeath_place" height="0" type="fall-death" />
+</table>

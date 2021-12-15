@@ -1,0 +1,1078 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.id_musintower_lobby.xml-->
+  
+  
+  
+  <script alias="CH_MusinTower_BaekWoon_0001_ai">
+    
+    
+  </script>
+  
+  
+  
+  <script alias="CH_MusinTower_0009_ai" />
+  
+  <script alias="e_button_pvparea_in_01_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="5" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_Lobby" />
+        <reaction text="4900 e_button_pvparea_IN warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_button_pvparea_in_02_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="7" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_Lobby" />
+        <reaction text="4900 e_button_pvparea_IN warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_button_pvparea_out_01_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="6" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_Lobby" />
+        <reaction text="4900 e_button_pvparea_OUT warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_button_pvparea_out_02_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="2" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_Lobby" />
+        <reaction text="4900 e_button_pvparea_OUT warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  <script alias="e_button_4900yongmak_01_1_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_2" />
+        <reaction text="4900 e_button_4900yongmak_02_1_ai warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_button_4900yongmak_02_1_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_3" />
+        <reaction text="4900 e_button_4900yongmak_02_1_ai warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_button_4900yongmak_03_1_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_4" />
+        <reaction text="4900 e_button_4900yongmak_02_1_ai warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+  
+  <script alias="e_button_4900yongmak_04_1_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_2" />
+        <reaction text="4900 e_button_4900yongmak_02_1_ai warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_button_4900yongmak_05_1_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_3" />
+        <reaction text="4900 e_button_4900yongmak_02_1_ai warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_button_4900yongmak_06_1_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_4" />
+        <reaction text="4900 e_button_4900yongmak_02_1_ai warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  
+  
+  <script alias="ME_MuSinTowerSecret_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="4913 ME_MuSinTowerSecret_0001_ai spawn -chauchau" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerSecret_0001_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction text="4913 e_button_4913yongmak enable -chauchau" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4913yongmak" target2="zoneenv2spawn:e_button_4913yongmak_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTowerSecret_0002_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="4913 ME_MuSinTowerSecret_0001_ai spawn -chauchau" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerSecret_0002_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction text="4913 e_button_4913yongmak enable -chauchau" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4913yongmak" target2="zoneenv2spawn:e_button_4913yongmak_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTowerSecret_0003_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="4913 ME_MuSinTowerSecret_0001_ai spawn -chauchau" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerSecret_0003_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction text="4913 e_button_4913yongmak enable -chauchau" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4913yongmak" target2="zoneenv2spawn:e_button_4913yongmak_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_MusinTowerSecret_0001_ai">
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerSecret_0001_01_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerSecret_0001_01_act" target="zonenpcspawn:A_4913_3" type="set-npc-act" />
+        <reaction seq="ME_MuSinTowerSecret_0002_01_act" target="zonenpcspawn:A_4913_4" type="set-npc-act" />
+        <reaction seq="ME_MuSinTowerSecret_0003_01_act" target="zonenpcspawn:A_4913_5" type="set-npc-act" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction text="4913 CH_MusinTowerSecret_0001 despawn -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  <script alias="CH_CheongSil_0001_ai">
+    <quest-decision alias="qd_1381_1">
+      <reaction-set>
+        <reaction target="case:talked:pc" teleport="4900_Teleport" type="activate-teleport" />
+        <reaction text="4900 qd_1401_1 activate-teleport" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  <script alias="CH_HongSil_0001_ai">
+    <quest-decision alias="qd_1381_2">
+      <reaction-set>
+        <reaction target="case:talked:pc" teleport="4900_Teleport" type="activate-teleport" />
+        <reaction text="4900 qd_1401_2 activate-teleport" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  <script alias="e_button_4901yongmak_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="e_button_4901yongmak_ai manipulated -extra" type="debug-trace" />
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_Lobby" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_button_4902yongmak_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4903yongmak_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4904yongmak_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4905yongmak_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4906yongmak_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4907yongmak_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4901yongmak_B_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4901yongmak_B_ai_1" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4901yongmak_B_ai_2" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4901yongmak_B_ai_3" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4901yongmak_B_ai_4" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4901yongmak_B_ai_5" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4901yongmak_B_ai_6" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4901yongmak_B_ai_7" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4901yongmak_B_1_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4902yongmak_1_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4903yongmak_1_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4904yongmak_1_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4905yongmak_1_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4906yongmak_1_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4907yongmak_1_ai" parent="e_button_4901yongmak_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  
+  <script alias="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="e_button_4931yongmak_B_ai manipulated -extra" type="debug-trace" />
+        <reaction target="event:env-manipulated:pc" type="warp-to-reentrance" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_button_4932yongmak_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4933yongmak_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4934yongmak_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4935yongmak_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4936yongmak_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4937yongmak_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4931yongmak_B_1_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4932yongmak_1_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4933yongmak_1_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4934yongmak_1_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4935yongmak_1_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4936yongmak_1_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  <script alias="e_button_4937yongmak_1_ai" parent="e_button_4931yongmak_B_ai">
+    <decision event="env-manipulated" forward="y" />
+  </script>
+  
+  
+  <script alias="Zone_MusinTower_1_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_1_Default_ai open -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4901yongmak_B_1" target2="zoneenv2spawn:e_button_4901yongmak_B_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_2_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_2_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4902yongmak_1" target2="zoneenv2spawn:e_button_4902yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_3_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_3_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4903yongmak_1" target2="zoneenv2spawn:e_button_4903yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_4_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_4_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4904yongmak_1" target2="zoneenv2spawn:e_button_4904yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_5_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_5_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4905yongmak_1" target2="zoneenv2spawn:e_button_4905yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_6_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_6_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4906yongmak_1" target2="zoneenv2spawn:e_button_4906yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_7_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_7_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4907yongmak_1" target2="zoneenv2spawn:e_button_4907yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_9_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_09_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4931yongmak_B_1_ai" target2="zoneenv2spawn:e_button_4931yongmak_B_1_ai_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_10_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_10_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4932yongmak_1" target2="zoneenv2spawn:e_button_4932yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_11_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_11_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4933yongmak_1" target2="zoneenv2spawn:e_button_4933yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_12_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_12_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4934yongmak_1" target2="zoneenv2spawn:e_button_4934yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_13_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_13_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4935yongmak_1" target2="zoneenv2spawn:e_button_4935yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_14_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_14_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4936yongmak_1" target2="zoneenv2spawn:e_button_4936yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="Zone_MusinTower_15_Default_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="Zone_MusinTower_15_Default_ai enter -extra" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:e_button_4937yongmak_1" target2="zoneenv2spawn:e_button_4937yongmak_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="MH_RedMoKuJin_0008_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_BlueMokuJin_0007_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_BlueMokuJin_0008_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_BlueMokuJin_0009_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_MokuJin_0056_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_RedMoKuJin_0009_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_BlueMokuJin_0010_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_MokuJin_0057_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_RedMoKuJin_0010_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_RedMoKuJin_0011_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="MH_RedMoKuJin_0012_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_BlueMokuJin_0011_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_MokuJin_0058_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_MokuJin_0059_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_MokuJin_0060_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_RedMoKuJin_0013_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_BlueMokuJin_0012_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_MokuJin_0061_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_MokuJin_0062_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_MokuJin_0063_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction text="4900 mokujin -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  <script alias="e_button_4900yongmak_07_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_train" />
+        <reaction text="4900 e_button_4900yongmak_07_ai warp pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="Zone_MusinTower_train_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction seq="CH_MusinTower_0002_01_act" target="zonenpcspawn:A_4910_2" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:e_button_4910yongmak" target2="zoneenv2spawn:e_button_4910yongmak_spawn" type="set-env-enable" />
+        <reaction text="4910 enter-zone pc -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="e_button_4910yongmak_ai">
+    
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction pc-spawn="1" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_Lobby" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_MusinTower_0002_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="4910 CH_MusinTower_0002_ai -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <quest-decision alias="qd_20017_1">
+      <reaction-set>
+        
+        <reaction spawn-1="A_4910_3" type="spawn-npc" />
+        
+        <reaction seq="CH_MusinTower_0002_02_act" target="zonenpcspawn:A_4910_2" type="set-npc-act" />
+        <reaction text="4910 qd_20017_1 -chauchau" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_0002_02_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction text="4910 CH_MusinTower_0002 despawn -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0040_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_MuSinTowerDummy_0040_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction text="4910 dummy40 -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4910_4:reg-1" subject2="zonenpcsquad:s_4910_4:reg-1" type="number" value="0" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="zonenpcspawn:A_4910_3" type="reset-npc-all-hate" />
+        
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_4910_4" type="set-party-number" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction text="4910 attack flag RESET -chauchau" type="debug-trace" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-paused:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4910_4:reg-1" subject2="zonenpcsquad:s_4910_4:reg-1" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4910_4" type="set-party-number" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction effect="PVE_Common_damage_immune_360s" target="zonenpcsquad:s_4910_4:reg-2" type="invoke-effect" />
+        <reaction text="4910 attack flag Looping -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter op="eq" subject="zonenpcsquad:s_4910_4:reg-1" subject2="zonenpcsquad:s_4910_4:reg-1" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter either="y" subject="zonenpcsquad:s_4910_4:reg-2" subject2="zonenpcsquad:s_4910_4:reg-2" type="job" value-1="소환사" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4910_4" type="set-party-number" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        
+        <reaction effect="PVE_Common_damage_immune_360s" target="zonenpcsquad:s_4910_4:reg-2:my-summoned" type="invoke-effect" />
+        <reaction effect="PVE_Common_damage_immune_360s" target="zonenpcsquad:s_4910_4:reg-2" type="invoke-effect" />
+        <reaction text="4910 attack flag Looping -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0040_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0040_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_MokuJin_0064_ai" parent="Boss_Immune_Slow_MoveBlock_Stun_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction text="4910 ME_MokuJin_0064_ai spawn -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="A_4910_3" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter either="y" subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="job" value-1="소환사" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_damage_immune_360s" target="event:npc-combat-start:target:my-summoned" type="invoke-effect" />
+        <reaction effect="PVE_Common_damage_immune_360s" target="event:npc-combat-start:target" type="invoke-effect" />
+        
+        <reaction effect="MH_Common_None_Ghost_Ice_Human" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction effect="ME_Jewel42_None_speeddown" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4910_4" max="10" min="1" start="1" type="spawn-random-npc" />
+        <reaction text="4910 invoke-effect summoner -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="A_4910_3" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter subject="event:npc-combat-start:target" subject2="event:npc-combat-start:target" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_damage_immune_360s" target="event:npc-combat-start:target:my-summoner" type="invoke-effect" />
+        <reaction effect="PVE_Common_damage_immune_360s" target="event:npc-combat-start:target" type="invoke-effect" />
+        
+        <reaction effect="MH_Common_None_Ghost_Ice_Human" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction effect="ME_Jewel42_None_speeddown" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4910_4" max="10" min="1" start="1" type="spawn-random-npc" />
+        <reaction text="4910 invoke-effect summoned -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="A_4910_3" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_damage_immune_360s" target="event:npc-combat-start:target" type="invoke-effect" />
+        
+        <reaction effect="MH_Common_None_Ghost_Ice_Human" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction effect="ME_Jewel42_None_speeddown" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4910_4" max="10" min="1" start="1" type="spawn-random-npc" />
+        <reaction text="4910 invoke-effect -chauchau" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-special:npc" type="dispel-debuff" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction effect="Gadget_Q_DaggerB_Berserker" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="buff-parry" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction immediately="y" target="event:npc-bleeding:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction special-id="5" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction text="기공사 대응 보호령" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="75" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="2" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction text="기공사 대응 보호령" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="75" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="2" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="60" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="3" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="56" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="4" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction text="기공사 대응 보호령" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="56" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="4" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction immediately="y" target="event:npc-bleeding:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction special-id="5" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="30" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="5" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="20" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="6" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="1" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="7" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="100" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="modify-ability-71" target="event:npc-combat-end:npc" type="dispel-by-type" />
+        
+        <reaction effect-type="invincible" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="buff-parry" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        <reaction caster="event:attacked:defender" effect="Gang_Play_Additional_die_damage" target="event:attacked:defender" type="invoke-effect" />
+        <reaction text="4910 junghado mokujin die" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_4910_4" type="set-party-number" />
+        
+        <reaction object="event:attacked:attacker" reg="2" target="zonenpcsquad:s_4910_4" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    <decision event="kill">
+      <filter-set>
+        <filter subject="event:kill:defender" subject2="event:kill:defender" type="pc" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        
+        <reaction effect-type="modify-ability-71" target="event:npc-combat-end:npc" type="dispel-by-type" />
+        
+        <reaction effect-type="invincible" target="event:npc-combat-end:npc" type="dispel-by-type" />
+        <reaction effect-type="buff-parry" target="event:npc-combat-end:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction spawn-1="A_4910_2" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect" forward="y" />
+  </script>
+
+  
+  
+  
+
+  
+  <script alias="e_button_4938yongmak_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        
+        <reaction pc-spawn="2" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_Lobby" />
+        <reaction text="4938 yongmak manipulated - VaLiniA" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+	
+	
+	
+
+	<script alias="CH_MusinTower_0004_ai">
+		<decision event="npc-spawn">
+			<reaction-set>
+				<reaction seq="CH_MusinTower_0004_01_act" target="zonenpcspawn:A_4909_2" type="set-npc-act" />
+				<reaction text="4911 HongSil - ruelveldic" type="debug-trace" />
+			</reaction-set>
+		</decision>
+	</script>
+	
+	
+	
+	
+	<script alias="CH_CT_CheongSil_0003_ai">
+		<decision event="npc-spawn">
+			<reaction-set>
+				<reaction seq="CH_CT_CheongSil_0003_01_act" target="zonenpcspawn:A_4911_2" type="set-npc-act" />
+				<reaction text="4911 CheongSil - ruelveldic" type="debug-trace" />
+			</reaction-set>
+		</decision>
+	</script>
+</table>

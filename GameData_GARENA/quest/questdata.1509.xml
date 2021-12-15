@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1509.xml-->
+  <quest alias="q_sub_1509" broadcast-category="always" category="normal" district-1="suwal" id="1509" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_1121" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_donghae_b_0002" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" object="npc:CE_CT_Board_0023" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:ME_ChungGakBBoss_0001" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object2="npc:ME_ChungGakBBoss_0007" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object2="npc:me_chunggakbboss_0004" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="4" required-register-value="1">
+        <case object2="npc:me_chunggakbboss_0005" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="5" required-register-value="1">
+        <case object2="npc:ME_ChungGakBBoss_0006" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="6" required-register-value="1" reward-1="1509_final_set1" reward-2="1509_final_set2">
+        <case object="npc:ch_donghae_b_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case completion-count="0" fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

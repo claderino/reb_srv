@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1315.xml-->
+  <quest alias="q_sub_1315" broadcast-category="field" category="job" district-1="jeryoungrim" id="1315" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="역사" level="4" preceding-quest-1="q_epic_304" preceding-quest-check="and">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1" quest-decision="qd_1315_1" zone-1="zone_MangJaSup_Gerjeum_1_C3">
+      <mission id="1" required-register-value="1">
+        <case object="zoneenv:2026_footswitch_CQ1_1" object2="zoneenv2:2026_footswitch_CQ1_1" party-broadcast="n" progress-mission="y" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1315_2" zone-1="zone_MangJaSup_Gerjeum_1_C3">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_ghost_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_MangJaSup_Gerjeum_1_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1315_3" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_1315_9" zone-1="zone_MangJaSup_Gerjeum_1_C3">
+      <mission id="4" required-register-value="1" reward-1="1315_final_set1">
+        <case object="npc:ch_hwajung_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_MangJaSup_Gerjeum_1_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1315_10" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1315_7" zone-1="zone_MangJaSup_Gerjeum_1_C3">
+      <mission id="3" required-register-value="1">
+        <case object="zone:zone_MangJaSup_Gerjeum_1_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1315_8" type="enter-zone" />
+        <tutorial-case progress-mission="y" type="skill-sequence" zone="zone_MangJaSup_Gerjeum_1_C3" />
+        <tutorial-case progress-mission="reaction-only" quest-decision="qd_1315_13" type="skill-sequence" zone="zone_MangJaSup_Gerjeum_1_C3" />
+        <tutorial-case progress-mission="reaction-only" quest-decision="qd_1315_12" type="skill-sequence" zone="zone_MangJaSup_Gerjeum_1_C3" />
+        <tutorial-case progress-mission="reaction-only" quest-decision="qd_1315_11" type="skill-sequence" zone="zone_MangJaSup_Gerjeum_1_C3" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_MangJaSup_Gerjeum_1_sp">
+      <destination mission-step-id="4" zone-index="3" />
+      <destination mission-step-id="3" zone-index="3" />
+      <destination mission-step-id="2" zone-index="3" />
+      <destination mission-step-id="1" zone-index="3" />
+    </transit>
+  </quest>
+</table>

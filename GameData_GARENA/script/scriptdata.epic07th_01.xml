@@ -1,0 +1,2743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.epic07th_01.xml-->
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script alias="zone_ChRyoungCHN_DoChunPung_Act7_1_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="enter-zone -tekim" type="debug-trace" />
+                
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_997_02">
+      <reaction-set>        
+        <reaction text="qd_997_02 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_2636_1" type="spawn-npc" />
+        <reaction spawn-1="a_2636_5" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_2">
+      <reaction-set>
+        
+        
+        
+        <reaction seq="CH_WA_GoBong_0001_act_03" target="zonenpcspawn:a_2636_5" type="set-npc-act" />
+        <reaction text="qd_997_2 -tekim" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+    
+  </script>
+    
+  
+  <script alias="zone_ChRyoungCHN2_DeungDe_Act7_1_ai">
+    <quest-decision alias="qd_997_03">
+      <reaction-set>
+        <reaction text="qd_997_03 enter zone -tekim" type="debug-trace" />
+                
+        <reaction enable="y" target="zoneenv:e_chest_Deungdae_01" target2="zoneenv2spawn:e_chest_Deungdae_01_spawn" type="set-env-enable" />
+        
+        
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_997_04">
+      <reaction-set>
+        <reaction text="qd_997_04 ex -tekim" type="debug-trace" />
+        <reaction spawn-1="a_2637_2" type="spawn-npc" />
+        <reaction enable="n" target="zoneenv:e_chest_Deungdae" target2="zoneenv2spawn:e_chest_Deungdae_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_05">
+      <reaction-set>
+        <reaction text="qd_997_05 ex -tekim" type="debug-trace" />
+        <reaction spawn-1="a_2637_13" type="spawn-npc" />
+        <reaction spawn-1="a_2637_14" type="spawn-npc" />
+        <reaction spawn-1="a_2637_15" type="spawn-npc" />
+        <reaction spawn-1="a_2637_16" type="spawn-npc" />
+        <reaction spawn-1="a_2637_17" type="spawn-npc" />
+
+
+        
+
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_3">
+      <reaction-set>
+        <reaction text="qd_997_3 -tekim" type="debug-trace" />        
+        <reaction spawn-1="a_2637_2" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>     
+    <quest-decision alias="qd_997_4">
+      <reaction-set>
+         
+        <reaction text="qd_997_4 -tekim" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_2637_2" social="CH_WA_Heajuk_A1_0001_Msg_02" type="play-social" />
+        <reaction spawn-1="a_2637_3" type="spawn-npc" />
+        <reaction spawn-1="a_2637_4" type="spawn-npc" />
+        <reaction spawn-1="a_2637_7" type="spawn-npc" />
+        <reaction spawn-1="a_2637_6" type="spawn-npc" />
+        <reaction spawn-1="a_2637_8" type="spawn-npc" />
+        <reaction target-1="zonenpcspawn:a_2637_2" type="despawn-npc" />
+      </reaction-set>
+    </quest-decision>   
+
+    <quest-decision alias="qd_997_5">
+      <reaction-set>
+        <reaction text="qd_997_5 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_JaKyoungDan_0001_act_02" target="zonenpcspawn:a_2637_7" type="set-npc-act" />
+        <reaction seq="CH_WA_JaKyoungDan_0002_act_02" target="zonenpcspawn:a_2637_6" type="set-npc-act" />        
+        <reaction seq="CH_WA_DoDanHa_0002_act_02" target="zonenpcspawn:a_2637_3" type="set-npc-act" />
+        <reaction seq="CH_WA_GoBong_0001_act_04" target="zonenpcspawn:a_2637_4" type="set-npc-act" />
+        <reaction seq="CH_WA_JaKyoungDan_0003_act_02" target="zonenpcspawn:a_2637_8" type="set-npc-act" />
+
+        <reaction seq="CH_WA_JaKyoungDan_0001_act_02" target="zonenpcspawn:a_2637_15" type="set-npc-act" />
+        <reaction seq="CH_WA_JaKyoungDan_0002_act_02" target="zonenpcspawn:a_2637_16" type="set-npc-act" />
+        <reaction seq="CH_WA_DoDanHa_0002_act_02" target="zonenpcspawn:a_2637_13" type="set-npc-act" />
+        <reaction seq="CH_WA_GoBong_0001_act_04" target="zonenpcspawn:a_2637_14" type="set-npc-act" />
+        <reaction seq="CH_WA_JaKyoungDan_0003_act_02" target="zonenpcspawn:a_2637_17" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  
+
+  
+
+  
+  <script alias="CH_WA_BeonYang_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2636_2" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_BeonYang_0001_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_BeonYang_0001_act_01" target="event:npc-spawn:npc" type="set-npc-act" />        
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_WA_BeonA_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2636_3" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_BeonYang_0001_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_BeonA_0001_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_WA_ChinChin_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2636_4" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_BeonYang_0001_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_ChinChin_0001_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_WA_GoBong_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2636_5" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_GoBong_0001_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_GoBong_0001_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2637_4" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_GoBong_0001_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_GoBong_0001_act_02" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>      
+    </decision>
+  </script>
+
+
+  
+  <script alias="CH_WA_BeonYang_0002_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2637_6" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_BeonYang_0002_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_BeonYang_0002_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_BeonYang_0002_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_BeonYang_0002_act_01 finish -tekim" type="debug-trace" />
+        
+        <reaction from="event:act-finished:npc" social="CH_WA_BeonYang_0002_soc_01" type="play-social" />
+        <reaction seq="CH_WA_BeonA_0002_act_02" target="zonenpcspawn:a_2637_7" type="set-npc-act" />
+        <reaction seq="CH_WA_ChinChin_0002_act_02" target="zonenpcspawn:a_2637_8" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_WA_BeonA_0002_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2637_7" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_BeonYang_0002_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_BeonA_0002_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_WA_ChinChin_0002_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2637_8" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_BeonYang_0002_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_ChinChin_0002_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  <script alias="CH_WA_Heajuk_A1_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2637_2" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_Heajuk_A1_ai spawn -tekim" type="debug-trace" />        
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction from="event:npc-spawn:npc" social="CH_WA_Heajuk_A1_0001_Msg_01" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+  </script>
+
+  
+  
+  
+  <script alias="CH_WA_DoDanHa_0002_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2637_3" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_DoDanHa_0002_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_DoDanHa_0002_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>       
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_DoDanHa_0002_act_02" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_DoDanHa_0002_act_01 finish -tekim" type="debug-trace" />
+        
+        
+        
+        
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_WA_JaKyoungDan_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2637_7" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="JaKyoungDan_0001_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_JaKyoungDan_0001_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_JaKyoungDan_0001_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_DoDanHa_0002_act_01 finish -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_WA_JaKyoungDan_0002_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2637_6" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="JaKyoungDan_0002_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_JaKyoungDan_0002_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_JaKyoungDan_0002_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_DoDanHa_0002_act_01 finish -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_WA_JaKyoungDan_0003_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2637_8" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="JaKyoungDan_0003_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_JaKyoungDan_0003_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_JaKyoungDan_0003_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_DoDanHa_0002_act_01 finish -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+
+
+
+  
+  <script alias="zone_GeonWon_B_Outcastle_Act7_1_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction enable="n" target="zoneenv:6121_foot_1" target2="zoneenv2spawn:6121_foot_1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:6121_foot_2" target2="zoneenv2spawn:6121_foot_2_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:6121_foot_3" target2="zoneenv2spawn:6121_foot_3_spawn" type="set-env-enable" />
+        <reaction target-1="zonenpcspawn:a_6121_32" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <quest-decision alias="qd_997_06">
+      <reaction-set>
+        <reaction text="qd_997_06 enter zone -tekim" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_6">
+      <reaction-set>
+        <reaction text="qd_997_6 -tekim" type="debug-trace" />
+        <reaction flag="n" target="zonenpcspawn:a_6121_1" type="set-npc-interactive" />        
+        
+        <reaction spawn-1="a_6121_77" type="spawn-npc" />
+        <reaction spawn-1="a_6121_78" type="spawn-npc" />
+        <reaction spawn-1="a_6121_79" type="spawn-npc" />
+        <reaction spawn-1="a_6121_80" type="spawn-npc" />
+
+        
+        <reaction spawn-1="a_6121_23" type="spawn-npc" />
+        <reaction spawn-1="a_6121_26" type="spawn-npc" />
+        <reaction spawn-1="a_6121_29" type="spawn-npc" />
+                
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_07">
+      <reaction-set>
+        <reaction text="qd_997_07 enter zone -tekim" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_7">
+      <reaction-set>
+        <reaction text="qd_997_7 -tekim" type="debug-trace" />
+        
+        <reaction spawn-1="a_6121_32" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_08">
+      <reaction-set>
+        <reaction text="qd_997_08 enter zone -tekim" type="debug-trace" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_4" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_7" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_10" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_13" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_16" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_23" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_26" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_29" type="despawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_75" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_76" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_78" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_80" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_83" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_85" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_87" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_89" type="despawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_32" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_1" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_2" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_3" type="despawn-npc" />
+        
+        <reaction spawn-1="a_6121_81" type="spawn-npc" />
+        <reaction spawn-1="a_6121_90" type="spawn-npc" />
+        <reaction spawn-1="a_6121_91" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_8">
+      <reaction-set>
+        <reaction text="qd_997_8 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_zanggyul_0001_act_05" target="zonenpcspawn:a_6121_81" type="set-npc-act" />        
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_09">
+      <reaction-set>
+        <reaction text="qd_997_09 -tekim" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_9">
+      <reaction-set>
+        <reaction text="qd_997_9 -tekim" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_010">
+      <reaction-set>
+        <reaction text="qd_997_010 -tekim" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_10">
+      <reaction-set>
+        <reaction text="qd_997_10 -tekim" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_011">
+      <reaction-set>
+        <reaction text="qd_997_11 ex -tekim" type="debug-trace" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_4" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_7" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_10" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_13" respawn-after-despawn="n" type="despawn-npc-groups" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_6121_16" respawn-after-despawn="n" type="despawn-npc-groups" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_23" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_26" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_29" type="despawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_75" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_76" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_78" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_80" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_83" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_85" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_87" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_89" type="despawn-npc" />
+
+        <reaction spawn-1="a_6121_32" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_997_11">
+      <reaction-set>
+        <reaction text="qd_997_11 -tekim" type="debug-trace" />
+                
+        <reaction spawn-1="a_6121_81" type="spawn-npc" />
+        <reaction spawn-1="a_6121_90" type="spawn-npc" />
+        <reaction spawn-1="a_6121_91" type="spawn-npc" />
+        
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6121_75" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6121_76" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6121_78" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6121_80" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6121_83" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6121_85" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6121_87" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_6121_89" type="despawn-npc" />
+
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_1" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_2" type="despawn-npc" />
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_6121_3" type="despawn-npc" />
+        
+        <reaction flag="y" target="zonenpcspawn:a_6121_81" type="set-npc-interactive" />
+        
+      </reaction-set>
+    </quest-decision>    
+  </script>  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <script alias="CH_WA_zanggyul_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction flag="n" target="event:npc-spawn:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />        
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_81" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="6121_p14_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <reaction-set probability="30">
+        <reaction text="ZombieBUnGuk social attack -tekim" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_6121_1" social="CH_WA_zanggyul_0001_soc_04  " type="play-social" />
+      </reaction-set>
+      <reaction-set probability="30">
+        <reaction text="ZombieBUnGuk attack -tekim" type="debug-trace" />
+      </reaction-set>
+      <reaction-set probability="40">
+        <reaction text="ZombieBUnGuk attack -tekim" type="debug-trace" />
+      </reaction-set>
+    </decision>        
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_6121_1:reg-1" subject2="zonenpcspawn:a_6121_1:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_zanggyul_0001_ai combat-end -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-combat-end:npc" type="set-npc-brain" />
+        <reaction flag="y" target="zonenpcspawn:a_6121_1" type="set-npc-interactive" />
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="6121_p14_act_01" />        
+      </filter-set>
+      <reaction-set>        
+        <reaction text="6121_p14_act_01 act-finished" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6121_81" type="set-npc-brain" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6121_90" type="set-npc-brain" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_6121_91" type="set-npc-brain" />
+        <reaction flag="y" target="zonenpcspawn:a_6121_81" type="set-npc-interactive" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_zanggyul_0001_act_05" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_zanggyul_0001_act_05 act-finished" type="debug-trace" />        
+        
+        <reaction target-1="zonenpcspawn:a_6121_81" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6121_90" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_6121_91" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_zanggyul_0001_act_04" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="zanggyul_0001_act_04 act-finished" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="zonenpcspawn:a_6121_1" type="set-npc-brain" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="zonenpcspawn:a_6121_2" type="set-npc-brain" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="zonenpcspawn:a_6121_3" type="set-npc-brain" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  <script alias="CH_WA_UnGukSoldier_0003_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_2" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction attack-target="event:npc-spawn:npc" spawn-1="a_6121_75" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_82" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction attack-target="event:npc-spawn:npc" spawn-1="a_6121_83" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_86" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction attack-target="event:npc-spawn:npc" spawn-1="a_6121_87" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_90" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="a_6121_90_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_WA_UnGukSoldier_0004_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_3" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction attack-target="event:npc-spawn:npc" spawn-1="a_6121_76" spawn-delay="0" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+      <decision event="npc-spawn">
+        <filter-set>
+          <filter spawn="a_6121_84" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        </filter-set>
+        <reaction-set>
+          <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+          <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+          <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+          <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+          <reaction attack-target="event:npc-spawn:npc" spawn-1="a_6121_85" spawn-delay="0" type="spawn-npc" />
+        </reaction-set>
+      </decision>
+      <decision event="npc-spawn">
+        <filter-set>
+          <filter spawn="a_6121_88" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        </filter-set>
+        <reaction-set>
+          <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+          <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+          <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+          <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+          <reaction attack-target="event:npc-spawn:npc" spawn-1="a_6121_89" spawn-delay="0" type="spawn-npc" />
+        </reaction-set>
+      </decision>
+      <decision event="npc-spawn">
+        <filter-set>
+          <filter spawn="a_6121_91" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        </filter-set>
+        <reaction-set>
+          <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+          <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+          <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+          <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+          <reaction seq="a_6121_91_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+        </reaction-set>
+      </decision>
+  </script>
+  
+  <script alias="CH_WA_UnGukSoldier_0010_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_77" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="6121_p2_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+        
+        <reaction seq="CH_WA_zanggyul_0001_act_04" target="zonenpcspawn:a_6121_1" type="set-npc-act" />
+        <reaction seq="CH_WA_UnGukSoldier_0003_act_04" target="zonenpcspawn:a_6121_2" type="set-npc-act" />        
+      </reaction-set>
+    </decision>    
+    </script>
+  
+  <script alias="CH_WA_UnGukSoldier_0011_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_79" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="6121_p4_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>    
+  </script>
+  
+  <script alias="ME_WA_ZombieBUnGuk_0003_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_78" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_ai spawn -tekim" type="debug-trace" />      
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />        
+        <reaction seq="6121_p1_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction amount="10" opponent="zonenpcspawn:a_6121_2" target="event:npc-spawn:npc" type="diff-npc-hate" />
+        <reaction amount="10" opponent="event:npc-spawn:npc" target="zonenpcspawn:a_6121_2" type="diff-npc-hate" />
+        <reaction amount="10" opponent="event:npc-spawn:npc" target="zonenpcspawn:a_6121_1" type="diff-npc-hate" />        
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_80" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_ai spawn -tekim" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />        
+        <reaction seq="6121_p3_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction amount="10" opponent="event:npc-spawn:npc" target="zonenpcspawn:a_6121_3" type="diff-npc-hate" />
+        
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="6121_p1_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ZombieB1 act-finished -tekim" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:act-finished:npc" type="diff-npc-number" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="zonenpcspawn:a_6121_2" type="set-npc-brain" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="zonenpcspawn:a_6121_1" type="set-npc-brain" />
+        
+        <reaction amount="10" opponent="event:act-finished:npc" target="zonenpcspawn:a_6121_1" type="diff-npc-hate" />
+        <reaction amount="10" opponent="event:act-finished:npc" target="zonenpcspawn:a_6121_2" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="6121_p3_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ZombieB2 act-finished -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="zonenpcspawn:a_6121_3" type="set-npc-brain" />
+        
+        <reaction amount="10" opponent="event:act-finished:npc" target="zonenpcspawn:a_6121_3" type="diff-npc-hate" />
+        <reaction amount="10" opponent="zonenpcspawn:a_6121_3" target="event:act-finished:npc" type="diff-npc-hate" />
+        <reaction from="zonenpcspawn:a_6121_1" social="CH_WA_zanggyul_0001_soc_05  " type="play-social" />
+      </reaction-set>
+    </decision>    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_ai attacked pc -tekim" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />        
+        <reaction amount="10" opponent="event:attacked:attacker" target="event:attacked:defender" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:defender" target="zonenpcspawn:a_6121_1" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>        
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_ai attacked -tekim" type="debug-trace" />
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+        <reaction amount="10" opponent="event:attacked:attacker" target="event:attacked:defender" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:defender" target="zonenpcspawn:a_6121_1" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_6121_1:reg-1" subject2="zonenpcspawn:a_6121_1:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_ai killed -tekim" type="debug-trace" />
+        
+        <reaction amount="1" reg="1" target="zonenpcspawn:a_6121_1" type="diff-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_ai killed -tekim" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcspawn:a_6121_1" type="diff-npc-number" />
+        <reaction amount="10" opponent="event:attacked:attacker" target="event:attacked:defender" type="diff-npc-hate" />
+        <reaction amount="1" opponent="event:attacked:defender" target="zonenpcspawn:a_6121_1" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="ME_WA_ZombieBUnGuk_0002_ai">
+    <decision event="npc-spawn">     
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_ai spawn -tekim" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_ai attacked pc -tekim" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />
+        <reaction amount="10" opponent="event:attacked:attacker" target="event:attacked:defender" type="diff-npc-hate" />        
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_ai attacked -tekim" type="debug-trace" />
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+        <reaction amount="10" opponent="event:attacked:attacker" target="event:attacked:defender" type="diff-npc-hate" />        
+      </reaction-set>
+    </decision>
+    
+  </script>
+
+
+    
+  <script alias="CH_WA_MaYeongGangGun_0005_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="MaYeongGangGun_ai spawn -tekim" type="debug-trace" />        
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-manipulate-start">
+      <filter-set>
+        <filter op="eq" subject="event:npc-manipulate-start:npc:reg-1" subject2="event:npc-manipulate-start:npc:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MaYeongGangGun_0005_ai start -tekim" type="debug-trace" />
+                
+        <reaction target-1="event:npc-manipulate-start:npc:npc-party:3" type="despawn-npc" />
+        <reaction target-1="event:npc-manipulate-start:npc:npc-party:4" type="despawn-npc" />         
+        <reaction attack-target="event:npc-manipulate-start:pc" group="event:npc-manipulate-start:npc:npc-party" index-1="5" spawn-delay="2000" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-manipulate-start:pc" group="event:npc-manipulate-start:npc:npc-party" index-1="6" spawn-delay="2000" type="spawn-npc-index" />        
+        <reaction amount="1" reg="1" target="event:npc-manipulate-start:npc" type="diff-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-manipulate-end">
+      <reaction-set>
+        <reaction text="MaYeongGangGun_0005_ai end -tekim" type="debug-trace" />
+        
+        <reaction target-1="event:npc-manipulate-end:npc" type="despawn-npc" />
+        <reaction group="event:npc-manipulate-end:npc:npc-party" index-1="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_WA_MaYeongGangGun_0006_ai" parent="CH_WA_MaYeongGangGun_0005_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-start" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+  </script>
+  <script alias="CH_WA_MaYeongGangGun_0007_ai" parent="CH_WA_MaYeongGangGun_0005_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-start" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+  </script>
+  <script alias="CH_WA_MaYeongGangGun_0008_ai" parent="CH_WA_MaYeongGangGun_0005_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-start" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+  </script>
+  <script alias="CH_WA_MaYeongGangGun_0009_ai" parent="CH_WA_MaYeongGangGun_0005_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-manipulate-start" forward="y" />
+    <decision event="npc-manipulate-end" forward="y" />
+  </script>
+
+
+
+  
+  <script alias="CH_WA_MaYeongGangGun_0012_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="MaYeongGangGun spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="6121_p5_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>      
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="6121_p5_act_01" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="6121_p6_act_01" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="6121_p7_act_01" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="6121_p8_act_01" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="6121_p9_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="unguk finished -tekim" type="debug-trace" />
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    
+  </script>
+  
+  
+  <script alias="CH_WA_MaYeongGangGun_0013_ai" parent="CH_WA_MaYeongGangGun_0012_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="MaYeongGangGun spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="6121_p6_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="CH_WA_MaYeongGangGun_0014_ai" parent="CH_WA_MaYeongGangGun_0012_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="MaYeongGangGun spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="6121_p7_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="CH_WA_MaYeongGangGun_0015_ai" parent="CH_WA_MaYeongGangGun_0012_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="MaYeongGangGun spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="6121_p8_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="CH_WA_MaYeongGangGun_0016_ai" parent="CH_WA_MaYeongGangGun_0012_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="MaYeongGangGun spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="6121_p9_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished" forward="y" />    
+  </script>
+
+
+  
+  <script alias="ME_WA_ZombieBUnGuk_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_WA_ZombieBUnGuk_0001_ai spawn -tekim" type="debug-trace" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="attacked">      
+      <reaction-set>
+        <reaction text="ZombieBUnGuk_0001 attacked -tekim" type="debug-trace" />
+        <reaction amount="100" opponent="event:attacked:defender" target="event:attacked:attacker:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:defender" target="event:attacked:attacker:npc-party:3" type="diff-npc-hate" />        
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  
+  <script alias="ME_WA_SkullCaptain_0001_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_6121_23" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <filter-set>
+        <filter spawn="a_6121_26" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <filter-set>
+        <filter spawn="a_6121_29" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="해골부장 스폰 -tekim" type="debug-trace" />
+                
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>    
+  </script>
+  <script alias="ME_WA_SkullCaptain_0002_ai" parent="ME_WA_SkullCaptain_0001_ai">
+    <decision event="npc-spawn" forward="y" />    
+  </script>
+  <script alias="ME_WA_SkullCaptain_0003_ai" parent="ME_WA_SkullCaptain_0001_ai">
+    <decision event="npc-spawn" forward="y" />    
+  </script>
+
+  
+  
+  
+  <script alias="ME_WA_GuGuBung_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_WA_GuGuBung_0001_ai spawn -tekim" type="debug-trace" />
+        <reaction attackable="y" brain="boss" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script alias="zone_ChRyoungCHN_DoChunPung_epic7_2_ai">
+    <quest-decision alias="qd_1510_1">
+      <reaction-set>
+        <reaction text="qd_1510_1 -tekim" type="debug-trace" />
+        <reaction spawn-1="a_2638_1" type="spawn-npc" />
+        <reaction spawn-1="a_2638_2" type="spawn-npc" />
+        <reaction spawn-1="a_2638_3" type="spawn-npc" />
+        <reaction spawn-1="a_2638_5" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_2">
+      <reaction-set>
+        <reaction text="qd_1510_2 -tekim" type="debug-trace" />
+                
+        
+      </reaction-set>
+    </quest-decision>
+    
+    
+    <quest-decision alias="qd_1510_17">
+      <reaction-set>
+        <reaction text="qd_1510_17 ex -tekim" type="debug-trace" />
+        
+        <reaction spawn-1="a_2638_1" type="spawn-npc" />
+        <reaction from="zonenpcspawn:a_2638_3" social="CE_WA_BeonA_0005_soc_01" type="play-social" />
+        <reaction spawn-1="a_2638_2" type="spawn-npc" />
+        <reaction spawn-1="a_2638_3" type="spawn-npc" />
+        <reaction spawn-1="a_2638_5" type="spawn-npc" />
+        
+        <reaction enable="n" target="zoneenv:e_button_2638_DoChunPung_01" target2="zoneenv2spawn:e_button_2638_DoChunPung_01_spawn" type="set-env-enable" />        
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  
+  
+  <script alias="zone_DongHae_chungkak_A_1_epic_7_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="바다뱀 enter-zone -tekim" type="debug-trace" />
+
+        
+        
+      </reaction-set>
+    </decision>
+    <quest-decision alias="qd_1510_12">
+      <reaction-set>
+        <reaction text="qd_1510_12 -tekim" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_4756_2" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_3" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_4" type="despawn-npc" />        
+        <reaction target-1="zonenpcspawn:a_4756_5" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_6" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_7" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_8" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_4756_32" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_33" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_34" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_35" type="despawn-npc" />
+        
+        
+                
+        <reaction enable="n" target="zoneenv:e_button_4756_DongHaeA_01" target2="zoneenv2spawn:e_button_4756_DongHaeA_01_spawn" type="set-env-enable" />
+
+
+        <reaction spawn-1="a_4756_2" type="spawn-npc" />
+        <reaction spawn-1="a_4756_3" type="spawn-npc" />
+        <reaction spawn-1="a_4756_4" type="spawn-npc" />
+        <reaction spawn-1="a_4756_5" type="spawn-npc" />
+
+        <reaction spawn-1="a_4756_6" type="spawn-npc" />
+        <reaction spawn-1="a_4756_7" type="spawn-npc" />
+        <reaction spawn-1="a_4756_8" type="spawn-npc" />
+        <reaction spawn-1="a_4756_9" type="spawn-npc" />
+
+        <reaction spawn-1="a_4756_10" type="spawn-npc" />
+        <reaction spawn-1="a_4756_11" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_5">
+      <reaction-set>
+        <reaction text="qd_1510_5 -tekim" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_4756_5" type="despawn-npc" />
+        
+        <reaction target-1="zonenpcspawn:a_4756_32" type="despawn-npc" />
+        <reaction spawn-1="a_4756_32" type="spawn-npc" />
+
+        
+        <reaction target-1="zonenpcspawn:a_4756_6" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_7" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_8" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_9" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_10" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_11" type="despawn-npc" />
+
+        
+        <reaction spawn-1="a_4756_2" type="spawn-npc" />
+        <reaction spawn-1="a_4756_3" type="spawn-npc" />
+        <reaction spawn-1="a_4756_4" type="spawn-npc" />        
+        
+        
+        <reaction spawn-1="a_4756_33" type="spawn-npc" />
+        <reaction spawn-1="a_4756_34" type="spawn-npc" />
+        <reaction spawn-1="a_4756_35" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_6">
+      <reaction-set>
+        <reaction text="qd_1510_6 -tekim" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_4756_5" type="despawn-npc" />
+        
+        <reaction spawn-1="a_4756_32" type="spawn-npc" />
+
+        
+        <reaction spawn-1="a_4756_2" type="spawn-npc" />
+        <reaction spawn-1="a_4756_3" type="spawn-npc" />
+        <reaction spawn-1="a_4756_4" type="spawn-npc" />
+        
+        
+        <reaction target-1="zonenpcspawn:a_4756_6" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_7" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_8" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_9" type="despawn-npc" />
+
+        
+        <reaction spawn-1="a_4756_33" type="spawn-npc" />
+        <reaction spawn-1="a_4756_34" type="spawn-npc" />
+        <reaction spawn-1="a_4756_35" type="spawn-npc" />
+
+        
+        <reaction enable="y" target="zoneenv:e_button_4756_DongHaeA_01" target2="zoneenv2spawn:e_button_4756_DongHaeA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </quest-decision>
+    
+    
+    <quest-decision alias="qd_1510_13">
+      <reaction-set>
+        <reaction text="qd_1510_13 -tekim" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_4756_5" type="despawn-npc" />
+        <reaction spawn-1="a_4756_32" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>    
+        
+        
+    
+    <quest-decision alias="qd_1510_5">
+      <reaction-set>
+        <reaction text="qd_1510_5 -tekim" type="debug-trace" />
+        
+        <reaction target-1="zonenpcspawn:a_4756_5" type="despawn-npc" />
+        
+        <reaction spawn-1="a_4756_32" type="spawn-npc" />
+
+        
+        <reaction spawn-1="a_4756_2" type="spawn-npc" />
+        <reaction spawn-1="a_4756_3" type="spawn-npc" />
+        <reaction spawn-1="a_4756_4" type="spawn-npc" />
+
+        
+        <reaction target-1="zonenpcspawn:a_4756_6" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_7" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_8" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4756_9" type="despawn-npc" />
+        
+        
+        <reaction spawn-1="a_4756_33" type="spawn-npc" />
+        <reaction spawn-1="a_4756_34" type="spawn-npc" />
+        <reaction spawn-1="a_4756_35" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+  </script>
+
+  <script alias="e_button_4756_DongHaeA_01_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="e_button_4756_DongHaeA_01 -tekim" type="debug-trace" />
+        <reaction pc-spawn="7" target="event:env-manipulated:pc" type="warp" zone="zone_EastChungGakJiBu_1" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CE_WA_ChungGak_0011_ai">    
+    <quest-decision alias="qd_1510_15">
+      <reaction-set>
+        <reaction text="qd_1510_15 -tekim" type="debug-trace" />
+        
+        <reaction pc-spawn="1" target="case:talked:pc" type="warp" zone="zone_DongHae_chungkak_B_5_Setup" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+
+  
+  <script alias="zone_DongHae_chungkak_B_5_Setup_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="DongHae_chungkak_B_5_Setup -tekim" type="debug-trace" />
+
+        
+        
+      </reaction-set>
+    </decision>
+    <quest-decision alias="qd_1510_9">
+      <reaction-set>
+        <reaction text="qd_1510_9 -tekim" type="debug-trace" />
+        
+        
+        <reaction seq="CE_WA_ChungGak_0009_act_01" target="zonenpcspawn:a_4755_35" type="set-npc-act" />
+        <reaction enable="y" target="zoneenv:e_AirDash_4755_01_a" target2="zoneenv2spawn:e_AirDash_4755_01_a_spawn" type="set-env-enable" />
+        
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_10">
+      <reaction-set>
+        <reaction text="qd_1510_10 -tekim" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_4755_35" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_68" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_69" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_70" type="despawn-npc" />
+        
+        <reaction spawn-1="a_4755_43" type="spawn-npc" />
+        <reaction spawn-1="a_4755_71" type="spawn-npc" />
+        <reaction spawn-1="a_4755_72" type="spawn-npc" />
+        <reaction spawn-1="a_4755_73" type="spawn-npc" />
+
+        
+        <reaction group-1="zonenpcsquad:s_4755_21" spawn-force="y" type="spawn-npc-groups" />
+        <reaction spawn-1="a_4755_103" type="spawn-npc" />
+
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4755_12" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_4755_13" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_4755_14" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_4755_15" index-1="1" index-2="2" type="despawn-npc-index" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_11">
+      <reaction-set>
+        <reaction text="qd_1510_11 -tekim" type="debug-trace" />
+        
+        <reaction target="event:mission-step-completed:pc" teleport="6110_Teleport_01" type="activate-teleport" />
+        <reaction enter-cinematic="E_0702" leave-cinematic="E_0702" pc-spawn="10" target="event:mission-step-completed:pc" type="warp" zone="zone_GeonWon_ChaeUnHang" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_18">
+      <reaction-set>
+        <reaction text="qd_1510_18 -tekim" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_4755_68" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_69" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_70" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_35" type="despawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-enable" />
+
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-state" />
+
+        <reaction spawn-1="a_4755_68" type="spawn-npc" />
+        <reaction spawn-1="a_4755_69" type="spawn-npc" />
+        <reaction spawn-1="a_4755_70" type="spawn-npc" />
+        <reaction spawn-1="a_4755_35" type="spawn-npc" />
+
+        <reaction enable="y" target="zoneenv:4755_foot_1" target2="zoneenv2spawn:4755_foot_1_spawn" type="set-env-enable" />
+        <reaction state="close" state2="close" target="zoneenv:4755_foot_1" target2="zoneenv2spawn:4755_foot_1_spawn" type="set-env-state" />
+
+        <reaction enable="n" target="zoneenv:e_AirDash_4755_01_a" target2="zoneenv2spawn:e_AirDash_4755_01_a_spawn" type="set-env-enable" />
+
+        <reaction group="zonenpcsquad:s_4755_12" index-1="1" index-2="2" index-3="3" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_13" index-1="1" index-2="2" index-3="3" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_14" index-1="1" index-2="2" index-3="3" index-4="4" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_15" index-1="1" index-2="2" type="spawn-npc-index" />
+
+        
+        <reaction spawn-1="a_4755_61" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_19">
+      <reaction-set>
+        <reaction text="qd_1510_19 -tekim" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_4755_68" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_69" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_70" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_35" type="despawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-enable" />
+
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-state" />
+
+                
+
+        <reaction enable="y" target="zoneenv:4755_foot_1" target2="zoneenv2spawn:4755_foot_1_spawn" type="set-env-enable" />
+        <reaction state="close" state2="close" target="zoneenv:4755_foot_1" target2="zoneenv2spawn:4755_foot_1_spawn" type="set-env-state" />
+
+        <reaction enable="y" target="zoneenv:e_AirDash_4755_01_a" target2="zoneenv2spawn:e_AirDash_4755_01_a_spawn" type="set-env-enable" />
+        <reaction state="close" state2="close" target="zoneenv:e_AirDash_4755_01_a" target2="zoneenv2spawn:e_AirDash_4755_01_a_spawn" type="set-env-state" />
+
+        <reaction group="zonenpcsquad:s_4755_12" index-1="1" index-2="2" index-3="3" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_13" index-1="1" index-2="2" index-3="3" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_14" index-1="1" index-2="2" index-3="3" index-4="4" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_15" index-1="1" index-2="2" type="spawn-npc-index" />
+
+        
+        <reaction spawn-1="a_4755_61" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_20">
+      <reaction-set>
+        <reaction text="qd_1510_20 -tekim" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_4755_68" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_69" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_70" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_35" type="despawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-enable" />
+
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-state" />
+
+        
+
+        <reaction enable="y" target="zoneenv:4755_foot_1" target2="zoneenv2spawn:4755_foot_1_spawn" type="set-env-enable" />
+        <reaction state="close" state2="close" target="zoneenv:4755_foot_1" target2="zoneenv2spawn:4755_foot_1_spawn" type="set-env-state" />
+
+        <reaction enable="y" target="zoneenv:e_AirDash_4755_01_a" target2="zoneenv2spawn:e_AirDash_4755_01_a_spawn" type="set-env-enable" />
+
+        <reaction group="zonenpcsquad:s_4755_12" index-1="1" index-2="2" index-3="3" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_13" index-1="1" index-2="2" index-3="3" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_14" index-1="1" index-2="2" index-3="3" index-4="4" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_15" index-1="1" index-2="2" type="spawn-npc-index" />
+
+        
+        <reaction spawn-1="a_4755_61" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_21">
+      <reaction-set>
+        <reaction text="qd_1510_21 -tekim" type="debug-trace" />
+        <reaction target-1="zonenpcspawn:a_4755_68" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_69" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_70" type="despawn-npc" />
+        <reaction target-1="zonenpcspawn:a_4755_35" type="despawn-npc" />
+
+        
+        
+        <reaction enable="n" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-enable" />
+
+        <reaction state="open" state2="open" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-state" />
+        <reaction state="open" state2="open" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-state" />
+
+        <reaction spawn-1="a_4755_43" type="spawn-npc" />
+        <reaction spawn-1="a_4755_71" type="spawn-npc" />
+        <reaction spawn-1="a_4755_72" type="spawn-npc" />
+        <reaction spawn-1="a_4755_73" type="spawn-npc" />
+
+        
+
+        <reaction enable="y" target="zoneenv:e_AirDash_4755_01_a" target2="zoneenv2spawn:e_AirDash_4755_01_a_spawn" type="set-env-enable" />
+
+        <reaction despawn-force="y" group="zonenpcsquad:s_4755_12" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_4755_13" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_4755_14" index-1="1" index-2="2" index-3="3" index-4="4" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_4755_15" index-1="1" index-2="2" type="despawn-npc-index" />
+                
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1510_22">
+      <reaction-set>
+        <reaction text="qd_1510_22 -tekim" type="debug-trace" />        
+        
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-enable" />
+
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_01" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_01_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_02" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_02_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_03" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_03_spawn" type="set-env-state" />
+        <reaction state="close" state2="close" target="zoneenv:e_Chest_4755_HeakChunJuA_04" target2="zoneenv2spawn:e_Chest_4755_HeakChunJuA_04_spawn" type="set-env-state" />
+
+        
+        
+        <reaction spawn-1="a_4755_35" type="spawn-npc" />
+
+        
+        <reaction spawn-1="a_4755_61" type="spawn-npc" />
+
+        <reaction enable="y" target="zoneenv:4755_foot_1" target2="zoneenv2spawn:4755_foot_1_spawn" type="set-env-enable" />
+        <reaction enable="n" target="zoneenv:e_AirDash_4755_01_a" target2="zoneenv2spawn:e_AirDash_4755_01_a_spawn" type="set-env-enable" />
+
+        <reaction group="zonenpcsquad:s_4755_12" index-1="1" index-2="2" index-3="3" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_13" index-1="1" index-2="2" index-3="3" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_14" index-1="1" index-2="2" index-3="3" index-4="4" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4755_15" index-1="1" index-2="2" type="spawn-npc-index" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  <script alias="CE_WA_DoDanHa_0003_ai">
+    <quest-decision alias="qd_1510_4">
+      <reaction-set>
+        <reaction text="qd_1510_4 -tekim" type="debug-trace" />
+        
+        <reaction from="zonenpcspawn:a_2638_2" social="CE_WA_BeonYang_0005_soc_02" type="play-social" />
+      </reaction-set>
+    </quest-decision>
+    <quest-decision alias="qd_1510_3">
+      <reaction-set>
+        <reaction text="qd_1510_3 -tekim" type="debug-trace" />
+                
+        <reaction seq="CE_WA_BeonA_0005_act_01" target="zonenpcspawn:a_2638_3" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2638_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_DoDanHa_0003_ai spawn -tekim" type="debug-trace" />        
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CE_WA_BeonYang_0005_ai">    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2638_2" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_BeonYang_0005_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CE_WA_BeonYang_0005_soc_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+  </script>
+  <script alias="CE_WA_BeonA_0005_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2638_3" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_BeonA_0005_ai spawn -tekim" type="debug-trace" />        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WA_BeonA_0005_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="BeonYang_0005_act_01 act-finish -tekim" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_button_2638_DoChunPung_01" target2="zoneenv2spawn:e_button_2638_DoChunPung_01_spawn" type="set-env-enable" />
+
+        <reaction from="zonenpcspawn:a_2638_2" social="CE_WA_BeonYang_0005_soc_03" type="play-social" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_2638_2" type="set-npc-act" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_2638_3" type="set-npc-act" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_2638_5" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CE_WA_ChinChin_0005_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_2638_4" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_ChinChin_0005_ai spawn -tekim" type="debug-trace" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="CE_WA_DeaTaHwan_0001_ai">
+    <quest-decision alias="qd_1510_7">
+      <reaction-set>
+        <reaction text="qd_1510_7 -tekim" type="debug-trace" />
+        
+        <reaction effect="Quest_PaCheon_Dummy_Knockback_kneel" target="case:npc-bleeding-occured:npc" type="invoke-effect" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="case:npc-bleeding-occured:npc" type="set-npc-brain" />
+        <reaction seq="CE_WA_DeaTaHwan_0001_act_04" target="case:npc-bleeding-occured:npc" type="set-npc-act" />
+      </reaction-set>      
+    </quest-decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4756_5" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_DeaTaHwan_0001_ai spawn -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WA_DeaTaHwan_0001_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="DeaTaHwan_0001_ai act-finish -tekim" type="debug-trace" />
+        
+        <reaction seq="CE_WA_DeaTaHwan_0001_act_01_path" target="event:act-finished:npc" type="set-npc-act" />        
+        
+        <reaction seq="CH_WA_BeonYang_0007_Path_01" target="zonenpcspawn:a_4756_4" type="set-npc-act" />
+        <reaction seq="CE_WA_BeonA_0007_Path_01" target="zonenpcspawn:a_4756_3" type="set-npc-act" />
+        <reaction seq="CH_WA_ChinChin_0007_Path_01" target="zonenpcspawn:a_4756_2" type="set-npc-act" />        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WA_DeaTaHwan_0001_act_01_path" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="DeaTaHwan_0001_act_01_path finish -tekim" type="debug-trace" />        
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4756_6" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4756_7" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_4756_8" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WA_DeaTaHwan_0001_act_02" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="DeaTaHwan_0001_ai act2-finish -tekim" type="debug-trace" />        
+        <reaction seq="CE_WA_ChungGak_0004_act_01" target="zonenpcspawn:a_4756_9" type="set-npc-act" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WA_DeaTaHwan_0001_act_04" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="DeaTaHwan_0001_ai act4-finish -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_BeonYang_0007_Path_02" target="zonenpcspawn:a_4756_4" type="set-npc-act" />
+        <reaction seq="CE_WA_BeonA_0007_Path_02" target="zonenpcspawn:a_4756_3" type="set-npc-act" />
+        <reaction seq="CH_WA_ChinChin_0007_Path_02" target="zonenpcspawn:a_4756_2" type="set-npc-act" />
+        
+        <reaction spawn-1="a_4756_33" spawn-delay="2000" type="spawn-npc" />
+        <reaction spawn-1="a_4756_34" spawn-delay="1000" type="spawn-npc" />
+        <reaction spawn-1="a_4756_35" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="DeaTaHwan_0001_ai npc-bleeding2 -tekim" type="debug-trace" />
+        
+                
+        
+                        
+      </reaction-set>
+    </decision>
+    
+  </script>
+  
+  <script alias="CE_WA_DeaTaHwan_0002_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4756_31" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CE_WA_DeaTaHwan_0003_ai">
+    <quest-decision alias="qd_1510_8">
+      <reaction-set>
+        <reaction text="qd_1510_8 -tekim" type="debug-trace" />
+        
+        <reaction seq="CE_WA_DeaTaHwan_0001_act_03" target="case:talked:npc" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4756_32" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_DeaTaHwan_0002_ai spawn -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WA_DeaTaHwan_0001_act_03" />
+      </filter-set>
+      <reaction-set>        
+        <reaction text="DeaTaHwan_0003_ai act-finish -tekim" type="debug-trace" />
+        
+        <reaction enable="y" target="zoneenv:e_button_4756_DongHaeA_01" target2="zoneenv2spawn:e_button_4756_DongHaeA_01_spawn" type="set-env-enable" />        
+        
+        <reaction seq="CE_WA_ChungGak_0006_act_02" target="zonenpcspawn:a_4756_33" type="set-npc-act" />        
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_WA_ChungGak_0007_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4756_7" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_WA_ChungGak_0007_ai spawn -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />        
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_4756_5:reg-1" subject2="zonenpcspawn:a_4756_5:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ChungGak_0007_ai killed reg2 -tekim" type="debug-trace" />
+                
+        <reaction seq="CE_WA_DeaTaHwan_0001_act_02" target="zonenpcspawn:a_4756_5" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="ChungGak_0007_ai killed -tekim" type="debug-trace" />
+        <reaction amount="1" reg="1" target="zonenpcspawn:a_4756_5" type="diff-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_WA_ChungGak_0008_ai" parent="ME_WA_ChungGak_0007_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4756_8" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ChungGak_0008_ai spawn -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />        
+      </reaction-set>
+    </decision>
+    <decision event="killed" forward="y" />      
+  </script>
+  
+  <script alias="ME_WA_ChungGak_0009_ai" parent="ME_WA_ChungGak_0007_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4756_6" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_WA_ChungGak_0009_ai spawn -tekim" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />        
+      </reaction-set>
+    </decision>
+    <decision event="killed" forward="y" />
+  </script>
+
+
+  
+  <script alias="CE_WA_BeonYang_0007_ai">
+    
+    <quest-decision alias="qd_1510_16">
+      <reaction-set>
+        <reaction text="qd_1510_16 -tekim" type="debug-trace" />
+        
+        <reaction seq="CH_WA_BeonYang_0007_act_01" target="zonenpcspawn:a_4756_4" type="set-npc-act" />
+        <reaction seq="CE_WA_DeaTaHwan_0001_soc_01_act" target="zonenpcspawn:a_4756_5" type="set-npc-act" />        
+      </reaction-set>
+    </quest-decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4756_4" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_BeonYang_0007 spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_BeonYang_0007_Path_03" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4755_68" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_BeonYang_0007 spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_BeonYang_0007_Path_03" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_BeonYang_0007_act_01" />        
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="CE_WA_DeaTaHwan_0001_act_01" target="zonenpcspawn:a_4756_5" type="set-npc-act" />
+        <reaction seq="CH_WA_BeonYang_0007_act_02" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction text="BeonYang_0007 act-finish -tekim" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  <script alias="4755_foot_1_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />        
+      </filter-set>
+      <reaction-set>
+        <reaction text="4755_foot_1_ai env-entered -tekim" type="debug-trace" />      
+        
+        <reaction spawn-1="a_4755_68" spawn-delay="3000" type="spawn-npc" />
+        <reaction spawn-1="a_4755_69" spawn-delay="3000" type="spawn-npc" />
+        <reaction spawn-1="a_4755_70" spawn-delay="3000" type="spawn-npc" />
+        <reaction enable="n" target="zoneenv:4755_foot_1" target2="zoneenv2spawn:4755_foot_1_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+  </script>
+    
+  <script alias="CE_WA_BeonYang_0006_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4755_69" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_BeonYang_0006 spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_BeonYang_0007_Path_03" target="zonenpcspawn:a_4755_69" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+    <script alias="CE_WA_BeonA_0006_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4755_68" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_BeonA_0006_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CE_WA_BeonA_0007_Path_03" target="zonenpcspawn:a_4755_68" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CE_WA_ChinChin_0006_ai">
+    
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4755_70" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_ChinChin_0006_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CH_WA_ChinChin_0007_Path_03" target="zonenpcspawn:a_4755_70" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+    
+  
+  <script alias="CE_WA_ChungGak_0004_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4756_9" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_WA_ChungGak_0009_ai spawn -tekim" type="debug-trace" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CE_WA_ChungGak_0006_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CE_WA_ChungGak_0006_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CE_WA_ChungGak_0006_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WA_ChungGak_0006_act_02" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4756_3" social="CE_WA_BeonA_0007_soc_02" type="play-social" />
+        <reaction from="zonenpcspawn:a_4756_4" social="CE_WA_BeonYang_0007_soc_05" type="play-social" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CE_WA_ChungGak_0009_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CE_WA_ChungGak_0009_ai spawn -tekim" type="debug-trace" />        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WA_ChungGak_0009_act_01" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction group-1="zonenpcsquad:s_4755_23" type="despawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_4755_24" type="despawn-npc-groups" />
+        
+        
+        <reaction text="ChungGak_0009_act_01 act-finish -tekim" type="debug-trace" />
+
+        <reaction seq="CE_WA_ChungGak_0009_act_02" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WA_ChungGak_0009_act_02" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction group-1="zonenpcsquad:s_4755_18" type="despawn-npc-groups" />        
+        <reaction text="ChungGak_0009_act_02 act-finish -tekim" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CE_WA_ChungGak_0028_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CE_WA_ChungGak_0009_ai spawn -tekim" type="debug-trace" />
+        
+        <reaction flag="n" target="event:npc-spawn:npc" type="set-npc-interactive" />
+      </reaction-set>
+    </decision>
+    
+  </script>
+  
+
+  
+  
+  <script alias="CH_WA_DongHaeB_epic7_0001_ai">
+    <decision event="npc-spawn">      
+      <reaction-set>
+        <reaction text="DongHaeB_epic7_0001_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="DongHaeB_epic7_0001_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="DongHaeB_epic7_0001_act_01" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction flag="y" target="zonenpcspawn:a_4755_43" type="set-npc-interactive" />
+        <reaction seq="DongHaeB_epic7_Index01_act_01" target="zonenpcspawn:a_4755_94" type="set-npc-act" />
+        <reaction seq="DongHaeB_epic7_Index01_act_01" target="zonenpcspawn:a_4755_95" type="set-npc-act" />
+        <reaction seq="DongHaeB_epic7_Index01_act_01" target="zonenpcspawn:a_4755_96" type="set-npc-act" />
+        <reaction seq="DongHaeB_epic7_Index01_act_01" target="zonenpcspawn:a_4755_97" type="set-npc-act" />
+        <reaction seq="DongHaeB_epic7_Index01_act_01" target="zonenpcspawn:a_4755_98" type="set-npc-act" />
+        <reaction seq="DongHaeB_epic7_Index01_act_01" target="zonenpcspawn:a_4755_99" type="set-npc-act" />
+        <reaction seq="DongHaeB_epic7_Index01_act_01" target="zonenpcspawn:a_4755_100" type="set-npc-act" />
+        <reaction seq="DongHaeB_epic7_Index01_act_01" target="zonenpcspawn:a_4755_101" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+
+
+  
+  <script alias="CH_WA_ChungGak_0013_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_WA_ChungGak_0013 spawn -tekim" type="debug-trace" />
+        <reaction seq="CE_WA_ChungGak_0013_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_WA_ChungGak_0015_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_WA_ChungGak_0015_ai spawn -tekim" type="debug-trace" />
+        <reaction seq="CE_WA_ChungGak_0015_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="ME_WA_DongHae_epic7_0056_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_WA_ChungGak_0015_ai spawn -tekim" type="debug-trace" />        
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_WA_DongHae_epic7_0057_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_WA_ChungGak_0015_ai spawn -tekim" type="debug-trace" />        
+      </reaction-set>
+    </decision>
+  </script>  
+  <script alias="ME_WA_DongHae_epic7_0059_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_WA_ChungGak_0015_ai spawn -tekim" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="ME_WA_DongHae_epic7_0058_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_WA_DongHae_epic7_0058_ai spawn -tekim" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />        
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />        
+      </filter-set>
+      <reaction-set>
+        <reaction text="DongHae_epic7_0060_ai attacked pc -tekim" type="debug-trace" />        
+                        
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  
+  
+  
+  
+
+  
+  <script alias="zone_GeonWon_DockYard_Epic7_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="enter-zone -tekim" type="debug-trace" />
+        <reaction spawn-1="a_6123_2" type="spawn-npc" />
+        <reaction spawn-1="a_6123_12" type="spawn-npc" />
+        <reaction spawn-1="a_6123_22" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <quest-decision alias="qd_1593_1">
+      <reaction-set>
+        <reaction text="qd_1593_1 -tekim" type="debug-trace" />
+        <reaction amount="3" reg="1" target="zonenpcspawn:a_6123_3" type="set-npc-number" />
+        
+        <reaction caster="zonenpcspawn:a_6123_2" effect="Gang_Play_Additional_die_damage" target="zonenpcspawn:a_6123_2" type="invoke-effect" />
+        <reaction caster="zonenpcspawn:a_6123_12" effect="Gang_Play_Additional_die_damage" target="zonenpcspawn:a_6123_12" type="invoke-effect" />
+        <reaction caster="zonenpcspawn:a_6123_22" effect="Gang_Play_Additional_die_damage" target="zonenpcspawn:a_6123_22" type="invoke-effect" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  <script alias="CH_WA_Chawoonhang_0262_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="Chawoonhang_0262_ai spawn -tekim" type="debug-trace" />        
+      </reaction-set>
+    </decision>    
+    <decision event="npc-manipulate-end">
+      <reaction-set>
+        <reaction text="Chawoonhang manipulate-end -tekim" type="debug-trace" />
+        
+        <reaction target-1="event:npc-manipulate-end:npc" type="despawn-npc" />
+        <reaction group="event:npc-manipulate-end:npc:npc-party" index-1="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_WA_Chawoonhang_0263_ai" parent="CH_WA_Chawoonhang_0262_ai">
+        
+    <decision event="npc-manipulate-end" forward="y" />
+  </script>
+  <script alias="CH_WA_Chawoonhang_0264_ai" parent="CH_WA_Chawoonhang_0262_ai">
+    
+    <decision event="npc-manipulate-end" forward="y" />
+  </script>
+  <script alias="CH_WA_Chawoonhang_0265_ai" parent="CH_WA_Chawoonhang_0262_ai">
+    
+    <decision event="npc-manipulate-end" forward="y" />
+  </script>
+
+  
+  <script alias="CH_WA_Chawoonhang_0266_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_WA_Chawoonhang_0266_ai spawn -tekim" type="debug-trace" />                
+        <reaction seq="ship_Index01_Path_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_WA_Chawoonhang_0267_ai" parent="CH_WA_Chawoonhang_0266_ai">    
+    <decision event="npc-spawn" forward="y" />
+  </script>
+  <script alias="CH_WA_Chawoonhang_0268_ai" parent="CH_WA_Chawoonhang_0266_ai">    
+    <decision event="npc-spawn" forward="y" />
+  </script>
+  <script alias="CH_WA_Chawoonhang_0269_ai" parent="CH_WA_Chawoonhang_0266_ai">    
+    <decision event="npc-spawn" forward="y" />
+  </script>
+  
+
+  <script alias="CE_WA_Dummy_0003_ai">
+    
+    <quest-decision alias="qd_1588_1">
+      <reaction-set>
+        <reaction text="qd_1588_1 -tekim" type="debug-trace" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_6125_17" type="set-npc-act" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_6125_18" type="set-npc-act" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_6125_19" type="set-npc-act" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_6125_20" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  <script alias="CE_WA_Dummy_0008_ai">
+    <quest-decision alias="qd_1588_2">
+      <reaction-set>
+        <reaction text="qd_1588_2 -tekim" type="debug-trace" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_6124_17" type="set-npc-act" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_6124_18" type="set-npc-act" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_6124_19" type="set-npc-act" />
+        <reaction seq="children_Index01_Path_act" target="zonenpcspawn:a_6124_20" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  
+  <script alias="CE_WA_Dummy_0010_ai">
+    
+    <decision event="npc-spawn">
+      
+      
+      <reaction-set probability="10">
+        <reaction text="CE_WA_Dummy_0010_ai-1 -tekim" type="debug-trace" />        
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />        
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="4" spawn-delay="3500" spawn-radius="100" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="2" spawn-delay="4500" spawn-radius="150" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="6" spawn-delay="5500" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="9">
+        <reaction text="CE_WA_Dummy_0010_ai-2 -tekim" type="debug-trace" />
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="2" index-2="4" spawn-delay="3500" type="spawn-npc-index" />        
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="6" spawn-delay="4500" spawn-radius="100" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="5">
+        <reaction text="CE_WA_Dummy_0010_ai-3 -tekim" type="debug-trace" />
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="3" spawn-delay="3500" spawn-radius="100" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="4" index-2="3" spawn-delay="4500" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="10">
+        <reaction text="CE_WA_Dummy_0010_ai-4 -tekim" type="debug-trace" />
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="3" index-2="4" spawn-delay="3500" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="2" spawn-delay="4500" spawn-radius="200" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="10">
+        <reaction text="CE_WA_Dummy_0010_ai-5 -tekim" type="debug-trace" />
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="6" spawn-delay="3500" spawn-radius="200" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="2" spawn-delay="4500" spawn-radius="200" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="5" index-2="4" spawn-delay="5500" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="10">
+        <reaction text="CE_WA_Dummy_0010_ai-6 -tekim" type="debug-trace" />
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="3" spawn-delay="3500" spawn-radius="200" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="5" spawn-delay="4500" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="6" index-2="2" spawn-delay="5500" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="11">
+        <reaction text="CE_WA_Dummy_0010_ai-7 -tekim" type="debug-trace" />
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />        
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="2" index-2="5" spawn-delay="3500" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="6" spawn-delay="4500" spawn-radius="200" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="10">
+        <reaction text="CE_WA_Dummy_0010_ai-8 -tekim" type="debug-trace" />
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />        
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="2" index-2="6" spawn-delay="3500" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="10">
+        <reaction text="CE_WA_Dummy_0010_ai-9 -tekim" type="debug-trace" />
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />        
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="6" spawn-delay="3500" spawn-radius="200" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="2" spawn-delay="4500" spawn-radius="100" type="spawn-npc-index" />
+      </reaction-set>
+      <reaction-set probability="15">
+        <reaction text="CE_WA_Dummy_0010_ai-10 -tekim" type="debug-trace" />
+        <reaction seq="Fishing_10sec_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="6" spawn-delay="3500" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="4" spawn-delay="4500" type="spawn-npc-index" />
+        <reaction attackable="y" brain="monster" group="event:npc-spawn:npc:npc-party" hate-on="n" index-1="2" spawn-delay="5500" spawn-radius="200" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="Fishing_10sec_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CE_WA_Dummy_0010 act-finished -tekim" type="debug-trace" />
+        
+        <reaction despawn-force="y" group-1="event:act-finished:npc:npc-party" type="despawn-npc-groups" />
+                
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="ME_WA_Chawoonhang_0059_ai">    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction attackable="y" brain="citizen" hate-on="n" npc="event:attacked:defender" type="set-npc-brain" />
+        
+        
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="kill" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_WA_Chawoonhang_0060_ai" parent="ME_WA_Chawoonhang_0059_ai">
+    <decision event="attacked" forward="y" />
+  </script>
+  <script alias="ME_WA_Chawoonhang_0061_ai" parent="ME_WA_Chawoonhang_0059_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="ME_WA_Chawoonhang_0061_ai spawn -tekim" type="debug-trace" />
+        <reaction caster="event:npc-spawn:npc" effect="Quest_Epic7_Lightning_Shield" target="event:npc-spawn:npc" type="invoke-effect" />
+        <reaction seq="Fishman_1sec_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="Fishman_1sec_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Fishman_1sec_act finished -tekim" type="debug-trace" />
+        <reaction seq="Fishman_1sec_act" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction caster="event:act-finished:npc" effect="Quest_Epic7_Lightning_Shield" target="event:act-finished:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked" forward="y" />
+  </script>
+  
+  
+  
+  <script alias="e_chest_fishingtool_01_ai">    
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="e_chest_fishingtool_01_ai -tekim" type="debug-trace" />
+        <reaction group="zonenpcsquad:s_6110_68" index-1="1" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_chest_fishingtool_02_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="Fishing2 skyfish -tekim" type="debug-trace" />
+        <reaction group="zonenpcsquad:s_6110_79" index-1="1" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_chest_fishingtool_03_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="Fishing2 skyfish -tekim" type="debug-trace" />
+        <reaction group="zonenpcsquad:s_6110_85" index-1="1" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_chest_fishingtool_04_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="Fishing2 skyfish -tekim" type="debug-trace" />
+        <reaction group="zonenpcsquad:s_6110_103" index-1="1" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_chest_fishingtool_05_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="Fishing2 skyfish -tekim" type="debug-trace" />
+        <reaction group="zonenpcsquad:s_6110_109" index-1="1" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_chest_fishingtool_06_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="Fishing2 skyfish -tekim" type="debug-trace" />
+        <reaction group="zonenpcsquad:s_6110_115" index-1="1" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+    
+  
+  <script alias="MH_WA_Chawoonhang_0051_ai">
+    <decision event="npc-spawn">
+      
+      <reaction-set>
+        <reaction text="MH_WA_Chawoonhang_0051_ai spawn -tekim" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+        <reaction flag="n" target="event:npc-spawn:npc" type="set-npc-interactive" />
+        <reaction attackable="n" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />        
+        <reaction attack-target="event:npc-spawn:npc" group="event:npc-spawn:npc:npc-party" index-1="2" type="spawn-npc-index" />
+        <reaction attack-target="event:npc-spawn:npc" group="event:npc-spawn:npc:npc-party" index-1="3" type="spawn-npc-index" />        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="wait_6sec_act" />
+      </filter-set>      
+        <reaction-set probability="20">
+          <reaction text="Chawoonhang_0048 wait_6sec_act -tekim" type="debug-trace" />
+          <reaction from="event:act-finished:npc" social="MH_WA_Chawoonhang_0051_soc_01" type="play-social" />
+          <reaction seq="choon_winning_act" target="event:act-finished:npc" type="set-npc-act" />
+        </reaction-set>
+        <reaction-set probability="20">
+          <reaction text="Chawoonhang_0048 wait_6sec_act -tekim" type="debug-trace" />
+          <reaction from="event:act-finished:npc" social="MH_WA_Chawoonhang_0051_soc_02" type="play-social" />
+          <reaction seq="choon_winning_act" target="event:act-finished:npc" type="set-npc-act" />
+        </reaction-set>
+        <reaction-set probability="30">
+          <reaction text="Chawoonhang_0048 wait_6sec_act -tekim" type="debug-trace" />
+          <reaction from="event:act-finished:npc" social="MH_WA_Chawoonhang_0053_soc_01" type="play-social" />
+          <reaction seq="choon_winning_act" target="event:act-finished:npc" type="set-npc-act" />
+        </reaction-set>
+        <reaction-set probability="30">
+          <reaction text="Chawoonhang_0048 wait_6sec_act -tekim" type="debug-trace" />
+          <reaction from="event:act-finished:npc" social="MH_WA_Chawoonhang_0053_soc_02" type="play-social" />
+          <reaction seq="choon_winning_act" target="event:act-finished:npc" type="set-npc-act" />
+        </reaction-set>      
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="choon_winning_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0048 choon_winning_act -tekim" type="debug-trace" />        
+        <reaction seq="choon_winning_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  <script alias="MH_WA_Chawoonhang_0052_ai" parent="MH_WA_Chawoonhang_0051_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_WA_Chawoonhang_0053_ai" parent="MH_WA_Chawoonhang_0051_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+  <script alias="MH_WA_Chawoonhang_0054_ai" parent="MH_WA_Chawoonhang_0051_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="act-finished" forward="y" />
+  </script>
+
+  <script alias="ME_WA_Chawoonhang_0048_ai">
+    <decision event="npc-spawn">     
+      <reaction-set>
+        <reaction text="ME_WA_Chawoonhang_0048_ai spawn -tekim" type="debug-trace" />        
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />                        
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="zonenpcspawn:a_6123_3:reg-1" subject2="zonenpcspawn:a_6123_3:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_WA_Chawoonhang_0048_ai 3killed -tekim" type="debug-trace" />
+        <reaction caster="event:attacked:defender" effect="Gang_Play_Additional_die_damage" target="event:attacked:defender" type="invoke-effect" />
+        <reaction seq="wait_6sec_act" target="event:attacked:attacker" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0048_ai attacked pc -tekim" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="diff-npc-number" />             
+        <reaction amount="100" opponent="event:attacked:attacker" target="event:attacked:defender" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="ME_WA_Chawoonhang_0048_ai attacked -tekim" type="debug-trace" />
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+        <reaction amount="10" opponent="event:attacked:defender:npc-party:1" target="event:attacked:defender:npc-party:2" type="diff-npc-hate" />
+        <reaction amount="10" opponent="event:attacked:defender:npc-party:1" target="event:attacked:defender:npc-party:3" type="diff-npc-hate" />
+        <reaction amount="100" opponent="event:attacked:attacker" target="event:attacked:defender" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    
+    
+    
+  </script>
+  
+  <script alias="ME_WA_Chawoonhang_0049_ai" parent="ME_WA_Chawoonhang_0048_ai">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="attacked" forward="y" />
+  </script>
+
+  
+  
+  
+  <script alias="MH_WA_Chawoonhang_0046_ai">
+    <quest-decision alias="qd_1585_1">
+      <reaction-set>
+        <reaction text="qd_1585_1 -kte" type="debug-trace" />
+        
+        
+           
+
+        <reaction respawn-after-despawn="y" target-1="case:npc-bleeding-occured:npc" type="despawn-npc" />
+        
+        
+        <reaction group="case:npc-bleeding-occured:npc:npc-party" index-1="2" spawn-target="case:npc-bleeding-occured:npc" type="spawn-npc-index" />
+        <reaction group="case:npc-bleeding-occured:npc:npc-party" index-1="3" index-2="4" spawn-delay="1000" spawn-radius="200" spawn-target="case:npc-bleeding-occured:npc" type="spawn-npc-index" />
+      </reaction-set>
+    </quest-decision>
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Spawn -kte" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="MH_WA_Chawoonhang_0046_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path01 pause1 -kte" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />    
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter party="zonenpcsquad:s_6110_34" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path01 pause2 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+                
+        <reaction seq="CH_WA_Chawoonhang_0208_act_01" target="event:act-paused:npc:npc-party:5" type="set-npc-act" />        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter party="zonenpcsquad:s_6110_40" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path01 pause2 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0242_act_01" target="event:act-paused:npc:npc-party:5" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter party="zonenpcsquad:s_6110_47" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path01 pause2 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0245_act_01" target="event:act-paused:npc:npc-party:5" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter party="zonenpcsquad:s_6110_53" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path01 pause2 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0248_act_01" target="event:act-paused:npc:npc-party:5" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter party="zonenpcsquad:s_6110_59" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path01 pause2 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0251_act_01" target="event:act-paused:npc:npc-party:5" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path02 pause3 -kte" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+        <filter party="zonenpcsquad:s_6110_34" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path02 pause4 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0208_soc_01" target="event:act-paused:npc:npc-party:6" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+        <filter party="zonenpcsquad:s_6110_40" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path02 pause4 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0242_act_01" target="event:act-paused:npc:npc-party:6" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+        <filter party="zonenpcsquad:s_6110_47" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path02 pause4 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0245_act_01" target="event:act-paused:npc:npc-party:6" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+        <filter party="zonenpcsquad:s_6110_53" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path02 pause4 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0248_act_01" target="event:act-paused:npc:npc-party:6" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+        <filter party="zonenpcsquad:s_6110_59" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path02 pause4 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0251_act_01" target="event:act-paused:npc:npc-party:6" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path03 pause5 -kte" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+        <filter party="zonenpcsquad:s_6110_34" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path03 pause6 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0208_soc_01" target="event:act-paused:npc:npc-party:7" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+        <filter party="zonenpcsquad:s_6110_40" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path03 pause6 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0242_act_01" target="event:act-paused:npc:npc-party:7" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+        <filter party="zonenpcsquad:s_6110_47" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path03 pause6 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0245_act_01" target="event:act-paused:npc:npc-party:7" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+        <filter party="zonenpcsquad:s_6110_53" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path03 pause6 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0248_act_01" target="event:act-paused:npc:npc-party:7" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+        <filter party="zonenpcsquad:s_6110_59" subject="event:act-paused:npc" subject2="event:act-paused:npc" type="npc-party" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Chawoonhang_0046 Path03 pause6 -kte" type="debug-trace" />
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:act-paused:npc" type="set-npc-brain" />
+        
+        <reaction seq="CH_WA_Chawoonhang_0251_act_01" target="event:act-paused:npc:npc-party:7" type="set-npc-act" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>        
+        <reaction text="Chawoonhang_0046 attacked -kte" type="debug-trace" />                
+        <reaction caster="event:attacked:attacker" effect="ME_ID2_Common_Force_Damage_2000" target="event:attacked:defender" type="invoke-effect" />
+        <reaction caster="event:attacked:attacker" effect="ME_ID2_Common_Force_Damage_2000" target="event:attacked:defender" type="invoke-effect" />
+        <reaction caster="event:attacked:attacker" effect="ME_ID2_Common_Force_Damage_1990" target="event:attacked:defender" type="invoke-effect" />
+        <reaction caster="event:attacked:attacker" effect="ME_ID2_Common_Force_Damage_1990" target="event:attacked:defender" type="invoke-effect" />
+        
+        
+        <reaction target="event:attacked:defender" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:attacked:defender" type="set-npc-brain" />
+        
+        
+        <reaction respawn-after-despawn="y" target-1="event:attacked:defender" type="despawn-npc" />
+        <reaction group="event:attacked:defender:npc-party" index-1="2" spawn-target="event:attacked:defender" type="spawn-npc-index" />
+        <reaction group="event:attacked:defender:npc-party" index-1="3" index-2="4" spawn-delay="1000" spawn-radius="200" spawn-target="event:attacked:defender" type="spawn-npc-index" />        
+      </reaction-set>
+    </decision>
+    
+  </script>
+
+  <script alias="MH_WA_Chawoonhang_0056_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="MH_WA_Chawoonhang_0056_ai spawn -tekim" type="debug-trace" />        
+        <reaction seq="MH_WA_Chawoonhang_0046_Despawn_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="CH_WA_Chawoonhang_0211_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_WA_Chawoonhang_0211_ai spawn -tekim" type="debug-trace" />        
+        <reaction seq="CH_WA_Chawoonhang_0211_act_01" target="event:npc-spawn:npc" type="set-npc-act" />        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WA_Chawoonhang_0211_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_WA_Chawoonhang_0211_act_01 End -tekim" type="debug-trace" />
+        
+        <reaction despawn-force="y" group="event:act-finished:npc:npc-party" index-1="2" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="event:act-finished:npc:npc-party" index-1="3" index-2="4" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+
+  </table>

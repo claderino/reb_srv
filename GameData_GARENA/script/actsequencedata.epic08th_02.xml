@@ -1,0 +1,1565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.epic08th_02.xml-->
+  
+  
+  
+
+  
+  
+  
+  <act-sequence alias="id_burrow_set1_peace" indexed-detect="1" type="peace">
+    <action hide="y" type="hide" />
+  </act-sequence>
+
+    
+
+  
+  
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0002_1_peace" indexed-detect="1" type="peace">
+    <action social="MH_WA_Epic8_Monk_0002_soc_05" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="MH_WA_Epic8_Monk_0002_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="MH_WA_Epic8_Monk_0002_soc_03" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0002_2_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_Monk_0002_soc_02" type="social" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_Monk_0002_soc_04" type="social" />
+  </act-sequence>
+  
+  
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0001_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_JinMeong_0001_soc_03" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0001_2_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_JinMeong_0001_soc_04" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_JinMeong_0001_soc_08" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0001_3_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_JinMeong_0001_soc_06" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="6520_p3" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0005_1_act" indexed-detect="1" type="act">
+    <action pathway="6520_p1" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_Monk_0005_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_Monk_0005_soc_02" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_Monk_0005_soc_03" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0005_2_act" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action pathway="6520_p2" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0003_1_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="6520_p4" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0004_1_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="6520_p5" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0004_1_act" indexed-detect="1" type="act">
+    <action pathway="6518_p1" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_JinMeong_0004_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0004_2_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action social="MH_WA_Epic8_JinMeong_0004_soc_07" type="social" />
+    <action step="1" type="pause" />
+    <action duration="1500" type="stay" />
+    <action pathway="6518_p20" type="pathway" />
+    <action step="2" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0004_3_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_JinMeong_0004_soc_08" type="social" />
+    <action duration="3000" type="stay" />
+    
+  </act-sequence>
+  
+    
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0003_1_peace" indexed-detect="1" type="peace">
+    <action social="MH_WA_Epic8_0259_soc_01" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0007_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_JinMeong_0008_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p17" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0024_1_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="6518_p8" type="pathway" />
+    <action social="MH_WA_Epic8_Monk_0024_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0024_2_act" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_Monk_0024_soc_01" type="social" />
+    <action pathway="6518_p10" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0024_3_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="6518_p12" type="pathway" />
+    <action social="MH_WA_Epic8_Monk_0003_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0024_4_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_Monk_0026_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0024_5_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="6518_p19" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0025_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_Monk_0025_soc_01" type="social" />
+    <action pathway="6518_p9" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0025_2_act" indexed-detect="1" type="act">
+    <action duration="4500" type="stay" />
+    <action pathway="6518_p11" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0025_3_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="6518_p13" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_Monk_0004_soc_02" type="social" />
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0025_4_act" indexed-detect="1" type="act">
+    <action duration="2200" type="stay" />
+    <action pathway="6518_p18" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Demon_0021_1_act" indexed-detect="1" type="act">
+    <action pathway="6518_p21" type="pathway" />
+  </act-sequence>
+  
+  
+ 
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0006_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_Monk_0006_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p2" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0007_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_Monk_0007_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p3" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0008_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_Monk_0008_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p4" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0006_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p14" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0007_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p15" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0008_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p16" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0006_3_act" indexed-detect="1" type="act">
+    <action pathway="6518_p2" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0007_3_act" indexed-detect="1" type="act">
+    <action pathway="6518_p3" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0008_3_act" indexed-detect="1" type="act">
+    <action pathway="6518_p4" type="pathway" />
+  </act-sequence>
+  
+  
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0009_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_Monk_0020_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p5" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0010_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_Monk_0021_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p6" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_0011_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_Monk_0022_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6518_p7" type="pathway" />
+  </act-sequence>
+
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_Monk_1_peace" detect="none" type="peace">
+    <action area="1" max-idle-sec="3" max-move-count="3" min-idle-sec="2" min-move-count="2" type="indexed-movearound" />
+    <action social="1" type="indexed-social" />
+    <action area="1" max-idle-sec="3" max-move-count="3" min-idle-sec="2" min-move-count="2" type="indexed-movearound" />
+    <action social="2" type="indexed-social" />
+  </act-sequence>
+
+  
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0001_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_CheolMuGoe_0001_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_CheolMuGoe_0001_soc_02" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0001_2_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_CheolMuGoe_0001_soc_03" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  
+
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0001_3_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_CheolMuGoe_0001_soc_05" type="social" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_CheolMuGoe_0001_soc_06" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  
+  
+
+  
+
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_0232_1_act" indexed-detect="1" type="act">
+    <action step="1" type="pause" />
+    <action duration="12000" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_Elephant_0021_1_act" indexed-detect="1" type="act">
+    <action pathway="6523_p4" type="pathway" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="ME_WA_Epic8_Elephant_0021_2_act" indexed-detect="1" type="act">
+    <action duration="5000" type="stay" />
+    <action social="ME_WA_Epic8_Elephant_0021_soc_01" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_Elephant_0021_3_act" indexed-detect="1" type="act">
+    <action social="ME_WA_Epic8_Elephant_0021_soc_02" type="social" />
+    <action pathway="6523_p3" type="pathway" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0005_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_JinMeong_0005_soc_06" type="social" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_JinMeong_0005_soc_01" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="6525_p3" type="pathway" />
+    <action social="MH_WA_Epic8_JinMeong_0006_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_JinMeong_0006_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="3" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_JinMeong_0005_2_act" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_JinMeong_0006_soc_04" type="social" />
+    <action duration="1500" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="4500" type="stay" />
+    <action social="MH_WA_Epic8_JinMeong_0005_soc_02" type="social" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0002_1_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_CheolMuGoe_0002_soc_03" type="social" />
+    <action pathway="6525_p1" type="pathway" />
+    <action social="MH_WA_Epic8_CheolMuGoe_0002_soc_08" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6525_p2" type="pathway" />
+    <action social="MH_WA_Epic8_CheolMuGoe_0002_soc_04" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0002_5_act" detect="none" type="act">
+    <action social="MH_WA_Epic8_CheolMuGoe_0002_soc_07" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="5" type="pause" />
+    <action duration="1500" type="stay" />
+    <action social="MH_WA_Epic8_CheolMuGoe_0002_battle_01" type="social" />
+    <action pathway="6525_p6" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0002_5_peace" detect="both-360" type="peace">
+    <action duration="1000" type="stay" />
+    <action area="6525_28" max-idle-sec="2" max-move-count="2" min-idle-sec="1" min-move-count="1" type="movearound" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0002_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="6525_p4" type="pathway" />
+    <action social="MH_WA_Epic8_CheolMuGoe_0002_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="2" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0002_3_act" indexed-detect="1" type="act">
+    
+    <action duration="3000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_CheolMuGoe_0002_soc_02" type="social" />
+  </act-sequence>    
+
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0002_4_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="6525_p5" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_Zombie_0014_1_act" detect="none" type="act">
+    <action duration="3000" type="stay" />
+    <action pathway="6525_p10" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_Zombie_0014_2_act" detect="none" type="act">
+    <action duration="3000" type="stay" />
+    <action pathway="6525_p8" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_Zombie_0014_3_act" detect="none" type="act">
+    <action duration="3000" type="stay" />
+    <action pathway="6525_p9" type="pathway" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="ME_WA_Epic8_Zombie_0014_4_peace" detect="none" type="peace">
+    <action duration="3000" type="stay" />
+    <action area="1" max-idle-sec="1" max-move-count="3" min-idle-sec="1" min-move-count="2" type="indexed-movearound" />
+    <action enter_prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_0124_1_act" indexed-detect="1" type="act">
+    <action duration="4000" type="stay" />
+    <action social="MH_WA_Epic8_0124_soc_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_0125_1_act" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+    <action social="MH_WA_Epic8_0125_soc_01" type="social" />
+    <action duration="5000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_0126_1_act" indexed-detect="1" type="act">
+    <action duration="8000" type="stay" />
+    
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_0127_1_act" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+    <action social="MH_WA_Epic8_0127_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_0128_1_act" indexed-detect="1" type="act">
+    <action duration="4500" type="stay" />
+    <action social="MH_WA_Epic8_0128_soc_01" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_0129_1_act" indexed-detect="1" type="act">
+    <action duration="7000" type="stay" />
+    
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+   
+  
+  <act-sequence alias="MH_WA_Epic8_0130_1_act" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+    <action social="MH_WA_Epic8_0130_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_0131_1_act" indexed-detect="1" type="act">
+    <action duration="3500" type="stay" />
+    <action social="MH_WA_Epic8_0131_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_RyeoJin_0001_1_act" indexed-detect="1" type="act">
+    <action duration="6500" type="stay" />
+    <action pathway="6527_p9" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_RyeoJin_0001_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_RyeoJin_0001_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_RyeoJin_0001_soc_02" type="social" />
+    <action duration="3000" type="stay" />
+    <action pathway="6527_p10" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_0123_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_0123_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_0123_soc_02" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="5" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="6" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="7" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="8" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="9" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_0123_2_act" indexed-detect="1" type="act">
+    <action pathway="6527_p32" type="pathway" />
+    <action social="MH_WA_Epic8_0123_soc_03" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_0123_3_act" indexed-detect="1" type="act">
+    <action duration="5000" type="stay" />
+    <action social="MH_WA_Epic8_0123_soc_04" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_0123_4_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_0140_1_peace" detect="pc-360" type="peace">
+    <action area="1" max-idle-sec="3" max-move-count="2" min-idle-sec="2" min-move-count="1" type="indexed-movearound" />
+    
+  </act-sequence>
+  
+  
+  <act-sequence alias="MH_WA_Epic8_0117_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_JeokpaewangRaid_0014_combatstart_02" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+  
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_HaRyeong_0001_1_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="6527_p16" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_HaRyeong_0001_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="6527_p31" type="pathway" />
+    <action pathway="6527_p34" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_HaRyeong_0001_3_act" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action pathway="6527_p28" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+  
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_kun_0003_1_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_kun_0003_soc_02" type="social" />
+    <action pathway="6527_p12" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_kun_0005_1_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_kun_0005_soc_02" type="social" />
+    <action pathway="6527_p14" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_kun_0006_1_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_kun_0006_soc_02" type="social" />
+    <action pathway="6527_p15" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_kun_0003_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+      <action pathway="6527_p18" type="pathway" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_kun_0005_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="6527_p20" type="pathway" />
+    <action duration="5000" type="stay" />
+    <action social="MH_WA_Epic8_kun_0005_soc_03" type="social" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_kun_0006_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+     <action pathway="6527_p21" type="pathway" />
+  </act-sequence>
+  
+
+  
+  <act-sequence alias="MH_WA_Epic8_kun_0003_3_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="6527_p24" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_kun_0005_3_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="6527_p26" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_kun_0006_3_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action pathway="6527_p27" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_NamedKun_0001_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_NamedKun_0001_soc_04" type="social" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_NamedKun_0001_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="4000" type="stay" />
+    <action social="MH_WA_Epic8_NamedKun_0001_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_NamedKun_0001_2_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_NamedKun_0001_soc_03" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="6527_p33" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  
+
+  
+
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_NamedKun_0002_1_act" indexed-detect="1" type="act">
+    
+    <action duration="3000" type="stay" />
+    <action pathway="6574_p1" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_0155_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_0155_soc_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="6535_p2" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+    <action social="MH_WA_Epic8_0155_soc_02" type="social" />
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_0155_2_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_0155_soc_03" type="social" />
+    <action duration="5000" type="stay" />
+    <action social="MH_WA_Epic8_0155_soc_04" type="social" />
+    <action duration="5000" type="stay" />
+    <action social="MH_WA_Epic8_0155_soc_05" type="social" />
+    <action duration="3500" type="stay" />
+    <action social="MH_WA_Epic8_0155_soc_06" type="social" />
+    <action step="2" type="pause" />
+    <action pathway="6535_p3" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_0155_3_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_0155_soc_08" type="social" />
+    <action duration="3000" type="stay" />
+    <action pathway="6535_p4" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_GoldBird_0001_7_act" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+    <action pathway="6535_p10" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_GoldBird_0001_1_act" indexed-detect="1" type="act">
+    <action social="ME_WA_Epic8_GoldBird_0001_soc_01" type="social" />
+    <action step="2" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_GoldBird_0001_2_act" indexed-detect="1" type="act">
+    <action social="ME_WA_Epic8_GoldBird_0001_soc_02" type="social" />
+    <action duration="3000" type="stay" />
+    <action pathway="6535_p5" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="ME_WA_Epic8_GoldBird_0001_soc_03" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_GoldBird_0001_3_act" indexed-detect="1" type="act">
+    <action pathway="6535_p6" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="ME_WA_Epic8_GoldBird_0001_soc_03" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_GoldBird_0001_4_act" indexed-detect="1" type="act">
+    <action pathway="6535_p7" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="ME_WA_Epic8_GoldBird_0001_soc_03" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_GoldBird_0001_5_act" indexed-detect="1" type="act">
+    <action pathway="6535_p8" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="ME_WA_Epic8_GoldBird_0001_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_GoldBird_0001_6_act" indexed-detect="1" type="act">
+    <action social="ME_WA_Epic8_GoldBird_0001_soc_04" type="social" />
+    <action duration="1500" type="stay" />
+    <action pathway="6535_p11" type="pathway" />
+    <action step="3" type="pause" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="ME_WA_Dummy_0055_1_act" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action step="1" type="pause" />
+    
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="ME_WA_Epic8_0216_1_peace" indexed-detect="1" type="peace">
+    <action area="1" max-idle-sec="5" max-move-count="3" min-idle-sec="3" min-move-count="2" type="indexed-movearound" />
+    <action enter_prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+
+
+  
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_NamedKun_0003_1_act" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_NamedKun_0003_soc_01" type="social" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_NamedKun_0003_2_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_NamedKun_0003_soc_02" type="social" />
+    <action duration="1500" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="1000" type="stay" />
+    <action pathway="6572_p1" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_NamedKun_0004_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_NamedKun_0004_soc_02" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="6572_p2" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_0219_1_act" indexed-detect="1" type="act">
+    <action step="1" type="pause" />
+    <action duration="1000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="2000" type="stay" />
+    <action step="3" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_0219_2_act" indexed-detect="1" type="act">
+    <action social="MH_MuRimMaeng_0005_battle_01_soc" type="social" />
+    <action duration="1500" type="stay" />
+    <action pathway="6540_p2" type="pathway" />
+  </act-sequence>
+  
+  
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_NamedKun_0010_1_act" indexed-detect="1" type="act">
+    <action pathway="6540_p1" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="ME_WA_Epic8_NamedKun_0010_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_NamedKun_0010_2_act" indexed-detect="1" type="act">
+    <action step="1" type="pause" />
+    <action duration="1000" type="stay" />
+    <action social="ME_WA_Epic8_NamedKun_0010_soc_02" type="social" />
+    <action duration="1500" type="stay" />
+    <action step="2" type="pause" />
+    <action pathway="6540_p3" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+  
+
+  
+
+  
+
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_BeonYang_0003_1_act" detect="pc-360" type="act">
+    <action social="ME_WA_Epic8_BeonYang_0003_soc_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="1500" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_BeonYang_0003_3_act" detect="pc-360" type="act">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0003_1_act" detect="pc-360" type="act">
+    <action social="MH_WA_Epic8_CheolMuGoe_0003_soc_02" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_NamedKun_0012_3_act" detect="pc-360" type="act">
+    <action social="MH_WA_Epic8_NamedKun_0003_soc_03" type="social" />
+    <action duration="1500" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="ME_WA_Epic8_BeonYang_0003_2_act" detect="pc-360" type="act">
+    <action duration="2000" type="stay" />
+    <action social="ME_WA_Epic8_BeonYang_0003_soc_02" type="social" />
+    <action duration="1500" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_BeonA_0003_1_act" detect="pc-360" type="act">
+    <action duration="4000" type="stay" />
+    <action social="MH_WA_Epic8_BeonA_0003_despawn_01" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_ChinChin_0002_1_act" detect="pc-360" type="act">
+    <action duration="8000" type="stay" />
+    <action pathway="6542_p3" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  <act-sequence alias="MH_WA_Epic8_ChinChin_0002_2_act" detect="pc-360" type="act">
+    <action duration="8100" type="stay" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_ChinChin_0003_1_act" detect="pc-360" type="act">
+    <action duration="3000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="1000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="3000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="6000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_ChinChin_0003_2_act" detect="pc-360" type="act">
+    <action duration="1000" type="stay" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_ChinChin_0003_3_act" detect="pc-360" type="act">
+    <action duration="1000" type="stay" />
+  </act-sequence>
+  
+  
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_ChinChin_0008_1_act" detect="pc-360" type="act">
+    
+    <action duration="1000" type="stay" />
+    <action pathway="6565_p1" type="pathway" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0005_1_act" detect="pc-360" type="act">
+    <action social="MH_WA_Epic8_CheolMuGoe_0005_soc_02" type="social" />
+    <action pathway="6565_p2" type="pathway" />
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+  
+
+  
+  
+  <act-sequence alias="ME_WA_Epic8_CheolMuGoe_0006_1_act" detect="pc-360" type="act">
+    <action duration="1000" type="stay" />
+    <action social="ME_WA_Epic8_CheolMuGoe_0006_despawn_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="6565_p3" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_MuSin_0002_1_act" detect="pc-360" type="act">
+    <action social="ME_WA_Epic8_MuSin_0001_soc_01" type="social" />
+    <action duration="6000" type="stay" />
+  </act-sequence>
+  
+  
+  
+
+  
+
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_0175_1_act" detect="none" type="act">
+    
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="ME_WA_Epic8_0175_2_act" detect="none" type="act">
+    <action duration="1000" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="ME_WA_Epic8_0175_3_act" detect="none" type="act">
+    <action duration="1700" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="ME_WA_Epic8_0175_4_act" detect="pc-180" type="act">
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_0175_4_peace" detect="pc-360" type="peace">
+    <action area="1" max-idle-sec="3" max-move-count="3" min-idle-sec="2" min-move-count="1" type="indexed-movearound" />
+    <action enter_prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+
+  
+  <act-sequence alias="ME_WA_Epic8_0175_1_peace" indexed-detect="1" type="peace">
+    <action duration="8000" type="stay" />
+    <action social="ME_WA_Epic8_0180_soc_01" type="social" />
+  </act-sequence>
+  
+  <act-sequence alias="ME_WA_Epic8_0179_1_peace" indexed-detect="1" type="peace">
+    <action social="ME_WA_Epic8_0179_soc_01" type="social" />
+    <action duration="8000" type="stay" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="ME_WA_Epic8_0175_5_peace" detect="pc-360" type="peace">
+    <action area="1" max-idle-sec="3" max-move-count="3" min-idle-sec="2" min-move-count="1" type="indexed-movearound" />
+    <action enter_prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+  
+
+  
+  
+  <act-sequence alias="ME_WA_Dummy_0046_3_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_0134_soc_06" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Dummy_0046_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_0134_soc_06" type="social" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Dummy_0046_2_act" indexed-detect="1" type="act">
+    <action social="ME_WA_Dummy_0046_soc_01" type="social" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+  
+
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_0134_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_0134_soc_07" type="social" />
+    <action duration="15000" type="stay" />
+  </act-sequence>  
+
+  
+  <act-sequence alias="MH_WA_Epic8_0134_2_act" indexed-detect="1" type="act">
+    
+    <action pathway="6552_p12" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_0134_3_act" indexed-detect="1" type="act">
+    <action pathway="6552_p13" type="pathway" />
+  </act-sequence>  
+     
+  
+  <act-sequence alias="MH_WA_Epic8_0134_4_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_0134_soc_03" type="social" />
+    <action duration="2500" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="2500" type="stay" />
+    <action social="MH_WA_Epic8_0134_soc_04" type="social" />
+    <action duration="4500" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="3500" type="stay" />
+    <action social="MH_WA_Epic8_0134_soc_05" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_0134_5_act" indexed-detect="1" type="act">
+    <action pathway="6552_p10" type="pathway" />
+    <action pathway="6552_p5" type="pathway" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0004_1_act" indexed-detect="1" type="act">
+    <action pathway="6552_p4" type="pathway" />
+    <action pathway="6552_p16" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_CheolMuGoe_0004_soc_01" type="social" />
+    <action duration="1500" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="2500" type="stay" />
+    <action step="2" type="pause" />    
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_CheolMuGoe_0004_2_act" indexed-detect="1" type="act">
+    <action pathway="6552_p11" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action pathway="6552_p6" type="pathway" />
+  </act-sequence>
+
+
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_JinSeoYeon_0005_con_start_act" indexed-detect="1" type="act">
+    
+    <action duration="4000" type="stay" />
+    <action pathway="6552_p15" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_JinSeoYeon_0005_2_peace" indexed-detect="1" type="peace">
+    <action social="ME_WA_Epic8_JinSeoYeon_0005_soc_04" type="social" />
+    <action duration="8000" type="stay" />
+    <action social="ME_WA_Epic8_JinSeoYeon_0005_soc_03" type="social" />
+    <action duration="8000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_JinSeoYeon_0005_4_peace" indexed-detect="1" type="peace">
+    <action social="ME_WA_Epic8_JinSeoYeon_0005_soc_01" type="social" />
+    <action duration="8000" type="stay" />
+    <action social="ME_WA_Epic8_JinSeoYeon_0005_soc_05" type="social" />
+    <action duration="8000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_JinSeoYeon_0005_5_peace" indexed-detect="1" type="peace">
+    <action social="ME_WA_Epic8_JinSeoYeon_0005_soc_02" type="social" />
+    <action duration="8000" type="stay" />
+    <action social="ME_WA_Epic8_JinSeoYeon_0005_soc_03" type="social" />
+    <action duration="8000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_JinSeoYeon_0005_con_ing1_act" indexed-detect="1" type="act">
+    <action pathway="6552_p7" type="pathway" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="ME_WA_Epic8_JinSeoYeon_0005_con_ing2_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_JinSeoYeon_0004_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="6552_p8" type="pathway" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="ME_WA_Epic8_JinSeoYeon_0005_con_ing3_act" indexed-detect="1" type="act">
+    <action pathway="6552_p9" type="pathway" />
+  </act-sequence>
+    
+  
+  <act-sequence alias="ME_WA_Epic8_JinSeoYeon_0005_3_act" indexed-detect="1" type="act">
+    <action social="ME_WA_Epic8_JinSeoYeon_0005_soc_07" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="6552_p14" type="pathway" />
+  </act-sequence>
+
+  
+
+  
+  
+  <act-sequence alias="ME_WA_Epic8_0183_1_peace" detect="pc-360" type="peace">
+    <action area="1" max-idle-sec="3" max-move-count="2" min-idle-sec="2" min-move-count="1" type="indexed-movearound" />
+    <action enter_prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_0183_2_peace" detect="none" type="peace">
+    <action social="ME_WA_Epic8_0176_01_soc_01" type="social" />
+    <action duration="12000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_WA_Epic8_0183_3_peace" detect="none" type="peace">
+    <action duration="6000" type="stay" />
+    <action social="ME_WA_Epic8_0178_soc_01" type="social" />
+    <action duration="6000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_WA_Epic8_0183_4_peace" detect="none" type="peace">
+    <action social="ME_WA_Epic8_0177_01_soc_01" type="social" />
+    <action duration="12000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_WA_Epic8_0183_5_peace" detect="none" type="peace">
+    <action duration="6000" type="stay" />
+    <action social="ME_WA_Epic8_0180_soc_01" type="social" />
+    <action duration="6000" type="stay" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="ME_WA_Epic8_MyeongGye_0001_1_act" indexed-detect="1" type="act">
+    <action duration="3000" type="stay" />
+    <action social="ME_WA_Epic8_MyeongGye_0001_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+
+
+
+
+  
+
+  
+  
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0007_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_OST_0007_despawn_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action pathway="6507_2_P" type="pathway" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+
+  
+
+  
+  
+  
+  
+  <act-sequence alias="ME_WA_Epic8_OSTDummy_0003_1_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_OSTDummy_0003_2_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="19000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_OSTDummy_0003_3_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="25500" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="ME_WA_Epic8_OSTDummy_0003_4_act" indexed-detect="1" type="act">
+    <action duration="2000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="9000" type="stay" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_0_act" indexed-detect="1" type="act">
+    <action pathway="6577_2_P_9" type="pathway" />
+    <action duration="2000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0008_spawn_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0008_spawn_02" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_1go_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_OST_0008_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action pathway="6577_2_P_1" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action step="2" type="pause" />
+    <action social="MH_WA_Epic8_OST_0008_soc_02" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_1ing_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_OST_0008_soc_03" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6577_2_P_2" type="pathway" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+    
+  
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_2go_act" indexed-detect="1" type="act">
+    <action pathway="6577_2_P_3" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action step="3" type="pause" />
+    <action social="MH_WA_Epic8_OST_0008_soc_04" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_2ing_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_OST_0008_soc_05" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6577_2_P_4" type="pathway" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_3go_act" indexed-detect="1" type="act">
+    <action pathway="6577_2_P_5" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action step="4" type="pause" />
+    <action social="MH_WA_Epic8_OST_0008_soc_06" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_3ing_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_OST_0008_soc_07" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6577_2_P_6" type="pathway" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_4go_act" indexed-detect="1" type="act">
+    <action pathway="6577_2_P_7" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action step="5" type="pause" />
+    <action social="MH_WA_Epic8_OST_0008_soc_08" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_4ing_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_OST_0008_soc_09" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="6577_2_P_8" type="pathway" />
+    <action duration="1000" type="stay" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_5_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0008_soc_10" type="social" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0008_soc_11" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0008_6_act" indexed-detect="1" type="act">
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0008_despawn_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0008_despawn_02" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="6" type="pause" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+  
+ 
+  
+
+  
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0001_1_act" indexed-detect="1" type="act">
+    <action social="MH_WA_Epic8_OST_0001_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0001_soc_02" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0001_2_act" indexed-detect="1" type="act">
+    <action pathway="6577_5_P" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0001_spawn_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="2" type="pause" />
+    <action duration="4000" type="stay" />
+    <action step="3" type="pause" />
+    <action duration="4000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0001_spawn_02" type="social" />
+    <action duration="3000" type="stay" />
+    <action step="4" type="pause" />
+    <action duration="1000" type="stay" />
+    <action step="5" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_WA_Epic8_OST_0002_1_act" indexed-detect="1" type="act">
+    <action pathway="6577_6_P" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action social="MH_WA_Epic8_OST_0002_spawn_01" type="social" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="ME_WA_Epic8_OSTDummy_0002_1_act" indexed-detect="1" type="act">
+    <action duration="215000" type="stay" />
+    <action respawn="y" type="despawn" />
+  </act-sequence>
+  
+  
+  
+  
+</table>

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.20022.xml-->
+  <quest alias="q_sub_20022" broadcast-category="field" category="normal" id="20022" max-repeat="-1" save-type="except-completion">
+    <acquisition level="45">
+      <case acquire-quest="y" grocery="Quest_Scroll_LegendMaterial_0001" item="Quest_Scroll_LegendMaterial_0001" party-broadcast="n" required-item-1="Quest_Scroll_LegendMaterial_0001" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+      <fixed-reward slot-1="item:Quest_Grocery_LegendMaterial_0001" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case acquire-quest="n" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case grocery="Quest_Grocery_LegendMaterial_0008" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0008" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_musintower_baekwoon_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_kongdolheui_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_unguk_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case object="npc:ch_eunggaman_0001" party-broadcast="n" progress-mission="y" required-money="50000000" type="talk" />
+        <completion-loss money="50000000" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case grocery="Quest_Grocery_LegendMaterial_0003" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0003" required-item-2="Quest_Grocery_LegendMaterial_0001" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" type="approach" />
+        <completion-loss item-1="Quest_Grocery_LegendMaterial_0001" item-count-1="0" />
+        <fixed-reward slot-1="item:Quest_Grocery_LegendMaterial_0002" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case grocery="Quest_Grocery_LegendMaterial_0004" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0004" required-item-2="Quest_Grocery_LegendMaterial_0002" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" type="approach" />
+        <completion-loss item-1="Quest_Grocery_LegendMaterial_0002" item-count-1="0" />
+        <fixed-reward job-1="검사" slot-1="item:Quest_Weapon_Sword_1017" />
+        <fixed-reward job-1="권사" slot-1="item:Quest_Weapon_Gauntlet_1017" />
+        <fixed-reward job-1="기공사" slot-1="item:Quest_Weapon_Aura-bangle_1017" />
+        <fixed-reward job-1="역사" slot-1="item:Quest_Weapon_Axe_1017" />
+        <fixed-reward job-1="암살자" slot-1="item:Quest_Weapon_Dagger_1017" />
+        <fixed-reward job-1="소환사" slot-1="item:Quest_Weapon_Staff_1017" />
+        <fixed-reward job-1="귀검사" slot-1="item:Quest_Weapon_Sword_1017" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case grocery="Quest_Grocery_LegendMaterial_0005" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0005" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" type="approach" />
+        <completion-loss item-1="Quest_Weapon_Sword_1017" item-count-1="0" job-1="귀검사" />
+        <completion-loss item-1="Quest_Weapon_Dagger_1017" item-count-1="0" job-1="암살자" />
+        <completion-loss item-1="Quest_Weapon_Staff_1017" item-count-1="0" job-1="소환사" />
+        <completion-loss item-1="Quest_Weapon_Axe_1017" item-count-1="0" job-1="역사" />
+        <completion-loss item-1="Quest_Weapon_Aura-bangle_1017" item-count-1="0" job-1="기공사" />
+        <completion-loss item-1="Quest_Weapon_Gauntlet_1017" item-count-1="0" job-1="권사" />
+        <completion-loss item-1="Quest_Weapon_Sword_1017" item-count-1="0" job-1="검사" />
+        <fixed-reward job-1="검사" slot-1="item:Quest_Weapon_Sword_1018" />
+        <fixed-reward job-1="권사" slot-1="item:Quest_Weapon_Gauntlet_1018" />
+        <fixed-reward job-1="기공사" slot-1="item:Quest_Weapon_Aura-bangle_1018" />
+        <fixed-reward job-1="역사" slot-1="item:Quest_Weapon_Axe_1018" />
+        <fixed-reward job-1="암살자" slot-1="item:Quest_Weapon_Dagger_1018" />
+        <fixed-reward job-1="소환사" slot-1="item:Quest_Weapon_Staff_1018" />
+        <fixed-reward job-1="귀검사" slot-1="item:Quest_Weapon_Sword_1018" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1">
+        <case grocery="Quest_Grocery_LegendMaterial_0006" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0006" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" type="approach" />
+        <completion-loss item-1="Quest_Weapon_Sword_1018" item-count-1="0" job-1="귀검사" />
+        <completion-loss item-1="Quest_Weapon_Dagger_1018" item-count-1="0" job-1="암살자" />
+        <completion-loss item-1="Quest_Weapon_Staff_1018" item-count-1="0" job-1="소환사" />
+        <completion-loss item-1="Quest_Weapon_Axe_1018" item-count-1="0" job-1="역사" />
+        <completion-loss item-1="Quest_Weapon_Aura-bangle_1018" item-count-1="0" job-1="기공사" />
+        <completion-loss item-1="Quest_Weapon_Gauntlet_1018" item-count-1="0" job-1="권사" />
+        <completion-loss item-1="Quest_Weapon_Sword_1018" item-count-1="0" job-1="검사" />
+        <fixed-reward job-1="검사" slot-1="item:Quest_Weapon_Sword_1019" />
+        <fixed-reward job-1="권사" slot-1="item:Quest_Weapon_Gauntlet_1019" />
+        <fixed-reward job-1="기공사" slot-1="item:Quest_Weapon_Aura-bangle_1019" />
+        <fixed-reward job-1="역사" slot-1="item:Quest_Weapon_Axe_1019" />
+        <fixed-reward job-1="암살자" slot-1="item:Quest_Weapon_Dagger_1019" />
+        <fixed-reward job-1="소환사" slot-1="item:Quest_Weapon_Staff_1019" />
+        <fixed-reward job-1="귀검사" slot-1="item:Quest_Weapon_Sword_1019" />
+      </mission>
+    </mission-step>
+    <mission-step id="12">
+      <mission id="12" required-register-value="1">
+        <case grocery="Quest_Grocery_LegendMaterial_0007" object="npc:ce_dokchogeosa_0006" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_LegendMaterial_0007" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ce_dokchogeosa_0006" party-broadcast="n" type="approach" />
+        <completion-loss item-1="Quest_Weapon_Sword_1019" item-count-1="0" job-1="귀검사" />
+        <completion-loss item-1="Quest_Weapon_Dagger_1019" item-count-1="0" job-1="암살자" />
+        <completion-loss item-1="Quest_Weapon_Staff_1019" item-count-1="0" job-1="소환사" />
+        <completion-loss item-1="Quest_Weapon_Axe_1019" item-count-1="0" job-1="역사" />
+        <completion-loss item-1="Quest_Weapon_Aura-bangle_1019" item-count-1="0" job-1="기공사" />
+        <completion-loss item-1="Quest_Weapon_Gauntlet_1019" item-count-1="0" job-1="권사" />
+        <completion-loss item-1="Quest_Weapon_Sword_1019" item-count-1="0" job-1="검사" />
+        <fixed-reward job-1="검사" slot-1="item:Quest_Weapon_Sword_1020" />
+        <fixed-reward job-1="권사" slot-1="item:Quest_Weapon_Gauntlet_1020" />
+        <fixed-reward job-1="기공사" slot-1="item:Quest_Weapon_Aura-bangle_1020" />
+        <fixed-reward job-1="역사" slot-1="item:Quest_Weapon_Axe_1020" />
+        <fixed-reward job-1="암살자" slot-1="item:Quest_Weapon_Dagger_1020" />
+        <fixed-reward job-1="소환사" slot-1="item:Quest_Weapon_Staff_1020" />
+        <fixed-reward job-1="귀검사" slot-1="item:Quest_Weapon_Sword_1020" />
+      </mission>
+    </mission-step>
+    <mission-step id="13">
+      <mission id="13" required-register-value="1" reward-1="20022_final_set1">
+        <case object="npc:CH_Legendary_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <completion-loss item-1="Quest_Weapon_Sword_1020" item-count-1="0" job-1="귀검사" />
+        <completion-loss item-1="Quest_Weapon_Dagger_1020" item-count-1="0" job-1="암살자" />
+        <completion-loss item-1="Quest_Weapon_Staff_1020" item-count-1="0" job-1="소환사" />
+        <completion-loss item-1="Quest_Weapon_Axe_1020" item-count-1="0" job-1="역사" />
+        <completion-loss item-1="Quest_Weapon_Aura-bangle_1020" item-count-1="0" job-1="기공사" />
+        <completion-loss item-1="Quest_Weapon_Gauntlet_1020" item-count-1="0" job-1="권사" />
+        <completion-loss item-1="Quest_Weapon_Sword_1020" item-count-1="0" job-1="검사" />
+      </mission>
+    </mission-step>
+    <giveup-loss item-1="Quest_Grocery_LegendMaterial_0001" item-2="Quest_Grocery_LegendMaterial_0002" item-count-1="0" item-count-2="0" />
+    <giveup-loss item-1="Quest_Weapon_Sword_1017" item-2="Quest_Weapon_Sword_1018" item-3="Quest_Weapon_Sword_1019" item-4="Quest_Weapon_Sword_1020" item-count-1="0" item-count-2="0" item-count-3="0" item-count-4="0" job-1="검사" />
+    <giveup-loss item-1="Quest_Weapon_Gauntlet_1017" item-2="Quest_Weapon_Gauntlet_1018" item-3="Quest_Weapon_Gauntlet_1019" item-4="Quest_Weapon_Gauntlet_1020" item-count-1="0" item-count-2="0" item-count-3="0" item-count-4="0" job-1="권사" />
+    <giveup-loss item-1="Quest_Weapon_Aura-bangle_1017" item-2="Quest_Weapon_Aura-bangle_1018" item-3="Quest_Weapon_Aura-bangle_1019" item-4="Quest_Weapon_Aura-bangle_1020" item-count-1="0" item-count-2="0" item-count-3="0" item-count-4="0" job-1="기공사" />
+    <giveup-loss item-1="Quest_Weapon_Axe_1017" item-2="Quest_Weapon_Axe_1018" item-3="Quest_Weapon_Axe_1019" item-4="Quest_Weapon_Axe_1020" item-count-1="0" item-count-2="0" item-count-3="0" item-count-4="0" job-1="역사" />
+    <giveup-loss item-1="Quest_Weapon_Staff_1017" item-2="Quest_Weapon_Staff_1018" item-3="Quest_Weapon_Staff_1019" item-4="Quest_Weapon_Staff_1020" item-count-1="0" item-count-2="0" item-count-3="0" item-count-4="0" job-1="소환사" />
+    <giveup-loss item-1="Quest_Weapon_Dagger_1017" item-2="Quest_Weapon_Dagger_1018" item-3="Quest_Weapon_Dagger_1019" item-4="Quest_Weapon_Dagger_1020" item-count-1="0" item-count-2="0" item-count-3="0" item-count-4="0" job-1="암살자" />
+    <giveup-loss item-1="Quest_Weapon_Sword_1017" item-2="Quest_Weapon_Sword_1018" item-3="Quest_Weapon_Sword_1019" item-4="Quest_Weapon_Sword_1020" item-count-1="0" item-count-2="0" item-count-3="0" item-count-4="0" job-1="귀검사" />
+  </quest>
+</table>

@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.jeryoungrim_suryengol.xml-->
+  
+  
+  
+  <act-sequence alias="timer_act" detect="none" type="act">
+    <action duration="15000" type="stay" />
+  </act-sequence>
+
+  
+  
+
+
+  
+  
+  <act-sequence alias="A_2310_33_act" detect="none" type="act">
+    
+    <action social="CH_CheongRyeongCtzn_012" type="social" />
+    
+    <action step="1" type="pause" />
+    <action duration="2000" type="stay" />
+    
+    <action social="CH_CheongRyeongCtzn_012_2" type="social" />
+    
+    <action social="CH_CheongRyeongCtzn_012_5" type="social" />
+    
+    <action step="2" type="pause" />
+    <action pathway="2310_p3" type="pathway" />
+    
+    <action social="PS_tired_social_loop" type="social" />
+    <action social="CH_CheongRyeongCtzn_012_8" type="social" />
+    
+    <action social="CH_CheongRyeongCtzn_012_10" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="A_2310_35_act" detect="none" type="act">
+    
+    <action social="CH_CheongRyeongCtzn_012_1" type="social" />
+    <action social="PS_tired_social_loop" type="social" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="A_2310_35_act_1" detect="none" type="act">
+    
+    <action duration="500" type="stay" />
+    <action social="CH_CheongRyeongCtzn_012_6" type="social" />
+    <action pathway="2310_p4" type="pathway" />
+    
+    
+    <action social="CH_CheongRyeongCtzn_012_9" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="A_2450_24_act" detect="none" type="act">
+    
+  <action social="deco_songlimsa" type="social" />
+    <action duration="3000" type="stay" />
+    <action pathway="2450_p1" type="pathway" />
+    
+    <action social="CH_BuddhistMonk_003" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="2450_p2" type="pathway" />
+    
+    <action social="CH_BuddhistMonk_003_1" type="social" />
+    <action step="2" type="pause" />
+    <action social="PS_tired_social_loop" type="social" />
+    
+    <action social="CH_BuddhistMonk_003_2" type="social" />
+    <action pathway="2450_p3" type="pathway" />
+    
+    <action social="CH_BuddhistMonk_003_3" type="social" />
+    <action pathway="2450_p4" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="A_2450_25_peace" detect="none" type="peace">
+    <action area="2450_25" max-idle-sec="5" max-move-count="4" min-idle-sec="5" min-move-count="1" type="movearound" />
+      
+    <action social="CH_FoodMaster_001" type="social" />
+  </act-sequence>
+  
+  
+  <act-sequence alias="A_2450_25_act" detect="none" type="act">
+    <action pathway="2450_p5" type="pathway" />
+    
+    <action social="CH_FoodMaster_001_1" type="social" />
+    <action duration="1000" type="stay" />
+    
+    <action step="1" type="pause" />
+    <action social="CH_FoodMaster_001_2" type="social" />
+    <action social="CH_FoodMaster_001_3" type="social" />
+    <action duration="1000" type="stay" />
+    <action pathway="2450_p6" type="pathway" />
+    <action duration="1000" type="stay" />
+    <action pathway="2450_p7" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="A_2450_26_peace" detect="none" type="peace">
+    
+    <action enter-prob="100" type="select">
+      <action prob="10" social="ps_RandomSocial" type="social" />
+      <action prob="20" social="CH_CommonCtzn_003" type="social" />
+    </action>
+  </act-sequence>
+  
+  <act-sequence alias="A_2450_27_peace" detect="none" type="peace">
+    
+    <action enter-prob="100" type="select">
+      <action prob="10" social="ps_RandomSocial" type="social" />
+      <action prob="20" social="CH_CommonCtzn_004" type="social" />
+    </action>
+  </act-sequence>
+  
+  <act-sequence alias="A_2450_28_peace" detect="none" type="peace">
+    
+    <action enter-prob="100" type="select">
+      <action prob="10" social="ps_RandomSocial" type="social" />
+      <action prob="20" social="CH_CommonCtzn_005" type="social" />
+    </action>
+  </act-sequence>
+  
+  <act-sequence alias="A_2450_29_peace" detect="none" type="peace">
+    
+    <action enter-prob="100" type="select">
+      <action prob="10" social="ps_RandomSocial" type="social" />
+      <action prob="20" social="CH_CommonCtzn_003" type="social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Shaman_0001_spawn_act_01" indexed-detect="1" type="act">
+    <action pathway="2313_A11" type="pathway" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Shaman_0001_end_act_01" indexed-detect="1" type="act">
+    <action social="MH_Shaman_0002_soc_01" type="social" />
+    <action duration="3000" type="stay" />
+    <action social="MH_Shaman_0002_soc_02" type="social" />
+    <action duration="2000" type="stay" />
+    <action pathway="2313_P1" type="pathway" />
+  </act-sequence>
+
+
+  
+  <act-sequence alias="MH_Shaman_0001_P_act_01" indexed-detect="1" type="peace">
+    <action social="MH_Shaman_0001_soc_01" type="social" />
+    <action duration="2000" type="stay" />
+    <action duration="2000" type="stay" />
+    <action social="MH_Shaman_0001_soc_03" type="social" />
+    <action duration="2000" type="stay" />
+    <action duration="2000" type="stay" />
+    <action social="MH_Shaman_0001_soc_02" type="social" />
+    <action duration="2000" type="stay" />
+    <action duration="2000" type="stay" />
+  </act-sequence>
+
+
+
+  
+  <act-sequence alias="ME_JunoEgg_0003_act" indexed-detect="1" type="act">
+    <action duration="25000" type="stay" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="MH_Shaman_0003_spawn_act_01" indexed-detect="1" type="act">
+    <action social="MH_Shaman_0001_soc_04" type="social" />
+    <action social="MH_Shaman_0001_soc_07" type="social" />
+    <action social="MH_Shaman_0001_soc_11" type="social" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="MH_Shaman_0002_P_act_01" indexed-detect="1" type="peace">
+    <action social="MH_Shaman_0002_soc_08" type="social" />
+    <action duration="3000" type="stay" />
+    <action social="MH_Shaman_0002_soc_09" type="social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_Practitioner_002_act_01" indexed-detect="1" type="act">
+    <action social="q_388_soc" type="social" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="MH_Shaman_0001_sapwn_act_01" indexed-detect="1" type="act">
+    <action social="MH_Shaman_0001_soc_15" type="social" />
+    <action social="MH_Shaman_0001_soc_14" type="social" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="MH_Shaman_0001_desapwn_act_01" indexed-detect="1" type="act">
+    <action social="MH_Shaman_0001_soc_09" type="social" />
+    <action social="MH_Shaman_0001_soc_13" type="social" />
+  </act-sequence>
+
+
+
+  
+  
+  <act-sequence alias="MH_Shaman_0001_up_hill_act_01" indexed-detect="1" type="act">
+    <action social="MH_Shaman_0001_soc_10" type="social" />
+    <action pathway="wp2313_area12" type="pathway" />
+    <action social="MH_Shaman_0001_soc_04" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="MH_Shaman_0001_soc_07" type="social" />
+    <action duration="2000" type="stay" />
+    <action social="MH_Shaman_0001_soc_11" type="social" />
+  </act-sequence>
+
+
+
+  
+  <act-sequence alias="MH_Shaman_0001_Kangsi_spawn_act_01" indexed-detect="1" type="act">
+    <action social="MH_Shaman_0001_soc_08" type="social" />
+    <action duration="8000" type="stay" />
+  </act-sequence>
+  
+  
+  
+  <act-sequence alias="MH_Shaman_0001_down_hill_act_01" indexed-detect="1" type="act">
+    <action social="MH_Shaman_0001_soc_09" type="social" />
+    <action social="MH_Shaman_0001_soc_13" type="social" />
+    <action duration="4000" type="stay" />
+    <action pathway="wp2313_area14" type="pathway" />
+  </act-sequence>
+
+  
+
+  
+  <act-sequence alias="2311_JGD_Peace_01" indexed-detect="1" type="peace">
+    <action duration="2000" type="stay" />
+    <action duration="1000" type="stay" />
+    
+    
+    <action enter-prob="100" type="select">
+      <action prob="40" social="nmch_jgd_soc_09" type="social" />
+      <action prob="40" social="nmch_jgd_soc_10" type="social" />
+      <action duration="3000" prob="20" type="stay" />
+    </action>
+
+    <action enter-prob="100" type="select">
+      <action duration="1000" prob="34" type="stay" />
+      <action duration="3000" prob="33" type="stay" />
+      <action duration="5000" prob="33" type="stay" />
+    </action>
+    
+    <action enter-prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+  </act-sequence>
+
+
+
+  
+  <act-sequence alias="2311_JGD_Peace_02" indexed-detect="1" type="peace">
+    <action duration="2000" type="stay" />
+    <action duration="1000" type="stay" />
+    
+    <action enter-prob="100" type="select">
+      <action prob="40" social="nmch_jgd_soc_11" type="social" />
+      <action prob="40" social="nmch_jgd_soc_02" type="social" />
+      <action duration="3000" prob="20" type="stay" />
+    </action>
+
+    <action enter-prob="100" type="select">
+      <action duration="1000" prob="34" type="stay" />
+      <action duration="3000" prob="33" type="stay" />
+      <action duration="3000" prob="33" type="stay" />
+    </action>
+    
+    <action enter-prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+    
+  </act-sequence>
+
+  
+  <act-sequence alias="2311_JGD_Peace_03" indexed-detect="1" type="peace">
+    <action duration="2000" type="stay" />
+    <action duration="1000" type="stay" />
+    
+    <action enter-prob="100" type="select">
+      <action prob="40" social="nmch_jgd_soc_12" type="social" />
+      <action prob="40" social="nmch_jgd_soc_03" type="social" />
+      <action duration="3000" prob="20" type="stay" />
+    </action>
+
+    <action enter-prob="100" type="select">
+      <action duration="1000" prob="34" type="stay" />
+      <action duration="3000" prob="33" type="stay" />
+      <action duration="5000" prob="33" type="stay" />
+    </action>
+    
+    <action enter-prob="100" type="select">
+      <action prob="50" social="1" type="indexed-social" />
+      <action prob="50" social="2" type="indexed-social" />
+    </action>
+    
+  </act-sequence>
+
+
+  
+  <act-sequence alias="2311_JGD_Peace_04_pathway" indexed-detect="1" type="peace">
+    <action pathway="1" type="indexed-pathway">
+    <random-social>
+        <social prob="50" social="nmch_jgd_soc_13" />
+        <social prob="50" social="nmch_jgd_soc_14" />
+      </random-social>
+    </action>
+  </act-sequence>
+
+
+
+
+
+  
+  <act-sequence alias="Once_Show_Test" indexed-detect="1" type="peace">
+
+    <action social="Show_once_01" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_02" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_03" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_04" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_05" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_06" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_07" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_08" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_09" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_10" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_11" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_12" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_13" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_14" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_15" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_16" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_17" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_18" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_19" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_20" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_21" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_22" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_23" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_24" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_25" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_26" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_27" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_28" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_29" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_30" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_31" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_32" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_33" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_34" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_35" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_36" type="social" />
+    <action duration="4000" type="stay" />
+
+    <action social="Show_once_37" type="social" />
+    <action duration="4000" type="stay" />
+
+  </act-sequence>
+
+
+  
+  <act-sequence alias="MH_ChungGak_0045_act" indexed-detect="1" type="act">
+    <action social="MH_ChungGak_0045_combat_peace" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_ChungGak_0047_act" indexed-detect="1" type="act">
+    <action social="MH_ChungGak_0047_combat_peace" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+  <act-sequence alias="MH_ChungGak_0049_act" indexed-detect="1" type="act">
+    <action social="MH_ChungGak_0049_combat_peace" type="social" />
+    <action duration="1000" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="10000" type="stay" />
+  </act-sequence>
+
+  
+  
+  
+  <act-sequence alias="MH_Trainee_0001_act" indexed-detect="1" type="act">
+    <action social="MH_Trainee_0001_combat_soc" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0002_act" indexed-detect="1" type="act">
+    
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0003_act" indexed-detect="1" type="act">
+    <action social="MH_Trainee_0003_combat_soc" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0004_act" indexed-detect="1" type="act">
+    
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0005_act" indexed-detect="1" type="act">
+    <action social="MH_Trainee_0005_combat_soc" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0006_act" indexed-detect="1" type="act">
+    
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0007_act" indexed-detect="1" type="act">
+    <action social="MH_Trainee_0007_combat_soc" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0008_act" indexed-detect="1" type="act">
+    
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0009_act" indexed-detect="1" type="act">
+    <action social="MH_Trainee_0009_combat_soc" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0010_act" indexed-detect="1" type="act">
+    
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <act-sequence alias="MH_Trainee_0015_act" indexed-detect="1" type="act">
+    
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_Trainee_0016_act" indexed-detect="1" type="act">
+    
+    <action step="1" type="pause" />
+  </act-sequence>
+
+
+  
+  
+  <act-sequence alias="CH_JaKyoungDan_0027_act" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="CH_JaKyoungDan_0027_soc_1" type="social" />
+    <action step="1" type="pause" />
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_ChungGak_0051_1_peace" indexed-detect="1" type="peace">
+    <action enter_prob="100" type="select">
+      <action prob="50" social="MH_ChungGak_0051_soc_03" type="social" />
+      <action prob="50" social="MH_ChungGak_0051_soc_02" type="social" />
+    </action>
+    <action duration="5000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_JaKyoungDan_0024_1_path_act" indexed-detect="1" type="act">
+    <action enter_prob="100" type="select">
+      <action prob="33" social="CH_JaKyoungDan_0024_soc_1" type="social" />
+      <action prob="34" social="CH_JaKyoungDan_0024_soc_2" type="social" />
+      <action prob="33" social="CH_JaKyoungDan_0024_soc_3" type="social" />
+    </action>
+    <action duration="1800" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_ChungGak_0063_act1" indexed-detect="1" type="peace">
+    <action pathway="1" type="indexed-pathway" />
+    <action enter-prob="100" type="select">
+      <action prob="50" social="MH_ChungGak_0063_soc_1" type="social" />
+      <action prob="50" social="MH_ChungGak_0063_soc_2" type="social" />
+    </action>
+    <action pathway="2" type="indexed-pathway" />
+    <action enter-prob="100" type="select">
+      <action prob="50" social="MH_ChungGak_0063_soc_3" type="social" />
+      <action prob="50" social="MH_ChungGak_0063_soc_1" type="social" />
+    </action>
+  </act-sequence>
+
+  
+  <act-sequence alias="MH_ChungGak_0063_act2" indexed-detect="1" type="act">
+    <action social="MH_ChungGak_0063_soc_4" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="wp2607_28_3" type="pathway" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="MH_ChungGak_0064_act1" indexed-detect="1" type="act">
+    <action social="MH_ChungGak_0064_soc_3" type="social" />
+    <action duration="500" type="stay" />
+    <action pathway="wp2607_area29_1" type="pathway" />
+    <action pathway="wp2607_area29" type="pathway" />
+  </act-sequence>
+
+  
+  
+  <act-sequence alias="CE_JR_BelliedWaterFrog_0001_act_01" type="act">
+    <action enter_prob="100" type="select">
+      <action prob="25" social="CE_JR_BelliedWaterFrog_0001_soc_01" type="social" />
+      <action prob="25" social="CE_JR_BelliedWaterFrog_0001_soc_02" type="social" />
+      <action prob="25" social="CE_JR_BelliedWaterFrog_0001_soc_03" type="social" />
+      <action prob="25" social="CE_JR_BelliedWaterFrog_0001_soc_04" type="social" />
+    </action>
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="CE_JR_PotAxPartyA_0001_act_01" type="act">
+    <action social="CE_JR_PotAxPartyA_0001_soc" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="CE_JR_PotAxPartyB_0001_act_01" type="act">
+    <action social="CE_JR_PotAxPartyB_0001_soc" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  <act-sequence alias="CE_JR_PotAxPartyC_0001_act_01" type="act">
+    <action social="CE_JR_PotAxPartyC_0001_soc" type="social" />
+    <action pathway="1" type="indexed-pathway" />
+    <action respawn="n" type="despawn" />
+  </act-sequence>
+  
+  
+  
+  <act-sequence alias="ME_JR_Dummy_0002_act_01" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+  </act-sequence>
+  <act-sequence alias="ME_JR_Dummy_0002_act_02" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+  </act-sequence>
+   <act-sequence alias="ME_JR_Dummy_0002_act_03" indexed-detect="1" type="act">
+    <action duration="1500" type="stay" />
+  </act-sequence>
+ 
+  
+  <act-sequence alias="ME_BelliedFrog_002_act_01" indexed-detect="1" type="peace">
+    
+    <action max-count="8" min-count="3" type="loop"><action duration="1000" type="stay" /></action>
+    
+    <action enter_prob="100" type="select">
+      <action prob="5" social="1" type="indexed-social" />
+      <action duration="1000" prob="45" type="stay" />
+      <action area="1" max-idle-sec="1" max-move-count="1" min-idle-sec="1" min-move-count="1" prob="50" type="indexed-movearound" />
+    </action>
+    
+    <action max-count="8" min-count="3" type="loop"><action duration="1000" type="stay" /></action>
+  </act-sequence>
+  
+  
+  <act-sequence alias="ME_JR_SeaMonster_0002_act" indexed-detect="1" type="act">
+    
+    <action pathway="1" type="indexed-pathway" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="2" type="indexed-pathway" />
+    <action step="2" type="pause" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="3" type="indexed-pathway" />
+    <action step="3" type="pause" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_JR_SeaMonster_0002_act_01" indexed-detect="1" type="act">
+    
+    <action duration="500" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="2" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="3" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="4" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_JR_SeaMonster_0002_act_02" indexed-detect="1" type="act">
+    
+    <action duration="500" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="2" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="3" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_JR_SeaMonster_0002_act_03" indexed-detect="1" type="act">
+    
+    <action duration="500" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="2" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action step="1" type="pause" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="3" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="ME_JR_SeaMonster_0002_act_04" indexed-detect="1" type="act">
+    
+    <action duration="500" type="stay" />
+    <action pathway="1" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="2" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+    
+    <action pathway="3" type="indexed-pathway" />
+    <action duration="500" type="stay" />
+    <action social="1" type="indexed-social" />
+    <action duration="3000" type="stay" />
+  </act-sequence>
+
+  
+  <act-sequence alias="act_pathway2_social1_combat_start_blademaster" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="MH_JR_Master_0002_combat_soc_03" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="act_pathway2_social1_combat_start_kungmaster" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="MH_JR_Master_0009_combat_soc_04" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="act_pathway2_social1_combat_start_destroyer" indexed-detect="1" type="act">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="MH_JR_Master_0014_combat_soc_03" type="social" />
+    <action step="1" type="pause" />
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+  
+  <act-sequence alias="act_pathway2_social1_combat_end" indexed-detect="1" type="act">
+    <action pathway="2" type="indexed-pathway" />
+  </act-sequence>
+
+  <act-sequence alias="peace_pathway1_social1_stay4s_blademaster" indexed-detect="1" type="peace">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="MH_JR_Master_0003_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="peace_pathway1_social1_stay4s_kungmaster" indexed-detect="1" type="peace">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="MH_JR_Master_0010_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+
+  <act-sequence alias="peace_pathway1_social1_stay4s_destroyer" indexed-detect="1" type="peace">
+    <action pathway="1" type="indexed-pathway" />
+    <action social="MH_JR_Master_0015_soc_01" type="social" />
+    <action duration="4000" type="stay" />
+  </act-sequence>
+  
+</table>

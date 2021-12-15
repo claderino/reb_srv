@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1463.xml-->
+  <quest alias="q_sub_1463" attraction-1="classic-field-zone:Windplain_Majuk" attraction-2="cave2:Cave_none_0259" broadcast-category="field" category="normal" id="1463" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition level="45" preceding-quest-1="q_epic_1420" preceding-quest-2="q_epic_293" preceding-quest-3="q_epic_1545" preceding-quest-check="or">
+      <case acquire-quest="y" object="npc:ch_sa_baramcontents_0012" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:ce_sa_bff_wind_board_0002" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="10">
+        <case object2="npc:me_sa_frogtribecleader_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_sa_frogtribecleader_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_sa_noklimdo_0018" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_sa_noklimdo_0074" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_sa_noklimdo_0015" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_sa_noklimdo_0080" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_sa_noklimdo_0077" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_sa_frogtribecleader_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_sa_noklimdo_0083" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1463_final_set1" reward-2="1463_final_set2">
+        <case object="npc:ch_sa_baramcontents_0012" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.306.xml-->
+  <quest alias="q_epic_306" category="epic" completed-list="y" district-1="jeryoungrim" id="306" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ctzn_jinm_jakyungdan_yeokgisan_kff_001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_mangjasup_gerjeum_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_305_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:Ctzn_JinM_EumSoJi_001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case drop-gadget="y" gadget="q_deadbody_kangsia" gadget-required="not-a" object2="npc:mob_hnm_mlnd_spctr_gangsi_baby_001" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case gadget="q_deadbody_kangsia" gadget-required="carry-and-remove" object2="zoneenv2:e_destroy_crematory_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="q_deadbody_kangsia" gadget-required="carry-and-remove" object2="zoneenv2:e_destroy_crematory_02" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="q_deadbody_kangsia" gadget-required="carry-and-remove" object2="zoneenv2:e_destroy_crematory_03" party-broadcast="y" progress-mission="y" type="manipulate" />
+        <case gadget="q_deadbody_kangsia" gadget-required="carry-and-remove" object2="zoneenv2:e_destroy_crematory_04" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ctzn_jinm_eumsoji_001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="5">
+      <mission id="5" required-register-value="1" reward-1="306_final_set1">
+        <case object="npc:ctzn_jinm_jakyungdan_yeokgisan_kff_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter field="level" op="ge" subject2="case:talked:pc" type="prop" value="5" />
+          </filter-set>
+        </case>
+        <case object="npc:ctzn_jinm_jakyungdan_yeokgisan_kff_001" party-broadcast="n" progress-mission="y" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="4" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_307" />
+    </completion>
+    <transit id="1" zone="zone_MangJaSup_Gerjeum_sp">
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

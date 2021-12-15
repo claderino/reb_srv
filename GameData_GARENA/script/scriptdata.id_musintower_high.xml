@@ -1,0 +1,3015 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.id_musintower_high.xml-->
+  
+  
+  
+  <script alias="Zone_MusinTower_8_ai">
+    <decision event="enter-zone">
+      <filter-set>
+        <filter subject="event:enter-zone:pc" subject2="event:enter-zone:pc" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction object="event:enter-zone:pc" reg="4" target="zonenpcsquad:s_4908_2" type="set-party-object" />
+        
+        <reaction enable="y" target="zoneenv:e_button_4908yongmak" target2="zoneenv2spawn:e_button_4908yongmak_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_button_4907yongmak_2" target2="zoneenv2spawn:e_button_4907yongmak_2_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_button_4906yongmak_2" target2="zoneenv2spawn:e_button_4906yongmak_2_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_button_4905yongmak_2" target2="zoneenv2spawn:e_button_4905yongmak_2_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_button_4904yongmak_2" target2="zoneenv2spawn:e_button_4904yongmak_2_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_button_4903yongmak_2" target2="zoneenv2spawn:e_button_4903yongmak_2_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_button_4902yongmak_2" target2="zoneenv2spawn:e_button_4902yongmak_2_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:e_button_4901yongmak_B_2" target2="zoneenv2spawn:e_button_4901yongmak_B_2_spawn" type="set-env-enable" />
+        <reaction text="4908 PC 입장" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_button_4908yongmak_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction pc-spawn="5" target="event:env-manipulated:pc" type="warp" zone="Zone_MusinTower_Lobby" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="4908_Foot_1_ai" />
+  <script alias="4908_Foot_2_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction cinematic="I_SW04" to="event:env-entered:creature" type="play-cinematic" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+        <reaction state="open" state2="open" target="zoneenv:e_gate_musintower8_door_01" target2="zoneenv2spawn:e_gate_musintower8_door_01_spawn" type="set-env-state" />
+        <reaction text="4908 씨네마 풋스위치" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_Musin_0001_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction seq="CH_Musin_0001_peace" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction text="4908 옥좌 무신 평화 연극" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_Musin_0001_01_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_Musin_0001_peace" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_Musin_0001_02_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_Musin_0001_peace" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_Musin_0001_03_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction spawn-1="A_4908_20" spawn-delay="5000" type="spawn-npc" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_Musin_0002_ai">
+    
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction seq="CH_Musin_0002_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_Musin_0002_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="e_button_4908dragonball_1_ai">
+    <decision event="env-manipulated">
+      <filter-set>
+        <filter subject="zonenpcspawn:a_4908_21:reg-1" subject2="zonenpcspawn:a_4908_21:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction enable="n" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-enable" />
+        <reaction state="close" state2="close" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-state" />
+        <reaction seq="CH_Musin_0001_01_act" target="zonenpcsquad:s_4908_21:1" type="set-npc-act" />
+        <reaction spawn-1="a_4908_18" spawn-delay="10000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="env-manipulated">
+      <filter-set>
+        <filter subject="zonenpcspawn:a_4908_21:reg-1" subject2="zonenpcspawn:a_4908_21:reg-1" type="number" value="2" />
+        <filter quest="q_sub_1391" subject="event:env-manipulated:pc" subject2="event:env-manipulated:pc" type="quest-complete" />
+      </filter-set>
+      <reaction-set>
+        <reaction enable="n" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-enable" />
+        <reaction state="close" state2="close" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-state" />
+        <reaction seq="CH_Musin_0001_02_act" target="zonenpcsquad:s_4908_21:1" type="set-npc-act" />
+        <reaction spawn-1="a_4908_19" spawn-delay="10000" type="spawn-npc" />
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_4908_21" type="set-party-number" />
+        <reaction text="4908 1391 퀘스트 완료" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="env-manipulated">
+      <filter-set>
+        <filter subject="zonenpcspawn:a_4908_21:reg-1" subject2="zonenpcspawn:a_4908_21:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction enable="n" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-enable" />
+        <reaction state="close" state2="close" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-state" />
+        <reaction seq="CH_Musin_0001_02_act" target="zonenpcsquad:s_4908_21:1" type="set-npc-act" />
+        <reaction spawn-1="a_4908_19" spawn-delay="10000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="musintower_musin_parent_decision" parent="Boss_Immune_Slow_MoveBlock_Stun_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        
+        
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-spawn:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect">
+      <filter-set>
+        <filter subject="event:invoked-effect:npc" subject2="event:invoked-effect:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="event:invoked-effect:effect" subject2="event:invoked-effect:effect" type="effect-id" value="Destroyer_Common_Catched_Flag" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="4908 무신 장악 당했을 때 말풍선" type="debug-trace" />
+        <reaction from="event:invoked-effect:npc" social="MH_MuSinTower_0001_combat_soc_4" type="play-social" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect" forward="y" />
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="down" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:npc-special:npc" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <reaction-set>
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_4908_2" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="500" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:attacked:defender" social="MH_MuSinTower_0001_soc_3" type="play-social" />
+        <reaction caster="event:attacked:defender" effect="Gang_Play_Additional_die_damage_Musin" target="event:attacked:defender" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="kill">
+      <filter-set>
+        <filter subject="event:kill:defender" subject2="event:kill:defender" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:kill:attacker" social="MH_MuSinTower_0001_soc_4" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="MH_MuSinTower_0001_ai" parent="musintower_musin_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="invoked-effect" forward="y" />
+    
+    
+    <decision event="kill" forward="y" />
+    <decision event="npc-combat-start">
+      <reaction-set>
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_70" index-1="1" index-2="2" index-3="3" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction target="event:npc-combat-start:npc" type="dispel-debuff" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_60" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_11" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction attack-target="event:npc-combat-start:npc" end="10" group="zonenpcsquad:s_4908_15" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-combat-start:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction enable="n" target="zoneenv:e_Chest_4908heartA_01" target2="zoneenv2spawn:e_Chest_4908heartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="down" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:npc-special:npc" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction group="zonenpcsquad:s_4908_70" index-1="1" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_21" index-1="2" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_26" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_12" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_4908_13" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="0" spawn-target="event:npc-special:npc" type="spawn-npc-index" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_14" max="1" min="1" spawn-delay="1000" spawn-radius="0" spawn-target="zonenpcsquad:s_4908_11:1" start="1" type="spawn-random-npc" />
+        
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="6" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="ME_MuSin_None_defence_additionalhp1" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="ME_MuSin_None_PointBlood_Lv1_DOT" target="zonenpcsquad:s_4908_2:reg-4" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="11" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction target="event:npc-special:npc" type="dispel-debuff" />
+        
+        <reaction effect-type="additional-hp" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-combat-end:npc" type="invoke-effect" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        
+        <reaction effect-type="additional-hp" target="event:npc-combat-end:npc" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction group="zonenpcsquad:s_4908_60" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_15" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_11" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_70" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_13" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_25" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_14" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_24" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_26" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_4908heartA_01" target2="zoneenv2spawn:e_Chest_4908heartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction enable="y" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-enable" />
+        <reaction amount="1" reg="1" target="zonenpcspawn:a_4908_21" type="set-npc-number" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction seq="CH_Musin_0001_01_peace" target="zonenpcsquad:s_4908_21:1" type="set-npc-act" />
+        
+        <reaction group="zonenpcsquad:s_4908_60" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_15" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_11" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_70" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_13" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_25" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_14" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_24" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_26" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="MH_MuSinTower_0003_ai" parent="musintower_musin_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="invoked-effect" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="kill" forward="y" />
+    <decision event="npc-combat-start">
+      <reaction-set>
+        
+        <reaction group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_17" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction target="event:npc-combat-start:npc" type="dispel-debuff" />
+        
+        <reaction effect="ME_Jewel45_None_speeddown" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction attack-target="event:npc-combat-start:npc" end="10" group="zonenpcsquad:s_4908_15" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-combat-start:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_22" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_11" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_60" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction enable="n" target="zoneenv:e_Chest_4908heartA_01" target2="zoneenv2spawn:e_Chest_4908heartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill-id" value="ME_MuSin_None_Stay_SP1" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_MuSin_None_Stay_SP1" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:attack:attacker" social="MH_MuSinTower_0001_combat_soc_10" type="play-social" />
+        <reaction text="4908 무신 올려차기" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill-id" value="ME_MuSin_None_Stay_SP5" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_MuSin_None_Stay_SP5" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:attack:attacker" social="MH_MuSinTower_0001_combat_soc_13" type="play-social" />
+        <reaction text="4908 2성 무신 공중발차기" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill-id" value="ME_MuSin_None_Stay_SP3" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_MuSin_None_Stay_SP3" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:attack:attacker" social="MH_MuSinTower_0001_combat_soc_14" type="play-social" />
+        <reaction text="4908 2성 무신초풍" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill-id" value="ME_MuSin_None_Stay_SP4" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_MuSin_None_Stay_SP4" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="4908 2성 무신이장" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="down" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:npc-special:npc" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_16" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_17" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction group="zonenpcsquad:s_4908_21" index-1="3" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_26" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_12" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_4908_13" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="0" spawn-target="event:npc-special:npc" type="spawn-npc-index" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="80" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0030_act" target="zonenpcsquad:s_4908_17:1" type="set-npc-act" />
+        
+        <reaction effect="ME_DispelSkill_1" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:attacked:defender" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:attacked:defender" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="60" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0030_act" target="zonenpcsquad:s_4908_17:1" type="set-npc-act" />
+        
+        <reaction effect="ME_DispelSkill_1" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:attacked:defender" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:attacked:defender" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        
+        <reaction amount="2" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="40" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0030_act" target="zonenpcsquad:s_4908_17:1" type="set-npc-act" />
+        
+        <reaction effect="ME_DispelSkill_1" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:attacked:defender" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:attacked:defender" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        
+        <reaction amount="3" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="20" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0030_act" target="zonenpcsquad:s_4908_17:1" type="set-npc-act" />
+        
+        <reaction effect="ME_DispelSkill_1" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:attacked:defender" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:attacked:defender" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        
+        <reaction amount="4" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_14" max="1" min="1" spawn-delay="1000" spawn-radius="0" spawn-target="zonenpcsquad:s_4908_11:1" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_24" max="1" min="1" spawn-delay="1000" spawn-radius="0" spawn-target="zonenpcsquad:s_4908_11:1" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="down" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:npc-special:npc" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0030_act" target="zonenpcsquad:s_4908_17:1" type="set-npc-act" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="ME_MuSin_None_PointBlood_DOT" target="zonenpcsquad:s_4908_2:reg-4" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="11" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction target="event:npc-special:npc" type="dispel-debuff" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-combat-end:npc" type="invoke-effect" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        
+        <reaction group="zonenpcsquad:s_4908_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_13" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_25" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_14" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_24" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_15" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_16" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_17" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_22" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_11" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_26" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4908_2" type="set-party-number" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction group="zonenpcsquad:s_4908_60" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_4908heartA_01" target2="zoneenv2spawn:e_Chest_4908heartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction amount="0" reg="1" target="event:killed:defender" type="set-npc-number" />
+        
+        <reaction group="zonenpcsquad:s_4908_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_13" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_25" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_14" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_24" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_15" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_16" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_17" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_22" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_11" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_26" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4908_2" type="set-party-number" />
+        
+        <reaction enable="y" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-enable" />
+        <reaction amount="2" reg="1" target="zonenpcspawn:a_4908_21" type="set-npc-number" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction seq="CH_Musin_0001_02_peace" target="zonenpcsquad:s_4908_21:1" type="set-npc-act" />
+        
+        <reaction group="zonenpcsquad:s_4908_60" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower_0004_ai" parent="musintower_musin_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="invoked-effect" forward="y" />
+    <decision event="attack" forward="y" />
+    <decision event="attacked" forward="y" />
+    <decision event="kill" forward="y" />
+    <decision event="npc-combat-start">
+      <reaction-set>
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_23" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_27" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction target="event:npc-combat-start:npc" type="dispel-debuff" />
+        
+        <reaction effect="ME_Jewel45_None_speeddown" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction attack-target="event:npc-combat-start:npc" end="10" group="zonenpcsquad:s_4908_15" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-combat-start:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_22" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_11" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_60" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction enable="n" target="zoneenv:e_Chest_4908heartA_01" target2="zoneenv2spawn:e_Chest_4908heartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill-id" value="ME_MuSin_None_Stay_SP1" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_MuSin_None_Stay_SP1" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:attack:attacker" social="MH_MuSinTower_0001_combat_soc_10" type="play-social" />
+        <reaction text="4908 무신 올려차기" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill-id" value="ME_MuSin_None_Stay_SP2" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_MuSin_None_Stay_SP2" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:attack:attacker" social="MH_MuSinTower_0001_combat_soc_13" type="play-social" />
+        <reaction text="4908 2성 무신 공중발차기" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill-id" value="ME_MuSin_None_Stay_SP3" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_MuSin_None_Stay_SP3" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:attack:attacker" social="MH_MuSinTower_0001_combat_soc_14" type="play-social" />
+        <reaction text="4908 2성 무신초풍" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill-id" value="ME_MuSin_None_Stay_SP4" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <filter-set>
+        <filter op="eq" subject="event:attack:skill" subject2="event:attack:skill" type="skill3-id" value="ME_MuSin_None_Stay_SP4" />
+        <filter subject="event:attack:attacker" subject2="event:attack:attacker" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction text="4908 2성 무신이장" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="10" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="down" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:npc-special:npc" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction immediately="y" target="event:npc-special:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_16" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_27" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction end="1" group="zonenpcsquad:s_4908_23" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        <reaction group="zonenpcsquad:s_4908_21" index-1="4" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_26" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_12" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-special:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction attack-target="event:npc-special:target" group="zonenpcsquad:s_4908_13" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="0" spawn-target="event:npc-special:npc" type="spawn-npc-index" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="80" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0035_act" target="zonenpcsquad:s_4908_27:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0022_act" target="zonenpcsquad:s_4908_23:1" type="set-npc-act" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="ME_DispelSkill_1" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:attacked:defender" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:attacked:defender" type="dispel-by-type" />
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="60" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0035_act" target="zonenpcsquad:s_4908_27:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0022_act" target="zonenpcsquad:s_4908_23:1" type="set-npc-act" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="ME_DispelSkill_1" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:attacked:defender" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:attacked:defender" type="dispel-by-type" />
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        
+        <reaction amount="2" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="40" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0035_act" target="zonenpcsquad:s_4908_27:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0022_act" target="zonenpcsquad:s_4908_23:1" type="set-npc-act" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="ME_DispelSkill_1" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:attacked:defender" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:attacked:defender" type="dispel-by-type" />
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        
+        <reaction amount="3" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="20" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0035_act" target="zonenpcsquad:s_4908_27:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0022_act" target="zonenpcsquad:s_4908_23:1" type="set-npc-act" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="ME_DispelSkill_1" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:attacked:defender" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:attacked:defender" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:attacked:defender" type="dispel-by-type" />
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        
+        <reaction amount="4" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_14" max="1" min="1" spawn-delay="1000" spawn-radius="0" spawn-target="zonenpcsquad:s_4908_11:1" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4908_24" max="1" min="1" spawn-delay="1000" spawn-radius="0" spawn-target="zonenpcsquad:s_4908_11:1" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="down" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="stun" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="defence" target="event:npc-special:npc" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="event:npc-special:npc" type="dispel-by-type" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="zonenpcsquad:s_4908_16:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="zonenpcsquad:s_4908_22:1" type="set-npc-act" />
+        
+        <reaction seq="ME_MuSinTowerDummy_0035_act" target="zonenpcsquad:s_4908_27:1" type="set-npc-act" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="5" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="7" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="8" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="ME_MuSin_None_PointBlood_DOT" target="zonenpcsquad:s_4908_2:reg-4" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+
+    
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="11" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction target="event:npc-special:npc" type="dispel-debuff" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-combat-end:npc" type="invoke-effect" />
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        
+        <reaction group="zonenpcsquad:s_4908_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_13" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_25" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_14" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_24" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_15" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_16" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_27" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_22" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_11" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_26" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_23" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4908_2" type="set-party-number" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-133" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        <reaction effect-type="interval-hp-damage" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-133" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        <reaction effect-type="interval-hp-damage" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction group="zonenpcsquad:s_4908_60" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_4908heartA_01" target2="zoneenv2spawn:e_Chest_4908heartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter op="eq" subject="zonenpcsquad:s_4908_21:reg-1" subject2="zonenpcsquad:s_4908_21:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="0" reg="1" target="event:killed:defender" type="set-npc-number" />
+        
+        <reaction group="zonenpcsquad:s_4908_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_13" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_25" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_14" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_24" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_15" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_16" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_27" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_22" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_11" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_26" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_23" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4908_2" type="set-party-number" />
+        
+        <reaction enable="n" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-enable" />
+        <reaction amount="3" reg="1" target="zonenpcspawn:a_4908_21" type="set-npc-number" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-133" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        <reaction effect-type="interval-hp-damage" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-133" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        <reaction effect-type="interval-hp-damage" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction seq="CH_Musin_0001_03_act" target="zonenpcsquad:s_4908_21:1" type="set-npc-act" />
+        
+        <reaction group="zonenpcsquad:s_4908_60" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        <reaction spawn-1="A_4908_79" spawn-delay="2000" type="spawn-npc" />
+        
+        <reaction enable="y" target="zoneenv:e_button_4908yongmak_C" target2="zoneenv2spawn:e_button_4908yongmak_C_spawn" type="set-env-enable" />
+        <reaction text="4908 1391 퀘스트 완료 대용맥 오픈" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction amount="0" reg="1" target="event:killed:defender" type="set-npc-number" />
+        
+        <reaction group="zonenpcsquad:s_4908_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_13" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_25" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_14" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_24" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_15" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_16" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_27" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_22" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_11" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_26" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4908_23" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4908_2" type="set-party-number" />
+        
+        <reaction enable="n" target="zoneenv:e_button_4908dragonball_1" target2="zoneenv2spawn:e_button_4908dragonball_1_spawn" type="set-env-enable" />
+        <reaction amount="3" reg="1" target="zonenpcspawn:a_4908_21" type="set-npc-number" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-132" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-133" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        <reaction effect-type="interval-hp-damage" target="zonenpcsquad:s_4908_2:reg-4" type="dispel-by-type" />
+        
+        <reaction effect-type="Modify-ability-133" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        <reaction effect-type="interval-hp-damage" target="zonenpcsquad:s_4908_2:reg-4:my-summoned" type="dispel-by-type" />
+        
+        <reaction seq="CH_Musin_0001_03_act" target="zonenpcsquad:s_4908_21:1" type="set-npc-act" />
+        
+        <reaction group="zonenpcsquad:s_4908_60" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction despawn-force="y" group="zonenpcsquad:s_4908_21" index-1="2" index-2="3" index-3="4" type="despawn-npc-index" />
+        
+        
+        
+        
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTower_0005_ai">
+    <decision event="killed">
+      <reaction-set>
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="4907_Foot_1_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="CH_MuSinTower_TaeHoRan_0001_act" target="zonenpcspawn:a_4907_10" type="set-npc-act" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+        <reaction text="4907 env-entered foot_switch" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="4907_Foot_2_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+        <reaction state="open" state2="open" target="zoneenv:e_gate_musintower7_door_02" target2="zoneenv2spawn:e_gate_musintower7_door_02_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_MuSinTower_TaeHoRan_0001_ai">
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MuSinTower_TaeHoRan_0001_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="MH_MusinTower_0002_act" target="zonenpcspawn:a_4907_3" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="CH_MusinTowerManager_0007_ai">
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0007_01_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="MH_MusinTower_0002_01_act" target="zonenpcspawn:a_4907_3" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0007_02_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="MH_MusinTower_0002_02_act" target="zonenpcspawn:a_4907_3" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0007_03_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="MH_MusinTower_0002_03_act" target="zonenpcspawn:a_4907_3" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTowerManager_0007_04_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="MH_MusinTower_0002_04_act" target="zonenpcspawn:a_4907_3" type="set-npc-act" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="MH_MusinTower_0002_ai" parent="Boss_Immune_Slow_MoveBlock_Stun_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="peace_fix_not_detect" target="event:npc-spawn:npc" type="set-npc-act" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_MusinTower_0002_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="CH_MusinTowerManager_0007_01_act" target="zonenpcspawn:a_4907_2" type="set-npc-act" />
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="zonenpcspawn:a_4907_10" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_MusinTower_0002_01_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="CH_MusinTowerManager_0007_02_act" target="zonenpcspawn:a_4907_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_MusinTower_0002_02_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="CH_MusinTowerManager_0007_03_act" target="zonenpcspawn:a_4907_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_MusinTower_0002_03_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction seq="CH_MusinTowerManager_0007_04_act" target="zonenpcspawn:a_4907_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_MusinTower_0002_04_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attackable="y" brain="boss" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+        
+        <reaction seq="MH_MusinTower_0002_05_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="invoked-effect" forward="y" />
+    <decision event="npc-combat-start">
+      <reaction-set>
+        
+        <reaction effect="MH_Common_None_Ghost_Ice_Human" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction effect="ME_Jewel42_None_speeddown" target="event:npc-combat-start:npc" type="invoke-effect" />
+        
+        <reaction attack-target="event:npc-combat-start:npc" end="10" group="zonenpcsquad:s_4907_7" max="1" min="1" spawn-delay="0" spawn-radius="0" spawn-target="event:npc-combat-start:npc" start="1" type="spawn-random-npc" />
+        
+        <reaction end="10" group="zonenpcsquad:s_4907_12" max="1" min="1" start="1" type="spawn-random-npc" />
+        
+        
+        
+        <reaction group-1="zonenpcsquad:s_4907_60" spawn-force="y" type="spawn-npc-groups" />
+        
+        <reaction enable="n" target="zoneenv:e_Chest_4907heartA_01" target2="zoneenv2spawn:e_Chest_4907heartA_01_spawn" type="set-env-enable" />
+        <reaction seq="act_wait_0sec_despawn" target="zonenpcspawn:a_4907_2" type="set-npc-act" />
+        <reaction seq="act_wait_0sec_despawn" target="zonenpcspawn:a_4907_10" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4907_28" max="7" min="4" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4907_35" max="7" min="4" start="1" type="spawn-random-npc" />
+        <reaction attack-target="event:npc-special:target" end="10" group="zonenpcsquad:s_4907_45" max="7" min="4" start="1" type="spawn-random-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction target="event:npc-special:npc" type="dispel-debuff" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="event:npc-special:npc" type="invoke-effect" />
+        
+        <reaction effect="Gadget_Q_DaggerB_Berserker" target="event:npc-special:npc" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="invincible" target="event:npc-special:npc" type="dispel-by-type" />
+        <reaction effect-type="buff-parry" target="event:npc-special:npc" type="dispel-by-type" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction immediately="y" target="event:npc-bleeding:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        
+        <reaction special-id="5" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        
+        
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction text="기공사 대응 보호령" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="90" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="75" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        
+        
+        <reaction amount="2" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction text="기공사 대응 보호령" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="75" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="2" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="60" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="3" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="56" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="job" value-1="기공사" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="1" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="4" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction text="기공사 대응 보호령" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="56" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="3" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="4" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-bleeding">
+      <filter-set>
+        <filter op="eq" subject="event:npc-bleeding:bleeding-idx" subject2="event:npc-bleeding:bleeding-idx" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction immediately="y" target="event:npc-bleeding:npc" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction group="zonenpcsquad:s_4907_8" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction end="10" group="zonenpcsquad:s_4907_8" max="1" min="1" start="1" type="spawn-random-npc" />
+        <reaction special-id="5" target="event:npc-bleeding:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="30" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="4" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="5" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="20" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="5" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="6" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop-percent" value="10" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="6" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="event:attacked:defender" type="npc-fire-special" />
+        <reaction amount="7" reg="1" target="event:attacked:defender" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    <decision event="attacked">
+      <filter-set>
+        <filter field="hp" op="le" subject="event:attacked:defender" subject2="event:attacked:defender" type="prop" value="200" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect-type="modify-ability-71" target="event:npc-combat-end:npc" type="dispel-by-type" />
+        
+        <reaction effect-type="invincible" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction effect-type="buff-parry" target="event:attacked:defender" type="dispel-by-type" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+        
+        
+        <reaction caster="event:attacked:defender" effect="Gang_Play_Additional_die_damage" target="event:attacked:defender" type="invoke-effect" />
+        <reaction text="4907 junghado die" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="attack">
+      <reaction-set>
+        
+        <reaction amount="1" reg="1" target="zonenpcsquad:s_4907_3" type="set-party-number" />
+      </reaction-set>
+    </decision>
+    <decision event="kill">
+      <filter-set>
+        <filter subject="event:kill:defender" subject2="event:kill:defender" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:kill:attacker" social="MH_MusinTower_0002_soc_8" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter field="hp" op="ge" subject="event:npc-combat-end:npc" subject2="event:npc-combat-end:npc" type="prop" value="1" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+        
+        <reaction group="zonenpcsquad:s_4907_28" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4907_35" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4907_45" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4907_8" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4907_11" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4907_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction effect-type="modify-ability-71" target="event:npc-combat-end:npc" type="dispel-by-type" />
+        
+        <reaction effect-type="invincible" target="event:npc-combat-end:npc" type="dispel-by-type" />
+        <reaction effect-type="buff-parry" target="event:npc-combat-end:npc" type="dispel-by-type" />
+        
+        <reaction group="zonenpcsquad:s_4907_7" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4907_3" type="set-party-number" />
+        
+        <reaction group="zonenpcsquad:s_4907_60" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction enable="y" target="zoneenv:e_Chest_4907heartA_01" target2="zoneenv2spawn:e_Chest_4907heartA_01_spawn" type="set-env-enable" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        
+        <reaction group="zonenpcsquad:s_4907_28" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4907_35" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4907_45" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4907_8" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4907_11" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4907_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4907_7" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4907_3" type="set-party-number" />
+        
+        <reaction enable="y" target="zoneenv:e_button_4907yongmak" target2="zoneenv2spawn:e_button_4907yongmak_spawn" type="set-env-enable" />
+        
+        
+        
+        <reaction spawn-1="A_4907_56" spawn-delay="3000" type="spawn-npc" />
+        
+        <reaction group="zonenpcsquad:s_4907_57" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" spawn-delay="3000" type="spawn-npc-index" />
+        
+        <reaction group="zonenpcsquad:s_4907_60" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_GyeongChunMaeng_0048_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction seq="MH_MusinTower_0002_06_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction text="정하도 스폰" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_MusinTower_0002_06_act" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+        
+        <reaction state="open" state2="open" target="zoneenv:e_gate_musintower7_door_01" target2="zoneenv2spawn:e_gate_musintower7_door_01_spawn" type="set-env-state" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  <script alias="CH_MusinTower_BaekWoon_0002_ai" />
+  
+  <script alias="CH_MusinTower_ChungWoon_0001_ai" />
+  
+  <script alias="CH_MusinTower_JukWoon_0001_ai" />
+  
+  <script alias="CH_MusinTower_ChungWoon_0002_ai" />
+  
+  <script alias="CH_MusinTower_JukWoon_0002_ai" />
+  
+  
+  
+  <script alias="q_sub_1386_decision">
+    <quest-decision alias="qd_1386_1">
+      <reaction-set>
+        
+        <reaction group="zonenpcsquad:s_4907_57" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  <script alias="CH_MusinTower_BaekWoon_0003_ai" parent="q_sub_1386_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_4907_57" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_58" social="CH_ChungWoon_0003_soc_1" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_57" social="CH_MusinTower_BaekWoon_0003_soc_1" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_59" social="CH_JukWoon_0003_soc_1" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_57" social="CH_MusinTower_BaekWoon_0003_soc_2" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_59" social="CH_JukWoon_0003_soc_2" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_57" social="CH_MusinTower_BaekWoon_0003_soc_3" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="7" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_58" social="CH_ChungWoon_0003_soc_2" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="8" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_57" social="CH_MusinTower_BaekWoon_0003_soc_4" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="9" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_59" social="CH_JukWoon_0003_Soc_3" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="10" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction from="zonenpcspawn:a_4907_58" social="CH_ChungWoon_0003_soc_3" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_MusinTower_BaekWoon_0003_01_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="CH_MusinTower_BaekWoon_0003_01_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_ChungWoon_0003_ai" parent="q_sub_1386_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="A_4907_58" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="CH_JukWoon_0003_ai" parent="q_sub_1386_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="A_4907_59" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  <script alias="ME_MuSinTowerDummy_0005_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_MuSinTowerDummy_0005_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction immediately="y" target="zonenpcspawn:a_4907_3" transit-cond-idx="1" type="transit-npc-combat" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0005_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0005_01_act" target="event:act-finished:npc" type="set-npc-act" />
+        
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0005_01_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0005_01_act" target="event:act-finished:npc" type="set-npc-act" />
+        
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0006_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_MuSinTowerDummy_0006_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_4907_3:reg-1" subject2="zonenpcsquad:s_4907_3:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction special-id="4" target="zonenpcspawn:a_4907_3" type="npc-fire-special" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4907_3" type="set-party-number" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_4907_3:reg-1" subject2="zonenpcsquad:s_4907_3:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4907_3" type="set-party-number" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0006_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0006_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0007_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0008_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_MuSinTowerDummy_0008_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction text="4907 dummy_0008 npc-spawn" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction special-id="4" target="zonenpcspawn:a_4907_3" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0008_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0008_act" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction text="4908 dummy_0008 act-finished" type="debug-trace" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_MuSinTowerDummy_0010_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  
+  
+  <script alias="ME_MuSinTowerDummy_0024_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0025_ai" parent="musintower_jangpan_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0026_ai" parent="musintower_jangpan_parent_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="A_4908_13_1" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="1" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="A_4908_13_2" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="2" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="A_4908_13_3" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="3" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="A_4908_13_4" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="4" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="A_4908_13_5" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction special-id="5" target="event:npc-combat-start:npc" type="npc-fire-special" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:npc-special:npc" type="despawn-npc" />
+        <reaction group="zonenpcsquad:s_4908_26" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_4908_55" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="despawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0034_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="y" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction group="zonenpcsquad:s_4908_55" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" spawn-delay="250" spawn-target="event:npc-spawn:npc" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:npc-special:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0037_ai" parent="musintower_jangpan_parent_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0027_ai" parent="musintower_jangpan_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0028_ai" parent="musintower_jangpan_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0029_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_4908_2 :reg-1" subject2="zonenpcsquad:s_4908_2 :reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_18" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_18" type="invoke-effect" />
+        <reaction special-id="3" target="zonenpcspawn:a_4908_18" type="npc-fire-special" />
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="3" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4908_2" type="set-party-number" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter op="eq" subject="zonenpcsquad:s_4908_2:reg-1" subject2="zonenpcsquad:s_4908_2:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="zonenpcsquad:s_4908_2" type="set-party-number" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0029_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0029_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0019_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_18" type="invoke-effect" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0019_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0019_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0030_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_MuSinTowerDummy_0030_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set probability="65">
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_18" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_18" type="invoke-effect" />
+        <reaction special-id="3" target="zonenpcspawn:a_4908_18" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+      <reaction-set probability="35">
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_18" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_18" type="dispel-by-type" />
+        <reaction special-id="4" target="zonenpcspawn:a_4908_18" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0030_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0030_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0022_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_MuSinTowerDummy_0022_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="4" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="4" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="3" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="4" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+        <reaction text="4908 무신 3성 무신의힘" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="4" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="4" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="5" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="4" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="6" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="4" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="7" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="4" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="8" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="4" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0022_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0022_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0023_ai" parent="musintower_jangpan_parent_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="npc-special" forward="y" />
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0035_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_MuSinTowerDummy_0035_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_19" type="dispel-by-type" />
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        <reaction special-id="3" target="zonenpcspawn:a_4908_19" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0035_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0035_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0036_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_4908_21_1" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_MuSinTowerDummy_0036_01_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction text="4908 1성 타임어택" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_4908_21_2" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_MuSinTowerDummy_0036_02_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction text="4908 2성 타임어택" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+        <filter spawn="a_4908_21_3" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_MuSinTowerDummy_0036_03_act" target="event:npc-spawn:npc" type="set-npc-act" />
+        <reaction text="4908 3성 타임어택" type="debug-trace" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0036_01_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_2" type="invoke-effect" />
+        
+        <reaction target="zonenpcspawn:a_4908_2" type="dispel-debuff" />
+        
+        <reaction effect-type="additional-hp" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0036_02_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_18" type="invoke-effect" />
+        
+        <reaction target="zonenpcspawn:a_4908_18" type="dispel-debuff" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_18" type="invoke-effect" />
+        
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0036_03_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        <reaction target="zonenpcspawn:a_4908_19" type="dispel-debuff" />
+        
+        <reaction effect="ME_MuSin_None_Guard_DetectHide" target="zonenpcspawn:a_4908_19" type="invoke-effect" />
+        
+        
+        <reaction despawn-force="y" respawn-after-despawn="n" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0020_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0038_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="ME_MuSinTowerDummy_0038_act" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter either="y" subject="zonenpcspawn:a_4908_2" subject2="zonenpcspawn:a_4908_2" type="effect-attribute" value-1="퀘스트-3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_2" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        
+        
+        
+        <reaction immediately="y" target="zonenpcspawn:a_4908_2" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction special-id="5" target="zonenpcspawn:a_4908_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+        <filter subject="event:act-paused:npc" subject2="event:act-paused:npc" type="event-broadcasted" value="n" />
+        <filter either="n" subject="zonenpcspawn:a_4908_2" subject2="zonenpcspawn:a_4908_2" type="effect-attribute" value-1="퀘스트-3" />
+      </filter-set>
+      <reaction-set>
+        
+        <reaction effect="PVE_Common_ImmuneAll" target="zonenpcspawn:a_4908_2" type="invoke-effect" />
+        
+        <reaction effect-type="down" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="stun" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="kneel" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="knockback" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="midair-1" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="midair-2" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="midair-3" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        <reaction effect-type="defence" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />        
+        <reaction effect-type="frostbite" target="zonenpcspawn:a_4908_2" type="dispel-by-type" />
+        
+        <reaction immediately="y" target="zonenpcspawn:a_4908_2" transit-cond-idx="1" type="transit-npc-combat" />
+        
+        <reaction special-id="4" target="zonenpcspawn:a_4908_2" type="npc-fire-special" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="eq" subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="ME_MuSinTowerDummy_0038_act" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction seq="ME_MuSinTowerDummy_0038_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  <script alias="ME_MuSinTowerDummy_0033_ai" parent="musintower_jangpan_parent_decision" />
+  <script alias="ME_MuSinTowerDummy_0039_ai" />
+  
+  <script alias="CE_MusinTowerBox_0001_ai" />
+  <script alias="CE_MusinTowerBox_0002_ai" />
+</table>

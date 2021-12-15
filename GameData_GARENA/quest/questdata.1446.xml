@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1446.xml-->
+  <quest alias="q_epic_1446" category="epic" completed-list="y" id="1446" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SA_DoCheonPung_0007" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SA_DoDanHa_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_GoBong_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JinSoA_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_DoCheonPung_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_SA_JinSoA_0005" party-broadcast="n" progress-mission="y" quest-decision="qd_1446_8" type="talk" />
+        <case object="npc:CH_SA_DoCheonPung_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_DoDanHa_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_GoBong_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_DoCheonPung_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="zone:zone_ChooAngka" party-broadcast="n" progress-mission="y" quest-decision="qd_1446_3" type="enter-zone" />
+        <case object="npc:CH_SA_DoCheonPung_0007" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object="npc:CH_SA_DoDanHa_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_GoBong_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JinSoA_0005" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_1446_4" rollback="leave-zone" time-limit-type="none" zone-1="zone_ChooAngka">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_SA_JinSoA_0006" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_ChooAngka" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1446_3" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="zone_chooangka" />
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1446_5" rollback="leave-zone" zone-1="zone_ChooAngka">
+      <mission id="5" required-register-value="1">
+        <case object2="npc:ME_CT_ChuAngKa_0020" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zone:zone_ChooAngka" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1446_3" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="zone_chooangka" />
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1446_6" rollback="leave-zone" zone-1="zone_ChooAngka">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_SA_Citizen_0195" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_ChooAngka" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1446_3" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="zone_chooangka" />
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_1446_7" rollback="leave-zone" zone-1="zone_ChooAngka">
+      <mission id="7" required-register-value="1" reward-1="1446_final_set1">
+        <case object="npc:CH_SA_JinSoA_0006" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_ChooAngka" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1446_3" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="zone_chooangka" />
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1447" />
+    </completion>
+  </quest>
+</table>

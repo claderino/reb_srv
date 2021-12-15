@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="act-sequence" version="0.12">
+  <!--script\actsequencedata.baekchung_bloodwindc.xml-->
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  <act-sequence alias="CH_SA_BFF_MurimMedic_0001_0001_Act" type="act">
+    
+    <action duration="4000" type="stay" />
+    
+    <action social="CH_SA_BFF_MurimMedic_0001_0001_soc_02" type="social" />
+    
+    <action duration="2000" type="stay" />
+    
+    <action social="BFF_BloodDragon_HeadLine_Msg_01" type="social" />
+    
+    <action duration="6000" type="stay" />
+    
+    <action social="CH_SA_BFF_MurimMedic_0001_0001_soc_01" type="social" />
+  </act-sequence>
+
+  
+  <act-sequence alias="CH_SA_BFF_HonCheonMedic_0001_0001_Act" type="act">
+    
+    <action duration="4000" type="stay" />
+    
+    <action social="CH_SA_BFF_HonCheonMedic_0001_0001_soc_02" type="social" />
+    
+    <action duration="2000" type="stay" />
+    
+    <action social="BFF_BloodDragon_HeadLine_Msg_01" type="social" />
+    
+    <action duration="6000" type="stay" />
+    
+    <action social="CH_SA_BFF_HonCheonMedic_0001_0001_soc_01" type="social" />
+  </act-sequence>
+</table>

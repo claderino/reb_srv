@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.225.xml-->
+  <quest alias="q_epic_225" broadcast-category="field" category="epic" completed-list="y" district-1="startzone" id="225" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="검사" level="1" />
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="1" reward-1="225_final_set1">
+        <case grocery="start_zone_book" object="npc:ch_youngmook_0009" party-broadcast="n" progress-mission="y" quest-decision="qd_225_m1_1" required-item-1="start_zone_book" required-item-depot="bag" required-item-loss="y" type="talk" />
+        <case object="npc:ch_hongsukkeun_0001" party-broadcast="n" type="approach" />
+        <case object="zone:startzone_renew_all" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_225_m1_exc" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2" quest-decision="qd_225_ms2_1" zone-1="startzone_renew_blade">
+      <mission id="2" required-register-value="1">
+        <tutorial-case progress-mission="y" type="equip-item" />
+        <case object="npc:ch_youngmook_0009" party-broadcast="n" type="talk" />
+        <case object="zone:startzone_renew_blade" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_225_m2_exc" type="enter-zone" />
+        <case object="npc:ch_musung_0003" party-broadcast="n" type="talk" />
+        <case object="npc:ch_hwajoong_0004" party-broadcast="n" type="talk" />
+        <case object="npc:ch_jinyoung_0003" party-broadcast="n" type="talk" />
+        <case object="npc:ch_gilhong_0005" party-broadcast="n" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:1102_foot_3" party-broadcast="n" progress-mission="y" quest-decision="qd_225_m3_1" type="env-entered" />
+        <case object="zone:startzone_renew_blade" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_225_m3_exc" type="enter-zone" />
+        <case object="npc:ch_musung_0003" party-broadcast="n" type="talk" />
+        <case object="npc:ch_hwajoong_0004" party-broadcast="n" type="talk" />
+        <case object="npc:ch_jinyoung_0003" party-broadcast="n" type="talk" />
+        <case object="npc:ch_gilhong_0005" party-broadcast="n" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest job-1="검사" quest="q_epic_226" />
+    </completion>
+    <transit id="1" zone="startzone_renew_blade">
+      <destination mission-step-id="1" zone-index="0" />
+      <destination mission-step-id="2" zone-index="0" />
+      <destination mission-step-id="3" zone-index="0" />
+    </transit>
+  </quest>
+</table>

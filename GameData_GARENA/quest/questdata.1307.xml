@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1307.xml-->
+  <quest alias="q_sub_1307" broadcast-category="field" category="job" district-1="jeryoungrim" id="1307" max-repeat="1" save-type="all" tutorial="y">
+    <mission-step id="1" quest-decision="qd_1307_1" zone-1="zone_HeukUmmRim_Dun_2_p">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_HeukUmmRim_Dun_2_p" party-broadcast="n" progress-mission="y" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1307_2" zone-1="zone_HeukUmmRim_Dun_2_p">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_hwajung_0013" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HeukUmmRim_Dun_2_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1307_ex_2" type="enter-zone" />
+        <case object="npc:mh_hwajung_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1307_3" zone-1="zone_HeukUmmRim_Dun_2_p">
+      <mission id="3" required-register-value="1">
+        <case object="zone:zone_HeukUmmRim_Dun_2_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1307_ex_3" type="enter-zone" />
+        <case object="npc:ch_hwajung_0049" party-broadcast="n" progress-mission="y" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4" quest-decision="qd_1307_4" zone-1="zone_HeukUmmRim_Dun_2_p">
+      <mission id="4" required-register-value="1">
+        <case object="zone:zone_HeukUmmRim_Dun_2_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1307_ex_4" type="enter-zone" />
+        <case object2="npc:mh_heukryongchae_0003" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1307_5" zone-1="zone_HeukUmmRim_Dun_2_p">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_hwajung_0049" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HeukUmmRim_Dun_2_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1307_ex_5" type="enter-zone" />
+        <case object="npc:mh_hwajung_0010" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1307_6" zone-1="zone_HeukUmmRim_Dun_2_p">
+      <mission id="6" required-register-value="1">
+        <case object="zone:zone_HeukUmmRim_Dun_2_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1307_ex_6" type="enter-zone" />
+        <case object2="zoneenv2:2008_footswitch_cq_4" party-broadcast="n" progress-mission="y" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_1307_7" zone-1="zone_HeukUmmRim_Dun_2_p">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ch_hwajung_0014" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_HeukUmmRim_Dun_2_p" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1307_ex_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <acquisition job-1="job-none" level="10" preceding-quest-1="q_sub_1306" preceding-quest-2="q_sub_1313" preceding-quest-3="q_sub_1320" preceding-quest-4="q_sub_1327" preceding-quest-5="q_sub_1334" preceding-quest-6="q_sub_1341" preceding-quest-7="q_sub_1349" preceding-quest-8="q_sub_1231" preceding-quest-9="q_sub_350" preceding-quest-check="or" />
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:ch_merchantcharm_001" party-broadcast="n" progress-mission="n" type="approach" />
+        <case object2="zoneenv2:e_chest_burner_01" party-broadcast="y" progress-mission="y" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1" reward-1="1307_final_set1">
+        <case object="npc:ch_merchantcharm_001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="2" zone="zone_HeukUmmRim_Dun_2">
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

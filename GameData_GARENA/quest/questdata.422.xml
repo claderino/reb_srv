@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.422.xml-->
+  <quest alias="q_sub_422" broadcast-category="field" category="normal" id="422" max-repeat="1" reset-type="daily" retired="y" save-type="all">
+    <acquisition level="43" preceding-quest-1="q_sub_431" preceding-quest-2="q_sub_1160" preceding-quest-3="q_sub_1384" preceding-quest-4="q_sub_1509" preceding-quest-check="or" reward-1="422_final_set1" reward-2="422_final_set2">
+      <case acquire-quest="y" completion-count="1" object="npc:ch_muyeongdan_0007" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:ch_muyeongdan_0007" party-broadcast="n" type="talk" />
+    </acquisition>
+  </quest>
+</table>

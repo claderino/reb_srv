@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="CombatData" release-side="server" type="effect" version="0.237">
+  <!--effectdata_npc_shooter.xml-->
+	<record alias="MH_Shooter_DualPistol_Gun-Kata" buff-type="buff" detach-count="1" flag="detection" id="55140010" level="1" passive-duration="5000" type="detection" />
+	<record alias="MH_Shooter_DualPistol_reload" buff-type="instant" id="55140020" level="1" type="sp-heal" />
+	<record alias="MH_Shooter_DualPistol_fire_damage" buff-type="instant" id="55140030" level="1" power-percent-max="200" power-percent-min="200" type="range-physical-attack" />
+	<record alias="MH_Shooter_DualPistol_stun_shot_damage" buff-type="instant" id="55140040" level="1" power-percent-max="300" power-percent-min="300" type="range-physical-attack" />
+	<record alias="MH_Shooter_DualPistol_Rapid_fire_damage" buff-type="instant" id="55140050" level="1" power-percent-max="100" power-percent-min="100" type="range-physical-attack" />
+	<record alias="MH_Shooter_Rifle_Curtain_Fire_damage" buff-type="instant" id="55140060" level="1" power-percent-max="200" power-percent-min="200" type="range-physical-attack" />
+	<record alias="MH_Shooter_Rifle_reload" buff-type="instant" id="55140070" level="1" type="sp-heal" />
+	<record alias="MH_Shooter_Rifle_Suppressing_Fire_damage" buff-type="instant" id="55140080" level="1" power-percent-max="87" power-percent-min="87" type="range-physical-attack" />
+	<record alias="MH_Shooter_Rifle_Suppressing_Fire_speeddown" buff-type="debuff" drop-field-item="y" id="55140081" level="1" miss-probability="90" modify-ability-percent-1="-20" passive-duration="2000" speed-percent="-40" type="stagger" />
+	<record alias="MH_Shooter_Rifle_Piercing_shot_damage" buff-type="instant" id="55140090" level="1" power-percent-max="350" power-percent-min="350" type="range-physical-attack" />
+	<record alias="MH_Shooter_Rifle_Piercing_shot_knockback" attribute-1="넉백" attribute-2="행동불가" buff-type="debuff" catch-linked="attach" catch-linker="dispel" drop-field-item="y" flag="knockback" function-1="block-move" function-2="block-rotate" function-3="block-skill" function-4="block-parry" function-5="block-dodge" function-6="block-bounce" id="55145010" inhalation-linked="attach" inhalation-linker="dispel" knockback-direction="Push" knockback-speed="25" knockback-type="Roll" level="1" mount-linked="attach" mount-linker="dispel" passive-duration="1000" power-percent-max="350" power-percent-min="350" type="knockback" />
+	<record alias="MH_Shooter_Rifle_Suppressing_Fire_damage_lv2" buff-type="instant" id="55140100" level="1" power-percent-max="350" power-percent-min="350" type="range-physical-attack" />
+	<record alias="MH_Shooter_Rifle_Suppressing_Fire_speeddown_lv2" buff-type="debuff" drop-field-item="y" id="55140101" level="1" miss-probability="90" modify-ability-percent-1="-30" passive-duration="3000" speed-percent="-40" type="stagger" />
+	<record alias="MH_Shooter_Rifle_Suppressing_Fire_damage_lv3" buff-type="instant" id="55140110" level="1" power-percent-max="500" power-percent-min="500" type="range-physical-attack" />
+	<record alias="MH_Shooter_Rifle_Suppressing_Fire_speeddown_lv3" buff-type="debuff" drop-field-item="y" id="55140111" level="1" miss-probability="90" modify-ability-percent-1="-40" passive-duration="4000" speed-percent="-40" type="stagger" />
+	<record alias="MH_Shooter_Rifle_sharpshooting_RangeDamage" buff-type="instant" id="55140120" level="1" power-percent-max="800" power-percent-min="800" type="range-physical-attack" />
+	<record alias="MH_Shooter_Rifle_sharpshooting_LV2_RangeDamage" buff-type="instant" id="55140130" level="1" power-percent-max="800" power-percent-min="800" type="range-physical-attack" />
+	<record alias="MH_Shooter_Rifle_sharpshooting_LV3_RangeDamage" buff-type="instant" id="55140140" level="1" power-percent-max="800" power-percent-min="800" type="range-physical-attack" />
+	<record alias="MH_Shooter_Rifle_sharpshooting_Q_Damage" buff-type="instant" hp-percent="-1000" id="55145030" level="1" type="hp-damage" />
+	<record alias="MH_Shooter_Rifle_Sliding_damage" buff-type="instant" id="55145050" level="1" power-percent-max="300" power-percent-min="300" type="melee-physical-attack" />
+</table>

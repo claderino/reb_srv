@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.887.xml-->
+  <quest alias="q_sub_887" broadcast-category="field" category="normal" id="887" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_sub_824" preceding-quest-2="q_sub_823" preceding-quest-3="q_sub_820" preceding-quest-check="and" preceding-quest-mission-step-1="2" preceding-quest-mission-step-2="1" preceding-quest-mission-step-3="1">
+      <case acquire-quest="y" completion-count="1" completion-count-op="ge" object="npc:ce_ct_board_0027" party-broadcast="n" type="talk" />
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:ch_ct_golapa_0001" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="15">
+        <case object2="npc:ME_CT_DonDon_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_DonDon_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_DonDon_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_MeiOne_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_MeiOne_0001" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_Akyo_0002" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_CrocodileSharkTribeD_0024" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_CrocodileSharkTribeD_0022" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="2" required-register-value="1">
+        <case object2="npc:me_ct_nakwon_0022" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_ct_pigtribec_0003" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:me_ct_crocodilesharktribec_0011" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="3" required-register-value="1" reward-1="887_final_set1" reward-2="887_final_set2">
+        <case object="npc:ch_ct_golapa_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

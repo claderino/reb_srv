@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.r_infinitychamber.xml-->
+
+  
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_WC_InfinityChamberBoss_0001_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_SorcererBoss_SoulBurnRight" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_SorcererBoss_Claw" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_SorcererBoss_LaserSlash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="GWD_LR_SorcererBoss_RoundExplosion_M" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="GWD_LR_SorcererBoss_RoundExplosion_R" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="n" skill3="GWD_LR_SorcererBoss_TimeReverse" type="use-skill" />
+      
+      <action immune-breaker-disable="y" type="select">
+        <action combo="y" immune-breaker-disable="y" prob="50" skill3="GWD_LR_SorcererBoss_RoundExplosion_M" type="use-skill" />
+        <action combo="y" immune-breaker-disable="y" prob="50" skill3="GWD_LR_SorcererBoss_RoundExplosion_R" type="use-skill" />
+      </action>
+      
+      <action duration="10000" immune-breaker-disable="y" skill3="GWD_LR_SorcererBoss_EnergyExplosion" target="event:npc-combat-action:target" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_SorcererBoss_LaserSlash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" type="select">
+        <action immune-breaker-disable="y" prob="50" skill3="GWD_LR_SorcererBoss_RoundExplosion_M" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="GWD_LR_SorcererBoss_RoundExplosion_R" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="n" skill3="GWD_LR_SorcererBoss_TimeReverse" type="use-skill" />
+      
+      <action immune-breaker-disable="y" type="select">
+        <action combo="y" immune-breaker-disable="y" prob="50" skill3="GWD_LR_SorcererBoss_RoundExplosion_M" type="use-skill" />
+        <action combo="y" immune-breaker-disable="y" prob="50" skill3="GWD_LR_SorcererBoss_RoundExplosion_R" type="use-skill" />
+      </action>
+      
+      <action duration="10000" immune-breaker-disable="y" skill3="GWD_LR_SorcererBoss_EnergyExplosion" target="event:npc-combat-action:target" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_SorcererBoss_LaserSlash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" social="ME_WC_InfinityChamberBoss_0001_soc_08" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_SorcererBoss_DeathPillar" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_InfinityChamberBoss_0001_berserk_CS">
+    <normal combat-distance="7" id="1">
+      
+      <action immune-breaker-disable="y" social="ME_WC_InfinityChamberBoss_0001_soc_10" type="do-social" />
+      <action immune-breaker-disable="y" repeat="99" skill3="GWD_LR_SorcererBoss_Berserk" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0361_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="Serveryaw" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action ground-pattern-1="pattern_60" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_62" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_64" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_66" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_61" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_63" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_65" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_67" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WC_Dummy_0362_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="Serveryaw" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action ground-pattern-1="pattern_68" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_70" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_72" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_74" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_69" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_71" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_73" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_75" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WC_Dummy_0363_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="Serveryaw" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action ground-pattern-1="pattern_76" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_78" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_80" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_82" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_77" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_79" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_81" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_83" immune-breaker-disable="y" origin-pos="0,0,0" skill3="GWD_LR_Dummy_None_MultiGround" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WC_Dummy_0355_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action immune-breaker-disable="y" skill3="GWD_VT_B2_SorcererBoss_SoulBurn" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="MH_WC_SeoBangSak_0001_CS">
+    <normal combat-distance="3" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_GroundAttack" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_Laser" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_Counter" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_TargetBeam" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_EventTargetNuke" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="GWD_LR_Warlock_RearDash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="GWD_LR_Warlock_Backstep" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_RangeCC" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_BigLB" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="GWD_LR_Warlock_RearDash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" skill3="GWD_LR_Warlock_Backstep" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_RangeCC" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="15000" start-delay="15000">
+      
+      <action duration="5000" immune-breaker-disable="y" skill3="GWD_LR_Warlock_RangeMoveBlock" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_GroundAttack" type="use-skill" />
+      
+      <action combo="y" immune-breaker-disable="y" skill3="GWD_LR_Warlock_Nuke" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_Command" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="GWD_LR_Warlock_RearDash" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WC_Hades_0001_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" skill3="ME_LR_Hades_None_NAtk1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_LR_Hades_None_NAtk2_180" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_LR_Hades_None_Jab" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_LR_Hades_None_Laser2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WC_Hades_0002_CS">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" skill3="ME_LR_Hades_None_NAtk1" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_LR_Hades_None_NAtk2_180" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_LR_Hades_None_Jab" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="ME_LR_Hades_None_Laser2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  
+  
+  
+
+</table>

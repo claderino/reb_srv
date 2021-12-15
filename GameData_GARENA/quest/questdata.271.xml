@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.271.xml-->
+  <quest alias="q_epic_271" broadcast-category="field" category="epic" completed-list="n" id="271" max-repeat="1" retired="y" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case drop-gadget="y" object="npc:CH_CT_JeGukGun_0028" party-broadcast="n" progress-mission="y" quest-decision="qd_271_2" type="talk" />
+        <case object="zone:Zone_JoJangWon_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_271_1" type="enter-zone" />
+        <case object="npc:MH_CT_JoJangWon_0004" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="2" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_CT_JeGukGun_0028" party-broadcast="n" progress-mission="reaction-only" type="talk" />
+        <case object2="zoneenv2:e_gate_latchin_01" party-broadcast="n" progress-mission="y" quest-decision="qd_271_3" type="manipulate" />
+        <case object="npc:MH_CT_JoJangWon_0004" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="3" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="3" required-register-value="1">
+        <case object2="npc:MH_CT_BokUnHoe_0002" party-broadcast="n" progress-mission="y" type="loot" />
+        <case object="npc:CH_CT_JeGukGun_0028" party-broadcast="n" type="approach" />
+        <case object="npc:MH_CT_JoJangWon_0004" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="4" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0028" party-broadcast="n" progress-mission="y" quest-decision="qd_271_4" type="talk" />
+        <case object="npc:MH_CT_JoJangWon_0004" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="5" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0029" party-broadcast="n" progress-mission="y" quest-decision="qd_271_5" type="talk" />
+        <case drop-gadget="y" gadget="Q_PoisonedNeedle_0003" gadget-required="not-a" object2="npc:ME_CT_RewardBox_0016" party-broadcast="n" progress-mission="reaction-only" type="killed" />
+        <case object="npc:MH_CT_JoJangWon_0004" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="6" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="6" required-register-value="1">
+        <case object2="zoneenv2:5171_footswitch_02" party-broadcast="n" progress-mission="y" quest-decision="qd_271_6" type="env-entered" />
+        <case object="npc:MH_CT_JoJangWon_0004" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_271_7" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="7" required-register-value="20">
+        <case object="npc:MH_CT_JoJangWon_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0029" party-broadcast="n" type="approach" />
+        <case object2="npc:MH_CT_BokUnHoe_0010" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0004" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0005" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0006" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0007" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0008" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0009" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0092" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0080" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0081" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0082" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0083" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0084" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BokUnHoe_0085" party-broadcast="n" progress-mission="y" type="killed" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="8" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="8" required-register-value="1">
+        <case object2="zoneenv2:5171_footswitch_03" party-broadcast="n" progress-mission="y" quest-decision="qd_271_8" type="env-entered" />
+        <case object="npc:CH_CT_JeGukGun_0031" party-broadcast="n" type="approach" />
+        <case object="npc:MH_CT_JeGukGun_0558" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="9" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CH_CT_JinSoA_0016" party-broadcast="n" progress-mission="y" quest-decision="qd_271_9" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0031" party-broadcast="n" type="approach" />
+        <case object="npc:MH_CT_JeGukGun_0558" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="10" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="10" required-register-value="1">
+        <case idx="1" object="npc:CH_CT_JinSoA_0016" party-broadcast="n" progress-mission="y" quest-decision="qd_271_10" type="npc-bleeding-occured" />
+        <case object="npc:CH_CT_JeGukGun_0031" party-broadcast="n" type="approach" />
+        <case object="npc:MH_CT_JeGukGun_0558" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="11" rollback="leave-zone" zone-1="Zone_JoJangWon_p1">
+      <mission id="11" required-register-value="1">
+        <case object="npc:CH_CT_JinSoA_0020" party-broadcast="n" progress-mission="y" quest-decision="qd_271_11" type="npc-manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0031" party-broadcast="n" type="approach" />
+        <case object="npc:MH_CT_JeGukGun_0558" party-broadcast="n" type="approach" />
+      </mission>
+      <mission-step-fail quest-decision="qd_271_13" rollback-step-id="1" zone-1="Zone_JoJangWon_p1" />
+    </mission-step>
+    <mission-step id="12" rollback="none">
+      <mission id="12" required-register-value="1" reward-1="271_final_set1">
+        <case object="npc:CH_CT_JeGukGun_0034" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:Zone_JoJangWon_p1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_271_12" type="enter-zone" />
+        <case object="npc:CH_CT_Guard_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_272" />
+    </completion>
+    <transit id="1" zone="Zone_JoJangWon">
+      <destination mission-step-id="12" zone-index="1" />
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

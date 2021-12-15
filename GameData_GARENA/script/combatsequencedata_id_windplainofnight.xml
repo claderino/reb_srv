@@ -1,0 +1,1887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata_id_windplainofnight.xml-->
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0001_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Chop" skill3="ME_BEI_B1_SaintTurtle_Chop" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Swing" skill3="ME_BEI_B1_SaintTurtle_Swing" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Sneeze" skill3="ME_BEI_B1_SaintTurtle_Sneeze" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Wind" skill3="ME_BEI_B1_SaintTurtle_Wind" type="use-skill" />
+      </action>
+      <action type="select">
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_01" type="do-social" />
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_02" type="do-social" />
+        <action duration="100" immune-breaker-disable="y" prob="60" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_14" ground-pattern-5="pattern_17" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza" skill3="ME_BEI_B1_SaintTurtle_Influenza" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_29" ground-pattern-2="pattern_30" ground-pattern-3="pattern_31" ground-pattern-4="pattern_33" ground-pattern-5="pattern_39" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza" skill3="ME_BEI_B1_SaintTurtle_Influenza" type="boss-multiground-attack" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0002_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Chop" skill3="ME_BEI_B1_SaintTurtle_Chop" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Swing" skill3="ME_BEI_B1_SaintTurtle_Swing" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Sneeze" skill3="ME_BEI_B1_SaintTurtle_Sneeze" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Wind" skill3="ME_BEI_B1_SaintTurtle_Wind" type="use-skill" />
+      </action>
+      <action type="select">
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_01" type="do-social" />
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_02" type="do-social" />
+        <action duration="100" immune-breaker-disable="y" prob="60" type="stay" />
+      </action>
+      <action type="select">
+        
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_14" ground-pattern-5="pattern_17" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza" skill3="ME_BEI_B1_SaintTurtle_Influenza" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_29" ground-pattern-2="pattern_30" ground-pattern-3="pattern_31" ground-pattern-4="pattern_33" ground-pattern-5="pattern_39" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza" skill3="ME_BEI_B1_SaintTurtle_Influenza" type="boss-multiground-attack" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" target-area="5505_5" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_0001_battle_03" type="do-social" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Indigestion" skill3="ME_BEI_B1_SaintTurtle_Indigestion" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0003_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Chop" skill3="ME_BEI_B1_SaintTurtle_Chop" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_DoubleChop" skill3="ME_BEI_B1_SaintTurtle_DoubleChop" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Swing" skill3="ME_BEI_B1_SaintTurtle_Swing" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Sneeze" skill3="ME_BEI_B1_SaintTurtle_Sneeze" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Wind" skill3="ME_BEI_B1_SaintTurtle_Wind" type="use-skill" />
+      </action>
+      <action type="select">
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_01" type="do-social" />
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_02" type="do-social" />
+        <action duration="100" immune-breaker-disable="y" prob="60" type="stay" />
+      </action>
+      
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_14" ground-pattern-5="pattern_17" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza_S" skill3="ME_BEI_B1_SaintTurtle_Influenza_S" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_29" ground-pattern-2="pattern_30" ground-pattern-3="pattern_31" ground-pattern-4="pattern_33" ground-pattern-5="pattern_39" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza_S" skill3="ME_BEI_B1_SaintTurtle_Influenza_S" type="boss-multiground-attack" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_11" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_0001_battle_04" type="do-social" />
+      <action event-step="2" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" target-area="5505_5" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_0001_battle_03" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Indigestion" skill3="ME_BEI_B1_SaintTurtle_Indigestion" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action duration="20000" immune-breaker-disable="y" skill="ME_BEI_B1_SaintTurtle_ShakeBack_Buff" skill3="ME_BEI_B1_SaintTurtle_ShakeBack_Buff" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="0">
+      <action duration="20000" immune-breaker-disable="y" skill="ME_BEI_B1_SaintTurtle_ShakeBack" skill3="ME_BEI_B1_SaintTurtle_ShakeBack" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0004_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Chop" skill3="ME_BEI_B1_SaintTurtle_Chop" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_DoubleChop" skill3="ME_BEI_B1_SaintTurtle_DoubleChop" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Swing" skill3="ME_BEI_B1_SaintTurtle_Swing" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Sneeze" skill3="ME_BEI_B1_SaintTurtle_Sneeze" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Wind" skill3="ME_BEI_B1_SaintTurtle_Wind" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Crouch" skill3="ME_BEI_B1_SaintTurtle_Crouch" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_01" type="do-social" />
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_02" type="do-social" />
+        <action duration="100" immune-breaker-disable="y" prob="60" type="stay" />
+      </action>
+      
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_14" ground-pattern-5="pattern_17" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza_S" skill3="ME_BEI_B1_SaintTurtle_Influenza_S" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_29" ground-pattern-2="pattern_30" ground-pattern-3="pattern_31" ground-pattern-4="pattern_33" ground-pattern-5="pattern_39" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza_S" skill3="ME_BEI_B1_SaintTurtle_Influenza_S" type="boss-multiground-attack" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" social="NightWindPlain_Notice_msg_32" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_0001_battle_04" type="do-social" />
+      <action event-step="2" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" target-area="5505_5" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_0001_battle_03" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Indigestion" skill3="ME_BEI_B1_SaintTurtle_Indigestion" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action duration="20000" immune-breaker-disable="y" skill="ME_BEI_B1_SaintTurtle_ShakeBack_Buff" skill3="ME_BEI_B1_SaintTurtle_ShakeBack_Buff" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar2" skill3="ME_BEI_B1_SaintTurtle_ShootingStar2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action arrived-effect="ME_BEI_B1_SaintTurtle_BackSpin_Finish" immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="0">
+      <action duration="20000" immune-breaker-disable="y" skill="ME_BEI_B1_SaintTurtle_ShakeBack" skill3="ME_BEI_B1_SaintTurtle_ShakeBack" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar2" skill3="ME_BEI_B1_SaintTurtle_ShootingStar2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action arrived-effect="ME_BEI_B1_SaintTurtle_BackSpin_Finish" immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0005_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Chop" skill3="ME_BEI_B1_SaintTurtle_Chop" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_DoubleChop" skill3="ME_BEI_B1_SaintTurtle_DoubleChop" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Swing" skill3="ME_BEI_B1_SaintTurtle_Swing" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Sneeze" skill3="ME_BEI_B1_SaintTurtle_Sneeze" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Wind" skill3="ME_BEI_B1_SaintTurtle_Wind" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Crouch" skill3="ME_BEI_B1_SaintTurtle_Crouch" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_01" type="do-social" />
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_02" type="do-social" />
+        <action duration="100" immune-breaker-disable="y" prob="60" type="stay" />
+      </action>
+      
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_14" ground-pattern-5="pattern_17" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza_S" skill3="ME_BEI_B1_SaintTurtle_Influenza_S" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_29" ground-pattern-2="pattern_30" ground-pattern-3="pattern_31" ground-pattern-4="pattern_33" ground-pattern-5="pattern_39" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza_S" skill3="ME_BEI_B1_SaintTurtle_Influenza_S" type="boss-multiground-attack" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" social="NightWindPlain_Notice_msg_32" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_0001_battle_04" type="do-social" />
+      <action event-step="2" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Roar" skill3="ME_BEI_B1_SaintTurtle_Roar" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Roar2" skill3="ME_BEI_B1_SaintTurtle_Roar2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" target-area="5505_5" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_0001_battle_03" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Indigestion" skill3="ME_BEI_B1_SaintTurtle_Indigestion" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action duration="20000" immune-breaker-disable="y" skill="ME_BEI_B1_SaintTurtle_ShakeBack_Buff" skill3="ME_BEI_B1_SaintTurtle_ShakeBack_Buff" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar2" skill3="ME_BEI_B1_SaintTurtle_ShootingStar2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action arrived-effect="ME_BEI_B1_SaintTurtle_BackSpin_Finish" immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="0">
+      <action duration="20000" immune-breaker-disable="y" skill="ME_BEI_B1_SaintTurtle_ShakeBack" skill3="ME_BEI_B1_SaintTurtle_ShakeBack" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar2" skill3="ME_BEI_B1_SaintTurtle_ShootingStar2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action arrived-effect="ME_BEI_B1_SaintTurtle_BackSpin_Finish" immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0006_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Chop" skill3="ME_BEI_B1_SaintTurtle_Chop" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_DoubleChop" skill3="ME_BEI_B1_SaintTurtle_DoubleChop" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Swing" skill3="ME_BEI_B1_SaintTurtle_Swing" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Sneeze" skill3="ME_BEI_B1_SaintTurtle_Sneeze" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Wind" skill3="ME_BEI_B1_SaintTurtle_Wind" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Crouch" skill3="ME_BEI_B1_SaintTurtle_Crouch" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_01" type="do-social" />
+        <action immune-breaker-disable="y" prob="20" social="ME_WA_NightWindPlain_Boss_0001_battle_02" type="do-social" />
+        <action duration="100" immune-breaker-disable="y" prob="60" type="stay" />
+      </action>
+      
+      <action type="select">
+        <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_9" ground-pattern-4="pattern_14" ground-pattern-5="pattern_17" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza_S" skill3="ME_BEI_B1_SaintTurtle_Influenza_S" type="boss-multiground-attack" />
+        <action ground-pattern-1="pattern_29" ground-pattern-2="pattern_30" ground-pattern-3="pattern_31" ground-pattern-4="pattern_33" ground-pattern-5="pattern_39" immune-breaker-disable="y" origin-pos="0,0,0" prob="50" repeat="1" skill="ME_BEI_B1_SaintTurtle_Influenza_S" skill3="ME_BEI_B1_SaintTurtle_Influenza_S" type="boss-multiground-attack" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Throw" skill3="ME_BEI_B1_SaintTurtle_Throw" type="use-skill" />
+    </normal>
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action immune-breaker-disable="y" social="NightWindPlain_Notice_msg_32" type="do-social" />
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_0001_battle_04" type="do-social" />
+      <action event-step="2" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Roar" skill3="ME_BEI_B1_SaintTurtle_Roar" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Roar2" skill3="ME_BEI_B1_SaintTurtle_Roar2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" target-area="5505_5" type="use-ground-skill" />
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_0001_battle_03" type="do-social" />
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Indigestion" skill3="ME_BEI_B1_SaintTurtle_Indigestion" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      <action duration="20000" immune-breaker-disable="y" skill="ME_BEI_B1_SaintTurtle_ShakeBack_Buff" skill3="ME_BEI_B1_SaintTurtle_ShakeBack_Buff" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar2" skill3="ME_BEI_B1_SaintTurtle_ShootingStar2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action arrived-effect="ME_BEI_B1_SaintTurtle_BackSpin_Finish" immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+    
+    <special combat-distance="7" id="4" max-count="0">
+      <action duration="20000" immune-breaker-disable="y" skill="ME_BEI_B1_SaintTurtle_ShakeBack" skill3="ME_BEI_B1_SaintTurtle_ShakeBack" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+      <action event-step="55" immune-breaker-disable="y" social="Battle_Nostay" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar2" skill3="ME_BEI_B1_SaintTurtle_ShootingStar2" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+      <action arrived-effect="ME_BEI_B1_SaintTurtle_BackSpin_Finish" immune-breaker-disable="y" pass-through="n" skill="ME_BEI_B1_SaintTurtle_BackSpin" skill3="ME_BEI_B1_SaintTurtle_BackSpin" speed="126" target="event:npc-combat-action:npc:farthest-target" type="boss-rush-attack" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Indigestion_Berserk" skill3="ME_BEI_B1_SaintTurtle_Indigestion_Berserk" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="0" start-delay="0">
+      
+      <action immune-breaker-disable="y" social="ME_WA_NightWindPlain_Boss_05" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_ShootingStar" skill3="ME_BEI_B1_SaintTurtle_ShootingStar" target-area="5505_5" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_B1_SaintTurtle_Indigestion_Berserk" skill3="ME_BEI_B1_SaintTurtle_Indigestion_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0001_cs">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_NAtk1_Night" skill3="ME_BEI_R0_HolyMushroom_NAtk1_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_NAtk2_Night" skill3="ME_BEI_R0_HolyMushroom_NAtk2_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_NAtk1_Night" skill3="ME_BEI_R0_HolyMushroom_NAtk1_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_NAtk2_Night" skill3="ME_BEI_R0_HolyMushroom_NAtk2_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_Area360_Night" skill3="ME_BEI_R0_HolyMushroom_Area360_Night" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_Capture_Night" skill3="ME_BEI_R0_HolyMushroom_Capture_Night" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0004_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_Swing_Hon" skill3="ME_SnowManBoss_None_Swing_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_Uppercut_Hon" skill3="ME_SnowManBoss_None_Uppercut_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_Smash_Hon" skill3="ME_SnowManBoss_None_Smash_Hon" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_BossDash_Hon" skill3="ME_SnowManBoss_None_BossDash_Hon" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="60000" start-delay="60000">
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave1_Hon" skill3="ME_SnowManBoss_None_ColdWave1_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave2_Hon" skill3="ME_SnowManBoss_None_ColdWave2_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave1_Hon" skill3="ME_SnowManBoss_None_ColdWave1_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave2_Hon" skill3="ME_SnowManBoss_None_ColdWave2_Hon" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnowManBoss_None_IceQuake_Hon" skill3="ME_SnowManBoss_None_IceQuake_Hon" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0005_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_ChainKnuckleBandit_None_Smash" skill3="ME_ChainKnuckleBandit_None_Smash" type="use-skill" />
+      <action type="select">
+        
+        <action prob="10" repeat="1" skill="ME_ChainKnucklebandit_None_Stamping" skill3="ME_ChainKnucklebandit_None_Stamping" type="use-skill" />
+        <action duration="1000" immune-breaker-disable="y" prob="90" type="stay" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavySmash" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavySmash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Jump" skill3="ME_BEI_N5_ChainKnuckleBandit_Jump" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      
+      <action repeat="1" skill="ME_ChainKnucklebandit_None_Stamping" skill3="ME_ChainKnucklebandit_None_Stamping" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0006_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_PilebunkerEmpire_None_Jab" skill3="ME_PilebunkerEmpire_None_Jab" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_PilebunkerEmpire_None_Smash" skill3="ME_PilebunkerEmpire_None_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_PilebunkerEmpire_None_GimletSwing" skill3="ME_PilebunkerEmpire_None_GimletSwing" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_PilebunkerEmpire_None_CaptureSmash" skill3="ME_PilebunkerEmpire_None_CaptureSmash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUP2_B1_PilebunkerEmpire_None_Dash" skill3="ME_SUP2_B1_PilebunkerEmpire_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" skill3="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0007_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUP_SeaMonsterBoss_None_Jab" skill3="ME_SUP_SeaMonsterBoss_None_Jab" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUP_SeaMonsterBoss_None_JawUppercut" skill3="ME_SUP_SeaMonsterBoss_None_JawUppercut" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUP_SeaMonsterBoss_None_TailCyclone" skill3="ME_SUP_SeaMonsterBoss_None_TailCyclone" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUB_B1_SeaMonsterBoss_None_SnapThrow" skill3="ME_SUB_B1_SeaMonsterBoss_None_SnapThrow" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Rush" skill3="ME_BEI_N1_SeaMonsterBoss_Rush" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" skill3="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0008_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B4_Minou_None_RightSlash" skill3="ME_SUC_B4_Minou_None_RightSlash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B4_Minou_None_LeftSlash" skill3="ME_SUC_B4_Minou_None_LeftSlash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SUC_B4_Minou_None_TyphoonSlash" skill3="ME_SUC_B4_Minou_None_TyphoonSlash" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SUC_B4_Minou_None_SpeedSlash" skill3="ME_SUC_B4_Minou_None_SpeedSlash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_MinoDash" skill3="ME_BEI_N2_Minou_MinoDash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0009_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySpin_Night" skill3="ME_BEI_N3_PigTribeC_HeavySpin_Night" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_PigTribeC_None_Dash" skill3="ME_PigTribeC_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_PoisonGas_Night" skill3="ME_BEI_N3_PigTribeC_PoisonGas_Night" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0010_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_Swing_Hon" skill3="ME_SnowManBoss_None_Swing_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_Uppercut_Hon" skill3="ME_SnowManBoss_None_Uppercut_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_Smash_Hon" skill3="ME_SnowManBoss_None_Smash_Hon" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_BossDash_Hon" skill3="ME_SnowManBoss_None_BossDash_Hon" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1" min-delay="60000" start-delay="60000">
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave1_Hon" skill3="ME_SnowManBoss_None_ColdWave1_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave2_Hon" skill3="ME_SnowManBoss_None_ColdWave2_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave1_Hon" skill3="ME_SnowManBoss_None_ColdWave1_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave2_Hon" skill3="ME_SnowManBoss_None_ColdWave2_Hon" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SnowManBoss_None_IceQuake_Hon" skill3="ME_SnowManBoss_None_IceQuake_Hon" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0011_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action type="select">
+        <action prob="20" repeat="1" skill="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" skill3="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="80" social="Battle_Nostay" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0012_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Smash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Smash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" skill3="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" skill3="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Capture_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Capture_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0013_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Jab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" skill3="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" skill3="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Grab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0014_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_RightSlash_Night" skill3="ME_BEI_N2_Minou_RightSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_LeftSlash_Night" skill3="ME_BEI_N2_Minou_LeftSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_TyphoonSlash_Night" skill3="ME_BEI_N2_Minou_TyphoonSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_DoubleSlash_Night" skill3="ME_BEI_N2_Minou_DoubleSlash_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="2" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_Grab_Night" skill3="ME_BEI_N2_Minou_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0015_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySpin_Night" skill3="ME_BEI_N3_PigTribeC_HeavySpin_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="40" repeat="2" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="60" repeat="2" skill="ME_BEI_N3_PigTribeC_PoisonGas_Night" skill3="ME_BEI_N3_PigTribeC_PoisonGas_Night" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Grab_Night" skill3="ME_BEI_N3_PigTribeC_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0024_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action type="select">
+        <action prob="20" repeat="1" skill="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" skill3="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="80" social="Battle_Nostay" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0025_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Smash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Smash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" skill3="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" skill3="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Capture_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Capture_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0026_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Jab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" skill3="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" skill3="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Grab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0027_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_RightSlash_Night" skill3="ME_BEI_N2_Minou_RightSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_LeftSlash_Night" skill3="ME_BEI_N2_Minou_LeftSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_TyphoonSlash_Night" skill3="ME_BEI_N2_Minou_TyphoonSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_DoubleSlash_Night" skill3="ME_BEI_N2_Minou_DoubleSlash_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="2" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_Grab_Night" skill3="ME_BEI_N2_Minou_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0028_cs" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySpin_Night" skill3="ME_BEI_N3_PigTribeC_HeavySpin_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="40" repeat="2" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="60" repeat="2" skill="ME_BEI_N3_PigTribeC_PoisonGas_Night" skill3="ME_BEI_N3_PigTribeC_PoisonGas_Night" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Grab_Night" skill3="ME_BEI_N3_PigTribeC_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0016_cs" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SaintWildboar_None_Double_Jab_hon" skill3="ME_SaintWildboar_None_Double_Jab_hon" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SaintWildboar_None_Headbutt_hon" skill3="ME_SaintWildboar_None_Headbutt_hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SaintWildboar_None_thunderbolt_splash_small_hon" skill3="ME_SaintWildboar_None_thunderbolt_splash_small_hon" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_SaintWildboar_None_Rush_hon" skill3="ME_SaintWildboar_None_Rush_hon" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0017_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BEF_B6_SpiderQueen_Jab" skill3="ME_BEF_B6_SpiderQueen_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B6_SpiderQueen_Smash" skill3="ME_BEF_B6_SpiderQueen_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B6_SpiderQueen_SpiderCapture" skill3="ME_BEF_B6_SpiderQueen_SpiderCapture" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B6_SpiderQueen_RushSmash_Musin" skill3="ME_BEF_B6_SpiderQueen_RushSmash_Musin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B6_SpiderQueen_QueenBloodyThrow" skill3="ME_BEF_B6_SpiderQueen_QueenBloodyThrow" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BEF_B6_SpiderQueen_SpiderWeb" skill3="ME_BEF_B6_SpiderQueen_SpiderWeb" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B6_SpiderQueen_JumpDash" skill3="ME_BEF_B6_SpiderQueen_JumpDash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0047_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B6_SpiderQueen_Jab" skill3="ME_BEF_B6_SpiderQueen_Jab" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B6_SpiderQueen_Smash" skill3="ME_BEF_B6_SpiderQueen_Smash" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B6_SpiderQueen_SpiderCapture" skill3="ME_BEF_B6_SpiderQueen_SpiderCapture" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B6_SpiderQueen_RushSmash_Musin" skill3="ME_BEF_B6_SpiderQueen_RushSmash_Musin" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEF_B6_SpiderQueen_QueenBloodyThrow" skill3="ME_BEF_B6_SpiderQueen_QueenBloodyThrow" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B6_SpiderQueen_SpiderWeb" skill3="ME_BEF_B6_SpiderQueen_SpiderWeb" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEF_B6_SpiderQueen_JumpDash" skill3="ME_BEF_B6_SpiderQueen_JumpDash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0018_cs">
+
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0001_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightA_Jab_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightA_Jab_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightA_Jab_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightA_Jab_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightA_Dash_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightA_Dash_Night" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="3" skill="ME_DarkCrazyTribeA_None_Fire" skill3="ME_DarkCrazyTribeA_None_Fire" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightA_Fire_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightA_Fire_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_DarkCrazyTribeA_None_Reload" skill3="ME_DarkCrazyTribeA_None_Reload" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0002_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_DarkCrazyTribeB_None_Jab" skill3="ME_DarkCrazyTribeB_None_Jab" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightB_NAtk1_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightB_NAtk1_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightB_NAtk2_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightB_NAtk2_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightB_MultiHit_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightB_MultiHit_Night" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightB_Range1_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightB_Range1_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightB_Dash_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightB_Dash_Night" type="use-skill" />
+    </normal>
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0003_cs">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightC_NAtk1_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightC_NAtk1_Night" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEI_R0_DarkCrazyTribeMask_Dash_Night" skill3="ME_BEI_R0_DarkCrazyTribeMask_Dash_Night" type="use-skill" />
+        <action duration="1000" prob="50" type="stay" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeNightC_Range_Night" skill3="ME_BEI_R0_DarkCrazyTribeNightC_Range_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="15000" start-delay="5000">
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeC_Area360Heal_Night" skill3="ME_BEI_R0_DarkCrazyTribeC_Area360Heal_Night" type="use-skill" />
+    </special>
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0004_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeD_NAtk2_Night" skill3="ME_BEI_R0_DarkCrazyTribeD_NAtk2_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeD_Jab_Night" skill3="ME_BEI_R0_DarkCrazyTribeD_Jab_Night" type="use-skill" />
+      <action type="select">
+        
+        <action prob="30" repeat="1" skill="ME_DarkCrazyTribeD_None_Knockback" skill3="ME_DarkCrazyTribeD_None_Knockback" type="use-skill" />
+        <action duration="1000" prob="70" type="stay" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BEI_R0_DarkCrazyTribeD_Dash_Night" skill3="ME_BEI_R0_DarkCrazyTribeD_Dash_Night" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0005_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_BabaNightA_Jab_Night" skill3="ME_BEI_R0_BabaNightA_Jab_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_BabaNightA_HeavySmash_Night" skill3="ME_BEI_R0_BabaNightA_HeavySmash_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_BabaNightA_Smash_Night" skill3="ME_BEI_R0_BabaNightA_Smash_Night" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BEI_R0_BabaNightA_Dash_Night" skill3="ME_BEI_R0_BabaNightA_Dash_Night" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="ME_BEI_R0_BabaNightA_HeavySmashDash_Night" skill3="ME_BEI_R0_BabaNightA_HeavySmashDash_Night" type="use-skill" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0008_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0006_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0007_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_BabaNightB_Jab_Night" skill3="ME_BEI_R0_BabaNightB_Jab_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_BabaNightB_Attack_Night" skill3="ME_BEI_R0_BabaNightB_Attack_Night" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BaBaB_None_Smash" skill3="ME_BaBaB_None_Smash" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_BaBaB_None_BackStep" skill3="ME_BaBaB_None_BackStep" type="use-skill" />
+        <action duration="1000" prob="50" type="stay" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_BEI_R0_BaBaNightB_PoisonThrow" skill3="ME_BEI_R0_BaBaNightB_PoisonThrow" type="use-skill" />
+      
+      <action repeat="1" skill="ME_BEI_R0_BabaNightB_Dash_Night" skill3="ME_BEI_R0_BabaNightB_Dash_Night" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0009_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0010_cs">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_NAtk1_Night" skill3="ME_BEI_R0_HolyMushroom_NAtk1_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_NAtk2_Night" skill3="ME_BEI_R0_HolyMushroom_NAtk2_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_NAtk1_Night" skill3="ME_BEI_R0_HolyMushroom_NAtk1_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_NAtk2_Night" skill3="ME_BEI_R0_HolyMushroom_NAtk2_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_Area360_Night" skill3="ME_BEI_R0_HolyMushroom_Area360_Night" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_BEI_R0_HolyMushroom_Capture_Night" skill3="ME_BEI_R0_HolyMushroom_Capture_Night" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0007_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0008_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0009_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0010_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0011_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0012_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0013_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0014_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0015_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0016_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0017_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0018_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0019_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0020_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0021_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0022_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0023_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0024_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0025_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0026_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0027_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0028_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0029_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_0030_cs">
+
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0026_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_SaMyoJeong_None_Jab" skill3="ME_SaMyoJeong_None_Jab" type="use-skill" />
+      <action type="select">
+        
+        <action prob="40" repeat="1" skill="ME_SaMyoJeong_None_MultiSmash" skill3="ME_SaMyoJeong_None_MultiSmash" type="use-skill" />
+        
+        <action prob="40" repeat="1" skill="ME_SaMyoJeong_None_HeavySmash" skill3="ME_SaMyoJeong_None_HeavySmash" type="use-skill" />
+        
+        <action prob="10" repeat="1" skill="ME_SaMyoJeong_None_NAtk1" skill3="ME_SaMyoJeong_None_NAtk1" type="use-skill" />
+        
+        <action prob="10" repeat="1" skill="ME_SaMyoJeong_None_NAtk2" skill3="ME_SaMyoJeong_None_NAtk2" type="use-skill" />
+      </action>
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_SaMyoJeong_None_RockAttack" skill3="ME_SaMyoJeong_None_RockAttack" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0029_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_Swing_Hon" skill3="ME_SnowManBoss_None_Swing_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_Uppercut_Hon" skill3="ME_SnowManBoss_None_Uppercut_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_Smash_Hon" skill3="ME_SnowManBoss_None_Smash_Hon" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_BossDash_Hon" skill3="ME_SnowManBoss_None_BossDash_Hon" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave1_Hon" skill3="ME_SnowManBoss_None_ColdWave1_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_ColdWave2_Hon" skill3="ME_SnowManBoss_None_ColdWave2_Hon" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SnowManBoss_None_IceQuake_Hon" skill3="ME_SnowManBoss_None_IceQuake_Hon" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0029_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action type="select">
+        <action prob="20" repeat="1" skill="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" skill3="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="80" social="Battle_Nostay" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Jump" skill3="ME_BEI_N5_ChainKnuckleBandit_Jump" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0029_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action type="select">
+        <action prob="20" repeat="1" skill="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" skill3="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="80" social="Battle_Nostay" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0030_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Smash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Smash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" skill3="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_SUP2_B1_PilebunkerEmpire_None_Dash" skill3="ME_SUP2_B1_PilebunkerEmpire_None_Dash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Capture_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Capture_Night" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0030_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Smash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Smash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" skill3="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" skill3="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Capture_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Capture_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0031_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Jab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" skill3="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Rush" skill3="ME_BEI_N1_SeaMonsterBoss_Rush" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Grab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Grab_Night" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Grab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Grab_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0031_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Jab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" skill3="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" skill3="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Rush" skill3="ME_BEI_N1_SeaMonsterBoss_Rush" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Grab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Grab_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0032_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_RightSlash_Night" skill3="ME_BEI_N2_Minou_RightSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_LeftSlash_Night" skill3="ME_BEI_N2_Minou_LeftSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_TyphoonSlash_Night" skill3="ME_BEI_N2_Minou_TyphoonSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_DoubleSlash_Night" skill3="ME_BEI_N2_Minou_DoubleSlash_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N2_Minou_MinoDash" skill3="ME_BEI_N2_Minou_MinoDash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N2_Minou_Grab_Night" skill3="ME_BEI_N2_Minou_Grab_Night" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_MinoDash" skill3="ME_BEI_N2_Minou_MinoDash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0032_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_RightSlash_Night" skill3="ME_BEI_N2_Minou_RightSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_LeftSlash_Night" skill3="ME_BEI_N2_Minou_LeftSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_TyphoonSlash_Night" skill3="ME_BEI_N2_Minou_TyphoonSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_DoubleSlash_Night" skill3="ME_BEI_N2_Minou_DoubleSlash_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="2" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N2_Minou_MinoDash" skill3="ME_BEI_N2_Minou_MinoDash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N2_Minou_Grab_Night" skill3="ME_BEI_N2_Minou_Grab_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0033_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySpin_Night" skill3="ME_BEI_N3_PigTribeC_HeavySpin_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_PigTribeC_None_Dash" skill3="ME_PigTribeC_None_Dash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N3_PigTribeC_Grab_Night" skill3="ME_BEI_N3_PigTribeC_Grab_Night" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_PigTribeC_None_Dash" skill3="ME_PigTribeC_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0033_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySpin_Night" skill3="ME_BEI_N3_PigTribeC_HeavySpin_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="40" repeat="2" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="60" repeat="2" skill="ME_BEI_N3_PigTribeC_PoisonGas_Night" skill3="ME_BEI_N3_PigTribeC_PoisonGas_Night" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_PigTribeC_None_Dash" skill3="ME_PigTribeC_None_Dash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N3_PigTribeC_Grab_Night" skill3="ME_BEI_N3_PigTribeC_Grab_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0042_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action type="select">
+        <action prob="20" repeat="1" skill="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" skill3="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="80" social="Battle_Nostay" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Jump" skill3="ME_BEI_N5_ChainKnuckleBandit_Jump" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0042_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action type="select">
+        <action prob="20" repeat="1" skill="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" skill3="ME_BEI_N5_ChainKnucklebandit_Stamping_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="80" social="Battle_Nostay" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Smash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_FlameGround_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_HeavyDash_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" skill3="ME_BEI_N5_ChainKnuckleBandit_Inhalation_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0043_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Smash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Smash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" skill3="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_SUP2_B1_PilebunkerEmpire_None_Dash" skill3="ME_SUP2_B1_PilebunkerEmpire_None_Dash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Capture_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Capture_Night" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0043_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Smash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Smash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletSwing_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" skill3="ME_BEI_N4_PilebunkerEmpire_RageStorm_Night" type="use-skill" />
+      <action combo="y" immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" skill3="ME_BEI_N4_PilebunkerEmpire_CaptureSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Jab_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Jab_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" skill3="ME_BEI_N4_PilebunkerEmpire_QuakeFire_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" skill3="ME_BEI_N4_PilebunkerEmpire_GimletTorpedo_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N4_PilebunkerEmpire_Capture_Night" skill3="ME_BEI_N4_PilebunkerEmpire_Capture_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0044_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Jab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" skill3="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Rush" skill3="ME_BEI_N1_SeaMonsterBoss_Rush" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Grab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Grab_Night" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Rush" skill3="ME_BEI_N1_SeaMonsterBoss_Rush" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0044_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Jab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailSmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" skill3="ME_BEI_N1_SeaMonsterBoss_JawUppercut_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" skill3="ME_BEI_N1_SeaMonsterBoss_TailCyclone_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" skill3="ME_BEI_N1_SeaMonsterBoss_BiteHold_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Rush" skill3="ME_BEI_N1_SeaMonsterBoss_Rush" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N1_SeaMonsterBoss_Grab_Night" skill3="ME_BEI_N1_SeaMonsterBoss_Grab_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0045_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_RightSlash_Night" skill3="ME_BEI_N2_Minou_RightSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_LeftSlash_Night" skill3="ME_BEI_N2_Minou_LeftSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_TyphoonSlash_Night" skill3="ME_BEI_N2_Minou_TyphoonSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_DoubleSlash_Night" skill3="ME_BEI_N2_Minou_DoubleSlash_Night" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N2_Minou_MinoDash" skill3="ME_BEI_N2_Minou_MinoDash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N2_Minou_Grab_Night" skill3="ME_BEI_N2_Minou_Grab_Night" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_MinoDash" skill3="ME_BEI_N2_Minou_MinoDash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0045_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_RightSlash_Night" skill3="ME_BEI_N2_Minou_RightSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_LeftSlash_Night" skill3="ME_BEI_N2_Minou_LeftSlash_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N2_Minou_TyphoonSlash_Night" skill3="ME_BEI_N2_Minou_TyphoonSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N2_Minou_DoubleSlash_Night" skill3="ME_BEI_N2_Minou_DoubleSlash_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="2" skill="ME_BEI_N2_Minou_SpeedSlash_Night" skill3="ME_BEI_N2_Minou_SpeedSlash_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N2_Minou_MinoDash" skill3="ME_BEI_N2_Minou_MinoDash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N2_Minou_Grab_Night" skill3="ME_BEI_N2_Minou_Grab_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0046_cs" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySpin_Night" skill3="ME_BEI_N3_PigTribeC_HeavySpin_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="2" skill="ME_BEI_N3_PigTribeC_PoisonEjection" skill3="ME_BEI_N3_PigTribeC_PoisonEjection" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_PigTribeC_None_Dash" skill3="ME_PigTribeC_None_Dash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N3_PigTribeC_Grab_Night" skill3="ME_BEI_N3_PigTribeC_Grab_Night" type="use-skill" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_PigTribeC_None_Dash" skill3="ME_PigTribeC_None_Dash" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0046_cs2">
+    
+    <normal combat-distance="1" id="1" special-1="1">
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+      <action repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySpin_Night" skill3="ME_BEI_N3_PigTribeC_HeavySpin_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="30" repeat="2" skill="ME_BEI_N3_PigTribeC_PoisonEjection" skill3="ME_BEI_N3_PigTribeC_PoisonEjection" type="use-skill" />
+        <action immune-breaker-disable="y" prob="70" social="Battle_Nostay" type="do-social" />
+      </action>
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_Jab_Night" skill3="ME_BEI_N3_PigTribeC_Jab_Night" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_BEI_N3_PigTribeC_HeavySmash_Night" skill3="ME_BEI_N3_PigTribeC_HeavySmash_Night" type="use-skill" />
+      <action type="select">
+        <action immune-breaker-disable="y" prob="40" repeat="2" skill="ME_BEI_N3_PigTribeC_SmashDown_Night" skill3="ME_BEI_N3_PigTribeC_SmashDown_Night" type="use-skill" />
+        <action immune-breaker-disable="y" prob="60" repeat="2" skill="ME_BEI_N3_PigTribeC_PoisonGas_Night" skill3="ME_BEI_N3_PigTribeC_PoisonGas_Night" type="use-skill" />
+      </action>
+    </normal>
+    
+    <normal combat-distance="2" id="2" special-1="1">
+      <action type="select">
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_PigTribeC_None_Dash" skill3="ME_PigTribeC_None_Dash" type="use-skill" />
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_BEI_N3_PigTribeC_Grab_Night" skill3="ME_BEI_N3_PigTribeC_Grab_Night" type="use-skill" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" type="use-soul-npc-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0027_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="2" skill="ME_GrassBeastBig_headbutt" skill3="ME_GrassBeastBig_headbutt" type="use-skill" />
+      
+      <action repeat="1" skill="ME_GrassBeastBig_360" skill3="ME_GrassBeastBig_360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_GrassBeastBig_jump" skill3="ME_GrassBeastBig_jump" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0025_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="ME_SUC_N2_PestBig_None_PoisonSplash" skill3="ME_SUC_N2_PestBig_None_PoisonSplash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Dummy_0002_cs" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_Dummy_Poison_Lv1" skill3="ME_BEI_R0_Dummy_Poison_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Dummy_0003_cs" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_Dummy_Poison_Lv2" skill3="ME_BEI_R0_Dummy_Poison_Lv2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Dummy_0004_cs" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_Dummy_Poison_Lv3" skill3="ME_BEI_R0_Dummy_Poison_Lv3" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Dummy_0005_cs" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_Dummy_Poison_Lv4" skill3="ME_BEI_R0_Dummy_Poison_Lv4" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Dummy_0006_cs" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_Dummy_Poison_Lv5" skill3="ME_BEI_R0_Dummy_Poison_Lv5" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Dummy_0007_cs" hide-seq-start="y">
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Dummy_0018_cs" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      
+      <action repeat="1" skill="ME_BEI_R0_Dummy_Acidification" skill3="ME_BEI_R0_Dummy_Acidification" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0041_cs">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="2" skill="ME_GrassBeastBig_headbutt" skill3="ME_GrassBeastBig_headbutt" type="use-skill" />
+      
+      <action repeat="1" skill="ME_GrassBeastBig_360" skill3="ME_GrassBeastBig_360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="ME_GrassBeastBig_jump" skill3="ME_GrassBeastBig_jump" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_Boss_Mid_0002_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WA_NightWindPlain_0114_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0115_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0116_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0117_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0118_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0119_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0120_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0121_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0122_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0123_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0124_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  <combat-sequence alias="ME_WA_NightWindPlain_0125_cs">
+    <normal combat-distance="7" id="1">
+      
+      <action move-msec="2000" move-type="flee" range-within="2000" type="combat-move" />
+    </normal>
+  </combat-sequence>
+  
+  
+  
+</table>

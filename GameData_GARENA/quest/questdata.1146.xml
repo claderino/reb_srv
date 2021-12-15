@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1146.xml-->
+  <quest alias="q_sub_1146" broadcast-category="field" category="normal" district-1="suwal" id="1146" max-repeat="1" reset-type="none" save-type="all">
+    <acquisition level="38" preceding-quest-1="q_epic_914" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" object="npc:CE_SuWaJok_0017" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="7">
+        <case object="npc:ME_IronTuttle_0001" object2="npc:ME_IronTuttle_0001" party-broadcast="y" prob="100" progress-mission="y" quest-symbol-drop-prob="70" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1146_final_set1">
+        <case object="npc:CE_SuWaJok_0017" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

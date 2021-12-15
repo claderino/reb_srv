@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.419.xml-->
+  <quest alias="q_sub_419" broadcast-category="field" category="normal" district-1="jeryoungrim" id="419" max-repeat="1" save-type="all">
+    <acquisition level="18" preceding-quest-1="q_sub_439" preceding-quest-2="q_epic_317" preceding-quest-check="and">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="2" retired="y">
+      <mission id="2" required-register-value="1">
+        <case grocery="General_Grocery_Quest_0011" grocery-count="1" object="npc:CE_Indura_0001" party-broadcast="n" progress-mission="y" required-item-1="General_Grocery_Quest_0011" required-item-depot="bag" required-item-loss="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1" reward-1="419_final_set1">
+        <case object="npc:ce_dokchogeosa_0003" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="1" retired="y">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_Merchant_0005" party-broadcast="n" progress-mission="y" type="approach" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

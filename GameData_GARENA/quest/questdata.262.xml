@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.262.xml-->
+  <quest alias="q_epic_262" broadcast-category="field" category="epic" completed-list="n" id="262" max-repeat="1" retired="y" save-type="all">
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:Zone_Haori_Fell" party-broadcast="n" progress-mission="y" quest-decision="qd_262_2" type="enter-zone" />
+        <case object="npc:CH_CT_Citizen_0607" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0081" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="2">
+        <case object="zone:Zone_Haori_Fell" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_262_2" type="enter-zone" />
+        <case object2="npc:CE_CT_RewardBox_0003" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="npc:CE_CT_RewardBox_0002" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:CH_CT_JeGukGun_0081" party-broadcast="n" type="approach" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object2="npc:MH_CT_HaOBang_0011" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="zone:Zone_Haori_Fell" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_262_2" type="enter-zone" />
+        <case object="npc:CH_CT_JeGukGun_0081" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="5" required-register-value="1">
+        <case item="Quest_Scroll_BackChung_0046" party-broadcast="n" progress-mission="y" type="talk-to-item" />
+        <case object="npc:CH_CT_Citizen_0606" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0081" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_CT_Citizen_0606" party-broadcast="n" progress-mission="y" type="talk" />
+        <fixed-reward slot-1="item:Quest_Scroll_BackChung_0046" />
+        <case object="npc:CH_CT_JeGukGun_0081" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="6" required-register-value="1">
+        <case object="npc:CH_CT_BeaSaGon_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <completion-loss item-1="Quest_Scroll_BackChung_0046" />
+        <case object="npc:CH_CT_JeGukGun_0312" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0081" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_CT_JeGukGun_0312" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0081" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" rollback="none">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_CT_SoYangSang_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_YungOk_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_CT_JeGukGun_0312" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0081" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="Zone_HaoBang">
+      <destination mission-step-id="8" zone-index="1" />
+    </transit>
+    <acquisition level="1" />
+    <completion>
+      <next-quest quest="q_epic_263" />
+    </completion>
+    <mission-step id="8">
+      <mission id="9" required-register-value="1" reward-1="262_final_set1">
+        <case object="npc:CH_CT_Gambler_0002" party-broadcast="n" progress-mission="y" quest-decision="qd_262_3" type="talk" />
+        <case object2="zoneenv2:e_Chest_haobanggate_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="npc:CH_CT_JeGukGun_0312" party-broadcast="n" type="approach" />
+        <case object="npc:CH_CT_JeGukGun_0081" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <giveup-loss item-1="Quest_Scroll_BackChung_0046" item-count-1="1" />
+  </quest>
+</table>

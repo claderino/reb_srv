@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1456.xml-->
+  <quest alias="q_epic_1456" broadcast-category="field" category="epic" completed-list="y" id="1456" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SA_BuckBangSoldier_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0009" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_lieutenant_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_general_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0031" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_WC_JeGukGun_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0009" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_lieutenant_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_general_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0031" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JeongHaDo_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_PungEmpire_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_JeGukGun_0006" party-broadcast="n" type="approach" />
+        <case object="zone:zone_SnowCabin_room_P1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1456_9" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_WC_JeGukGun_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0009" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_lieutenant_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_general_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0031" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JeongHaDo_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_PungEmpire_0001" party-broadcast="n" type="approach" />
+        <case object2="zoneenv2:e_chest_letter_01" party-broadcast="n" progress-mission="y" type="loot" />
+        <case object="zone:zone_SnowCabin_room_P1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1456_9" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1456_2" zone-1="zone_SnowCabin_room_P1">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CH_WC_JeGukGun_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0009" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_lieutenant_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_general_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0031" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JeongHaDo_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_PungEmpire_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0006" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_SnowCabin_room_P1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1456_9" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object="npc:CH_SA_BuckBangSoldier_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0009" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_lieutenant_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_general_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0031" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JeongHaDo_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_PungEmpire_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_WC_JeGukGun_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="npc:CH_SA_BuckBangSoldier_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0009" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_lieutenant_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_general_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0031" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_PungEmpire_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JeongHaDo_0008" party-broadcast="n" type="approach" />
+        <case object="zone:zone_ChRyoungCHN" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CH_WC_JeGukGun_0006" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="8" required-register-value="1">
+        <case object="npc:CH_WC_Citizen_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_Citizen_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_Citizen_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="9" required-register-value="1">
+        <case object="npc:CH_WC_Citizen_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_Citizen_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_Citizen_0002" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="10" required-register-value="1">
+        <case object="npc:CH_WC_Citizen_0001" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_Citizen_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_Citizen_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_AnDuMae_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1456_1" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="11" required-register-value="1">
+        <case object="npc:CH_AnDuMae_0001" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1456_1" type="talk" />
+        <case object="npc:CH_CT_JaKyungDan_0023" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="12" quest-decision="qd_1456_5" zone-1="startzone_event_hong">
+      <mission id="12" required-register-value="1">
+        <case object="zone:startzone_event_hong" party-broadcast="n" progress-mission="y" quest-decision="qd_1456_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="13" quest-decision="qd_1456_8" rollback="leave-zone" zone-1="startzone_event_hong">
+      <mission id="13" required-register-value="1">
+        <case drop-gadget="y" object="npc:CH_WC_Citizen_0004" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+      <mission-step-fail rollback-step-id="12" zone-1="startzone_event_hong" />
+    </mission-step>
+    <mission-step id="14" quest-decision="qd_1456_3" rollback="leave-zone" zone-1="startzone_event_hong">
+      <mission id="14" required-register-value="1">
+        <case drop-gadget="y" gadget-required="empty" object="npc:CH_WC_Citizen_0005" party-broadcast="n" progress-mission="reaction-only" type="talk" />
+        <case gadget="Q_FoodDish_0003" gadget-required="carry-and-remove" object2="zoneenv2:e_chest_foodtable1_01" party-broadcast="n" progress-mission="y" type="manipulate" />
+      </mission>
+      <mission-step-fail rollback-step-id="12" zone-1="startzone_event_hong" />
+    </mission-step>
+    <mission-step id="15">
+      <mission id="15" required-register-value="1">
+        <case object="zone:StartZone_Event_Hong" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1456_6" type="enter-zone" />
+        <case object2="npc:CH_CT_Dummy_0012" party-broadcast="n" progress-mission="y" quest-decision="qd_1456_4" type="pc-social" />
+        <case object2="npc:CH_CT_Dummy_0012" party-broadcast="n" progress-mission="y" quest-decision="qd_1456_4" type="pc-social" />
+      </mission>
+    </mission-step>
+    <mission-step id="16">
+      <mission id="16" required-register-value="1" reward-1="1456_final_set1">
+        <case object="npc:CH_CT_JaKyungDan_0023" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1451" />
+    </completion>
+    <transit id="1" zone="zone_SnowCabin_room_D">
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+    </transit>
+    <mission-step id="2" quest-decision="qd_1456_9" zone-1="zone_SnowCabin_room_P1">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_WC_JeGukGun_0005" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0004" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_JeGukGun_0002" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0012" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0011" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0010" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_BuckBangSoldier_0009" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_lieutenant_0003" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_general_0007" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_PungEmpire_0031" party-broadcast="n" type="approach" />
+        <case object="npc:CH_SA_JeongHaDo_0008" party-broadcast="n" type="approach" />
+        <case object="npc:CH_WC_PungEmpire_0001" party-broadcast="n" type="approach" />
+        <case object="zone:zone_SnowCabin_room_P1" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="npc:CH_WC_JeGukGun_0006" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="2" zone="StartZone_Default">
+      <destination mission-step-id="11" zone-index="9" />
+      <destination mission-step-id="12" zone-index="9" />
+      <destination mission-step-id="13" zone-index="9" />
+      <destination mission-step-id="14" zone-index="9" />
+      <destination mission-step-id="15" zone-index="9" />
+      <destination mission-step-id="16" zone-index="9" />
+    </transit>
+  </quest>
+</table>

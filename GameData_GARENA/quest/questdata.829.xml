@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.829.xml-->
+  <quest alias="q_sub_829" broadcast-category="field" category="normal" id="829" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_1443" preceding-quest-check="and">
+      <case acquire-quest="y" completion-count="1" object="npc:CE_CT_Board_0030" type="talk" />
+      <case acquire-quest="y" completion-count="1" object="npc:CH_CT_Flower_0005" type="talk" />
+      <case acquire-quest="y" completion-count="1" completion-count-op="lt" object="npc:CH_CT_Flower_0005" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="10">
+        <case object2="npc:ME_CT_BaBaJok_0020" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="50" type="loot" />
+        <case object2="npc:ME_CT_BaBaJok_0018" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="50" type="loot" />
+        <case object2="npc:ME_CT_BaBaJok_0016" party-broadcast="y" progress-mission="y" quest-symbol-drop-prob="50" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="829_final_set1" reward-2="829_final_set2">
+        <case fee="y" progress-mission="y" type="talk-to-self" />
+        <case completion-count="1" object="npc:CH_CT_Flower_0006" progress-mission="y" type="talk" />
+        <case completion-count="1" completion-count-op="lt" object="npc:CH_CT_Flower_0006" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

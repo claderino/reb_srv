@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="script" version="1.141">
+  <!--script\scriptdata.baekchungreboot_northfield.xml-->
+  
+  
+  
+
+  
+  
+  
+  <script alias="Zone_YakChoGuild_epic_ai">
+    <decision event="enter-zone">
+      <filter-set>
+        <filter subject="event:enter-zone:pc" subject2="event:enter-zone:pc" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="Zone_YakChoGuild_epic PC_enter -bongny" type="debug-trace" />
+        <reaction object="event:enter-zone:pc" reg="3" target="zonenpcsquad:s_5273_14" type="set-party-object" />
+      </reaction-set>
+    </decision>
+    
+    <quest-decision alias="qd_1444_1">
+      <reaction-set>
+        <reaction text="Zone_YakChoGuild_epic qd_1444_1 -bongny" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5273_22" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5273_23" type="set-npc-brain" />
+        <reaction amount="1000" opponent="event:mission-step-completed:pc" target="zonenpcspawn:a_5273_22" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="event:mission-step-completed:pc" target="zonenpcspawn:a_5273_23" type="diff-npc-hate" />
+        <reaction seq="CH_SA_Citizen_0238_path2" target="zonenpcspawn:a_5273_25" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1444_2">
+      <reaction-set>
+        <reaction text="Zone_YakChoGuild_epic qd_1444_2 -bongny" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_5273_10" type="set-npc-brain" />
+        <reaction seq="CH_SA_JeongHaDo_0003_path_3" target="zonenpcspawn:a_5273_10" type="set-npc-act" />
+        <reaction seq="MH_SA_JeGukGun_0083_act3" target="zonenpcspawn:a_5273_14" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1444_3_1">
+      <reaction-set>
+        <reaction text="qd_1444_3_1 enter_zone -bongny" type="debug-trace" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5273_2" group-2="zonenpcsquad:s_5273_8" group-3="zonenpcsquad:s_5273_14" group-4="zonenpcsquad:s_5273_17" group-5="zonenpcsquad:s_5273_25" type="despawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_5273_5" spawn-force="y" type="spawn-npc-groups" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1444_3_2">
+      <reaction-set>
+        <reaction text="Zone_YakChoGuild_epic qd_1444_3_2 -bongny" type="debug-trace" />
+        <reaction spawn-1="a_5273_25" spawn-2="a_5273_22" spawn-3="a_5273_23" spawn-force="y" type="spawn-npc" />
+        <reaction group-1="zonenpcsquad:s_5273_17" group-2="zonenpcsquad:s_5273_14" spawn-force="y" type="spawn-npc-groups" />
+        <reaction spawn-1="a_5273_27" spawn-2="a_5273_29" spawn-3="a_5273_31" spawn-force="y" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1444_5">
+      <reaction-set>
+        <reaction text="Zone_YakChoGuild_epic qd_1444_5 -bongny" type="debug-trace" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5273_2" type="despawn-npc-groups" />
+        <reaction spawn-1="a_5273_8" spawn-2="a_5273_9" spawn-3="a_5273_33" spawn-force="y" type="spawn-npc" />
+        <reaction spawn-1="a_5273_26" spawn-2="a_5273_28" spawn-3="a_5273_30" spawn-4="a_5273_32" spawn-force="y" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1444_6">
+      <reaction-set>
+        <reaction text="Zone_YakChoGuild_epic qd_1444_6 -bongny" type="debug-trace" />
+        <reaction target="zonenpcspawn:a_5273_25" type="act-resume" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_5273_27" target-2="zonenpcspawn:a_5273_29" target-3="zonenpcspawn:a_5273_31" type="despawn-npc" />
+        <reaction spawn-1="a_5273_28" spawn-2="a_5273_30" spawn-3="a_5273_32" spawn-force="y" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    
+    <quest-decision alias="qd_1444_7">
+      <reaction-set>
+        <reaction text="Zone_YakChoGuild_epic qd_1444_7 -bongny" type="debug-trace" />
+        <reaction seq="MH_SA_JeGukGun_0083_act" target="zonenpcspawn:a_5273_14" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+
+    
+    <quest-decision alias="qd_1443_4">
+      <reaction-set>
+        <reaction text="Test" type="debug-trace" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_SA_JeongHaDo_0003_ai">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter spawn="a_5273_10" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-spawn" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SA_JeongHaDo_0003 spawn -bongny" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction seq="CH_SA_JeongHaDo_0003_path" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter op="eq" subject="event:npc-combat-start:npc:reg-1" subject2="event:npc-combat-start:npc:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SA_JeongHaDo_0003 combat_start -bongny" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+        <reaction from="event:npc-combat-start:npc" social="ChongTa_M3_Battle_soc_29" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SA_JeongHaDo_0003_path" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SA_JeongHaDo_0003 path-end -bongny" type="debug-trace" />
+        <reaction seq="MH_SA_JeGukGun_0083_act2" target="zonenpcspawn:a_5273_14" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="CH_SA_Citizen_0238_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="CH_SA_Citizen_0238 spawn -bongny" type="debug-trace" />
+        <reaction seq="CH_SA_Citizen_0238_path" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SA_Citizen_0238_path" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SA_Citizen_0238 act-end_1 -bongny" type="debug-trace" />
+        <reaction seq="CH_SA_Citizen_0238_path2" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction seq="MH_SA_JeGukGun_0083_path" target="zonenpcspawn:A_5273_22" type="set-npc-act" />
+        <reaction seq="MH_SA_JeGukGun_0083_path" target="zonenpcspawn:A_5273_23" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SA_Citizen_0238_path2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SA_Citizen_0238 act-end_3 -bongny" type="debug-trace" />
+        <reaction despawn-force="y" target-1="event:act-finished:npc" type="despawn-npc" />
+        <reaction spawn-1="a_5273_26" spawn-force="y" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="MH_SA_JeGukGun_damaged_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction amount="0" reg="1" target="event:npc-spawn:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="pc" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter subject="event:attacked:attacker" subject2="event:attacked:attacker" type="summoned" />
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:attacked:defender" type="set-npc-number" />
+        <reaction target="event:attacked:defender" type="reset-npc-all-hate" />
+        <reaction amount="1000" opponent="zonenpcsquad:s_5273_14:reg-3" target="event:attacked:defender" type="diff-npc-hate" />
+        <reaction target="event:attacked:defender" type="set-undying" undying="n" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="attacked">
+      <filter-set>
+        <filter op="eq" subject="event:attacked:defender:reg-1" subject2="event:attacked:defender:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction target="event:attacked:defender" target2="event:attacked:defender" type="heal-max" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="damaged">
+      <reaction-set probability="5">
+        <reaction from="event:damaged:defender" social="CH_SA_SeolSanJegukgunChase_0008_battle" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_JeGukGun_0019_ai" parent="MH_SA_JeGukGun_damaged_ai">
+    <decision event="npc-spawn" foward="y" />
+    <decision event="attacked" foward="y" />
+    <decision event="damaged" foward="y" />
+  </script>
+  <script alias="MH_SA_JeGukGun_0020_ai" parent="MH_SA_JeGukGun_damaged_ai">
+    <decision event="npc-spawn" foward="y" />
+    <decision event="attacked" foward="y" />
+    <decision event="damaged" foward="y" />
+  </script>
+  <script alias="MH_SA_JeGukGun_0021_ai" parent="MH_SA_JeGukGun_damaged_ai">
+    <decision event="damaged" foward="y" />
+    <decision event="attacked" foward="y" />
+    <decision event="npc-spawn" foward="y" />
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction text="MH_SA_JeGukGun_0021 combat_start -bongny" type="debug-trace" />
+        <reaction from="event:npc-combat-start:npc" social="ChongTa_M3_Battle_soc_37" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_SA_JeGukGun_0022_ai" parent="MH_SA_JeGukGun_damaged_ai">
+    <decision event="npc-spawn" foward="y" />
+    <decision event="attacked" foward="y" />
+    <decision event="damaged" foward="y" />
+  </script>
+  <script alias="MH_SA_JeGukGun_0023_ai" parent="MH_SA_JeGukGun_damaged_ai">
+    <decision event="npc-spawn" foward="y" />
+    <decision event="attacked" foward="y" />
+    <decision event="damaged" foward="y" />
+  </script>
+  <script alias="MH_SA_JeGukGun_0024_ai" parent="MH_SA_JeGukGun_damaged_ai">
+    <decision event="npc-spawn" foward="y" />
+    <decision event="attacked" foward="y" />
+    <decision event="damaged" foward="y" />
+  </script>
+  <script alias="MH_SA_JeGukGun_0025_ai" parent="MH_SA_JeGukGun_damaged_ai">
+    <decision event="npc-spawn" foward="y" />
+    <decision event="attacked" foward="y" />
+    <decision event="damaged" foward="y" />
+  </script>
+  
+
+  
+  <script alias="MH_SA_JeGukGun_0083_ai" parent="MH_SA_JeGukGun_damaged_ai">
+    <decision event="npc-spawn" foward="y" />
+    <decision event="attacked" foward="y" />
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_SA_JeGukGun_0083_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SA_JeGukGun_0083 act-end -bongny" type="debug-trace" />
+        <reaction seq="MH_SA_JeGukGun_0025_act" target="zonenpcspawn:a_5273_18" type="set-npc-act" />
+        <reaction seq="MH_SA_JeGukGun_0083_act1" target="event:act-finished:npc" type="set-npc-act" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5273_5" type="despawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_5273_8" spawn-delay="4000" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_SA_JeGukGun_0083_act1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SA_JeGukGun_0083 act-end_1 -bongny" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_5273_15" social="ChongTa_M3_Battle_soc_07" type="play-social" />
+        <reaction from="zonenpcspawn:a_5273_16" social="ChongTa_M3_Battle_soc_07" type="play-social" />
+        <reaction from="zonenpcspawn:a_5273_17" social="ChongTa_M3_Battle_soc_07" type="play-social" />
+        <reaction from="zonenpcspawn:a_5273_19" social="ChongTa_M3_Battle_soc_07" type="play-social" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5273_16" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5273_19" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5273_15" type="set-npc-brain" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5273_17" type="set-npc-brain" />
+        <reaction amount="100" opponent="zonenpcspawn:a_5273_16" target="zonenpcspawn:a_5273_10" type="diff-npc-hate" />
+        <reaction amount="100" opponent="zonenpcspawn:a_5273_19" target="zonenpcspawn:a_5273_10" type="diff-npc-hate" />
+        <reaction amount="100" opponent="zonenpcspawn:a_5273_10" target="zonenpcspawn:a_5273_16" type="diff-npc-hate" />
+        <reaction amount="100" opponent="zonenpcspawn:a_5273_10" target="zonenpcspawn:a_5273_19" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcsquad:s_5273_14:reg-3" target="zonenpcspawn:a_5273_15" type="diff-npc-hate" />
+        <reaction amount="1000" opponent="zonenpcsquad:s_5273_14:reg-3" target="zonenpcspawn:a_5273_17" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_5273_15" target="zonenpcspawn:a_5273_10" type="diff-npc-hate" />
+        <reaction amount="1" opponent="zonenpcspawn:a_5273_17" target="zonenpcspawn:a_5273_10" type="diff-npc-hate" />
+        <reaction seq="MH_SA_JeGukGun_0083_act2" target="zonenpcspawn:a_5273_14" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_SA_JeGukGun_0083_act2" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SA_JeGukGun_0083 act-end_2 -bongny" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_5273_10" social="ChongTa_M3_Battle_soc_46" type="play-social" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="MH_SA_JeGukGun_0083_act3" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SA_JeGukGun_0083 act-end_3 -bongny" type="debug-trace" />
+        <reaction from="zonenpcspawn:a_5273_10" social="ChongTa_M3_Battle_soc_48" type="play-social" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction amount="100" opponent="zonenpcspawn:a_5273_10" target="event:act-finished:npc" type="diff-npc-hate" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="zonenpcspawn:a_5273_10" type="set-npc-brain" />
+        <reaction amount="100" opponent="event:act-finished:npc" target="zonenpcspawn:a_5273_10" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <reaction-set>
+        <reaction text="MH_SA_JeGukGun_0083 killed -bongny" type="debug-trace" />
+        <reaction seq="CH_SA_JeongHaDo_0003_act" target="zonenpcspawn:a_5273_10" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="MH_SA_JeGukGun_0085_ai" parent="MH_SA_JeGukGun_damaged_ai">
+    <decision event="npc-spawn" foward="y" />
+    <decision event="attacked" foward="y" />
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter op="eq" subject="event:npc-combat-start:npc:reg-1" subject2="event:npc-combat-start:npc:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SA_JeGukGun_0085 combat_start -bongny" type="debug-trace" />
+        <reaction amount="1" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+        <reaction target="event:npc-combat-start:npc" type="set-undying" undying="n" />
+        <reaction from="event:npc-combat-start:npc" social="ChongTa_M3_Battle_soc_36" type="play-social" />
+        <reaction seq="MH_SA_JeGukGun_0083_path2" target="zonenpcspawn:a_5273_14" type="set-npc-act" />
+        <reaction seq="MH_SA_JeGukGun_0083_path" target="zonenpcspawn:a_5273_15" type="set-npc-act" />
+        <reaction seq="MH_SA_JeGukGun_0083_path" target="zonenpcspawn:a_5273_16" type="set-npc-act" />
+        <reaction seq="MH_SA_JeGukGun_0083_path" target="zonenpcspawn:a_5273_17" type="set-npc-act" />
+        <reaction seq="MH_SA_JeGukGun_0083_path" target="zonenpcspawn:a_5273_18" type="set-npc-act" />
+        <reaction seq="MH_SA_JeGukGun_0083_path" target="zonenpcspawn:a_5273_19" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter op="eq" subject="event:npc-combat-start:npc:reg-1" subject2="event:npc-combat-start:npc:reg-1" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="MH_SA_JeGukGun_0085 combat_start_2 -bongny" type="debug-trace" />
+        <reaction from="event:npc-combat-start:npc" social="ChongTa_M3_Battle_soc_36" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+  
+  <script alias="JeGukGun_move_leader_decision">
+    <decision event="npc-spawn">
+      <filter-set>
+        <filter leader="y" subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="npc-party" />
+        <filter subject="event:npc-spawn:npc" subject2="event:npc-spawn:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:npc-spawn:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter leader="y" subject="event:act-finished:npc" subject2="event:act-finished:npc" type="npc-party" />
+        <filter subject="event:act-finished:npc" subject2="event:act-finished:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction group-1="event:act-finished:npc:npc-party" spawn-force="y" type="spawn-npc-groups" />
+        <reaction seq="MH_SA_JeGukGun_leader_path" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="killed">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="0" reg="1" target="event:killed:defender" type="set-npc-number" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:2" target-2="event:killed:defender:npc-party:3" target-3="event:killed:defender:npc-party:4" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:5" target-2="event:killed:defender:npc-party:6" target-3="event:killed:defender:npc-party:7" type="despawn-npc" />
+        <reaction despawn-force="n" respawn-after-despawn="n" target-1="event:killed:defender:npc-party:8" target-2="event:killed:defender:npc-party:9" target-3="event:killed:defender:npc-party:10" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-combat-end">
+      <filter-set>
+        <filter leader="y" subject="event:killed:defender" subject2="event:killed:defender" type="npc-party" />
+        <filter subject="event:killed:defender" subject2="event:killed:defender" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="E1448 M1 combat-end -bongny" type="debug-trace" />
+        <reaction amount="0" reg="1" target="event:npc-combat-end:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="MH_SA_JeGukGun_0074_ai" parent="JeGukGun_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_5220_340" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter op="eq" subject="event:npc-combat-start:npc:reg-1" subject2="event:npc-combat-start:npc:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="CH_SA_SeolSanJegukgunChase_0004_battle" type="play-social" />
+        <reaction amount="1" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_SA_JeGukGun_0076_ai" parent="JeGukGun_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_5220_353" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter op="eq" subject="event:npc-combat-start:npc:reg-1" subject2="event:npc-combat-start:npc:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="CH_SA_SeolSanJegukgunChase_0004_battle" type="play-social" />
+        <reaction amount="1" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="MH_SA_JeGukGun_0081_ai" parent="JeGukGun_move_leader_decision">
+    <decision event="npc-spawn" forward="y" />
+    <decision event="killed" forward="y" />
+    <decision event="act-finished" forward="y" />
+    <decision event="npc-combat-start">
+      <filter-set>
+        <filter spawn="a_5220_342" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter op="eq" subject="event:npc-combat-start:npc:reg-1" subject2="event:npc-combat-start:npc:reg-1" type="number" value="0" />
+      </filter-set>
+      <filter-set>
+        <filter spawn="a_5220_355" subject="event:npc-combat-start:npc" subject2="event:npc-combat-start:npc" type="npc-spawn" />
+        <filter op="eq" subject="event:npc-combat-start:npc:reg-1" subject2="event:npc-combat-start:npc:reg-1" type="number" value="0" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="CH_SA_SeolSanJegukgunChase_0005_battle" type="play-social" />
+        <reaction amount="1" reg="1" target="event:npc-combat-start:npc" type="set-npc-number" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  
+  
+  <script alias="ME_SA_SnowWoman_0001_ai">
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SA_SnowWoman_0001_combat_01" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_SA_SnowWoman_0002_ai">
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SA_SnowWoman_0001_combat_02" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  <script alias="ME_SA_SnowWoman_0003_ai">
+    
+    <decision event="npc-combat-start">
+      <reaction-set>
+        <reaction from="event:npc-combat-start:npc" social="ME_SA_SnowWoman_0001_combat_03" type="play-social" />
+      </reaction-set>
+    </decision>
+  </script>
+  
+
+  
+  
+  
+  <script alias="Zone_SnowCabin_epic_ai">
+    
+    <quest-decision alias="qd_1450_2">
+      <reaction-set>
+        <reaction text="qd_1450_2 complete_M1 -bongny" type="debug-trace" />
+        <reaction seq="CH_SA_general_0002_act" target="zonenpcspawn:a_5246_5" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1450_3">
+      <reaction-set>
+        <reaction text="qd_1450_3 complete_M1 -bongny" type="debug-trace" />
+        <reaction leave-cinematic="E_BC311" pc-spawn="2" target="event:mission-step-completed:pc" type="warp" zone="zone_SnowCabin" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  
+  <script alias="CH_SA_PungEmpire_0018_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction attackable="n" brain="monster" hate-on="n" npc="event:npc-spawn:npc" type="set-npc-brain" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <reaction-set>
+        <reaction text="CH_SA_PungEmpire_0018 paused_1 -bongny" type="debug-trace" />
+        <reaction target="zonenpcspawn:a_5246_5" type="act-resume" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SA_general_0002_ai">
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SA_general_0002 paused_1 -bongny" type="debug-trace" />
+        <reaction seq="CH_SA_PungEmpire_0018_act" target="zonenpcspawn:a_5246_2" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_SA_general_0002_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="CH_SA_general_0002 act-finished -bongny" type="debug-trace" />
+        <reaction attackable="n" brain="citizen" hate-on="n" npc="zonenpcspawn:a_5246_2" type="set-npc-brain" />
+        <reaction despawn-force="y" group-1="zonenpcsquad:s_5246_7" group-2="zonenpcsquad:s_5246_11" group-3="zonenpcsquad:s_5246_19" group-4="zonenpcsquad:s_5246_50" type="despawn-npc-groups" />
+        <reaction group-1="zonenpcsquad:s_5246_7_1" group-2="zonenpcsquad:s_5246_11_1" group-3="zonenpcsquad:s_5246_19_1" group-5="zonenpcsquad:s_5246_50_1" spawn-force="y" type="spawn-npc-groups" />
+        <reaction seq="CH_SA_JeongHaDo_0007_act" target="zonenpcspawn:a_5246_4" type="set-npc-act" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:a_5246_5" type="despawn-npc" />
+        <reaction spawn-1="a_5246_5_1" spawn-force="y" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CH_SA_JeongHaDo_0007_ai">
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="zonenpcspawn:a_5246_7_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_8_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_9_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_10_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_11_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_16_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_13_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_18_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_54_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_51_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_56_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_53_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="2" />
+      </filter-set>
+      <reaction-set>
+        <reaction from="zonenpcspawn:a_5246_15_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_12_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_17_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_14_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_50_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_55_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_52_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_57_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_19_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_20_1" social="Bukbang_epic_soc_27" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_21_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_22_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_23_1" social="Bukbang_epic_soc_24" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_24_1" social="Bukbang_epic_soc_27" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_25_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction from="zonenpcspawn:a_5246_26_1" social="Bukbang_epic_soc_25" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter op="lt" subject="event:act-finished:npc:reg-1" subject2="event:act-finished:npc:reg-1" type="number" value="20" />
+      </filter-set>
+      <reaction-set>
+        <reaction amount="1" reg="1" target="event:act-finished:npc" type="diff-npc-number" />
+        <reaction seq="CH_SA_JeongHaDo_0007_act" target="event:act-finished:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  
+  
+
+  
+  <script alias="zone_SnowCabin_room_P1_ai">
+    
+    <quest-decision alias="qd_1456_9">
+      <reaction-set>
+        <reaction text="qd_1456_9 QD" type="debug-trace" />
+        <reaction spawn-1="a_5242_159" spawn-2="a_5242_160" spawn-3="a_5242_161" spawn-4="a_5242_162" spawn-5="a_5242_163" spawn-force="y" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+    
+    <quest-decision alias="qd_1456_2">
+      <reaction-set>
+        <reaction text="qd_1456_2 전령들 대사 시작 (iruka41/5242)" type="debug-trace" />
+        <reaction seq="CH_WC_JeGukGun_0006_act" target="zonenpcspawn:A_5242_159" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+  <script alias="CH_WC_JeGukGun_0006_ai">
+    
+    <decision event="act-paused">
+      <filter-set>
+        <filter op="eq" subject="event:act-paused:step" subject2="event:act-paused:step" type="number" value="1" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="q_1456 전령 쫄들 대답 x4 (iruka41/5242)" type="debug-trace" />
+        <reaction from="zonenpcspawn:A_5242_160" social="CH_WC_JeGukGun_0002_soc_01" type="play-social" />
+        <reaction from="zonenpcspawn:A_5242_161" social="CH_WC_JeGukGun_0003_soc_01" type="play-social" />
+        <reaction from="zonenpcspawn:A_5242_162" social="CH_WC_JeGukGun_0004_soc_01" type="play-social" />
+        <reaction from="zonenpcspawn:A_5242_163" social="CH_WC_JeGukGun_0005_soc_01" type="play-social" />
+        <reaction target="event:act-paused:npc" type="act-resume" />
+      </reaction-set>
+    </decision>
+    
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CH_WC_JeGukGun_0006_act" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="q_1456 전령들 다같이 디스폰 (iruka41/5242)" type="debug-trace" />
+        <reaction despawn-force="y" target-1="zonenpcspawn:A_5242_160" target-2="zonenpcspawn:A_5242_161" target-3="zonenpcspawn:A_5242_162" target-4="zonenpcspawn:A_5242_163" type="despawn-npc" />
+        <reaction despawn-force="y" target-1="event:act-finished:npc" type="despawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="e_button_torch_01_ai">
+    <decision event="env-manipulated">
+      <reaction-set>
+        <reaction text="q_1451 고대의 봉화 동작 -&gt; 시네마틱 (5225/iruka41)" type="debug-trace" />
+        <reaction cinematic="E_BC312" to="event:env-manipulated:pc" type="play-cinematic" />
+      </reaction-set>
+    </decision>
+  </script>
+
+
+  
+  
+  
+
+  
+  <script alias="zone_SnowCabin_room_P2_ai">
+    
+    <quest-decision alias="qd_1451_12">
+      <reaction-set>
+        <reaction text="qd_1451_12 군마혜 대화끝 밖으로나감 (iruka41/5243)" type="debug-trace" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:A_5243_164" type="set-npc-act" />
+        <reaction seq="act_pathway1_default" target="zonenpcspawn:A_5243_165" type="set-npc-act" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+  
+
+  
+  
+  
+
+  
+  <script alias="5161_foot_5_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="summoned" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="q_1451 소환수 풋스위치 동작 -&gt; 은신 (5161/iruka41)" type="debug-trace" />
+        <reaction effect="Quest_KangRyu_LongDuration_Hide" target="event:env-entered:creature" type="invoke-effect" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="Zone_ChunMyungJiWii_p1_ai">
+    <decision event="enter-zone">
+      <reaction-set>
+        <reaction text="q_1451 Enter Zone -byerror" type="debug-trace" />
+        <reaction effect="Quest_KangRyu_LongDuration_Hide" target="event:enter-zone:pc" type="invoke-effect" />
+        <reaction effect="Quest_KangRyu_LongDuration_Hide" target="event:enter-zone:pc:my-summoned" type="invoke-effect" />
+        <reaction enable="y" target="zoneenv:5161_footswitch_01" target2="zoneenv2spawn:5161_footswitch_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:5161_footswitch_02" target2="zoneenv2spawn:5161_footswitch_02_spawn" type="set-env-enable" />
+        <reaction spawn-1="a_5161_28" spawn-delay="10000" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+    
+    
+    <quest-decision alias="qd_1451_11">
+      <reaction-set>
+        <reaction text="q_1451_11 QD -byerror" type="debug-trace" />
+        <reaction effect="Quest_KangRyu_LongDuration_Kneel" target="event:mission-step-completed:pc" type="invoke-effect" />
+        <reaction effect="Quest_KangRyu_LongDuration_Kneel" target="event:mission-step-completed:pc:my-summoned" type="invoke-effect" />
+        <reaction object="event:mission-step-completed:pc" reg="2" target="zonenpcsquad:s_5161_28" type="set-party-object" />
+        
+        <reaction spawn-1="a_5161_30" spawn-2="a_5161_72" type="spawn-npc" />
+      </reaction-set>
+    </quest-decision>
+
+    
+    <quest-decision alias="qd_1451_13">
+      <reaction-set>
+        <reaction text="q_1451_13 QD -byerror" type="debug-trace" />
+        <reaction enable="y" target="zoneenv:5161_footswitch_01" target2="zoneenv2spawn:5161_footswitch_01_spawn" type="set-env-enable" />
+        <reaction enable="y" target="zoneenv:5161_footswitch_02" target2="zoneenv2spawn:5161_footswitch_02_spawn" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_14" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_16" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_22" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_28" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_31" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_41" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_51" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_64" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5161_7" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5161_12" index-1="1" index-2="2" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5161_14" index-1="1" index-2="2" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5161_16" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5161_22" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5161_64" index-1="1" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" type="spawn-npc-index" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  <script alias="5161_footswitch_01_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="q_1451_footswitch_01 -byerror" type="debug-trace" />
+        <reaction spawn-1="a_5161_29" type="spawn-npc" />
+        <reaction cinematic="E_BC303" to="event:env-entered:creature" type="play-cinematic" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_2" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_12" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_14" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_16" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction despawn-force="y" group="zonenpcsquad:s_5161_22" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" respawn-after-despawn="n" type="despawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5161_31" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5161_41" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="spawn-npc-index" />
+        <reaction group="zonenpcsquad:s_5161_51" index-1="1" index-10="10" index-2="2" index-3="3" index-4="4" index-5="5" index-6="6" index-7="7" index-8="8" index-9="9" type="spawn-npc-index" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  <script alias="5161_footswitch_02_ai">
+    <decision event="env-entered">
+      <filter-set>
+        <filter subject="event:env-entered:creature" subject2="event:env-entered:creature" type="pc" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="q_1451_footswitch_02 -byerror" type="debug-trace" />
+        <reaction enable="n" target="event:env-entered:env" target2="event:env-entered:env" type="set-env-enable" />
+        
+        <reaction spawn-1="a_5161_63" type="spawn-npc" />
+      </reaction-set>
+    </decision>
+  </script>
+
+  
+  <script alias="CE_WC_JinSeoYeon_0001_ai">
+    <decision event="npc-spawn">
+      <reaction-set>
+        <reaction text="q_1451 JinSeoYeon spawn -byerror" type="debug-trace" />
+        <reaction target="event:npc-spawn:npc" type="set-undying" undying="y" />
+        <reaction seq="CE_WC_JinSeoYeon_0001_act_01" target="event:npc-spawn:npc" type="set-npc-act" />
+      </reaction-set>
+    </decision>
+    <decision event="act-finished">
+      <filter-set>
+        <filter subject="event:act-finished:seq" subject2="event:act-finished:seq" type="act-sequence" value="CE_WC_JinSeoYeon_0001_act_01" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="q_1451 JinSeoYeon act-finished -byerror" type="debug-trace" />
+        <reaction attackable="y" brain="monster" hate-on="y" npc="event:act-finished:npc" type="set-npc-brain" />
+        <reaction amount="10000" opponent="zonenpcsquad:s_5161_28:reg-2" target="event:act-finished:npc" type="diff-npc-hate" />
+      </reaction-set>
+    </decision>
+    <decision event="npc-special">
+      <filter-set>
+        <filter op="eq" subject="event:npc-special:step" subject2="event:npc-special:step" type="number" value="1" />
+        <filter subject="event:npc-special:npc" subject2="event:npc-special:npc" type="event-broadcasted" value="n" />
+      </filter-set>
+      <reaction-set>
+        <reaction text="q_1451 JinSeoYeon warp -byerror" type="debug-trace" />
+        <reaction effect="Quest_KangRyu_LongDuration_Kneel_Dispel" target="event:npc-special:target" type="invoke-effect" />
+        <reaction pc-spawn="1" phase-zone-pc-spawn-1="1" target="event:npc-special:target" type="warp" zone="zone_BC_YoungRinBong_epic_4" />
+      </reaction-set>
+    </decision>
+    
+  </script>
+
+
+  <script alias="CH_SA_PungEmpire_0021_ai">
+    
+    <quest-decision alias="qd_1444_8">
+      <reaction-set>
+        
+        <reaction text="축지 활성화 : 약초꾼 쉼터 -anseokhee" type="debug-trace" />
+        <reaction target="case:talked:pc" teleport="5220_Teleport_1" type="activate-teleport" />
+        <reaction from="case:talked:npc" social="HerbsShelter_Tel_Open_HL" to="case:talked:pc" type="play-social" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  <script alias="CH_SA_general_0001_ai">
+    
+    <quest-decision alias="qd_1447_2">
+      <reaction-set>
+        <reaction text="축지 활성화 및 메세지 : 백청파 본산 -anseokhee" type="debug-trace" />
+        <reaction target="case:talked:pc" teleport="5225_Teleport_2" type="activate-teleport" />
+        <reaction from="case:talked:npc" social="msg.CH_SA_general_0001_msg_1" to="case:talked:pc" type="play-social" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  <script alias="CH_CT_Citizen_0046_ai">
+    
+    <quest-decision alias="qd_1445_8">
+      <reaction-set>
+        
+        <reaction text="축지 활성화 : 설녀굴 -anseokhee" type="debug-trace" />
+        <reaction target="case:talked:pc" teleport="5275_Teleport_1" type="activate-teleport" />
+        <reaction from="case:talked:npc" social="SnowWoman_Tel_Open_HL" to="case:talked:pc" type="play-social" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  <script alias="CH_SA_JinSoA_0005_ai">
+    
+    <quest-decision alias="qd_1446_8">
+      <reaction-set>
+        
+        <reaction text="축지 활성화 : 약초꾼 쉼터 -anseokhee" type="debug-trace" />
+        <reaction target="case:talked:pc" teleport="5285_Teleport_1" type="activate-teleport" />
+        <reaction from="case:talked:npc" social="ChooAngka_Tel_Open_HL" to="case:talked:pc" type="play-social" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+
+  <script alias="CH_SA_lieutenant_0001_ai">
+    
+    <quest-decision alias="qd_1447_1">
+      <reaction-set>
+        
+        <reaction text="축지 활성화 : 설빙마을 -anseokhee" type="debug-trace" />
+        <reaction target="case:talked:pc" teleport="5240_Teleport_1" type="activate-teleport" />
+        <reaction from="case:talked:npc" social="SnowCabinVillage_Tel_Open_HL" to="case:talked:pc" type="play-social" />
+      </reaction-set>
+    </quest-decision>
+  </script>
+  
+</table>

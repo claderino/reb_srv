@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1316.xml-->
+  <quest alias="q_sub_1316" broadcast-category="field" category="job" district-1="jeryoungrim" id="1316" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition job-1="역사" level="5" preceding-quest-1="q_epic_306" preceding-quest-2="q_sub_1315" preceding-quest-check="and" preceding-quest-mission-step-1="1">
+      <case acquire-quest="y" party-broadcast="n" type="talk-to-self" />
+    </acquisition>
+    <mission-step id="1" quest-decision="qd_1316_1" zone-1="zone_MangJa_ClassQ_2_C3">
+      <mission id="1" required-register-value="1">
+        <case object="npc:ch_hwajung_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_MangJa_ClassQ_2_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1316_2" type="enter-zone" />
+        <case object="zoneenv:2027_footswitch_01" object2="zoneenv2:2027_footswitch_01" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1316_3" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_1316_4" zone-1="zone_MangJa_ClassQ_2_C3">
+      <mission id="2" required-register-value="1">
+        <case object="zoneenv:e_onoff_brush_01" object2="zoneenv2:e_onoff_brush_01" party-broadcast="n" progress-mission="y" quest-decision="qd_1316_9" type="manipulate" />
+        <case object="zone:zone_MangJa_ClassQ_2_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1316_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1316_6" zone-1="zone_MangJa_ClassQ_2_C3">
+      <mission id="3" required-register-value="2">
+        <tutorial-case progress-mission="y" type="skill-sequence" zone="zone_MangJa_ClassQ_2_C3" />
+        <case object="zone:zone_MangJa_ClassQ_2_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1316_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_1316_8" zone-1="zone_MangJa_ClassQ_2_C3">
+      <mission id="5" required-register-value="2">
+        <tutorial-case progress-mission="y" type="skill-sequence" zone="zone_MangJa_ClassQ_2_C3" />
+        <case object="zone:zone_MangJa_ClassQ_2_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1316_9" type="enter-zone" />
+        <case object="npc:ch_hwajung_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="6" quest-decision="qd_1316_10" zone-1="zone_MangJa_ClassQ_2_C3">
+      <mission id="6" required-register-value="1">
+        <case object="npc:ch_hwajung_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_MangJa_ClassQ_2_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1316_11" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7" quest-decision="qd_1316_12" zone-1="zone_MangJa_ClassQ_2_C3">
+      <mission id="7" required-register-value="2">
+        <tutorial-case progress-mission="y" type="skill-sequence" zone="zone_MangJa_ClassQ_2_C3" />
+        <case object="zone:zone_MangJa_ClassQ_2_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1316_13" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_1316_14" zone-1="zone_MangJa_ClassQ_2_C3">
+      <mission id="8" required-register-value="1" reward-1="1316_final_set1">
+        <case object="npc:ch_hwajung_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_MangJa_ClassQ_2_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1316_15" type="enter-zone" />
+        <case object="npc:MH_HwaJung_0004" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_MangJa_ClassQ_2_SP">
+      <destination mission-step-id="1" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+    </transit>
+    <mission-step id="4" quest-decision="qd_1316_16" zone-1="zone_MangJa_ClassQ_2_C3">
+      <mission id="4" required-register-value="1">
+        <case object="npc:ch_hwajung_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_MangJa_ClassQ_2_C3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1316_17" type="enter-zone" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

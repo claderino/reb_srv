@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.884.xml-->
+  <quest activated-faction="factionmain2" alias="q_sub_884" broadcast-category="field" category="normal" district-1="deasamak" id="884" main-faction="factionmain2" max-repeat="1" reset-type="daily" save-type="all">
+    <acquisition check-tencent-vitality="n" faction="factionmain2" level="34" preceding-quest-1="q_epic_535" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_honchungyo_0010" party-broadcast="n" type="talk">
+        <filter-set>
+          <filter subject2="case:talked:pc" type="active-faction" value="factionmain2" />
+        </filter-set>
+      </case>
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object2="npc:mh_murimmeng_0009" party-broadcast="y" prob="100" progress-mission="y" type="killed">
+          <filter-set>
+            <filter subject2="case:killed:pc" type="active-faction" value="factionmain2" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="884_final_set1" reward-2="884_final_set2">
+        <case object="npc:ch_honchungyo_0010" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

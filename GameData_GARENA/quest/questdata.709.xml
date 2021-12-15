@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.709.xml-->
+  <quest alias="q_sub_709" attraction-1="dungeon:Dungeon_BaekCheong_Sulokgoong" attraction-2="dungeon:Dungeon_SulinDongGul" attraction-3="dungeon:Dungeon_GuiMunGuan_Nightmare" broadcast-category="field" category="normal" id="709" max-repeat="1" reset-type="daily">
+    <acquisition level="45" preceding-quest-1="q_epic_1429" preceding-quest-2="q_epic_293" preceding-quest-check="or">
+      <case acquire-quest="y" object="npc:mh_c3_shaman_0003" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1">
+      <mission id="1" required-register-value="20">
+        <case object2="npc:ME_C3_KangSi_0004" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="2" required-register-value="10">
+        <case object2="npc:ME_C3_KangSiTall_0004" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object2="npc:me_c3_kangsifat_0004" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="4" required-register-value="1" reward-1="709_final_set1" reward-2="709_final_set2">
+        <case object="npc:mh_c3_shaman_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case fee="y" party-broadcast="n" progress-mission="y" type="talk-to-self" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

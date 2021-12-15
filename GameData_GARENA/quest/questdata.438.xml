@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.438.xml-->
+  <quest alias="q_sub_438" broadcast-category="field" category="normal" district-1="jeryoungrim" id="438" max-repeat="1" save-type="all">
+    <acquisition level="13" preceding-quest-1="q_epic_494" preceding-quest-check="and">
+      <case acquire-quest="y" object="npc:ch_pungsusa_002" type="talk" />
+    </acquisition>
+    <mission-step completion-type="and" id="1">
+      <mission id="1" required-register-value="5">
+        <case object="npc:ME_JR_SeaMonster_0002" object2="npc:ME_JR_SeaMonster_0002" party-broadcast="y" progress-mission="y" progress-value="1" quest-symbol-drop-prob="100" type="loot" />
+      </mission>
+      <mission id="2" required-register-value="5">
+        <case object="npc:CE_JR_BelliedWaterFrog_0002" party-broadcast="y" progress-mission="y" type="npc-manipulate" />
+        <case object="zoneenv:e_chest_2300riverrock_08" object2="zoneenv2:e_chest_2300riverrock_08" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverrock_07" object2="zoneenv2:e_chest_2300riverrock_07" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverrock_06" object2="zoneenv2:e_chest_2300riverrock_06" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverrock_05" object2="zoneenv2:e_chest_2300riverrock_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverrock_04" object2="zoneenv2:e_chest_2300riverrock_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverrock_03" object2="zoneenv2:e_chest_2300riverrock_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverrock_02" object2="zoneenv2:e_chest_2300riverrock_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverrock_01" object2="zoneenv2:e_chest_2300riverrock_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverboulder_05" object2="zoneenv2:e_chest_2300riverboulder_05" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverboulder_04" object2="zoneenv2:e_chest_2300riverboulder_04" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverboulder_03" object2="zoneenv2:e_chest_2300riverboulder_03" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverboulder_02" object2="zoneenv2:e_chest_2300riverboulder_02" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+        <case object="zoneenv:e_chest_2300riverboulder_01" object2="zoneenv2:e_chest_2300riverboulder_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="2">
+      <mission id="3" required-register-value="1" reward-1="438_final_set1">
+        <case object="npc:ch_pungsusa_002" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+  </quest>
+</table>

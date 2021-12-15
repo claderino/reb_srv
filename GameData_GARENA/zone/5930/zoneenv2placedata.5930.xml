@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="ZoneData2" release-side="server" type="ZoneEnv2Place" version="0.6">
+  <!--zone\5930\zoneenv2placedata.5930.xml-->
+	<record action-point="-12763,-371,3536" action-radius="17" alias="e_Chest_5930_Lever_01_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12929,-218,3535" action-radius="50" alias="e_chest_5930_weapon_01_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12596,-216,3535" action-radius="50" alias="e_chest_5930_weapon_02_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12464,315,3531" action-radius="0" alias="e_Gate_5930_gate_01_place" tool-zone-1="5930" type="gate" />
+	<record action-point="-13061,311,3531" action-radius="0" alias="e_Gate_5930_gate_02_place" tool-zone-1="5930" type="gate" />
+	<record action-point="-12733,-238,3531" action-radius="15" alias="e_chest_5930_itmebox_01_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12796,-238,3531" action-radius="15" alias="e_chest_5930_itmebox_02_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12734,-298,3531" action-radius="15" alias="e_chest_5930_itmebox_03_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12797,-298,3531" action-radius="15" alias="e_chest_5930_itmebox_04_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12734,-353,3531" action-radius="15" alias="e_chest_5930_itmebox_05_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12797,-356,3531" action-radius="15" alias="e_chest_5930_itmebox_06_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12632,-216,3535" action-radius="50" alias="e_chest_5930_weapon_03_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12893,-217,3535" action-radius="50" alias="e_chest_5930_weapon_04_place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12762,368,3576" action-radius="0" alias="e_Chest_5930_L_Place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12731,368,3576" action-radius="0" alias="e_Chest_5930_R_Place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12702,332,3601" action-radius="0" alias="Env_5930_Button_01_Place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12725,333,3583" action-radius="0" alias="Env_5930_Button_02_Place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12750,333,3564" action-radius="0" alias="Env_5930_Button_03_Place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12777,333,3543" action-radius="0" alias="Env_5930_Button_04_Place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12801,332,3563" action-radius="0" alias="Env_5930_Button_05_Place" tool-zone-1="5930" type="chest" />
+	<record action-point="-12761,-774,3586" alias="5930_Portal_1_place" region-point-1="-12842,-838,5639" region-point-2="-12842,-709,4245" region-point-3="-12681,-709,4352" region-point-4="-12681,-838,5639" tool-zone-1="5930" type="portal" />
+	<record action-point="-12444,361,3530" action-radius="0" alias="5930_footswitch_1_Place" region-point-1="-12512,339,3786" region-point-2="-12512,383,3786" region-point-3="-12376,383,4598" region-point-4="-12376,339,4598" tool-zone-1="5930" type="foot-switch" />
+	<record action-point="-13077,361,3550" action-radius="0" alias="5930_footswitch_2_Place" region-point-1="-13145,339,4598" region-point-2="-13145,383,4598" region-point-3="-13010,383,3828" region-point-4="-13010,339,3828" tool-zone-1="5930" type="foot-switch" />
+	<record alias="5930_Dmz_1_Place" height="0" region-point-1="-13486,95,3679" region-point-2="-13486,286,3791" region-point-3="-11996,286,3765" region-point-4="-11996,95,3793" tool-zone-1="5930" type="effect-region" />
+	<record alias="5930_Dmz_2_Place" height="0" region-point-1="-13155,394,4598" region-point-2="-13155,952,4598" region-point-3="-12327,952,3772" region-point-4="-12327,394,3629" tool-zone-1="5930" type="effect-region" />
+	<record alias="zone5930.falldeath_place" height="3325" type="fall-death" />
+</table>

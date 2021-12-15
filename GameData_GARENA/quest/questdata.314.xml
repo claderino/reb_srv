@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.314.xml-->
+  <quest alias="q_epic_314" category="epic" completed-list="y" district-1="jeryoungrim" id="314" max-repeat="1" save-type="all" tutorial="y">
+    <acquisition level="1" />
+    <mission-step completion-type="and" id="3">
+      <mission id="3" required-register-value="1">
+        <case object="npc:ch_herbalist_004" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="4">
+      <mission id="4" required-register-value="3">
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_06" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_07" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_08" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_09" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_10" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_11" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_12" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_13" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_14" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_15" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_16" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_17" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_18" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_19" party-broadcast="y" progress-mission="y" type="loot" />
+        <case gadget-required="dont-care" object2="zoneenv2:e_onoff_mushroom_20" party-broadcast="y" progress-mission="y" type="loot" />
+      </mission>
+    </mission-step>
+    <mission-step completion-type="and" id="5">
+      <mission id="5" required-register-value="1" reward-1="314_final_set1">
+        <case object="npc:ch_herbalist_004" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_496" />
+    </completion>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <tutorial-case progress-mission="y" type="skill-training">
+          <filter-set>
+            <filter field="level" op="ge" subject2="case:skill-training:pc" type="prop" value="15" />
+          </filter-set>
+        </tutorial-case>
+        <case object="npc:ch_dokchogeosa_001" party-broadcast="n" progress-mission="n" type="talk">
+          <filter-set>
+            <filter field="level" op="le" subject2="case:talked:pc" type="prop" value="14" />
+          </filter-set>
+        </case>
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_dokchogeosa_001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_suryengol_dun_4">
+      <destination mission-step-id="1" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+    </transit>
+    <transit id="2" zone="zone_SuRyenDongGul">
+      <complete zone-index="1" />
+    </transit>
+  </quest>
+</table>

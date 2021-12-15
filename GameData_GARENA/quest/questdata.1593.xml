@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1593.xml-->
+  <quest alias="q_sub_1593" broadcast-category="field" category="normal" id="1593" max-repeat="1" save-type="all">
+    <acquisition level="50" preceding-quest-1="q_epic_1511" preceding-quest-2="q_sub_1591">
+      <case acquire-quest="y" object="npc:ch_wa_chawoonhang_0224" party-broadcast="n" type="talk" />
+    </acquisition>
+    <mission-step id="1" quest-decision="qd_1593_1" zone-1="zone_GeonWon_DockYard_Epic7">
+      <mission id="1" required-register-value="3">
+        <case object2="npc:ME_WA_Chawoonhang_0058" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WA_Chawoonhang_0057" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_WA_Chawoonhang_0050" party-broadcast="y" progress-mission="y" type="killed" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1" reward-1="1593_final_set1">
+        <case object="npc:ch_wa_chawoonhang_0224" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_GeonWon_DockYard_D">
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

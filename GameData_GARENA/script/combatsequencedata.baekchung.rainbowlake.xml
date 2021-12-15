@@ -1,0 +1,1131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.baekchung.rainbowlake.xml-->
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <combat-sequence alias="ME_SA_Toad_0001_CS1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_Fire" skill3="ME_Toad_None_Fire" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_FrogBlow" skill3="ME_Toad_None_FrogBlow" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Area360" skill3="ME_Toad_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_BubbleFire" skill3="ME_Toad_None_BubbleFire" type="use-skill" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="10000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_01" type="do-social" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="15000" start-delay="30000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_03" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360" skill3="ME_Toad_None_StrongArea360" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:3" type="use-skill" />
+    </special>
+        
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target-area="5501_250" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Hawl" skill3="ME_Toad_None_Hawl" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_02" type="do-social" />
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_8" ground-pattern-4="pattern_9" ground-pattern-5="pattern_10" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action event-step="3" ground-pattern-1="pattern_11" ground-pattern-2="pattern_12" ground-pattern-3="pattern_13" ground-pattern-4="pattern_14" ground-pattern-5="pattern_15" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="1">
+      
+      <action event-step="99" immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Social" skill3="ME_Toad_None_Social" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_Toad_0001_CS2" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_Fire" skill3="ME_Toad_None_Fire" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_FrogBlow" skill3="ME_Toad_None_FrogBlow" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Area360" skill3="ME_Toad_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_BubbleFire" skill3="ME_Toad_None_BubbleFire" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="16000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_05" type="do-social" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_PoisionGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_LightningGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_IceGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="47000" start-delay="50000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_03" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360" skill3="ME_Toad_None_StrongArea360" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:3" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target-area="5501_250" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Hawl" skill3="ME_Toad_None_Hawl" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_02" type="do-social" />
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_8" ground-pattern-4="pattern_9" ground-pattern-5="pattern_10" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action event-step="3" ground-pattern-1="pattern_11" ground-pattern-2="pattern_12" ground-pattern-3="pattern_13" ground-pattern-4="pattern_14" ground-pattern-5="pattern_15" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_Toad_0001_CS3" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_Fire" skill3="ME_Toad_None_Fire" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_FrogBlow" skill3="ME_Toad_None_FrogBlow" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Area360" skill3="ME_Toad_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_BubbleFire" skill3="ME_Toad_None_BubbleFire" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="10000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_01" type="do-social" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="15000" start-delay="30000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_03" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360" skill3="ME_Toad_None_StrongArea360" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:3" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target-area="5501_250" type="use-ground-skill" />
+      <action repeat="1" skill="ME_Toad_None_Hawl" skill3="ME_Toad_None_Hawl" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_02" type="do-social" />
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_8" ground-pattern-4="pattern_9" ground-pattern-5="pattern_10" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action event-step="3" ground-pattern-1="pattern_11" ground-pattern-2="pattern_12" ground-pattern-3="pattern_13" ground-pattern-4="pattern_14" ground-pattern-5="pattern_15" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_Toad_0001_CS4" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_Fire" skill3="ME_Toad_None_Fire" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_FrogBlow" skill3="ME_Toad_None_FrogBlow" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Area360" skill3="ME_Toad_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_BubbleFire" skill3="ME_Toad_None_BubbleFire" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="16000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_05" type="do-social" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_PoisionGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_LightningGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_IceGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="47000" start-delay="50000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_03" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360" skill3="ME_Toad_None_StrongArea360" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:3" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target-area="5501_250" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Hawl" skill3="ME_Toad_None_Hawl" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_02" type="do-social" />
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_8" ground-pattern-4="pattern_9" ground-pattern-5="pattern_10" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action event-step="3" ground-pattern-1="pattern_11" ground-pattern-2="pattern_12" ground-pattern-3="pattern_13" ground-pattern-4="pattern_14" ground-pattern-5="pattern_15" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  
+  
+  
+  
+  
+  <combat-sequence alias="ME_SA_Toad_0002_CS1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_Fire" skill3="ME_Toad_None_Fire" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_FrogBlow" skill3="ME_Toad_None_FrogBlow" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Area360" skill3="ME_Toad_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_BubbleFire" skill3="ME_Toad_None_BubbleFire" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="10000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_08" type="do-social" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="15000" start-delay="30000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_10" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360" skill3="ME_Toad_None_StrongArea360" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:3" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target-area="5501_250" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Hawl" skill3="ME_Toad_None_Hawl" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_09" type="do-social" />
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_8" ground-pattern-4="pattern_9" ground-pattern-5="pattern_10" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action event-step="3" ground-pattern-1="pattern_11" ground-pattern-2="pattern_12" ground-pattern-3="pattern_13" ground-pattern-4="pattern_14" ground-pattern-5="pattern_15" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+    </special>
+
+    <special combat-distance="7" id="4" max-count="1">
+      
+      <action event-step="99" immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Social" skill3="ME_Toad_None_Social" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_Toad_0002_CS2" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_Fire" skill3="ME_Toad_None_Fire" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_FrogBlow" skill3="ME_Toad_None_FrogBlow" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Area360" skill3="ME_Toad_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_BubbleFire" skill3="ME_Toad_None_BubbleFire" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="16000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_11" type="do-social" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_PoisionGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_LightningGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_IceGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="47000" start-delay="50000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_10" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360" skill3="ME_Toad_None_StrongArea360" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:3" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target-area="5501_250" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Hawl" skill3="ME_Toad_None_Hawl" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_09" type="do-social" />
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_8" ground-pattern-4="pattern_9" ground-pattern-5="pattern_10" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action event-step="3" ground-pattern-1="pattern_11" ground-pattern-2="pattern_12" ground-pattern-3="pattern_13" ground-pattern-4="pattern_14" ground-pattern-5="pattern_15" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_Toad_0002_CS3" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_Fire" skill3="ME_Toad_None_Fire" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_FrogBlow" skill3="ME_Toad_None_FrogBlow" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Area360" skill3="ME_Toad_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_BubbleFire" skill3="ME_Toad_None_BubbleFire" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="10000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_08" type="do-social" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="15000" immune-breaker-disable="y" skill3="ME_Toad_None_Boil" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="15000" start-delay="30000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_10" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360" skill3="ME_Toad_None_StrongArea360" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:3" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target-area="5501_250" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Hawl" skill3="ME_Toad_None_Hawl" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_09" type="do-social" />
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_8" ground-pattern-4="pattern_9" ground-pattern-5="pattern_10" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action event-step="3" ground-pattern-1="pattern_11" ground-pattern-2="pattern_12" ground-pattern-3="pattern_13" ground-pattern-4="pattern_14" ground-pattern-5="pattern_15" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_Toad_0002_CS4" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_Fire" skill3="ME_Toad_None_Fire" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" repeat="1" skill="ME_Toad_None_FrogBlow" skill3="ME_Toad_None_FrogBlow" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Area360" skill3="ME_Toad_None_Area360" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_BubbleFire" skill3="ME_Toad_None_BubbleFire" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="16000" start-delay="10000">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_11" type="do-social" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_PoisionGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_LightningGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_Toad_None_IceGround" target="event:npc-combat-action:npc:last-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="2" max-count="0" min-delay="47000" start-delay="50000">
+      
+      <action except-summoned="y" except-top-hate="n" gather-count="3" gather-rule="rotate" immune-breaker-disable="y" type="gather-targets" />
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_10" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360" skill3="ME_Toad_None_StrongArea360" target="event:npc-combat-action:special-target:1" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:2" type="use-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target="event:npc-combat-action:special-target:3" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_StrongArea360_Cast" skill3="ME_Toad_None_StrongArea360_Cast" target-area="5501_250" type="use-ground-skill" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_Toad_None_Hawl" skill3="ME_Toad_None_Hawl" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_09" type="do-social" />
+      <action ground-pattern-1="pattern_1" ground-pattern-2="pattern_2" ground-pattern-3="pattern_3" ground-pattern-4="pattern_4" ground-pattern-5="pattern_5" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action ground-pattern-1="pattern_6" ground-pattern-2="pattern_7" ground-pattern-3="pattern_8" ground-pattern-4="pattern_9" ground-pattern-5="pattern_10" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+      <action event-step="3" ground-pattern-1="pattern_11" ground-pattern-2="pattern_12" ground-pattern-3="pattern_13" ground-pattern-4="pattern_14" ground-pattern-5="pattern_15" immune-breaker-disable="y" origin-pos="0,0,0" repeat="1" skill3="ME_Toad_None_EggFire" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+
+    
+  
+  
+
+  
+  <combat-sequence alias="ME_SA_WindTornado_P_0001_CS1">
+    <normal combat-distance="1" id="1" special-1="1">
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+     <action arrived-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Finish" pass-through="n" skill3="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" speed="128" target="zonenpcspawn:a_5501_193" type="boss-rush-attack" /> 
+      <action duration="1000" event-step="1" immune-breaker-disable="y" type="stay" />   
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_WindTornado_P_0002_CS1">
+    <normal combat-distance="1" id="1" special-1="1">
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action arrived-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Finish" pass-through="n" skill3="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" speed="128" target="zonenpcspawn:a_5501_194" type="boss-rush-attack" />
+      <action duration="1000" event-step="1" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_WindTornado_P_0003_CS1">
+    <normal combat-distance="1" id="1" special-1="1">
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action arrived-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Finish" pass-through="n" skill3="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" speed="128" target="zonenpcspawn:a_5501_195" type="boss-rush-attack" />
+      <action duration="1000" event-step="1" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_WindTornado_P_0004_CS1">
+    <normal combat-distance="1" id="1" special-1="1">
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1">
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action arrived-effect="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki_Finish" pass-through="n" skill3="ME_SUC_B2_NaHanWind_Tornado_TinyTatsumaki" speed="128" target="zonenpcspawn:a_5501_196" type="boss-rush-attack" />
+      <action duration="1000" event-step="1" immune-breaker-disable="y" type="stay" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+  
+  
+
+  <combat-sequence alias="ME_SA_CrocodileSharkTrabeA_0002_CS1">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action repeat="1" skill="ME_JEA_Dummy_None_Ground_Poison" skill3="ME_JEA_Dummy_None_Ground_Poison" type="use-skill" />
+    </special>
+      
+
+    
+    <special combat-distance="7" id="2" max-count="1" start-delay="20000">
+      <action duration="100" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+
+
+  <combat-sequence alias="ME_SA_BelliedFrog_0001_CS1">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action repeat="1" skill="ME_Dummy_None_1000ms" skill3="ME_Dummy_None_1000ms" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="2" max-count="1" start-delay="20000">
+      <action duration="100" event-step="1" type="stay" />
+    </special>
+        
+    
+  </combat-sequence>
+ 
+  
+  <combat-sequence alias="ME_SA_IronTurtleBaby_0001_CS1">
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action duration="100" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action repeat="1" skill="ME_IronTurtleBaby_None_Swing_IceGround" skill3="ME_IronTurtleBaby_None_Swing_IceGround" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1" start-delay="20000">
+      <action duration="100" event-step="1" type="stay" />
+    </special>
+  </combat-sequence>
+  
+    
+
+  
+  
+  
+  
+  <combat-sequence alias="ME_SA_IronTurtleBig_0001_CS1">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_IronTurtleBig_None_NAtk1_Lake" skill3="ME_IronTurtleBig_None_NAtk1_Lake" type="use-skill" />
+      
+      <action repeat="1" skill="ME_IronTurtleBig_None_NAtk2_Lake" skill3="ME_IronTurtleBig_None_NAtk2_Lake" type="use-skill" />
+      
+      <action repeat="1" skill="ME_IronTurtleBig_None_Jab_Lake" skill3="ME_IronTurtleBig_None_Jab_Lake" type="use-skill" />
+
+      <action type="select">
+      
+      <action prob="50" repeat="1" skill="ME_IronTurtleBig_None_Swing_Hit_Lake" skill3="ME_IronTurtleBig_None_Swing_Hit_Lake" type="use-skill" />
+      
+      <action prob="50" repeat="1" skill="ME_IronTurtleScaleUp1_None_Swing_Miss_Lake" skill3="ME_IronTurtleScaleUp1_None_Swing_Miss_Lake" type="use-skill" />
+      </action>
+      
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_IronTurtleBig_None_Dash_Lake" skill3="ME_IronTurtleBig_None_Dash_Lake" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="40000" start-delay="10000">
+      
+      <action repeat="1" skill="ME_IronTurtleBig_None_Defence_Lake" skill3="ME_IronTurtleBig_None_Defence_Lake" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0" min-delay="30000" start-delay="20000">
+      
+      <action repeat="1" skill="ME_IronTurtleBig_None_Dash_Lake" skill3="ME_IronTurtleBig_None_Dash_Lake" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_IronTurtleBig_None_Dash_Lake" skill3="ME_IronTurtleBig_None_Dash_Lake" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_IronTurtleBig_None_Dash_Lake" skill3="ME_IronTurtleBig_None_Dash_Lake" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_04" type="do-social" />
+      
+      <action repeat="1" skill="ME_IronTurtleBig_None_SwingBlast_Special_Lake" skill3="ME_IronTurtleBig_None_SwingBlast_Special_Lake" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+    
+  <combat-sequence alias="ME_SA_IronTurtleBaby_0003_CS1">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_IronTurtleBaby_None_Swing_IceGround" skill3="ME_IronTurtleBaby_None_Swing_IceGround" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action event-step="1" repeat="1" skill="ME_IronTurtleBaby_None_Swing_IceGround" skill3="ME_IronTurtleBaby_None_Swing_IceGround" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  
+
+  
+  <combat-sequence alias="ME_SA_CrocodileSharkTribeC_0001_CS1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      <action repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_Jab_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_Jab_Lake" type="use-skill" />
+      
+      <action repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_Smash_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_Smash_Lake" type="use-skill" />
+      <action type="select">
+        
+        <action prob="50" repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_Jab_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_Jab_Lake" type="use-skill" />
+        
+        <action prob="50" repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_TailSmash_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_TailSmash_Lake" type="use-skill" />
+      </action>
+      
+      <action repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_Beam_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_Beam_Lake" type="use-skill" />
+      
+      <action repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_MultiSwing_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_MultiSwing_Lake" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action duration="30000" repeat="1" skill3="ME_CrocodileSharkTribeC2_None_LightningGround_Lake" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_Dash_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_Dash_Lake" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="0" min-delay="50000" start-delay="15000">
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_Explosion_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_Explosion_Lake" type="use-skill" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_CrocodileSharkTribeC2_None_LightningGround_Lake" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_JumpDash_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_JumpDash_Lake" type="use-skill" />
+      
+      <action repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_HeavyLightning_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_HeavyLightning_Lake" type="use-skill" />
+      
+      <action duration="30000" immune-breaker-disable="y" repeat="1" skill3="ME_CrocodileSharkTribeC2_None_LightningGround_Lake" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_07" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill="ME_CrocodileSharkTribeC2ScaleUp1_None_Explosion_Special_Lake" skill3="ME_CrocodileSharkTribeC2ScaleUp1_None_Explosion_Special_Lake" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+
+
+  
+  
+  
+
+  <combat-sequence alias="ME_SA_SeaMonsterBoss_0001_CS">
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action repeat="1" skill="ME_SeaMonster_None_TailCyclone_Lake" skill3="ME_SeaMonster_None_TailCyclone_Lake" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SeaMonster_None_Jab_Lake" skill3="ME_SeaMonster_None_Jab_Lake" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SeaMonster_None_TailSmash_Lake" skill3="ME_SeaMonster_None_TailSmash_Lake" type="use-skill" />
+      
+      <action repeat="1" skill="ME_SeaMonster_None_JawUppercut_Lake" skill3="ME_SeaMonster_None_JawUppercut_Lake" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action duration="20000" repeat="1" skill3="ME_SeaMonster_None_Poisonlock_Lake" type="boss-simultaneous-ground-attack" />
+      
+      <action repeat="1" skill="ME_Seamonster_None_Rush_Lake" skill3="ME_Seamonster_None_Rush_Lake" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" condition-1="down" condition-2="kneel" id="1" max-count="0">
+      
+      <action repeat="1" skill="ME_SeaMonster_None_SnapThrow_Lake" skill3="ME_SeaMonster_None_SnapThrow_Lake" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0" min-delay="20000" start-delay="10000">
+      
+      <action repeat="1" skill="ME_SeaMonster_None_Warcry_Lake" skill3="ME_SeaMonster_None_Warcry_Lake" type="use-skill" />
+      
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill3="ME_SeaMonster_None_Poisonlock_Lake" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill3="ME_SeaMonster_None_Poisonlock_Lake" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+      <action duration="20000" immune-breaker-disable="y" repeat="1" skill3="ME_SeaMonster_None_Poisonlock_Lake" target="event:npc-combat-action:npc:farthest-target" type="boss-simultaneous-ground-attack" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_ME_SA_Toad_0001_msg_06" type="do-social" />
+      
+      <action repeat="1" skill="ME_SeaMonster_None_Warcry_Special_Lake" skill3="ME_SeaMonster_None_Warcry_Special_Lake" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+
+  
+  
+   
+  <combat-sequence alias="ME_SA_BelliedFrog_0006_CS1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action type="select">
+        <action prob="25" repeat="1" skill="ME_BelliedFrog_None_Range1_Show" skill3="ME_BelliedFrog_None_Range1_Show" target="event:npc-combat-action:npc:npc-party:2" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedFrog_None_Range1_Show" skill3="ME_BelliedFrog_None_Range1_Show" target="event:npc-combat-action:npc:npc-party:3" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedFrog_None_Range1_Show" skill3="ME_BelliedFrog_None_Range1_Show" target="event:npc-combat-action:npc:npc-party:4" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedFrog_None_Range1_Show" skill3="ME_BelliedFrog_None_Range1_Show" target="event:npc-combat-action:npc:npc-party:5" type="use-skill" />
+      </action>
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action duration="1000" event-step="11" type="stay" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1_Strong" skill3="ME_BelliedFrog_None_Range1_Strong" target="zonenpcspawn:a_5501_251:min-hate-target" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1_Strong" skill3="ME_BelliedFrog_None_Range1_Strong" target="zonenpcspawn:a_5501_251:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1_Strong" skill3="ME_BelliedFrog_None_Range1_Strong" target="zonenpcspawn:a_5501_251:nearest-target" type="use-skill" />
+      <action duration="5000" event-step="3" type="stay" />
+    </special>    
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_BelliedFrog_0006_CS2" transit-cond-1="manual">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BelliedFrog_None_Lightning180" skill3="ME_BelliedFrog_None_Lightning180" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1_Strong" skill3="ME_BelliedFrog_None_Range1_Strong" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1_Strong" skill3="ME_BelliedFrog_None_Range1_Strong" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range2" skill3="ME_BelliedFrog_None_Range2" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action type="select">
+        <action prob="25" repeat="1" skill="ME_BelliedFrog_None_Range1_Show" skill3="ME_BelliedFrog_None_Range1_Show" target="event:npc-combat-action:npc:npc-party:2" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedFrog_None_Range1_Show" skill3="ME_BelliedFrog_None_Range1_Show" target="event:npc-combat-action:npc:npc-party:3" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedFrog_None_Range1_Show" skill3="ME_BelliedFrog_None_Range1_Show" target="event:npc-combat-action:npc:npc-party:4" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedFrog_None_Range1_Show" skill3="ME_BelliedFrog_None_Range1_Show" target="event:npc-combat-action:npc:npc-party:5" type="use-skill" />
+      </action>
+      <action duration="1000" event-step="11" type="stay" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1_Strong" skill3="ME_BelliedFrog_None_Range1_Strong" target="zonenpcspawn:a_5501_251:min-hate-target" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1_Strong" skill3="ME_BelliedFrog_None_Range1_Strong" target="zonenpcspawn:a_5501_251:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1_Strong" skill3="ME_BelliedFrog_None_Range1_Strong" target="zonenpcspawn:a_5501_251:nearest-target" type="use-skill" />
+      <action duration="5000" event-step="3" type="stay" />
+    </special>
+  </combat-sequence>
+
+
+   
+  <combat-sequence alias="ME_SA_BelliedWaterFrog_0001_CS1" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action duration="1000" type="stay" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action type="select">
+        <action prob="25" repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Show" skill3="ME_BelliedWaterFrog_None_Beam_Show" target="event:npc-combat-action:npc:npc-party:2" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Show" skill3="ME_BelliedWaterFrog_None_Beam_Show" target="event:npc-combat-action:npc:npc-party:3" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Show" skill3="ME_BelliedWaterFrog_None_Beam_Show" target="event:npc-combat-action:npc:npc-party:4" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Show" skill3="ME_BelliedWaterFrog_None_Beam_Show" target="event:npc-combat-action:npc:npc-party:5" type="use-skill" />
+      </action>
+      <action duration="1000" event-step="1" type="stay" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action duration="1000" event-step="11" type="stay" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Strong" skill3="ME_BelliedWaterFrog_None_Beam_Strong" target="zonenpcspawn:a_5501_253:min-hate-target" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Strong" skill3="ME_BelliedWaterFrog_None_Beam_Strong" target="zonenpcspawn:a_5501_253:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Strong" skill3="ME_BelliedWaterFrog_None_Beam_Strong" target="zonenpcspawn:a_5501_253:nearest-target" type="use-skill" />
+      <action duration="5000" event-step="3" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_BelliedWaterFrog_0001_CS2" transit-cond-1="manual">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Strong" skill3="ME_BelliedWaterFrog_None_Beam_Strong" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Area90" skill3="ME_BelliedWaterFrog_None_Area90" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Strong" skill3="ME_BelliedWaterFrog_None_Beam_Strong" type="use-skill" />
+    </normal>
+
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action type="select">
+        <action prob="25" repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Show" skill3="ME_BelliedWaterFrog_None_Beam_Show" target="event:npc-combat-action:npc:npc-party:2" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Show" skill3="ME_BelliedWaterFrog_None_Beam_Show" target="event:npc-combat-action:npc:npc-party:3" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Show" skill3="ME_BelliedWaterFrog_None_Beam_Show" target="event:npc-combat-action:npc:npc-party:4" type="use-skill" />
+        <action prob="25" repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Show" skill3="ME_BelliedWaterFrog_None_Beam_Show" target="event:npc-combat-action:npc:npc-party:5" type="use-skill" />
+      </action>
+      <action duration="1000" event-step="11" type="stay" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="0">
+      
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Strong" skill3="ME_BelliedWaterFrog_None_Beam_Strong" target="zonenpcspawn:a_5501_253:min-hate-target" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Strong" skill3="ME_BelliedWaterFrog_None_Beam_Strong" target="zonenpcspawn:a_5501_253:farthest-target" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam_Strong" skill3="ME_BelliedWaterFrog_None_Beam_Strong" target="zonenpcspawn:a_5501_253:nearest-target" type="use-skill" />
+      <action duration="5000" event-step="3" type="stay" />
+    </special>
+  </combat-sequence>
+
+  
+
+  
+  <combat-sequence alias="ME_SA_BelliedFrog_0007_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      <action event-step="1" repeat="1" skill="MH_Common_HateUp" skill3="MH_Common_HateUp" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="4" max-count="0">
+      <action event-step="1" repeat="1" skill="ME_BelliedFrog_None_Range1_Beam_PC" skill3="ME_BelliedFrog_None_Range1_Beam_PC" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="5" max-count="0">
+      <action event-step="1" repeat="1" skill="ME_BelliedFrog_None_Range1_Beam" skill3="ME_BelliedFrog_None_Range1_Beam" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="0">
+      <action duration="1000" event-step="9" type="stay" />
+    </special>
+    <special combat-distance="7" id="3" max-count="0">
+      <action repeat="1" skill="ME_BelliedFrog_None_Range2_Buff_Lake" skill3="ME_BelliedFrog_None_Range2_Buff_Lake" target="zonenpcspawn:a_5501_252" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  
+  <combat-sequence alias="ME_SA_CrocodileSharkTrabeA_0003_CS1" hide-seq-start="y" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action type="select">
+        <action duration="5500" prob="10" type="stay" />
+        <action duration="5000" prob="10" type="stay" />
+        <action duration="4500" prob="10" type="stay" />
+        <action duration="4000" prob="10" type="stay" />
+        <action duration="3500" prob="10" type="stay" />
+        <action duration="3000" prob="10" type="stay" />
+        <action duration="2500" prob="10" type="stay" />
+        <action duration="2000" prob="10" type="stay" />
+        <action duration="1500" prob="10" type="stay" />
+        <action duration="1000" prob="10" type="stay" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="1" repeat="1" skill="ME_CrocodileSharkTribeA_None_PoisonGround" skill3="ME_CrocodileSharkTribeA_None_PoisonGround" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_SA_CrocodileSharkTrabeA_0003_CS2" hide-seq-start="y" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action type="select">
+        <action duration="1000" prob="20" type="stay" />
+        <action duration="1200" prob="20" type="stay" />
+        <action duration="1400" prob="20" type="stay" />
+        <action duration="1600" prob="20" type="stay" />
+        <action duration="1800" prob="20" type="stay" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="1" repeat="1" skill="ME_CrocodileSharkTribeA_None_PoisonGround" skill3="ME_CrocodileSharkTribeA_None_PoisonGround" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_SA_CrocodileSharkTrabeA_0003_CS3" hide-seq-start="y" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_CrocodileSharkTribeC_None_Jab" skill3="ME_CrocodileSharkTribeC_None_Jab" type="use-skill" />
+    </normal>
+    <special combat-distance="1" id="1" max-count="0">
+      <action duration="1000" event-step="9" type="stay" />
+    </special>
+    <special combat-distance="2" id="2" max-count="0">
+      
+      <action event-step="4" repeat="1" skill="ME_CrocodileSharkTribeA_None_SpreadPoison_Kill" skill3="ME_CrocodileSharkTribeA_None_SpreadPoison_Kill" type="use-skill" />
+    </special>
+    <special combat-distance="1" id="3" max-count="0">
+      
+      <action event-step="4" repeat="1" skill="ME_CrocodileSharkTribeA_None_SpreadPoison_Kill" skill3="ME_CrocodileSharkTribeA_None_SpreadPoison_Kill" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_SA_IronTurtleBaby_0002_CS1" hide-seq-start="y" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action type="select">
+        <action duration="5500" prob="10" type="stay" />
+        <action duration="5000" prob="10" type="stay" />
+        <action duration="4500" prob="10" type="stay" />
+        <action duration="4000" prob="10" type="stay" />
+        <action duration="3500" prob="10" type="stay" />
+        <action duration="3000" prob="10" type="stay" />
+        <action duration="2500" prob="10" type="stay" />
+        <action duration="2000" prob="10" type="stay" />
+        <action duration="1500" prob="10" type="stay" />
+        <action duration="1000" prob="10" type="stay" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action event-step="1" repeat="1" skill="ME_IronTurtleBaby_None_Swing_IceGround" skill3="ME_IronTurtleBaby_None_Swing_IceGround" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_SA_IronTurtleBaby_0002_CS2" hide-seq-start="y" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action type="select">
+        <action duration="1000" prob="20" type="stay" />
+        <action duration="1200" prob="20" type="stay" />
+        <action duration="1400" prob="20" type="stay" />
+        <action duration="1600" prob="20" type="stay" />
+        <action duration="1800" prob="20" type="stay" />
+      </action>
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action event-step="1" repeat="1" skill="ME_IronTurtleBaby_None_Swing_IceGround" skill3="ME_IronTurtleBaby_None_Swing_IceGround" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_SA_IronTurtleBaby_0002_CS3" hide-seq-start="y" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action repeat="1" skill="ME_IronTurtleBaby_None_Jab" skill3="ME_IronTurtleBaby_None_Jab" type="use-skill" />
+    </normal>
+    <special combat-distance="1" id="1" max-count="0">
+      <action duration="1000" event-step="9" type="stay" />
+    </special>
+    <special combat-distance="2" id="2" max-count="0">
+      
+      <action event-step="4" repeat="1" skill="ME_IronTurtleBaby_None_Swing_Miss_Kill" skill3="ME_IronTurtleBaby_None_Swing_Miss_Kill" type="use-skill" />
+    </special>
+    <special combat-distance="1" id="3" max-count="0">
+      
+      <action event-step="4" repeat="1" skill="ME_IronTurtleBaby_None_Swing_Miss_Kill" skill3="ME_IronTurtleBaby_None_Swing_Miss_Kill" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  
+  <combat-sequence alias="ME_SA_FrogTribeC_0003_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_FrogTribeC_None_Jab" skill3="ME_FrogTribeC_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_FrogTribeC_None_Smash" skill3="ME_FrogTribeC_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_FrogTribeC_None_PoisonBlow_Lake" skill3="ME_FrogTribeC_None_PoisonBlow_Lake" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_FrogTribeC_None_GhostBlow_Lake" skill3="ME_FrogTribeC_None_GhostBlow_Lake" type="use-skill" />
+      <action repeat="1" skill="ME_FrogTribeC_None_Dash" skill3="ME_FrogTribeC_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_FrogTribeC_0008_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_FrogTribeC_None_Jab" skill3="ME_FrogTribeC_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_FrogTribeC_None_Smash" skill3="ME_FrogTribeC_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_FrogTribeC_None_MultiSmash" skill3="ME_FrogTribeC_None_MultiSmash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_FrogTribeC_None_Dash" skill3="ME_FrogTribeC_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_FrogTribeC_0009_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="2" skill="ME_FrogTribeC_None_Jab" skill3="ME_FrogTribeC_None_Jab" type="use-skill" />
+      <action repeat="1" skill="ME_FrogTribeC_None_Smash" skill3="ME_FrogTribeC_None_Smash" type="use-skill" />
+      <action repeat="1" skill="ME_FrogTribeC_None_MultiSmash" skill3="ME_FrogTribeC_None_MultiSmash" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_FrogTribeC_None_Dash" skill3="ME_FrogTribeC_None_Dash" type="use-skill" />
+    </normal>
+  </combat-sequence>
+  
+  
+  
+  <combat-sequence alias="ME_SA_BelliedFrog_0009_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BelliedFrog_None_Lightning180" skill3="ME_BelliedFrog_None_Lightning180" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="3" skill="ME_BelliedFrog_None_Range1" skill3="ME_BelliedFrog_None_Range1" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range2" skill3="ME_BelliedFrog_None_Range2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_SA_BelliedWaterFrog_0002_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam" skill3="ME_BelliedWaterFrog_None_Beam" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Area90" skill3="ME_BelliedWaterFrog_None_Area90" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="1" skill="ME_BelliedWaterFrog_None_Beam" skill3="ME_BelliedWaterFrog_None_Beam" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_SA_BelliedFrog_0010_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BelliedFrog_None_Lightning180" skill3="ME_BelliedFrog_None_Lightning180" type="use-skill" />
+    </normal>
+    <normal combat-distance="7" id="2">
+      <action repeat="3" skill="ME_BelliedFrog_None_Range1" skill3="ME_BelliedFrog_None_Range1" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range2" skill3="ME_BelliedFrog_None_Range2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_BelliedFrog_0008_CS">
+    <normal combat-distance="1" id="1">
+      <action repeat="1" skill="ME_BelliedFrog_None_Lightning180" skill3="ME_BelliedFrog_None_Lightning180" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1" skill3="ME_BelliedFrog_None_Range1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="ME_BelliedFrog_None_Range1" skill3="ME_BelliedFrog_None_Range1" type="use-skill" />
+      <action repeat="1" skill="ME_BelliedFrog_None_Range2" skill3="ME_BelliedFrog_None_Range2" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_SA_Juno_0005_CS1" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual">
+    <normal combat-distance="4" id="1" special-1="1">
+      <action repeat="1" skill3="ME_JunoBoss_None_Feather" type="use-skill" />
+    </normal>
+    <special combat-distance="4" id="1" max-count="1">
+      <action event-step="1" repeat="1" skill3="ME_JunoBoss_None_Feather" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_SA_Juno_0005_CS2" hide-seq-start="n" transit-action-1="burrow" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_MultiHit" type="use-skill" />
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_Air" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="40" repeat="1" skill3="ME_JunoBoss_None_MultiHit" type="use-skill" />
+        <action prob="60" repeat="1" skill3="ME_JunoBoss_None_Air" type="use-skill" />
+      </action>
+      <action repeat="1" skill3="ME_JunoBoss_None_Area180" type="use-skill" />
+      <action repeat="1" skill="ME_JunoBoss_None_Yell" skill3="ME_JunoBoss_None_Yell" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_Dash" type="use-skill" />
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_Capture" type="use-skill" />
+      </action>
+    </normal>
+
+    <special combat-distance="7" condition-1="hp-70" id="1" max-count="1">
+      <action repeat="1" skill3="ME_JunoBoss_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  <combat-sequence alias="ME_SA_Juno_0006_CS1" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual">
+    <normal combat-distance="4" id="1" special-1="1">
+      <action repeat="1" skill3="ME_JunoBoss_None_Feather" type="use-skill" />
+    </normal>
+    <special combat-distance="4" id="1" max-count="1">
+      <action event-step="1" repeat="1" skill3="ME_JunoBoss_None_Feather" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_SA_Juno_0006_CS2" hide-seq-start="n" transit-action-1="burrow" transit-cond-1="manual">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_MultiHit" type="use-skill" />
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_Air" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="40" repeat="1" skill3="ME_JunoBoss_None_MultiHit" type="use-skill" />
+        <action prob="60" repeat="1" skill3="ME_JunoBoss_None_Air" type="use-skill" />
+      </action>
+      <action repeat="1" skill3="ME_JunoBoss_None_Area180" type="use-skill" />
+      <action repeat="1" skill="ME_JunoBoss_None_Yell" skill3="ME_JunoBoss_None_Yell" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_Dash" type="use-skill" />
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_Capture" type="use-skill" />
+      </action>
+    </normal>
+
+    <special combat-distance="7" condition-1="hp-70" id="1" max-count="1">
+      <action repeat="1" skill3="ME_JunoBoss_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  <combat-sequence alias="ME_SA_Juno_0007_CS" hide-seq-start="y">
+    <normal combat-distance="1" id="1" special-1="1">
+      <action type="select">
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_MultiHit" type="use-skill" />
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_Air" type="use-skill" />
+      </action>
+      <action type="select">
+        <action prob="40" repeat="1" skill3="ME_JunoBoss_None_MultiHit" type="use-skill" />
+        <action prob="60" repeat="1" skill3="ME_JunoBoss_None_Air" type="use-skill" />
+      </action>
+      <action repeat="1" skill3="ME_JunoBoss_None_Area180" type="use-skill" />
+      <action repeat="1" skill="ME_JunoBoss_None_Yell" skill3="ME_JunoBoss_None_Yell" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      <action type="select">
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_Dash" type="use-skill" />
+        <action prob="50" repeat="1" skill3="ME_JunoBoss_None_Capture" type="use-skill" />
+      </action>
+    </normal>
+
+    <special combat-distance="7" condition-1="hp-70" id="1" max-count="1">
+      <action repeat="1" skill3="ME_JunoBoss_None_Area360" type="use-skill" />
+    </special>
+  </combat-sequence>
+</table>

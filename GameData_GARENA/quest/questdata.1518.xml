@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1518.xml-->
+  <quest alias="q_epic_1518" category="epic" completed-list="y" id="1518" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <completion>
+      <next-quest quest="q_epic_1519" />
+    </completion>
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="y" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="1">
+        <case object="npc:ch_sb_geonwon_0020" party-broadcast="n" progress-mission="y" quest-decision="qd_1518_2" type="talk" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_1518_8" rollback="leave-zone" zone-1="zone_geonwon_gaebang_act7_2">
+      <mission id="3" required-register-value="6">
+        <case object2="npc:mh_sb_blackdragon_0033" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_sb_blackdragon_0032" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_sb_blackdragon_0094" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_sb_blackdragon_0093" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_sb_blackdragon_0092" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:mh_sb_blackdragon_0091" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object2="npc:me_sb_blackdragon_0016" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+      <mission id="4" required-register-value="2">
+        <case object2="zoneenv2:e_gate_gaebang_a_05" party-broadcast="n" progress-mission="y" quest-decision="qd_1518_22" type="manipulate" />
+        <case object2="zoneenv2:e_gate_gaebang_a_04_1" party-broadcast="n" progress-mission="y" quest-decision="qd_1518_21" type="manipulate" />
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_13" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+      <mission-step-fail rollback-step-id="3" zone-1="zone_geonwon_gaebang_act7_2" />
+    </mission-step>
+    <mission-step id="4">
+      <mission id="5" required-register-value="1">
+        <case object="npc:ch_sb_geonwon_0020" party-broadcast="n" progress-mission="y" quest-decision="qd_1518_9" type="talk" />
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_19" type="enter-zone" />
+        <case object="npc:CH_SB_GeonWon_0204" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_SB_GeonWon_0018" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_SB_GeonWon_0017" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="6" required-register-value="1">
+        <case object2="npc:me_sb_blackdragon_0086" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_14" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="7" required-register-value="1">
+        <case object="npc:ch_sb_geonwon_0021" party-broadcast="n" progress-mission="y" type="approach" />
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_15" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="8" required-register-value="1">
+        <case object="npc:ch_sb_geonwon_0021" party-broadcast="n" progress-mission="y" quest-decision="qd_1518_10" type="talk" />
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_15" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8">
+      <mission id="9" required-register-value="1">
+        <case object2="zoneenv2:6132_foot_1" party-broadcast="n" progress-mission="y" quest-decision="qd_1518_4" type="env-entered" />
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_16" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="9">
+      <mission id="10" required-register-value="1">
+        <case object2="npc:me_sb_blackdragon_0017" party-broadcast="n" progress-mission="y" type="killed" />
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_24" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="10">
+      <mission id="11" required-register-value="1">
+        <case object="npc:ch_sb_gunhyang_0007" party-broadcast="n" progress-mission="y" quest-decision="qd_1518_7" type="npc-manipulate" />
+        <case object="npc:ch_sb_gunhyang_0007" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_17" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="11">
+      <mission id="12" required-register-value="1">
+        <case object="npc:ch_sb_gunhyang_0013" party-broadcast="n" progress-mission="y" quest-decision="qd_1518_23" type="talk" />
+        <case object="zone:zone_geonwon_gaebang_act7_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_18" type="enter-zone" />
+        <case object="zone:zone_GeonWon_BuYuHamDae_Epic7_1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1517_4" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="12">
+      <mission id="13" required-register-value="1" reward-1="1518_final_set1">
+        <case object="npc:ch_sb_cheolmugoe_0003" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="npc:CH_SB_ChungGak_0015" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object="npc:CH_SB_DokGoGeom_0004" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+        <case object2="zoneenv2:6162_foot_2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_1518_20" type="env-entered" />
+        <case object="npc:CH_SB_DongJinA_0006" party-broadcast="n" progress-mission="reaction-only" type="approach" />
+      </mission>
+    </mission-step>
+    <transit id="1" zone="zone_GeonWon_GaeBang_D">
+      <destination mission-step-id="11" zone-index="2" />
+      <destination mission-step-id="10" zone-index="2" />
+      <destination mission-step-id="9" zone-index="2" />
+      <destination mission-step-id="8" zone-index="2" />
+      <destination mission-step-id="7" zone-index="2" />
+      <destination mission-step-id="6" zone-index="2" />
+      <destination mission-step-id="5" zone-index="2" />
+      <destination mission-step-id="4" zone-index="2" />
+      <destination mission-step-id="3" zone-index="2" />
+      <destination mission-step-id="2" zone-index="2" />
+      <destination mission-step-id="1" zone-index="2" />
+    </transit>
+    <transit id="2" zone="zone_GeonWon_BuYuHamDae">
+      <destination mission-step-id="12" zone-index="3" />
+    </transit>
+    <transit id="3" zone="zone_GeonWon_BuYuHamDae">
+      <destination mission-step-id="11" zone-index="1" />
+      <destination mission-step-id="10" zone-index="1" />
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+  </quest>
+</table>

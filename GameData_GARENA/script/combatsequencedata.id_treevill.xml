@@ -1,0 +1,2559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.id_treevill.xml-->
+
+	
+	
+	
+
+
+	
+	<combat-sequence alias="ME_WB_Executioner_0001_CS1" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="3">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_HalfSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Debone" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Uppercut" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Amputation" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="3">
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_07" type="do-social" />
+			
+			<action duration="23000" event-step="6" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action arrived-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Arrive" blocked-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Parry" event-step="7" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Rush" speed="127" target="zonenpcspawn:a_6222_101" type="boss-rush-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_02" type="do-social" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action event-step="8" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target-area="6222_99" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_02" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_01" type="do-social" />
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="4" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action event-step="5" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:npc:top-hate-target" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Watch" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_05" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_ShockWave" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_03" type="do-social" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:1" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="2" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:2" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:2" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="3" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:3" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:3" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="4" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:4" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_Last" target="event:npc-combat-action:special-target:4" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget_Last" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_06" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Order" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+			
+			<action event-step="99" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Blast" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="3" max-count="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Social" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_Executioner_0001_CS2" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_HalfSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Debone" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Uppercut" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Amputation" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundCut" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_07" type="do-social" />
+			
+			<action duration="23000" event-step="6" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action arrived-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Arrive" blocked-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Parry" event-step="7" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Rush" speed="127" target="zonenpcspawn:a_6222_101" type="boss-rush-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_02" type="do-social" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+		</special>
+		<special combat-distance="7" condition-1="hp-60" id="2" max-count="0">
+			
+			<action event-step="8" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target-area="6222_99" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_02" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_01" type="do-social" />
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="4" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action event-step="5" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:npc:top-hate-target" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Watch" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_05" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_ShockWave" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_03" type="do-social" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:1" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="2" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:2" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:2" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="3" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:3" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:3" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="4" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:4" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_Last" target="event:npc-combat-action:special-target:4" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget_Last" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_06" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Order" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+			
+			<action event-step="99" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Blast" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_Executioner_0001_CS3" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_HalfSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Debone" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Uppercut" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Amputation" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundCut" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_07" type="do-social" />
+			
+			<action duration="23000" event-step="6" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action arrived-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Arrive" blocked-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Parry" event-step="7" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Rush" speed="127" target="zonenpcspawn:a_6222_101" type="boss-rush-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_02" type="do-social" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+		</special>
+		<special combat-distance="7" condition-1="hp-30" id="2" max-count="0">
+			
+			<action event-step="8" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target-area="6222_99" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_02" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_01" type="do-social" />
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="4" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action event-step="5" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:npc:top-hate-target" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Watch" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_05" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_ShockWave" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_03" type="do-social" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:1" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="2" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:2" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:2" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="3" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:3" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:3" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="4" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:4" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_Last" target="event:npc-combat-action:special-target:4" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget_Last" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_06" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Order" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+			
+			<action event-step="99" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Blast" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_Executioner_0001_CS4">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_HalfSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Debone" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundCut" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Uppercut" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Amputation" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundCut" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_07" type="do-social" />
+			
+			<action duration="23000" event-step="6" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action arrived-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Arrive" blocked-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Parry" event-step="7" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Rush" speed="127" target="zonenpcspawn:a_6222_101" type="boss-rush-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_02" type="do-social" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Executioner_0001_berserk_CS">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" repeat="99" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target-area="6222_99" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_08" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RestrictionSphere_0001_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action duration="1000" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			<action arrived-effect="SRA_B1_RootBall_BossRush_Arrive" blocked-effect="SRA_B1_RootBall_BossRush_Parry" event-step="1" pass-through="y" skill3="SRA_B1_RootBall_BossRush" speed="96" type="boss-rush-attack" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_RootBall_Boom" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RestrictionSphere_0002_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action duration="1000" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			<action arrived-effect="SRA_B1_RootBall_BossRush_Arrive" blocked-effect="SRA_B1_RootBall_BossRush_Parry" event-step="1" pass-through="y" skill3="SRA_B1_RootBall_BossRush" speed="96" type="boss-rush-attack" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_RootBall_Boom" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RestrictionSphere_0003_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action duration="1000" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			<action arrived-effect="SRA_B1_RootBall_BossRush_Arrive" blocked-effect="SRA_B1_RootBall_BossRush_Parry" event-step="1" pass-through="y" skill3="SRA_B1_RootBall_BossRush" speed="96" type="boss-rush-attack" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_RootBall_Boom" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RestrictionSphere_0004_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action duration="1000" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			<action arrived-effect="SRA_B1_RootBall_BossRush_Arrive" blocked-effect="SRA_B1_RootBall_BossRush_Parry" event-step="1" pass-through="y" skill3="SRA_B1_RootBall_BossRush" speed="96" type="boss-rush-attack" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_RootBall_Boom" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_RestrictionSphere_0005_CS" hide-seq-start="y">
+		<normal combat-distance="7" id="1" special-1="1">
+			<action duration="1000" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			<action arrived-effect="SRA_B1_RootBall_BossRush_Arrive" blocked-effect="SRA_B1_RootBall_BossRush_Parry" event-step="1" pass-through="y" skill3="SRA_B1_RootBall_BossRush" speed="96" type="boss-rush-attack" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_RootBall_Boom" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	
+	
+	
+
+	
+
+	<combat-sequence alias="ME_WB_ElderEnt_0001_CS1" transit-cond-1="manual">
+    
+		<normal combat-distance="1" id="1" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Swing" type="use-skill" />
+      
+      <action skill3="SRA_B2_AnthroEntFinalBoss_Strike" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+    </normal>
+    
+    
+    <normal combat-distance="2" id="2" special-1="1" special-2="3">
+      
+			<action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Entangle" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="40000" start-delay="30000">
+      
+      <action event-step="4" immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_06" type="do-social" />
+      
+      <action ground-pattern-1="pattern_4" ground-pattern-2="pattern_13" ground-pattern-3="pattern_17" ground-pattern-4="pattern_5" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" skill3="SRA_B2_AnthroEntFinalBoss_MultiGround" type="boss-multiground-attack" />
+    </special>
+
+    
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action event-step="2" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_GroundDash" target-area="6223_99" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_03" type="do-social" />
+   
+      
+      <action event-step="3" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower_Focus" type="use-skill" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_12" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_02" type="do-social" />
+      
+      <action event-step="6" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_07" type="do-social" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+  
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_04" type="do-social" />
+      
+      <action event-step="99" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_01" type="do-social" />
+    </special>    
+	</combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS2" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Swing" type="use-skill" />
+      
+      <action skill3="SRA_B2_AnthroEntFinalBoss_Strike" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+      
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+    </normal>
+
+    
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Entangle" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="40000" start-delay="30000">
+      
+      <action event-step="4" immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_06" type="do-social" />
+      
+      <action ground-pattern-1="pattern_4" ground-pattern-2="pattern_13" ground-pattern-3="pattern_17" ground-pattern-4="pattern_5" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" skill3="SRA_B2_AnthroEntFinalBoss_MultiGround" type="boss-multiground-attack" />
+    </special>
+
+    
+    <special combat-distance="7" condition-1="hp-55" id="2" max-count="0">
+      
+      <action event-step="2" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_GroundDash" target-area="6223_99" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_03" type="do-social" />
+
+      
+      <action event-step="3" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower_Focus" type="use-skill" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_12" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_02" type="do-social" />
+      
+      <action event-step="7" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower" type="use-skill" />
+
+      
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_07" type="do-social" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+     
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_04" type="do-social" />
+      
+      <action event-step="99" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS3" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Swing" type="use-skill" />
+      
+      <action skill3="SRA_B2_AnthroEntFinalBoss_Strike" type="use-skill" />
+      
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+      
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+    </normal>
+
+    
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Entangle" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="40000" start-delay="30000">
+      
+      <action event-step="4" immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_06" type="do-social" />
+      
+      <action ground-pattern-1="pattern_4" ground-pattern-2="pattern_13" ground-pattern-3="pattern_17" ground-pattern-4="pattern_5" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" skill3="SRA_B2_AnthroEntFinalBoss_MultiGround" type="boss-multiground-attack" />
+    </special>
+
+    
+    <special combat-distance="7" condition-1="hp-30" id="2" max-count="0">
+      
+      <action event-step="99" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS4" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1" special-1="1" special-2="2">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="2" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_GroundDash" target-area="6223_99" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_03" type="do-social" />
+
+      
+      <action event-step="3" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower_Focus" type="use-skill" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_12" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_02" type="do-social" />
+      
+      <action event-step="8" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower" type="use-skill" />
+      
+      
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_07" type="do-social" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce" type="use-skill" />
+    </special>
+
+    
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action event-step="4" immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_06" type="do-social" />
+      
+      <action ground-pattern-1="pattern_4" ground-pattern-2="pattern_13" ground-pattern-3="pattern_17" ground-pattern-4="pattern_5" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" skill3="SRA_B2_AnthroEntFinalBoss_MultiGround" type="boss-multiground-attack" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_03" type="do-social" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower_R" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower_L" type="use-skill" />
+      </action>
+      
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS5" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS6" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS7" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS8" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS9" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS10" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_Berserk_CS">
+    <normal combat-distance="7" id="1" special-1="1">
+      
+      <action immune-breaker-disable="y" repeat="99" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_09" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_GroundDash" target-area="6223_99" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  
+  <combat-sequence alias="ME_WB_Dummy_0241_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action social="Serveryaw" target="zonenpcspawn:a_6223_100" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="10" ground-pattern-1="pattern_11" ground-pattern-2="pattern_10" ground-pattern-3="pattern_7" ground-pattern-4="pattern_5" ground-pattern-5="pattern_4" immune-breaker-disable="y" origin-pos="0,0,0" skill3="SRA_B2_AnthroEntFinalBoss_MultiGround_Dummy" type="boss-multiground-attack" />
+    </special>
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action ground-pattern-1="pattern_4" ground-pattern-2="pattern_5" ground-pattern-3="pattern_7" ground-pattern-4="pattern_10" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" skill3="SRA_B2_AnthroEntFinalBoss_MultiGround_Dummy" type="boss-multiground-attack" />
+    </special>
+  </combat-sequence>
+
+
+  
+  <combat-sequence alias="ME_WB_LifeFlower_0001_CS" hide-seq-start="y">
+      <normal combat-distance="7" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_LifeFlower_Explosion" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill3="SRA_B2_LifeFlower_FireForce" target="zonenpcspawn:a_6223_100" type="use-skill" />
+    </special>
+    <special combat-distance="7" id="2" max-count="1">
+      <action event-step="11" immune-breaker-disable="y" repeat="1" skill3="SRA_B2_LifeFlower_Explosion_Target" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_WarpFlower_0001_CS" hide-seq-start="y">
+    <normal combat-distance="7" id="1">
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_DunjuFlower_Explosion" type="use-skill" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action event-step="10" immune-breaker-disable="y" repeat="1" skill3="SRA_B2_DunjuFlower_FireForce" target="zonenpcspawn:a_6223_100" type="use-skill" />
+    </special>
+    
+    <special combat-distance="7" id="2" max-count="1">
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_DunjuFlower_Warp" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+
+  
+	
+	
+
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS1" transit-action-1="burrow" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Jab" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Smash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderCapture" type="use-skill" />
+			
+			<action skill3="SRA_N1_SpiderQueen_None_SpinAttack" type="use-skill" />
+		</normal>
+
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_JumpDash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyCapture" type="use-skill" />
+		</normal>
+
+		<special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="20000">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderWeb_Lv2" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_RushSmash" type="use-skill" />
+		</special>
+
+		<special combat-distance="7" condition-1="hp-80" id="2" max-count="1">
+			
+			
+			<action event-step="7" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderQueen_None_JumpDash" target-area="6225_25" type="use-ground-skill" />
+			<action event-step="3" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS2" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual" transit-cond-2="manual">
+		<normal combat-distance="7" id="1" special-1="1" special-2="2">
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="2">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_01" type="do-social" />
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="near" immune-breaker-disable="y" type="gather-targets" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Watch" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Inhalation" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			<action event-step="10" immune-breaker-disable="y" skill3="MH_BEH_R0_Common_None_HateUp" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_DeathTrap" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="1" min-delay="50000" start-delay="50000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_02" type="do-social" />
+			<action event-step="2" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS3" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS4" transit-action-1="burrow" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Jab" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Smash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderCapture" type="use-skill" />
+			
+			<action skill3="SRA_N1_SpiderQueen_None_SpinAttack" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyThrow" type="use-skill" />
+		</normal>
+
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_JumpDash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyCapture" type="use-skill" />
+		</normal>
+
+		<special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="20000">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderWeb_Lv2" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_RushSmash" type="use-skill" />
+		</special>
+
+		<special combat-distance="7" condition-1="hp-40" id="2" max-count="1">
+			
+			<action event-step="7" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderQueen_None_JumpDash" target-area="6225_25" type="use-ground-skill" />
+			<action event-step="3" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</special>	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS5" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual" transit-cond-2="manual">
+		<normal combat-distance="7" id="1" special-1="1" special-2="2">
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="2">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_01" type="do-social" />
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="near" immune-breaker-disable="y" type="gather-targets" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Watch" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Inhalation" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			<action event-step="10" immune-breaker-disable="y" skill3="MH_BEH_R0_Common_None_HateUp" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_DeathTrap" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="1" min-delay="50000" start-delay="50000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_02" type="do-social" />
+			<action event-step="2" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS6" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS7" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Jab" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Smash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderCapture" type="use-skill" />
+			
+			<action skill3="SRA_N1_SpiderQueen_None_SpinAttack" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyThrow" type="use-skill" />
+		</normal>
+
+		<normal combat-distance="2" id="2" special-1="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_JumpDash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyCapture" type="use-skill" />
+		</normal>
+
+		<special combat-distance="7" id="1" max-count="0" min-delay="20000" start-delay="20000">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderWeb_Lv2" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_RushSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_berserk_CS">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_05" type="do-social" />
+			
+			<action event-step="5" immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderQueen_None_JumpDash" target-area="6225_25" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Burrow" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0017_CS">
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0018_CS">
+		<normal combat-distance="1" id="1" special-1="2">
+			
+			<action skill3="SRA_N1_SpiderSmall_None_Jab" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderSmall_None_Suicide" type="use-skill" />
+		</special>
+		<special combat-distance="7" condition-1="hp-20" id="2" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderSmall_None_Suicide" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0019_CS">
+		<normal combat-distance="7" id="1">
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+		</normal>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0021_CS">
+		<normal combat-distance="7" id="1">
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+		</normal>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0022_CS">
+		<normal combat-distance="7" id="1">
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+		</normal>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0023_CS">
+		<normal combat-distance="7" id="1">
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+		</normal>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0028_CS">
+		<normal combat-distance="7" id="1">
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+		</normal>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_Dummy_0234_CS" hide-seq-start="y">
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0024_CS">
+		<normal combat-distance="7" id="1" special-1="1" special-2="2">
+			<action duration="1000" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_06" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_44" type="use-ground-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_45" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_16" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_36" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_38" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_39" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_41" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_42" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_44" type="use-ground-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_TreeVill_0025_CS">
+		<normal combat-distance="7" id="1" special-1="1" special-2="2">
+			<action duration="1000" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_06" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_41" type="use-ground-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_42" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_44" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_45" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_16" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_36" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_38" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_39" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_41" type="use-ground-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_TreeVill_0026_CS">
+		<normal combat-distance="7" id="1" special-1="1" special-2="2">
+			<action duration="1000" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_06" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_16" type="use-ground-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_36" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_38" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_39" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_41" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_42" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_44" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_45" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_16" type="use-ground-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_TreeVill_0027_CS">
+		<normal combat-distance="7" id="1" special-1="1" special-2="2">
+			<action duration="1000" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_06" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_38" type="use-ground-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_39" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_41" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_42" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_44" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_45" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_16" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_36" type="use-ground-skill" />
+			<action immune-breaker-disable="y" skill3="ME_Spider_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderLeader_None_JumpDash" target-area="6225_38" type="use-ground-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_TreeVill_0034_CS">
+	</combat-sequence>
+	<combat-sequence alias="ME_WB_TreeVill_0020_CS">
+	</combat-sequence>
+	
+	
+	
+
+	
+
+	
+	
+	<combat-sequence alias="ME_WB_TreeVill_0001_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntA_None_Natk" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntA_None_Natk" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntA_None_MultiStab" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2">
+			
+			<action skill3="SRA_R0_AnthroEntA_None_LeafRush" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			<action type="select">
+				<action prob="50" social="ME_WB_TreeVill_0001_battle_03" type="do-social" />
+				<action prob="50" social="ME_WB_TreeVill_0001_battle_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntA_None_HeavyStrike" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0002_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntA_None_MultiStab" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntA_None_Natk" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2">
+			
+			<action skill3="SRA_R0_AnthroEntA_None_LeafRush" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0017_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntA_None_HeavyStrike" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0007_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntA_None_Natk" type="use-skill" />
+			<action type="select">
+				
+				<action prob="50" skill3="SRA_R0_AnthroEntA_None_Natk" type="use-skill" />
+				
+				<action prob="50" skill3="SRA_R0_AnthroEntA_None_MultiStab" type="use-skill" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntA_None_HeavyStrike" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2">
+			
+			<action skill3="SRA_R0_AnthroEntA_None_LeafRush" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0009_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntA_None_HeavyStrike" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0008_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntA_None_MultiStab" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntA_None_Natk" type="use-skill" />
+			<action type="select">
+				
+				<action prob="50" skill3="SRA_R0_AnthroEntA_None_MultiStab" type="use-skill" />
+				
+				<action prob="50" skill3="SRA_R0_AnthroEntA_None_Natk" type="use-skill" />
+			</action>
+		</normal>
+		<normal combat-distance="2" id="2">
+			
+			<action skill3="SRA_R0_AnthroEntA_None_LeafRush" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0009_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntA_None_HeavyStrike" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	
+	
+	<combat-sequence alias="ME_WB_TreeVill_0003_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MultiShot" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			<action type="select">
+				<action prob="15" social="ME_WB_TreeVill_0011_battle_03" type="do-social" />
+				<action prob="15" social="ME_WB_TreeVill_0011_battle_04" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_RearDash" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="2">
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			
+			<action type="select">
+				<action prob="30" skill3="SRA_R0_AnthroEntB_None_MagicShot" type="use-skill" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+		</normal>
+		<special combat-distance="1" condition-1="hp-50" id="1" max-count="1">
+			
+			<action type="select">
+				<action prob="15" social="ME_WB_TreeVill_0011_battle_03" type="do-social" />
+				<action prob="15" social="ME_WB_TreeVill_0011_battle_04" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MultiShot" type="use-skill" />
+		</special>
+		<special combat-distance="2" condition-1="hp-50" id="2" max-count="1">
+			
+			<action type="select">
+				<action prob="50" social="ME_WB_TreeVill_0011_battle_03" type="do-social" />
+				<action prob="50" social="ME_WB_TreeVill_0011_battle_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MagicShot" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0004_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MultiShot" type="use-skill" />
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0019_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_RearDash" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="2">
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			<action type="select">
+				<action prob="30" skill3="SRA_R0_AnthroEntB_None_MagicShot" type="use-skill" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+		</normal>
+		<special combat-distance="1" condition-1="hp-50" id="1" max-count="1">
+			
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0019_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_RearDash" type="use-skill" />
+		</special>
+		<special combat-distance="2" condition-1="hp-50" id="2" max-count="1">
+			
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0019_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MagicShot" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0009_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MultiShot" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0003_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_RearDash" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="2">
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MagicShot" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+		</normal>
+		<special combat-distance="1" condition-1="hp-50" id="1" max-count="1">
+			
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0003_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MultiShot" type="use-skill" />
+		</special>
+		<special combat-distance="2" condition-1="hp-50" id="2" max-count="1">
+			
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0003_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MagicShot" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0010_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MultiShot" type="use-skill" />
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0003_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_RearDash" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="2">
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntB_None_StoneShot" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MagicShot" type="use-skill" />
+		</normal>
+		<special combat-distance="1" condition-1="hp-50" id="1" max-count="1">
+			
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0003_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_RearDash" type="use-skill" />
+		</special>
+		<special combat-distance="2" condition-1="hp-50" id="2" max-count="1">
+			
+			<action type="select">
+				<action prob="30" social="ME_WB_TreeVill_0003_battle_02" type="do-social" />
+				<action prob="70" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntB_None_MagicShot" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	
+	
+	<combat-sequence alias="ME_WB_TreeVill_0005_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntD_None_Smash" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntD_None_HeavySmash" type="use-skill" />
+		</normal>
+		<normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntD_None_StoneThrow" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			
+			<action type="select">
+				<action prob="50" social="ME_WB_TreeVill_0021_battle_03" type="do-social" />
+				<action prob="50" social="ME_WB_TreeVill_0021_battle_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntD_None_SmashDown" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0006_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntD_None_HeavySmash" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntD_None_Smash" type="use-skill" />
+		</normal>
+		<normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntD_None_StoneThrow" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			
+			<action social="ME_WB_TreeVill_0005_battle_02" type="do-social" />
+			
+			<action skill3="SRA_R0_AnthroEntD_None_SmashDown" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0013_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntD_None_Smash" type="use-skill" />
+			<action type="select">
+				
+				<action prob="50" skill3="SRA_R0_AnthroEntD_None_HeavySmash" type="use-skill" />
+				
+				<action prob="50" skill3="SRA_R0_AnthroEntD_None_Smash" type="use-skill" />
+			</action>
+		</normal>
+		<normal attack-limit="1" combat-distance="2" id="2" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntD_None_StoneThrow" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			
+			<action social="ME_WB_TreeVill_0007_battle_02" type="do-social" />
+			
+			<action skill3="SRA_R0_AnthroEntD_None_SmashDown" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	
+	<combat-sequence alias="ME_WB_TreeVill_0011_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntC_None_MultiSmash" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntC_None_Spin" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntC_None_Spin" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntC_None_Throw" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			
+			<action type="select">
+				<action prob="50" social="ME_WB_TreeVill_0024_battle_03" type="do-social" />
+				<action prob="50" social="ME_WB_TreeVill_0024_battle_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntC_None_VineZone2" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0012_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntC_None_MultiSmash" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntC_None_MultiSmash" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntC_None_Spin" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntC_None_VineZone2" target="zonenpcspawn:a_6223_19" type="use-skill" />
+			<action skill3="SRA_R0_AnthroEntC_None_Throw" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			<action type="select">
+				<action prob="50" social="ME_WB_TreeVill_0024_battle_03" type="do-social" />
+				<action prob="50" social="ME_WB_TreeVill_0024_battle_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntC_None_VineZone2" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0014_CS">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntC_None_MultiSmash" type="use-skill" />
+			
+			<action skill3="SRA_R0_AnthroEntC_None_Spin" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			
+			<action skill3="SRA_R0_AnthroEntC_None_Throw" type="use-skill" />
+			<action skill3="SRA_R0_AnthroEntC_None_VineZone2" target="zonenpcspawn:a_6223_19" type="use-skill" />
+		</normal>
+		<special combat-distance="7" condition-1="hp-50" id="1" max-count="1">
+			
+			<action type="select">
+				<action prob="50" social="ME_WB_TreeVill_0023_battle_03" type="do-social" />
+				<action prob="50" social="ME_WB_TreeVill_0023_battle_04" type="do-social" />
+			</action>
+			
+			<action skill3="SRA_R0_AnthroEntC_None_VineZone2" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0015_CS">
+		<normal combat-distance="1" id="1">
+			
+			<action skill3="ME_SpiderLeader_None_Jab" type="use-skill" />
+			<action skill3="ME_SpiderLeader_None_PoisonSmash" type="use-skill" />
+			<action skill3="ME_SpiderLeader_None_PoisonSmash" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2">
+			
+			<action skill3="ME_Spider_None_JumpDash" type="use-skill" />
+		</normal>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_TreeVill_0016_CS">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action skill3="ME_SpiderLeader_None_Jab" type="use-skill" />
+			<action skill3="ME_SpiderLeader_None_PoisonSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="10000">
+			
+			<action skill3="ME_SpiderLeader_None_SpiderWeb" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="ME_SpiderLeader_None_JumpDash" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action skill3="ME_SpiderLeader_None_BackStep" type="use-skill" />
+			<action immune-breaker-disable="y" repeat="1" skill3="ME_SpiderLeader_None_JumpDash" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	미<combat-sequence alias="ME_WB_SpiderQueen_0004_CS1" transit-action-1="burrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1">
+			<action duration="1000" type="stay" />
+		</normal>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_SpiderQueen_0004_CS2" transit-action-1="unburrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action duration="1000" type="stay" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_DeathTrap" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_DeathTrap" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+
+	
+	
+	
+
+
+	
+	<combat-sequence alias="ME_WB_Executioner_0001_CS1_Easy" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="3">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_HalfSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Debone" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Uppercut" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Amputation" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="3">
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="50000" start-delay="50000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_07" type="do-social" />
+			
+			<action duration="23000" event-step="6" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action arrived-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Arrive" blocked-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Parry" event-step="7" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Rush" speed="127" target="zonenpcspawn:a_6222_101" type="boss-rush-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_02" type="do-social" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="0">
+			
+			<action event-step="8" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target-area="6222_99" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_02" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_01" type="do-social" />
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="4" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action event-step="5" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:npc:top-hate-target" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Watch" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_05" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_ShockWave" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_03" type="do-social" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:1" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="2" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:2" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:2" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="3" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:3" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:3" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="4" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:4" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_Last" target="event:npc-combat-action:special-target:4" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget_Last" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_06" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Order" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+			
+			<action event-step="99" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Blast" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="3" max-count="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Social" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_Executioner_0001_CS2_Easy" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_HalfSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Debone" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Uppercut" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Amputation" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundCut" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="50000" start-delay="50000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_07" type="do-social" />
+			
+			<action duration="23000" event-step="6" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action arrived-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Arrive" blocked-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Parry" event-step="7" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Rush" speed="127" target="zonenpcspawn:a_6222_101" type="boss-rush-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_02" type="do-social" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+		</special>
+		<special combat-distance="7" condition-1="hp-40" id="2" max-count="0">
+			
+			<action event-step="8" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target-area="6222_99" type="use-ground-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_02" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_01" type="do-social" />
+			
+			<action except-summoned="y" except-top-hate="n" gather-count="4" gather-rule="far" immune-breaker-disable="y" type="gather-targets" />
+			<action event-step="5" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:npc:top-hate-target" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Watch" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_05" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_ShockWave" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_04" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_03" type="do-social" />
+			
+			<action event-step="1" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:1" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="2" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:2" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:2" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="3" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:3" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation" target="event:npc-combat-action:special-target:3" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action event-step="4" immune-breaker-disable="y" social="Serveryaw" target="event:npc-combat-action:special-target:4" type="do-social" />
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_Last" target="event:npc-combat-action:special-target:4" type="use-skill" />
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation_NoTarget_Last" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_06" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Order" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+			
+			<action event-step="99" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Blast" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_Executioner_0001_CS3_Easy">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_HalfSmash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Debone" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundCut" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Uppercut" type="use-skill" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Amputation" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundCut" type="use-skill" />
+		</normal>
+		<normal combat-distance="2" id="2" special-1="1">
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="0" min-delay="50000" start-delay="50000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_07" type="do-social" />
+			
+			<action duration="23000" event-step="6" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_GroundStrike" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+			
+			<action duration="23000" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Summon_Time" target="event:npc-combat-action:npc" type="boss-simultaneous-ground-attack" />
+			
+			<action arrived-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Arrive" blocked-effect="SRA_B1_AnthroEntMiddleBoss_Rush_Parry" event-step="7" immune-breaker-disable="y" skill3="SRA_B1_AnthroEntMiddleBoss_Rush" speed="127" target="zonenpcspawn:a_6222_101" type="boss-rush-attack" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_battle_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" social="ME_WB_Executioner_0001_msg_HL_02" type="do-social" />
+			
+			<action immune-breaker-disable="n" skill3="SRA_B1_AnthroEntMiddleBoss_Decapitation2" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+
+  
+  
+  
+
+  
+
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS1_Easy" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Swing" type="use-skill" />
+      
+      <action skill3="SRA_B2_AnthroEntFinalBoss_Strike" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+    </normal>
+
+    
+    <normal combat-distance="2" id="2" special-1="1" special-2="3">
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Entangle" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      
+      <action event-step="4" immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_06" type="do-social" />
+      
+      <action ground-pattern-1="pattern_4" ground-pattern-2="pattern_13" ground-pattern-3="pattern_17" ground-pattern-4="pattern_5" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" skill3="SRA_B2_AnthroEntFinalBoss_MultiGround" type="boss-multiground-attack" />
+    </special>
+
+    
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action event-step="2" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_GroundDash" target-area="6223_99" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_03" type="do-social" />
+
+      
+      <action event-step="3" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower_Focus" type="use-skill" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_12" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_02" type="do-social" />
+      
+      <action event-step="6" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower" type="use-skill" />
+
+      
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_07" type="do-social" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+     
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_04" type="do-social" />
+      
+      <action event-step="99" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce" type="use-skill" />
+    </special>
+
+    <special combat-distance="7" id="3" max-count="1">
+      
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_01" type="do-social" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS2_Easy" transit-cond-1="manual">
+    
+    <normal combat-distance="1" id="1" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Swing" type="use-skill" />
+      
+      <action skill3="SRA_B2_AnthroEntFinalBoss_Strike" type="use-skill" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+    </normal>
+
+    
+    <normal combat-distance="2" id="2" special-1="1" special-2="2">
+      
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Entangle" type="use-skill" />
+    </normal>
+
+    
+    <special combat-distance="7" id="1" max-count="0" min-delay="60000" start-delay="30000">
+      
+      <action event-step="4" immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_06" type="do-social" />
+      
+      <action ground-pattern-1="pattern_4" ground-pattern-2="pattern_13" ground-pattern-3="pattern_17" ground-pattern-4="pattern_5" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" skill3="SRA_B2_AnthroEntFinalBoss_MultiGround" type="boss-multiground-attack" />
+    </special>
+
+    
+    <special combat-distance="7" condition-1="hp-40" id="2" max-count="0">
+      
+      <action event-step="2" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_GroundDash" target-area="6223_99" type="use-ground-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_03" type="do-social" />
+
+      
+      <action event-step="3" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower_Focus" type="use-skill" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action duration="20000" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SeedGround_NoCast" target="event:npc-combat-action:npc:nearest-target" type="boss-simultaneous-ground-attack" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Thorns" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_12" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_02" type="do-social" />
+      
+      <action event-step="8" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_SummonFlower" type="use-skill" />
+      
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_07" type="do-social" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+      
+      <action except-summoned="y" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower" target="event:npc-combat-action:npc:farthest-target" type="use-skill" />
+
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_Absorb" type="use-skill" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_04" type="do-social" />
+      
+      <action event-step="99" immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS3_Easy" transit-cond-1="manual">
+    
+    <normal combat-distance="7" id="1" special-1="2">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+
+    
+    <special combat-distance="7" id="2" max-count="0">
+      
+      <action event-step="4" immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_01" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_06" type="do-social" />
+      
+      <action ground-pattern-1="pattern_4" ground-pattern-2="pattern_13" ground-pattern-3="pattern_17" ground-pattern-4="pattern_5" ground-pattern-5="pattern_11" immune-breaker-disable="y" origin-pos="0,0,0" skill3="SRA_B2_AnthroEntFinalBoss_MultiGround" type="boss-multiground-attack" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_R_Cast" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_Stamp_L_Cast" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_msg_HL_02" type="do-social" />
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_03" type="do-social" />
+      <action type="select">
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower_R" type="use-skill" />
+        
+        <action immune-breaker-disable="y" prob="50" skill3="SRA_B2_AnthroEntFinalBoss_EarthPower_L" type="use-skill" />
+      </action>
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_04" type="do-social" />
+      
+      <action immune-breaker-disable="y" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+    
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS4_Easy" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS5_Easy" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS6_Easy" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS7_Easy" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS8_Easy" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS9_Easy" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="ME_WB_ElderEnt_0001_CS10_Easy" transit-cond-1="manual">
+    <normal combat-distance="7" id="1" special-1="1">
+      <action immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+    </normal>
+    <special combat-distance="7" id="1" max-count="0">
+      
+      <action immune-breaker-disable="y" social="ME_WB_ElderEnt_0001_battle_08" type="do-social" />
+      <action immune-breaker-disable="y" repeat="1" skill3="SRA_B2_AnthroEntFinalBoss_DeathForce_Berserk" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+	
+	
+	
+
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS1_Easy" transit-action-1="burrow" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Jab" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Smash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderCapture" type="use-skill" />
+			
+			<action skill3="SRA_N1_SpiderQueen_None_SpinAttack" type="use-skill" />
+		</normal>
+
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_JumpDash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyCapture" type="use-skill" />
+		</normal>
+
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderWeb_Lv2" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_RushSmash" type="use-skill" />
+		</special>
+
+		<special combat-distance="7" condition-1="hp-80" id="2" max-count="1">
+			
+			
+			<action event-step="7" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderQueen_None_JumpDash" target-area="6225_25" type="use-ground-skill" />
+			<action event-step="1" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS2_Easy" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual" transit-cond-2="manual">
+		<normal combat-distance="7" id="1" special-1="1" special-2="2">
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="3">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_01" type="do-social" />
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="near" immune-breaker-disable="y" type="gather-targets" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Watch" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Inhalation" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			<action event-step="10" immune-breaker-disable="y" skill3="MH_BEH_R0_Common_None_HateUp" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_DeathTrap" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="1" min-delay="80000" start-delay="80000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_02" type="do-social" />
+			<action event-step="2" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS3_Easy" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS4_Easy" transit-action-1="burrow" transit-cond-1="manual">
+		<normal combat-distance="1" id="1" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Jab" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Smash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderCapture" type="use-skill" />
+			
+			<action skill3="SRA_N1_SpiderQueen_None_SpinAttack" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyThrow" type="use-skill" />
+		</normal>
+
+		<normal combat-distance="2" id="2" special-1="1" special-2="2">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_JumpDash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyCapture" type="use-skill" />
+		</normal>
+
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderWeb_Lv2" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_RushSmash" type="use-skill" />
+		</special>
+
+		<special combat-distance="7" condition-1="hp-40" id="2" max-count="1">
+			
+			
+			<action event-step="7" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+			<action immune-breaker-disable="y" repeat="1" skill3="SRA_N1_SpiderQueen_None_JumpDash" target-area="6225_25" type="use-ground-skill" />
+			<action event-step="3" immune-breaker-disable="y" social="ME_WB_FireGorilla_0002_msg_04" type="do-social" />
+		</special>
+	</combat-sequence>
+
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS5_Easy" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual" transit-cond-2="manual">
+		<normal combat-distance="7" id="1" special-1="1" special-2="2">
+			<action duration="1000" immune-breaker-disable="y" type="stay" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="3">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_01" type="do-social" />
+			<action except-summoned="y" except-top-hate="n" gather-count="6" gather-rule="near" immune-breaker-disable="y" type="gather-targets" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Watch" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action duration="5000" event-step="6" except-summoned="y" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_PoisonWeb" target="event:npc-combat-action:special-target:1" type="boss-simultaneous-ground-attack" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Inhalation" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check" target="event:npc-combat-action:special-target:1" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_Check2" type="use-skill" />
+			<action event-step="10" immune-breaker-disable="y" skill3="MH_BEH_R0_Common_None_HateUp" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_DeathTrap" target="event:npc-combat-action:special-target:1" type="use-skill" />
+		</special>
+		<special combat-distance="7" id="2" max-count="1" min-delay="80000" start-delay="80000">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_02" type="do-social" />
+			<action event-step="2" immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS6_Easy" hide-seq-start="y" transit-action-1="unburrow" transit-cond-1="manual">
+		<normal combat-distance="7" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</normal>
+		<special combat-distance="7" id="1" max-count="1">
+			
+			<action immune-breaker-disable="y" social="ME_WB_SpiderQueen_0003_msg_HL_03" type="do-social" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_LandingSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+	
+	<combat-sequence alias="ME_WB_SpiderQueen_0003_CS7_Easy">
+		<normal combat-distance="1" id="1" special-1="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Jab" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_Smash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderCapture" type="use-skill" />
+			
+			<action skill3="SRA_N1_SpiderQueen_None_SpinAttack" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyThrow" type="use-skill" />
+		</normal>
+
+		<normal combat-distance="2" id="2" special-1="1">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_JumpDash" type="use-skill" />
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_QueenBloodyCapture" type="use-skill" />
+		</normal>
+
+		<special combat-distance="7" id="1" max-count="0" min-delay="30000" start-delay="30000">
+			
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_SpiderWeb_Lv2" type="use-skill" />
+			<action immune-breaker-disable="y" skill3="SRA_N1_SpiderQueen_None_RushSmash" type="use-skill" />
+		</special>
+	</combat-sequence>
+</table>

@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="AIData" release-side="server" type="combat-sequence" version="0.71">
+  <!--script\combatsequencedata.tutorial.xml-->
+
+  
+  
+  
+
+  <combat-sequence alias="Tutorial_HwaJoong_A1" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MistSlash_Lv1" skill3="MH_Assassin_Disturb_MistSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_DewSlash_Lv1" skill3="MH_Assassin_Disturb_DewSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_MoonlightSlash_Lv1" skill3="MH_Assassin_Disturb_MoonlightSlash_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Assassin_Disturb_HeartStab_Lv1" skill3="MH_Assassin_Disturb_HeartStab_Lv1" type="use-skill" />
+      
+      
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_HwaJoong_B1" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="2" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_HwaJoong_B2">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="2" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_HwaJoong_B3">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="2" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="2" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  
+  
+  
+
+  <combat-sequence alias="Tutorial_GilHong_B1" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+
+  <combat-sequence alias="Tutorial_GilHong_B2">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_GilHong_B3">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="2" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  
+  
+  
+
+  <combat-sequence alias="Tutorial_MuSung_F1" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_MuSung_F2">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_MuSung_K1" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_MuSung_K2">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_MuSung_K3">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="2" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+    </normal>
+    <special />
+  </combat-sequence>
+
+
+  
+  
+  
+
+  <combat-sequence alias="Combo3_1to3_Order6_4to9">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      <action repeat="1" skill="6" skill3="6" type="use-indexed-skill" />
+      <action combo="y" repeat="1" skill="1" skill3="1" type="use-indexed-skill" />
+      <action combo="y" repeat="1" skill="2" skill3="2" type="use-indexed-skill" />
+      <action repeat="1" skill="3" skill3="3" type="use-indexed-skill" />
+      <action repeat="1" skill="4" skill3="4" type="use-indexed-skill" />
+      <action repeat="1" skill="5" skill3="5" type="use-indexed-skill" />
+      <action repeat="1" skill="8" skill3="8" type="use-indexed-skill" />
+      <action repeat="1" skill="9" skill3="9" type="use-indexed-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action repeat="1" skill="7" skill3="7" type="use-indexed-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="MH_MuSung_0001_CS">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" stance="1" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Lowkick_Q_Damage0" skill3="MH_KungfuMaster_Attack_Lowkick_Q_Damage0" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_KungfuMaster_Attack_Takedown_Lv1" skill3="MH_KungfuMaster_Attack_Takedown_Lv1" type="use-skill" />
+      
+      <action combo="y" repeat="1" skill="MH_KungfuMaster_Attack_Armbar_Lv1" skill3="MH_KungfuMaster_Attack_Armbar_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Counterenemy_Lv1" skill3="MH_KungfuMaster_Attack_Counterenemy_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Jumppunch_Q_Damage0" skill3="MH_KungfuMaster_Attack_Jumppunch_Q_Damage0" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WA_MuSung_0001_CS">
+    <normal combat-distance="1" id="1">      
+    </normal>
+    <special combat-distance="7" id="1" max-count="1">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_AreaAttack" skill3="MH_KungfuMaster_Attack_AreaAttack" type="use-skill" />
+      
+      <action event-step="1" immune-breaker-disable="y" repeat="1" skill="MH_KungfuMaster_Defend_Crushground_Lv1" skill3="MH_KungfuMaster_Defend_Crushground_Lv1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+
+  
+  
+  
+
+  <combat-sequence alias="Tutorial_JinYoung_K1" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_JinYoung_K2">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="1" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_JinYoung_K3">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="0" type="change-set" weapon="2" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+    </normal>
+    <special />
+  </combat-sequence>
+
+  
+  
+  
+
+  <combat-sequence alias="Tutorial_MokuJin_K1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Tutorial_Q" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Tutorial_Q" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_MokuJin_K2">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Tutorial_Q" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Tutorial_Q" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_MokuJin_K3">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1_Q" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1_Q" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1_Q" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1_Q" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Tutorial_Q" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Tutorial_Q" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_MokuJin_K4" seq-start-social="1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_Q" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1_Q" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  
+  
+
+  <combat-sequence alias="Tutorial_HeukGoi_B1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action repeat="1" skill="ME_Zombie_None_NAtk1_Q" skill3="ME_Zombie_None_NAtk1_Q" type="use-skill" />
+      <action repeat="1" skill="ME_Zombie_None_NAtk2_Q" skill3="ME_Zombie_None_NAtk2_Q" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  <combat-sequence alias="Tutorial_HeukGoi_K1">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Tutorial" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Tutorial" type="use-skill" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  
+  
+  
+  <combat-sequence alias="ME_Dummy_0051_CS">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      <action duration="2000" type="stay" />
+    </normal>
+    
+    <normal combat-distance="2" id="2">
+      <action duration="2000" type="stay" />
+    </normal>
+    <special />
+  </combat-sequence>
+
+  
+  
+  
+
+  
+  
+  <combat-sequence alias="CH_WC_Ghost_0001_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+      
+      
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_breakaway_ice_target_Lv1" skill3="MH_ForceMaster_Deal_breakaway_ice_target_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="Job_Quest_CH_WC_Ghost_0001_cold_blast" skill3="Job_Quest_CH_WC_Ghost_0001_cold_blast" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_breakaway_Lv1" skill3="MH_ForceMaster_Deal_Named_breakaway_Lv1" type="use-skill" />
+    </normal>
+
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_Lv1" type="use-skill" />
+    </normal>
+
+    <special combat-distance="1" id="1" max-count="1">
+      
+      <action repeat="1" skill="Job_Quest_CH_WC_Ghost_0001_cold_blast" skill3="Job_Quest_CH_WC_Ghost_0001_cold_blast" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_Named_breakaway_Lv1" skill3="MH_ForceMaster_Deal_Named_breakaway_Lv1" type="use-skill" />
+    </special>
+
+  </combat-sequence>
+
+  
+  
+  
+  <combat-sequence alias="CH_WC_HwaJung_0002_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1" special-1="1">
+    </normal>
+    <special combat-distance="1" id="1" max-count="0">
+      <action event-step="1" repeat="1" skill="MH_ForceMaster_Deal_heat_wave_Lv1_Q_T1" skill3="MH_ForceMaster_Deal_heat_wave_Lv1_Q_T1" type="use-skill" />
+    </special>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WC_NokRimDo_0001_CS">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Justicepunch_Lv1" skill3="MH_KungfuMaster_Attack_Justicepunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_Strongpunch_Lv1" skill3="MH_KungfuMaster_Attack_Strongpunch_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" skill3="MH_KungfuMaster_Attack_PowerfulAttack_Lv1" type="use-skill" />
+      <action type="select">
+        <action duration="100" prob="60" type="stay" />
+        
+        <action prob="20" social="MH_WA_HeukRyongChae_0001_combat_soc_01" type="do-social" />
+        
+        <action prob="20" social="MH_WA_HeukRyongChae_0001_combat_soc_02" type="do-social" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  
+  
+  <combat-sequence alias="CH_WC_NokRimDo_0002_CS">
+    
+    <normal combat-distance="1" id="1" setup-dir="target">
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_Rushing_Wind" skill3="MH_BladeMaster_Sword_Rushing_Wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_blood_wind" skill3="MH_BladeMaster_Sword_blood_wind" type="use-skill" />
+      
+      <action repeat="1" skill="MH_BladeMaster_Sword_stab_LV1" skill3="MH_BladeMaster_Sword_stab_LV1" type="use-skill" />
+      <action type="select">
+        <action duration="100" prob="40" type="stay" />
+        
+        <action prob="15" social="CH_WC_NokRimDo_0002_soc_01" type="do-social" />
+        
+        <action prob="15" social="CH_WC_NokRimDo_0002_soc_02" type="do-social" />
+        
+        <action prob="30" social="CH_WC_NokRimDo_0002_soc_05" type="do-social" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WC_NokRimDo_0003_CS">
+    <normal combat-distance="1" id="1" setup-dir="target">
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Axe_Chop_Lv1" skill3="MH_Destroyer_Protection_Axe_Chop_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Judgement_Lv1" skill3="MH_Destroyer_Protection_Judgement_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_Destroyer_Protection_Destruction_Lv1" skill3="MH_Destroyer_Protection_Destruction_Lv1" type="use-skill" />
+    </normal>
+  </combat-sequence>
+
+  
+  <combat-sequence alias="CH_WC_HwaJung_0004_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fast_energy_missile_Lv1" skill3="MH_ForceMaster_Deal_fast_energy_missile_Lv1" type="use-skill" />
+    </normal>
+    <normal combat-distance="2" id="2">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_fire_ball_instant_Lv1" skill3="MH_ForceMaster_Deal_fire_ball_instant_Lv1" type="use-skill" />
+    </normal>
+    
+    
+    <special combat-distance="7" id="1" max-count="0">
+      <action event-step="1" immune-breaker-disable="y" skill="MH_ForceMaster_Deal_fire_blast_Lv22" skill3="MH_ForceMaster_Deal_fire_blast_Lv22" type="use-skill" />
+    </special>
+  </combat-sequence>
+  
+  
+  
+  <combat-sequence alias="CH_WC_HwaJung_0006_CS" seq-start-social="1">
+    <normal combat-distance="1" id="1">
+      
+      <action repeat="1" skill="MH_ForceMaster_Deal_heat_wave_Lv1" skill3="MH_ForceMaster_Deal_heat_wave_Lv1" type="use-skill" />
+      <action immune-breaker-disable="y" type="select">
+        <action duration="100" immune-breaker-disable="y" prob="80" type="stay" />
+        
+        <action immune-breaker-disable="y" prob="20" social="CH_WC_HwaJung_0006_soc_04" type="do-social" />
+      </action>
+    </normal>
+  </combat-sequence>
+
+</table>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.922.xml-->
+  <quest alias="q_epic_922" category="epic" completed-list="y" district-1="suwal" id="922" max-repeat="1" save-type="all">
+    <acquisition level="1" preceding-quest-check="and" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="zone:zone_suwal_tunnel_03_phase" party-broadcast="n" progress-mission="y" quest-decision="qd_922_1" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="2" quest-decision="qd_922_4" zone-1="zone_suwal_tunnel_03_phase">
+      <mission id="2" required-register-value="1">
+        <case object="npc:CH_GeongChunMaeng_0005" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_suwal_tunnel_03_phase" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_1" type="enter-zone" />
+        <case object2="zoneenv2:4611_Foot1" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_2" type="env-entered" />
+        <case object2="zoneenv2:4611_Foot2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_3" type="env-entered" />
+        <case object2="zoneenv2:4611_Foot3" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_13" type="env-entered" />
+      </mission>
+    </mission-step>
+    <mission-step id="3" quest-decision="qd_922_6" zone-1="zone_suwal_tunnel_03_phase">
+      <mission id="3" required-register-value="1">
+        <case object="npc:CH_GyeongChunMaeng_0033" party-broadcast="y" progress-mission="y" type="talk" />
+        <case object="zone:zone_suwal_tunnel_03_phase" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_5" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="4" required-register-value="1">
+        <case object="npc:CH_BarkMun_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_nakwongul_epic2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="5" quest-decision="qd_922_8" zone-1="zone_nakwongul_epic2">
+      <mission id="5" required-register-value="1">
+        <case object="npc:CE_NakWonJok_0001" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_nakwongul_epic2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="6">
+      <mission id="6" required-register-value="1">
+        <case idx="3" object="npc:CE_NakWonJok_0001" party-broadcast="n" progress-mission="y" type="npc-bleeding-occured" />
+        <case object="zone:zone_nakwongul_epic2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_9" type="enter-zone" />
+        <case object="npc:CH_BarkMun_0002" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="7">
+      <mission id="7" required-register-value="1">
+        <case object="zone:zone_nakwongul_epic2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_7" type="enter-zone" />
+        <case object="npc:CE_NakWonJok_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_923" />
+    </completion>
+    <transit id="1" zone="zone_suwal_tunnel_03">
+      <destination mission-step-id="3" zone-index="1" />
+      <destination mission-step-id="2" zone-index="1" />
+      <destination mission-step-id="1" zone-index="1" />
+    </transit>
+    <mission-step id="9" quest-decision="qd_922_12" zone-1="zone_nakwongul_epic2">
+      <mission id="9" required-register-value="1" reset-teleport-recycle-time="y" reward-1="922_final_set1">
+        <case object="npc:ch_barkmun_0002" party-broadcast="n" progress-mission="y" type="talk" />
+        <case object="zone:zone_nakwongul_epic2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <mission-step id="8" quest-decision="qd_922_11" zone-1="zone_nakwongul_epic2">
+      <mission id="8" required-register-value="1">
+        <case object2="npc:CE_NakWonJok_0001" party-broadcast="n" progress-mission="y" type="pc-social" />
+        <case object="zone:zone_nakwongul_epic2" party-broadcast="n" progress-mission="reaction-only" quest-decision="qd_922_7" type="enter-zone" />
+      </mission>
+    </mission-step>
+    <transit id="2" zone="zone_nakwongul">
+      <destination mission-step-id="9" zone-index="1" />
+      <destination mission-step-id="8" zone-index="1" />
+      <destination mission-step-id="7" zone-index="1" />
+      <destination mission-step-id="6" zone-index="1" />
+      <destination mission-step-id="5" zone-index="1" />
+      <destination mission-step-id="4" zone-index="1" />
+    </transit>
+  </quest>
+</table>

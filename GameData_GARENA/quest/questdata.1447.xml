@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table release-module="QuestData" release-side="server" type="quest" version="1.262">
+  <!--quest\questdata.1447.xml-->
+  <quest alias="q_epic_1447" category="epic" completed-list="y" id="1447" max-repeat="1" save-type="all">
+    <acquisition level="1" />
+    <mission-step id="1">
+      <mission id="1" required-register-value="1">
+        <case object="npc:CH_SA_lieutenant_0001" party-broadcast="n" progress-mission="y" type="talk" />
+      </mission>
+    </mission-step>
+    <mission-step id="2">
+      <mission id="2" required-register-value="5">
+        <case object2="npc:MH_CT_BukBang_0006" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BukBang_0005" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BukBang_0004" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BukBang_0009" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BukBang_0008" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:MH_CT_BukBang_0007" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_BukBang_0010" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object2="npc:ME_CT_BukBang_0015" party-broadcast="y" progress-mission="y" type="killed" />
+        <case object="npc:CH_SA_lieutenant_0001" party-broadcast="n" type="approach" />
+      </mission>
+      <mission id="3" required-register-value="1">
+        <case object2="zoneenv2:e_Chest_food_05" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_food_04" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_food_03" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_food_02" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object2="zoneenv2:e_Chest_food_01" party-broadcast="y" progress-mission="y" type="loot" />
+        <case object="npc:CH_SA_lieutenant_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="3">
+      <mission id="4" required-register-value="1" reset-teleport-recycle-time="y">
+        <case object="npc:CH_SA_lieutenant_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1447_1" type="talk" />
+        <fixed-reward slot-1="item:Quest_Grocery_BackChung_0029" />
+      </mission>
+    </mission-step>
+    <mission-step id="4">
+      <mission id="5" required-register-value="1">
+        <case grocery="Quest_Grocery_BackChung_0029" item="Quest_Grocery_BackChung_0029" party-broadcast="n" progress-mission="y" required-item-1="Quest_Grocery_BackChung_0029" required-item-depot="bag" required-item-loss="y" type="talk-to-item" />
+        <case object="npc:CH_SA_lieutenant_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <mission-step id="5">
+      <mission id="6" required-register-value="1" reward-1="1447_final_set1">
+        <case object="npc:CH_SA_general_0001" party-broadcast="n" progress-mission="y" quest-decision="qd_1447_2" type="talk" />
+        <case object="npc:CH_SA_lieutenant_0001" party-broadcast="n" type="approach" />
+      </mission>
+    </mission-step>
+    <completion>
+      <next-quest quest="q_epic_1448" />
+    </completion>
+  </quest>
+</table>
